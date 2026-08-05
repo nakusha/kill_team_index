@@ -1,0 +1,43 @@
+# GitHub Pages 배포 — public/ 만 올린다.
+#
+# 빌드 과정이 없으므로 public/ 을 그대로 아티팩트로 만들어 배포한다.
+# 저장소 Settings → Pages → Source 를 "GitHub Actions" 로 한 번 바꿔주면 동작한다.
+# 결과 주소: https://<계정>.github.io/kill_team_index/
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# 배포는 한 번에 하나만. 진행 중이던 것은 취소한다.
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: 저장소 체크아웃
+        uses: actions/checkout@v4
+
+      - name: Pages 설정
+        uses: actions/configure-pages@v5
+
+      - name: public/ 을 아티팩트로 업로드
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: 배포
+        id: deployment
+        uses: actions/deploy-pages@v4

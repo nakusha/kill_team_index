@@ -11,7 +11,11 @@ export const DATA_DIR = join(ROOT, "data");
 /** 배포 대상 — 이 디렉터리 하나만 올리면 사이트가 뜬다. */
 export const PUBLIC_DIR = join(ROOT, "public");
 
-export const SOURCE_ORIGIN = "킬팀 공식앱 한글번역";
+/** 원본을 내려받을 주소. fetch-source.mjs 만 쓴다. */
+export const SOURCE_ORIGIN = "https://kt-dashboard.noloo.org";
+
+/** 화면과 meta.json 에 적는 출처 이름. 주소와 분리해 둔다. */
+export const SOURCE_LABEL = "킬팀 공식앱 한글번역";
 
 /** 팩션 인덱스를 만드는 데 실제로 쓰는 파일만 받는다. */
 export const SOURCE_FILES = [

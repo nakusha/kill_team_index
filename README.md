@@ -42,30 +42,44 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 | 출력 · 발행 디렉터리 | `public`                            |
 | 배포 용량            | 약 1.2MB (대부분 `data/kt-data.js`) |
 
-### 무료 호스팅 선택지
+### 무료 호스팅 선택지 — 도메인 없이 바로 쓸 수 있다
 
-| 서비스               | 무료 한도                                                   | `public/` 하위 폴더 배포                                   | 비고                         |
-| -------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------- |
-| **Cloudflare Pages** | 대역폭 **무제한**, 파일 20,000개(개당 25MiB), 빌드 500회/월 | 출력 디렉터리에 `public` 입력하면 끝                       |                              |
-| GitHub Pages         | 저장소 1GB, 월 100GB(소프트), 빌드 10회/시간                | 별도 Actions 워크플로 필요(루트 또는 `/docs` 만 기본 지원) | 저장소가 공개여야 무료       |
-| Netlify              | 월 100GB 대역폭, 빌드 300분/월                              | `netlify.toml` 에 `publish = "public"`                     | 팀 기능은 유료               |
-| Vercel               | 월 100GB 대역폭                                             | 출력 디렉터리 `public`                                     | 무료 플랜은 상업적 이용 제한 |
+네 곳 모두 **무료 서브도메인을 함께 준다.** 개인 도메인을 따로 사지 않아도 된다.
 
-**추천: Cloudflare Pages.** 대역폭 무제한이라 1.2MB 번들을 통째로 내려받는 구조와
-잘 맞고, 도메인이 이미 Cloudflare 에 있어 `kt-index` 같은 서브도메인을
-바로 붙일 수 있다.
+| 서비스               | 받는 주소                          | 무료 한도                                    | `public/` 배포                          |
+| -------------------- | ---------------------------------- | -------------------------------------------- | --------------------------------------- |
+| **GitHub Pages**     | `<계정>.github.io/kill_team_index` | 저장소 1GB, 월 100GB(소프트)                 | `.github/workflows/pages.yml` 이 처리   |
+| **Cloudflare Pages** | `<프로젝트>.pages.dev`             | 대역폭 **무제한**, 파일 20,000개(개당 25MiB) | 출력 디렉터리에 `public` 입력           |
+| Netlify              | `<이름>.netlify.app`               | 월 100GB, 빌드 300분/월                      | `netlify.toml` 에 `publish = "public"`  |
+| Vercel               | `<이름>.vercel.app`                | 월 100GB                                     | 출력 디렉터리 `public` · 상업적 이용 제한 |
 
-`public/_headers` 에 캐시·보안 헤더를 넣어 두었다(Cloudflare Pages·Netlify 공용).
-자산과 데이터는 일주일 캐시, HTML 은 매번 재검증한다.
+**도메인이 없다면 GitHub Pages 가 가장 간단하다.** 저장소가 이미 GitHub 에 있고
+워크플로도 넣어 두었으므로, 설정 한 번만 바꾸면 push 할 때마다 자동 배포된다.
+저장소가 공개(public)여야 무료다.
+
+단, `public/_headers` 는 Cloudflare Pages·Netlify 전용이라 GitHub Pages 에서는
+무시된다(캐시 헤더가 기본값이 될 뿐 동작에는 지장 없다). 트래픽이 늘거나 캐시까지
+챙기고 싶어지면 그때 Cloudflare Pages 로 옮기면 된다 — 같은 저장소를 연결하고
+출력 디렉터리만 `public` 으로 지정하면 되고, 주소도 `.pages.dev` 로 무료다.
 
 ### 절차
 
-```bash
-git add -A && git commit -m "feat: 킬팀 팩션 색인"
-git push -u origin main
-# Cloudflare Pages → Create project → Connect to Git → kill_team_index
-#   Build command: (비움)   Build output directory: public
+**GitHub Pages (도메인 불필요)**
+
+1. 저장소 → Settings → Pages → Source 를 **GitHub Actions** 로 변경
+2. `git push` — `.github/workflows/pages.yml` 이 `public/` 만 배포한다
+3. 주소: `https://<계정>.github.io/kill_team_index/`
+
+**Cloudflare Pages (대안)**
+
 ```
+Workers & Pages → Create → Pages → Connect to Git → kill_team_index
+  Production branch:       main
+  Build command:           (비움)
+  Build output directory:  public
+```
+
+주소는 `<프로젝트>.pages.dev` 로 발급된다.
 
 ## 수동 업데이트
 
@@ -93,6 +107,8 @@ node tools/update.mjs --dry-run  # 무엇이 바뀌는지 확인만 (data/ 는 �
 
 ```
 kt-index/
+├── .github/workflows/pages.yml   GitHub Pages 자동 배포
+│
 ├── public/                   ← 배포 대상. 이 디렉터리만 올리면 된다
 │   ├── index.html · faction.html · team.html
 │   ├── _headers              캐시 · 보안 헤더 (Cloudflare Pages · Netlify)

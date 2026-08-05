@@ -636,11 +636,14 @@
     },
     {
       "id": "Wounded",
-      "nameKo": null,
+      "nameKo": "체력 손실",
       "nameEn": "Wounded",
       "kind": "term",
       "keys": [
-        "Wounded"
+        "체력 손실",
+        "Wounded",
+        "체력을 손실",
+        "체력이 손실"
       ],
       "textKo": "최소 1 이상의 피해를 받아 체력 수치가 최대가 아닌 상태.",
       "textEn": ""

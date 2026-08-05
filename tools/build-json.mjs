@@ -16,7 +16,7 @@
 import { mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createContext, runInContext } from 'node:vm';
-import { CACHE_DIR, DATA_DIR, PUBLIC_DIR, SOURCE_FILES, SOURCE_ORIGIN } from './source-files.mjs';
+import { CACHE_DIR, DATA_DIR, PUBLIC_DIR, SOURCE_FILES, SOURCE_LABEL } from './source-files.mjs';
 
 const PLOY_TYPE = { s: 'strategy', f: 'firefight' };
 const WEAPON_TYPE = { R: 'ranged', M: 'melee' };
@@ -188,7 +188,7 @@ function bundleSource({ meta, factions, teams, glossary, glossaryCredit }) {
     '/* 자동 생성 파일 — 직접 고치지 말 것.',
     ' *   node tools/build-json.mjs',
     ' *',
-    ` * 원본: ${meta.source}`,
+    ` * 출처: ${meta.source}`,
     ` * 생성: ${meta.generatedAt}`,
     ' */',
     `window.KTI = ${payload};`,
@@ -236,7 +236,7 @@ async function main() {
 
   const meta = {
     generatedAt: new Date().toISOString(),
-    source: SOURCE_ORIGIN,
+    source: SOURCE_LABEL,
     counts: { factions: factions.length, ...totals, glossary: glossary.length },
   };
 
