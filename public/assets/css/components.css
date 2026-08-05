@@ -675,19 +675,224 @@ button.term.is-open > .term__pop {
   color: var(--text-body);
 }
 
+/* ─── 내 로스터 ───────────────────────────────────────────── */
+
+.roster-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.3rem 0.75rem;
+  border: 1px solid var(--accent);
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+  color: var(--text-bone);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition:
+    background var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.roster-btn:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.roster-btn--ghost {
+  border-color: var(--line-hard);
+  background: none;
+  color: var(--text-faint);
+}
+
+.roster-btn--ghost:hover {
+  border-color: var(--hazard);
+  background: none;
+  color: var(--hazard);
+}
+
+.roster-btn--link {
+  border-color: var(--line-hard);
+  background: none;
+  color: var(--text-muted);
+}
+
+/* 담은 뒤의 인원 조절기 */
+.roster-step {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--accent);
+}
+
+.roster-step button {
+  min-width: 2rem;
+  padding: 0.2rem 0.45rem;
+  border: 0;
+  background: color-mix(in oklab, var(--accent) 18%, transparent);
+  color: var(--text-bone);
+  font-family: var(--font-mono);
+  font-size: 0.95rem;
+  line-height: 1.4;
+  cursor: pointer;
+}
+
+.roster-step button:hover {
+  background: var(--accent);
+  color: var(--accent-ink);
+}
+
+.roster-step b {
+  display: flex;
+  align-items: center;
+  min-width: 2rem;
+  justify-content: center;
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-bone);
+}
+
+/* 장비·플로이 담기 토글 */
+.roster-pick {
+  margin-left: auto;
+  padding: 0.15rem 0.6rem;
+  border: 1px solid var(--line-hard);
+  background: none;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.12em;
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.roster-pick:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.roster-pick.is-on {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 22%, transparent);
+  color: var(--text-bone);
+}
+
+.entry.is-picked {
+  border-left-color: var(--accent);
+}
+
+/* 팀 상세 상단 고정 막대 — 구획 이동 + 담은 수량 */
+.stickybar {
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  background: color-mix(in oklab, var(--surface-void) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.roster-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.75rem;
+  padding-block: 0.85rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+}
+
+.roster-bar__counts {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.roster-bar__counts b {
+  font-size: 1.1rem;
+  color: var(--accent);
+  font-variant-numeric: tabular-nums;
+}
+
+.roster-bar__counts b.is-over {
+  color: var(--hazard);
+}
+
+.roster-bar__warn {
+  color: var(--hazard);
+}
+
+.roster-bar__actions {
+  display: flex;
+  gap: 0.4rem;
+}
+
+/* 로스터 페이지의 팀 묶음 */
+.roster-team {
+  padding-left: clamp(0.75rem, 0.5rem + 1vw, 1.25rem);
+  margin-bottom: var(--space-section);
+  border-left: 4px solid var(--accent);
+}
+
+.roster-team__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.roster-team__name {
+  font-size: clamp(1.5rem, 1.2rem + 1.5vw, 2.25rem);
+}
+
+.roster-team__meta {
+  margin-top: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.2em;
+  color: var(--accent);
+}
+
+.roster-team__actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.roster-count {
+  margin-left: 0.5rem;
+  padding: 0.1rem 0.45rem;
+  border: 1px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--accent);
+}
+
+.roster-warn {
+  margin-bottom: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--hazard);
+}
+
 /* ─── 목차(팀 상세 내부 이동) ─────────────────────────────── */
 
 .jumpbar {
-  position: sticky;
-  top: 0;
-  z-index: 5;
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
   padding-block: 0.85rem;
-  background: color-mix(in oklab, var(--surface-void) 92%, transparent);
-  backdrop-filter: blur(8px);
-  border-bottom: 1px solid var(--line-soft);
 }
 
 .jumpbar a {

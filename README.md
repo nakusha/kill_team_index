@@ -5,6 +5,7 @@ Kill Team 데이터를 **팩션 → 킬팀 → 요원**으로 훑어보는 정�
 - **팩션 9 · 킬팀 48 · 요원 492 · 플로이 384 · 팀 전용 장비 192 · 용어 55**
 - 표기 기준: 문구는 한글, **요원 이름과 무기는 한글(영어) 병기**
 - 무기 특수 규칙과 본문의 `[대괄호]` 용어는 **마우스 오버 또는 클릭하면 뜻풀이가 펼쳐진다**
+- **내 로스터** — 요원·장비·플로이를 담아 한 화면에서 본다(브라우저에만 저장)
 - 런타임 네트워크 호출 **없음**. 받아둔 스냅샷만 읽는다.
 
 ## 여는 법
@@ -27,6 +28,7 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 | `public/index.html`          | 팩션 9개 그리드(소속 킬팀 색 스트립) + 킬팀 48개 즉시 검색   |
 | `public/faction.html?f=IMP`  | 팩션 소속 킬팀 목록                                          |
 | `public/team.html?t=IMP-AOD` | 요원 스탯·무기표, 능력, 플로이, 장비, 편성 가이드, 팩션 규칙 |
+| `public/roster.html`         | 담아둔 요원·장비·플로이를 킬팀별로 모아 보기 |
 
 검색은 한글명·영문명·팀 ID·아키타입·팩션명을 한 번에 훑는다
 (예: `죽음의 천사`, `Angels of Death`, `IMP-AOD`, `Recon`).
@@ -110,11 +112,11 @@ kt-index/
 ├── .github/workflows/pages.yml   GitHub Pages 자동 배포
 │
 ├── public/                   ← 배포 대상. 이 디렉터리만 올리면 된다
-│   ├── index.html · faction.html · team.html
+│   ├── index.html · faction.html · team.html · roster.html
 │   ├── _headers              캐시 · 보안 헤더 (Cloudflare Pages · Netlify)
 │   ├── assets/
 │   │   ├── css/  tokens.css · base.css · components.css
-│   │   └── js/   store.js · page-index.js · page-faction.js · page-team.js
+│   │   └── js/   store.js · roster.js · page-*.js (index/faction/team/roster)
 │   └── data/kt-data.js       페이지가 읽는 단일 번들 (window.KTI)
 │
 ├── data/                     ← JSON 정본. 배포하지 않는다
@@ -233,6 +235,31 @@ JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/
 `관통 1` 은 `keys: ["관통", "Piercing"]` 에 걸려 뜻풀이가 붙는다. 뜻풀이를 찾지
 못한 규칙은 밑줄 없이 평범한 글자로 남는다. 팝오버는 무기표가 가로 스크롤 컨테이너
 안에 있어 잘리므로, 뷰포트 기준(`position: fixed`)으로 좌표를 계산해 띄운다.
+
+### 내 로스터가 동작하는 방식
+
+킬팀 상세에서 요원을 담고(같은 요원을 여러 명 담을 수 있다), 팀 전용 장비와 플로이를
+골라 둔다. 저장은 브라우저 `localStorage` 한 곳 — 키는 `kt-index:roster:v1` 이다.
+
+```jsonc
+{
+  "version": 1,
+  "teams": {
+    "IMP-AOD": {
+      "operatives": { "IMP-AOD-CPT": 2 }, // 같은 요원 중복 편성을 위해 개수 맵
+      "equipment": ["IMP-AOD-CR"],
+      "ploys": ["IMP-AOD-S-ADT"]
+    }
+  }
+}
+```
+
+- 서버로 보내지 않는다. 기기·브라우저가 바뀌면 따라오지 않는다.
+- 저장소를 못 쓰는 환경(사생활 보호 모드 등)에서는 메모리로 물러나고, 화면에
+  "저장 실패 — 이 창에서만 유지됩니다" 를 띄운다. 조용히 삼키지 않는다.
+- 인원은 편성 정원(`size.total`)과 비교해 초과를 표시한다. 다만 요원 목록 안의
+  선택 제약("↘ 1 … 중 선택")은 원본이 자연어라 **자동 검증하지 않는다.**
+- 원본이 갱신돼 사라진 ID 는 로스터 화면에서 조용히 건너뛴다.
 
 ### 알아둘 점
 
