@@ -6,7 +6,6 @@ Kill Team 데이터를 **팩션 → 킬팀 → 요원**으로 훑어보는 정�
 - 표기 기준: 문구는 한글, **요원 이름과 무기는 한글(영어) 병기**
 - 무기 특수 규칙과 본문의 `[대괄호]` 용어는 **마우스 오버 또는 클릭하면 뜻풀이가 펼쳐진다**
 - 런타임 네트워크 호출 **없음**. 받아둔 스냅샷만 읽는다.
-- 원본: `https://kt-dashboard.noloo.org` 의 `data/*.js`
 
 ## 여는 법
 
@@ -23,10 +22,10 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 
 ## 화면
 
-| 파일 | 내용 |
-|---|---|
-| `public/index.html` | 팩션 9개 그리드(소속 킬팀 색 스트립) + 킬팀 48개 즉시 검색 |
-| `public/faction.html?f=IMP` | 팩션 소속 킬팀 목록 |
+| 파일                         | 내용                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| `public/index.html`          | 팩션 9개 그리드(소속 킬팀 색 스트립) + 킬팀 48개 즉시 검색   |
+| `public/faction.html?f=IMP`  | 팩션 소속 킬팀 목록                                          |
 | `public/team.html?t=IMP-AOD` | 요원 스탯·무기표, 능력, 플로이, 장비, 편성 가이드, 팩션 규칙 |
 
 검색은 한글명·영문명·팀 ID·아키타입·팩션명을 한 번에 훑는다
@@ -37,23 +36,23 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 **배포 대상은 `public/` 디렉터리 하나뿐이다.** `data/`(JSON 정본)와 `tools/`(빌드
 스크립트)는 올릴 필요가 없다. 빌드 과정도 없으므로 호스팅 쪽 빌드 명령은 비워 둔다.
 
-| 항목 | 값 |
-|---|---|
-| 빌드 명령 | (없음) |
-| 출력 · 발행 디렉터리 | `public` |
-| 배포 용량 | 약 1.2MB (대부분 `data/kt-data.js`) |
+| 항목                 | 값                                  |
+| -------------------- | ----------------------------------- |
+| 빌드 명령            | (없음)                              |
+| 출력 · 발행 디렉터리 | `public`                            |
+| 배포 용량            | 약 1.2MB (대부분 `data/kt-data.js`) |
 
 ### 무료 호스팅 선택지
 
-| 서비스 | 무료 한도 | `public/` 하위 폴더 배포 | 비고 |
-|---|---|---|---|
-| **Cloudflare Pages** | 대역폭 **무제한**, 파일 20,000개(개당 25MiB), 빌드 500회/월 | 출력 디렉터리에 `public` 입력하면 끝 | `noloo.org` 가 이미 Cloudflare 에 있어 서브도메인 연결이 가장 간단 |
-| GitHub Pages | 저장소 1GB, 월 100GB(소프트), 빌드 10회/시간 | 별도 Actions 워크플로 필요(루트 또는 `/docs` 만 기본 지원) | 저장소가 공개여야 무료 |
-| Netlify | 월 100GB 대역폭, 빌드 300분/월 | `netlify.toml` 에 `publish = "public"` | 팀 기능은 유료 |
-| Vercel | 월 100GB 대역폭 | 출력 디렉터리 `public` | 무료 플랜은 상업적 이용 제한 |
+| 서비스               | 무료 한도                                                   | `public/` 하위 폴더 배포                                   | 비고                         |
+| -------------------- | ----------------------------------------------------------- | ---------------------------------------------------------- | ---------------------------- |
+| **Cloudflare Pages** | 대역폭 **무제한**, 파일 20,000개(개당 25MiB), 빌드 500회/월 | 출력 디렉터리에 `public` 입력하면 끝                       |                              |
+| GitHub Pages         | 저장소 1GB, 월 100GB(소프트), 빌드 10회/시간                | 별도 Actions 워크플로 필요(루트 또는 `/docs` 만 기본 지원) | 저장소가 공개여야 무료       |
+| Netlify              | 월 100GB 대역폭, 빌드 300분/월                              | `netlify.toml` 에 `publish = "public"`                     | 팀 기능은 유료               |
+| Vercel               | 월 100GB 대역폭                                             | 출력 디렉터리 `public`                                     | 무료 플랜은 상업적 이용 제한 |
 
 **추천: Cloudflare Pages.** 대역폭 무제한이라 1.2MB 번들을 통째로 내려받는 구조와
-잘 맞고, 도메인이 이미 Cloudflare 에 있어 `kt-index.noloo.org` 같은 서브도메인을
+잘 맞고, 도메인이 이미 Cloudflare 에 있어 `kt-index` 같은 서브도메인을
 바로 붙일 수 있다.
 
 `public/_headers` 에 캐시·보안 헤더를 넣어 두었다(Cloudflare Pages·Netlify 공용).
@@ -132,7 +131,14 @@ JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/
   "size": { "total": 6 },
   "faction": { "id": "IMP", "nameEn": "Imperium", "nameKo": "임페리움" },
   "ploys": [
-    { "id": "…", "name": "…", "type": "strategy|firefight", "cp": 1, "textEn": "…", "textKo": "…" }
+    {
+      "id": "…",
+      "name": "…",
+      "type": "strategy|firefight",
+      "cp": 1,
+      "textEn": "…",
+      "textKo": "…",
+    },
   ],
   "equipment": [{ "id": "…", "name": "…", "textEn": "…", "textKo": "…" }],
   "equipmentBonusKo": null,
@@ -143,15 +149,38 @@ JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/
       "nameKo": "스페이스 마린 캡틴",
       "stats": { "move": "6\"", "apl": 3, "save": "3+", "wounds": 15 },
       "weapons": [
-        { "name": "…", "type": "ranged|melee",
-          "profiles": [{ "name": "", "attacks": "4", "hit": "3+", "damage": "3/5", "rules": [] }] }
+        {
+          "name": "…",
+          "type": "ranged|melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [],
+            },
+          ],
+        },
       ],
-      "weaponsKo": [{ "name": "…", "type": "ranged|melee", "attacks": "4", "hit": "3+", "damage": "3/5", "rules": [] }],
-      "abilitiesKo": [{ "name": "…", "text": "…" }]
-    }
+      "weaponsKo": [
+        {
+          "name": "…",
+          "type": "ranged|melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [],
+        },
+      ],
+      "abilitiesKo": [{ "name": "…", "text": "…" }],
+    },
   ],
-  "selectionGuide": { "brief": "…", "blocks": [{ "type": "heading|rule", "text": "…" }] },
-  "factionRule": { "brief": "…", "blocks": [] }
+  "selectionGuide": {
+    "brief": "…",
+    "blocks": [{ "type": "heading|rule", "text": "…" }],
+  },
+  "factionRule": { "brief": "…", "blocks": [] },
 }
 ```
 
@@ -159,11 +188,23 @@ JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/
 
 ```jsonc
 {
-  "credit": { "ko": "…", "en": "…", "note": { "ko": "…" }, "short": { "ko": "…" } },
+  "credit": {
+    "ko": "…",
+    "en": "…",
+    "note": { "ko": "…" },
+    "short": { "ko": "…" },
+  },
   "terms": [
-    { "id": "Piercing X", "nameKo": "관통", "nameEn": "Piercing X", "kind": "weapon",
-      "keys": ["관통", "Piercing"], "textKo": "…", "textEn": "…" }
-  ]
+    {
+      "id": "Piercing X",
+      "nameKo": "관통",
+      "nameEn": "Piercing X",
+      "kind": "weapon",
+      "keys": ["관통", "Piercing"],
+      "textKo": "…",
+      "textEn": "…",
+    },
+  ],
 }
 ```
 
