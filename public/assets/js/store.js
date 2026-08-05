@@ -190,6 +190,10 @@ window.KTX = (function () {
     var top = anchor.top - box.height - POP_GAP;
     if (top < POP_GAP) top = anchor.bottom + POP_GAP; /* 위가 좁으면 아래로 */
 
+    /* 좁은 화면에서는 아래로 내려도 넘칠 수 있어 화면 안으로 당긴다. */
+    var maxTop = window.innerHeight - box.height - POP_GAP;
+    if (top > maxTop) top = Math.max(POP_GAP, maxTop);
+
     pop.style.left = Math.round(left) + "px";
     pop.style.top = Math.round(top) + "px";
     pop.style.display = "";

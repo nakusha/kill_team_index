@@ -6,7 +6,8 @@
   display: grid;
   grid-template-columns: minmax(0, 1fr);
   gap: 1.5rem;
-  padding-block: clamp(2.5rem, 1.5rem + 6vw, 7rem) clamp(2rem, 1.5rem + 3vw, 4rem);
+  padding-block: clamp(2.5rem, 1.5rem + 6vw, 7rem)
+    clamp(2rem, 1.5rem + 3vw, 4rem);
 }
 
 .hero__title {
@@ -118,7 +119,8 @@
   gap: 1.1rem;
   padding: var(--space-card);
   background: var(--surface-deep);
-  transition: background var(--duration-normal) var(--ease-out-expo),
+  transition:
+    background var(--duration-normal) var(--ease-out-expo),
     transform var(--duration-normal) var(--ease-out-expo);
 }
 
@@ -126,13 +128,6 @@
 .faction-card:focus-visible {
   background: var(--surface-raised);
   transform: translateY(-3px);
-}
-
-.faction-card__id {
-  font-family: var(--font-mono);
-  font-size: var(--text-micro);
-  letter-spacing: 0.28em;
-  color: var(--text-faint);
 }
 
 .faction-card__name {
@@ -207,7 +202,8 @@
   padding-left: calc(var(--space-card) + 6px);
   background: var(--surface-deep);
   box-shadow: inset 6px 0 0 var(--accent);
-  transition: background var(--duration-normal) var(--ease-out-expo),
+  transition:
+    background var(--duration-normal) var(--ease-out-expo),
     box-shadow var(--duration-normal) var(--ease-out-expo),
     transform var(--duration-normal) var(--ease-out-expo);
 }
@@ -215,11 +211,13 @@
 .team-card:hover,
 .team-card:focus-visible {
   background: var(--surface-raised);
-  box-shadow: inset 6px 0 0 var(--accent), var(--shadow-lift);
+  box-shadow:
+    inset 6px 0 0 var(--accent),
+    var(--shadow-lift);
   transform: translateY(-4px);
 }
 
-.team-card__id {
+.team-card__eyebrow {
   font-family: var(--font-mono);
   font-size: var(--text-micro);
   letter-spacing: 0.22em;
@@ -308,7 +306,11 @@
   padding: clamp(1.5rem, 1rem + 3vw, 3rem);
   margin-top: 1rem;
   background:
-    linear-gradient(160deg, color-mix(in oklab, var(--accent) 20%, transparent), transparent 55%),
+    linear-gradient(
+      160deg,
+      color-mix(in oklab, var(--accent) 20%, transparent),
+      transparent 55%
+    ),
     var(--surface-deep);
   border: 1px solid var(--line-hard);
 }
@@ -506,7 +508,9 @@
   padding: 0.95rem var(--space-card);
   border-left: 3px solid var(--line-hard);
   background: var(--surface-deep);
-  transition: border-color var(--duration-fast), background var(--duration-fast);
+  transition:
+    border-color var(--duration-fast),
+    background var(--duration-fast);
 }
 
 .entry:hover {
@@ -568,7 +572,9 @@
 button.term > .term__label {
   border-bottom: 1px dashed var(--line-hard);
   cursor: help;
-  transition: color var(--duration-fast), border-color var(--duration-fast);
+  transition:
+    color var(--duration-fast),
+    border-color var(--duration-fast);
 }
 
 button.term:hover > .term__label,
@@ -692,7 +698,9 @@ button.term.is-open > .term__pop {
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: var(--text-muted);
-  transition: color var(--duration-fast), border-color var(--duration-fast);
+  transition:
+    color var(--duration-fast),
+    border-color var(--duration-fast);
 }
 
 .jumpbar a:hover {
@@ -707,7 +715,33 @@ button.term.is-open > .term__pop {
   font-size: var(--text-small);
 }
 
-@media (max-width: 640px) {
+/*
+ * 넘침 방지 — grid/flex 자식은 기본 min-width 가 auto 라 줄어들지 않는다.
+ * 이것 때문에 요원 카드 전체가 화면 밖으로 밀려 나갔다.
+ */
+.operative__head,
+.operative__body,
+.table-scroll,
+.operative__name {
+  min-width: 0;
+}
+
+.operative__name,
+.entry,
+.guide,
+.guide__text,
+.wtable .wname,
+.wtable .wrules {
+  overflow-wrap: anywhere;
+}
+
+/* 무기 이름은 한글 아래 영어로 내린다 — 이름 열이 좁아도 읽힌다 */
+.wtable .wname .name-en {
+  display: block;
+  margin-left: 0;
+}
+
+@media (max-width: 500px) {
   .operative__head {
     align-items: flex-start;
   }
@@ -719,5 +753,105 @@ button.term.is-open > .term__pop {
   .statblock div {
     flex: 1;
     min-width: 0;
+  }
+
+  /* 요원 이름도 한글 아래 영어로 */
+  .operative__name .name-en {
+    display: block;
+    margin-left: 0;
+  }
+
+  /*
+   * 무기표를 카드로 접는다 — 7열을 좁은 화면에 밀어 넣는 대신
+   * 행마다 "라벨 : 값" 로 세로로 쌓아 가로 스크롤을 없앤다.
+   */
+  .table-scroll {
+    overflow-x: visible;
+  }
+
+  .wtable {
+    min-width: 0;
+  }
+
+  .wtable thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+  }
+
+  .wtable tbody tr {
+    display: block;
+    padding: 0.85rem 0;
+    border-bottom: 1px solid var(--line-soft);
+  }
+
+  .wtable tbody tr:last-child {
+    border-bottom: 0;
+  }
+
+  .wtable tbody tr:hover td {
+    background: none;
+  }
+
+  .wtable td {
+    display: flex;
+    gap: 0.75rem;
+    align-items: baseline;
+    justify-content: space-between;
+    padding: 0.2rem 0;
+    border: 0;
+  }
+
+  .wtable td::before {
+    content: attr(data-label);
+    flex: 0 0 auto;
+    font-family: var(--font-mono);
+    font-size: var(--text-micro);
+    letter-spacing: 0.14em;
+    color: var(--text-faint);
+  }
+
+  /* 무기 이름은 카드의 제목처럼 한 줄 전체를 쓴다 */
+  .wtable td.wname {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+  }
+
+  .wtable td.wname::before {
+    display: none;
+  }
+
+  /* 특수 규칙은 개수가 들쭉날쭉하니 라벨 아래로 흘린다 */
+  .wtable td.wrules {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.3rem;
+    margin-top: 0.35rem;
+  }
+
+  .wrules .term + .term {
+    margin-left: 0;
+  }
+
+  .wtable td:empty {
+    display: none;
+  }
+
+  /* 구획 이동 칩은 줄바꿈 대신 옆으로 넘긴다 — sticky 높이가 커지지 않게 */
+  .jumpbar {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .jumpbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .jumpbar a {
+    flex: 0 0 auto;
   }
 }

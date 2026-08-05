@@ -73,27 +73,28 @@
     var body = rows
       .map(function (row) {
         var split = splitRange(row.rules);
+        /* data-label 은 좁은 화면에서 표를 카드로 접을 때 열 이름 대신 쓴다. */
         return (
           "<tr>" +
           '<td class="wname">' +
           KTX.nameWithEn(row.name, row.nameEn) +
           "</td>" +
-          "<td>" +
+          '<td data-label="구분">' +
           KTX.badge(row.type === "melee" ? "근접" : "원거리", "", row.type) +
           "</td>" +
-          '<td class="num">' +
+          '<td class="num" data-label="사거리">' +
           KTX.esc(split.range || "–") +
           "</td>" +
-          '<td class="num">' +
+          '<td class="num" data-label="공격">' +
           KTX.esc(row.attacks) +
           "</td>" +
-          '<td class="num">' +
+          '<td class="num" data-label="명중">' +
           KTX.esc(row.hit) +
           "</td>" +
-          '<td class="num">' +
+          '<td class="num" data-label="피해">' +
           KTX.esc(row.damage) +
           "</td>" +
-          '<td class="wrules">' +
+          '<td class="wrules" data-label="특수 규칙">' +
           split.rest
             .map(function (rule) {
               return KTX.termChip(rule);
@@ -263,7 +264,6 @@
   }
 
   function renderHeader(team) {
-    document.getElementById("team-id").textContent = team.id;
     document.getElementById("team-name-ko").textContent = team.nameKo || team.nameEn;
     document.getElementById("team-name-en").textContent = team.nameKo ? "(" + team.nameEn + ")" : "";
 

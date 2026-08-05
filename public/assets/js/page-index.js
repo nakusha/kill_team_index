@@ -47,9 +47,6 @@
       '<a class="faction-card" href="faction.html?f=' +
       encodeURIComponent(faction.id) +
       '">' +
-      '<span class="faction-card__id">' +
-      KTX.esc(faction.id) +
-      "</span>" +
       '<h3 class="faction-card__name">' +
       KTX.esc(faction.nameKo) +
       (faction.sub ? "<small>" + KTX.esc(faction.sub) + "</small>" : "") +
@@ -77,10 +74,8 @@
       '" style="--accent:' +
       KTX.esc(team.color || "var(--line-hard)") +
       '">' +
-      '<span class="team-card__id">' +
+      '<span class="team-card__eyebrow">' +
       KTX.esc(team.factionKo) +
-      " · " +
-      KTX.esc(team.id) +
       "</span>" +
       '<h3 class="team-card__name">' +
       KTX.nameWithEn(team.nameKo, team.nameEn) +

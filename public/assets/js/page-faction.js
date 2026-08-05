@@ -15,9 +15,6 @@
       '" style="--accent:' +
       KTX.esc(team.color || "var(--line-hard)") +
       '">' +
-      '<span class="team-card__id">' +
-      KTX.esc(team.id) +
-      "</span>" +
       '<h3 class="team-card__name">' +
       KTX.nameWithEn(team.nameKo, team.nameEn) +
       "</h3>" +
@@ -60,7 +57,6 @@
     });
     KTX.setAccent(lead && lead.color);
 
-    document.getElementById("faction-id").textContent = faction.id;
     document.getElementById("faction-name-ko").textContent = faction.nameKo;
     document.getElementById("faction-name-en").textContent = "(" + faction.nameEn + ")";
 
