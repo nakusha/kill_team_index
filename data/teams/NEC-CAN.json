@@ -1,0 +1,685 @@
+{
+  "id": "NEC-CAN",
+  "nameEn": "Canoptek Circle",
+  "nameKo": "카놉텍 회합",
+  "archetype": "Recon/Security",
+  "color": "#6fb682",
+  "size": {
+    "total": 8
+  },
+  "faction": {
+    "id": "NEC",
+    "nameEn": "Necrons",
+    "nameKo": "네크론"
+  },
+  "ploys": [
+    {
+      "id": "NEC-CAN-S-HS",
+      "name": "Hypershielding",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly CANOPTEK CIRCLE operative, if your OBELISK NODE MATRIX is intervening, or that friendly operative is within your OBELISK NODE MATRIX, you can re-roll any of your defence dice results of one result (e.g. results of 2).",
+      "textKo": "사격당할 때 MATRIX 안이거나 가리면 같은 값 defence 주사위 재굴림"
+    },
+    {
+      "id": "NEC-CAN-S-TDA",
+      "name": "Transdynamic Amplification",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly CANOPTEK CIRCLE operative is shooting, if your OBELISK NODE MATRIX is intervening, or the target is within your OBELISK NODE MATRIX, that friendly operative’s weapons have the Ceaseless weapon rule.",
+      "textKo": "아군 사격 시 대상이 OBELISK NODE MATRIX 안이면 Ceaseless 획득"
+    },
+    {
+      "id": "NEC-CAN-S-CGR",
+      "name": "Cryptogravitic Repulsion",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Once per action, the first time an enemy operative would move within your OBELISK NODE MATRIX, the distance is treated as an additional 1\". Note this means if that enemy operative doesn’t have sufficient move distance (e.g. it’s at the end of its move), that operative cannot move within your OBELISK NODE MATRIX.",
+      "textKo": "적이 OBELISK NODE MATRIX 안으로 이동 시 1\" 추가 소모 (액션당 1회)"
+    },
+    {
+      "id": "NEC-CAN-S-SD",
+      "name": "Souldrain",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is within your OBELISK NODE MATRIX, or whenever it’s fighting or retaliating against a friendly CANOPTEK CIRCLE operative that’s within your OBELISK NODE MATRIX, subtract 1 from both Dmg stats of that enemy operative’s melee weapons (to a minimum of 2) until the end of the activation/ counteraction. Note this means if the enemy operative moves through your OBELISK NODE MATRIX, apply this change at the end of that move action until the end of the activation/ counteraction.",
+      "textKo": "OBELISK NODE MATRIX 안 적의 근접 무기 Dmg 양쪽 -1 (최소 2)"
+    },
+    {
+      "id": "NEC-CAN-T-SF",
+      "name": "Shield Flare",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an attack dice inflicts Normal Dmg on a friendly CANOPTEK CIRCLE operative. If your OBELISK NODE MATRIX is intervening, or that friendly operative is within your OBELISK NODE MATRIX, ignore that inflicted damage. Note your opponent determines intervening (i.e. where on their operative’s base to draw the targeting lines from).",
+      "textKo": "OBELISK NODE MATRIX 안 아군이 Normal Dmg 를 받을 때 무시"
+    },
+    {
+      "id": "NEC-CAN-T-AON",
+      "name": "Animate Obelisk Nodes",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when it’s your turn to activate or counteract with a friendly operative. Move any number of your OBELISK NODE markers instead. They can move up to 6\" horizontally combined, and distances are always rounded up to the nearest inch (so if you move a marker 1.5\", it’s treated as moving it 2\"). For example, you could move one marker 6\", three markers 1\" each, or any combination that doesn’t exceed 6\" in total. You can also move them 0\" (to effectively skip an activation). In any case, your opponent activates as normal afterwards.",
+      "textKo": "활성화 차례에 대신 OBELISK NODE 마커를 합쳐 6\"까지 이동"
+    },
+    {
+      "id": "NEC-CAN-T-NR",
+      "name": "Nodal Response",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly CANOPTEK CIRCLE operative’s activation, before or after it performs an action. You can either change one of the strategy ploys you used during this turning point (only pay additional CP if that ploy costs more), or use a strategy ploy now (pay its CP cost as normal).",
+      "textKo": "아군 활성화 중 이번 TP 의 전략 ploy 를 교체하거나 지금 사용"
+    },
+    {
+      "id": "NEC-CAN-T-ST",
+      "name": "Sacrificial Thrall",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly CANOPTEK CIRCLE GEOMANCER operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly CANOPTEK CIRCLE CANOPTEK operative visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, that other operative is only in cover or obscured if the original target was.\nThis ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+      "textKo": "GEOMANCER 대신 3\" 내 CANOPTEK 아군이 대상이 됨"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "NEC-CAN-MM",
+      "name": "Matrix Manipulator",
+      "textEn": "Once per battle, during a friendly CANOPTEK CIRCLE operative’s activation or counteraction, you can use this rule. If you do, until the end of that activation/counteraction, a friendly CANOPTEK CIRCLE GEOMANCER operative is treated as your fourth OBELISK NODE marker.",
+      "textKo": "전투당 1회, 활성화 동안 GEOMANCER 를 네 번째 OBELISK NODE 마커로 취급"
+    },
+    {
+      "id": "NEC-CAN-AON",
+      "name": "Awakened Obelisk Nodes",
+      "textEn": "After revealing this equipment option, roll one D3. You can use the Animate Obelisk Nodes firefight ploy for 0CP a number of times during the battle equal to the result.",
+      "textKo": "공개 시 D3 — 그 횟수만큼 Animate Obelisk Nodes 를 0CP 로"
+    },
+    {
+      "id": "NEC-CAN-SDC",
+      "name": "Nanoscarab Caskets",
+      "textEn": "Whenever a friendly CANOPTEK CIRCLE operative is activated, it regains up to D3 lost wounds.",
+      "textKo": "활성화 시 D3 상처 회복"
+    },
+    {
+      "id": "NEC-CAN-PS",
+      "name": "Phase Shifter",
+      "textEn": "Once per turning point, when an operative is shooting a friendly CANOPTEK CIRCLE GEOMANCER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+      "textKo": "TP당 1회, GEOMANCER 가 사격받을 때 Piercing 값을 1 낮춤"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "NEC-CAN-GEO",
+      "nameEn": "Geomancer",
+      "nameKo": "지리술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Tremorglaive",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Part Matter",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "Piercing Crits 2"
+              ]
+            },
+            {
+              "name": "Quake",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "1/2",
+              "rules": [
+                "Blast 2\"",
+                "Seek Light",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tremorglaive",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Severe",
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "진동월도(물질 해체)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1",
+            "결정적 관통 2"
+          ]
+        },
+        {
+          "name": "진동월도(지진)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "1/2",
+          "rules": [
+            "폭발 2\"",
+            "저밀도 색적",
+            "혼미"
+          ]
+        },
+        {
+          "name": "진동월도(휩쓸기)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중상",
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "방첨탑 결절 제어",
+          "text": "직접 목표물 마커를 장악해야 하는 임무 행동(인가 작전 2025의 회수 제외)을 이 요원이 수행하고자 할 때마다, 장악 여부를 판단하는 기준으로 해당 요원 대신 아군 방첨탑 결절 마커 중 하나를 사용할 수 있습니다(방첨탑 결절 행렬 팩션 규칙 참고). 이 요원이 해치 조작 행동을 수행하고자 할 때마다, 출입구가 있는 해치 통로가 아군 방첨탑 결절 마커의 1\" 내에 있다면, 이 요원 대신 아군 방첨탑 결절 마커로 해치 통로를 열거나 닫을 수 있습니다. 단, 해치 조작 행동을 수행하기 위한 조건은 충족해야 합니다.\n지리술사의 행동은 다른 카드에 수록되어 있습니다."
+        },
+        {
+          "name": "풍수학적 교란 [1AP]",
+          "text": "• 원하는 지형지물 하나에서 이 요원의 시야에 들어오며 8\" 내에 있는 지점 하나를 선택하고, 그 지점으로부터 2\" 내에 있는 각 요원마다 2D6을 개별적으로 굴립니다. 그 요원의 남은 체력과 비교해 굴림 값이 더 높다면, 해당 요원은 그 차이만큼 피해를 입습니다.\n• (제약) 이 요원은 은폐 명령을 받은 상태일 때, 또는 적 요원의 장악 범위 내에 있을 때 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "카놉텍 제어 [1AP]",
+          "text": "• 보조. 이 요원의 시야에 들어오고 6\" 내에 있는 아군 카놉텍 회합 카놉텍 요원 하나를 지정합니다. 또는, 이 요원의 시야에 들어오고 아군 방첨탑 결절 행렬 내에 있는 아군 카놉텍 회합 카놉텍 요원 하나를 지정할 수도 있습니다(이때 요원 지정은 보조 행동이 아님). 지정된 요원은 1AP 행동을 즉시 무상으로 수행할 수 있습니다. 하지만 그 행동 중에 2\" 넘게 이동할 수 없으며, 킬존에서 제거된 후 다시 놓이는 경우엔 원래 위치의 2\" 내에 완전히 들어가도록 놓아야 합니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있을 때, 또는 대응할 때 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "분자 수준 돌파 [1AP]",
+          "text": "• 보조. 이 요원의 시야에 들어오고 6\" 내에 있는 아군 카놉텍 회합 요원 하나를 지정합니다. 또는, 이 요원의 시야에 들어오고 아군 방첨탑 결절 행렬 내에 있는 아군 카놉텍 회합 요원 하나를 지정할 수도 있습니다(이때 요원 지정은 보조 행동이 아님). 지정된 요원이 이동하는 행동을 다음으로 수행할 때, 평소와 같이 이동하는 대신 그 요원을 킬존에서 제거한 다음, 원래 위치로부터 수평으로 이동력 수치만큼(그 행동이 질주라면 3\"만큼) 떨어진 범위 내에 완전히 들어가도록 다시 놓습니다(킬존: 묘실 행성과 같이 폐쇄 공간 규칙을 사용하는 킬존에서는 벽 지형을 통과하여 이 거리를 잴 수 있으며, 요원을 벽 반대편에 놓을 수 있음). 단, 돌격 행동을 수행할 때는 추가 거리를 얻지 않습니다. 지정된 요원은 그 모델을 둘 수 있는 곳에 놓여야 하며, 돌격 행동을 하지 않는 이상 적 요원의 장악 범위 내로 들어갈 수 없습니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있을 때 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-CAN-ACC",
+      "nameEn": "Canoptek Macrocyte Accelerator",
+      "nameKo": "카놉텍 거대세포 가속기",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Spark",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 4\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws & Spark",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "스파크",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 4\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "손톱과 스파크",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "살상 5+",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "초과 충전 [1AP]",
+          "text": "• 보조. 이 요원의 시야에 들어오고 3\" 내에 있는 아군 카놉텍 회합 카놉텍 요원 하나를 지정합니다. 또는, 이 요원이 아군 방첨탑 결절 행렬 내에 있다면, 아군 방첨탑 결절 행렬 내에 있는 다른 아군 카놉텍 회합 카놉텍 요원 하나를 지정할 수도 있습니다. 그 지정된 요원은 다음 운용이 종료될 때까지 APL 수치가 +1만큼 변경됩니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있을 때 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "두뇌 과부하 [1AP]",
+          "text": "• 이 요원의 시야에 들어오고 3\" 내에 있는 적 요원 하나를 지정합니다. 또는, 이 요원이 아군 방첨탑 결절 행렬 내에 있다면, 아군 방첨탑 결절 행렬 내에 있는 다른 적 요원 하나를 지정할 수도 있습니다. 그 적 요원은 다음 운용이 종료될 때까지 APL 수치가 -1만큼 변경됩니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있을 때 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-CAN-REA",
+      "nameEn": "Canoptek Macrocyte Reanimator",
+      "nameKo": "카놉텍 거대세포 소생기",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Atomiser Beam",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 6\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws & Tail",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "원자화 광선",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 6\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "손톱과 꼬리",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "소생",
+          "text": "전환점당 한 번, 다른 아군 카놉텍 회합 요원이 무력화될 때, 그 요원이 이 요원의 시야에 들어오며 6\" 내에 있거나 이 요원과 그 요원이 아군 방첨탑 결절 행렬 내에 있다면 이 규칙을 사용할 수 있습니다. 이때 두 요원 모두 적 요원의 장악 범위 밖에 있어야 합니다. 그렇게 할 경우, 그 아군 요원은 무력화되는 대신 1의 체력으로 살아남으며, 그 행동이 종료될 때까지 무력화되지 않습니다. 그 행동이 종료된 후, 그 아군 요원은 질주 행동을 즉시 무상으로 수행할 수 있지만, 그 행동을 이 요원의 장악 범위 또는 아군 방첨탑 결절 행렬 내에서 종료해야 합니다. 또한 이 요원과 그 요원에, 각 요원의 다음 운용이 종료될 때까지, APL을 -1만큼 변경합니다. 만약 이 규칙이 그 아군 요원의 운용 중에 사용되었다면, 그 운용은 바로 종료됩니다. 이 요원이 무력화되었거나, 사격 행동의 주 대상 또는 부가 대상이라면, 이 규칙을 사용할 수 없습니다."
+        },
+        {
+          "name": "나노갑충 광선 [1AP]",
+          "text": "• 이 요원의 시야에 들어오고 6\" 내에 있는 아군 카놉텍 회합 요원 하나를 지정합니다. 또한, 이 요원이 아군 방첨탑 결절 행렬 내에 있다면, 아군 방첨탑 결절 행렬 내에 있는 다른 아군 카놉텍 회합 요원 하나를 지정할 수도 있습니다. 지정된 요원은 잃은 체력을 최대 3D3만큼 회복합니다. 이번 전환점에 소생 규칙의 대상이 된 요원은 이 행동의 대상이 될 수 없습니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있을 때, 또는 한 전환점에 두 번 이상 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-CAN-WAR",
+      "nameEn": "Canoptek Macrocyte Warrior",
+      "nameKo": "카놉텍 거대세포 전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Gauss Scalpel",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tesla Caster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            },
+            {
+              "name": "Living Lightning",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Blast 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws & Tail",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "가우스 메스",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "테슬라 방출기(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        },
+        {
+          "name": "테슬라 방출기(살아 있는 뇌전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "손톱과 꼬리",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "저돌적 방어",
+          "text": "이 요원이 자신의 2\" 내에 있는 적 요원에 의해 무력화되는 경우, 이 요원을 킬존에서 제거하기 전에 D3 하나를 굴립니다. 값이 2+이면 1 피해를 그 적 요원에게 가합니다."
+        },
+        {
+          "name": "소모용 구조체",
+          "text": "이 요원은 상대의 제거/섬멸 작전에 집계되지 않습니다(무력화될 때 및 시작 요원 숫자를 셀 때 무시). 또한, 요원이 '탈출' 또는 '생존'하거나 적 요원에게 무력화되어야 하는 승리 요건이나 VP 획득에도 영향을 주지 않습니다(일정 숫자의 요원이 탈출하거나/생존하거나/무력화되어야 하는 요건이 존재할 때, 이 요원이 탈출하거나/생존하거나/무력화되어도 무시합니다)."
+        },
+        {
+          "name": "끝없는 우글거림",
+          "text": "첫 번째 전환점 종료 후 매 전환점의 전략 포석으로, 무력화되지 않은 아군 카놉텍 회합 전사 요원이 세 개 미만으로 남은 경우, 카놉텍 회합 전사 요원 하나를 은폐 명령을 받은 준비 상태로 투입 구역에 완전히 들어가도록 놓습니다(장비할 무기는 일반적인 방식으로 선택할 수 있음)."
+        }
+      ]
+    },
+    {
+      "id": "NEC-CAN-TC",
+      "nameEn": "Canoptek Tomb Crawler",
+      "nameKo": "카놉텍 무덤포복자",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 18
+      },
+      "weapons": [
+        {
+          "name": "Transdimensional Isolator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "*Dimensional Banishment"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Twin Gauss Reapers",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "Severe"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "Severe",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "횡차원 분리기",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "차원 추방*"
+          ]
+        },
+        {
+          "name": "이중 가우스 수확기(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1",
+            "중상"
+          ]
+        },
+        {
+          "name": "이중 가우스 수확기(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1",
+            "중상",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "손톱",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "차원 추방",
+          "text": "이 요원이 이 무기를 사용한 후, 그 결과 피해를 입혔거나 결정적 성공을 보전했으며, 동시에 대상이 무력화되지 않았다면, 2D6를 굴립니다. 굴림 값이 대상의 남은 체력보다 높다면, 대상은 무력화됩니다(이는 환자 발생!, 펠고어 약탈자 격분 등 무력화를 막는 다른 규칙에 우선합니다). 상대는 그 요원의 소생 마커(히에로텍 회합)를 놓을 수 없습니다(관련 상황이 발생하는 경우)."
+        },
+        {
+          "name": "파수 병기",
+          "text": "상대가 유효 대상을 지정할 때, 이 요원이 은폐 명령을 받은 상태라면 저밀도 지형에 엄폐할 수 없습니다. 이럴 때 이 요원을 유효 대상으로 지정 가능하나(시야에 확보된 경우), 엄폐 방호 효과는 유지합니다(만약 있다면)."
+        },
+        {
+          "name": "확고부동",
+          "text": "마커 장악 판정 시, 이 요원의 APL 수치를 3으로 간주할 수 있습니다. 이 효과는 다른 모든 규칙보다 우선하여 적용됩니다. 즉, 장악 판정에서 이 요원의 APL 수치 변동이 무시됩니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 경비 — 편성 1+2+1+1+3 = 8명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 경비"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 카놉텍 회합 지리술사 요원\n↘ 2 카놉텍 회합 무덤포복자 요원, 다음 선택지 중 하나를 골라 장비합니다(요원별로 선택).\n• 이중 가우스 수확기, 손톱\n• 횡차원 분리기, 손톱"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 카놉텍 회합 가속기 요원\n↘ 1 카놉텍 회합 소생기 요원\n↘ 3 카놉텍 회합 전사 요원, 다음 선택지 중 하나를 골라 장비합니다(요원별로 선택).\n• 가우스 메스, 손톱과 꼬리\n• 테슬라 방출기, 손톱과 꼬리"
+      },
+      {
+        "type": "rule",
+        "text": "횡차원 분리기는 킬 팀을 통틀어 한 개만 장비할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "방첨탑 결절 행렬",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "방첨탑 결절 행렬"
+      },
+      {
+        "type": "rule",
+        "text": "방첨탑 결절 행렬은 네크론 기술의 집약체로, 에너지 및 정보 흐름의 중추 역할을 한다. 옛 매장지에서 솟아올랐든, 재구성된 현지 물질로 구축되었든, 아니면 주머니 차원으로부터 위상변환하여 등장 했든, 이 각진 결절은 크립텍과 그 종복에게 힘을 불어넣는다. 에너 지 행렬에 연결할 수 있는 위치로 옮겨진 방첨탑은 크립텍의 야망에 조력하는 동시에 적들의 행동을 방해한다."
+      },
+      {
+        "type": "rule",
+        "text": "첫 번째 전환점의 전략 포석으로, 세 개의 아군 방첨탑 결절 마커를 플레이어의 영역에 완전히 들어가도록 놓습니다. 첫번째 전환점 종료 후 각 전환점의 전략 포석으로, 각 아군 방첨탑 결절 마커를 최대 3\"만큼 수평으로 이동할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 방첨탑 결절 마커는 그로부터 1\" 내에 있으며 적 요원과 경합하지 않는 다른 마커를 장악합니다(이 규칙을 적용할 때는 방첨탑 결절 마커를 아군 요원으로 간주). 둘 이상의 플레이어가 방첨탑 결절 마커를 사용해 동일한 마커를 장악하 려고 시도한다면, 어떤 방첨탑 결절 마커도 그 마커를 장악하 지 않습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 방첨탑 결절 마커가 다른 아군 방첨탑 결절 마커로부터 수평으로 6\" 내에 있을 때, 그 마커들과 그 사이의 영역은 위와 아래를 포함해 방첨탑 결절 행렬이 됩니다(즉, 킬존에서의 높이에 관계 없음). 아군 방첨탑 결절 마커 세 개가 모두 이 기준을 충족해 배치되는 경우, 하나로 크게 연결된 방첨탑 결절 행렬이 만들어집니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 카놉텍 회합 요원이 아군 방첨탑 결절 행렬 내에 들어갈 때마다 다음 규칙을 적용합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 그 요원의 데이터카드에 실린 무기에 정확 1 무기 규칙을 부여합니다.\n• 그 요원의 APL 수치를 +1만큼 변경합니다(최대 3)."
+      },
+      {
+        "type": "heading",
+        "text": "6\" 내에 있으면 방첨탑 결절 행렬 생성"
+      },
+      {
+        "type": "heading",
+        "text": "6\" 초과"
+      },
+      {
+        "type": "heading",
+        "text": "결합된 방첨탑 결절 행렬 결합된 방첨탑 결절 행렬"
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,700 @@
+{
+  "id": "ORK-KOM",
+  "nameEn": "Kommandos",
+  "nameKo": "코만도스",
+  "archetype": "Seek & Destroy/Infiltration",
+  "color": "#63a04a",
+  "size": {
+    "total": 10
+  },
+  "faction": {
+    "id": "ORK",
+    "nameEn": "Orks",
+    "nameKo": "오크"
+  },
+  "ploys": [
+    {
+      "id": "ORK-KOM-S-DD",
+      "name": "DAKKA! DAKKA! DAKKA!",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly KOMMANDO operatives’ ranged weapons have the Punishing weapon rule.",
+      "textKo": "아군 KOMMANDO 사격 무기가 Punishing 획득"
+    },
+    {
+      "id": "ORK-KOM-S-SA",
+      "name": "Skulk About",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is shooting a friendly KOMMANDO operative that has a Conceal order, you can retain one of your defence dice as a normal success without rolling it (in addition to a cover save, if any).",
+      "textKo": "Conceal 아군이 사격당할 때 방어 주사위 1개 굴림 없이 Normal 성공"
+    },
+    {
+      "id": "ORK-KOM-S-SHHH",
+      "name": "SSSSHHHH!",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Each friendly KOMMANDO operative that’s not a valid target for enemy operatives, or has a Conceal order and is more than 6\" from enemy operatives, can immediately perform a free Dash action. You cannot use this ploy during the first turning point.",
+      "textKo": "유효 목표가 아닌 아군들이 무료 Dash (TP1 제외)"
+    },
+    {
+      "id": "ORK-KOM-S-WAAGH",
+      "name": "WAAAGH!",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly KOMMANDO operatives’ melee weapons have the Balanced weapon rule.",
+      "textKo": "아군 KOMMANDO 근접 무기가 Balanced 획득"
+    },
+    {
+      "id": "ORK-KOM-T-JAS",
+      "name": "Just A Scratch",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an attack dice inflicts Normal Dmg on a friendly KOMMANDO operative (excluding BOMB SQUIG and GROT). Ignore that inflicted damage.",
+      "textKo": "아군이 Normal Dmg 를 받을 때 그 피해를 무시"
+    },
+    {
+      "id": "ORK-KOM-T-KE",
+      "name": "Krump 'Em",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy at the end of the Firefight phase. Select one friendly KOMMANDO operative. It can immediately perform a free Fight action.",
+      "textKo": "Firefight 페이즈 종료 시 아군 1명이 무료 Fight"
+    },
+    {
+      "id": "ORK-KOM-T-KBB",
+      "name": "Kunnin' But Brutal",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly KOMMANDO operative that has a Conceal order is fighting during an activation in which it performed the Charge action, you’re resolving the first attack dice, and it’s a strike with a normal success. Treat that normal success as a critical success instead.",
+      "textKo": "Conceal 아군이 Charge 후 근접전 시 첫 Normal 성공을 크리티컬로"
+    },
+    {
+      "id": "ORK-KOM-T-SIO",
+      "name": "Shake It Off",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly KOMMANDO operative is activated, or when its APL stat is changed. Until the start of the next turning point, you can ignore any changes to its APL stat.",
+      "textKo": "아군의 APL 변경을 다음 TP 시작까지 무시"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "ORK-KOM-CHP",
+      "name": "Choppas",
+      "textEn": "Friendly KOMMANDO operatives (excluding BOMB SQUIG and GROT) have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version.\nNAME ATK HIT DMG\nChoppa 3 3+ 4/5",
+      "textKo": "전원에게 초파 (A3 · H3+ · D4/5), BOMB SQUIG · GROT 제외"
+    },
+    {
+      "id": "ORK-KOM-CS",
+      "name": "Collapsible Stocks",
+      "textEn": "Remove the Range weapon rule from the following ranged weapons friendly KOMMANDO operatives have:\n• Shokka pistol\n• Slugga",
+      "textKo": "쇼카 피스톨과 슬러가에서 Range 규칙 제거"
+    },
+    {
+      "id": "ORK-KOM-DYN",
+      "name": "Dynamite",
+      "textEn": "Once per battle, a friendly KOMMANDO operative (excluding BOMB SQUIG and GROT) can use the following ranged weapon:\nNAME ATK HIT DMG\nDynamite 5 4+ 4/5\nWR\nRange 4\", Blast 1\", Heavy (Reposition only), Saturate",
+      "textKo": "전투당 1회 다이너마이트 (A5 · H4+ · D4/5, Rng 4\" · Blast 1\" · Heavy)"
+    },
+    {
+      "id": "ORK-KOM-HRP",
+      "name": "Harpoon",
+      "textEn": "Once per turning point, a friendly KOMMANDO operative (excluding BOMB SQUIG and GROT) can use the following ranged weapon:\nNAME ATK HIT DMG\nHarpoon 4 4+ 4/5\nWR\nRange 8\", Lethal 5+, Stun",
+      "textKo": "TP당 1회 하푼 (A4 · H4+ · D4/5, Rng 8\" · Lethal 5+ · Stun)"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "ORK-KOM-NOB",
+      "nameEn": "Kommando Boss Nob",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Slugga",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Big Choppa",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-BOY",
+      "nameEn": "Kommando Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Slugga",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Choppa",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-GROT",
+      "nameEn": "Kommando Grot",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [
+        {
+          "name": "Grot Choppa",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-SLS",
+      "nameEn": "Kommando Slasha Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Throwing Knives",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/5",
+              "rules": [
+                "Range 6\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Twin Choppas",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-BRC",
+      "nameEn": "Kommando Breacha Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Slugga",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Breacha Ram",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/5",
+              "rules": [
+                "Brutal",
+                "Severe",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-SNP",
+      "nameEn": "Kommando Snipa Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Scoped Big Shoota",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Heavy",
+                "Devastating 2",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Heavy",
+                "Devastating 2"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Dash only)",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-DAK",
+      "nameEn": "Kommando Dakka Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Dakka Shoota",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 9\"",
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-COMMS",
+      "nameEn": "Kommando Comms Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Shokka",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "1/0",
+              "rules": [
+                "Range 8\"",
+                "Devastating 2",
+                "Severe",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-BRN",
+      "nameEn": "Kommando Burna Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Burna",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            },
+            {
+              "name": "Deluge",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 4\"",
+                "Saturate",
+                "Seek",
+                "*Torrent 0\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-RKT",
+      "nameEn": "Kommando Rokkit Boy",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Rokkit Launcha",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Aimed",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Blast 1\"",
+                "Ceaseless",
+                "Heavy (Dash only)"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Blast 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "ORK-KOM-SQUIG",
+      "nameEn": "Kommando Bomb Squig",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [
+        {
+          "name": "Explosives",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Blast 1\"",
+                "Limited 1",
+                "*Explosive"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bite",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 섬멸 — 편성 1+9 = 10명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: INFILTRATION, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 KOMMANDO BOSS NOB operative with one of the following options:\n• Slugga; big choppa\n• Slugga; power klaw"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 9 KOMMANDO operatives selected from the following list:\n• BOMB SQUIG\n• BOY\n• BREACHA BOY\n• BURNA BOY\n• COMMS BOY\n• DAKKA BOY\n• GROT\n• ROKKIT BOY\n• SLASHA BOY\n• SNIPA BOY"
+      },
+      {
+        "type": "rule",
+        "text": "Other than BOY operatives, your kill team can only include each operative on this list once."
+      },
+      {
+        "type": "rule",
+        "text": "These operatives count as half a selection each, meaning you can select both of them and it's treated as one selection in total."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "THROAT SLITTAS",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "THROAT SLITTAS"
+      },
+      {
+        "type": "lore",
+        "text": "Unusual amongst Orks, Kommandos utilise stealth and misdirection to close in before falling upon the enemy with jagged blades drawn."
+      },
+      {
+        "type": "rule",
+        "text": "Each friendly KOMMANDO operative (excluding BOMB SQUIG) can perform the Charge action while it has a Conceal order."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

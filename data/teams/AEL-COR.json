@@ -1,0 +1,918 @@
+{
+  "id": "AEL-COR",
+  "nameEn": "Corsair Voidscarred",
+  "nameKo": "공허상흔 해적단",
+  "archetype": "Infiltration/Recon",
+  "color": "#d98a4a",
+  "size": {
+    "total": 9
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-COR-S-ME",
+      "name": "Mobile Engagement",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly CORSAIR VOIDSCARRED operative that performed an action in which it moved during this turning point, you can re-roll one of your defence dice.",
+      "textKo": "이번 TP 에 이동한 아군이 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "AEL-COR-S-OC",
+      "name": "Outcasts",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly CORSAIR VOIDSCARRED operative is more than 5\" from other friendly operatives, its weapons have the Punishing weapon rule.",
+      "textKo": "다른 아군에게서 5\" 넘게 떨어진 아군의 무기가 Punishing 획득"
+    },
+    {
+      "id": "AEL-COR-S-PP",
+      "name": "Piratical Profiteers",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly CORSAIR VOIDSCARRED operative is shooting, fighting or retaliating, if it or the enemy operative in that sequence contests an objective marker or one of your mission markers, that friendly operative’s weapons have the Balanced weapon rule.",
+      "textKo": "아군이나 적이 목표 마커 점유 시 아군 무기가 Balanced 획득"
+    },
+    {
+      "id": "AEL-COR-S-PL",
+      "name": "Plunderers",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Up to D3 friendly CORSAIR VOIDSCARRED operatives can immediately perform a free Dash action in an order of your choice. This turning point, each that does so cannot perform the Dash action during their activation. You cannot use this ploy during the first turning point.",
+      "textKo": "아군 1D3 명이 즉시 무료 Dash 수행, 첫 TP 에는 사용 불가"
+    },
+    {
+      "id": "AEL-COR-T-CF",
+      "name": "Capricious Flight",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly CORSAIR VOIDSCARRED operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+      "textKo": "활성화 중 아군 1명이 Fall Back 을 1 AP 적게 수행"
+    },
+    {
+      "id": "AEL-COR-T-CA",
+      "name": "Contemptuous Adventurer",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when the first friendly CORSAIR VOIDSCARRED operative is activated during the turning point, if it’s more than 5\" from other friendly operatives. The first time that operative performs either the Shoot or Fight action during that activation, its weapons have the Relentless weapon rule. Note this ploy cannot come into effect more than once per activation (you cannot use it during both the Shoot and Fight action in the same activation).",
+      "textKo": "TP 첫 활성화가 아군 5\" 밖이면 그 활성화 첫 공격에 Relentless"
+    },
+    {
+      "id": "AEL-COR-T-LF",
+      "name": "Light Fingers",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly CORSAIR VOIDSCARRED operative’s activation. Until the end of that activation, having an enemy operative within its control range doesn’t prevent that friendly operative from performing the Pick Up Marker or mission actions.",
+      "textKo": "활성화 동안 적이 통제 범위에 있어도 Pick Up/임무 액션 가능"
+    },
+    {
+      "id": "AEL-COR-T-OF",
+      "name": "Opportunistic Fighters",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative performs the Fall Back action. Before it moves, inflict 2D3 damage on that operative for each friendly CORSAIR VOIDSCARRED operative within its control range.",
+      "textKo": "적이 Fall Back 할 때 통제 범위 내 아군 1명당 2D3 피해"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-COR-DM",
+      "name": "Diuturnal Mantles",
+      "textEn": "Whenever an operative is shooting a friendly CORSAIR VOIDSCARRED operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule, you can re-roll one of your defence dice. In addition, friendly CORSAIR VOIDSCARRED operatives aren’t affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.",
+      "textKo": "Blast · Torrent 무기에 방어 주사위 1개 재굴림, X\" Devastating X 영향 없음"
+    },
+    {
+      "id": "AEL-COR-MF",
+      "name": "Mistfield",
+      "textEn": "Once per turning point, when an operative is shooting a friendly CORSAIR VOIDSCARRED operative more than 3\" from it, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+      "textKo": "TP당 1회, 3\" 밖에서 사격받을 때 Piercing 값을 1 낮춤"
+    },
+    {
+      "id": "AEL-COR-ROG",
+      "name": "Runes Of Guidance",
+      "textEn": "Once per turning point, when a friendly CORSAIR VOIDSCARRED WAY SEEKER or CORSAIR VOIDSCARRED SOUL WEAVER operative is performing a PSYCHIC unique action (excluding Warp Fold), you can use this rule. If you do, until the end of that action, add 3\" to its distance requirement. Note this has no effect on PSYCHIC weapons (e.g. the Devastating distance requirement of lightning strike).",
+      "textKo": "TP당 1회, WAY SEEKER · SOUL WEAVER 의 PSYCHIC 액션 거리 +3\""
+    },
+    {
+      "id": "AEL-COR-SC",
+      "name": "Star Charts",
+      "textEn": "STRATEGIC GAMBIT. Roll one D3: if the result is higher than the number of the current turning point, you gain 1CP and cannot use this STRATEGIC GAMBIT for the rest of the battle.",
+      "textKo": "GAMBIT, D3 이 현재 TP 보다 크면 1CP 획득 (이후 사용 불가)"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-COR-FEL",
+      "nameEn": "Voidscarred Felarch",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Neuro Disruptor",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-GNR",
+      "nameEn": "Voidscarred Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shredder",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-HGNR",
+      "nameEn": "Voidscarred Heavy Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Wraithcannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Devastating 4",
+                "Heavy (Dash only)",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-FD",
+      "nameEn": "Voidscarred Fate Dealer",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Ranger Long Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-KUR",
+      "nameEn": "Voidscarred Kurnathi",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dual Power Weapons",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-HNT",
+      "nameEn": "Voidscarred Kurnite Hunter",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Faolchu",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "1/2",
+              "rules": [
+                "Rending",
+                "Saturate",
+                "Seek Light",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-SW",
+      "nameEn": "Voidscarred Soul Weaver",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-SR",
+      "nameEn": "Voidscarred Shade Runner",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Throwing Blades",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hekatarii Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-SD",
+      "nameEn": "Voidscarred Starstorm Duellist",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Fusion Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Range 3\"",
+                "Devastating 3",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-WS",
+      "nameEn": "Voidscarred Way Seeker",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Freezing Grasp",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "1/2",
+              "rules": [
+                "Psychic",
+                "Severe",
+                "Silent",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lightning Strike",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/3",
+              "rules": [
+                "Psychic",
+                "2\" Devastating 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Witch Staff",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Psychic",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-COR-WAR",
+      "nameEn": "Voidscarred Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: INFILTRATION, RECON"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 CORSAIR VOIDSCARRED FELARCH operative with one of the following options:\n• Shuriken rifle; shuriken pistol; power weapon\n• Neuro disruptor; power weapon"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 8 CORSAIR VOIDSCARRED operatives selected from the following list:\n• FATE DEALER\n• GUNNER with one of the following options:\n○ Blaster ; shuriken pistol; fists\n○ Shredder; shuriken pistol; fists\n• HEAVY GUNNER with one of the following options:\n○ Shuriken cannon; shuriken pistol; fists\n○ Shuriken pistol; wraithcannon ; fists\n• KURNATHI\n• KURNITE HUNTER\n• SHADE RUNNER\n• SOUL WEAVER"
+      },
+      {
+        "type": "rule",
+        "text": "• STARSTORM DUELLIST\n• WARRIOR with one of the following options:\n○ Shuriken pistol; power weapon\n○ Shuriken rifle; fists\n• WAY SEEKER"
+      },
+      {
+        "type": "rule",
+        "text": "Other than WARRIOR operatives, your kill team can only include each operative on this list once."
+      },
+      {
+        "type": "rule",
+        "text": "Your kill team cannot include both a blaster and a wraithcannon."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "RIFLES · AELDARI RAIDERS",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "RIFLES"
+      },
+      {
+        "type": "lore",
+        "text": "Whilst not all Aeldari outcasts have walked the Path of the Warrior, all are skilled in the use of rifles."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever a friendly CORSAIR VOIDSCARRED operative is shooting with a shuriken rifle or ranger long rifle during an activation in which it hasn't performed the Charge, Fall Back or Reposition action, that weapon has the Accurate 1 weapon rule. Note that operative isn't restricted from performing those actions after shooting."
+      },
+      {
+        "type": "heading",
+        "text": "AELDARI RAIDERS"
+      },
+      {
+        "type": "lore",
+        "text": "Aeldari are lithe, graceful and swift – qualities the Corsair Voidscarred utilise to outmanoeuvre their enemies."
+      },
+      {
+        "type": "rule",
+        "text": "Each friendly CORSAIR VOIDSCARRED operative can perform a free Dash action during their activation."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

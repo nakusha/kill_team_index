@@ -1,0 +1,1330 @@
+{
+  "id": "IMP-RAT",
+  "nameEn": "Ratlings",
+  "nameKo": "래틀링 킬 팀",
+  "archetype": "Security/Infiltration",
+  "color": "#b8967a",
+  "size": {
+    "total": 11
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-RAT-S-CS",
+      "name": "Crack Shots",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RATLING operative is shooting an enemy operative more than 6\" from it, if that friendly operative hasn’t performed the Charge, Fall Back or Reposition action during the activation, or if it’s a counteraction, its rifle (if any) has the Balanced weapon rule. Note that operative isn’t restricted from performing those actions after shooting.",
+      "textKo": "이동 없이 6\" 초과 적 사격 시 아군 RATLING rifle 이 Balanced"
+    },
+    {
+      "id": "IMP-RAT-S-FA",
+      "name": "Frontline Assault",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative within your opponent’s territory or within 3\" of an objective marker is shooting, fighting or retaliating, its weapons have the Balanced weapon rule.",
+      "textKo": "적 진영·목표 마커 3\" 내에서 OGRYN/BULLGRYN 무기가 Balanced"
+    },
+    {
+      "id": "IMP-RAT-S-SH",
+      "name": "Shifty",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RATLING operative (excluding OGRYN or BULLGRYN) has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "textKo": "Conceal 이고 Cover 안인 아군 RATLING 은 대상 지정 불가"
+    },
+    {
+      "id": "IMP-RAT-S-SP",
+      "name": "Sniper Positions",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RATLING operative is more than 6\" from enemy operatives and within 1\" of Heavy terrain, the stationary profile of its rifle (if any) has the Silent weapon rule.",
+      "textKo": "적 6\" 밖 + Heavy 지형 통제 시 rifle Stationary 가 Silent"
+    },
+    {
+      "id": "IMP-RAT-T-LAR",
+      "name": "Larcenous",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly RATLING operative’s activation (excluding OGRYN or BULLGRYN). Until the end of that activation, that operative doesn’t have to control a marker to perform the Pick Up Marker or mission actions that usually require this (this takes precedence over that action’s conditions – it only needs to contest the marker), and having an enemy operative within its control range doesn’t prevent it from doing so.",
+      "textKo": "활성화 동안 마커를 contest 만 해도 Pick Up·미션 행동 가능"
+    },
+    {
+      "id": "IMP-RAT-T-SS",
+      "name": "Sharpshot",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly RATLING operative is performing the Shoot action with a rifle and you’re selecting a valid target. Having other friendly RATLING operatives within an enemy operative’s control range doesn’t prevent that enemy operative from being selected.",
+      "textKo": "rifle 사격 시 적 통제 범위 안의 아군 무시하고 대상 지정"
+    },
+    {
+      "id": "IMP-RAT-T-SAH",
+      "name": "Shoot And Hide",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after a friendly RATLING operative that has an Engage order performs the Shoot action with a rifle. If it’s more than 3\" from enemy operatives, or not visible to every enemy operative, you can change its order to Conceal.",
+      "textKo": "rifle 사격 후 적 3\" 밖이면 order 를 Conceal 로 변경"
+    },
+    {
+      "id": "IMP-RAT-T-SI",
+      "name": "Survival Instincts",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative is shooting against or fighting against a friendly RATLING operative (excluding OGRYN or BULLGRYN) and you’re allocating a dice to block. If it’s a normal success, it can block one unresolved critical success; if it’s a critical success, it can block two unresolved successes (normal or critical).",
+      "textKo": "방어 시 Normal 이 크리티컬 1개, 크리티컬이 성공 2개를 block"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-RAT-PR",
+      "name": "Purloined Rations",
+      "textEn": "Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule. If you do, improve the Hit stat of its rifle by 1 until the end of that sequence. This can allow you to apply the Hit stat change during an action (this takes precedence over the core rules).",
+      "textKo": "TP당 1회, 라이플 공격 주사위를 굴린 뒤 Hit +1"
+    },
+    {
+      "id": "IMP-RAT-LR",
+      "name": "Lucky Round",
+      "textEn": "Once per turning point, when a friendly RATLING operative is shooting with a rifle and you’ve rolled your attack dice, you can use this rule. If you do, that weapon has the Severe weapon rule until the end of that sequence.",
+      "textKo": "TP당 1회, 라이플 사격에 Severe 부여"
+    },
+    {
+      "id": "IMP-RAT-SG",
+      "name": "Stolen Goods",
+      "textEn": "At the end of the Select Operatives step, roll one D3. If the result is:\n• 1, you lose 1CP.\n• 2, you gain 1CP.\n• 3, your opponent loses 1CP.",
+      "textKo": "요원 선택 후 D3 — 1 내 CP −1 · 2 내 CP +1 · 3 상대 CP −1"
+    },
+    {
+      "id": "IMP-RAT-IA",
+      "name": "Improvised Armour",
+      "textEn": "Whenever an operative is shooting a friendly RATLING BULLGRYN or friendly RATLING OGRYN operative, defence dice results of 5+ are critical successes.",
+      "textKo": "BULLGRYN · OGRYN 이 사격받을 때 방어 주사위 5+ 가 크리티컬"
+    }
+  ],
+  "equipmentBonusKo": "Ratling Fixer 를 데려가면 장비를 하나 더 고를 수 있습니다",
+  "operatives": [
+    {
+      "id": "IMP-RAT-FIX",
+      "nameEn": "Ratling Fixer",
+      "nameKo": "래틀링 해결사",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Battle Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "전투소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "뮤니토룸에 아는 사람",
+          "text": "장비를 하나 추가로 선택할 수 있습니다."
+        },
+        {
+          "name": "표적 지정",
+          "text": "전략 포석. 적 요원을 하나 지정합니다. 그 전환점이 종료될 때까지, 아군 래틀링 요원이 그 적 요원을 대상으로 소총을 사용해 사격할 때마다 그 무기에 살상 5+ 무기 규칙이 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-BIG",
+      "nameEn": "Ratling Big Shot",
+      "nameKo": "래틀링 포수",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Tankstopper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Devastating 1",
+                "Heavy (Dash only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/2",
+              "rules": [
+                "Devastating 4",
+                "Heavy",
+                "Piercing 1",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "탱크따개 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/4",
+          "rules": [
+            "궤멸 1",
+            "중화기(질주 한정)",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "탱크따개 소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/2",
+          "rules": [
+            "궤멸 4",
+            "중화기",
+            "관통 1",
+            "중상"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-RAT-HARD",
+      "nameEn": "Ratling Hardbit",
+      "nameKo": "래틀링 억척아범",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Battle Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Combat Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Balanced"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "전투소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "컴뱃 나이프",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "균형"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "매복",
+          "text": "이 요원이 장악 범위에 저밀도 또는 고밀도 지형이 있는 상태로 반격할 때마다, 플레이어(즉, 공격자가 아닌 방어자)가 첫 번째 공격 주사위를 처리합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-SPOT",
+      "nameEn": "Ratling Spotter",
+      "nameKo": "래틀링 감적수",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "감적 [1AP]",
+          "text": "보 조. 이 요원의 시야에 들어오는 적 요원을 하나 지정합니다. 전환점이 종료될 때까지, 이 요원의 3” 내에 있는 아군 래틀링 요원이 그 적 요원을 대상으로 사격할 때마다, 아래 규칙을 적용할 수 있습니다.\n• 사격하는 아군 요원의 원거리 무기에 저밀도 색적 무기 규칙이 부여됩니다.\n• 지정된 적 요원이 차폐할 수 없습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-BOMB",
+      "nameEn": "Ratling Bomber",
+      "nameKo": "래틀링 폭파꾼",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Explosive Arsenal",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 3\"",
+                "Blast 1\"",
+                "Limited 1",
+                "Heavy (Reposition only)",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bionic Arm",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "폭발물",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 3\"",
+            "폭발 1\"",
+            "중화기(기동 한정)",
+            "한도 1",
+            "관통 1",
+            "포화"
+          ]
+        },
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "생체공학 팔",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "인계철선",
+          "text": "전투 전 장비를 놓을 때, 플레이어는 인계철선 마커를 자신의 영역 내에 완전히 들어가도록 최대 두 개놓을 수 있습니다. 단, 놓는 위치는 다른 마커와 출입구, 통과 가능 지형에서 2” 넘게 떨어져야 합니다. 이 마커는 적요원의 장악 범위에 처음으로 들어갔을 때 제거됩니다. 그 적 요원은 다음 운용이 종료될 때까지 APL 수치가 -1만큼 변경되고, 수행하던 행동이 있었다면 그 효과가 모두 적용되지 않았더라도 종료합니다. 그 적 요원이 배치할 수 없는 상태가 되면, 놓을 수 있는 지점으로 최소한만 옮깁니다."
+        },
+        {
+          "name": "지뢰",
+          "text": "공용 장비에서 선택한 지뢰가 원래 피해 수치 대 신 2D3+3 피해를 가하며, 아군 래틀링 요원(오그린 및 불그린 제외)은 아군 지뢰의 효과를 적용할 때 무시됩니다 (즉, 아군 지뢰를 발동하거나 그로부터 피해를 받지 않음). 이 규칙은 일반 지뢰 규칙에 우선해 적용됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-STASH",
+      "nameEn": "Ratling Stashmaster",
+      "nameKo": "래틀링 전주",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "스리슬쩍",
+          "text": "이 요원의 운용마다 한 번, 이 요원이 마커 회수, 마커 배치, 임무 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다."
+        },
+        {
+          "name": "넉넉한 준비성",
+          "text": "공용 장비에서 탄약 더미를 선택했다면, 탄약 더미 마커를 하나 추가로 놓을 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-RAID",
+      "nameEn": "Ratling Raider",
+      "nameKo": "래틀링 습격자",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Suppressed Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Silent"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 2",
+                "Heavy",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dagger",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "소음기형 저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "무성"
+          ]
+        },
+        {
+          "name": "소음기형 저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 2",
+            "중화기",
+            "무성"
+          ]
+        },
+        {
+          "name": "단검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "새총 [1AP]",
+          "text": "지형지물의 지점 한 곳을 선택합니다. 반드시 이 요원의 시야에 들어오며 6” 내에 있는 위치여야 합니다. 이 요원을 킬존에서 제거한 다음, 그 지점으로부터 수 평으로 6” 내에 완전히 들어가는 곳에 다시 배치합니다. 이때 적 요원의 장악 범위 내에 들어가서는 안 되며, 배치하려는 요원이 그 지점에 대한 시야를 확보해야 합니다.\n이 행동은 기동 행동으로 간주합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안, 또는 돌격, 후퇴, 사격 새총 4 위 내에완전히들어감 6 내에 들어감 행동을 수행한 운용 도중에는 이 행동을 수행할 수 없습니다(마찬가지로 이 행동을 수행한 다음 해당 행동을 수행할 수 없음)."
+        },
+        {
+          "name": "그래플링 훅",
+          "text": "이 요원이 올라가기를 수행할 때마다, 실제 이동 거리와 관계없이 수직 거리를 항상 2”로 간주할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-SNP",
+      "nameEn": "Ratling Sniper",
+      "nameKo": "래틀링 저격수",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-RAT-VOX",
+      "nameEn": "Ratling Vox-Thief",
+      "nameKo": "래틀링 복스도둑",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "통신 감청 [1AP]",
+          "text": "보 조. 이 요원의 시야에 확보되었으며 6” 내에 들어온 아군 래틀링 요원을 하나 지정합니다. 지정된 요원은 다음 운용이 종료될 때까지 APL 수치가 +1만큼 변경됩니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-SNK",
+      "nameEn": "Ratling Sneak",
+      "nameKo": "래틀링 잠입가",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 6
+      },
+      "weapons": [
+        {
+          "name": "Suppressed Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Silent"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 2",
+                "Heavy",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "소음기형 저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "무성"
+          ]
+        },
+        {
+          "name": "소음기형 저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 2",
+            "중화기",
+            "무성"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "광학 장비 [1AP]",
+          "text": "이 요원의 다음 운용 시작 시까지, 이 요원이 사격할 때마다 적 요원이 차폐할 수 없으며 이 요원이 장비한 소음기형 저격소총의 고정 프로필에 살상 5+ 무기 규칙을 부여합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "회피",
+          "text": "전환점당 한 번, 적 요원이 행동을 수행한 후, 플레 이어가 방해하여 이 요원으로 무상 질주 행동을 수행할 수 있습니다. 이 요원은 내빼기 팩션 규칙을 사용할 수 없다는 점에 유의하십시오(회피 규칙이 내빼기 규칙을 대신함)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-OGR",
+      "nameEn": "Ogryn",
+      "nameKo": "오그린",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 16
+      },
+      "weapons": [
+        {
+          "name": "Ripper Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Punishing"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "리퍼 건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "맹공"
+          ]
+        },
+        {
+          "name": "총검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "총검 돌격",
+          "text": "이 요원이 돌격 행동 도중 이동을 종료할 때마다, 장악 범위 내에 있는 적 요원 하나에게 D3+1 피해를 가합니다."
+        },
+        {
+          "name": "야수",
+          "text": "상대가 유효 대상을 지정할 때마다, 이 요원은 은폐 명령을 받은 상태이면 저밀도 지형에 엄폐할 수 없습니다. 이때 요원은 시야에 확보되면 유효 대상으로 지정될 수 있지만, 요원이 받는 엄폐 방호 효과가 있다면 그대로 유지됩니다."
+        },
+        {
+          "name": "우둔",
+          "text": "이 요원은 마커 회수나 임무 행동(해치 조작 제외)을 수행할 때 1AP를 추가로 소모합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-BULL",
+      "nameEn": "Bullgryn",
+      "nameKo": "불그린",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 16
+      },
+      "weapons": [
+        {
+          "name": "Grenadier Gauntlet",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Blast 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Brute Shield",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Slabshield",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "척탄병 건틀릿",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "파워 몰",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "충격"
+          ]
+        },
+        {
+          "name": "야수 방패",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "평판방패",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "방패",
+          "text": "이 요원은 평판방패를 장비하면 방호 요구치가 3+ 로 변경됩니다. 야수 방패를 장비하면 요원이 근접전 또는 반격을 수행할 때마다 막기 주사위 하나를 처리되 지 않은 성공 두 개(한 개에서 변경)를 막는 데 할당할 수 있습니다."
+        },
+        {
+          "name": "야수",
+          "text": "상대가 유효 대상을 지정할 때마다, 이 요원은 은폐 명령을 받은 상태이면 저밀도 지형에 엄폐할 수 없습니다. 이때 요원은 시야에 확보되면 유효 대상으로 지정될 수 있지만, 요원이 받는 엄폐 방호 효과가 있다면 그대로 유지됩니다."
+        },
+        {
+          "name": "우둔",
+          "text": "이 요원은 마커 회수나 임무 행동(해치 조작 제외)을 수행할 때 1AP를 추가로 소모합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-RAT-MUTT",
+      "nameEn": "Ratling Battlemutt",
+      "nameKo": "래틀링 전쟁개",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 4
+      },
+      "weapons": [
+        {
+          "name": "Bite",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "깨물기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "조기 경보",
+          "text": "전환점당 한 번, 적 요원이 이동하거나 킬존에 놓이는 행동을 수행한 후, 플레이어가 방해하여 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 이 요원의 6” 내에 있는 동시에 그 적 요원의 2” 내에 있는 각 아군 래틀링 요원(오그린 및 불그린 제외)이 플레이어가 원하는 순서 대로 즉시 무상 질주 또는 후퇴 행동을 수행할 수 있습니다(행동은 요원별로 선택). 단, 그 행동 도중 3”를 초과 해 이동할 수는 없습니다. 어느 행동을 선택하든, 각 요원은 이동을 종료할 때 어떤 적 요원의 시야에도 들어가지 않아야 적 요원의 2” 내에서 이동을 종료할 수 있으며, 이를 충족할 수 없다면 이동할 수 없습니다."
+        },
+        {
+          "name": "짐승",
+          "text": "이 요원은 돌격, 질주, 후퇴, 근접전, 기동 이외의 다른 행동을 수행할 수 없으며, 이 요원의 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 침투 — 편성 1+10 = 11명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 침투"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 래틀링 해결사 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 전투소총, 주먹\n• 저격소총, 주먹"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 10 래틀링 요원을 다음 목록에서 선택해 편성합니다.\n• 전쟁개\n• 불그린 , 다음 각 선택지에서 하나씩 골라 장비합니다.\n○ 척탄병 건틀릿 또는 파워 몰\n○ 야수 방패 또는 평판방패\n• 오그린\n• 포수\n• 폭파꾼\n• 억척아범\n• 습격자\n• 잠입가\n• 저격수\n• 감적수\n• 전주\n• 복스도둑"
+      },
+      {
+        "type": "rule",
+        "text": "불그린 , 오그린 , 저격수를 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들은 세 개까지 편성할 수 있습니다. 이 요원들 중 하나를 편성하는 대신, 래틀링 플로이 하나를 지정해 전투 중 0CP에 사용할 수 있습니다(최대 세 번)."
+      },
+      {
+        "type": "rule",
+        "text": "일부 래틀링 규칙에는 '소총'이 언급됩니다. 이는 무기 명칭에 '소총'이 포함된 원거리 무기(예: 탱크따개 소총, 모든 저격소총 프로필)를 의미합니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "내빼기",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "래틀링"
+      },
+      {
+        "type": "heading",
+        "text": "내빼기"
+      },
+      {
+        "type": "lore",
+        "text": "키는 작지만 걸음이 빠른 래틀링은 속도와 민첩성을 이용해 적을 앞지르고 회피한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 적 요원의 운용이 끝날 때마다, 다음 요원의 운용이 시작 되기 전에 아군 래틀링 요원(불그린, 오그린, 잠입가 제외) 하나로 무상 질주 행동을 수행할 수 있습니다. 단, 그 요원은 이동을 종료할 때 어떤 적 요원의 시야에도 들어가지 않아야 적 요원의 3\" 내에 들어가서 이동을 종료할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 요원은 전환점당 한 번만 이 이동을 수행할 수 있으며, 전환점의 마지막 운용이 끝난 후에는 이 이동을 수행할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "래틀링"
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

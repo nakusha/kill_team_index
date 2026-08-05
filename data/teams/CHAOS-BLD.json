@@ -1,0 +1,944 @@
+{
+  "id": "CHAOS-BLD",
+  "nameEn": "Blooded",
+  "nameKo": "피칠갑",
+  "archetype": "Infiltration/Seek & Destroy",
+  "color": "#9fa07a",
+  "size": {
+    "total": 14
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-BLD-S-BD",
+      "name": "Bitter Demise",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly BLOODED operative is incapacitated, before it’s removed from the killzone, roll one D3: on a 3 (or 2+ if that friendly operative has one of your Blooded tokens), inflict damage equal to the result on one enemy operative visible to and within 2\" of that friendly operative.",
+      "textKo": "아군 BLOODED 무력화 시 1D3 굴려 3이면 2\" 내 적에게 그만큼 피해"
+    },
+    {
+      "id": "CHAOS-BLD-S-GK",
+      "name": "Glory Kill",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one enemy operative. Until the end of the turning point, whenever a friendly BLOODED operative is shooting against, fighting against or retaliating against that enemy operative, that shooting, fighting or retaliating operative’s weapons have the Ceaseless weapon rule, or Relentless if it has one of your Blooded tokens.",
+      "textKo": "적 1명 선택, TP 끝까지 그 적 상대 아군 BLOODED 무기에 Ceaseless"
+    },
+    {
+      "id": "CHAOS-BLD-S-MG",
+      "name": "Malevolent Grit",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly BLOODED operative that has one of your Blooded tokens or is wholly within your opponent’s territory, you can re-roll one of your defence dice.",
+      "textKo": "Blooded 토큰 보유/적 진영 내 아군 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "CHAOS-BLD-S-RA",
+      "name": "Reckless Aspirant",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly BLOODED operative that’s wholly within your opponent’s territory and doesn’t have one of your Blooded tokens is shooting or fighting, its weapons have the Accurate 1 weapon rule.\nWhenever a friendly BLOODED operative that has one of your Blooded tokens is wholly within your opponent’s territory, its weapons have the Punishing weapon rule.",
+      "textKo": "적 진영에 있는 아군 BLOODED 무기가 Accurate 1, 토큰 보유 시 Punishing"
+    },
+    {
+      "id": "CHAOS-BLD-T-CD",
+      "name": "Callous Disregard",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly BLOODED operative performs the Shoot action and you’re selecting a valid target. Having other friendly BLOODED operatives within an enemy operative’s control range doesn’t prevent that enemy operative from being selected. Until the end of that action, whenever you discard an attack dice as a fail, inflict damage equal to the dice result on one friendly operative of your choice within control range of the target.",
+      "textKo": "아군 BLOODED 사격 시 아군이 붙은 적도 표적 가능, fail 시 아군 피해"
+    },
+    {
+      "id": "CHAOS-BLD-T-DF",
+      "name": "Dark Favour",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly BLOODED operative that has one of your Blooded tokens is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly BLOODED operative visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, that other operative is only in cover or obscured if the original target was.\nThis ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+      "textKo": "토큰 보유 아군이 표적이 될 때 3\" 내 다른 아군 BLOODED 로 표적 변경"
+    },
+    {
+      "id": "CHAOS-BLD-T-MOR",
+      "name": "Moment Of Repute",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during the activation of a friendly BLOODED operative that’s under the GAZE OF THE GODS, before or after it performs an action. Until the end of that operative’s activation, add 1 to its APL stat.",
+      "textKo": "GAZE OF THE GODS 아군 활성화 중 APL +1"
+    },
+    {
+      "id": "CHAOS-BLD-T-RE",
+      "name": "Reward Earned",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative is incapacitated by a friendly BLOODED operative within 2\" of it that has one of your Blooded tokens. You gain one Blooded token.",
+      "textKo": "토큰 보유 아군이 2\" 내 적을 무력화 시 Blooded 토큰 1개 획득"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-BLD-CS",
+      "name": "Chaos Sigil",
+      "textEn": "The Reward Earned firefight ploy costs you 0CP.",
+      "textKo": "Reward Earned 화력전 플로이가 0CP"
+    },
+    {
+      "id": "CHAOS-BLD-ST",
+      "name": "Sinister Trophies",
+      "textEn": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly BLOODED operative that has one of your Blooded tokens and is within 2\" of it, your opponent cannot re-roll their attack dice results of 1.",
+      "textKo": "Blooded 토큰을 가진 아군 2\" 안에서 공격 시 상대가 1 을 재굴림 못 함"
+    },
+    {
+      "id": "CHAOS-BLD-SOBW",
+      "name": "Symbols of Bloody Worship",
+      "textEn": "Whenever a friendly BLOODED operative ends an action, if it wasn’t incapacitated but inflicted damage on any enemy operatives during that action, it regains 1 lost wound.",
+      "textKo": "액션 중 적에게 피해를 입히고 살아남으면 상처 1 회복"
+    },
+    {
+      "id": "CHAOS-BLD-WB",
+      "name": "Wicked Blades",
+      "textEn": "Add 1 to both Dmg stats of each friendly BLOODED operative’s bayonet, bayonet & shield and improvised blade for the battle.",
+      "textKo": "총검 · 총검과 방패 · 즉석 칼날의 Dmg 를 양쪽 다 +1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-BLD-CHF",
+      "nameEn": "Traitor Chieftain",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Improvised Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-GRN",
+      "nameEn": "Traitor Brimstone Grenadier",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Diabolyk Bomb",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/3",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Devastating 2",
+                "Limited 1",
+                "Heavy (Reposition only)",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-BUT",
+      "nameEn": "Traitor Butcher",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Power Weapon and Cleaver",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+",
+                "*Blood Offering"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-COM",
+      "nameEn": "Traitor Commsman",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-CRPS",
+      "nameEn": "Traitor Corpseman",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Stimm Needle",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-ENF",
+      "nameEn": "Traitor Enforcer",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-FLN",
+      "nameEn": "Traitor Flenser",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Skinning Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "*Stalk"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-GNR",
+      "nameEn": "Traitor Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-OGR",
+      "nameEn": "Traitor Ogryn",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 16
+      },
+      "weapons": [
+        {
+          "name": "Power Maul and Mutant Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Rending",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-SS",
+      "nameEn": "Traitor Sharpshooter",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Long-Las",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 1",
+                "Heavy (Dash only)",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-THUG",
+      "nameEn": "Traitor Thug",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Heavy Club",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-TRS",
+      "nameEn": "Traitor Trench Sweeper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet and Shield",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "*Shield"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-BLD-TRP",
+      "nameEn": "Traitor Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 섬멸 — 편성 1+9+4 = 14명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: INFILTRATION, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 BLOODED CHIEFTAIN operative with one of the following options:\n• Autopistol or laspistol; chainsword or power weapon\n• Bolt pistol; chainsword\n• Boltgun; bayonet\n• Plasma pistol; improvised blade2"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 9 BLOODED operatives selected from the following list:\n• BRIMSTONE GRENADIER\n• BUTCHER\n• COMMSMAN\n• CORPSEMAN\n• FLENSER\n• GUNNER with bayonet and flamer1\n• GUNNER with bayonet and grenade launcher1\n• GUNNER with bayonet and meltagun1\n• GUNNER with bayonet and plasma gun1,2"
+      },
+      {
+        "type": "rule",
+        "text": "• SHARPSHOOTER1\n• THUG\n• TRENCH SWEEPER\n• TROOPER"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 4 BLOODED operatives selected from the following list:\n• ENFORCER (counts as two selections)\n• OGRYN (counts as two selections)\n• TROOPER"
+      },
+      {
+        "type": "rule",
+        "text": "Other than TROOPER operatives, your kill team can only include each operative on this list once. You cannot select more than three of these 1"
+      },
+      {
+        "type": "rule",
+        "text": "operatives combined. You cannot select this option and this operative. 2"
+      },
+      {
+        "type": "rule",
+        "text": "In other words, you can only have one operative with a plasma weapon."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "BLOODED",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "BLOODED"
+      },
+      {
+        "type": "lore",
+        "text": "The Blooded seek to earn the favour of malign warp entities by hurling themselves into combat and slaying the most potent foes. Should they die in the attempt, their souls may serve as acceptable sacrifices."
+      },
+      {
+        "type": "rule",
+        "text": "You gain one Blooded token:"
+      },
+      {
+        "type": "rule",
+        "text": "• In the Ready step of each Strategy phase.\n• The first time an enemy operative is incapacitated during each turning point.\n• The first time a friendly operative is incapacitated within 6\" of an enemy operative during each turning point."
+      },
+      {
+        "type": "rule",
+        "text": "As a STRATEGIC GAMBIT, you can assign any of your unassigned Blooded tokens to friendly BLOODED operatives. Each operative cannot have more than one of your Blooded tokens. Then, if four or more friendly operatives in the killzone have one of your Blooded tokens, you can select one of them to be under the GAZE OF THE GODS until the end of the turning point. Whenever a friendly BLOODED operative has one of your Blooded tokens, its weapons have the Accurate 1 weapon rule. If that friendly BLOODED operative is under the GAZE OF THE GODS, you can retain one of your normal successes as a result of the Accurate 1 weapon rule as a critical success instead."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,988 @@
+{
+  "id": "IMP-DKK",
+  "nameEn": "Death Korps",
+  "nameKo": "데스 코어",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#8a9c82",
+  "size": {
+    "total": 14
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-DKK-S-CTL",
+      "name": "Clear The Line",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly DEATH KORPS operatives’ melee weapons have the Accurate 1 weapon rule. Whenever a friendly DEATH KORPS operative is fighting wholly within your territory, or whenever it’s retaliating, its melee weapons also have the Severe weapon rule.",
+      "textKo": "아군 근접 무기가 Accurate 1, 아군 진영/반격 시 Severe 추가"
+    },
+    {
+      "id": "IMP-DKK-S-RG",
+      "name": "Regroup",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "SUPPORT. Select one friendly DEATH KORPS operative that’s more than 3\" from enemy operatives. Each other friendly DEATH KORPS operative within 5\" of that operative and not within control range of enemy operatives can immediately perform a free Dash action in an order of your choice, but each that does so must end that move closer to that operative. Note that a Comms Device from universal equipment only affects the second distance of this rule.\nYou cannot use this ploy and the Chronometer faction equipment STRATEGIC GAMBIT during the same turning point.",
+      "textKo": "SUPPORT, 아군 1명 선택, 5\" 내 다른 아군들이 무료 Dash 로 접근"
+    },
+    {
+      "id": "IMP-DKK-S-SWF",
+      "name": "Siege Warfare",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly DEATH KORPS operatives’ ranged weapons have the Saturate and Accurate 1 weapon rules.",
+      "textKo": "아군 사격 무기가 Saturate 와 Accurate 1 획득"
+    },
+    {
+      "id": "IMP-DKK-S-TC",
+      "name": "Take Cover",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly DEATH KORPS operative, if you can retain any cover saves, improve that friendly operative’s Save stat by 1.",
+      "textKo": "아군 피격 시 Cover Save 가 가능하면 Save 를 1 개선"
+    },
+    {
+      "id": "IMP-DKK-T-CA",
+      "name": "Combined Arms",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly DEATH KORPS operative, if it’s shooting an enemy operative that’s been shot by another friendly DEATH KORPS operative during this turning point. You can re-roll any of your attack dice.",
+      "textKo": "이번 TP 에 다른 아군이 쏜 적을 사격 시 Atk 주사위 재굴림"
+    },
+    {
+      "id": "IMP-DKK-T-IDA",
+      "name": "In Death, Atonement",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a ready friendly DEATH KORPS operative is incapacitated, if it isn’t within control range of enemy operatives. Before it’s removed from the killzone, it can immediately perform one free action and you can change its order to do so. Note that friendly operative is injured for the duration of that action.",
+      "textKo": "아군이 무력화될 때 제거 전에 무료 행동 1개 수행, order 변경 가능"
+    },
+    {
+      "id": "IMP-DKK-T-ILS",
+      "name": "In Life, Shame",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly DEATH KORPS operative is activated and given an Engage order. It receives every GUARDSMAN ORDER. This takes precedence over the normal rule that operatives cannot benefit from more than one GUARDSMAN ORDER at once.",
+      "textKo": "Engage 로 활성화한 아군이 모든 GUARDSMAN ORDER 를 받음"
+    },
+    {
+      "id": "IMP-DKK-T-IL",
+      "name": "Inspirational Leadership",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "SUPPORT. Use this firefight ploy during a friendly DEATH KORPS WATCHMASTER or DEATH KORPS CONFIDANT operative’s activation, before or after it performs an action. It issues a GUARDSMAN ORDER.",
+      "textKo": "SUPPORT, WATCHMASTER/CONFIDANT 활성화 중 GUARDSMAN ORDER 발령"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-DKK-CM",
+      "name": "Chronometer",
+      "textEn": "Once per battle STRATEGIC GAMBIT in the first or second turning point. Each friendly DEATH KORPS operative wholly within your territory can immediately perform a free Dash action in an order of your choice, but each that does so must end that move closer to an opponent’s drop zone or killzone edge.\nYou cannot use this STRATEGIC GAMBIT and the Regroup strategy ploy during the same turning point.",
+      "textKo": "전투당 1회 TP1~2 GAMBIT, 내 영역 안 아군이 적 쪽으로 무료 Dash"
+    },
+    {
+      "id": "IMP-DKK-CB",
+      "name": "Comm-Beads",
+      "textEn": "Whenever a friendly DEATH KORPS WATCHMASTER or friendly DEATH KORPS CONFIDANT operative issues a GUARDSMAN ORDER, you can use this rule. If you do, instead of each friendly DEATH KORPS operative within 6\" of it receiving that order, you can select one friendly DEATH KORPS operative to receive that order.",
+      "textKo": "GUARDSMAN ORDER 를 6\" 안 전원 대신 원하는 아군 1명에게"
+    },
+    {
+      "id": "IMP-DKK-HA",
+      "name": "Hand Axes",
+      "textEn": "Friendly DEATH KORPS operatives have the following melee weapon:\nNAME ATK HIT DMG\nHand axe 3 4+ 3/4",
+      "textKo": "전원에게 손도끼 근접무기 (A3 · H4+ · D3/4)"
+    },
+    {
+      "id": "IMP-DKK-GB",
+      "name": "Gas Bombardment",
+      "textEn": "Once per battle STRATEGIC GAMBIT. Place your Gas marker in the killzone; it cannot be placed underneath Vantage terrain. Whenever an operative is within 3\" of that marker, subtract 1 from its APL stat. In the Ready step of the next Strategy phase, remove that marker. Note that an operative’s APL stat is only changed while it’s within 3\" of that marker. If it moves more than 3\" from that marker, its APL stat is no longer changed by this rule.",
+      "textKo": "전투당 1회 GAMBIT, Gas 마커 3\" 안의 적 APL −1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-DKK-WM",
+      "nameEn": "Death Korps Watchmaster",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relic Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-BRU",
+      "nameEn": "Death Korps Bruiser",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Trench Club",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-CON",
+      "nameEn": "Death Korps Confidant",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Relic Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-GNR",
+      "nameEn": "Death Korps Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-MDC",
+      "nameEn": "Death Korps Medic",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-SAP",
+      "nameEn": "Death Korps Sapper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Remote Detonator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "5/6",
+              "rules": [
+                "Heavy (Dash only)",
+                "Limited 1",
+                "Piercing 1",
+                "Silent",
+                "*Detonate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-SNP",
+      "nameEn": "Death Korps Sniper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Long-Las",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-SPT",
+      "nameEn": "Death Korps Spotter",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Mortar Barrage",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Blast 2\"",
+                "Heavy (Dash only)",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-TRP",
+      "nameEn": "Death Korps Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-VET",
+      "nameEn": "Death Korps Veteran",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bionic Arm",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-VOX",
+      "nameEn": "Death Korps Vox-Operator",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DKK-ZLT",
+      "nameEn": "Death Korps Zealot",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "방어 · 섬멸 — 편성 1+4+9 = 14명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: SECURITY, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 DEATH KORPS WATCHMASTER operative with the following:\n• Boltgun; bayonet\nOr one option from each of the following:\n• Bolt pistol, plasma pistol or relic laspistol\n• Chainsword or power weapon"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 4 TROOPER operatives"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 9 DEATH KORPS operatives selected from the following list:\n• BRUISER\n• CONFIDANT with one of the following options:\n○ Boltgun or lasgun; bayonet\n○ Bolt pistol or relic laspistol; chainsword\n• GUNNER with bayonet and flamer\n• GUNNER with bayonet and grenade launcher"
+      },
+      {
+        "type": "rule",
+        "text": "• GUNNER with bayonet and meltagun\n• GUNNER with bayonet and plasma gun\n• MEDIC\n• SAPPER\n• SNIPER\n• SPOTTER\n• TROOPER\n• VETERAN\n• VOX-OPERATOR\n• ZEALOT"
+      },
+      {
+        "type": "rule",
+        "text": "Other than TROOPER operatives, your kill team can only include each operative on this list once. Up to four times, instead of selecting one of these TROOPER operatives, you can select one DEATH KORPS ploy to cost you 0CP for the battle."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "GUARDSMEN ORDERS · Take Aim! · Fix Bayonets! …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "GUARDSMEN ORDERS"
+      },
+      {
+        "type": "lore",
+        "text": "The soldiers of the Death Korps of Krieg are unquestioningly loyal to their officers, following barked orders with a speed and efficiency that is the envy of many other regiments."
+      },
+      {
+        "type": "rule",
+        "text": "STRATEGIC GAMBIT and SUPPORT. A friendly DEATH KORPS WATCHMASTER operative can issue a GUARDSMAN ORDER. Whenever it does, select one GUARDSMAN ORDER for all friendly DEATH KORPS operatives within 6\" of it to receive. Whenever a friendly operative receives a GUARDSMAN ORDER, apply its rules until the end of the turning point. Operatives cannot benefit from more than one GUARDSMAN ORDER at once; they only benefit from the most recent order they received during the turning point."
+      },
+      {
+        "type": "heading",
+        "text": "GUARDSMEN ORDERS OPTIONS ARE"
+      },
+      {
+        "type": "heading",
+        "text": "PRESENTED ON THEIR OWN CARDS"
+      },
+      {
+        "type": "heading",
+        "text": "GUARDSMEN ORDERS"
+      },
+      {
+        "type": "heading",
+        "text": "Take Aim!"
+      },
+      {
+        "type": "lore",
+        "text": "Outfitted and trained for attritional infantry combat, the soldiers of Krieg have undertaken endless hours of lasgun drills."
+      },
+      {
+        "type": "rule",
+        "text": "Ranged weapons of operatives that received this order (excluding mortar barrage and remote detonator) have the Ceaseless weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "Fix Bayonets!"
+      },
+      {
+        "type": "lore",
+        "text": "The kind of warfare undertaken by the Death Korps of Krieg requires their troopers to be well versed in close-quarters fighting and trench clearance."
+      },
+      {
+        "type": "rule",
+        "text": "Melee weapons of operatives that received this order have the Ceaseless weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "GUARDSMEN ORDERS"
+      },
+      {
+        "type": "heading",
+        "text": "Dig In!"
+      },
+      {
+        "type": "lore",
+        "text": "Obstinate to the last, the soldiers of Krieg establish defensive positions and hold them with grim determination."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever an operative is shooting a friendly operative that's received this order, if you can retain any cover saves, you can re-roll any of your defence dice results of one result (e.g. results of 2)."
+      },
+      {
+        "type": "lore",
+        "text": "Move! Move! Move! Responding to a barked order from their Watchmaster, the soldiers of Krieg pick up the pace and hustle towards their next objective."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever an operative that's received this order is performing the Reposition action, add 1\" to its Move stat."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

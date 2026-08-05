@@ -1,0 +1,899 @@
+{
+  "id": "CHAOS-GORE",
+  "nameEn": "Goremongers",
+  "nameKo": "유혈광",
+  "archetype": "Recon/Seek & Destroy",
+  "color": "#d45f54",
+  "size": {
+    "total": 8
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-GORE-S-AE",
+      "name": "Augmented Endurance",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly GOREMONGER operative, if that friendly operative’s GORE TANK is:\n• Half, you can re-roll one of your defence dice.\n• Full, you can re-roll any of your defence dice.",
+      "textKo": "아군 피격 시 GORE TANK Half 면 방어 주사위 1개, Full 이면 원하는 만큼 재굴림"
+    },
+    {
+      "id": "CHAOS-GORE-S-EV",
+      "name": "Enhanced Violence",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly GOREMONGER operative’s GORE TANK is:\n• Half, its melee weapons have the Balanced weapon rule.\n• Full, its melee weapons have the Relentless weapon rule.",
+      "textKo": "GORE TANK Half 면 근접 무기 Balanced, Full 이면 Relentless"
+    },
+    {
+      "id": "CHAOS-GORE-S-GT",
+      "name": "Gory Tenacity",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly GOREMONGER operative is fighting or retaliating, the first time your opponent strikes it during that sequence, halve the damage inflicted (rounding up and to a minimum of 2).",
+      "textKo": "아군 근접전/반격 시 적의 첫 타격 피해를 절반으로 (최소 2)"
+    },
+    {
+      "id": "CHAOS-GORE-S-HFB",
+      "name": "Hunt For Blood",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one friendly GOREMONGER operative. If it has a Conceal order, change it to Engage. Then it can immediately perform a free Charge action, but cannot move more than 3\" during that action.",
+      "textKo": "아군 1명을 Engage 로 바꾸고 무료 Charge (최대 3\")"
+    },
+    {
+      "id": "CHAOS-GORE-T-DD",
+      "name": "Destructive Demise",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly GOREMONGER operative is incapacitated, before it’s removed from the killzone. Inflict damage determined by that friendly operative’s GORE TANK on one enemy operative within that friendly operative’s control range. Inflict:\n• D3 if empty.\n• D3+1 if half.\n• D3+2 if full.",
+      "textKo": "아군 무력화 시 통제 범위 내 적 1명에게 D3(half +1, full +2) 피해"
+    },
+    {
+      "id": "CHAOS-GORE-T-GT",
+      "name": "Gorethirst",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when you would counteract. You can do so with one friendly GOREMONGER operative that has a Conceal order, but before it counteracts, you must change its order to Engage and it cannot perform any actions other than Charge, Shoot or Fight during that counteraction.",
+      "textKo": "Conceal 상태 아군으로도 counteract 가능 (Charge/Shoot/Fight 만)"
+    },
+    {
+      "id": "CHAOS-GORE-T-LF",
+      "name": "Lacerate Flesh",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly GOREMONGER operative with an empty GORE TANK is activated or counteracts. Increase that operative’s GORE TANK. At the end of that activation/counteraction, decrease its GORE TANK (you cannot use this decrease to use a SANGUAVITAE rule); if you cannot decrease its GORE TANK, inflict D3 damage on it.",
+      "textKo": "GORE TANK 가 빈 아군 활성화 시 GORE TANK 증가, 끝나면 감소"
+    },
+    {
+      "id": "CHAOS-GORE-T-UBA",
+      "name": "Unbridled Aggression",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly GOREMONGER operative is fighting during an activation in which it performed the Charge action, at the end of the Roll Attack Dice step. Until the end of that sequence, that operative’s melee weapons have the Severe weapon rule.",
+      "textKo": "Charge 한 아군이 근접전 시 근접 무기가 Severe 획득"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-GORE-GT",
+      "name": "Gory Totem",
+      "textEn": "Before the battle, you can set up one of your Gory Totem markers wholly within your territory and more than 2\" from other markers (excluding your Bloody Cadaver marker). Whenever an enemy operative within 3\" of your Gory Totem marker is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice.",
+      "textKo": "전투 전 Gory Totem 마커 배치 — 3\" 안의 적은 공격 주사위 재굴림 제한"
+    },
+    {
+      "id": "CHAOS-GORE-BC",
+      "name": "Bloody Cadaver",
+      "textEn": "Before the battle, you can set up one of your Bloody Cadaver markers wholly within your territory and more than 2\" from other markers (excluding your Gory Totem marker). Friendly GOREMONGER operatives can perform the Pick Up Marker action on that marker. In the Ready step of each Strategy phase, you can increase the GORE TANK of one friendly GOREMONGER operative that controls that marker, unless that friendly operative is within control range of an enemy operative.",
+      "textKo": "전투 전 Bloody Cadaver 마커 배치 — 아군이 Pick Up Marker 로 회수 가능"
+    },
+    {
+      "id": "CHAOS-GORE-CS",
+      "name": "Chaos Sigil",
+      "textEn": "Once per turning point, when an operative is shooting a friendly GOREMONGER operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+      "textKo": "TP당 1회, 사격받을 때 Piercing 값을 1 낮춤"
+    },
+    {
+      "id": "CHAOS-GORE-WC",
+      "name": "Wrist Chains",
+      "textEn": "Once per turning point, when a friendly GOREMONGER operative performs the Shoot action and you’re selecting a ranged weapon, you can use this rule. If you do, until the end of that action, the following melee weapons are treated as ranged weapons with the Range 2\" weapon rule: chainblade, chainglaive, great chainaxe (ignore its Brutal weapon rule), pickrippers.",
+      "textKo": "TP당 1회, 체인블레이드류 근접무기를 Range 2\" 원거리 무기로 취급"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-GORE-BH",
+      "nameEn": "Goremonger Blood Herald",
+      "nameKo": "유혈광 피의 전령",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Icon Of Khorne",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 8\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainblade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "코온의 우상",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 8\"",
+            "포화"
+          ]
+        },
+        {
+          "name": "체인블레이드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "코온의 총애",
+          "text": "이 요원을 운용할 때마다 한 번씩, 행동을 수행하기 전에 또는 수행한 후에 유혈 저장고가 비어있다면 유혈 저장고를 충전할 수 있습니다."
+        },
+        {
+          "name": "임박한 승천",
+          "text": "전투당 한 번, 이 요원이 공격 주사위로 일반 피해를 입을 때 그 피해를 무시할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-ASP",
+      "nameEn": "Goremonger Aspirant",
+      "nameKo": "유혈광 갈구자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainglaive",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "체인글레이브",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "강박적인 피의 갈망",
+          "text": "이 요원이 근접전 행동을 마쳤을 때 더 이상 적 요원의 장악 범위 내에 있지 않다면, 즉시 돌격 행동을 무상으로 수행할 수 있습니다(해당 운용 동안 이미 돌격 행동을 수행했더라도 추가로 가능). 단, 그 행동 중에는 2\"를 초과하여 이동할 수 없습니다. 이 규칙을 사용한 뒤에도 해당 운용 동안 돌격, 질주, 기동 행동을 수행할 때 제약을 받지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-BT",
+      "nameEn": "Goremonger Bloodtaker",
+      "nameKo": "유혈광 선혈착취자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritual Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "*Ritual"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "의식용 검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "의식*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "의식",
+          "text": "이 요원이 이 무기를 사용할 때마다, 해당 절차 동안 장악 범위 내의 요원에게 처음으로 피해를 입힐 때, 이 요원의 유혈 저장고를 충전할 수 있습니다. 유혈 저장고를 충전하는 다른 규칙과 중복 적용됩니다(예시: 장악 범위 내의 요원에게 처음 피해를 입힌 동시에 그 요원을 무력화시키는 경우, 유혈 저장고는 두 번 충전됨)."
+        },
+        {
+          "name": "수혈 의식 [1AP]",
+          "text": "• 이 요원의 유혈 저장고를 소모합니다. 혈액동력 규칙을 사용하는 대신, 이 요원으로부터 8\" 내에 있는 다른 아군 유혈광 요원 하나의 유혈 저장고를 충전할 수 있습니다.\n• (제약) 이 요원이 적 요원의 장악 범위 내에 있거나, 유혈 저장고가 비어있다면 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-IMP",
+      "nameEn": "Goremonger Impaler",
+      "nameKo": "유혈광 관통자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fleshskewer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Stun",
+                "*Drag",
+                "*Prey"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fleshskewer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "살점꼬챙이(원거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "혼미",
+            "끌어내기*",
+            "사냥감*"
+          ]
+        },
+        {
+          "name": "살점꼬챙이(찌르기)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "끌어내기",
+          "text": "이 요원이 이 무기로 사격할 때마다, 공격 주사위 처리 단계 시작 시(피해를 입히기 전), 사격의 대상을 최대 x\"까지 이동시킬 수 있습니다. 여기서 x값은 막히지 않은(즉 성공한) 공격 주사위의 개수에 2를 곱한 값입니다. 대상은 플레이어가 이동시키기로 결정한 x\" 수치만큼, 이 요원에게 가능한 한 가장 가까운 곳이자 놓을 수 있는 위치에서 이동을 종료해야 합니다. 이동은 하나 이상의 직선 단위로 이루어져야 하며, 각 직선 단위는 언제나 소수점 아래를 올림 처리한 인치로 측정합니다. 이동 중 목표가 내려가기를 수행할 경우, 수직 이동은 거리에 포함되지 않습니다."
+        },
+        {
+          "name": "사냥감",
+          "text": "이 요원이 이 무기로 사격할 때마다, 공격 주사위 처리 단계에서 끌어내기 무기 규칙을(선택했다면) 처리한 경우, 막지 않은(즉 성공한) 공격 주사위를 원하는 만큼 버릴 수 있습니다. 즉, 주사위를 소모하여 피해를 입히지 않는 선택도 가능합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-INC",
+      "nameEn": "Goremonger Inciter",
+      "nameKo": "유혈광 몰이꾼",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Dual Autopistols",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/2",
+              "rules": [
+                "Range 8\"",
+                "Ceaseless",
+                "Devastating 1",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dual Autopistols",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "쌍수 기관권총(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/2",
+          "rules": [
+            "사거리 8\"",
+            "집요",
+            "궤멸 1",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "쌍수 기관권총(영거리 사격)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "질주 사격 [1AP]",
+          "text": "• 이 요원으로 무상 질주 행동과 무상 사격 행동을 원하는 순서대로 수행할 수 있습니다. 무상 사격 행동 시에는 쌍수 자동권총(집중)만 선택할 수 있습니다.\n• (제약) 요원이 은폐 명령을 받은 상태이거나, 적의 장악 범위 내에 있는 경우에는 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "사냥 촉발",
+          "text": "이 요원으로부터 2\" 이상의 거리에 있는 적 요원을 무력화할 때마다, 무력화된 요원이 킬존에서 제거되기 전에 그 적 요원으로부터 8\" 내에 있는 아군 유혈광 요원 하나의 유혈 저장고를 충전할 수 있습니다.\n이 요원이 적 요원에게 피해를 입혔으나 무력화시키지 못한 경우, 적 요원은(보유 중인 출혈 토큰이 없다면) 출혈 토큰 1개를 얻습니다. 아군 유혈광 요원의 운용 또는 대응 도중, 행동을 수행하기 전이나 수행한 후에 출혈 토큰을 가진 적 요원으로부터 8\" 이내에 있다면, 그 토큰을 제거하고 해당 아군 요원의 유혈 저장고를 충전할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-SC",
+      "nameEn": "Goremonger Skullclaimer",
+      "nameKo": "유혈광 해골쟁취자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Great Chainaxe",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "대형 체인액스",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "무자비"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "야수성",
+          "text": "공격 주사위가 이 요원에게 결정적 피해를 입힐 때마다, 대신 일반 피해를 입히도록 선택할 수 있습니다."
+        },
+        {
+          "name": "해골 쟁취",
+          "text": "전환점당 한 번, 이 요원이 대형 체인액스로 적 요원을 무력화하면 1CP를 얻습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-GORE-ST",
+      "nameEn": "Goremonger Stalker",
+      "nameKo": "유혈광 추적자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pickrippers",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "파쇄톱니",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "등반용 갈퀴",
+          "text": "이 요원이 올라가기 수행 시, 실제 이동 거리와 관계없이 수직 거리를 항상 2\"로 간주할 수 있습니다."
+        },
+        {
+          "name": "고지대 추적자",
+          "text": "이 요원이 고지에서 내려가기를 수행한 운용의 도중에 근접전을 수행하거나, 고지에 있는 적 요원을 상대로 근접전을 수행할 때마다, 이 요원의 근접 무기에 혹독 무기 규칙이 부여됩니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 수색 섬멸 — 편성 1+7 = 8명",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "유혈광 킬 팀"
+      },
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 유혈광 피의 전령 요원\n↘ 7 유혈광 요원을 다음 목록에서 선택해 편성합니다\n• 갈구자\n• 선혈착취자\n• 관통자\n• 몰이꾼\n• 해골쟁취자\n• 추적자"
+      },
+      {
+        "type": "rule",
+        "text": "갈구자 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "코온의 룬 · 유혈 저장고 · 혈액동력 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "코온의 룬"
+      },
+      {
+        "type": "rule",
+        "text": "유혈광의 살갗에 새겨진 코온의 룬 문자는 그들을 향한 원거리 공격에 대해 지옥 같은 저항력을 부여한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 유혈광 요원이 적의 사격 한 번에 잃는 체력은 8을 초과하지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "유혈 저장고"
+      },
+      {
+        "type": "lore",
+        "text": "유혈광이 등에 멘 저장고에는 자극제, 재조합 단백질, 연금술 연료가 섞인 화합물이 담겨있다. 이 혼합액은 착용자에게 힘을 불어넣지만, 악마의 연금술이 최상의 효율을 유지하기 위해서는 피와 살점이 끊임없이 공급되어야 한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 유혈광 요원은 세 단계(최대치, 절반, 고갈)로 이루 어진 유혈 저장고를 보유합니다. 유혈 저장고는 충전될 때마다 한 단계씩 올라가며 소모될 때마다 한 단계씩 내려갑니다. 유혈 저장고는 이미 최대치인 상태에서 더 충전할 수 없고, 이미 고갈인 상태에서는 더 소모할 수 없습니다(다음 면의 그림 참고)."
+      },
+      {
+        "type": "rule",
+        "text": "아군 유혈광 요원이 자신의 장악 범위에 있거나, 또는 요원의 시야에 들어오면서 동시에 2\" 내에 위치한 요원을 무력화 시킬 때마다, 요원의 유혈 저장고를 충전할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 유혈광 요원이 혈액동력 규칙을 사용할 때마다, 그 요원의 유혈 저장고를 반드시 소모해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "최대치"
+      },
+      {
+        "type": "heading",
+        "text": "소모"
+      },
+      {
+        "type": "heading",
+        "text": "충전"
+      },
+      {
+        "type": "heading",
+        "text": "절반"
+      },
+      {
+        "type": "heading",
+        "text": "소모"
+      },
+      {
+        "type": "heading",
+        "text": "충전"
+      },
+      {
+        "type": "heading",
+        "text": "고갈"
+      },
+      {
+        "type": "heading",
+        "text": "(토큰 제거)"
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "rule",
+        "text": "유혈광 개개인의 저장고 안에 든 혈액 주입 혼합물은 혈액동력으로 통용된다. 이 화합액을 통해 강화된 유혈광은 인간의 한계를 훨씬 뛰어넘어 유혈낭자한 과업을 수행할 수 있다. 그 과정에서 유혈광 무리는 선혈 난동꾼을 모방하고 코온을 숭배한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 혈액동력 규칙은 언제 쓸 수 있는지 사용 시점이 명시되어 있으며, 이를 사용하기 위해서는 반드시 요원의 유혈 저장고를 소모해야 합니다. 동일한 혈액동력 규칙은 운용 또는 대응마다 최대 한 번만 사용할 수 있으며, 다른 혈액동력 규칙 이더라도 운용 또는 대응마다 최대 두 개까지만 사용할 수 있습니다. 하나의 운용 도중 광란과 격분을 둘 다 사용할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "혈액동력 규칙은 동봉된 별개의 카드에 나와 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "재생"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원의 운용 또는 대응 도중, 행동을 수행하기 직전 또는 수행한 직후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 해당 요원이 D3+1만큼 잃은 체력을 회복합니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "광란"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원의 운용 도중 행동을 수행하기 직전 또는 수행한 직후."
+      },
+      {
+        "type": "heading",
+        "text": "효과: 해당 요원의 다음 운용 차례가 시작될 때까지"
+      },
+      {
+        "type": "rule",
+        "text": "APL 수치를 +1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "격분"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원의 운용 도중 행동을 수행하기 직전 또는 수행한 직후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 이번 운용 도중 해당 요원은 근접전을 두 번 수"
+      },
+      {
+        "type": "heading",
+        "text": "행할 수 있습니다. 두 번째 근접전은 무상으로"
+      },
+      {
+        "type": "rule",
+        "text": "수행합니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "할퀴기"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원이 돌격 행동을 수행할 때."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 해당 요원이 돌격 중 이동을 마쳤을 때, 요원의"
+      },
+      {
+        "type": "heading",
+        "text": "장악 범위 내에 있는 적 요원 하나에게 D3 피해를"
+      },
+      {
+        "type": "lore",
+        "text": "입힐 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "급가속"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원이 돌격 또는 기동 행동을 수 행할 때."
+      },
+      {
+        "type": "heading",
+        "text": "효과: 해당 행동이 끝날 때까지 요원의 이동 수치를"
+      },
+      {
+        "type": "lore",
+        "text": "+1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "혈액동력"
+      },
+      {
+        "type": "heading",
+        "text": "분노"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 아군 유혈광 요원이 근접전 행동을 수행할 때."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 해당 행동이 끝날 때까지 요원이 장비한 근접 무기의 공격 수치를 +1만큼 변경합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

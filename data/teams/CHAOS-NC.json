@@ -1,0 +1,1149 @@
+{
+  "id": "CHAOS-NC",
+  "nameEn": "Nemesis Claw",
+  "nameKo": "천벌갈퀴",
+  "archetype": "Infiltration/Seek & Destroy",
+  "color": "#7f8ac2",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-NC-S-PS",
+      "name": "Preysight",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly NEMESIS CLAW operative performs the Shoot action, you can use this rule. If you do, until the end of that action, that friendly operative’s ranged weapons have the Range 6\" and Seek Light weapon rules.",
+      "textKo": "아군 사격 시 그 무기가 Range 6\" 와 Seek Light 획득"
+    },
+    {
+      "id": "CHAOS-NC-S-RTD",
+      "name": "Return To Darkness",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "One friendly NEMESIS CLAW operative can immediately perform a free Fall Back or Reposition action, but it must end that move with Heavy terrain within its control range, or any part of its base underneath Vantage terrain. In addition, it cannot move more than 4\" during that action and it cannot end that move closer to enemy operatives (in a killzone that uses the close quarters rules, e.g. Killzone: Tomb World, ignore Wall terrain when determining this).",
+      "textKo": "아군 1명이 무료 Reposition·Fall Back 4\", Heavy 나 Vantage 아래로"
+    },
+    {
+      "id": "CHAOS-NC-S-TBH",
+      "name": "The Black Hunt",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly NEMESIS CLAW operative is shooting against, fighting against or retaliating against a wounded enemy operative, you can re-roll one of your attack dice.",
+      "textKo": "상처 입은 적을 상대할 때 공격 주사위 1개 재굴림"
+    },
+    {
+      "id": "CHAOS-NC-S-WHCFY",
+      "name": "We Have Come For You",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly NEMESIS CLAW operative is activated, if the first action it performs during that activation is the Charge action, when it ends its move during that action, you can inflict D3 damage on one enemy operative within its control range.",
+      "textKo": "활성화 첫 액션이 Charge 면 통제 범위 내 적 1명에게 D3 피해"
+    },
+    {
+      "id": "CHAOS-NC-T-DTTFE",
+      "name": "Death To The False Emperor",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly NEMESIS CLAW operative, if it’s shooting against, fighting against or retaliating against an enemy operative that has the IMPERIUM keyword. That friendly operative’s weapons have the Ceaseless weapon rule until the end of that sequence; if that enemy operative also has the ADEPTUS ASTARTES keyword, that friendly operative’s weapons have the Relentless weapon rule until the end of that sequence instead.",
+      "textKo": "IMPERIUM 적 상대 시 Ceaseless, ADEPTUS ASTARTES 면 Relentless"
+    },
+    {
+      "id": "CHAOS-NC-T-DF",
+      "name": "Dirty Fighter",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly NEMESIS CLAW operative is retaliating, at the start of the Resolve Attack Dice step. You can resolve one of your successes before the normal order. If you do, you cannot resolve any other successes during that sequence.",
+      "textKo": "아군이 반격할 때 성공 1개를 먼저 해결, 나머지 성공은 포기"
+    },
+    {
+      "id": "CHAOS-NC-T-PFM",
+      "name": "Proclivity For Murder",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after a friendly NEMESIS CLAW operative incapacitates an enemy operative within its control range. That friendly operative can immediately perform a free Charge or Dash action (for the former, it cannot move more than 3\"), even if it’s performed an action that prevents it from performing those actions.",
+      "textKo": "통제 범위 내 적을 무력화한 뒤 무료 Charge 3\" 또는 Dash"
+    },
+    {
+      "id": "CHAOS-NC-T-VS",
+      "name": "Vox Scream",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when your opponent would activate an enemy operative that’s visible to a friendly NEMESIS CLAW operative. Roll one D6; if the result is higher than that enemy operative’s APL stat, your opponent cannot activate it during this activation; if the result is less than or equal to that enemy operative’s APL stat, this ploy isn’t used, the CP spent on it is refunded and you cannot use this ploy again during this turning point. If there are no other enemy operatives eligible to be activated, this ploy has no effect.",
+      "textKo": "적 활성화 시 D6 이 그 APL 보다 높으면 그 적은 활성화 불가"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-NC-CS",
+      "name": "Chain Snare",
+      "textEn": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly NEMESIS CLAW operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.",
+      "textKo": "통제 범위에 그 적만 있을 때 Fall Back 을 2D6 4+ 로 막음"
+    },
+    {
+      "id": "CHAOS-NC-CJ",
+      "name": "Comms Jammers",
+      "textEn": "Whenever an enemy operative is within 3\" of a friendly NEMESIS CLAW operative, that enemy operative’s APL stat cannot be added to. Note that this doesn’t affect APL stats that have already been changed.",
+      "textKo": "아군 3\" 안의 적은 APL 이 올라가지 않음"
+    },
+    {
+      "id": "CHAOS-NC-FS",
+      "name": "Flayed Skin",
+      "textEn": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly NEMESIS CLAW operative within 2\" of it, your opponent cannot re-roll their attack dice results of 1.",
+      "textKo": "2\" 안에서 아군을 공격할 때 상대가 주사위 1 을 재굴림 못 함"
+    },
+    {
+      "id": "CHAOS-NC-GT",
+      "name": "Grisly Trophy",
+      "textEn": "Once per battle, when a friendly NEMESIS CLAW operative incapacitates an enemy operative within 2\" of it, you can use this rule. If you do, that friendly operative gains one of your Grisly Trophy tokens (if it doesn’t already have one). Whenever a friendly NEMESIS CLAW operative that has one of your Grisly Trophy tokens is visible to and within 2\" of an enemy operative, subtract 1 from the Atk stat of that enemy operative’s weapons.",
+      "textKo": "전투당 1회, 2\" 안에서 적을 처치하면 Grisly Trophy 토큰 획득"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-NC-VIS",
+      "nameEn": "Night Lord Visionary",
+      "nameKo": "나이트 로드 예지자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Hot",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nostraman Chainblade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "노스트라만 체인블레이드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "5/7",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "파워 몰",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "충격"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "예지",
+          "text": "사이킥. 전략 페이즈마다 준비 단계에서 D3 예지 포인트를 획득합니다. 각 전환점이 종료될 때마다 보유 중인 예지 포인트를 버립니다. 예지 포인트는 화력전 페이즈에 사용할 수 있으며 다음을 따릅니다(한 전환점에 다음 규칙 중 동일한 규칙을 여러 번 사용할 수는 없음).\n• 불길한 예감: 사이킥. 플레이어의 턴에 아군 요원을 • 흉조: 사이킥. 이 요원이 공격 주사위로 인한 일반 피해 운용 시, 1 예지 포인트를 소모하여 그 운용을 넘길 수 를 입을 때마다, 1 예지 포인트를 소모하여 그 피해를 있습니다. 무시할 수 있습니다. 이 요원이 무력화되었다면 예지 포인트를 획득, 또는 소모할 수 없습니다."
+        },
+        {
+          "name": "사전경고 [1AP]",
+          "text": "사이킥. 1 예지 포인트를 소모하여 1CP를 획득합니다. 이 행동은 전환점당 한 번만 수행할 수 있으며, 이 요원이 적 요원의 장악 범위 내에 있는 동안에는 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-NC-FRM",
+      "nameEn": "Night Lord Fearmonger",
+      "nameKo": "나이트 로드 공포상",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Scoped Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Terrorchem Vial",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/0",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Devastating 3",
+                "Limited 1",
+                "Saturate",
+                "*Terrorchem"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tainted Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "*Terrorchem"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "조준경 볼트 권총(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "조준경 볼트 권총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "공포작용제 약병",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "2/0",
+          "rules": [
+            "사거리 6\"",
+            "폭발 2\"",
+            "궤멸 3",
+            "한도 1",
+            "포화",
+            "공포작용제*"
+          ]
+        },
+        {
+          "name": "독날",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "공포작용제*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "공포작용제",
+          "text": "공격 주사위 처리 단계에, 플레이어가 결정적 성공으로 피해를 가하면(궤멸 무기 규칙의 결과도 포함), 그 무기의 대상으로 지정된 요원은 공포작용제 토큰을 하나 획득합니다. 이미 공포작용제 토큰을 보유하고 있다면 무시합니다."
+        },
+        {
+          "name": "공포작용제 독",
+          "text": "공포작용제 토큰을 보유한 요원이 운용 될 때마다 그 요원에게 D3 피해를 가합니다."
+        },
+        {
+          "name": "목표물 오염 [1AP]",
+          "text": "이 요원이 장악 중인 목표물 마커를 하나 지정하여 공포작용제 토큰을 줍니다. 단, 적 요원의 장악 범위 내에 있는 목표물 마커, 또는 이미 공포작용제 토큰을 보유한 목표물 마커는 제외됩니다. 공포작용제 토큰을 보유하지 않은 적 요원이 처음으로 지정된 목표물 마커를 경쟁할 때, 그 요원에게 2D3 피해를 가합니다(행동을 수행하는 도중이라면 행동이 종료될 때 적용).\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-NC-GNR",
+      "nameEn": "Night Lord Gunner",
+      "nameKo": "나이트 로드 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Piercing 1",
+                "Hot",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-NC-HGNR",
+      "nameEn": "Night Lord Heavy Gunner",
+      "nameKo": "나이트 로드 중화기 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Missile Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "중형 볼터(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(기동 한정)",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "중형 볼터(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(기동 한정)",
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "미사일 발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 2\"",
+            "중화기(기동 한정)"
+          ]
+        },
+        {
+          "name": "미사일 발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "중화기(기동 한정)",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-NC-SCR",
+      "nameEn": "Night Lord Screecher",
+      "nameKo": "나이트 로드 비명자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Lightning Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라이트닝 클로",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "집요",
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "비명자",
+          "text": "이 요원의 3\" 내에 있는 적 요원이 사격, 근접전, 또는 반격 시, 상대방은 공격 주사위를 재굴림할 수 없습니다."
+        },
+        {
+          "name": "잔악무도",
+          "text": "이 요원이 체력을 손실한 적 요원을 대상으로 근접전 시, 이 요원의 라이트닝 클로에 살상 4+ 무기 규칙 이 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-NC-SKT",
+      "nameEn": "Night Lord Skinthief",
+      "nameKo": "나이트 로드 피부침탈자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Nostraman Chainglaive",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "노스트라만 체인글레이브",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "산 채로 박피",
+          "text": "전환점당 한 번, 이 요원이 자신의 장악 범위 내로 들어온 적 요원을 무력화할 시, 이 요원 또는 무력화된 적 요원의 시야 내에 들어오고 6\" 내에 있는 적 요원을 하나 지정할 수 있습니다. 다음 전환점이 시작 될 때까지, 그 적 요원은 마커 장악 및 마커 회수나 임무 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "박피장의 폭군",
+          "text": "이 요원이 근접전 또는 반격 시, 3 이상의 일반 또는 결정적 피해를 입을 경우 그 피해가 -1만큼 변경됩니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-NC-VEN",
+      "nameEn": "Night Lord Ventrilokar",
+      "nameKo": "나이트 로드 장기인형사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "우상기수",
+          "text": "마커를 어느 플레이어가 장악했는지 판단할 때, 이 요원의 APL 수치가 +1만큼 변경된 것으로 간주합니다. APL 수치 자체가 변하는 것이 아니므로, 다른 APL 수치 변경 효과와 누적됩니다."
+        },
+        {
+          "name": "섬뜩한 흉내 [1AP]",
+          "text": "사이킥. 이 요원의 6\" 내에 있는 적 요원을 하나 지정합니다. 다음 중 하나를 선택하여 그 적 요원에게 적용합니다(각 옵션은 전투당 한 번만 선택).\n• 다음 운용이 종료될 때까지, • 그요원의명령을변경합니다. 그 요원이 이동할 지점을 알 그 요원의 APL 수치를 -1만 • 그 요원이 무상으로 질주 행 려주십시오. 큼 변경합니다. 동을 수행합니다. 상대에게 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-NC-WAR",
+      "nameEn": "Night Lord Warrior",
+      "nameKo": "나이트 로드 전사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "잔혹한 참형관",
+          "text": "이 요원이 부상 상태의 적 요원, 또는 체력 수치가 7 이하인 적 요원을 대상으로 사격, 근접전, 반격 시, 이 요원의 무기에 살상 5+ 무기 규칙이 부여됩니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 수색 섬멸 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 천벌갈퀴 예지자 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 볼트 권총, 파워 피스트\n• 볼트 권총, 파워 몰\n• 볼트 권총, 역장 무기\n• 플라스마 권총, 노스트라만 체인블레이드"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 천벌갈퀴 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 공포상\n• 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트 권총, 화염방사기, 주먹\n○ 볼트 권총, 멜타건, 주먹\n○ 볼트 권총, 플라스마 건, 주먹\n• 중화기 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트 권총, 중형 볼터, 주먹\n○ 볼트 권총, 미사일 발사기, 주먹"
+      },
+      {
+        "type": "rule",
+        "text": "• 비명자\n• 피부침탈자\n• 장기인형사\n• 전사, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트 권총, 체인소드\n○ 볼트건, 주먹"
+      },
+      {
+        "type": "rule",
+        "text": "전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "아스타르테스 · 암야를 두르고",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "아스타르테스"
+      },
+      {
+        "type": "lore",
+        "text": "이 유전적으로 개량된 초인들은 오로지 전쟁을 치르기 위해 탄생했다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 천벌갈퀴 요원은 운용 도중 사격 행동이나 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 사격 행동을 두 번 수행할 경우, 볼트 권총이나 볼트건, 또는 조준경 볼트 권총을 최소 한 번 사용해야 합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 천벌갈퀴 요원은 모두 명령과 무관하게 대응할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "암야를 두르고"
+      },
+      {
+        "type": "rule",
+        "text": "어둠은 나이트 로드에게 있어 우군이자 무기요, 저 자신과 마찬가지다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 천벌갈퀴 요원이 사격당할 때, 다음 요건을 모두 충족 하면 그 요원은 차폐 상태가 됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 그 요원이 적 요원의 시야에 들어오고, 그로부터 8\" 넘게 떨어져 있는 경우.\n• 그 요원이 자기보다 낮지 않은 고밀도 지형의 1 \" 내에 있을 때, 또는 모델의 베이스가 어느 부분이든 고지 밑에 있는 경우."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

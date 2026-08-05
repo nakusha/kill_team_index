@@ -1,0 +1,830 @@
+{
+  "id": "IMP-PHO",
+  "nameEn": "Phobos Strike Team",
+  "nameKo": "포보스 타격반",
+  "archetype": "Infiltration/Recon",
+  "color": "#7ba274",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "ASTA",
+    "nameEn": "Space Marines",
+    "nameKo": "스마"
+  },
+  "ploys": [
+    {
+      "id": "IMP-PHO-S-ATSKNF",
+      "name": "And They Shall Know No Fear",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "You can ignore any changes to the stats of friendly PHOBOS STRIKE TEAM operatives from being injured (including their weapons’ stats).",
+      "textKo": "아군의 injured 로 인한 스탯 변화를 무시 (무기 스탯 포함)"
+    },
+    {
+      "id": "IMP-PHO-S-DS",
+      "name": "Deadly Shots",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly PHOBOS STRIKE TEAM operative is shooting during an activation in which it hasn’t performed the Charge, Fall Back or Reposition action, or against an operative that isn’t in cover and is more than 6\" from it, that friendly operative’s ranged weapons have the Balanced weapon rule. Note that for the first requirement, that operative isn’t restricted from performing those actions after shooting.",
+      "textKo": "이동 없이 사격하거나 Cover 밖 6\" 초과 적 사격 시 Balanced"
+    },
+    {
+      "id": "IMP-PHO-S-GWF",
+      "name": "Guerrilla Warfare",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly PHOBOS STRIKE TEAM operatives can perform the following unique action:\nGUERRILLA WARFARE 1AP\nChange this operative’s order.\nAn operative cannot perform this action while within control range of an enemy operative.",
+      "textKo": "아군이 1AP 로 order 를 바꾸는 Guerrilla Warfare 행동 가능"
+    },
+    {
+      "id": "IMP-PHO-S-LA",
+      "name": "Lethal Assaults",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly PHOBOS STRIKE TEAM operative is fighting, its melee weapons have the Balanced weapon rule. If that friendly operative is doing so during an activation in which it performed the Charge action, its melee weapons also have the Lethal 5+ weapon rule.",
+      "textKo": "근접전 시 Balanced, Charge 한 활성화면 Lethal 5+ 추가"
+    },
+    {
+      "id": "IMP-PHO-T-CS",
+      "name": "Critical Shot",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when you resolve a critical success for a friendly PHOBOS STRIKE TEAM operative that’s shooting with a bolt weapon. Inflict D3 additional damage.",
+      "textKo": "bolt 무기 사격 크리티컬 성공 처리 시 D3 추가 피해"
+    },
+    {
+      "id": "IMP-PHO-T-PA",
+      "name": "Patient Ambush",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when it’s your turn to activate a friendly operative. You can skip that activation.",
+      "textKo": "자신의 활성화 차례에 그 활성화를 건너뜀"
+    },
+    {
+      "id": "IMP-PHO-T-SA",
+      "name": "Stealth Assault",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly PHOBOS STRIKE TEAM operative that has a Conceal order is activated, is given an Engage order, performs the Charge and then the Fight action, and you’re resolving your first attack dice from this activation. After doing so, you can immediately resolve another of your attack dice (before your opponent). The operative cannot have performed any other actions during this activation (but can do so after resolving this ploy).",
+      "textKo": "Conceal 에서 Charge 후 근접전 시 공격 주사위 1개 연속 처리"
+    },
+    {
+      "id": "IMP-PHO-T-TP",
+      "name": "Transhuman Physiology",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an operative is shooting a friendly PHOBOS STRIKE TEAM operative, in the Roll Defence Dice step. You can retain one of your normal successes as a critical success instead.",
+      "textKo": "피격 시 방어 주사위 Normal 성공 1개를 크리티컬로 보유"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-PHO-PS",
+      "name": "Purity Seals",
+      "textEn": "Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "TP당 1회, 실패 2개 이상이면 하나 버리고 다른 하나를 성공으로"
+    },
+    {
+      "id": "IMP-PHO-AUG",
+      "name": "Additional Utility Grenades",
+      "textEn": "This equipment allows you to select four utility grenades from the utility grenades equipment (see universal equipment). You cannot also select that equipment as normal (i.e. to give you six).",
+      "textKo": "보조 수류탄을 4개까지 선택 (공용 장비의 보조 수류탄과 중복 선택 불가)"
+    },
+    {
+      "id": "IMP-PHO-CB",
+      "name": "Combat Blades",
+      "textEn": "Friendly PHOBOS STRIKE TEAM operatives have the following melee weapon:\nNAME ATK HIT DMG\nCombat blade 5 3+ 3/4",
+      "textKo": "전원에게 컴뱃 블레이드 (A5 · H3+ · D3/4)"
+    },
+    {
+      "id": "IMP-PHO-SIA",
+      "name": "Special Issue Ammunition",
+      "textEn": "Once per turning point, when a friendly PHOBOS STRIKE TEAM operative is performing the Shoot action and you select a bolt carbine, marksman bolt carbine or occulus bolt carbine, you can use this rule. If you do, until the end of the turning point, that weapon has the Piercing 1 weapon rule.",
+      "textKo": "TP당 1회, 볼트 카빈류가 TP 종료까지 Piercing 1 획득"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-PHO-INFSGT",
+      "nameEn": "Infiltrator Sergeant",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFCOM",
+      "nameEn": "Infiltrator Commsman",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFHEL",
+      "nameEn": "Infiltrator Helix Adept",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFSAB",
+      "nameEn": "Infiltrator Saboteur",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Remote Detonator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "5/6",
+              "rules": [
+                "Heavy (Dash only)",
+                "Limited 1",
+                "Piercing 1",
+                "Silent",
+                "*Detonate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFVET",
+      "nameEn": "Infiltrator Veteran",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Custom Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Custom"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFVOX",
+      "nameEn": "Infiltrator Voxbreaker",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INFWAR",
+      "nameEn": "Infiltrator Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INCSGT",
+      "nameEn": "Incursor Sergeant",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Occulus Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INCMARK",
+      "nameEn": "Incursor Marksman",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Stalker Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INCML",
+      "nameEn": "Incursor Minelayer",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Occulus Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-INCWAR",
+      "nameEn": "Incursor Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Occulus Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-RVRSGT",
+      "nameEn": "Reiver Sergeant",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Accurate 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Special Issue Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Combat Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-PHO-RVRWAR",
+      "nameEn": "Reiver Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Accurate 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Special Issue Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Combat Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: INFILTRATION, RECON"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 PHOBOS STRIKE TEAM operative selected from the following list:\n• INFILTRATOR SERGEANT\n• INCURSOR SERGEANT\n• REIVER SERGEANT with one of the following options:\n○ Special issue bolt pistol; combat knife\n○ Bolt carbine; fists"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 PHOBOS STRIKE TEAM operatives selected from the following list:\n• INFILTRATOR COMMSMAN\n• INFILTRATOR HELIX ADEPT\n• INFILTRATOR SABOTEUR\n• INFILTRATOR VETERAN\n• INFILTRATOR VOXBREAKER\n• INFILTRATOR WARRIOR\n• INCURSOR MARKSMAN\n• INCURSOR MINELAYER"
+      },
+      {
+        "type": "rule",
+        "text": "• INCURSOR WARRIOR\n• REIVER WARRIOR with one of the following options:\n○ Special issue bolt pistol; combat knife\n○ Bolt carbine; fists"
+      },
+      {
+        "type": "rule",
+        "text": "Other than WARRIOR operatives, your kill team can only include each operative on this list once."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "OMNI-SCRAMBLER · TERROR · ASTARTES …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "OMNI-SCRAMBLER"
+      },
+      {
+        "type": "lore",
+        "text": "Backpack-mounted omni-scramblers serve to disrupt enemy communications."
+      },
+      {
+        "type": "rule",
+        "text": "STRATEGIC GAMBIT if a friendly INFILTRATOR operative is in the killzone. Select one enemy operative visible to a friendly INFILTRATOR operative, or within 6\" of a friendly VOXBREAKER operative. In the Firefight phase of this turning point, that enemy operative cannot be activated or perform actions until one of the following is true:"
+      },
+      {
+        "type": "rule",
+        "text": "• Your opponent has activated a number of enemy operatives equal to the number of friendly INFILTRATOR operatives in the killzone when this STRATEGIC GAMBIT was used.\n• It's the last enemy operative to be activated."
+      },
+      {
+        "type": "heading",
+        "text": "TERROR"
+      },
+      {
+        "type": "lore",
+        "text": "Dedicated terror troops, Space Marine Reivers utilise skull masks, shock grenades and vox-enhanced roars to terrify their victims."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever an enemy operative is within 3\" of friendly REIVER operatives, your opponent must spend 1 additional AP for that enemy operative to perform the Pick Up Marker and mission actions. Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of friendly REIVER operatives. Note this isn't a change to the APL stat, so any changes are cumulative with this."
+      },
+      {
+        "type": "heading",
+        "text": "ASTARTES"
+      },
+      {
+        "type": "rule",
+        "text": "These genetically modified superhumans are made for one purpose: war. During each friendly PHOBOS STRIKE TEAM operative's activation, it can perform either two Shoot actions or two Fight actions. If it's two Shoot actions, a bolt weapon must be selected for at least one of them. A bolt weapon is any ranged weapon that includes 'bolt' in its name, e.g. marksman bolt carbine, special issue bolt pistol, etc. Each friendly PHOBOS STRIKE TEAM operative can counteract regardless of its order."
+      },
+      {
+        "type": "heading",
+        "text": "MULTI-SPECTRUM ARRAY"
+      },
+      {
+        "type": "lore",
+        "text": "Feeding into the auto-senses of the bearer's armour, the multi-spectrum array's powerful augurs help to reveal hidden foes."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever a friendly INCURSOR operative is shooting, enemy operatives cannot be obscured."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

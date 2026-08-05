@@ -1,0 +1,88 @@
+/*
+ * 디자인 토큰 — 41번째 천년기 전장 기록물(dossier) 방향.
+ * 그을린 건메탈 표면 · 뼈색 활자 · 위험 표식 오렌지, 강조색은 킬팀 대표색을 런타임 주입.
+ */
+:root {
+  /* 표면 — 어두운 강철에서 재로 */
+  --surface-void: oklch(13% 0.012 265);
+  --surface-deep: oklch(17% 0.014 265);
+  --surface-raised: oklch(21% 0.014 265);
+  --surface-inset: oklch(15% 0.012 265);
+
+  /* 경계선 */
+  --line-hard: oklch(34% 0.016 265);
+  --line-soft: oklch(26% 0.014 265);
+
+  /* 활자색 — 따뜻한 뼈색 계열 */
+  --text-bone: oklch(93% 0.014 85);
+  --text-body: oklch(80% 0.012 85);
+  --text-muted: oklch(60% 0.012 265);
+  --text-faint: oklch(46% 0.012 265);
+
+  /* 의미색 */
+  --hazard: oklch(72% 0.19 55);      /* 위험 표식 · 전략 플로이 */
+  --signal: oklch(74% 0.14 205);     /* 화력전 플로이 · 원거리 무기 */
+  --blade: oklch(70% 0.16 25);       /* 근접 무기 */
+  --accent: oklch(72% 0.13 250);     /* 팩션/킬팀 대표색 — JS 가 덮어씀 */
+  --accent-ink: oklch(18% 0.02 265); /* 강조색 위에 얹는 글자색 */
+
+  /* 활자 */
+  --font-display: "Helvetica Neue", "Arial Narrow", Inter, system-ui, sans-serif;
+  --font-body: system-ui, -apple-system, "Apple SD Gothic Neo", "Pretendard", sans-serif;
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, monospace;
+
+  --text-hero: clamp(2.75rem, 1rem + 7vw, 6.5rem);
+  --text-title: clamp(1.75rem, 1rem + 3vw, 3.25rem);
+  --text-section: clamp(1.05rem, 0.95rem + 0.5vw, 1.35rem);
+  --text-base: clamp(0.9375rem, 0.9rem + 0.2vw, 1rem);
+  --text-small: 0.8125rem;
+  --text-micro: 0.6875rem;
+
+  /* 간격 — 균일한 패딩 대신 리듬을 준다 */
+  --space-page: clamp(1.25rem, 0.5rem + 3vw, 4.5rem);
+  --space-section: clamp(3rem, 2rem + 4vw, 6.5rem);
+  --space-card: clamp(1rem, 0.8rem + 0.8vw, 1.6rem);
+
+  --radius-sharp: 2px;
+  --radius-soft: 10px;
+  --corner-cut: 14px; /* 카드 모서리 절단 크기 */
+
+  --duration-fast: 130ms;
+  --duration-normal: 260ms;
+  --ease-out-expo: cubic-bezier(0.16, 1, 0.3, 1);
+
+  --shadow-lift: 0 18px 40px -24px oklch(0% 0 0 / 0.9);
+  --shadow-deep: 0 32px 70px -32px oklch(0% 0 0 / 0.95);
+
+  --max-width: 1360px;
+}
+
+/* 절단 모서리 — 장비 케이스 느낌 */
+.cut-corner {
+  clip-path: polygon(
+    0 0,
+    calc(100% - var(--corner-cut)) 0,
+    100% var(--corner-cut),
+    100% 100%,
+    var(--corner-cut) 100%,
+    0 calc(100% - var(--corner-cut))
+  );
+}
+
+/* 위험 표식 줄무늬 — 구획 구분용 */
+.hazard-rule {
+  height: 6px;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    var(--hazard) 0 8px,
+    transparent 8px 18px
+  );
+  opacity: 0.5;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 1ms;
+    --duration-normal: 1ms;
+  }
+}

@@ -1,0 +1,983 @@
+{
+  "id": "AEL-EDM",
+  "nameEn": "Exodite Dragon Masters",
+  "nameKo": "엑소다이트 용의 달인",
+  "archetype": "",
+  "color": "#6cae5e",
+  "size": {
+    "total": 5
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-EDM-S-WSP",
+      "name": "Wind-Swift Precision",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly EXODITE DRAGON MASTER operative is shooting, if it has SPEED 4+, its ranged weapons have the Balanced weapon rule.",
+      "textKo": "속도 4+ 보유 중이면 사격하는 원거리 무기에 균형"
+    },
+    {
+      "id": "AEL-EDM-S-DF",
+      "name": "Draconic Fury",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly EXODITE DRAGON MASTER operative is fighting:\n• If it has SPEED 4+, its melee weapons have the Balanced weapon rule.\n• If it has SPEED 7+, its melee weapons have the Ceaseless weapon rule.",
+      "textKo": "근접전 시 속도 4+ 면 균형, 속도 7+ 면 집요"
+    },
+    {
+      "id": "AEL-EDM-S-SF",
+      "name": "Sinuous Flux",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is shooting a friendly EXODITE DRAGON MASTER operative more than 6\" from it, if that friendly operative has SPEED 4+ or SPEED 7+, your opponent cannot re-roll their attack dice.",
+      "textKo": "6\" 밖에서 속도 4+/7+ 인 아군을 쏘는 적은 공격 주사위 재굴림 불가"
+    },
+    {
+      "id": "AEL-EDM-S-RTD",
+      "name": "Ride Them Down",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Once during each friendly EXODITE DRAGON MASTER MOUNTED operative’s activation, whenever it ends its move during the Sprint action:\n• If it moved 4\" or more during that action, you can inflict 1 damage on one enemy operative within its control range.\n• If it moved 7\" or more during that action, or it's a CLANBLADE operative, you can inflict D3 damage on one enemy operative within its control range instead.",
+      "textKo": "쾌주 이동 끝에 4\"+ 이동 시 장악 범위 내 적 1에 1 피해, 7\"+ 또는 부족검이면 D3"
+    },
+    {
+      "id": "AEL-EDM-T-SS",
+      "name": "Survivalist Spirit",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly EXODITE DRAGON MASTER MOUNTED operative’s activation or counteraction, before or after it performs an action. Until the start of its next activation, you can ignore any changes to that operative's weapon stats from being injured.",
+      "textKo": "기승 요원 운용·대응 중 사용 — 다음 운용까지 부상 수치 변경 무시"
+    },
+    {
+      "id": "AEL-EDM-T-LEAP",
+      "name": "Leap",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly EXODITE DRAGON MASTER MOUNTED operative performs the Sprint action. Instead of moving that operative, remove it from the killzone and set it back up in a location it can be placed within 1\" horizontally of its original location. This distance cannot be measured through terrain features more than 2\" tall, and that operative cannot be set up on Vantage terrain higher than 2\" from the killzone floor. That operative is treated as having moved 3\" for the purposes of its movement allowance and has SPEED 3-.",
+      "textKo": "쾌주 대신 수평 1\" 재배치 (높이 2\" 제한) — 이동 3\" 소모, 속도 3-"
+    },
+    {
+      "id": "AEL-EDM-T-FH",
+      "name": "Feral Hunger",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly EXODITE DRAGON MASTER operative, if it’s fighting against a wounded enemy operative with its Drakesteed fangs & talons or fangs & talons. You can re-roll any of your attack dice.",
+      "textKo": "송곳니와 발톱류로 체력 잃은 적 공격 시 공격 주사위 전부 재굴림 가능"
+    },
+    {
+      "id": "AEL-EDM-T-RM",
+      "name": "Riding Mastery",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly EXODITE DRAGON MASTER MOUNTED operative performs the Sprint action during its activation. During that action, that operative can perform the Pick Up Marker, Place Marker or a mission action (you can determine control during that action to do so), and any remaining move distance it had from that Sprint action can be used after it does so.",
+      "textKo": "쾌주 도중 마커 회수·배치·임무 행동을 끼워 수행하고 남은 이동을 계속"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-EDM-DSM",
+      "name": "Dragonscale Mesh",
+      "textEn": "Once per turning point, when an operative is shooting a friendly EXODITE DRAGON MASTER MOUNTED operative, in the Roll Defence Dice step, you can retain one of your normal successes as a critical success instead.",
+      "textKo": "기승 요원 피격 시 TP당 1회 방어 일반 성공 1개를 결정적으로 보전"
+    },
+    {
+      "id": "AEL-EDM-CT",
+      "name": "Clan Talismans",
+      "textEn": "Once per turning point, when a friendly EXODITE DRAGON MASTER MOUNTED operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "기승 요원이 굴림 2개+ 실패 시 TP당 1회 하나를 버리고 하나를 일반 성공으로"
+    },
+    {
+      "id": "AEL-EDM-LCM",
+      "name": "Lileathan Crystal Matrices",
+      "textEn": "Once per turning point, when a friendly EXODITE DRAGON MASTER operative is performing the Shoot action and you select a solar carbine or a profile of its long rifle, you can use this rule. If you do, until the end of that activation, that weapon has the Piercing 1 weapon rule.",
+      "textKo": "TP당 1회 태양 카빈·장총 사격에 관통 1 부여"
+    },
+    {
+      "id": "AEL-EDM-SS",
+      "name": "Spirit Stones",
+      "textEn": "Whenever a friendly EXODITE DRAGON MASTER MOUNTED operative is incapacitated, you gain 1CP.",
+      "textKo": "기승 요원이 무력화될 때마다 1CP 획득"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-EDM-CB",
+      "nameEn": "Dragon Master Clanblade",
+      "nameKo": "용의 달인 부족검",
+      "stats": {
+        "move": "12\"",
+        "apl": 4,
+        "save": "3+",
+        "wounds": 24
+      },
+      "weapons": [
+        {
+          "name": "태양 카빈",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "월광도",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "태양 카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 1"
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "월광도",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "비늘방패",
+          "text": "이 요원이 사격당할 때, 공격하는 무기가 관통 무기 규칙을 보유하고, 공격 주사위 중 결정적 성공을 하나도 보전하지 못했다면, 관통 무기 규칙의 x 값을 -1만큼 변경합니다. 이에 따라 관통1은 아무 효과가 없게 됩니다."
+        },
+        {
+          "name": "부족검 업그레이드",
+          "text": "이 요원이 전투에 참가할 때, 부족검 업그레이드 규칙(팩션 규칙 참고)을 최대 두 개 서로 다르게 선택하여 해당 전투 동안 데이터카드에 추가합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-EDM-LS",
+      "nameEn": "Dragon Master Leystalker",
+      "nameKo": "용의 달인 지맥추적자",
+      "stats": {
+        "move": "12\"",
+        "apl": 4,
+        "save": "3+",
+        "wounds": 24
+      },
+      "weapons": [
+        {
+          "name": "장총",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "기동",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 1"
+              ]
+            },
+            {
+              "name": "고정",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "*조준 사격"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "수렵도",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "장총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 1"
+          ]
+        },
+        {
+          "name": "장총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "조준 사격*"
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "수렵도",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "조준 사격",
+          "text": "이 요원은 3\"를 초과하여 이동한 경우 해당 운용 중 이 무기를 사용할 수 없으며, 이 무기를 사용한 후 해당 운용 중에는 3\"를 초과하여 이동할 수 없습니다. 이 무기 규칙은 엄호 행동을 방지하는 효과가 없습니다."
+        },
+        {
+          "name": "집념의 어둠비늘",
+          "text": "이 요원의 부상으로 인한 달음룡 송곳니와 발톱 공격의 명중 요구치 변경을 무시할 수 있습니다."
+        },
+        {
+          "name": "지맥추적자 업그레이드",
+          "text": "이 요원이 전투에 참가할 때, 지맥추적자 업그레이드 규칙(팩션 규칙 참고)을 최대 두 개 서로 다르게 선택하여 해당 전투 동안 데이터카드에 추가합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-EDM-SS",
+      "nameEn": "Dragon Master Stonesinger",
+      "nameKo": "용의 달인 돌노래꾼",
+      "stats": {
+        "move": "12\"",
+        "apl": 4,
+        "save": "3+",
+        "wounds": 24
+      },
+      "weapons": [
+        {
+          "name": "태양 카빈",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "맹독볏 독성침",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Severe",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "석장",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Psychic",
+                "Lethal 5+",
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "태양 카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 1"
+          ]
+        },
+        {
+          "name": "맹독볏 독성침",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "중상",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "달음룡 송곳니와 발톱",
+          "type": "melee",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "석장",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사이킥",
+            "살상 5+",
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "돌노래꾼 업그레이드",
+          "text": "이 요원이 전투에 참가할 때, 돌노래꾼 업그레이드 규칙(팩션 규칙 참고)을 최대 두 개 서로 다르게 선택하여 해당 전투 동안 데이터카드에 추가합니다."
+        },
+        {
+          "name": "회복의 노래 [1AP]",
+          "text": "• 사이킥. 이 요원의 시야에 들어오는 아군 엑소다이트 용의 달인 요원 하나를 지정합니다. 해당 요원은 상실된 체력을 2D3만큼 회복합니다.\n• 사이킥. 혹은, 모든 아군 엑소다이트 용의 달인 요원의 상실된 체력을 D3만큼 회복합니다.\n• (제약) 이 행동은 전환점당 한 번만 수행할 수 있으며, 이 요원이 적 요원의 장악 범위 내에 있는 경우에는 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-EDM-DK",
+      "nameEn": "Drakolithe",
+      "nameKo": "달음룡붙이",
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "송곳니와 발톱",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "송곳니와 발톱",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "초월적 회피",
+          "text": "이 요원이 돌격, 후퇴, 기동 행동을 수행할 때, 기존 위치에서 2\" 넘게 떨어진 곳에서 행동을 마칠 경우 속도 4+를, 5\" 넘게 떨어진 곳에서 마칠 경우 속도 7+를 보유합니다. 이 요원이 해당 운용 도중 속도 4+나 속도 7+를 보유하지 못한 상태에서 운용이 끝났다면, 속도 3-를 보유합니다. 이는 기존에 있던 곳을 기준으로 하여 직선거리로 판정하는 것이며, 이동한 거리의 합산이 아님에 유의하십시오. 따라서 단순히 원래 있던 위치로 다시 돌아가는 이동을 통해 보다 높은 속도를 얻을 수는 없습니다."
+        },
+        {
+          "name": "야수",
+          "text": "이 요원은 돌격, 질주, 후퇴, 근접전, 엄호, 마커 회수, 마커 배치, 기동, 임무 행동 외의 다른 행동은 수행할 수 없습니다. 아군 지맥추적자가 무력화될 시 이 요원은 마커 회수, 마커 배치, 임무 행동을 수행할 수 없습니다. 이 요원은 데이터카드에 없는 무기를 어느 것도 사용할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 수색 섬멸 — 편성 1+1+1+2 = 5명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 엑소다이트 용의 달인 부족검 요원"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 엑소다이트 용의 달인 지맥추적자 요원"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 엑소다이트 용의 달인 돌노래꾼 요원"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 2 엑소다이트 용의 달인 달음룡붙이 요원"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "달음룡 민첩성 · 용기병 전술 · 기민한 속도 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "달음룡 민첩성"
+      },
+      {
+        "type": "lore",
+        "text": "용의 달인은 달음룡이 순식간에 돌진하거나 완만하게 선회하여 사냥감을 추적하도록 이끈다."
+      },
+      {
+        "type": "rule",
+        "text": "엑소다이트 용의 달인 기승 요원은 돌격, 질주, 후퇴, 기동 행동을 수행할 수 없으며, 대신 쾌주와 선회 고유 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "쾌주 0AP"
+      },
+      {
+        "type": "rule",
+        "text": "운용 상태의 요원을 모델을 둘 수 있는 곳으로 이동합니다. 이동은 전진과 후진만 가능하고, 하나 이상의 직선 단위로 실시되며, 이때 각 직선 단위의 소수점 아래는 올립니다. 한 번의 운용 도중 9\"를 초과해서 전진하거나 3\"를 초과해서 후진할 수 없으며, 전환점당 총합 12\"를 초과하여 이동할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "하나의 직선 단위 전후로 최대 45°까지 운용 중인 요원을 회전할 수 있습니다. 이는 이동 상한과 무관하며, 이동력이 남았다면 그만큼 계속 이동할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "운용 요원은 올라가기를 수행할 수 없으며, 킬존 지면으 로부터 2\"보다 높은 고지에서 이동을 마칠 수 없습니다. 이 요원은 다른 요원을 통과해서 이동할 수 있으며, 지형 중 높이가 2\" 미만인 부분을 통과 가능 지형으로 간주합니다. 장비 지형지물을 통과할 경우, 해당 지형지물을 전 장에서 제거합니다."
+      },
+      {
+        "type": "rule",
+        "text": "요원은 대응 도중에 이 행동을 수행할 수 없습니다. 상대 방의 규칙, 임무 규칙 및 킬존 규칙과 관련하여 본 행동은 기동 행동으로 간주하되, 만약 운용 요원이 적 요원의 장악 범위 내에서 행동을 마친다면 돌격 행동으로 간주합니다."
+      },
+      {
+        "type": "heading",
+        "text": "선회 1AP"
+      },
+      {
+        "type": "rule",
+        "text": "운용 상태인 요원을 최대 45° 회전합니다. 이는 이동 상한과 무관합니다."
+      },
+      {
+        "type": "rule",
+        "text": "요원은 대응 도중에 이 행동을 수행할 수 없습니다. 상대 방의 규칙, 임무 규칙 및 킬존 규칙과 관련하여 본 행동은 질주 행동으로 간주하되, 만약 운용 요원이 적 요원의 장악 범위 내에서 행동을 마친다면 돌격 행동으로 간주합니다."
+      },
+      {
+        "type": "heading",
+        "text": "용기병 전술"
+      },
+      {
+        "type": "rule",
+        "text": "용의 달인 삼인회가 기습 공격을 몰아붙이기 전 달음용붙이를 보내 적을 몰이한다. 달음룡의 예리한 사냥 감각에 더해, 엑소다이 트는 그 위에서 도망가려는 사냥감에 위치적 우위를 점하고 적을 내리칠 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "전투 전 엑소다이트 용의 달인 킬 팀을 배치할 때, 처음으로 배치하는 킬 팀 병력의 1/3은 반드시 아군 달음룡붙이 요원이어야 하며, 일반적인 방법에 따라 배치합니다. 나머 지 엑소다이트 용의 달인 기승 요원들은 반드시 예비대에 배치해야 하므로, 모델을 킬존에 두지 않고 밖으로 빼둡니다."
+      },
+      {
+        "type": "rule",
+        "text": "첫 번째 화력전 페이즈에, 예비대로 배치한 모든 엑소다이트 용의 달인 기승 요원을 일반적인 방법에 따라 운용할 수 있습니다. 운용 시, 모델을 킬존 지면이자 동시에 킬존 가장 자리인 장소에 베이스가 닿도록 배치합니다. 해당 모델은 더 이상 예비대가 아니며, 이미 선회 행동을 수행한 것처럼 취급합니다(수행에 따른 AP는 소모됩니다). 이후 일반적인 절차에 따라 운용을 계속합니다."
+      },
+      {
+        "type": "rule",
+        "text": "모든 아군 엑소다이트 용의 달인 기승 요원은 매 전환점마다 두 번씩 운용이 가능하며, 두 번째 운용이 끝나면 비로 소 소진됩니다. 한 번의 운용 도중 3AP를 초과하여 행동할 수 없으며, 하나의 전환점 동안 자신의 APL 수치를 초과하여 행동할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "모든 아군 엑소다이트 용의 달인 기승 요원은 저밀도"
+      },
+      {
+        "type": "rule",
+        "text": "지형, 지형 중 높이가 2\" 미만인 부분, 완전히 간섭하지 않는 지형으로부터 엄폐 및 차폐 효과를 받을 수 없습니다. 아군 엑소다이트 용의 달인 기승 요원이 근접전 행동을 수행할 경우, 해당 행동이 끝날 때까지 장악 범위의 거리 요건을 수평 1\", 수직 4\"로 변경할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "기민한 속도"
+      },
+      {
+        "type": "lore",
+        "text": "품종 통제와 가혹한 환경 덕에 달음룡은 강력한 근육을 얻게 되었다. 이들은 침착하게 대기하다가도 주인의 지시 한 마디면 눈으로 따라갈 수 없을 정도로 맹렬하고 빠르게 달려나간다."
+      },
+      {
+        "type": "rule",
+        "text": "모든 아군 엑소다이트 용의 달인 요원의 속도는 속도 3-, 속도 4+, 속도 7+의 세 단계로 분류됩니다. 요원은 한 번에 하나의 속도 단계만 보유할 수 있으며, 속도 3-로 게임을 시작합니다."
+      },
+      {
+        "type": "rule",
+        "text": "다음의 조건 중 하나를 충족하면 엑소다이트 용의 달인 기승 요원은 속도 3-를 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 쾌주 행동을 수행했으며, 앞으로 4\" 미만, 혹은 뒤로"
+      },
+      {
+        "type": "heading",
+        "text": "이동한 경우"
+      },
+      {
+        "type": "rule",
+        "text": "• 쾌주 행동을 하지 않고 운용을 끝낸 경우"
+      },
+      {
+        "type": "rule",
+        "text": "엑소다이트 용의 달인 기승 요원이 쾌주 행동을 수행했으며, 그 행동 도중 4\" 이상 이동했다면 속도 4+를, 그 행동 도중에 7\" 이상 이동했다면 속도 7+를 각 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엑소다이트 용의 달인 요원이 사격의 대상이 될 때, 해당 아군 요원이 속도 4+를 보유 중이라면, 방어 주사 위 하나를 굴리지 않고 일반 성공으로 보전할 수 있습니다. 해당 아군 요원이 속도 7+를 보유 중이라면, 방어 주사위 하나를 결정적 성공으로 보전할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "엑소다이트 용의 달인 달음룡붙이 요원의 속도 변화는"
+      },
+      {
+        "type": "lore",
+        "text": "데이터카드를 참고하십시오."
+      },
+      {
+        "type": "heading",
+        "text": "부족검 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "말살의 달노래"
+      },
+      {
+        "type": "rule",
+        "text": "전해지는 바에 의하면, '월광도'라는 이름의 유래가 된 전설의 무기는 잘라낸 영혼의 줄기가 늘어날수록 더욱 크게 노래를 부른다고 한다. 부족검 중 일부는 이 소름 끼치는 장송곡을 흉내 내며, 적들의 비명과 흩뿌려지는 피를 뒤로한 채 사냥감 사이를 질주한다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원의 운용당 한 번, 이 요원이 전진하여 쾌주 행동을 수행했고, 근접전 행동으로 적 요원을 무력화했으며, 더는 적 요원의 장악 범위 내에 위치하고 있지 않다면, 이 규칙을 해당 운용 중에 사용할 수 있습니다. 규칙 사용 시, 요원 이 첫 번째 쾌주 행동을 수행하고 남은 이동 거리만큼 즉시 무상 쾌주 행동을 수행하여 전진할 수 있습니다. 단, 이 무상 행동 도중 모델을 회전할 수 없습니다. 즉, 해당 요원은 그 운용 도중 쾌주 행동을 두 번 수행할 수 있으며, 그 속도는 두 번의 쾌주 행동으로 이동한 총 거리로 계산합니다. 해당 요원은 상기한 일련의 행동 사이에 다른 행동을 추가할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "부족검 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "영적 후광"
+      },
+      {
+        "type": "rule",
+        "text": "부족검 가운데서도 가장 가혹한 시험을 견딜 운명을 타고난 이 들은 비늘방패의 에너지를 온전히 제어하도록 단련을 거듭한다. 자신의 사이킥 능력을 불어넣어 감각적으로 제어할 수 있게 되고, 영적 기운으로 이루어진 방어의 후광을 투사하여 가장 치명적인 부상조차 막아내기에 이른다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 근접전이나 반격을 수행할 때, 상대가 공격 주사위를 굴렸으나 아직 재굴림을 하기 전이라면, 전환점당 한 번 이 규칙을 사용할 수 있습니다. 규칙을 사용 시, 상대는 해당 절차 동안 6 미만의 공격 주사위 굴림 값을 결정 적 성공으로 보전할 수 없습니다. 이는 살상, 파쇄, 중상 등무기 규칙의 결과에 적용됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "부족검 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "초점 반사"
+      },
+      {
+        "type": "rule",
+        "text": "초자연적 반응속도와 적절하게 비늘방패를 기울이는 능숙함으로 부족검은 비겁한 적 사격의 에너지를 굴절하여 그대로 적에게 되돌려줄 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "적 요원이 6\" 이내에서 이 요원을 향해 사격할 때, 상대의 공격 주사위를 막기 위해 플레이어가 하나 이상의 결정적 성공 주사위를 할당한 경우, 이 규칙을 사용할 수 있습니다. 규칙을 사용 시, 행동이 끝나고 무력화된 요원을 제거하 기 전(이 요원이 무력화된 경우에도 마찬가지), 위와 같이할당한 결정적 성공 주사위 한 개마다 공격한 적 요원에게 1 피해를 가합니다."
+      },
+      {
+        "type": "heading",
+        "text": "부족검 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "부족의 창끝"
+      },
+      {
+        "type": "rule",
+        "text": "삼인회의 일원으로서 부족검이 담당하는 의례의 역할은 사냥감을 향한 돌격의 선두에 서는 것이다. 가장 명성이 높은 부족검은 마치 천상의 창처럼 대상을 꿰뚫어버린다. 그 놀라운 속도는 이들 이 보유한 여느 무기와 같이 연마를 거친 결실이다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 근접전 중일 때 다음 효과를 적용합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 속도 4+를 보유한 상태라면, 해당 절차 도중 처음으로 일반 성공으로 타격할 경우, 추가로 1 피해를 가합니다.\n• 속도 7+를 보유한 상태라면, 데이터카드에 기재된 해당 근접 무기의 일반 피해 수치를 +1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "부족검 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "날 선 자세"
+      },
+      {
+        "type": "lore",
+        "text": "부족검은 가장 위험한 용을 사냥하며 자신의 무예를 단련한다. 가공할 속도와 근력을 지닌 이 생물의 일격을 흘려내거나 막아낼 정도의 신속한 반응 속도를 가진 이만이 살아 돌아올 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 보유한 월광도로 근접전이나 반격을 수행할 때, 성공한 주사위 하나를 일반적인 처리 순서에 앞서 처리할 수 있습니다. 이 경우 해당 주사위는 반드시 막기에 사용해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "지맥추적자 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "방랑하는 처단자"
+      },
+      {
+        "type": "rule",
+        "text": "용의 달인 수렵단을 따돌릴 수 있다고 자신하는 자들은 곧바로 삼인회의 탁월한 명사수에게 쫓기는 신세가 된다. 지맥추적자는 한 번의 우아한 동작으로 기동 중에 장총을 거치, 장전, 조준하여 사격하고, 첫 번째 희생자가 쓰러지기도 전에 이미 눈으로 다음 표적을 훑고 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 쾌주 행동을 수행할 때, 그 행동 도중에 사격 행동을 수행할 수 있습니다. 단, 모델을 둘 수 있는 장소에서 사격해야 하며, 그 후 해당 쾌주 행동의 남은 이동 거리만 큼 계속 움직일 수 있습니다. 참고로 이 사격 행동은 해당 쾌주 행동이 끝나기 전에 수행하는 것이므로, 그 사격 행동에 있어 이 요원의 속도는 쾌주 행동의 시작 시를 기준으로합니다."
+      },
+      {
+        "type": "heading",
+        "text": "지맥추적자 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "닿지 않는 환영"
+      },
+      {
+        "type": "lore",
+        "text": "지맥추적자는 한곳에 머물지 않는다. 삼인회의 사냥터를 정찰하고, 적의 위치를 탐색하며 그들의 힘을 시험하면서 적의 손아귀를 몇 번이고 빠져나간다. 이와 같은 신출귀몰함으로 인해 많은 적들은 엑소다이트를 실체가 없는 영혼의 일종으로 여긴다. 적의 망상 이 커가는 동안 이미 지맥추적자는 그들이 예상치 못한 각도에서 가늠쇠를 겨누고 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 적 요원의 장악 범위 내에 들어가 있지 않다면, 화력전 페이즈가 끝날 때마다 무상으로 쾌주나 선회 행동을 수행할 수 있습니다. 단, 해당 행동 동안 3\"를 초과해서 움직일 수 없으며, 요원의 속도는 그대로 유지됩니다. 참고로 해당 전환점 동안 이동 상한을 넘어서 이동할 수는 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "지맥추적자 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "운명이 깃든 한 발"
+      },
+      {
+        "type": "rule",
+        "text": "어떤 지맥추적자는 행성 지맥의 숨겨진 흐름을 읽어 이를 폭넓게 활용한다. 이들은 정밀하게 발사한 총탄이 치솟는 불길과 울창한 초목을 지나, 아군의 곁을 안전하게 스친 후, 적 방어의 가장 취약 한 부분을 꿰뚫는 사격의 궤적을 그린다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 사격 행동을 수행할 때, 장총의 프로필을 선택했다면 전환점당 한 번 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 다음 규칙 중 하나를 선택하여 해당 절차가 끝날 때까지 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 적 요원은 차폐할 수 없습니다.\n• 적 요원의 장악 범위 내에 아군 엑소다이트 용의 달인 요원이 있더라도, 해당 적 요원을 사격의 유효 대상으로 지정할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "지맥추적자 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "연결체 파수꾼"
+      },
+      {
+        "type": "lore",
+        "text": "엑소다이트 행성의 선명한 지맥이든, 자연의 절제된 에너지가 흐르는 곳이든, 지맥추적자는 놀라운 정확도로 힘의 줄기가 모이는 장소를 감각적으로 인지하여 접속한다. 지맥추적자에게 발각되 지 않고 이런 장소에 접근할 수 있는 적은 손에 꼽는다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 속도 3-를 보유한다면, 전환점당 한 번 운용 중 킬존에 구애되지 않고 엄호 행동을 수행할 수 있습니다. 엄호 행동은 킬 팀 코어북의 폐쇄 공간 규칙을 참고하십시오."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 엄호 행동에 따른 영거리 사격을 수행할 경우, 영거리 사격으로 인한 무기의 명중 요구치 악화 규칙의 적용을 받지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "지맥추적자 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "땅거미 망토"
+      },
+      {
+        "type": "lore",
+        "text": "지맥추적자는 주변 환경과 하나가 되고 숨겨진 지맥의 은신 에너 지를 불러일으키는 데에 능하다. 자신을 사냥하려는 자들의 매서 운 눈길 앞에서 지맥추적자는 마치 초자연적인 땅거미에 덮이듯 모습을 숨길 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 8\"보다 떨어진 다른 요원의 사격 대상이 될 때, 엄폐 방호로 주사위를 보전할 수 없다면, 방어 주사위 한 개를 굴리지 않고 일반 성공으로 보전할 수 있습니다. 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 주사위 하나를 일반 성공 대신 결정적 성공으로 보전할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌노래꾼 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "세계의 곡성"
+      },
+      {
+        "type": "lore",
+        "text": "돌노래꾼이 구슬픈 애가를 부르며 적을 향한 혐오감을 표출한다. 소리는 곧 울려 퍼지는 곡성이 되어 적을 둘러싼 대기와 땅을 뒤흔 든다. 버티고 설 만큼 날렵하지 못한 자는 갑자기 생겨난 균열로 추락하든가, 아니면 굴러오는 바위에 깔리거나 주변 물체가 녹아 내려 생긴 곤죽을 허우적댈 것이다."
+      },
+      {
+        "type": "heading",
+        "text": "세계의 곡성 1AP"
+      },
+      {
+        "type": "rule",
+        "text": "사이킥. 이 요원의 시야에 들어오는 적 요원 하나를 지정합니다. 해당 요원과 그로부터 2\" 이내의 적 요원의 이동 수치를 그들의 다음 운용이 각 끝날 때까지 2\"씩차감합니다. 이는 부상으로 인한 효과에 누적되지 않습니다. 기승 요원에게는 아무 효과가 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "해당 요원마다 2D3를 별도로 굴립니다. 이 굴림 값과 새로운 이동 수치를 비교하여(행동 도중 능력치가 변경되지 않는 규칙보다 우선하여 적용됩니다) 그 차이만큼의 피해를 각 요원에게 가합니다. 기승 요원에게는 아무 효과가 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 행동은 전환점당 한 번만 수행할 수 있으며, 이 요원이 적요원의 장악 범위 내에 있는 경우에는 수행할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌노래꾼 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "창백한 달의 정화"
+      },
+      {
+        "type": "lore",
+        "text": "돌노래꾼이 정화의 사이킥 귀곡성을 엮어낸다. 오래 전 사라진 초생달이 일어나며 독성이 해독되고, 고통은 치유된다."
+      },
+      {
+        "type": "heading",
+        "text": "창백한 달의 정화 1AP"
+      },
+      {
+        "type": "rule",
+        "text": "사이킥. 이 요원의 시야에 들어오는 아군 엑소다이트 용의"
+      },
+      {
+        "type": "heading",
+        "text": "달인 요원 하나를 지정합니다. 상대가 해당 요원에"
+      },
+      {
+        "type": "heading",
+        "text": "부여한 규칙 효과 혹은 능력치 변경 하나를 제거합니"
+      },
+      {
+        "type": "rule",
+        "text": "다. 여기에는 가령 독 토큰, -1APL, 운용이나 행동의 제한 등이 포함됩니다. 하지만 이 규칙으로 기존에 상실 한 체력을 회복하거나, 임무 팩 규칙을 제거하거나, 부상으로 인한 효과를 무시할 수는 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 행동은 이 요원이 적 요원의 장악 범위 내에 있는 경우에는 수행할 수 없습니다. 해당 요원의 다른 고유 행동 부여 업그레이드와 달리, 이 행동은 전환점당 여러 번수행할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌노래꾼 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "파종"
+      },
+      {
+        "type": "lore",
+        "text": "식물 생애 주기의 느린 박자를 가속하자, 부자연스럽게 흐르는 덩굴과 뿌리가 앞으로 터져 나오며, 이 장소가 돌노래꾼의 영역임을 표시한다."
+      },
+      {
+        "type": "rule",
+        "text": "전환점당 한 번, 이 요원의 운용 도중, 행동을 수행하기 전후로 이 규칙을 사용할 수 있습니다. 규칙을 사용 시, 이 요원 이 장악 중인 목표물 마커 하나를 지정합니다. 이 규칙을 다시 사용하거나, 이 요원이 무력화되거나, 적 요원이 해당 마커를 장악하기 전까지(가장 먼저 충족되는 조건 기준) 이 요원은 해당 마커를 APL 1로 경쟁하고 있는 것으로 취급하고, 임무 행동이나 승리 조건과 관련하여 해당 마커가 이 요원의 장악 범위 내에 있지 않더라도 그 마커를 장악하고 있는 것으로 간주합니다. 참고로 이 규칙은 요원이 마커를 장악할 것을 전제로 하는 다른 임무 행동의 수행 또한 가능하게 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌노래꾼 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "바람의 은혜"
+      },
+      {
+        "type": "lore",
+        "text": "산들바람의 힘을 빌려, 사이커가 동료들의 모습을 가리며 안전으로 유도한다."
+      },
+      {
+        "type": "heading",
+        "text": "바람의 은혜 1AP"
+      },
+      {
+        "type": "rule",
+        "text": "사이킥. 이 요원의 시야에 들어오는 아군 엑소다이트 용의 달인 요원 하나를 지정합니다. 이 요원이 다음 전환점에 첫 번째 운용을 시작하거나, 무력화되거나, 이 행동을 다시 수행하기 전까지(순서에 상관없이 어느 하나라도 충족 시 효과 종료) 지정한 요원의 속도를 한 단계 올립니다. 즉, 만약 기존에 속도 3-를 보유했다면 속도 4+ 를, 기존에 속도 4+였다면 속도 7+를 보유하게 됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 행동은 전환점당 한 번만 수행할 수 있으며, 이 요원 이 적 요원의 장악 범위 내에 있는 경우에는 수행할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌노래꾼 업그레이드"
+      },
+      {
+        "type": "heading",
+        "text": "대지가 빚은 분노"
+      },
+      {
+        "type": "lore",
+        "text": "기묘한 몸짓으로 돌노래꾼은 바위 조각을 폭발시키거나 견고한 대지를 융해시켜 적을 집어삼키도록 명할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원은 다음 원거리 무기를 보유합니다."
+      },
+      {
+        "type": "heading",
+        "text": "무기 명칭 공격 명중 피해"
+      },
+      {
+        "type": "heading",
+        "text": "대지가 빚은 분노 4 3+ 4/3"
+      },
+      {
+        "type": "heading",
+        "text": "무기 규칙"
+      },
+      {
+        "type": "heading",
+        "text": "궤멸 2, 포화, 대지가 빚은 분노*"
+      },
+      {
+        "type": "rule",
+        "text": "*대지가 빚은 분노: 대상이 엄폐 중이라면, 이 무기에 살상 5+ 무기 규칙을 부여합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

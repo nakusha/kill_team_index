@@ -1,0 +1,843 @@
+[
+  {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움",
+    "sub": null,
+    "teams": [
+      {
+        "id": "IMP-BC",
+        "nameEn": "Battleclade",
+        "nameKo": "전투계통",
+        "archetype": "Infiltration/Recon",
+        "color": "#57a06b",
+        "size": {
+          "total": 10
+        },
+        "brief": "침투 · 정찰 — 편성 1+1+8 = 10명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-CI",
+        "nameEn": "Celestian Insidiants",
+        "nameKo": "셀레스티안 항마단",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#cf5a72",
+        "size": {
+          "total": 9
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+8 = 9명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-DKK",
+        "nameEn": "Death Korps",
+        "nameKo": "데스 코어",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#8a9c82",
+        "size": {
+          "total": 14
+        },
+        "brief": "방어 · 섬멸 — 편성 1+4+9 = 14명",
+        "counts": {
+          "operatives": 12,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-ESS",
+        "nameEn": "Elucidian Starstriders",
+        "nameKo": "엘루시디아의 성간활보자",
+        "archetype": "Recon/Security",
+        "color": "#b06aae",
+        "size": {
+          "total": 10
+        },
+        "brief": "정찰 · 방어 — 편성 10명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-AES",
+        "nameEn": "Exaction Squad",
+        "nameKo": "집행 분대",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#cc7530",
+        "size": {
+          "total": 11
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+10 = 11명",
+        "counts": {
+          "operatives": 12,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-HC",
+        "nameEn": "Hunter Clade",
+        "nameKo": "사냥 계통",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#d05c44",
+        "size": {
+          "total": 10
+        },
+        "brief": "정찰 · 섬멸 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 14,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-INB",
+        "nameEn": "Imperial Navy Breachers",
+        "nameKo": "제국 해군 돌파조",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#5a8fc4",
+        "size": {
+          "total": 11
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+10 = 11명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-INQ",
+        "nameEn": "Inquisitorial Agents",
+        "nameKo": "이단심문관 심복요원",
+        "archetype": "Recon/Security/Seek & Destroy/Infiltration",
+        "color": "#9fc4e6",
+        "size": {
+          "total": 12
+        },
+        "brief": "제한 없음 — 편성 1+1+5+5 = 12명",
+        "counts": {
+          "operatives": 56,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-KAS",
+        "nameEn": "Kasrkin",
+        "nameKo": "카스르킨",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#a3b155",
+        "size": {
+          "total": 10
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-NOV",
+        "nameEn": "Novitiates",
+        "nameKo": "수습 수녀단",
+        "archetype": "Recon/Security",
+        "color": "#e1dabb",
+        "size": {
+          "total": 10
+        },
+        "brief": "정찰 · 방어 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 12,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-RAT",
+        "nameEn": "Ratlings",
+        "nameKo": "래틀링 킬 팀",
+        "archetype": "Security/Infiltration",
+        "color": "#b8967a",
+        "size": {
+          "total": 11
+        },
+        "brief": "경비 · 침투 — 편성 1+10 = 11명",
+        "counts": {
+          "operatives": 13,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-SANC",
+        "nameEn": "Sanctifiers",
+        "nameKo": "정화사역단",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#d1a13a",
+        "size": {
+          "total": 11
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+1+9 = 11명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-SPECT",
+        "nameEn": "Spectre Squad",
+        "nameKo": "유령 분대",
+        "archetype": "Infiltration/Recon",
+        "color": "#56acb6",
+        "size": {
+          "total": 11
+        },
+        "brief": "침투 · 정찰 — 편성 1+1+9 = 11명",
+        "counts": {
+          "operatives": 12,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-TEMPAQ",
+        "nameEn": "Tempestus Aquilon",
+        "nameKo": "템페스투스 아퀼론",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#8481d8",
+        "size": {
+          "total": 11
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+1+9 = 11명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ASTA",
+    "nameEn": "Space Marines",
+    "nameKo": "스마",
+    "sub": "임페리움",
+    "teams": [
+      {
+        "id": "IMP-AOD",
+        "nameEn": "Angels Of Death",
+        "nameKo": "죽음의 천사",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#4f82cc",
+        "size": {
+          "total": 6
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-DW",
+        "nameEn": "Deathwatch",
+        "nameKo": "데스워치",
+        "archetype": "Seek & Destroy/Security",
+        "color": "#b9c3cf",
+        "size": {
+          "total": 5
+        },
+        "brief": "수색 섬멸 · 경비 — 편성 5명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-PHO",
+        "nameEn": "Phobos Strike Team",
+        "nameKo": "포보스 타격반",
+        "archetype": "Infiltration/Recon",
+        "color": "#7ba274",
+        "size": {
+          "total": 6
+        },
+        "brief": "침투 · 정찰 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 13,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-SCT",
+        "nameEn": "Scout Squad",
+        "nameKo": "스카웃 분대",
+        "archetype": "Infiltration/Recon",
+        "color": "#ac9560",
+        "size": {
+          "total": 9
+        },
+        "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+        "counts": {
+          "operatives": 6,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "IMP-WS",
+        "nameEn": "Wolf Scouts",
+        "nameKo": "늑대 척후",
+        "archetype": "Seek & Destroy/Recon",
+        "color": "#63a5b4",
+        "size": {
+          "total": 6
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스",
+    "sub": null,
+    "teams": [
+      {
+        "id": "CHAOS-BLD",
+        "nameEn": "Blooded",
+        "nameKo": "피칠갑",
+        "archetype": "Infiltration/Seek & Destroy",
+        "color": "#9fa07a",
+        "size": {
+          "total": 14
+        },
+        "brief": "침투 · 섬멸 — 편성 1+9+4 = 14명",
+        "counts": {
+          "operatives": 13,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-CULT",
+        "nameEn": "Chaos Cult",
+        "nameKo": "카오스 사교도",
+        "archetype": "Infiltration/Seek & Destroy",
+        "color": "#ab7cbb",
+        "size": {
+          "total": 14
+        },
+        "brief": "침투 · 수색 섬멸 — 편성 1+2+9+1+1 = 14명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-FELL",
+        "nameEn": "Fellgor Ravagers",
+        "nameKo": "펠고어 약탈자",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#b0876c",
+        "size": {
+          "total": 10
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-GPI",
+        "nameEn": "Gellerpox Infected",
+        "nameKo": "겔러폭스 감염자",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#c48792",
+        "size": {
+          "total": 11,
+          "min": true
+        },
+        "brief": "방어 · 섬멸 — 편성 11명 이상",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-GORE",
+        "nameEn": "Goremongers",
+        "nameKo": "유혈광",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#d45f54",
+        "size": {
+          "total": 8
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+7 = 8명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-LEG",
+        "nameEn": "Legionaries",
+        "nameKo": "군단병",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#c49a52",
+        "size": {
+          "total": 6
+        },
+        "brief": "방어 · 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 10,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-MW",
+        "nameEn": "Murderwing",
+        "nameKo": "살육날개",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#e8873f",
+        "size": {
+          "total": 6
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-NC",
+        "nameEn": "Nemesis Claw",
+        "nameKo": "천벌갈퀴",
+        "archetype": "Infiltration/Seek & Destroy",
+        "color": "#7f8ac2",
+        "size": {
+          "total": 6
+        },
+        "brief": "침투 · 수색 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-PM",
+        "nameEn": "Plague Marines",
+        "nameKo": "플레이그 마린 킬 팀",
+        "archetype": "Security/Seek & Destroy",
+        "color": "#a7bd5e",
+        "size": {
+          "total": 6
+        },
+        "brief": "경비 · 수색 섬멸 — 편성 1+5 = 6명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "CHAOS-WC",
+        "nameEn": "Warp Coven",
+        "nameKo": "워프주술회",
+        "archetype": "Recon/Security",
+        "color": "#57a0c0",
+        "size": {
+          "total": 5
+        },
+        "brief": "정찰 · 방어 — 편성 5명",
+        "counts": {
+          "operatives": 10,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리",
+    "sub": null,
+    "teams": [
+      {
+        "id": "AEL-BOK",
+        "nameEn": "Blades Of Khaine",
+        "nameKo": "케인의 칼날",
+        "archetype": "Seek & Destroy/Security/Recon/Infiltration",
+        "color": "#5cbf8a",
+        "size": {
+          "total": 8
+        },
+        "brief": "섬멸 · 방어 · 정찰 · 침투 — 편성 1+7 = 8명",
+        "counts": {
+          "operatives": 6,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "AEL-COR",
+        "nameEn": "Corsair Voidscarred",
+        "nameKo": "공허상흔 해적단",
+        "archetype": "Infiltration/Recon",
+        "color": "#d98a4a",
+        "size": {
+          "total": 9
+        },
+        "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "AEL-EDM",
+        "nameEn": "Exodite Dragon Masters",
+        "nameKo": "엑소다이트 용의 달인",
+        "archetype": "",
+        "color": "#6cae5e",
+        "size": {
+          "total": 5
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+1+1+2 = 5명",
+        "counts": {
+          "operatives": 4,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "AEL-HOTA",
+        "nameEn": "Hand Of The Archon",
+        "nameKo": "집정관의 손",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#7290cc",
+        "size": {
+          "total": 9
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+8 = 9명",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "AEL-MND",
+        "nameEn": "Mandrakes",
+        "nameKo": "맨드레이크",
+        "archetype": "Infiltration/Recon",
+        "color": "#a9dbe0",
+        "size": {
+          "total": 9
+        },
+        "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+        "counts": {
+          "operatives": 6,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "AEL-VDT",
+        "nameEn": "Void-Dancer Troupe",
+        "nameKo": "공허춤꾼 극단",
+        "archetype": "Infiltration/Recon",
+        "color": "#c874c4",
+        "size": {
+          "total": 8
+        },
+        "brief": "침투 · 정찰 — 편성 1+7 = 8명",
+        "counts": {
+          "operatives": 4,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "TYR",
+    "nameEn": "Tyranids",
+    "nameKo": "타이라니드",
+    "sub": null,
+    "teams": [
+      {
+        "id": "TYR-BBRO",
+        "nameEn": "Brood Brothers",
+        "nameKo": "무리 형제단",
+        "archetype": "Infiltration/Security",
+        "color": "#9aa663",
+        "size": {
+          "total": 13
+        },
+        "brief": "침투 · 경비 — 편성 1+9+3 = 13명",
+        "counts": {
+          "operatives": 15,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "TYR-RAV",
+        "nameEn": "Raveners",
+        "nameKo": "래버너",
+        "archetype": "Seek & Destroy/Infiltration",
+        "color": "#d5c49a",
+        "size": {
+          "total": 5
+        },
+        "brief": "침투 · 수색 섬멸 — 편성 1+4 = 5명",
+        "counts": {
+          "operatives": 6,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "TYR-WB",
+        "nameEn": "Wyrmblade",
+        "nameKo": "이무기 칼날",
+        "archetype": "Seek & Destroy/Infiltration",
+        "color": "#9b7ac0",
+        "size": {
+          "total": 14
+        },
+        "brief": "침투 · 섬멸 — 편성 1+13 = 14명",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "NEC",
+    "nameEn": "Necrons",
+    "nameKo": "네크론",
+    "sub": null,
+    "teams": [
+      {
+        "id": "NEC-CAN",
+        "nameEn": "Canoptek Circle",
+        "nameKo": "카놉텍 회합",
+        "archetype": "Recon/Security",
+        "color": "#6fb682",
+        "size": {
+          "total": 8
+        },
+        "brief": "정찰 · 경비 — 편성 1+2+1+1+3 = 8명",
+        "counts": {
+          "operatives": 5,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "NEC-HIER",
+        "nameEn": "Hierotek Circle",
+        "nameKo": "히에로텍 회합",
+        "archetype": "Recon/Security",
+        "color": "#5fb0c4",
+        "size": {
+          "total": 8
+        },
+        "brief": "정찰 · 경비 — 편성 1+1+1+5 = 8명",
+        "counts": {
+          "operatives": 9,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "TAU",
+    "nameEn": "T’au Empire",
+    "nameKo": "타우",
+    "sub": null,
+    "teams": [
+      {
+        "id": "TAU-FSKB",
+        "nameEn": "Farstalker Kinband",
+        "nameKo": "먼길밟이 혈족단",
+        "archetype": "Infiltration/Recon",
+        "color": "#b2dd8e",
+        "size": {
+          "total": 12
+        },
+        "brief": "침투 · 정찰 — 편성 1+11 = 12명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "TAU-PF",
+        "nameEn": "Pathfinders",
+        "nameKo": "선도 요원",
+        "archetype": "Infiltration/Recon",
+        "color": "#c1783a",
+        "size": {
+          "total": 12
+        },
+        "brief": "침투 · 정찰 — 편성 1+11 = 12명",
+        "counts": {
+          "operatives": 16,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "TAU-VESP",
+        "nameEn": "Vespid Stingwings",
+        "nameKo": "베스피드 독침날개",
+        "archetype": "Recon/Seek & Destroy",
+        "color": "#46b2bd",
+        "size": {
+          "total": 11
+        },
+        "brief": "정찰 · 수색 섬멸 — 편성 1+1+9 = 11명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "TAU-XV26",
+        "nameEn": "XV26 Stealth Battlesuits",
+        "nameKo": "XV26 스텔스 배틀슈트",
+        "archetype": "Infiltration/Recon",
+        "color": "#8ba0b8",
+        "size": {
+          "total": 7
+        },
+        "brief": "침투 · 정찰 — 편성 1+1+1+4 = 7명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "VOT",
+    "nameEn": "Leagues of Votann",
+    "nameKo": "보탄",
+    "sub": null,
+    "teams": [
+      {
+        "id": "VOT-HKS",
+        "nameEn": "Hearthkyn Salvagers",
+        "nameKo": "하스킨 인양단",
+        "archetype": "Recon/Security",
+        "color": "#d8bf6a",
+        "size": {
+          "total": 10
+        },
+        "brief": "정찰 · 경비 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "VOT-HKY",
+        "nameEn": "Hernkyn Yaegirs",
+        "nameKo": "헤른킨 예이기르",
+        "archetype": "Infiltration/Seek & Destroy",
+        "color": "#58a086",
+        "size": {
+          "total": 10
+        },
+        "brief": "침투 · 수색 섬멸 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 8,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  },
+  {
+    "id": "ORK",
+    "nameEn": "Orks",
+    "nameKo": "오크",
+    "sub": null,
+    "teams": [
+      {
+        "id": "ORK-KOM",
+        "nameEn": "Kommandos",
+        "nameKo": "코만도스",
+        "archetype": "Seek & Destroy/Infiltration",
+        "color": "#63a04a",
+        "size": {
+          "total": 10
+        },
+        "brief": "침투 · 섬멸 — 편성 1+9 = 10명",
+        "counts": {
+          "operatives": 11,
+          "ploys": 8,
+          "equipment": 4
+        }
+      },
+      {
+        "id": "ORK-WK",
+        "nameEn": "Wrecka Krew",
+        "nameKo": "레카 크루",
+        "archetype": "Seek & Destroy/Security",
+        "color": "#d0604d",
+        "size": {
+          "total": 8
+        },
+        "brief": "확보 · 수색 섬멸 — 편성 1+2+5 = 8명",
+        "counts": {
+          "operatives": 7,
+          "ploys": 8,
+          "equipment": 4
+        }
+      }
+    ]
+  }
+]

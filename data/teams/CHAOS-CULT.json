@@ -1,0 +1,799 @@
+{
+  "id": "CHAOS-CULT",
+  "nameEn": "Chaos Cult",
+  "nameKo": "카오스 사교도",
+  "archetype": "Infiltration/Seek & Destroy",
+  "color": "#ab7cbb",
+  "size": {
+    "total": 14
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-CULT-S-CONM",
+      "name": "Creatures of Nightmare",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 2\" of friendly CHAOS CULT MUTANT or CHAOS CULT TORMENT operatives. Note this isn’t a change to the APL stat, so any changes are cumulative with this.",
+      "textKo": "MUTANT/TORMENT 2\" 내 적의 마커 경합 총 APL 을 1 낮게 취급"
+    },
+    {
+      "id": "CHAOS-CULT-S-EIP",
+      "name": "Exaltation In Pain",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "You can ignore any changes to the Hit stat of friendly CHAOS CULT operatives’ weapons from being injured. Whenever an operative is shooting a friendly CHAOS CULT operative that’s wounded, you can re-roll one of your defence dice.",
+      "textKo": "부상으로 인한 Hit 저하 무시, 부상 아군 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "CHAOS-CULT-S-FOS",
+      "name": "Fervent Onslaught",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly CHAOS CULT operatives’ melee weapons have the Accurate 1 weapon rule, or the Accurate 2 weapon rule if that friendly operative is a MUTANT or TORMENT operative.",
+      "textKo": "아군 근접 무기가 Accurate 1, MUTANT/TORMENT 는 Accurate 2"
+    },
+    {
+      "id": "CHAOS-CULT-S-SA",
+      "name": "Sickening Aura",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is within 2\" of friendly CHAOS CULT MUTANT or CHAOS CULT TORMENT operatives, worsen the Hit stat of that enemy operative’s weapons by 1. This isn’t cumulative with being injured.",
+      "textKo": "MUTANT/TORMENT 2\" 내 적 무기의 Hit 을 1 악화"
+    },
+    {
+      "id": "CHAOS-CULT-T-AM",
+      "name": "Abhorrent Mutation",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly CHAOS CULT operative (excluding DARK COMMUNE) is activated. Select an ACCURSED GIFT for that operative to gain. This is in addition to any ACCURSED GIFTS it already has. Each friendly operative cannot be selected for this ploy more than once per battle, and if that operative turns into a different one (see Mutation faction rule), it still has that ACCURSED GIFT.",
+      "textKo": "아군 CHAOS CULT 활성화 시 ACCURSED GIFT 1개 추가 획득"
+    },
+    {
+      "id": "CHAOS-CULT-T-FF",
+      "name": "Faithful Follower",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly CHAOS CULT DARK COMMUNE operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly CHAOS CULT operative (excluding DARK COMMUNE) visible to and within 3\" of that DARK COMMUNE operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, that other operative is only in cover or obscured if the original target was.\nThis ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+      "textKo": "DARK COMMUNE 이 표적이 될 때 3\" 내 다른 아군으로 표적 변경"
+    },
+    {
+      "id": "CHAOS-CULT-T-FD",
+      "name": "Frenzied Demise",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly CHAOS CULT MUTANT or CHAOS CULT TORMENT operative is incapacitated, before it’s removed from the killzone. Inflict D3 damage (or D6 damage instead if that friendly operative is a TORMENT) on one enemy operative visible to and within 2\" of that friendly operative.",
+      "textKo": "MUTANT/TORMENT 무력화 시 2\" 내 적 1명에게 D3(TORMENT 는 D6) 피해"
+    },
+    {
+      "id": "CHAOS-CULT-T-UTD",
+      "name": "Unleash The Daemon",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly CHAOS CULT MUTANT or CHAOS CULT TORMENT operative’s activation, before or after it performs an action. During that activation, that operative can perform two Fight actions, and one of them can be free.",
+      "textKo": "MUTANT/TORMENT 활성화 중 Fight 2회 수행, 그중 1회는 무료"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-CULT-BS",
+      "name": "Baleful Script",
+      "textEn": "Once per battle STRATEGIC GAMBIT. Change one of your ACCURSED GIFTS. Note that if it's an ACCURSED GIFT an operative has from the Abhorrent Mutation firefight ploy, only that operative benefits from this.",
+      "textKo": "전투당 1회 GAMBIT, ACCURSED GIFT 하나를 다른 것으로 교체"
+    },
+    {
+      "id": "CHAOS-CULT-CG",
+      "name": "Covert Guises",
+      "textEn": "After revealing this equipment option, roll one D3. As a STRATEGIC GAMBIT in the first turning point, a number of friendly CHAOS CULT DEVOTEE operatives equal to the result that are wholly within your drop zone can immediately perform a free Reposition action, but must end that move wholly within 3\" of your drop zone.",
+      "textKo": "TP1 GAMBIT, D3 만큼의 DEVOTEE 가 드롭존 3\" 안에서 무료 Reposition"
+    },
+    {
+      "id": "CHAOS-CULT-UT",
+      "name": "Unholy Talisman",
+      "textEn": "Once per turning point, when an operative is shooting a friendly CHAOS CULT operative, in the Roll Defence Dice step, you can retain one of your normal successes as a critical success instead.",
+      "textKo": "TP당 1회, 사격받을 때 일반 성공 1개를 크리티컬로 보유"
+    },
+    {
+      "id": "CHAOS-CULT-VB",
+      "name": "Vile Blessing",
+      "textEn": "Once per battle, when an attack dice inflicts Normal Dmg on a friendly CHAOS CULT operative (excluding DEVOTEE), you can ignore that inflicted damage. If that friendly operative is a MUTANT or TORMENT operative, you cannot roll for the Unnatural Regeneration rule for that attack dice then decide to use this rule on the same dice – you must use one or the other.",
+      "textKo": "전투당 1회, DEVOTEE 를 제외한 아군이 받는 Normal Dmg 1회 무시"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-CULT-DEMA",
+      "nameEn": "Cult Demagogue",
+      "nameKo": "교단 선동가",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Diabolical Stave",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/6",
+              "rules": [
+                "Range 2\"",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Diabolical Stave",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/6",
+              "rules": [
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "사악한 지팡이(원거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/6",
+          "rules": [
+            "사거리 2\"",
+            "혼미"
+          ]
+        },
+        {
+          "name": "권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "사악한 지팡이(근접)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/6",
+          "rules": [
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "살육 독려 [1AP]",
+          "text": "• 보조. 이 요원으로부터 9\" 내에 있으며 시야에 들어온 아군 카오스 사교도 요원 하나가 즉시 무상으로 근접전 행동을 수행할 수 있습니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "급속 행동 독려 [1AP]",
+          "text": "• 보조. 이 요원으로부터 9\" 내에 있으며 시야에 들어온 아군 카오스 사교도 유닛 하나가 즉시 무상으로 돌격이나 질주 행동을 수행할 수 있습니다(돌격 시 최대 3\"를 초과하여 이동 불가).\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-BLBL",
+      "nameEn": "Blessed Blade",
+      "nameKo": "축복받은 검",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Commune Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "집회 검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "베어 쓰러뜨려라",
+          "text": "적 요원이 이 요원의 장악 범위에 있는 동안 후퇴 행동을 수행하면 이 규칙을 사용할 수 있습니다. 규칙을 사용하면 그 적 요원이 이동하기 전에 D3+1만큼 피해를 가합니다. 그 적 유닛이 축복받은 검 요원 둘의 장악 범위 내에 동시에 있다면, 대신 2D3+2만큼 피해를 가합니다."
+        },
+        {
+          "name": "하나처럼 싸우는 둘",
+          "text": "이 요원을 운용할 때마다, 이 요원으로부터 6\" 내에 있는 다른 준비 상태의 아군 축복받은 검 요원을 동시에 운용할 수 있습니다. 행동을 원하는 순서대로 한 번씩 수행하여 두 요원의 운용을 마칩니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-ICON",
+      "nameEn": "Iconarch",
+      "nameKo": "우상 사제",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Burning Censer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 5\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Crude Melee Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "불타는 향로",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 5\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "조악한 근접 무기",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "우상기수",
+          "text": "목표물 마커의 장악 여부를 판정할 때마다, 이 요원의 APL 수치가 +1만큼 변경된 것으로 간주합니다. APL 수치 자체가 변경되는 것은 아니므로, 다른 APL 수치 변경 효과가 있다면 누적되어 적용된다는 점에 유의하십시오."
+        },
+        {
+          "name": "파멸의 우상 [1AP]",
+          "text": "• 사이킥. 다음 효과 중 하나를 선택합니다. 효과는 이 요원의 다음 운용이 시작될 때, 또는 무력화되기 전까지, 혹은 이 행동을 다시 수행할 때까지 지속됩니다(이 중 어느 하나라도 충족 시):\n- 활력 강화: 사이킥. 아군 카오스 사교도 요원이 이 요원의 4\" 내에 있을 때마다, 4 이상의 일반 피해와 결정적 피해의 피해 수치를 -1만큼 변경합니다.\n- 쇠약화: 사이킥. 적 요원이 이 요원의 4\" 내에 있을 때, 그 요원이 입는 일반 피해와 결정적 피해의 피해 수치를 +1만큼 변경합니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-MW",
+      "nameEn": "Mindwitch",
+      "nameKo": "정신사술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Infernal Gaze",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "0/0",
+              "rules": [
+                "Psychic",
+                "Range 6\"",
+                "Devastating 2",
+                "Lethal 3+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "지옥의 시선",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "0/0",
+          "rules": [
+            "사이킥",
+            "사거리 6\"",
+            "궤멸 2",
+            "살상 3+"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사악한 쇠도 [1AP]",
+          "text": "• 사이킥. 이 요원에게 유효한 대상인 적 요원 하나를 지정합니다. 그 요원의 다음 운용이 종료될 때까지 APL 수치를 -1만큼 변경합니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "파멸의 소용돌이 [1AP]",
+          "text": "• 사이킥. 파멸의 소용돌이 마커를 킬존에서 제거합니다(만약 있다면). 파멸의 소용돌이 마커를 이 요원의 시야에 들어온 지형지물 위의 고지, 또는 다른 위치에 놓습니다. 그 마커의 2\" 내에 있는 모든 적 요원에게 1만큼 피해를 가합니다. 추가로, 전략 페이즈마다 준비 단계에 그 마커로부터 2\" 내에 있는 모든 적 요원에게 1만큼 피해를 가합니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-DEV",
+      "nameEn": "Chaos Devotee",
+      "nameKo": "카오스 신도",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Crude Melee Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "조악한 근접 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "그룹 운용",
+          "text": "이 요원이 소진되면, 상대가 요원을 운용하기 전에 다른 준비 상태의 아군 카오스 사교도 신도 요원을 운용해야 합니다(만약 가능하다면). 두 번째로 운용한 요원도 소진되면 상대가 평소처럼 요원을 운용하게 됩니다(즉, 이 규칙을 사용해서 요원을 둘 초과하여 운용할 수 없음)."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-MUT",
+      "nameEn": "Chaos Mutant",
+      "nameKo": "카오스 이형체",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Blasphemous Appendages",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "추악한 사지",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "저주받은 이형체",
+          "text": "이 요원은 고유 행동을 수행할 수 없습니다. 이 요원이 마커 회수 및 임무 행동(해치 조작 제외)을 수행하는 데 필요한 AP가 +1만큼 변경됩니다."
+        },
+        {
+          "name": "부자연적 재생",
+          "text": "공격 주사위 하나가 이 요원에게 3 이상의 피해를 가할 때마다 D6 하나를 굴립니다. 값이 5+라면, 그 공격의 피해를 -1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-CULT-TOR",
+      "nameEn": "Chaos Torment",
+      "nameKo": "카오스 격통체",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Hideous Mutations",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "흉측한 변이사지",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "집요",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "저주받은 격통체",
+          "text": "이 요원은 자신의 데이터카드에 없는 무기를 사용하거나, 마커 회수 행동, 고유 행동 및 임무 행동을 수행할 수 없습니다(해치 조작 제외)."
+        },
+        {
+          "name": "큰 덩치",
+          "text": "상대가 유효 대상을 지정할 때마다, 이 요원이 은폐 명령을 받은 상태라면 저밀도 지형에 엄폐할 수 없습니다. 이럴 때 이 요원을 유효 대상으로 지정 가능하나(시야에 들어온 경우), 엄폐 방호 효과는 유지합니다(만약 있다면)."
+        },
+        {
+          "name": "부자연적 재생",
+          "text": "공격 주사위 하나가 이 요원에게 3 이상의 피해를 가할 때마다 D6 하나를 굴립니다. 값이 5+라면, 그 공격의 피해를 -1만큼 변경합니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 수색 섬멸 — 편성 1+2+9+1+1 = 14명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 교단 선동가 요원\n↘ 2 축복받은 검 요원\n↘ 9 카오스 신도 요원\n↘ 1 우상 사제 요원\n↘ 1 정신사술사 요원"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "저주의 은총 · 변이",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "lore",
+        "text": "저주받은 카오스 추종자는 카오스 신에게 끔찍할 정도로 많은 변이를 하사받은 자들이다. 박쥐 날개, 단단한 뿔, 구부러진 발톱과 날렵한 촉수. 이 모든 것들이 적을 파괴하기 위해 주어진 악마적인 은총의 산물이다."
+      },
+      {
+        "type": "rule",
+        "text": "저주의 은총은 아군 카오스 사교도 요원이 다른 유형의 요원으로 변할 때 획득하는 규칙입니다(변이 팩션 규칙 참고). 전투가 진행되는 동안, 처음으로 아군 신도 요원이 이형체 요원으로 변할 때, 주요 저주의 은총을 선택합니다. 전투가 진행되는 동안 처음으로 아군 이형체 요원이 격통체 요원으로 변할 때, 부가 저주의 은총을 선택합니다."
+      },
+      {
+        "type": "rule",
+        "text": "모든 아군 이형체 요원은 주요 저주의 은총을 보유하며, 모든 아군 격통체 요원은 주요, 그리고 부가 저주의 은총을 둘 다 보유합니다. 같은 저주의 은총을 두 번 선택할 수는 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "저주의 은총 선택지는 동봉된 별개의 카드에 나와 있습니다"
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "1. 뒤틀린 날개"
+      },
+      {
+        "type": "rule",
+        "text": "너덜거리는 가죽 같은 날개가 살덩어리에서 튀어나온다. 이 악마적 변이의 주인공은 가공하리만큼 빠르게 날아올라 전장으로 돌격한다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 올라가기를 할 때마다 수직 거리를 항상 2\"로 간주할 수 있습니다(실제 수직 거리와 관계없이). 이 요원이 내려가기를 할 때마다 수직 거리를 무시합니다."
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "2. 쾌속"
+      },
+      {
+        "type": "lore",
+        "text": "이형체 사교도는 뒤틀린 근육질의 사지, 꿈틀대는 촉수와 점액이 흘러내리는 돌출부로 빠르게 전장을 돌파할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원의 이동력 수치를 +1\"만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "3. 키틴질"
+      },
+      {
+        "type": "lore",
+        "text": "이 격노한 부풀어 오른 살덩어리의 겉면에 키틴 껍질이 생겨나, 라스 총격, 탄환, 칼날을 모두 튕겨낸다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원의 방호 요구치를 1만큼 완화합니다."
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "4. 뿔"
+      },
+      {
+        "type": "lore",
+        "text": "어떤 이형체 사교도의 이마에는 날카롭고 휘어진 뿔 한 쌍이 돋아 난다. 이들은 적을 향해 돌격해 뿔로 적을 꿰뚫어 버린다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 돌격 행동 도중 이동을 종료할 때마다, 이 요원의 장악 범위 내에 있는 적 요원 하나에 1 피해를 가합니다. 이 요원이 격통체라면 대신 D3만큼 피해를 가합니다."
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "5. 힘줄 강화"
+      },
+      {
+        "type": "rule",
+        "text": "이 뒤틀린 사교도는 강화된 힘줄과 인대가 근육을 단단히 잡아주어 괴물 같은 힘으로 공격할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 장비한 근접 무기는 부상 상태로 인한 명중 요구 치 변화를 무시할 수 있습니다. 이 요원이 장비한 근접 무기에 무자비 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "저주의 은총"
+      },
+      {
+        "type": "heading",
+        "text": "6. 가시"
+      },
+      {
+        "type": "rule",
+        "text": "이 사교도의 몸과 무기는 날카로운 가시로 덮여 있어, 가까이 다가온 적의 살점을 찢어 발긴다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 근접전 또는 반격 시, 다음 효과를 적용합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 적 요원이 지원할 수 없습니다.\n• 그 절차 동안 처음 가하는 타격이 이 요원의 장악 범위 내에 있는 다른 모든 적 요원에 1 피해를 가합니다. 이 요원이 격통체라면 대신 D3만큼 피해를 가합니다."
+      },
+      {
+        "type": "heading",
+        "text": "변이"
+      },
+      {
+        "type": "lore",
+        "text": "카오스 사교도 중 가장 신심 깊은 이는 신비한 의식을 통해 살을 깎거나 문신을 새겨 몸에 사악한 문양을 그려 넣는다. 올바른 주문을 외우면 이러한 문양이 워프의 힘을 이끌어내어 그 신도의 몸에 변이를 일으킨다. 하지만보다 간악한 야심을 지닌 이는 이에 만족하 지 않는다. 벗겨진 살가죽과 고문으로 만신창이가 된 살점에 사악 한 기도문이 쓰이고, 데몬이 필멸자의 몸을 통해 현신한다."
+      },
+      {
+        "type": "rule",
+        "text": "전투 동안 아군 카오스 사교도 요원을 다음과 같이 변이시킬 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 전략 포석으로 현재 전환점 순서에 상응하는 숫자의 아군 카오스 사교도 요원을 변이시킬 수 있습니다. 전환점 1 = 2, 전환점 2 = 2, 전환점 3 = 3, 전환점 4+ = 4.\n• 아군 카오스 신도 요원이 장악 범위 내에 들어온 적 요원을 무력화할 때마다 변이할 수 있습니다.\n• 각 요원은 전환점당 한 번만 변이할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 요원이 변이할 때마다, 다음 중 하나를 선택합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 신도 요원이 변이한다면, 이형체 요원으로 변합니다.\n• 이 형체 요원이 변이한다면, 격통체 요원으로 변합니다."
+      },
+      {
+        "type": "heading",
+        "text": "(전환점당 최대 두 번)"
+      },
+      {
+        "type": "rule",
+        "text": "• 그 요원은 최대 D3+1만큼 손실한 체력을 회복합니다."
+      },
+      {
+        "type": "rule",
+        "text": "동시에 최대 다섯의 이형체 요원과 셋의 격통체 요원만 보유할 수 있습니다. 아군 요원이 새로운 요원으로 변할 때마다 다음 목록의 내용을 수행합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 미니어처를 교체하며, 새로운 미니어처의 베이스가 이전 미니어처의 베이스의 중심부가 있었던 위치에 가능한 한 가깝게 놓습니다. 적 요원의 장악 범위 내라도 가능하며, 만약 이전 미니어처가 적 요원의 장악 범위 내에 있었고, 새로운 미니어처도 그렇게 놓을 수 있다면, 그 적 요원의 장악 범위 내에 들어가게 놓아야 합니다.\n• 새 로운 요원은 이전의 요원이 손실한 만큼의 체력을 잃습니다.\n• 변이 전에 그 요원을 지정해 적용된 규칙에 있어서 여전 히 같은 요원으로 간주하며, 그저 다른 유형의 미니어처와 데이터카드 규칙을 사용하는 것 뿐입니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,1183 @@
+{
+  "id": "IMP-SANC",
+  "nameEn": "Sanctifiers",
+  "nameKo": "정화사역단",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#d1a13a",
+  "size": {
+    "total": 11
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-SANC-S-FB",
+      "name": "Fervent Brawl",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly SANCTIFIER operative that’s benefitting from the SERMON is fighting or retaliating, its melee weapons have the Ceaseless weapon rule.",
+      "textKo": "SERMON 적용 아군의 근접 무기가 근접전·반격 시 Ceaseless"
+    },
+    {
+      "id": "IMP-SANC-S-RTF",
+      "name": "Rally The Flock",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Each friendly SANCTIFIER operative (excluding ORATOR) that’s benefitting from the SERMON can immediately perform a free Dash or Fall Back action in an order of your choice (choose separately for each and, for the latter, it cannot move more than 3\"). Each that does so must end that move closer and visible to (or vice versa) a friendly ORATOR operative. You cannot use this ploy during the first turning point.",
+      "textKo": "SERMON 적용 아군이 ORATOR 쪽으로 무료 Dash 나 Fall Back"
+    },
+    {
+      "id": "IMP-SANC-S-TEP",
+      "name": "The Emperor Protects",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly SANCTIFIER operative that’s benefitting from the SERMON, you can re-roll any of your defence dice results of one result (e.g. results of 2).",
+      "textKo": "SERMON 적용 아군이 사격당할 때 특정 눈 방어 주사위 재굴림"
+    },
+    {
+      "id": "IMP-SANC-S-ZB",
+      "name": "Zealous Persecution",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly SANCTIFIER operative is fighting during an activation in which it performed the Charge action, its melee weapons have the Lethal 5+ weapon rule.",
+      "textKo": "Charge 한 활성화에 근접전 시 근접 무기가 Lethal 5+ 획득"
+    },
+    {
+      "id": "IMP-SANC-T-AE",
+      "name": "Ardent Eradication",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly SANCTIFIER operative, if it’s shooting against or fighting against an enemy operative that’s within 3\" of a friendly ORATOR operative (or 6\" if the ORATOR is a CONFESSOR). You can re-roll any of your attack dice.",
+      "textKo": "ORATOR 3\" 내 적을 공격할 때 공격 주사위 재굴림"
+    },
+    {
+      "id": "IMP-SANC-T-RF",
+      "name": "Redeemed Through Fire",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly SANCTIFIER operative that has a weapon with the Blaze weapon rule is incapacitated, before it’s removed from the killzone. Each enemy operative visible to and within 2\" of it gains one of your Blaze tokens (if it doesn’t already have one).",
+      "textKo": "Blaze 무기 아군 무력화 시 2\" 내 적들에게 Blaze 토큰 부여"
+    },
+    {
+      "id": "IMP-SANC-T-ROS",
+      "name": "Rosarius",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an attack dice inflicts Normal Dmg on a friendly SANCTIFIER operative. Ignore that inflicted damage.",
+      "textKo": "아군이 Normal Dmg 를 받을 때 그 피해를 무시"
+    },
+    {
+      "id": "IMP-SANC-T-UWD",
+      "name": "Unwavering Devotion",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly SANCTIFIER ORATOR or SANCTIFIER MIRACULIST operative is selected as the valid target of a Shoot action or to fight against during the Fight action. Select one other friendly SANCTIFIER operative (excluding CONFESSOR, MIRACULIST and ORATOR) visible to and within 3\" of that first friendly operative to become the valid target or to be fought against (as appropriate) instead (even if it wouldn’t normally be valid for this). If it’s the Fight action, treat that other operative as being within the fighting operative’s control range for the duration of that action. If it’s the Shoot action, that other operative is only in cover or obscured if the original target was.\nThis ploy has no effect if it’s the Shoot action and the ranged weapon has the Blast or Torrent weapon rule.",
+      "textKo": "ORATOR/MIRACULIST 가 대상이 될 때 3\" 내 다른 아군이 대신 대상"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-SANC-SO",
+      "name": "Sanctification Orbs",
+      "textEn": "Once per turning point, one friendly SANCTIFIER operative (excluding CHERUB, DEATH CULT ASSASSIN and MIRACULIST) can perform the following unique action:\nSANCTIFICATION ORB 1AP\nSelect one enemy operative visible to and within 6\" of this operative. That operative and each other enemy operative within 1\" of it takes a doused test. For an operative to take a doused test, roll one D6: on a 3+, it gains one of your Doused tokens.\nWhenever a friendly SANCTIFIER operative is shooting an operative that has one of your Doused tokens with a weapon that has the Blaze weapon rule, that weapon also has the Seek weapon rule.\nAfter a friendly SANCTIFIER operative uses a weapon that has the Blaze weapon rule against an enemy operative that has one of your Doused tokens, remove that token (even if the Seek weapon rule wasn’t used).\nThis operative cannot perform this action while within control range of an enemy operative.",
+      "textKo": "TP당 1회 SANCTIFICATION ORB (1AP) — 6\" 안 적이 doused test"
+    },
+    {
+      "id": "IMP-SANC-PS",
+      "name": "Purity Seals",
+      "textEn": "Once per turning point, when a friendly SANCTIFIER operative is shooting or fighting, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "TP당 1회, 실패 2개 이상이면 하나 버리고 다른 하나를 성공으로"
+    },
+    {
+      "id": "IMP-SANC-ET",
+      "name": "Ecclesiarchy Texts",
+      "textEn": "In the Ready step of each Strategy phase, roll 3D6: if the result is less than the remaining wounds of a friendly ORATOR operative, you gain 1CP. Note that this is done before the Gambit step, so if there isn’t a valid ORATOR operative, you cannot use this rule during that turning point (e.g. during the first turning point).",
+      "textKo": "매 Ready 단계에 3D6 이 ORATOR 의 남은 상처보다 작으면 1CP 획득"
+    },
+    {
+      "id": "IMP-SANC-ICS",
+      "name": "Imperial Cult Symbols",
+      "textEn": "Once per turning point, when an operative is shooting a friendly SANCTIFIER operative that’s benefitting from the SERMON, when you collect your defence dice, you can use this rule. If you do, change one of the attacker’s retained critical successes to a normal success (any weapon rules they’ve already resolved aren’t affected, e.g. Piercing Crits).",
+      "textKo": "TP당 1회, SERMON 중인 아군 방어 시 상대 크리티컬 1개를 일반 성공으로"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-SANC-CFS",
+      "nameEn": "Sanctifier Confessor",
+      "nameKo": "정화사역단 고해사제",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Mace of Censure",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/5",
+              "rules": [
+                "Brutal",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "책망의 철퇴",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/5",
+          "rules": [
+            "무자비",
+            "충격"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "대열 지휘",
+          "text": "첫 번째 전환점이 끝난 이후 매 전환점마다, 이 요원이 연설가이며 운용 도중 돌격, 후퇴, 기동 행동을 수행하면 이동 전에 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 설교의 효과를 받는 아군 정화사역단 요원을 각 각 결정합니다. 결정된 아군 정화사역단 요원은 이 요원이 행동을 마친 후 플레이어가 지정한 순서(요원마다 별개로 지정)에 따라 즉시 무상으로 돌격, 후퇴, 기동 행동을 수행할 수 있습니다. 단, 각 요원은 3\"를 초과해 이동할 수 없으며 반드시 설교의 효과를 계속 받을 수 있는 위치에서 이동을 마쳐야 합니다. 규칙이 완전히 처리되기 전에 이 요원이 엄호 행동에 의한 방해(킬 팀 코어북의 폐쇄 공간 규칙 참고) 등으로 무력화되면, 규칙이 완전히 처리될 때까지 요원을 킬존에서 제거하지 않습니다."
+        },
+        {
+          "name": "위엄 있는 연설",
+          "text": "이 요원의 시야에 들어오며 6\" 내에 있 는 적 요원이 운용이나 대응 도중 행동을 수행할 때마다 이 규칙을 사용할 수 있습니다. 규칙 사용 시, D6를 하나 굴립니다. 값이 적 요원의 APL 수치보다 높으면 다음 규칙을 적용합니다.\n• 규칙이 적용된 적 요원은 그 운용/대응 도중 하려고 했던 행동을 수행할 수 없습니다. AP는 반환되지 않으며, 대응 중이었다면 대응이 종료됩니다.\n• 이 규칙은 전투 중에 다시 사용할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-CRB",
+      "nameEn": "Sanctifier Cherub",
+      "nameKo": "정화사역단 케루브",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [
+        {
+          "name": "Incentiviser",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/3",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "격려의 회초리",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/3",
+          "rules": [
+            "충격"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "케루브",
+          "text": "• 목표물 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오.\n• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외한 다른 모든 규칙(예: 색적, 고지)에 우선합니다.\n• 이 요원은 자신의 데이터카드에 명시되지 않은 무기를 사용할 수 없으며, 격려 이외의 고유 행동을 사용할 수 없습니다."
+        },
+        {
+          "name": "비행",
+          "text": "이 요원은 돌격, 후퇴, 기동 행동을 수행할 때마다 비행할 수 있습니다. 비행 시, 요원을 이동하는 대신 킬존에서 제거한 다음 본래 위치로부터 이동 수치와 동일한 수 평 거리 내에 완전히 들어가도록 다시 배치합니다(킬존: 갤로다크 등 폐쇄 공간 규칙을 사용하는 킬존에서는 벽지형을 넘거나 통과해서 이 거리를 측정할 수 없습니다). 비행 시에는 돌격 행동을 수행할 때 이동 거리가 추가되 지 않는다는 점에 유의하십시오. 요원은 반드시 놓을 수 있는 위치에 배치해야 하며, 돌격 행동을 수행하지 않는 한 적 요원의 장악 범위 내에는 배치할 수 없습니다."
+        },
+        {
+          "name": "격려 [1AP]",
+          "text": "보조. 이 요원의 시야에 들어왔으며 2\" 내에 있는 다른 아군 정화사역단 요원(고해사제, 죽음숭배 암살자, 기적술사 및 연설가인 요원 제외)을 하나 지정합니다. 다음 운용이 끝날 때까지, 지정한 요원의 APL 수치를 +1만큼 변경합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-CFG",
+      "nameEn": "Sanctifier Conflagrator",
+      "nameKo": "정화사역단 화형사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Twin Hand Flamers",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 2\"",
+                "*Blaze"
+              ]
+            },
+            {
+              "name": "Twin Torrent",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 0\"",
+                "*Twin Torrent",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butts",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "쌍수 한손 화염방사기(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 2\"",
+            "광염*"
+          ]
+        },
+        {
+          "name": "쌍수 한손 화염방사기(이중 격류)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 0\"",
+            "이중 격류¹",
+            "광염*"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "집요"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "¹",
+          "text": "이중 격류: 아군 요원의 장악 범위 내에 있지 않은 서로 다른 유효 대상을 둘 지정합니다. 플레이어가 원하는 순서대로 지정한 대상에게 이 무기로 사격합니다(각 절차는 별도로 굴림). 격류 0\"는 부가 대상을 지정할 수 없다는 의미이나, 협소한 요새 규칙(킬 팀 코어북의 킬존: 볼쿠스 참고)처럼 격류 무기 규칙과 관련된 다른 모든 규칙은 그대로 적용됩니다."
+        },
+        {
+          "name": "정화 구체 수납대",
+          "text": "이 요원이 정화 구체 행동(팩션 장비 참고)을 수행할 수 있습니다. 이 규칙을 통해 행동을 수행 하면 장비의 전환점당 한 번 한도가 차감되지 않습니다 (즉, 다른 요원이 장비 사용 시 차감과 무관)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-ASS",
+      "nameEn": "Sanctifier Death Cult Assassin",
+      "nameKo": "정화사역단 죽음숭배 암살자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Throwing Knives",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/5",
+              "rules": [
+                "Range 6\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ritual Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/6",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비도",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/5",
+          "rules": [
+            "사거리 6\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "의식용 도검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/6",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "날 선 자세",
+          "text": "이 요원이 근접전이나 반격을 수행할 때, 성공한 주사위 하나를 일반적인 처리 순서에 앞서 처리할 수 있습니다. 그 성공 주사위는 반드시 막기에 사용해야 합니다."
+        },
+        {
+          "name": "숙련 암살자 [1AP]",
+          "text": "이 요원의 명령을 변경합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-ABB",
+      "nameEn": "Sanctifier Drill Abbot",
+      "nameKo": "정화사역단 숙달 승원장",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Great Hammer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/4",
+              "rules": [
+                "Brutal",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "거대 망치",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/4",
+          "rules": [
+            "무자비",
+            "충격"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "스콜라 프로게니움 군기반장",
+          "text": "이 요원에게서 6\" 내에 있는 아군 정화사역단 요원은 부상으로 인한 능력치 변경을 무시할 수 있습니다 (무기 능력치 포함)"
+        },
+        {
+          "name": "부존의 해골",
+          "text": "이 요원에게서 6” 내에 있는 적 요원은 APL 수치를 기본값보다 높게 변경할 수 없습니다(기존에 적용된 그러한 변경 사항은 모두 제거). 이 요원에게 서 6\" 넘게 떨어진 적 요원의 APL 수치가 기본값보다 높게 변경된 상태이며, 상대가 마지막 남은 AP를 소모 해 이 요원의 6\" 내로 그 적 요원을 이동했다면, 상대는 APL 수치를 초과해 AP를 소모했을 수 있습니다. 이러한 상황은 허용됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-PER",
+      "nameEn": "Sanctifier Persecutor",
+      "nameKo": "정화사역단 박해자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 1\"",
+                "Blaze *"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eviscerator",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "한손 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 1\"",
+            "광염*"
+          ]
+        },
+        {
+          "name": "적출대검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "무자비"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "무자비한 질책",
+          "text": "이 요원이 각 운용 도중 처음으로 근접전 행동을 수행할 때, 그 절차에 이 요원과 적 요원 중 누구도 무력화되지 않았다면 이후 이 요원이 즉시 무상 근접전 행동을 수행할 수 있습니다. 단, 그 행동에서는 다른 적 요원을 지정해 근접전을 수행할 수 없습니다(반드시 앞선 적 요원이 근접전 대상으로 유효해야 합니다). 이는 행동 제약에 우선합니다."
+        },
+        {
+          "name": "광신적 응징",
+          "text": "이 요원이 근접전 행동 도중 무력화되면, 이 요원을 킬존에서 제거하기 전에 이 요원이 그 절차에서 아직 처리하지 않은 성공 주사위로 적 요원을 타격할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-MIR",
+      "nameEn": "Sanctifier Miraculist",
+      "nameKo": "정화사역단 기적술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Holy Light",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/3",
+              "rules": [
+                "Range 8\"",
+                "Devastating 3",
+                "Limited 1",
+                "Piercing 1",
+                "Saturate",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Wreath In Fire",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Blast 1\"",
+                "Limited 1",
+                "Wreathed*",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Burning Hands",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "1",
+              "hit": "2+",
+              "damage": "7/8",
+              "rules": [
+                "Brutal",
+                "Limited 1",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "1",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "성스러운 빛",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/3",
+          "rules": [
+            "사거리 8\"",
+            "궤멸 3",
+            "한도 1",
+            "관통 1",
+            "포화",
+            "광염*"
+          ]
+        },
+        {
+          "name": "휘모는 불꽃",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "폭발 1\"",
+            "한도 1",
+            "휘몰이¹",
+            "광염*"
+          ]
+        },
+        {
+          "name": "불타는 손길",
+          "type": "melee",
+          "attacks": "1",
+          "hit": "2+",
+          "damage": "7/8",
+          "rules": [
+            "무자비",
+            "한도 1",
+            "광염*"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "2",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "¹",
+          "text": "휘몰이: 이 요원은 적 요원의 장악 범위 내에 들어간 동안 이 무기로 사격 행동을 수행할 수 있습니다. 이때는 유효 대상을 지정하지 않으며, 대신 항상 이 요원을 주대상으로 하되 부가 대상에게만 사격을 수행합니다. 이 때 부가 대상은 엄폐 또는 차폐 효과를 받을 수 없습니다 (즉, 이 요원을 중심으로 폭발 규칙을 적용하지만 이 요원은 영향을 받지 않음)."
+        },
+        {
+          "name": "기적",
+          "text": "전투 도중 이 요원이 처음으로 무력화되면, 그 대신 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 남은 공격 주사위는 모두 버리며(이 요원이 근접전이나 반격 중이었다면 플레이어의 주사위도 버림), 이후 이 요원이 앞선 행동의 제약을 무시하고 즉시 무상으로 질주 또는 후퇴 행동을 수행할 수 있습니다 (후퇴 시 3\"를 초과해 이동 불가)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-MIS",
+      "nameEn": "Sanctifier Missionary",
+      "nameKo": "정화사역단 전도사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Brazier Of Holy Fire",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 4\"",
+                "Saturate",
+                "Torrent 1\"",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ministorum Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\"",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Brazier Of Holy Fire",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/4",
+              "rules": [
+                "Shock",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "성화의 화로",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "충격",
+            "광염*"
+          ]
+        },
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "미니스토룸 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\"",
+            "광염*"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "성화의 화로",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/4",
+          "rules": [
+            "충격",
+            "광염*"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "성유물",
+          "text": "이 요원은 성유물을 보유하고 있다면 항상 설교의 효과를 받습니다."
+        },
+        {
+          "name": "신-황제의 복음을 전파하라",
+          "text": "이 요원이 다른 아군 요원에 게서 6\" 넘게 떨어져 있을 때마다, 이 요원이 장비한 무기에 중상 규칙이 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-PRC",
+      "nameEn": "Sanctifier Preacher",
+      "nameKo": "정화사역단 설교사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 1\"",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "한손 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 1\"",
+            "광염*"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "신앙 수호",
+          "text": "이 요원은 목표물 마커를 경쟁할 때 설교의 효과를 받습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-REL",
+      "nameEn": "Sanctifier Reliquant",
+      "nameKo": "정화사역단 성물관리자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 1\"",
+                "*Blaze"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "한손 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 1\"",
+            "광염*"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "교단 우상",
+          "text": "이 요원에게서 6\" 내에 있는 마커의 장악 여부를 결정할 때마다, 아군 정화사역단 요원이 하나라도 그 마커를 경쟁한다면 마커를 경쟁하는 아군 정화사역단 요원의 APL 총합이 +1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+        },
+        {
+          "name": "제국교 헌신",
+          "text": "전환점당 한 번, 준비 상태인 아군 정화사역단 요원이 이 요원의 시야에 들어오며 6\" 내에 있는 상태에 서 무력화되면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 아군 요원은 킬존에서 제거되기 전에 무상 행동 (근접전 제외)을 하나 사용할 수 있으며 플레이어는 이를 위해 요원의 명령을 바꿀 수 있습니다. 이후 요원은 원래 대로 킬존에서 제거됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SANC-SAL",
+      "nameEn": "Sanctifier Salvationist",
+      "nameKo": "정화사역단 구제자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Soulstave",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "영혼 지팡이",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전환 역장",
+          "text": "이 요원에게서 6\" 넘게 떨어진 다른 요원이 이 요원의 6\" 내에 있는 아군 정화사역단 요원을 사격할 때마다, 그 아군 요원의 방호 요구치를 1만큼 완화하고 공격자의 무기에 관통 무기 규칙이 있다면 x 값을 1만큼 악화합니다. 이에 따라 관통 1은 아무 효과가 없게 됩니다."
+        },
+        {
+          "name": "의료함 [1AP]",
+          "text": "이 요원의 장악 범위 내에 있는 아군 정화사역단 요원을 하나 지정해 잃은 체력을 2D3만큼 회복합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 수색 섬멸 — 편성 1+1+9 = 11명",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "정화사역단 킬 팀"
+      },
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 정화사역단 고해사제 요원\n↘ 1 정화사역단 케루브 요원\n↘ 9 정화사역단 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 화형사\n• 죽음숭배 암살자\n• 숙달 승원장\n• 기적술사\n• 전도사 요원, 다음 선택지 중 하나를 골라 장비합니다.\n○ 미니스토룸 화염방사기, 성화의 화로\n○ 미니스토룸 화염방사기, 개머리판, 성유물\n• 전도사 요원, 다음 선택지 중 하나를 골라 장비합니다.\n○ 멜타건, 체인소드, 성유물\n○ 플라스마 건, 체인소드, 성화의 화로\n• 박해자\n• 설교사\n• 성물관리자\n• 구제자"
+      },
+      {
+        "type": "rule",
+        "text": "설교사 요원을 제외하면 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 설교사 요원은 최대 넷 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "성 화의 화로가 포함된 선택지는 전투당 한 번만 고를 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "광염 · 미니스토룸 설교",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "광염"
+      },
+      {
+        "type": "lore",
+        "text": "진리에서 벗어난 죄는 오직 성스러운 불로써만 씻을 수 있나니. 신실한 자는 화염방사기와 불타는 손길로 이단의 악독한 얼룩을 정화한다."
+      },
+      {
+        "type": "rule",
+        "text": "이 킬 팀의 일부 무기는 아래의 광염 무기 규칙을 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "*광염: 결정적 성공으로 피해를 주었다면 이 무기로 공격받은 요원이 플레이어의 광염 토큰을 하나 받습니다(아직 토큰 이 없는 경우). 플레이어의 광염 토큰을 보유한 요원은 운용 상태가 될 때마다 D3 피해를 받습니다. 그 요원의 운용 플레 이어는 다음 중 하나를 선택해 따릅니다."
+      },
+      {
+        "type": "rule",
+        "text": "• D6를 하나 굴립니다. 값이 3+이면 토큰을 제거합니다.\n• 이 번 운용이 끝날 때까지 요원의 APL 수치를 -1만큼 변경하고 토큰을 제거합니다."
+      },
+      {
+        "type": "heading",
+        "text": "미니스토룸 설교"
+      },
+      {
+        "type": "lore",
+        "text": "웅대한 연설가가 열의 가득한 설교를 터뜨린다. 불과 유황의 언사가 추종자의 열성에 불을 붙이고, 상처를 떨쳐내 계속 싸우도록 북돋운다."
+      },
+      {
+        "type": "heading",
+        "text": "전략 포석 . 아군 정화사역단"
+      },
+      {
+        "type": "rule",
+        "text": "요원을 하나 지정합니다. 아군고해사제 요원이 무력화되지 않았다면, 반드시 그 요원을 지정해야 합니다. 전투 중에 이 전략 포석을 다시 사용할 때까지, 그 요원에게 연설가 키워드를 부여합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 정화사역단 요원이 연설가 요원으로부터 3\" 내에 있으면 (연설가 요원이 고해사제이면 6\"), 그 아군 정화사역단 요원은 설교의 효과를 받습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 정화사역단 요원이 아군 연설가 요원으로부터 3\" 내에 있는 상태에서(연설가요원이 고해사제이면 6\") 운용을 시작 하면, 그 아군 정화사역단 요원은 운용이 끝날 때까지 설교의 효과를 받습니다(즉, 요원이 요구 거리를 초과해 연설가 에게서 멀어지더라도 효과를 받음)."
+      },
+      {
+        "type": "rule",
+        "text": "아군 정화사역단 요원이 설교의 효과를 받을 때마다, 그 요원을 대상으로 한 3 이상의 일반 및 결정적 피해의 피해량을 -1만큼 변경합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

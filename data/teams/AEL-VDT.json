@@ -1,0 +1,568 @@
+{
+  "id": "AEL-VDT",
+  "nameEn": "Void-Dancer Troupe",
+  "nameKo": "공허춤꾼 극단",
+  "archetype": "Infiltration/Recon",
+  "color": "#c874c4",
+  "size": {
+    "total": 8
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-VDT-S-CJ",
+      "name": "Cegorach's Jest",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly VOID-DANCER TROUPE operative is fighting or retaliating and your opponent strikes with a normal success, you can roll one D6: if the result is less than the Hit stat of your opponent’s selected weapon, that strike is allocated to block one of your dice instead (ignore the Brutal weapon rule, if relevant) and you cannot use this rule for the rest of the sequence.",
+      "textKo": "적이 normal 성공으로 타격 시 D6 가 무기 Hit 미만이면 block 으로"
+    },
+    {
+      "id": "AEL-VDT-S-DS",
+      "name": "Darting Salvo",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly VOID-DANCER TROUPE operative performs the Reposition action during its activation, it can perform the Shoot action during that action (it must do so in a location it can be placed, and any remaining move distance it had from that Reposition action can be used after it does so).",
+      "textKo": "아군이 Reposition 액션 도중에 Shoot 액션을 수행 가능"
+    },
+    {
+      "id": "AEL-VDT-S-PB",
+      "name": "Prismatic Blur",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly VOID-DANCER TROUPE operative that performed an action in which it moved during this turning point, you can re-roll one of your defence dice.",
+      "textKo": "이번 TP 에 이동한 아군이 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "AEL-VDT-S-RC",
+      "name": "Rising Crescendo",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly VOID-DANCER TROUPE operatives can perform the Dash action during the same activation in which they performed the Charge action, but not vice versa (i.e. not Dash then Charge).",
+      "textKo": "Charge 한 활성화에 Dash 도 수행 가능, 역순은 불가"
+    },
+    {
+      "id": "AEL-VDT-T-DF",
+      "name": "Domino Field",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an operative is shooting a friendly VOID-DANCER TROUPE operative, during the Resolve Defence Dice step. You can allocate one of your rolled successful dice to block all of your opponent's attack dice with matching results (e.g. one of your successful defence dice results of 5 can be used to block all successful attack dice results of 5).",
+      "textKo": "피격 시 성공한 방어 주사위 1개로 같은 값의 공격 주사위 전부 block"
+    },
+    {
+      "id": "AEL-VDT-T-ET",
+      "name": "Elusive Target",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly VOID-DANCER TROUPE operative’s activation. Until the start of its next activation, while that operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "textKo": "다음 활성화까지 Conceal 로 엄폐한 아군을 표적 불가로"
+    },
+    {
+      "id": "AEL-VDT-T-ME",
+      "name": "Murderous Entrance",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly VOID-DANCER TROUPE operative is fighting during an activation in which it performed the Charge action, after you strike. You can immediately resolve another of your normal successes as a strike (before your opponent), or one of your critical successes if there are none.",
+      "textKo": "Charge 한 활성화의 근접전에서 타격 후 성공 1개를 즉시 추가 타격"
+    },
+    {
+      "id": "AEL-VDT-T-TCF",
+      "name": "The Curtain Falls",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly VOID-DANCER TROUPE operative is fighting, after you strike with a critical success, if the enemy operative isn’t incapacitated. End that sequence (any remaining attack dice are discarded) and immediately perform a free Fall Back action up to 3\" with that operative (then the Fight action ends). That operative can do so even if it’s performed an action that prevents it from performing the Fall Back action.",
+      "textKo": "근접전 critical 타격 후 전투를 끝내고 3\" 무료 Fall Back"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-VDT-WBT",
+      "name": "Wraithbone Talisman",
+      "textEn": "Once per turning point, when a friendly VOID-DANCER TROUPE operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "TP당 1회, 실패 2개 이상이면 하나 버리고 다른 하나를 성공으로"
+    },
+    {
+      "id": "AEL-VDT-STR",
+      "name": "Shrieker Toxin Rounds",
+      "textEn": "Once per turning point, when a friendly VOID-DANCER TROUPE operative is performing the Shoot action and you select a shuriken pistol or shrieker cannon (focused), you can use this rule. If you do, until the end of that action, that weapon has the Devastating 1 weapon rule.",
+      "textKo": "TP당 1회, 슈리켄 피스톨 · 슈리커 캐논(focused)에 Devastating 1"
+    },
+    {
+      "id": "AEL-VDT-DM",
+      "name": "Death Mask",
+      "textEn": "Keep a Tragedy tally. Whenever a friendly VOID-DANCER TROUPE operative that has an ACCOLADE rule is incapacitated, add 1 to your Tragedy tally. When your Tragedy tally reaches 3, you gain 1CP and stop that tally.",
+      "textKo": "ACCOLADE 아군이 죽을 때마다 Tragedy 누적 — 3 이 되면 1CP"
+    },
+    {
+      "id": "AEL-VDT-UM",
+      "name": "Understudy's Mask",
+      "textEn": "Once per battle, when you activate a friendly VOID-DANCER TROUPE operative, if the friendly operative that has the PIVOTAL ROLE has been incapacitated, you can use this rule. If you do, that activated operative has the PIVOTAL ROLE for the battle.",
+      "textKo": "전투당 1회, PIVOTAL ROLE 아군이 죽었으면 다른 아군이 그 역할을 이어받음"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-VDT-LPL",
+      "nameEn": "Lead Player",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Fusion Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Range 3\"",
+                "Devastating 3",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neuro Disruptor",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Caress",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Embrace",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kiss",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/7",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-VDT-DJS",
+      "nameEn": "Death Jester",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Shrieker Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending",
+                "Heavy (Reposition only)",
+                "*Humbling Cruelty"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending",
+                "Heavy (Dash only)",
+                "Torrent 2\"",
+                "*Humbling Cruelty"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shrieker Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-VDT-PLAY",
+      "nameEn": "Player",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Fusion Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Range 3\"",
+                "Devastating 3",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neuro Disruptor",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Caress",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Embrace",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Kiss",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/7",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-VDT-SDS",
+      "nameEn": "Shadowseer",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Hallucinogen Grenade",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "1/1",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Lethal 5+",
+                "Seek Light",
+                "Silent",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neuro Disruptor",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Miststave",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+7 = 8명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPE: INFILTRATION, RECON"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 VOID-DANCER TROUPE LEAD PLAYER operative with one option from each of the following:\n○ Fusion pistol, neuro disruptor or shuriken pistol\n○ Blade, caress, embrace, kiss or power weapon"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 7 VOID-DANCER TROUPE operatives selected from the following list:\n• DEATH JESTER\n• PLAYER with one option from each of the following:\n○ Fusion pistol, neuro disruptor or shuriken pistol\n○ Blade, caress, embrace or kiss\n• SHADOWSEER with hallucinogen grenade and one of the following options:\n○ Neuro disruptor; miststave\n○ Shuriken pistol; miststave"
+      },
+      {
+        "type": "rule",
+        "text": "Other than PLAYER operatives, your kill team can only include each operative on this list once. Your kill team can only include up to one fusion pistol and up to one neuro disruptor."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "SAEDATH · HARLEQUIN'S PANOPLY",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "SAEDATH"
+      },
+      {
+        "type": "rule",
+        "text": "Void-dancer Troupes put on a performance as they attack from the Webway. A single player begins in the pivotal role, then the rest of the troupe progressively join in. As a STRATEGIC GAMBIT in the first turning point, you must select an ALLEGORY (Epic or Melodrama below) for your kill team for the battle, and one friendly VOID-DANCER TROUPE operative to have the PIVOTAL ROLE for the battle. Whenever a friendly operative has the PIVOTAL ROLE, it has the ACCOLADE rule of your ALLEGORY for the battle. As a STRATEGIC GAMBIT in each subsequent turning point, you can select one friendly VOID-DANCER TROUPE operative to gain the ACCOLADE rule of your ALLEGORY for the battle. Once per turning point, when a friendly operative that has the PIVOTAL ROLE completes the performance of your ALLEGORY, you can select one friendly VOID-DANCER TROUPE operative to gain the ACCOLADE rule of your ALLEGORY for the battle."
+      },
+      {
+        "type": "rule",
+        "text": "Epic Performance: The operative incapacitates an enemy operative while fighting. Accolade: Whenever this operative is fighting, its melee weapons have the Balanced weapon rule."
+      },
+      {
+        "type": "rule",
+        "text": "Melodrama Performance: The operative incapacitates an enemy operative while shooting. Accolade: The operative's ranged weapons have the Balanced weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "HARLEQUIN'S PANOPLY"
+      },
+      {
+        "type": "lore",
+        "text": "The tools of the Harlequins' trade afford them additional mobility and make them highly difficult to target, enabling them to dodge away from piercing shots of plasma and melta fire."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever an operative is shooting a friendly VOID-DANCER TROUPE operative, and no attack dice are retained as critical successes, worsen the x of the Piercing weapon rule by 1 (if any). Note that Piercing 1 would therefore be ignored. Whenever a friendly VOID-DANCER TROUPE operative is climbing up, you can treat the vertical distance as 2\" (regardless of how far the operative actually moves vertically). Friendly VOID-DANCER TROUPE operatives can move within control range of enemy operatives (they must still start and end the move following all requirements for that move)."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

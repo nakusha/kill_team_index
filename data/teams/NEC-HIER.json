@@ -1,0 +1,953 @@
+{
+  "id": "NEC-HIER",
+  "nameEn": "Hierotek Circle",
+  "nameKo": "히에로텍 회합",
+  "archetype": "Recon/Security",
+  "color": "#5fb0c4",
+  "size": {
+    "total": 8
+  },
+  "faction": {
+    "id": "NEC",
+    "nameEn": "Necrons",
+    "nameKo": "네크론"
+  },
+  "ploys": [
+    {
+      "id": "NEC-HIER-S-CU",
+      "name": "Command Underlings",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one of the following:\n• SUPPORT. Each other friendly HIEROTEK CIRCLE operative visible to and within 6\" of a friendly CRYPTEK operative can immediately perform a free Dash action in an order of your choice.\n• SUPPORT. Each other friendly HIEROTEK CIRCLE operative (excluding CRYPTEK) visible to and within 3\" of a friendly APPRENTEK operative can immediately perform a free Dash action in an order of your choice.",
+      "textKo": "SUPPORT, CRYPTEK 6\" 또는 APPRENTEK 3\" 내 아군들이 무료 Dash"
+    },
+    {
+      "id": "NEC-HIER-S-ME",
+      "name": "Methodical Elimination",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly HIEROTEK CIRCLE operatives’ melee weapons have the Accurate 1 weapon rule. Whenever a friendly HIEROTEK CIRCLE operative is fighting during an activation in which it hasn’t moved more than its Move stat, or whenever it’s retaliating, its melee weapons have the Accurate 2 weapon rule instead.",
+      "textKo": "근접 무기 Accurate 1 (Move 이하 이동 또는 반격 시 Accurate 2)"
+    },
+    {
+      "id": "NEC-HIER-S-ROS",
+      "name": "Relentless Onslaught",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HIEROTEK CIRCLE operative is shooting an operative within 8\" of it, that friendly operative’s ranged weapons have the Balanced weapon rule. Note that when you’re using the Magnify weapon rule, this operative must still be within 8\" of the target to use this rule (not the other friendly operative from which you’re determining a valid target).",
+      "textKo": "8\" 내 대상을 사격할 때 사격 무기가 Balanced 획득"
+    },
+    {
+      "id": "NEC-HIER-S-UDA",
+      "name": "Undying Androids",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly HIEROTEK CIRCLE operative, if you cannot retain any cover saves, you can retain one of your defence dice as a normal success without rolling it.",
+      "textKo": "사격당할 때 cover Save 가 없으면 defence 1개 자동 성공"
+    },
+    {
+      "id": "NEC-HIER-T-CC",
+      "name": "Cortical Control",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly HIEROTEK CIRCLE APPRENTEK or HIEROTEK CIRCLE CRYPTEK operative performs a SUPPORT unique action. Until the end of that action, for the purposes of selecting another friendly operative, ignore the distance requirement (only visibility is a requirement).",
+      "textKo": "APPRENTEK/CRYPTEK 의 SUPPORT 액션에서 거리 조건 무시"
+    },
+    {
+      "id": "NEC-HIER-T-DA",
+      "name": "Dimensional Ambush",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly HIEROTEK CIRCLE DEATHMARK operative’s activation, if it has a Conceal order. During that activation, that operative can perform the Guard action regardless of the killzone and while it has a Conceal order (see close quarters rules, Kill Team Core Book), but when you perform the free Shoot or Fight action during the interruption, you must change its order to Engage.",
+      "textKo": "DEATHMARK 가 Conceal 인 채로 Guard 액션 수행 가능"
+    },
+    {
+      "id": "NEC-HIER-T-LL",
+      "name": "Living Lightning",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly HIEROTEK CIRCLE IMMORTAL operative is performing the Shoot action and you select a tesla carbine. Until the end of that action, that weapon doesn’t have the 2\" from its Devastating weapon rule but has the Blast 2\" weapon rule.",
+      "textKo": "IMMORTAL 의 tesla carbine 이 Devastating 2\" 대신 Blast 2\" 획득"
+    },
+    {
+      "id": "NEC-HIER-T-RAF",
+      "name": "Reanimated Function",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when determining control of a marker. Select one of your Reanimation markers. Until the start of the next turning point, whenever determining control of a marker, treat that Reanimation marker as a friendly HIEROTEK CIRCLE operative that has an APL stat of 1. For the purposes of the Martyrs tac op (Approved Ops 2025), this ploy has no effect.",
+      "textKo": "Reanimation 마커 1개를 마커 통제 판정에서 APL 1 아군으로 취급"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "NEC-HIER-MC",
+      "name": "Magnification Conduits",
+      "textEn": "Once per turning point, when a friendly HIEROTEK CIRCLE APPRENTEK or HIEROTEK CIRCLE CRYPTEK operative is performing the Shoot action, you can use this rule. If you do, select one other friendly HIEROTEK CIRCLE operative (excluding PLASMACYTE) that has an Engage order and is visible to that friendly operative. Until the end of that action, that other friendly operative can be treated as the active operative for the Magnify weapon rule.",
+      "textKo": "TP당 1회, APPRENTEK · CRYPTEK 사격 시 Engage 상태의 다른 아군을 지정"
+    },
+    {
+      "id": "NEC-HIER-PS",
+      "name": "Phase Shifter",
+      "textEn": "Once per turning point, when an operative is shooting a friendly CRYPTEK operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+      "textKo": "TP당 1회, CRYPTEK 이 사격받을 때 Piercing 값을 1 낮춤"
+    },
+    {
+      "id": "NEC-HIER-TC",
+      "name": "Tesseract Cube",
+      "textEn": "In the Ready step of each Strategy phase, when you gain CP, if a friendly CRYPTEK operative isn’t incapacitated, isn’t within control range of enemy operatives and hasn’t been REANIMATED this turning point, you can use this rule. If you do, roll one D6: on a 1, you cannot use this rule for the rest of the battle; on a 4+, you gain 1CP. Once you’ve gained 2CP from this rule, you cannot use it for the rest of the battle.",
+      "textKo": "매 Ready 단계 CP 획득 시 D6 을 굴려 추가 이득 (CRYPTEK 조건 충족 시)"
+    },
+    {
+      "id": "NEC-HIER-TW",
+      "name": "Tesla Weave",
+      "textEn": "Once per turning point, when an enemy operative ends the Charge action with friendly HIEROTEK CIRCLE operatives within its control range, you can use this rule. If you do, inflict D3+1 damage on that enemy operative.",
+      "textKo": "TP당 1회, 적이 통제 범위 안에서 Charge 를 끝내면 D3+1 피해"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "NEC-HIER-CHRON",
+      "nameEn": "Chronomancer",
+      "nameKo": "시간술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Aeonstave",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Blast 2\"",
+                "Lethal 5+",
+                "Stun",
+                "*Magnify"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Entropic Lance",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Devastating 3",
+                "Piercing 1",
+                "*Magnify"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Aeonstave",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Entropic Lance",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/6",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "억겁장대(원거리)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "폭발 2\"",
+            "살상 5+",
+            "혼미",
+            "확대*"
+          ]
+        },
+        {
+          "name": "엔트로피 랜스(원거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/3",
+          "rules": [
+            "궤멸 3",
+            "관통 1",
+            "확대*"
+          ]
+        },
+        {
+          "name": "억겁장대(근접)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "살상 5+",
+            "충격"
+          ]
+        },
+        {
+          "name": "엔트로피 랜스(근접)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/6",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "NEC-HIER-PSYCH",
+      "nameEn": "Psychomancer",
+      "nameKo": "정신술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Abyssal Lance",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/2",
+              "rules": [
+                "Blast 2\"",
+                "2\" Devastating 1",
+                "Piercing 2",
+                "*Magnify"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Abyssal Lance",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/4",
+              "rules": [
+                "Devastating 1"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "나락의 랜스(원거리)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "2/2",
+          "rules": [
+            "폭발 2\"",
+            "2\" 궤멸 1",
+            "관통 2",
+            "확대*"
+          ]
+        },
+        {
+          "name": "나락의 랜스(근거리)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/4",
+          "rules": [
+            "궤멸 1"
+          ]
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "NEC-HIER-TECH",
+      "nameEn": "Technomancer",
+      "nameKo": "기계술사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Staff Of Light",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending",
+                "*Magnify"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Staff Of Light",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "빛의 지팡이(원거리)",
+          "type": "ranged",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "파쇄",
+            "확대*"
+          ]
+        },
+        {
+          "name": "빛의 지팡이(근거리)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "NEC-HIER-PA",
+      "nameEn": "Plasmacyte Accelerator",
+      "nameKo": "전리세포 가속기",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [
+        {
+          "name": "Spark",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 4\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "스파크",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 4\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "손톱",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "작은 표적",
+          "text": "• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외 한 다른 모든 규칙(예: 색적, 고지)에 우선합니다.\n• 이 요원이 후퇴 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다.\n• 이 요원은 자기 데이터카드에 명시되지 않은 무기를 사용할 수 없으며, 가속 이외의 고유 행동을 사용할 수 없습니다."
+        },
+        {
+          "name": "가속 [1AP]",
+          "text": "이 요원의 시야에 들어오며 6” 내에 있는 신경엽병 또는 불멸대 요원 하나를 지정합니다. 그 요원은 다음 운용이 종료될 때까지, APL 수치가 +1만큼 변경됩니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-HIER-PR",
+      "nameEn": "Plasmacyte Reanimator",
+      "nameKo": "전리세포 소생기",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [
+        {
+          "name": "Atomiser Beam",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 6\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "원자화 광선",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 6\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "손톱",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "작은 표적",
+          "text": "• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외한 다른 모든 규칙(예: 색적, 고지)에 우선합니다.\n• 이 요원이 후퇴 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다.\n• 이 요원은 자기 데이터카드에 명시되지 않은 무기를 사용할 수 없으며, 소생 이외의 고유 행동을 사용할 수 없습니다."
+        },
+        {
+          "name": "소생 [1/2AP]",
+          "text": "이 요원의 시야에 들어오며 6\" 내에 있는 소생 마커 하나를 지정한 다음 D6 하나를 굴립니다. 값이 3+ 라면 아군 요원이 소생됩니다. 행동 시 1AP를 추가로 소모하면, D6 하나를 굴리는 대신 아군 요원을 자동으로 소생시킬 수 있습니다. 이 고유 행동으로 소생된 요원은, 그 전환점 도중 소진되었었다면 소진된 상태로 배치됩니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-HIER-APP",
+      "nameEn": "Apprentek",
+      "nameKo": "어프렌텍",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Arcane Conduit",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "*Magnify"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Arcane Conduit",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비전 도관(원거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1",
+            "확대*"
+          ]
+        },
+        {
+          "name": "비전 도관(근거리)",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "어프렌텍 도제",
+          "text": "이 요원은 이번 전투를 위해 선택한 크립텍 요원과 동일한 고유 행동을 수행할 수 있습니다. 단, 크립텍고유 행동은 전환점당 한 가지만 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-HIER-DM",
+      "nameEn": "Deathmark",
+      "nameKo": "신경엽병",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Synaptic Disintegrator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/3",
+              "rules": [
+                "Devastating 2",
+                "Heavy (Dash only)",
+                "Piercing 1",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "시냅스 분해기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/3",
+          "rules": [
+            "궤멸 2",
+            "중화기(질주 한정)",
+            "관통 1",
+            "중상"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "죽음 인장",
+          "text": "이 요원이 사격 행동을 종료할 때마다, 그 대상은(주 대상에 한함) 무력화되지 않았다면 죽음 인장 토큰을 하나 받습니다. 아군 히에로텍 회합 신경엽병 요원 이 죽음 인장 토큰을 가진 적 요원을 대상으로 사격할 때마다, 그 아군 요원의 원거리 무기에 색적 무기 규칙을 부여합니다."
+        },
+        {
+          "name": "다차원 시야 [1AP]",
+          "text": "이 요원의 다음 운용이 시작될 때까지, 이 요원이 사격할 때마다 적 요원은 차폐될 수 없습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-HIER-ID",
+      "nameEn": "Immortal Despotek",
+      "nameKo": "불멸대 데스포텍",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Gauss Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tesla Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "2\" Devastating 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "가우스 투사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "테슬라 카빈",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "2\" 궤멸 1"
+          ]
+        },
+        {
+          "name": "총검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "확고부동",
+          "text": "마커 장악 판정 시, 이 요원의 APL 수치를 3 으로 간주할 수 있습니다. 이 효과는 다른 모든 규칙보다 우선하여 적용됩니다. 즉, 장악 판정에서 이 요원의 APL 수치 변동이 무시됩니다."
+        },
+        {
+          "name": "사이질 명령 [1AP]",
+          "text": "보조. 다른 아군 히에로텍 회합 요원(어프렌텍 및 크립텍 제외) 중 이 요원의 시야에 들어오며 6\" 내에 있는 요원 하나를 지정합니다. 지정된 그 요원은 1AP 행동을 즉시 무상으로 수행할 수 있습니다. 그 행동을 수행하는 동안 그 요원은 2” 넘게 이동할 수 없으며, 킬존에서 제거된 다음 2” 넘는 거리에 다시 놓일 수 없고, 이 전환점 도중 이미 수행했던 행동을 또 수행할 수 없으며, 이때 수행한 행동을 이 전환점 도중에 또 수행할 수도 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안, 또는 대응하는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "NEC-HIER-IG",
+      "nameEn": "Immortal Guardian",
+      "nameKo": "불멸대 수호자",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Gauss Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tesla Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "2\" Devastating 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "가우스 투사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "테슬라 카빈",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "2\" 궤멸 1"
+          ]
+        },
+        {
+          "name": "총검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "확고부동",
+          "text": "마커 장악 판정 시, 이 요원의 APL 수치를 3 으로 간주할 수 있습니다. 이 효과는 다른 모든 규칙보다 우선하여 적용됩니다. 즉, 장악 판정에서 이 요원의 APL 수치 변동이 무시됩니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 경비 — 편성 1+1+1+5 = 8명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 경비"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 히에로텍 회합 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 시간술사 요원, 다음 선택지 중 하나를 골라 장비합니다.\n○ 억겁장대\n○ 앤트로피 랜스\n• 정신술사\n• 기계술사"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 전리세포 가속기 요원\n↘ 1 전리세포 소생기 요원\n↘ 5 히에로텍 회합 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 어프렌텍\n• 신경엽병"
+      },
+      {
+        "type": "rule",
+        "text": "• 데스포텍, 다음 선택지 중 하나를 골라 장비합니다.\n○ 가우스 투사기, 총검\n○ 테슬라 카빈, 총검\n• 수호자, 다음 선택지 중 하나를 골라 장비합니다.\n○ 가우스 투사기, 총검\n○ 테슬라 카빈, 총검"
+      },
+      {
+        "type": "rule",
+        "text": "신경엽병 및 수호자 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "소생 규례 · 확대 · 생체 금속",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "소생 규례"
+      },
+      {
+        "type": "lore",
+        "text": "네크론의 쓰러진 신체는 음산한 형광에 휩싸인다. 이윽고 에메랄드 빛 스파크 속에서 잘려나간 사지는 다시 달라붙고 으스러진 신체는 재구성된다. 시각 렌즈에 다시 빛이 돌아온 네크론은 다시 일어나 전투에 참가한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 히에로텍 회합 요원이 처음으로 무력화되었을 때, 그 요원의 장악 범위 내에 소생 마커 하나를 놓은 다음 킬존에서 그 요원을 킬존에서 제거합니다. 무력화되기 전에 받은 토큰과 규칙 효과(예: 시간술사 요원의 시간운전기 행동, 중독 토큰, APL 수치 변경, 이식됨 상태)도 모두 제거합니다."
+      },
+      {
+        "type": "rule",
+        "text": "각 전략 페이즈의 준비 단계에, 소생 마커 하나를 지정하고 D6 하나를 굴립니다. 값이 1~2라면 그 소생 마커를 킬존에 그대로 두고 다른 소생 마커(소생 마커가 킬존에 또 있다면) 를 대상으로 이 절차를 반복합니다. 값이 3+라면 그 요원은 소생됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "각 소생 마커는 전환점당 한 번 지정할 수 있으며, 3+의 굴림 값이 나온 다음에는 다른 소생 마커를 지정하지 않습니다. 요원이 소생될 때마다 다음 규칙을 적용합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 요원을 그 소생 마커가 있던 위치에 배치합니다(더 이상 무력화 상태가 아님). 요원은 그 소생 마커의 3\" 내, 그리고 적 요원의 장악 범위가 아닌 곳에 배치해야 합니다(이 렇게 배치할 수 없다면, 굴림 값으로 1~2가 나온 것으로 취급).\n• 요원의 남은 체력은 1입니다.\n• 요원은 플레이어가 원하는 명령을 받은 준비 상태가 됩니다.\n• 그 소생 마커를 제거합니다."
+      },
+      {
+        "type": "rule",
+        "text": "소생된 요원은 더 이상 무력화 상태가 아니므로, 상대의 제거 작전 제거 등급은 전투 도중에 낮아질 수도 있습니다(VP 도 함께 낮아짐). 하지만 상대가 다른 방식(예: 전술 작전) 으로 획득한 VP는 소급하여 변경되지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "확대"
+      },
+      {
+        "type": "lore",
+        "text": "네크론 크립텍은 종복과 아랫것들에게 자기 의지를 강요할 수 있다. 크립텍의 의식이 투사된 부하들은 향상된 전투 능력을 발휘하며 적을 말살한다."
+      },
+      {
+        "type": "rule",
+        "text": "이 킬팀의 일부 히에로텍 회합 어프렌텍 및 히에로텍 회합 크립텍이 보유한 무기에는 아래와 같은 확대 무기 규칙이 부여되어 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "*확대: 이 요원이 이 무기로 사격 행동을 수행할 때마다, 대상이 이 요원의 시야에 들어오고, 적 요원의 장악 범위 내에 있지 않은 다른 아군 히에로텍 회합 어프렌텍 또는 히에로 텍 회합 크립텍 요원이 교전 명령을 받았으며 이 요원의 시 야에 들어왔다면, 이 규칙을 사용할 수 있습니다. 그렇게 할경우, 유효 대상, 그 사격 행동의 요건, 엄폐, 차폐를 판단할 때, 그 다른 요원을 운용 중인 요원으로 취급합니다. 이때 이 무기에는 그 행동이 종료될 때까지 집요 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "생체 금속"
+      },
+      {
+        "type": "rule",
+        "text": "네크론의 금속 피부에는 어느 정도의 정신이 깃들어 있으며, 전투 중에도 궤멸적인 피해를 자가 수복한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 전략 페이즈의 준비 단계에, 그 단계의 다른 모든 규칙 (예: 소생 규례 팩션 규칙)을 처리한 다음, 각 히에로텍 회합 요원은 잃어버린 체력을 D3+1만큼 회복합니다(각 요원마 다 별도로 굴림)."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

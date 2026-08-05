@@ -1,0 +1,1046 @@
+{
+  "id": "AEL-HOTA",
+  "nameEn": "Hand Of The Archon",
+  "nameKo": "집정관의 손",
+  "archetype": "Recon/Seek & Destroy",
+  "color": "#7290cc",
+  "size": {
+    "total": 9
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-HOTA-S-BA",
+      "name": "Blade Artists",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Friendly HAND OF THE ARCHON operatives' melee weapons have the Rending weapon rule.",
+      "textKo": "아군 HAND OF THE ARCHON 근접 무기가 Rending 획득"
+    },
+    {
+      "id": "AEL-HOTA-S-DON",
+      "name": "Denizens Of Night",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is shooting a friendly HAND OF THE ARCHON operative that’s more than 2\" from enemy operatives, if Heavy or Light terrain is intervening, or any part of that friendly operative’s base is underneath Vantage terrain, you can re-roll one of your defence dice.",
+      "textKo": "적에게서 2\" 밖 아군이 지형에 가려 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "AEL-HOTA-S-FDD",
+      "name": "From Darkness, Death",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HAND OF THE ARCHON operative is activated, before you determine its order, you can select one enemy operative that friendly operative isn’t a valid target for. Until the end of that activation, the first time that friendly operative is shooting against or fighting against that enemy operative, you can retain one of your normal successes as a critical success instead.",
+      "textKo": "활성화 시 표적 불가한 적 1명 지정, 그 적 상대 첫 공격에 성공 1개를 critical 로"
+    },
+    {
+      "id": "AEL-HOTA-S-MS",
+      "name": "Merciless Sadists",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HAND OF THE ARCHON operative is shooting against or fighting against a wounded enemy operative, that friendly operative’s weapons have the Balanced weapon rule.",
+      "textKo": "아군이 wounded 적을 공격할 때 무기가 Balanced 획득"
+    },
+    {
+      "id": "AEL-HOTA-T-CD",
+      "name": "Cruel Deception",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly HAND OF THE ARCHON operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+      "textKo": "활성화 중 아군 1명이 Fall Back 을 1 AP 적게 수행"
+    },
+    {
+      "id": "AEL-HOTA-T-CS",
+      "name": "Devious Scheme",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after an opponent uses a firefight ploy (excluding one that costs 0CP). The next time they would use that ploy, they must spend 1 additional CP to do so (at which point this effect ends). You cannot use this ploy again during the battle until its effect has ended.",
+      "textKo": "상대가 Firefight ploy 사용 후, 다음 그 ploy 사용에 CP 1 추가"
+    },
+    {
+      "id": "AEL-HOTA-T-HA",
+      "name": "Heinous Arrogance",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when it’s your turn to activate a friendly operative. You can skip that activation.",
+      "textKo": "아군을 활성화할 차례에 그 활성화를 건너뜀"
+    },
+    {
+      "id": "AEL-HOTA-T-POTW",
+      "name": "Prey On The Wounded",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly HAND OF THE ARCHON operative, if it’s shooting against or fighting against a wounded enemy operative. You can re-roll any of your attack dice.",
+      "textKo": "아군이 wounded 적을 공격 시 공격 주사위 재굴림"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-HOTA-CS",
+      "name": "Chain Snare",
+      "textEn": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly HAND OF THE ARCHON operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.",
+      "textKo": "적이 Fall Back 하려 하면 2D6 굴려 그 액션 무산 시도"
+    },
+    {
+      "id": "AEL-HOTA-WB",
+      "name": "Wicked Blades",
+      "textEn": "Add 1 to the Atk stat of friendly HAND OF THE ARCHON operatives’ array of blades.",
+      "textKo": "array of blades 의 Atk +1"
+    },
+    {
+      "id": "AEL-HOTA-TC",
+      "name": "Toxin Coating",
+      "textEn": "Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is fighting or retaliating and you’re selecting a melee weapon, you can use this rule. If you do, until the end of that sequence, that operative’s melee weapon has the Lethal 5+ weapon rule.",
+      "textKo": "TP당 2회, 근접무기에 Lethal 5+"
+    },
+    {
+      "id": "AEL-HOTA-RP",
+      "name": "Refined Poison",
+      "textEn": "Up to twice per turning point, whenever a friendly HAND OF THE ARCHON operative is performing the Shoot action and you select a shardcarbine, splinter cannon, splinter pistol, splinter rifle or stinger pistol, you can use this rule. If you do, until the end of that action, add 1 to the Normal Dmg stat of that weapon.",
+      "textKo": "TP당 2회, 스플린터 계열 무기의 Normal Dmg +1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-HOTA-KAS",
+      "nameEn": "Kabalite Archsybarite",
+      "nameKo": "카발 향락의 대전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Blast Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splinter Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splinter Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Agoniser",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Brutal",
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Venom Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 4+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "블라스트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "파편침 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "파편침 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "고통주입기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "무자비",
+            "살상 5+",
+            "충격"
+          ]
+        },
+        {
+          "name": "칼날 다발",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "맹독 곡도",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 4+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "교활함",
+          "text": "각 전략 페이즈의 포석 단계에서, 이 요원이 킬존에 있으며 플레이어가 자신의 첫 번째 차례를 넘길 시 1CP를 획득합니다. 이 때, 임무 팩의 각 전략 포석은(있다면) 무시합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KAG",
+      "nameEn": "Kabalite Agent",
+      "nameKo": "카발 요원",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Splinter Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "파편침 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "칼날 다발",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "가학적 경쟁",
+          "text": "전환점당 한 번, 아군 집정관의 손 요원이 플레이어의 고통 토큰 획득 시, 고통 토큰을 보유하지 않은 아군 집정관의 손 카발 요원 하나가 고통 토큰을 하나 획득합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KCD",
+      "nameEn": "Kabalite Crimson Duellist",
+      "nameKo": "카발 진홍의 결투사",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Splinter Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Razorflail",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/5",
+              "rules": [
+                "Brutal",
+                "*Tangle"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "파편침 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "첨예도리깨",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/5",
+          "rules": [
+            "무자비",
+            "얽어매기*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "잔혹한 광경",
+          "text": "전환점당 한 번, 이 요원이 장악 범위 내의 적 요원을 무력화하면, 이 요원 또는 무력화된 적 요원으로부터 6\" 내에 있으며 시야에 들어온 다른 적 요원을 하나 지정할 수 있습니다. 다음 전환점이 시작하기 전까지, 지정된 적 요원은 마커를 장악하거나, 마커 회수를 수행하거나, 임무 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "진홍의 결투사",
+          "text": "이 요원이 각 운용 도중 처음으로 근접전 행동을 수행할 때, 그 절차에 이 요원과 적 요원 중 누구도 무력화되지 않 았다면 이후 이 요원이 즉시 무상 근접전 행동을 수행할 수 있습니다. 단, 그 행동에서는 다른 적 요원을 지정해 근접전을 수행할 수 없습니다(반드시 원래의 적 요원이 근접전 대상으로 유효해야 함). 이는 행동 제약에 우선합니다."
+        },
+        {
+          "name": "얽어매기",
+          "text": "이 요원이 이 무기로 근접전 또는 반격 시, 막기 주사위 하나를 처리되지 않은 성공 두 개(한 개에서 변경)를 막는 데 할당 할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KDOY",
+      "nameEn": "Kabalite Disciple Of Yaelindra",
+      "nameKo": "카발 예일린드라의 사도",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Stinger Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+",
+                "*Stinger"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "쐐기 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+",
+            "쐐기*"
+          ]
+        },
+        {
+          "name": "칼날 다발",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "쐐기",
+          "text": "적 요원이 이 무기로 무력화될 시, 킬존에서 제거되기 전 그 요원으로부터 2\" 내에 있으며 시야에 들어온 다른 요원마다 D3 피해를 가합니다. 이 무기 규칙으로 인해 다른 요원이 뒤이어 무력화될 때마다 이 규칙을 다시 적용합니다."
+        },
+        {
+          "name": "격통 수류탄 [1AP]",
+          "text": "이 요원으로부터 6\" 내에 있으며 시야에 들어온 적 요원을 하나 지정합니다. 지정된 요원과 그 요원으로부터 1\" 내에 있는 각 요원은 맹독 체크를 수행합니다. 요원이 맹독 체크를 수행 시, D6를 하나 굴립니다. 이 때, 요원의 방호 요구치가 4+거나 이보다 높으면 굴림 값을 +1만큼 변경합니다. 굴림 값이 3+라면, 그 요원은 D3 피해를 입고 맹독 토큰을 받습니다(이미 보유 중이 아닐 시). 플레이어의 맹독 토큰을 보유한 요원은 운용될 때 D3 피해를 입습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KELX",
+      "nameEn": "Kabalite Elixicant",
+      "nameKo": "카발 의약술사",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Splinter Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stim-Needler",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "0/0",
+              "rules": [
+                "Range 3\"",
+                "Lethal 3+",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "파편침 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "자극제 주사총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "0/0",
+          "rules": [
+            "사거리 3\"",
+            "살상 3+",
+            "혼미"
+          ]
+        },
+        {
+          "name": "칼날 다발",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전투 약물",
+          "text": "요원 선택 단계 종료 시, 이 요원이 배치를 위해 지정되었다면 다음 전투 약물 규칙 중 하나를 골라 아군 집정관의 손 요원에 부여합니다.\n• 격통제: 공격 주사위 하나가 이 요원에게 3 이상의 피해를 가할 때마다 D6를 하나 굴립니다. 값이 6이면 그 공격의 피해를 -1만큼 변경합니다.\n• 광분제: 전략 포석. 이 전투 약물을 보유한 아군 요원을 하나 지정합니다. 그 요원은 플레이어의 고통 토큰을 하나 획득합니다.\n• 격앙제: 부상으로 인한 이 요원의 이동력 수치 변경을 무시할 수 있습니다."
+        },
+        {
+          "name": "약물 투여 [1AP]",
+          "text": "이 요원으로부터 3\" 내에 있으며 시야에 들어온 아군 집정관의 손 요원을 지정하여 지정된 요원에 다음 중 하나를 선택하여 적용합니다.\n• 그 요원은 손실한 체력을 최대 2D3만큼 회복합니다.\n• 다른 전투 약물 규칙을 지정하여 전투 동안 그 요원에게 부여합니다(기존의 규칙 대체).\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KFLAY",
+      "nameEn": "Kabalite Flayer",
+      "nameKo": "카발 박피자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Pain Sculptors",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "*Flay"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "고통 조각기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "집요",
+            "박피*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "고통 불감",
+          "text": "이 요원이 입는 3 이상의 일반 및 결정적 피해가 -1만큼 변경됩니다."
+        },
+        {
+          "name": "박피",
+          "text": "이 요원이 이 무기를 사용할 때마다, 그 절차에서 처음으로 결정적 성공으로 타격 시, 이 요원의 6\" 내에 있는 아군 집정관의 손 요원을 하나 지정하여 플레이어의 고통 토큰을 하나 획득하게 할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-HOTA-KGNR",
+      "nameEn": "Kabalite Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shredder",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-HOTA-KHGNR",
+      "nameEn": "Kabalite Heavy Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Dark Lance",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/7",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Splinter Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "AEL-HOTA-KSA",
+      "nameEn": "Kabalite Skysplinter Assassin",
+      "nameKo": "카발 하늘가름 암살자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Razorwing",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "1/2",
+              "rules": [
+                "Saturate",
+                "Seek",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shardcarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "2/2",
+              "rules": [
+                "Devastating 2",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Array Of Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "첨예날개",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "1/2",
+          "rules": [
+            "포화",
+            "색적",
+            "무성"
+          ]
+        },
+        {
+          "name": "파편 카빈소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "2/2",
+          "rules": [
+            "궤멸 2",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "칼날 다발",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "무자비한 사냥꾼",
+          "text": "이 요원이 운용 중 표시 고유 행동(다음면 확인)을 수행하지 않을 시, 운용 중 사격 행동을 두 번수행할 수 있으나, 반드시 첨예날개를 한 번(한 번만) 사용해야 합니다."
+        },
+        {
+          "name": "징조",
+          "text": "요원 선택 단계에서 장비 선택 시, 적 요원을 하나 지정하거나 다른 아군 집정관의 손 요원을 지정할 수 있습니다(장비 공개 시 어느 요원을 지정했는지 공개). 그 요원에 대해 굴린 공격 또는 방어 주사위는 다음 규칙을 적용합니다.\n• 적 요원이라면, 상대는 값이 6인 굴림을 재굴림해야합니다.\n• 아군 요원이라면, 플레이어는 값이 1인 굴림을 재굴림할 수 있습니다."
+        },
+        {
+          "name": "표식 [1AP]",
+          "text": "이 요원의 시야에 들어온 적 요원을 하나 지정합니다. 전환점이 종료될 때까지, 이 요원이 지정된 적 요원을 대상으로 사격할 때마다 이 효과를 사용하여 아래 규칙을 적용할 수 있습니다.\n• 이 요원의 원거리 무기에 저밀도 색적 무기 규칙을 부여합니다.\n• 적 요원은 차폐 효과를 받을 수 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 수색 섬멸 — 편성 1+8 = 9명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 집정관의 손 향락의 대전사 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 블라스트 권총, 맹독 곡도\n• 파편침 권총, 맹독 곡도\n• 파편침 권총, 고통주입기\n• 파편침 권총, 역장 무기\n• 파편침 소총, 칼날 다발"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 8 집정관의 손 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 카발 요원\n• 진홍의 결투사\n• 예일린드라의 사도\n• 의약술사\n• 박피자\n• 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 블라스터, 칼날 다발\n○ 분쇄기, 칼날 다발"
+      },
+      {
+        "type": "rule",
+        "text": "• 중화기 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 어둠창, 칼날 다발\n○ 파편침포, 칼날 다발\n• 하늘가름 암살자"
+      },
+      {
+        "type": "rule",
+        "text": "카발 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 어둠빛 무기는(블라스트 권총, 블라 스터, 어둠창이 어둠빛 무기입니다) 최대 두 개까지만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "고통에서 뽑아낸 힘 · 악독한 적대감 · 회복 가속화 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "고통에서 뽑아낸 힘"
+      },
+      {
+        "type": "lore",
+        "text": "드루카리는 고문당하고 살해당한 피해자들의 영혼을 먹으며, 자신이 가하는 고통으로부터 생기를 얻는다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 집정관의 손 요원이 행동을 수행한 후, 다음 조건 중 하나라도 만족 시 고통 토큰을 하나 획득합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 적 요원이 그 행동으로 부상 상태가 되었으나 무력화되지 않음.\n• 적 요원이 그 행동으로 무력화됨. 무력화된 적 요원의 체력 수치가 12 이상이라면, 그 아군 요원은 원래 규칙 대신 고통 토큰을 두 개 획득합니다."
+      },
+      {
+        "type": "rule",
+        "text": "플레이어는 '시기' 요건을 달성 시, 활력 강화를 위해 아군 요원의 고통 토큰을 소모할 수 있습니다. 다른 활력 강화에 더해 운용 또는 대응 당 한 번 추가적으로 운용 가능한 감각 자극을 제외하면, 운용 또는 대응 당 활력 강화는 한 번만 가능합니다."
+      },
+      {
+        "type": "heading",
+        "text": "활력 강화"
+      },
+      {
+        "type": "heading",
+        "text": "악독한 적대감"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 이 요원의 운용 도중 행동을 수행하기 직전 또는 수행 한 직후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 이 요원의 다음 운용 시작 전까지 APL 수치를 +1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "회복 가속화"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 이 요원의 운용 또는 대응 도중 행동을 수행하기 직전 또는 수행한 직후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 이 요원이 잃은 체력을 D3+1만큼 회복합니다."
+      },
+      {
+        "type": "heading",
+        "text": "활기 넘치는 쇄도"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 이 요원이 적 요원을 무력화하고 그 적 요원이 킬존에 서 제거된 후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 이 요원은 즉시 무상 질주 행동을 수행할 수 있습니다. 그 질주 행동을 제한하는 행동을 수행한 후에도 이 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "감각 자극"
+      },
+      {
+        "type": "rule",
+        "text": "시기: 이 요원에 대한 공격 또는 방어 주사위를 굴린 직후."
+      },
+      {
+        "type": "rule",
+        "text": "효과: 그 주사위 중 하나를 재굴림할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "소총"
+      },
+      {
+        "type": "rule",
+        "text": "카발 전사들이 소지한 긴 총열의 파편침 소총은 숙련된 사용자의 손에서 놀라운 정확도를 보여준다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 집정관의 손 요원이 돌격, 후퇴, 또는 기동 행동을 수행하지 않은 운용에 파편침 소총으로 사격 시, 그 무기에 정확 1 무기 규칙이 부여됩니다. 이 요원이 위에 열거된 행동들을 사격 후에 수행하는 데에는 제한사항이 없습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

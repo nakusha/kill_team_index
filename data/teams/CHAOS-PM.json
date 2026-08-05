@@ -1,0 +1,826 @@
+{
+  "id": "CHAOS-PM",
+  "nameEn": "Plague Marines",
+  "nameKo": "플레이그 마린 킬 팀",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#a7bd5e",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-PM-S-COF",
+      "name": "Cloud Of Flies",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Place one of your Cloud of Flies markers in the killzone. Whenever an operative is shooting a friendly PLAGUE MARINE operative that’s more than 3\" from it, if that friendly operative is wholly within 1\" of that marker, that friendly operative is obscured. In the Ready step of the next Strategy phase, remove that marker.",
+      "textKo": "마커 배치 — 1\" 내 아군은 3\" 밖 사격에 대해 차폐 취급"
+    },
+    {
+      "id": "CHAOS-PM-S-CONT",
+      "name": "Contagion",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Subtract 2\" from the Move stat of an enemy operative and worsen the Hit stat of its weapons by 1 (this isn’t cumulative with being injured) whenever any of the following are true:\n• It has one of your Poison tokens and is visible to (or vice versa) and within 3\" of friendly PLAGUE MARINE operatives.\n• It’s visible to (or vice versa) and within 3\" of a friendly PLAGUE MARINE ICON BEARER operative.",
+      "textKo": "중독된 적, 또는 우상기수 3\" 내 적은 이동 -2\" · 명중 1 악화"
+    },
+    {
+      "id": "CHAOS-PM-S-LD",
+      "name": "Lumbering Death",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly PLAGUE MARINE operative is shooting or fighting during an activation in which it hasn’t moved more than 3\", or whenever it's retaliating, its weapons have the Ceaseless weapon rule.",
+      "textKo": "운용 중 3\" 넘게 이동하지 않았으면 무기가 집요 획득"
+    },
+    {
+      "id": "CHAOS-PM-S-NURG",
+      "name": "Nurglings",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one enemy operative within 3\" of a friendly PLAGUE MARINE operative, or one enemy operative that has one of your Poison tokens and is within 7\" of a friendly PLAGUE MARINE operative. Until the end of the selected operative’s next activation, subtract 1 from its APL stat.",
+      "textKo": "3\" 내 적(중독이면 7\") 하나의 APL 을 다음 운용까지 -1"
+    },
+    {
+      "id": "CHAOS-PM-T-COR",
+      "name": "Curse Of Rot",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly PLAGUE MARINE operative is shooting against or fighting against an enemy operative within 3\" of it (or within 7\" of it if that enemy operative has one of your Poison tokens), after your opponent rolls their attack or defence dice. For each result of 3 they roll, inflict 1 damage on that enemy operative, that result cannot be retained as a success and they cannot re-roll it.",
+      "textKo": "3\" 내(중독이면 7\") 적의 굴림 값 3 마다 1 피해, 보전 불가"
+    },
+    {
+      "id": "CHAOS-PM-T-PD",
+      "name": "Poisonous Demise",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly PLAGUE MARINE operative is incapacitated, before it’s removed from the killzone. Each enemy operative visible to and within 3\" of that operative gains one of your Poison tokens (if they don’t already have one); for each of those enemy operatives that already has one of your Poison tokens (including if they gained one during this action), inflict 1 damage on them instead.",
+      "textKo": "무력화될 때 3\" 내 적에게 중독 토큰, 이미 있으면 1 피해"
+    },
+    {
+      "id": "CHAOS-PM-T-SR",
+      "name": "Sickening Resilience",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an attack dice inflicts damage on a friendly PLAGUE MARINE operative. Until the end of the activation or counteraction, for the purposes of the Disgustingly Resilient rule for that operative, always subtract 1 from the damage inflicted (to a minimum of 2) – you don’t need to roll.",
+      "textKo": "역겨운 저항력을 굴림 없이 적용 — 피해를 항상 -1 (최소 2)"
+    },
+    {
+      "id": "CHAOS-PM-T-VP",
+      "name": "Virulent Poison",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly PLAGUE MARINE operative’s activation or counteraction, before or after it performs an action. One enemy operative within 3\" of, or visible to and within 7\" of, that operative gains one of your Poison tokens (if it doesn't already have one).",
+      "textKo": "3\" 내 적 하나에 중독 토큰. 또는 2D6 7+ 면 7\" 내 적에게"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-PM-PB",
+      "name": "Plague Bells",
+      "textEn": "You can ignore any changes to the stats of friendly PLAGUE MARINE operatives from being injured (including their weapons’ stats).",
+      "textKo": "부상으로 인한 능력치 변경을 무시 (무기 수치 포함)"
+    },
+    {
+      "id": "CHAOS-PM-BG",
+      "name": "Blight Grenades",
+      "textEn": "Friendly PLAGUE MARINE operatives have the following ranged weapon (you cannot select it for use more than twice during the battle):\nNAME ATK HIT DMG\nBlight grenade 4 4+ 2/4\nWR\nRange 6\", Blast 2\", Saturate, Severe, Poison*",
+      "textKo": "전투당 1회 마름병 수류탄 (공격4 명중4+ 피해2/4 · 폭발2 중독)"
+    },
+    {
+      "id": "CHAOS-PM-PR",
+      "name": "Plague Rounds",
+      "textEn": "Friendly PLAGUE MARINE operatives’ boltguns and bolt pistols have the Poison and Severe weapon rules.",
+      "textKo": "볼트건·볼트 권총에 중독과 중상 부여"
+    },
+    {
+      "id": "CHAOS-PM-PV",
+      "name": "Poison Vents",
+      "textEn": "Whenever an enemy operative is activated within 3\" of a friendly PLAGUE MARINE operative:\n• If that enemy operative doesn’t have one of your Poison tokens, roll one D3: on a 3, it gains one.\n• If that enemy operative has one of your Poison tokens, inflict D3 damage on it (instead of 1).",
+      "textKo": "중독 토큰을 가진 적이 3\" 내에서 운용하면 1 대신 D3 피해"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-PM-CHAMP",
+      "nameEn": "Plague Marine Champion",
+      "nameKo": "플레이그 마린 용사",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plague Sword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Severe",
+                "*Poison",
+                "*Toxic"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "역병검",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "중상",
+            "중독*",
+            "독성*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "할아버지의 축복",
+          "text": "플레이어의 중독 토큰 하나를 가진 적요원이 이 요원으로부터 7 내에서 체력을 1 이상 잃을 때마다, 이 요원이 잃은 체력을 동일한 수치만큼 회복합니다. 전환점당 최대 3 체력까지 회복할 수 있으며, 본 규칙은 이 요원이 무력화되지 않은 경우에만 적용됩니다."
+        },
+        {
+          "name": "독성",
+          "text": "이 요원이 플레이어의 중독 토큰 하나를 가진 적요원을 상대로 이 무기를 사용할 때마다, 이 무기의 일반 피해와 결정적 피해 수치 모두 +1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-PM-MAL",
+      "nameEn": "Malignant Plaguecaster",
+      "nameKo": "악성 역병술사",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Entropy",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/7",
+              "rules": [
+                "Psychic",
+                "Range 7\"",
+                "Saturate",
+                "Severe",
+                "*Poison"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plague Wind",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Psychic",
+                "Saturate",
+                "Severe",
+                "Torrent 1\"",
+                "*Poison"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Corrupted Staff",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Psychic",
+                "Severe",
+                "Shock",
+                "Stun",
+                "*Poison"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "엔트로피",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/7",
+          "rules": [
+            "사이킥",
+            "사거리 7",
+            "포화",
+            "중상",
+            "중독*"
+          ]
+        },
+        {
+          "name": "역병풍",
+          "type": "ranged",
+          "attacks": "6",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "사이킥",
+            "포화",
+            "중상",
+            "격류 1",
+            "중독*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "유독성 오염체 [1AP]",
+          "text": "사이킥. 이 요원의 시야에 들어오면서 7 내에 있는 적요원 하나를 선택하거나, 이 요원의 유효 대상인 적요원 하나를 선택합니다. 그 적 요원은 플레이어의 중 독 토큰 하나를 얻습니다. 적 요원이 이미 중독 토큰을 가지고 있다면, 대신 피해를 3만큼 입힙니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "부패한 활력 [1AP]",
+          "text": "사이킥. 이 요원의 시야에 들어오면서 3 내에 있는 아군 요원 하나를 지정해 2D6를 굴립니다. 굴림 값이 7이면 지정된 요원은 손실된 체력을 7만큼 회복합니다. 그렇지 않으면 지정된 요원은 가장 높은 D6 값만 큼 손실된 체력을 회복합니다.\n이 행동은 전환점당 한 번만 수행할 수 있으며, 이 요원 이 적 요원의 장악 범위 내에 있는 동안에는 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-PM-BOMB",
+      "nameEn": "Plague Marine Bombardier",
+      "nameKo": "플레이그 마린 폭격수",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Blight Grenade",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate",
+                "Severe",
+                "*Poison",
+                "*Toxic"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 마름병 수류탄과 크랙 수류탄을 사용할 수 있습니다(진영 및 공용 장비 참고). 사용 시, 이 장비의 사용 한도가 차감되지 않습니다(즉, 다른 요원이 수류 탄을 사용 시 차감과 무관). 이 요원이 위 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화하고, 마름병 수류탄이라면 독성 규칙을 부여합니다(오른쪽 참고)."
+        },
+        {
+          "name": "독성",
+          "text": "이 요원이 플레이어의 중독 토큰 하나를 가진 적요원을 상대로 이 무기를 사용할 때마다, 이 무기의 일반 피해와 결정적 피해 수치 모두 +1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-PM-FTR",
+      "nameEn": "Plague Marine Fighter",
+      "nameKo": "플레이그 마린 투사",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flail Of Corruption",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Brutal",
+                "Severe",
+                "Shock",
+                "*Poison"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "부패의 도리깨",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "무자비",
+            "중상",
+            "충격",
+            "중독*"
+          ]
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-PM-HGNR",
+      "nameEn": "Plague Marine Heavy Gunner",
+      "nameKo": "플레이그 마린 중화기 사수",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plague Spewer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 7\"",
+                "Saturate",
+                "Severe",
+                "Torrent 2\"",
+                "*Poison"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "역병 분사기",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 7",
+            "포화",
+            "중상",
+            "격류 2",
+            "독성*"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-PM-IB",
+      "nameEn": "Plague Marine Icon Bearer",
+      "nameKo": "플레이그 마린 우상기수",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plague Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Severe",
+                "*Poison"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8"
+          ]
+        },
+        {
+          "name": "역병 단도",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "중상",
+            "중독*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "우상기수",
+          "text": "마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 +1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+        },
+        {
+          "name": "전염의 우상",
+          "text": "이 요원이 상대 영역에 있을 때, 전염 전략 플로이의 비용이 0CP가 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-PM-WAR",
+      "nameEn": "Plague Marine Warrior",
+      "nameKo": "플레이그 마린 전사",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Toxic"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plague Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Severe",
+                "*Poison"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "독성*"
+          ]
+        },
+        {
+          "name": "역병 단도",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "중상",
+            "중독*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "혐오스러운 인내력",
+          "text": "이 요원이 사격당할 때, 방어 주사위의 굴림 값이 5+이면 결정적 성공으로 간주합니다."
+        },
+        {
+          "name": "독성",
+          "text": "이 요원이 플레이어의 중독 토큰 하나를 가진 적요원을 상대로 이 무기를 사용할 때마다, 이 무기의 일반 피해와 결정적 피해 수치 모두 +1만큼 변경합니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 수색 섬멸 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "플레이그 마린"
+      },
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 플레이그 마린 용사 요원\n↘ 5 플레이그 마린 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 폭격수\n• 투사\n• 중화기 사수\n• 우상기수\n• 악성 역병술사\n• 전사"
+      },
+      {
+        "type": "rule",
+        "text": "이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "너글의 숫자는 7이며 징표는 3이니. 이 숫자들로부터 그분의 타락이 흘러넘치노라."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "아스타르테스 · 중독 · 역겨운 저항력",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "플레이그 마린"
+      },
+      {
+        "type": "heading",
+        "text": "아스타르테스"
+      },
+      {
+        "type": "rule",
+        "text": "스페이스 마린은 유전적 강화를 거친 초인으로 이들의 목적은 오직 하나, 전쟁이다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 플레이그 마린 요원은 운용 도중 사격 행동이나 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 사격 행동을 두 번수행할 경우, 볼트 권총, 볼트건, 또는 사이킥 무기를 최소 한 번사용해야 합니다. 한 운용 도중 동일한 사이킥 원거리 무기를 두 번 이상 선택할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 플레이그 마린 요원은 받은 명령과 무관하게 대응할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "플레이그 마린"
+      },
+      {
+        "type": "heading",
+        "text": "중독"
+      },
+      {
+        "type": "rule",
+        "text": "너글은 워프에 오염된 독소와 독극물, 바이러스성 역병과 영혼의 질병을 다루며, 자연적인 회복력과 의료적 개입 시도를 모두 무력화 시킨다."
+      },
+      {
+        "type": "rule",
+        "text": "이 킬 팀의 일부 무기는 중독 규칙을 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "*중독: 공격 주사위 처리 단계에서 플레이어가 성공한 주사 위로 피해를 입힌다면, 이 무기로 피해를 입은 요원이 (보유 중인 중독 토큰이 없다면) 중독 토큰을 하나 얻습니다(아군 플레이그 마린 요원은 제외). 플레이어의 중독 토큰을 가진 요원은, 운용을 개시할 때마다 1 피해를 입습니다."
+      },
+      {
+        "type": "heading",
+        "text": "플레이그 마린"
+      },
+      {
+        "type": "heading",
+        "text": "역겨운 저항력"
+      },
+      {
+        "type": "lore",
+        "text": "너글의 추종자들이 가진 흉측한 형체는 죽음, 부패, 질병으로 가득 차 있어, 총탄과 칼날에 대해 극도로 높은 저항력을 가진다."
+      },
+      {
+        "type": "rule",
+        "text": "공격 주사위로 아군 플레이그 마린에게 3 이상의 피해를 가할 때마다 D6 하나를 굴립니다. 값이 4+이면 그 공격의 피해를 -1만큼 변경합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

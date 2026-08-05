@@ -1,0 +1,596 @@
+{
+  "id": "CHAOS-GPI",
+  "nameEn": "Gellerpox Infected",
+  "nameKo": "겔러폭스 감염자",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#c48792",
+  "size": {
+    "total": 11,
+    "min": true
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-GPI-S-BOI",
+      "name": "Blessings Of Infection",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly GELLERPOX INFECTED operative is fighting or retaliating, you can do one of the following:\n• If you roll three or more fails, you can discard one of them to retain another as a normal success instead.\n• If you roll three or more successes, you can discard one of your fails to retain one of your normal successes as a critical success instead.",
+      "textKo": "근접전/반격 시 fail 3개↑면 1개 버려 Normal, 성공 3개↑면 fail 버려 Crit"
+    },
+    {
+      "id": "CHAOS-GPI-S-DTTH",
+      "name": "Drawn To The Hum",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one objective marker. Whenever a friendly GELLERPOX INFECTED operative performs the Reposition or Charge action during its activation, you can use this rule. If you do, add 1\" to its Move stat until the end of that activation, but it must end that move within 2\" of that objective marker.",
+      "textKo": "목표 마커 1개 선택, 그 2\" 내로 끝나는 Reposition/Charge 는 Move +1\""
+    },
+    {
+      "id": "CHAOS-GPI-S-PRD",
+      "name": "Plagueridden Determination",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN) that has an Engage order, you can re-roll one of your defence dice.",
+      "textKo": "Engage 아군 피격 시 방어 주사위 1개 재굴림 (MUTOID VERMIN 제외)"
+    },
+    {
+      "id": "CHAOS-GPI-S-RE",
+      "name": "Rust Emanations",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly GELLERPOX INFECTED NIGHTMARE HULK operative is fighting, your opponent cannot retain results of 3 as successes.",
+      "textKo": "아군 NIGHTMARE HULK 근접전 시 적은 3 을 성공으로 유지 불가"
+    },
+    {
+      "id": "CHAOS-GPI-T-BA",
+      "name": "Barge",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly GELLERPOX INFECTED NIGHTMARE HULK operative’s activation or counteraction, before or after it performs an action. During that activation/ counteraction:\n• It can move through enemy operatives and within control range of them.\n• It can perform the Charge and Reposition actions while within control range of an enemy operative, and can leave that operative’s control range to do so (but then normal requirements for that move apply).",
+      "textKo": "NIGHTMARE HULK 가 적을 통과해 이동하고 통제 범위 안에서도 이동 가능"
+    },
+    {
+      "id": "CHAOS-GPI-T-FOS",
+      "name": "Frightening Onslaught",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after a friendly GELLERPOX INFECTED NIGHTMARE HULK operative performs the Fight action, if it isn't incapacitated. It can immediately perform a free Fight action (you don't have to select the same enemy operative to fight against). This takes precedence over action restrictions.",
+      "textKo": "NIGHTMARE HULK 가 Fight 후 무료 Fight 1회 추가 수행"
+    },
+    {
+      "id": "CHAOS-GPI-T-PD",
+      "name": "Putrescent Demise",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN) is incapacitated, before it’s removed from the killzone. Inflict 1 damage (or D3 damage instead if that friendly operative is a NIGHTMARE HULK) on each enemy operative visible to and within 2\" of that friendly operative.",
+      "textKo": "아군 무력화 시 2\" 내 적 전원에게 1 (NIGHTMARE HULK 는 D3) 피해"
+    },
+    {
+      "id": "CHAOS-GPI-T-RT",
+      "name": "Revolting Technology",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative is shooting a friendly GELLERPOX INFECTED operative. That operative’s ranged weapons have the Hot weapon rule until the end of that sequence; if the weapon already has that weapon rule, when your opponent rolls one D6 for that weapon rule, you can add or subtract 1 from the result. Note that for the latter you can see the result of your opponent’s roll for the Hot weapon rule before deciding to use this ploy.",
+      "textKo": "아군 피격 시 그 적 사격 무기가 Hot 획득 (이미 있으면 D6 ±1)"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-GPI-MV",
+      "name": "Mutoid Vermin",
+      "textEn": "After revealing this equipment option, add four GELLERPOX INFECTED MUTOID VERMIN operatives to your kill team for the battle.",
+      "textKo": "공개하면 MUTOID VERMIN 4명이 킬팀에 추가됨"
+    },
+    {
+      "id": "CHAOS-GPI-PS",
+      "name": "Polluted Stockpile",
+      "textEn": "After revealing this equipment option, roll 2D6: on a 7+, remove one of your opponent’s selected equipment options; otherwise, that player removes one of their own selected equipment options. They cannot select that equipment again during the game sequence (e.g. in the Scouting step of Approved Ops). You cannot select this equipment option after the Select Operatives step.",
+      "textKo": "공개 시 2D6 — 7+ 면 상대 장비 1개 제거, 아니면 내 장비 1개 제거"
+    },
+    {
+      "id": "CHAOS-GPI-MS",
+      "name": "Mutated Symptoms",
+      "textEn": "Once per battle, when you activate a friendly GELLERPOX INFECTED operative, you can select one additional TECHNO-CURSE for that operative to gain until the end of the turning point (it must be different from your existing TECHNO-CURSE). Note that if a rule refers to an enemy operative being affected by your selected TECHNO-CURSE rule (e.g. VULGRAR THRICE-CURSED operative’s Spread the Glorious Gifts rule), it’s affected by your additional TECHNO-CURSE rule too.",
+      "textKo": "전투당 1회, 활성화 시 TECHNO-CURSE 를 하나 더 획득 (TP 종료까지)"
+    },
+    {
+      "id": "CHAOS-GPI-PB",
+      "name": "Plague Bellows",
+      "textEn": "Whenever an operative is shooting a friendly GELLERPOX INFECTED NIGHTMARE HULK operative that’s more than 6\" from it, you can retain one of your defence dice results of 3 as a normal success instead of discarding it.",
+      "textKo": "NIGHTMARE HULK 이 6\" 밖에서 사격받을 때 방어 주사위 3 하나를 성공으로"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-GPI-VTC",
+      "nameEn": "Vulgrar Thrice-Cursed",
+      "nameKo": null,
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 21
+      },
+      "weapons": [
+        {
+          "name": "Pyregut",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            },
+            {
+              "name": "Deluge",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 4\"",
+                "Saturate",
+                "Seek Light"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fleshmelded Weapons",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "*Engineered"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-BS",
+      "nameEn": "Bloatspawn",
+      "nameKo": null,
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Mutant Tentacles",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mutant Claws & Tentacles",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "Slashing",
+              "attacks": "6",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Swiping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "*Swipe"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-FS",
+      "nameEn": "Fleshscreamer",
+      "nameKo": null,
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Mutant Fist & Cleaver",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "Lopping Blow",
+              "attacks": "1",
+              "hit": "3+",
+              "damage": "8/9",
+              "rules": [
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Slashing",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-LG",
+      "nameEn": "Lumberghast",
+      "nameKo": null,
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Mutant Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-GM",
+      "nameEn": "Gellerpox Mutant",
+      "nameKo": null,
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Limited 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Axe",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Improvised Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-GL",
+      "nameEn": "Glitchling",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "6+",
+        "wounds": 3
+      },
+      "weapons": [
+        {
+          "name": "Diseased Effluence",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/2",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Diseased Nippers",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-CM",
+      "nameEn": "Cursemite",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "6+",
+        "wounds": 2
+      },
+      "weapons": [
+        {
+          "name": "Bloodsucking Proboscis",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "2",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Rending",
+                "*Feast"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-ESS",
+      "nameEn": "Eyestinger Swarm",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "6+",
+        "wounds": 2
+      },
+      "weapons": [
+        {
+          "name": "Swarm",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "6+",
+              "damage": "0/0",
+              "rules": [
+                "Range 6\"",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sting",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-GPI-SG",
+      "nameEn": "Sludge-Grub",
+      "nameKo": null,
+      "stats": {
+        "move": "4\"",
+        "apl": 2,
+        "save": "6+",
+        "wounds": 2
+      },
+      "weapons": [
+        {
+          "name": "Acid Spit",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/2",
+              "rules": [
+                "Range 6\"",
+                "1\" Devastating 1",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fanged Maw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "2",
+              "hit": "4+",
+              "damage": "1/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "방어 · 섬멸 — 편성 11명 이상",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPE: SECURITY, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ Every GELLERPOX INFECTED operative in the following list:\n• 1 VULGRAR THRICE-CURSED\n• 1 BLOATSPAWN\n• 1 FLESHSCREAMER\n• 1 LUMBERGHAST\n• 4 GLITCHLING\n• 1 MUTANT with frag grenade and heavy axe\n• 2 MUTANT with frag grenade and improvised weapon If you selected the Mutoid Vermin faction equipment:\n↘ Specified number of GELLERPOX INFECTED operatives selected from the following list:\n• CURSEMITE\n• EYESTINGER SWARM\n• SLUDGE-GRUB"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "TECHNO-CURSE · MUTOID VERMIN · NIGHTMARE HULKS …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "TECHNO-CURSE"
+      },
+      {
+        "type": "rule",
+        "text": "The Gellerpox is an insidious techno-curse that wends its way into cogitator systems and mechanical components, spreading its dubious gifts to the unsuspecting. At the end of the Select Operatives step, select one TECHNO-CURSE for friendly GELLERPOX INFECTED operatives to gain for the battle. Whenever an enemy operative is within your selected TECHNO-CURSE's infection range, that enemy operative is affected by the symptom of the selected TECHNO-CURSE. Each TECHNO-CURSE, its infection range and its symptom is listed below:"
+      },
+      {
+        "type": "rule",
+        "text": "Barrelwarp As the Gellerpox infects ranged weapons, it warps barrels and corrodes rifling, reducing the effectiveness of such weapons. Infection Range: Within 2\" of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN), or within 3\" of a friendly GELLERPOX INFECTED GLITCHLING operative. Symptom: Subtract 1 from the Atk stat of that enemy operative's ranged weapons."
+      },
+      {
+        "type": "rule",
+        "text": "Screaming Rustspikes Blades equipped by the enemy become strange and twisted, with spikes bursting from sword grips to pierce the flesh of the wielder. Infection Range: Within control range of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN). Symptom: Whenever that enemy operative is fighting or retaliating against a friendly GELLERPOX INFECTED operative, if your opponent discards any attack dice as a fail, inflict 1 damage on that enemy operative."
+      },
+      {
+        "type": "rule",
+        "text": "Viral Vox-static Discordant static noise and ear-piercing screams blare over vox-channels, disrupting the enemy's communications, breaking their chain of command and sowing fear within their ranks. Infection Range: Within 3\" of a friendly GELLERPOX INFECTED operative (excluding MUTOID VERMIN), or within 4\" of a friendly GELLERPOX INFECTED GLITCHLING operative. Symptom: That enemy operative's APL stat cannot be added to (remove all positive APL stat changes it has)."
+      },
+      {
+        "type": "heading",
+        "text": "MUTOID VERMIN"
+      },
+      {
+        "type": "rule",
+        "text": "Tiny pests become monstrous threats under the effects of the Gellerpox, but are still grubs that can be ignored by highly trained warriors. MUTOID VERMIN operatives cannot perform any actions other than Charge, Dash, Fall Back, Fight, Reposition and Shoot, or use any weapons that aren't on their datacard. They can perform the Fall Back action for 1 less AP. MUTOID VERMIN operatives cannot contest markers or areas of the killzone, and are ignored for your opponent's kill/elimination op (when they're incapacitated, and when determining your starting number of operatives). They're also ignored for victory conditions and scoring VPs if either require operatives to 'escape', 'survive' or be incapacitated by enemy operatives (if they escape/survive/are incapacitated, determining how many operatives must escape/survive/be incapacitated, etc.)."
+      },
+      {
+        "type": "rule",
+        "text": "Operatives can move through MUTOID VERMIN operatives, and enemy operatives can move within control range of them. Having only MUTOID VERMIN operatives within their control range doesn't prevent enemy operatives from performing the Charge, Dash and Reposition action, and enemy operatives can leave MUTOID VERMIN operatives' control range when performing the Charge action."
+      },
+      {
+        "type": "heading",
+        "text": "NIGHTMARE HULKS"
+      },
+      {
+        "type": "lore",
+        "text": "Several among the infected have had their forms bloated and swollen into enormous twisted creatures, blessed with the bounteous gifts of Nurgle. Though made powerful by such mutations, these monstrosities are somewhat clumsy in their movements."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever your opponent is selecting a valid target, friendly GELLERPOX INFECTED NIGHTMARE HULK operatives cannot use Light terrain for cover. While this can allow such operatives to be targeted (assuming they're visible), it doesn't remove their cover save (if any). Friendly GELLERPOX INFECTED NIGHTMARE HULK operatives cannot perform unique actions. You must spend 1 additional AP for friendly GELLERPOX INFECTED NIGHTMARE HULK operatives (excluding VULGRAR THRICECURSED) to perform the Pick Up Marker and mission actions (excluding Operate Hatch)."
+      },
+      {
+        "type": "heading",
+        "text": "REVOLTINGLY RESILIENT"
+      },
+      {
+        "type": "lore",
+        "text": "The monstrous transformations wrought upon these hulking brutes have rendered their aberrant physiologies incredibly resistant to harm."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever an attack dice inflicts damage of 3 or more on a friendly GELLERPOX INFECTED NIGHTMARE HULK or GELLERPOX INFECTED MUTANT operative, roll one D6: on a 4+, subtract 1 from that inflicted damage."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

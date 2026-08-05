@@ -1,0 +1,1303 @@
+{
+  "id": "IMP-SPECT",
+  "nameEn": "Spectre Squad",
+  "nameKo": "유령 분대",
+  "archetype": "Infiltration/Recon",
+  "color": "#56acb6",
+  "size": {
+    "total": 11
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-SPECT-DIS",
+      "name": "Disappear",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "One friendly SPECTRE SQUAD operative can immediately perform a free Reposition action. It cannot end that move closer to enemy operatives or your opponent’s drop zone (unless it ends that move wholly within your drop zone) and it cannot perform that action again during the turning point. In a killzone that uses the close quarters rules (e.g. Killzone: Tomb World), ignore Wall terrain when determining closer.",
+      "textKo": "아군 1명이 즉시 무료 Reposition, 적 쪽으로는 접근 불가"
+    },
+    {
+      "id": "IMP-SPECT-HE",
+      "name": "Hidden Engagement",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly SPECTRE SQUAD operative is shooting, if it’s in cover from the target’s perspective, that friendly operative’s weapons have the Balanced weapon rule. Note that your opponent still determines the targeting lines for this (i.e. they decide which point of their operative’s base targeting lines are drawn from).",
+      "textKo": "cover 안에서 사격하는 아군 SPECTRE SQUAD 무기가 Balanced 획득"
+    },
+    {
+      "id": "IMP-SPECT-AV",
+      "name": "Ambushing Volley",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly SPECTRE SQUAD operative is activated, if it’s more than 3\" from enemy operatives and isn’t a valid target for enemy operatives before determining its order, its ranged weapons (excluding the suppressive profile of an autostubber) have the Devastating 1 weapon rule until the end of that activation. If that weapon already had the Devastating x weapon rule, add 1 to the x of its Devastating x weapon rule instead.",
+      "textKo": "적에게서 3\" 넘고 타겟 불가 상태로 활성화 시 사격 무기가 Devastating 1"
+    },
+    {
+      "id": "IMP-SPECT-PAT",
+      "name": "Patience",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "In the Firefight phase of this turning point, you can do one of the following:\n• When it’s your turn to activate a friendly operative, you can skip that activation. You cannot do this until after your opponent’s first activation.\n• When a friendly SPECTRE SQUAD operative performs the Shoot or Fight action during its activation, if it’s the last friendly operative to be activated during this turning point, its weapons have the Relentless weapon rule for that action.",
+      "textKo": "이번 TP 활성화를 건너뛰거나, 마지막 활성화 아군 무기가 Relentless"
+    },
+    {
+      "id": "IMP-SPECT-DOD",
+      "name": "Dodge",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly SPECTRE SQUAD operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+      "textKo": "아군 1명이 이번 활성화에 Fall Back 을 1 AP 적게 수행"
+    },
+    {
+      "id": "IMP-SPECT-SK",
+      "name": "Silent Killers",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly SPECTRE SQUAD operative’s activation before or after it performs an action, if it has a Conceal order and isn’t a valid target for enemy operatives. Until the end of that activation, it can perform the Charge action while it has a Conceal order, and the first time it strikes you can inflict 3 additional damage, but cannot resolve any other successes during that sequence.",
+      "textKo": "Conceal 인 채 Charge 가능, 첫 타격에 3 피해 추가 (다른 성공은 포기)"
+    },
+    {
+      "id": "IMP-SPECT-SR",
+      "name": "Sharp Reactions",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after an enemy operative that has a Conceal order performs an action during its activation, if it’s within 8\" of a friendly SPECTRE SQUAD operative. You can use the Elite Fieldcraft faction rule to interrupt that activation with that friendly SPECTRE SQUAD operative regardless of that enemy operative’s order (taking precedence over the normal rules).",
+      "textKo": "8\" 내 Conceal 적의 활성화도 Elite Fieldcraft 로 끼어들기 가능"
+    },
+    {
+      "id": "IMP-SPECT-PD",
+      "name": "Prepared Defence",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly SPECTRE SQUAD operative that has a Conceal order or is ready is retaliating. You can do one of the following:\n• At the start of the Resolve Attack Dice step, you can resolve one of your successes before the normal order. If you do, that success must be used to block.\n• When you block, that block can be allocated to block two unresolved successes (instead of one).\nYou cannot use this ploy during an activation in which you’ve interrupted with the Elite Fieldcraft faction rule.",
+      "textKo": "반격 시 block 1개를 먼저 처리하거나 block 1개로 성공 2개 방어"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-SPECT-SO",
+      "name": "Sniper Overwatch",
+      "textEn": "Once per turning point, a friendly SPECTRE SQUAD operative can use the following ranged weapon:\nNAME ATK HIT DMG\nSniper overwatch 4 3+ 3/3\nWR\nDevastating 2, Heavy (Dash only), Saturate, Silent",
+      "textKo": "TP당 1회 저격 사격 (A4 · H3+ · D3/3, Devastating 2 · Silent)"
+    },
+    {
+      "id": "IMP-SPECT-VID",
+      "name": "Vid-Feed Triangulation",
+      "textEn": "Once per turning point, when a friendly SPECTRE SQUAD operative is performing the Shoot action and you’re selecting a valid target, you can use this rule. If you do, that target cannot be obscured if either of the following are true:\n• It’s also a valid target for another friendly SPECTRE SQUAD operative.\n• It’s within 6\" of a friendly VOX-RELAY BEACON operative.",
+      "textKo": "TP당 1회, 조건 충족 시 사격 대상이 obscured 되지 않음"
+    },
+    {
+      "id": "IMP-SPECT-SSF",
+      "name": "Starshell Flare",
+      "textEn": "STRATEGIC GAMBIT. One friendly SPECTRE SQUAD operative can immediately perform a free Stun Grenade action (see universal equipment). Performing this action using this rule doesn’t count towards its action limits (i.e. if you also select that grenade from equipment). When an enemy operative’s APL stat is changed as a result of this STRATEGIC GAMBIT, you cannot use this equipment for the rest of the battle.",
+      "textKo": "GAMBIT, 아군 1명이 무료 Stun Grenade 액션 (사용 횟수에 포함 안 됨)"
+    },
+    {
+      "id": "IMP-SPECT-AC",
+      "name": "Advanced Camouflage",
+      "textEn": "Friendly SPECTRE SQUAD operatives (excluding VOX-RELAY BEACON) can perform the following unique action:\nADVANCED CAMOUFLAGE 1AP\nUntil the start of this operative’s next activation, while it has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".\nThis operative cannot perform this action while visible to and within 3\" of an enemy operative.",
+      "textKo": "Advanced Camouflage (1AP) — Conceal + 엄폐 중이면 2\" 밖에서 표적 지정 불가"
+    }
+  ],
+  "equipmentBonusKo": "Guide 를 데려가면 장비를 하나 더 고를 수 있습니다 — 단 Ammo Cache 또는 장비 지형지물만",
+  "operatives": [
+    {
+      "id": "IMP-SPECT-SGT",
+      "nameEn": "Veteran Sergeant",
+      "nameKo": "유령 분대 베테랑 부사관",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Scoped Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bionic Arm",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "조준경 장착형 라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "살상 5+",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "생체공학 팔",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "임무 하달 [0AP]",
+          "text": "소진된 아군 유령 분대 요원(복스중계 신호기 제외) 가운데 이 요원의 시야에 들어오며 이번 전환점에 정예 야전 전술 팩션 규칙을 사용해서 적 요원의 운용을 방해하지 않은 요원을 하나 지정합니다. 전환점이 종료될 때까지, 그 아군 요원은 소진 상태에도 불구하고 정예 야전 전술 팩션 규칙을 사용해 적 요원의 운용을 방해할 수 있습니다(이를 일반적인 규칙에 우선함). 하지만 이 경우, 이 전환점 동안 그 요원은 대응을 수행할 수 없으며(반대로 대응을 수행한 경우 방해 불가), 이 전환점에 기동을 이미 수행했다면 그 행동을 또 수행할 수 없습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-MED",
+      "nameEn": "Field Medicae",
+      "nameKo": "유령 분대 야전 메디케이",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasrifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "라스소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "중화기(기동 한정)",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "환자 발생!",
+          "text": "매 전환점 도중 이 요원의 시야에 들어오며 3” 내에 있는 다른 아군 유령 분대 요원(복스중계 신호기 제외) 이 처음으로 무력화될 때, 이 요원과 그 아군 요원이 모두 적 요원의 장악 범위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 아군 요원은 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 그 행동 이후, 그 아군 요원은 즉시 무상으로 질주 행동을 수행해 반드시 이 요원의 장악 범위 내에서 이동을 종료해야 합니다. 이 요원과 그 아군 요원은 각각 다음 운용을 종료할 때까지 APL 수치가 -1만큼 변경됩니다. 이 규칙을 그 아군 요원의 운용 도중 사용했다면, 그 운용은 종료됩니다. 이 요원이 무력화되었을 때, 또는 사격 행동의 주 대상이나 부가 대상이 되었을 때는 이 규칙을 사용할 수 없습니다."
+        },
+        {
+          "name": "의료함 [0AP]",
+          "text": "이 요원의 장악 범위 내에 있는 아군 유령 분대 요원(복스중계 신호기 제외)을 하나 지정해 잃은 체력을 2D3만큼 회복합니다. 이번 전환점 도중 환자 발생! 규칙의 효과를 받은 요원은 지정할 수 없습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-GRN",
+      "nameEn": "Grenadier",
+      "nameKo": "유령 분대 척탄병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasrifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "라스소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "중화기(기동 한정)",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 세열, 크랙, 연막 수류탄(공용 장비 참고) 을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한도가 차감 되지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무관). 이 요원이 세열 또는 크랙 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+        },
+        {
+          "name": "멜타 지뢰",
+          "text": "이 요원은 아군의 멜타 지뢰 마커를 보유하며 그 마커에 마커 회수 행동을 수행할 수 있습니다. 마커 배치 행동을 수행할 때마다, 이 요원은 즉시 무상 질주 행동을 수행할 수 있습니다. 그 마커는 적 요원의 장악 범위 내에 놓을 수 없습니다. 만약 이 요원이 그 마커를 보유한 상태로 무력화되 었는데 마커를 놓을 수 없다면, 마커는 이 요원과 함께 제거됩니다."
+        },
+        {
+          "name": "근접 지뢰",
+          "text": "아군의 멜타 지뢰 마커가 다른 요원의 장악 범위 에 처음으로 들어갔을 때, 그 마커를 제거한 다음 그 요원에 게 2D6+3만큼 피해를 가합니다. 그 요원이 무력화되지 않았으며 행동 중이었다면 그 행동은 종료됩니다(행동의 효과가 완전히 적용되지 않았더라도 즉시 종료됨). 그 적 요원을 놓을 수 없다면, 놓을 수 있는 위치로 최소 거리만 옮깁니다. 이 요원에게는 이 효과가 적용되지 않는다는 점에 유의하십 시오(즉, 이 요원은 지뢰를 기폭시킬 수 없으며 그 마커로부 터 피해를 입지 않습니다)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-GDE",
+      "nameEn": "Guide",
+      "nameKo": "유령 분대 정탐병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasrifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "라스소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "중화기(기동 한정)",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "살상지대 사전 준비",
+          "text": "장비 선택지를 하나 추가로 선택할 수 있습니다. 단, 반드시 탄약 더미 또는 장비 지형지물(공용 장비 참고)을 선택해야 합니다."
+        },
+        {
+          "name": "지형 정탐",
+          "text": "플레이어의 영역 또는 이 요원의 3” 내에 있는 지형지물은 아군 유령 분대 요원에게 정탐됩니다. 각 아군 유령 분대 요원은 운용마다 한 번, 다음 중 하나를 수행할 수 있습니다.\n• 아군 유령 분대 요원에게 정탐된 지형지물에서 올라가기 한 번의 첫 수직 거리 2”를 무시할 수 있습니다.\n• 아군 유령 분대 요원에게 정탐된 출입구에서 해치 조작 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-GNR",
+      "nameEn": "Gunner",
+      "nameKo": "유령 분대 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-SPECT-HGNR",
+      "nameEn": "Heavy Gunner",
+      "nameKo": "유령 분대 중화기 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Missile Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Blast 2\"",
+                "Heavy"
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Heavy",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "미사일 발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 2\"",
+            "중화기"
+          ]
+        },
+        {
+          "name": "미사일 발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "중화기",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "화기팀",
+          "text": "이 요원이 운용될 때마다, 아군 장탄병 요원이 그 장악 범위 내에 있다면, 그 운용이 종료될 때까지 미사일 발사기의 모든 프로필에 중화기 무기 규칙 대신 중화기 (질주 한정) 무기 규칙을 부여합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-LDR",
+      "nameEn": "Loader",
+      "nameKo": "유령 분대 장탄병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "부사수",
+          "text": "이 요원의 장악 범위 내에 있는 아군 유령 분대 요원이 사격할 때마다, 공격 주사위 하나를 재굴림할 수 있습니다."
+        },
+        {
+          "name": "무기 장전 [1AP]",
+          "text": "이 요원의 유령 분대 내에 있으며 적 요원의 3” 내에 있지 않은 아군 유령 분대 요원을 하나 지정합니다. 그 아군 요원은 즉시 사격 행동(엄호 제외)을 무상으로 수행할 수 있으며, 이를 위해 명령을 변경할 수 있습니다. 이 요원은 적 요원의 장악 범위 내에 있거나 대응하는 동안, 또는 돌격, 질주, 사격 행동을 수행한 운용 도중에 이 행동을 수행할 수 없습니다(마찬가지로, 이 행동을 수행한 운용 도중 그러한 행동 불가)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-SS",
+      "nameEn": "Sharpshooter",
+      "nameKo": "유령 분대 저격수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Long-Las",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "롱라스(은폐)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기",
+            "무성",
+            "위치 은폐*"
+          ]
+        },
+        {
+          "name": "롱라스(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "롱라스(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수 행할 때만 이 무기를 사용할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-STUB",
+      "nameEn": "Stub-Gunner",
+      "nameKo": "유령 분대 스터버 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Auto-Stubber",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Dash only)"
+              ]
+            },
+            {
+              "name": "Suppressive",
+              "attacks": "5",
+              "hit": "5+",
+              "damage": "0/0",
+              "rules": [
+                "Heavy",
+                "Lethal 5+",
+                "Seek Light",
+                "Stun",
+                "Torrent 1\""
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Dash only)",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "자동스터버(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "중화기(질주 한정)"
+          ]
+        },
+        {
+          "name": "자동스터버(제압)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "5+",
+          "damage": "0/0",
+          "rules": [
+            "중화기",
+            "살상 5+",
+            "저밀도 색적",
+            "혼미",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "자동스터버(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "중화기(질주 한정)",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "제압 사격",
+          "text": "적 요원이 이 요원의 시야에 들어오며 3” 내에 있을 때, 이 요원이 교전 명령을 받았고 다른 적 요원의 장악 범위 내에 있지 않다면, 그 적 요원이 보유한 무기의 공격 수치를 -1만큼 변경합니다(최소 1까지). 이 요원이 이번 전환점에 돌격 행동을 수행했다면 이 규칙의 효과가 발생하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-TRP",
+      "nameEn": "Trooper",
+      "nameKo": "유령 분대 대원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasrifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "라스소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "중화기(기동 한정)",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "평정심",
+          "text": "전환점당 한 번, 이 규칙을 보유한 아군 유령 분대 요원은 정예 야전 전술을 사용해 적 요원의 운용을 방해할 수 있으며, 이때 0 야전 전술 포인트를 소모합니다(일반적인 규칙에 우선함)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-VOX",
+      "nameEn": "Vox-Operator",
+      "nameKo": "유령 분대 복스통신병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lasrifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "라스소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "중화기(기동 한정)",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "신호 전송 [1AP]",
+          "text": "보조. 이 요원의 시야에 들어온 다른 아군 유령 분대 요원(복스중계 신호기 제외)을 하나 지정합니다. 그 요원의 다음 운용이 종료될 때까지, 그 요원의 APL 수치를 +1만큼 변경합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SPECT-BCN",
+      "nameEn": "Vox-Relay Beacon",
+      "nameKo": "유령 분대 복스중계 신호기",
+      "stats": {
+        "move": "0\"",
+        "apl": 1,
+        "save": "5+",
+        "wounds": 3
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": [
+        {
+          "name": "사전 전개",
+          "text": "요원 배치 단계에, 이 요원은 아군 투입 구역 밖에 놓을 수 있습니다. 단, 반드시 플레이어의 영역에 완전 히 들어가며, 요원을 놓을 수 있고, 마커 및 장비 지형지물로부터 2” 넘게 떨어진 위치여야 합니다."
+        },
+        {
+          "name": "소모품",
+          "text": "이 요원은 신호 전송 이외의 다른 행동을 수행할 수 없으며, 대응 또는 반격하거나 근접전에서 지원할 수 없습니다. 이 요원은 마커 또는 킬존 내 범위를 두고 경쟁할 수 없으며, 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다 (무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되 어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음).\n요원들은 이 요원을 통과해 이동할 수 있습니다. 상대는 언제든지 이 요원의 장악 범위를 무시할 수 있습니다. 아군 유령 분대 요원이 사격 행동을 수행해 유효 대상을 지정할 때마다, 이 요원의 장악 범위를 무시할 수 있습니다. 단, 이 요원도 다른 요원의 장악 범위를 무시하는 것은 아님에 유의하십시오."
+        },
+        {
+          "name": "신호 전송 [1AP]",
+          "text": "이 요원의 6” 내에 있는 아군 유령 분대 요원을 하나 지정합니다. 그 요원의 다음 운용이 종료될 때까지, 그 요원의 APL 수치를 +1만큼 변경합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+1+9 = 11명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 유령 분대 베테랑 부사관\n↘ 1 유령 분대 복스중계 신호기\n↘ 9 유령 분대 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 야전 메디케이\n• 척탄병\n• 정탐병\n• 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 멜타건, 주먹\n○ 플라스마 건, 주먹\n• 중화기 사수\n• 장탄병\n• 저격수\n• 스터버 사수\n• 대원\n• 복스통신병"
+      },
+      {
+        "type": "rule",
+        "text": "대원 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "다음 선택지 중 하나를 골라 장비합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 라스소총, 개머리판\n• 라스카빈, 개머리판"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "위장 망토",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "정예 야전 전술(카드 1/3)"
+      },
+      {
+        "type": "rule",
+        "text": "베테랑 전투원이자 전문적 척후병인 유령 분대 요원은 유연한 대응 전술에 고도로 숙련되었다. 적의 움직임을 읽고, 지형지물을 활용해 허를 찔러 기습한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 전략 페이즈의 준비 단계에, 플레이어는 1 야전 전술 포인트를 획득합니다. 아군 유령 분대 복스통신병 요원이 킬존에 있으며 적 요원의 장악 범위 내에 있지 않다면 대신 2포인트를 획득합니다. 각 전환점 종료 시, 플레이어가 보유한 야전 전술 포인트는 버립니다."
+      },
+      {
+        "type": "rule",
+        "text": "교전 명령을 받은 적 요원이 운용 도중 행동을 수행한 후, 플레이어는 1 야전 전술 포인트를 소모해 그 운용을 방해할 수 있습니다. 그렇게 할 경우, 다른 모든 적 요원의 장악 범위 내에 있지 않으며 준비 상태인 아군 유령 분대 요원이 무상으로 사격(엄호 제외), 질주, 기동 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "전환점당 한 번만 적 요원의 운용을 방해할 수 있으며(엄호 포함), 각 아군 요원은 전환점당 한 번만 이 규칙으로 무상 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "정예 야전 전술(카드 2/3)"
+      },
+      {
+        "type": "rule",
+        "text": "사격 행동을 수행한다면, 이를 위해 그 아군 요원이 받은 명령을 변경할 수 있습니다. 그 행동 도중에는 다른 모든 적요원을 유효 대상으로 지정할 수 없습니다. 그 아군 요원 이 (다른 적 요원이 아닌) 그 적 요원의 장악 범위 내에만 있다면 그 행동 수행이 가능하며, 이러한 상황에는 엄호 행동 (킬 팀 코어북 참고)의 영거리 사격 규칙을 따릅니다."
+      },
+      {
+        "type": "heading",
+        "text": "정예 야전 전술(카드 3/3)"
+      },
+      {
+        "type": "rule",
+        "text": "기동 행동을 수행한다면, 그 아군 요원은 전환점 도중 다시 그 행동을 수행할 수 없습니다. 질주 또는 기동 행동을 수행 한다면, 그 아군 요원은 이 이동을 그 적 요원 또는 상대의 투입 구역과 더 가까워진 위치에서 종료할 수 없습니다(이 이동을 플레이어의 투입 구역에 완전히 들어간 상태로 종료 하는 경우는 제외). 폐쇄 공간 규칙을 사용하는 킬존(예: 킬존: 묘실 행성)에서는 가까워졌는지를 결정할 때 벽 지형을 무시하며, 텔레포트할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "위장 망토"
+      },
+      {
+        "type": "rule",
+        "text": "카멜레올린처럼 진보한 기술은 아니지만, 유령 분대에 지급된 위 장 망토는 관측이 제한되는 지형지물에 몸을 숨기는 데 도움을 준다. 요원들의 탁월한 감지 회피 역량과 합쳐지면 특히나 효과적이다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 유령 분대 요원(복스중계 신호기 제외)이 사격당할 때마다, 엄폐 방호 주사위를 하나라도 보전할 수 있다면, 엄폐 방호 주사위를 하나 추가로 보전하거나 엄폐 방호 주사위 하나를 결정적 성공으로 변경해 보전할 수 있습니다. 이는고지 지형에 의한 엄폐 방호 향상과 누적되지 않습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

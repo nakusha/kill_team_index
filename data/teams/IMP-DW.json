@@ -1,0 +1,1255 @@
+{
+  "id": "IMP-DW",
+  "nameEn": "Deathwatch",
+  "nameKo": "데스워치",
+  "archetype": "Seek & Destroy/Security",
+  "color": "#b9c3cf",
+  "size": {
+    "total": 5
+  },
+  "faction": {
+    "id": "ASTA",
+    "nameEn": "Space Marines",
+    "nameKo": "스마"
+  },
+  "ploys": [
+    {
+      "id": "IMP-DW-S-MT",
+      "name": "Mission Tactics",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select Conceal or Engage. Whenever a friendly DEATHWATCH operative is shooting against or fighting against an enemy operative that has that order, that friendly operative’s weapons have the Balanced weapon rule.",
+      "textKo": "Conceal/Engage 선택, 그 order 의 적 상대 아군 무기가 Balanced"
+    },
+    {
+      "id": "IMP-DW-S-TLV",
+      "name": "The Long Vigil",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly DEATHWATCH operative that’s wholly within your territory, you can re-roll one of your defence dice.",
+      "textKo": "아군 진영 안의 아군이 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "IMP-DW-S-TSTS",
+      "name": "The Shield That Slays",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly DEATHWATCH operative is wholly within your opponent’s territory, Normal Dmg of 4 or more inflicts 1 less damage on it.",
+      "textKo": "적 진영 안의 아군은 4 이상 Normal Dmg 를 1 감소"
+    },
+    {
+      "id": "IMP-DW-S-ATSKNF",
+      "name": "And They Shall Know No Fear",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "You can ignore any changes to the stats of friendly DEATHWATCH operatives from being injured (including their weapons’ stats).",
+      "textKo": "아군 DEATHWATCH 가 부상으로 인한 스탯 변화를 무시"
+    },
+    {
+      "id": "IMP-DW-T-SNTA",
+      "name": "Suffer Not The Alien",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly DEATHWATCH operative, if it’s shooting against or fighting against an operative that doesn’t have the CHAOS or IMPERIUM keyword. You can re-roll any of your attack dice.",
+      "textKo": "CHAOS/IMPERIUM 아닌 적을 공격 시 Atk 주사위 재굴림"
+    },
+    {
+      "id": "IMP-DW-T-AT",
+      "name": "Auspicator Tracking",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly DEATHWATCH operative is counteracting, before it performs any actions. You can change its order.",
+      "textKo": "아군이 counteract 할 때 행동 전에 order 를 변경"
+    },
+    {
+      "id": "IMP-DW-T-AAS",
+      "name": "Advanced Auspex Scan",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly DEATHWATCH operative performs the Shoot action. Until the end of the activation/ counteraction, its ranged weapons have the Saturate weapon rule and enemy operatives cannot be obscured.",
+      "textKo": "사격 시 아군 사격 무기가 Saturate 획득, 적은 obscured 불가"
+    },
+    {
+      "id": "IMP-DW-T-THP",
+      "name": "Transhuman Physiology",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an operative is shooting a friendly DEATHWATCH operative, in the Roll Defence Dice step. You can retain one of your normal successes as a critical success instead.",
+      "textKo": "아군 피격 시 방어 Normal 성공 1개를 Critical 성공으로"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-DW-DW",
+      "name": "Digital Weapons",
+      "textEn": "Once per turning point, when a friendly DEATHWATCH operative performs the Fight action, at the start of the Roll Attack Dice step, you can use this rule. If you do, inflict 1 damage on the enemy operative in that sequence.",
+      "textKo": "TP당 1회, Fight 시 공격 주사위를 굴리기 전에 적에게 1 피해"
+    },
+    {
+      "id": "IMP-DW-SST",
+      "name": "Scrutavore Servo-Thrall",
+      "textEn": "Once per turning point, during a friendly DEATHWATCH operative’s activation, you can use this rule. If you do, during that activation, that operative can perform a mission action for 1 less AP.\nHaving an enemy operative within its control range doesn’t prevent that friendly operative from performing that mission action. However, in such an instance, after it does so, you and your opponent roll-off. If your opponent wins, you cannot use this equipment for the rest of the battle.",
+      "textKo": "TP당 1회, 미션 액션 1AP 감소. 적 통제 범위 안에서도 가능하나 이후 롤오프"
+    },
+    {
+      "id": "IMP-DW-SVBSC",
+      "name": "Sanctus-V Bioscryer Cuffs",
+      "textEn": "Once during each friendly DEATHWATCH operative’s activation, before or after it performs an action, if it’s not within control range of enemy operatives, you can use this rule. If you do, select one of the following:\n• That friendly operative regains up to D3 lost wounds.\n• Remove any changes to that friendly operative’s APL stat.\n• Remove one of the following tokens that friendly operative has (before that token’s activation effects are resolved, if relevant): Neutron Fragment, Poison, Terrorchem.",
+      "textKo": "활성화 중 1회, D3 상처 회복 · APL 변화 제거 · 토큰 1개 제거 중 선택"
+    },
+    {
+      "id": "IMP-DW-AR",
+      "name": "Ammunition Reserve",
+      "textEn": "Once per battle, you can use the Special Issue Ammunition faction rule for up to two Shoot actions during one turning point, but you must select different weapon rules for both uses. This takes precedence over the normal Special Issue Ammunition rules.",
+      "textKo": "전투당 1회, 한 TP 에 Special Issue Ammunition 을 2회까지 (규칙은 서로 다르게)"
+    }
+  ],
+  "equipmentBonusKo": "Watch Sergeant 를 데려가면 장비를 하나 더 고를 수 있습니다",
+  "operatives": [
+    {
+      "id": "IMP-DW-SGT",
+      "nameEn": "Watch Sergeant",
+      "nameKo": "데스워치 파수 서전트",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "맞춤 병기고",
+          "text": "장비 선택지 하나를 추가로 고를 수 있습니다."
+        },
+        {
+          "name": "전략적 지휘",
+          "text": "이 요원이 킬존에 있다면, 다음 각 항목을 전투당 한 번씩 실시할 수 있습니다.\n• 데스워치 전략 플로이를 0CP에 사용\n• 데스워치 화력전 플로이를 0CP에 사용"
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-AEG",
+      "nameEn": "Aegis",
+      "nameKo": "데스워치 방벽 베테랑",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "2+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Maul & Storm Shield",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Shock",
+                "*Shield"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "파워 몰과 스톰 방패",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "충격",
+            "수비*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "수비",
+          "text": "이 요원이 이 무기로 근접전 또는 반격 시, 막기 주사위 하나로 처리되지 않은 성공 (한 개 대신) 두 개를 막는 데 할당할 수 있습니다."
+        },
+        {
+          "name": "스톰 방패",
+          "text": "이 요원이 사격당할 때, 공격하는 무기가 관통 무기 규칙을 보유한다면 관통 무기 규칙의 x 값을 -1만큼 변경합니다. 이에 따라 관통1은 아무 효과가 없게 됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-BLM",
+      "nameEn": "Blademaster",
+      "nameKo": "데스워치 검술 베테랑",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Special Issue Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Xenophase Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "Duel",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Brutal",
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Phase Sweep",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Brutal",
+                "Lethal 5+",
+                "*Phase Sweep"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "특수 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "제노페이즈 도검(결투)",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "무자비",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "제노페이즈 도검(위상 휩쓸기)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "무자비",
+            "살상 5+",
+            "위상 휩쓸기*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "최적화된 검술",
+          "text": "이 요원이 보유한 제노페이즈 도검의 명중 요구치에 적용되는 모든 변경 사항을 무시할 수 있습니다. 이 요원이 근접전 또는 반격 시, 일반적인 순서에 앞서 성공 주사위 하나를 처리할 수 있습니다. 단, 그 성공 주사위는 반드시 막기에 사용해야 합니다."
+        },
+        {
+          "name": "위상 휩쓸기",
+          "text": "이 요원이 이 무기 프로필을 사용하여 근접전 행동을 수행할 때마다, 무력화되지 않았다면 직후에 즉시 무상으로 근접전 행동을 수행할 수 있습니다. 단, 이 무상 행동은 반드시 이 무기 프로필을 선택해야 하며, 운용이나 대응당 한 번 요원의 장악 범위 내에 있는 개별 적 요원만을 대상으로 수행할 수 있습니다. 이 규칙은 일반적인 행동 제약에 우선하며 이 요원이 무력화되거나, 또는 장악 범위 내에 있는 모든 적 요원을 상대로 근접전 수행을 마칠 때까지 계속해서 무상 근접전 행동을 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-BOM",
+      "nameEn": "Bombard",
+      "nameKo": "데스워치 포격 베테랑",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 18
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Frag Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Shell",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Shrapnel",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "세열 대포(집중탄)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "세열 대포(유산탄)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DW-BRC",
+      "nameEn": "Breacher",
+      "nameKo": "데스워치 돌파 베테랑",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 18
+      },
+      "weapons": [
+        {
+          "name": "Auxiliary Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hellstorm Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Melta Bomb",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Range 3\"",
+                "Devastating 3",
+                "Heavy (Reposition only)",
+                "Limited 1",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "부착식 유탄발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "부착식 유탄발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "헬스톰 볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "멜타 폭탄",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/3",
+          "rules": [
+            "사거리 3\"",
+            "궤멸 3",
+            "중화기(기동 한정)",
+            "한도 1",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DW-DEM",
+      "nameEn": "Demolisher",
+      "nameKo": "데스워치 파괴 베테랑",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Thunder Hammer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "6/7",
+              "rules": [
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "중형 선더 해머",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "6/7",
+          "rules": [
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "무자비한 강습",
+          "text": "이 요원이 근접전을 수행할 때마다, 보유한 선더 해머에 무자비 무기 규칙이 부여됩니다. 이 요원이 돌격 행동을 수행할 때마다, 그 운용/대응이 끝날 때까지 보유한 선더 해머에 집요 무기 규칙이 부여됩니다."
+        },
+        {
+          "name": "공격적인 위력",
+          "text": "이 요원이 근접전 또는 반격 시, 그 절차 동안 적 요원이 보유한 무기의 일반 및 결정적 피해 수치를 모두 -1만큼 변경합니다(최소 2까지 변경 가능)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-DIS",
+      "nameEn": "Disruptor",
+      "nameKo": "데스워치 교란 베테랑",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Marksman Bolt Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "저격 볼트 카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "향상된 다주파 교란기",
+          "text": "전략 포석. 이 요원의 시야에 들어오거나 그로부터 6\" 이내에 있는 적 요원 하나를 지정하고 D6를 하나 굴립니다. 이어지는 화력전 페이즈에, 지정된 적 요원은 다음 조건 중 하나를 충족할 때까지 운용되거나 행동을 수행할 수 없습니다.\n• 상대가 D6 값과 같은 수의 적 요원을 운용했음\n• 지정된 요원이 마지막으로 운용하는 적 요원임"
+        },
+        {
+          "name": "오스펙스 삼각측량",
+          "text": "다음 사항을 모두 충족 시, 고급 오스펙스 스캔 화력전 플로이를 0CP에 사용할 수 있습니다.\n• 이 요원이 적 요원의 장악 범위 내에 있지 않음\n• 해당 사격 행동의 대상이(부가 대상이 있다면, 주 대상만) 이 요원에게 시야가 확보된 상태임 반드시 이 요원이 사격 행동을 수행할 필요는 없다는 점을 유의하십시오."
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-GNR",
+      "nameEn": "Gunner",
+      "nameKo": "데스워치 사수 베테랑",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Plasma Incinerator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "중형 플라스마 소각기(표준)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "중형 플라스마 소각기(과충전)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DW-HTK",
+      "nameEn": "Headtaker",
+      "nameKo": "데스워치 참수 베테랑",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Special Issue Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Combat Knives",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "특수 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "컴뱃 나이프",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "중력완강기와 갈고리 발사기",
+          "text": "이 요원이 올라가기 수행 시, 실제로 요원이 올라간 거리와 무관하게 수직 거리를 2\"로 간주합니다. 이 요원이 내려가기를 할 때마다, 수직 거리를 무시합니다."
+        },
+        {
+          "name": "은밀한 참수인",
+          "text": "이 요원은 은폐 명령 상태에서도 돌격 행동을 수행할 수 있습니다. 이 요원이 운용이나 대응을 시작할 때 시야가 확보되지 않았던 요원을 상대로 근접전 시, 그 근접전 절차에서 처음으로 타격할 때, 즉시 성공한 다른 주사위 하나를(상대보다 먼저) 추가로 타격으로 처리할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-DW-HSL",
+      "nameEn": "Horde-Slayer",
+      "nameKo": "데스워치 몰살 베테랑",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 18
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Infernus Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Flame",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            },
+            {
+              "name": "Focused Bolt",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping Bolt",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "인페르누스 중형 볼터(화염)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "인페르누스 중형 볼터(볼트 집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "인페르누스 중형 볼터(볼트 휩쓸기)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-DW-MRK",
+      "nameEn": "Marksman",
+      "nameKo": "데스워치 저격 베테랑",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Stalker Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Heavy",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "스토커 볼트 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "스토커 볼트 소총(중화기)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "살상 5+",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "부단한 저격수",
+          "text": "이 요원은 킬존과 무관하게 운용 도중 엄호(킬 팀 묘실 행성의 폐쇄 공간 규칙 참고) 행동을 수행할 수 있습니다.\n폐쇄 공간 규칙 사용 시, 전환점당 한 번, 이 요원이 엄호 상태에서 무상 사격 행동을 수행한 후 즉시 무상 엄호 행동을 수행할 수 있습니다. 단, 이렇게 하면 대응할 수 없으며, 이미 대응했다면 다시 무상 엄호 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "수색 섬멸 · 경비 — 편성 5명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 수색 섬멸, 경비"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 데스워치 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 파수 서전트\n• 방벽\n• 검술\n• 포격\n• 돌파\n• 파괴\n• 교란\n• 사수\n• 참수\n• 몰살\n• 저격"
+      },
+      {
+        "type": "rule",
+        "text": "이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있으며, 그라비스 요원은 최대 하나만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "베테랑 아스타르테스 · 특수탄종",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "베테랑 아스타르테스"
+      },
+      {
+        "type": "rule",
+        "text": "끝없는 전쟁을 수행하도록 유전적 강화 과정을 거친 이 초인 전사 들은, 기나긴 전쟁의 세월 속에서 전투 기술을 연마하고 유구한 감시를 통해 전문적 지식을 더욱 가다듬었다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 데스워치 요원은 운용 도중 사격 또는 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 이때 부착식 유탄발사기, 세열 대포, 중형 플라스마 소각기, 인페르누스 중형 볼터, 플라스마 권총, 스토커 볼트 소총으로 사격 행동을 두 번 수 행할 경우, 두 번째 행동은 1AP를 추가로 소모해야 합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 데스워치 요원은 받은 명령과 무관하게 대응할 수 있습니다. 그렇게 대응할 때마다 도중에 추가로 1AP 행동을 무상으로 수행할 수 있으나, 두 행동은 반드시 다른 것이어야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "특수탄종"
+      },
+      {
+        "type": "rule",
+        "text": "데스워치가 주로 운용하는 총기류에는 다양한 특수 탄약이 삽탄된다. 각 탄종은 여러 제노 세력을 특정하여 섬멸할 목적으로 설계되었다."
+      },
+      {
+        "type": "rule",
+        "text": "전환점당 한 번, 아군 데스워치 요원이 사격 행동을 수행할 때 무기 선택 단계에서 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 다음 무기 규칙 중 하나를 선택해 그 행동이 끝날 때까지 해당 요원의 원거리 무기에 부여합니다. 이 규칙은 폭발 수류탄(공용 장비 참고)이나 멜타 폭탄에는 사용할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 폭발 1\" (사용하려는 무기 프로필에 격류 무기 규칙이 있"
+      },
+      {
+        "type": "heading",
+        "text": "으면 선택 불가)"
+      },
+      {
+        "type": "rule",
+        "text": "• 궤멸 1\n• 살상 5+\n• 관통 1\n• 파쇄\n• 포화\n• 중상"
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,18 @@
+# Cloudflare Pages · Netlify 공용 헤더 규칙.
+# 데이터 번들과 정적 자산은 수동 배포 때만 바뀌므로 길게 캐시하고,
+# HTML 은 항상 최신을 받도록 짧게 잡는다.
+
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: DENY
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: camera=(), microphone=(), geolocation=()
+
+/assets/*
+  Cache-Control: public, max-age=604800
+
+/data/*
+  Cache-Control: public, max-age=604800
+
+/*.html
+  Cache-Control: public, max-age=0, must-revalidate

@@ -1,0 +1,786 @@
+{
+  "id": "IMP-NOV",
+  "nameEn": "Novitiates",
+  "nameKo": "수습 수녀단",
+  "archetype": "Recon/Security",
+  "color": "#e1dabb",
+  "size": {
+    "total": 10
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-NOV-S-AV",
+      "name": "Ardent Vengeance",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly NOVITIATE operative is shooting against, fighting against or retaliating against an expended enemy operative, that friendly operative’s weapons have the Punishing weapon rule.",
+      "textKo": "expended 적을 상대할 때 아군 NOVITIATE 무기가 Punishing 획득"
+    },
+    {
+      "id": "IMP-NOV-S-BR",
+      "name": "Blessed Rejuvenation",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever you spend Faith points, at the end of that action, the friendly operative you spent them on can regain up to D3 lost wounds. Note this ploy has no effect if that friendly operative was incapacitated during that action, or if the ACT OF FAITH doesn’t cost any Faith points, e.g. Auto-chastisers equipment.",
+      "textKo": "Faith point 를 쓰면 그 행동 끝에 그 아군이 D3 상처 회복"
+    },
+    {
+      "id": "IMP-NOV-S-DOTF",
+      "name": "Defenders Of The Faith",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting against, fighting against or retaliating against a friendly NOVITIATE operative that contests an objective marker, in the Resolve Attack Dice step of that sequence, you can halve the damage inflicted (rounding up and to a minimum of 2) on that friendly operative from one success.",
+      "textKo": "목표 마커를 contest 중인 아군이 피격 시 성공 1개의 피해 절반"
+    },
+    {
+      "id": "IMP-NOV-S-RA",
+      "name": "Righteous Advance",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Up to one third of the friendly NOVITIATE operatives in the killzone (rounding down, to a minimum of 1) can immediately perform a free Dash action in an order of your choice, but each that does so must end that move closer to its closest enemy operative, its closest objective marker or your opponent’s drop zone (you can choose separately for each). You cannot use this ploy during the first turning point.",
+      "textKo": "아군 NOVITIATE 의 1/3 이 적·목표 마커 쪽으로 무료 Dash"
+    },
+    {
+      "id": "IMP-NOV-T-BI",
+      "name": "Blazing Inferno",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly NOVITIATE operative is shooting with a Ministorum flamer and you inflict damage with any critical successes. The target gains one of your Blaze tokens (if it doesn’t already have one). Whenever an operative that has one of your Blaze tokens is activated:\n• Inflict D3 damage on it.\n• Its controlling player can subtract 1 from that operative’s APL stat until the end of that activation to remove that token. Note that this must be done before that operative performs any actions during that activation.",
+      "textKo": "Ministorum flamer 크리티컬 피해 시 대상에게 Blaze 토큰 부여"
+    },
+    {
+      "id": "IMP-NOV-T-BA",
+      "name": "Blinding Aura",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative is performing the Shoot action and selects a friendly NOVITIATE operative as the valid target. Until the end of that activation/counteraction, while that friendly operative is more than 2\" from that enemy operative, your opponent cannot select it as a valid target. If there are no other valid targets that your opponent can select, that action ends (it’s not cancelled, so that operative has still performed it). Note this ploy has no effect if it’s not the selected operative, e.g. if it’s a secondary target from the Blast weapon rule.",
+      "textKo": "아군이 사격 대상이 될 때 2\" 밖이면 대상 지정 불가"
+    },
+    {
+      "id": "IMP-NOV-T-GM",
+      "name": "Glorious Martyrdom",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly NOVITIATE operative is incapacitated, before it’s removed from the killzone. For each enemy operative visible to and within 2\" of it, you gain 1 Faith point and inflict D3 damage on that enemy operative (roll separately for each).",
+      "textKo": "아군 무력화 시 2\" 내 적마다 D3 피해 + Faith point 1 획득"
+    },
+    {
+      "id": "IMP-NOV-T-GBF",
+      "name": "Guided By Faith",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly NOVITIATE operative is performing the Shoot action and you’re selecting a ranged weapon. Until the end of that action, whenever that operative is shooting an operative within 6\" of it, that weapon has the Seek Light weapon rule.",
+      "textKo": "사격 시 6\" 내 대상에 대해 그 무기가 Seek Light 획득"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-NOV-IOF",
+      "name": "Icon Of Faith",
+      "textEn": "Once per turning point, you can use up to two ACTS OF FAITH during a sequence, but each one must be different. This takes precedence over the normal ACTS OF FAITH rules.",
+      "textKo": "TP당 1회, 한 시퀀스에 서로 다른 ACTS OF FAITH 2개까지"
+    },
+    {
+      "id": "IMP-NOV-SR",
+      "name": "Sanctified Rounds",
+      "textEn": "Whenever a friendly NOVITIATE operative is shooting with an autogun, autopistol, relic bolt pistol or relic boltgun, if you spend a Faith point, that weapon has the Piercing Crits 1 weapon rule until the end of that sequence.",
+      "textKo": "Faith point 를 쓰면 오토건 · 볼트 계열에 Piercing Crits 1"
+    },
+    {
+      "id": "IMP-NOV-AC",
+      "name": "Auto-Chastisers",
+      "textEn": "Once per turning point, when a friendly NOVITIATE operative is shooting, fighting or retaliating, in the Roll Attack Dice step, you can inflict 1-3 damage on that friendly operative (but not enough to incapacitate it). If you do, you can use one ACT OF FAITH for free during that sequence with a Faith points cost no more than the damage you inflicted from this rule.",
+      "textKo": "자신에게 1~3 피해를 입히고 그 수치 이하 비용의 ACT OF FAITH 를 무료로"
+    },
+    {
+      "id": "IMP-NOV-HE",
+      "name": "Holy Embrocations",
+      "textEn": "You can ignore any changes to the Move stat of friendly NOVITIATE operatives from being injured.",
+      "textKo": "부상으로 인한 Move 변화를 무시"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-NOV-SUP",
+      "nameEn": "Novitiate Superior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relic Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relic Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-CON",
+      "nameEn": "Novitiate Condemnor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Condemnor Stakethrower",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 2",
+                "Piercing Crits 1",
+                "Silent",
+                "*Anti-PSYKER"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Null Rod",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/3",
+              "rules": [
+                "Shock",
+                "*Anti-PSYKER"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-DIA",
+      "nameEn": "Novitiate Dialogus",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dialogus Stave",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/3",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-DUE",
+      "nameEn": "Novitiate Duellist",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Duelling Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "*Riposte"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-EXA",
+      "nameEn": "Novitiate Exactor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Neural Whips",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 3\"",
+                "Lethal 5+",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Neural Whips",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-HOS",
+      "nameEn": "Novitiate Hospitaller",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Surgical Saw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Lethal 5+",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-MIL",
+      "nameEn": "Novitiate Militant",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autogun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Novitiate Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-PEN",
+      "nameEn": "Novitiate Penitent",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Penitent Eviscerator",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal",
+                "*Zealous Rage"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-PRE",
+      "nameEn": "Novitiate Preceptor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Mace Of The Righteous",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/5",
+              "rules": [
+                "Brutal",
+                "Severe"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-PRO",
+      "nameEn": "Novitiate Pronatus",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-PUR",
+      "nameEn": "Novitiate Purgatus",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Ministorum Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-NOV-REL",
+      "nameEn": "Novitiate Reliquarius",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 방어 — 편성 1+9 = 10명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: RECON, SECURITY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 NOVITIATE SUPERIOR operative with one of the following options:\n• Plasma pistol; power weapon\n• Relic boltgun; gun butt\n• Relic bolt pistol; power weapon"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 9 NOVITIATE operatives selected from the following list:\n• CONDEMNOR\n• DIALOGUS\n• DUELLIST\n• EXACTOR\n• HOSPITALLER\n• PENITENT\n• PRECEPTOR\n• PRONATUS\n• PURGATUS\n• RELIQUARIUS\n• MILITANT with one of the following options:\n○ Autopistol; Novitiate blade\n○ Autogun; gun butt"
+      },
+      {
+        "type": "rule",
+        "text": "Other than MILITANT and PURGATUS operatives, your kill team can only include each operative on this list once. Your kill team can only include up to two PURGATUS operatives."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "ACTS OF FAITH",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "ACTS OF FAITH"
+      },
+      {
+        "type": "rule",
+        "text": "Such is the zeal of the Adepta Sororitas that in their presence the Emperor's divine will is made manifest. In the Ready step of each Strategy phase, you gain a number of Faith points equal to half the number of friendly NOVITIATE operatives that haven't been incapacitated (rounding up). Whenever a friendly NOVITIATE operative is shooting, fighting or retaliating, or an operative is shooting it, in the Roll Attack Dice (or Roll Defence Dice step if an operative is shooting it), you can spend your Faith points to use one ACT OF FAITH. You cannot use more than one ACT OF FAITH per sequence, and their costs and effects are as follows (see other side of card):"
+      },
+      {
+        "type": "heading",
+        "text": "GUIDANCE 1 FAITH POINT"
+      },
+      {
+        "type": "rule",
+        "text": "You can re-roll one of your dice."
+      },
+      {
+        "type": "heading",
+        "text": "BLESSING 2 FAITH POINTS"
+      },
+      {
+        "type": "rule",
+        "text": "You can retain one of your normal successes as a critical success instead."
+      },
+      {
+        "type": "heading",
+        "text": "INTERVENTION 3 FAITH POINTS"
+      },
+      {
+        "type": "rule",
+        "text": "You can retain one of your fails as a normal success instead of discarding it."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

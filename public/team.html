@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>킬팀 — KT INDEX</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="topbar" aria-label="주 메뉴">
+        <a class="topbar__mark" href="index.html">KT INDEX <span>41M</span></a>
+        <div class="topbar__nav">
+          <a href="index.html">팩션</a>
+          <a href="index.html#kill-teams">킬팀</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell" id="page">
+      <section class="section--tight">
+        <a class="backlink" id="faction-back" href="index.html">← 팩션</a>
+
+        <div class="dossier">
+          <p class="eyebrow" id="team-id">–</p>
+          <h1 class="dossier__title">
+            <span id="team-name-ko">–</span>
+            <small id="team-name-en">–</small>
+          </h1>
+          <p class="hero__lede" id="team-brief" style="margin-top: 1rem"></p>
+          <div class="dossier__facts" id="team-facts"></div>
+        </div>
+      </section>
+
+      <nav class="jumpbar" aria-label="구획 이동">
+        <a href="#operatives">요원</a>
+        <a href="#ploys">플로이</a>
+        <a href="#equipment">장비</a>
+        <a href="#selection">편성</a>
+        <a href="#faction-rule">팩션 규칙</a>
+      </nav>
+
+      <section class="section" id="operatives" aria-labelledby="operatives-heading">
+        <div class="section__head">
+          <h2 id="operatives-heading">요원</h2>
+          <span class="section__count"><span id="op-count">–</span>명</span>
+        </div>
+        <p class="credit" id="glossary-credit"></p>
+        <div class="op-list" id="op-list"></div>
+      </section>
+
+      <section class="section" id="ploys" aria-labelledby="ploys-heading">
+        <div class="section__head">
+          <h2 id="ploys-heading">플로이</h2>
+          <span class="section__count"><span id="ploy-count">–</span>개</span>
+        </div>
+        <div id="ploy-body"></div>
+      </section>
+
+      <section class="section" id="equipment" aria-labelledby="equipment-heading">
+        <div class="section__head">
+          <h2 id="equipment-heading">팀 전용 장비</h2>
+          <span class="section__count"><span id="equip-count">–</span>개</span>
+        </div>
+        <div id="equip-body"></div>
+      </section>
+
+      <section class="section" id="selection" aria-labelledby="selection-heading">
+        <div class="section__head">
+          <h2 id="selection-heading">편성 가이드</h2>
+        </div>
+        <div id="selection-body"></div>
+      </section>
+
+      <section class="section" id="faction-rule" aria-labelledby="faction-rule-heading">
+        <div class="section__head">
+          <h2 id="faction-rule-heading">팩션 규칙</h2>
+        </div>
+        <div id="faction-rule-body"></div>
+      </section>
+    </main>
+
+    <footer class="shell footer" id="site-footer"></footer>
+
+    <script src="data/kt-data.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/page-team.js"></script>
+  </body>
+</html>

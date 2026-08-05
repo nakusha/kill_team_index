@@ -1,0 +1,1209 @@
+{
+  "id": "CHAOS-MW",
+  "nameEn": "Murderwing",
+  "nameKo": "살육날개",
+  "archetype": "Recon/Seek & Destroy",
+  "color": "#e8873f",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-MW-PA",
+      "name": "Predators Above",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly MURDERWING operative is at least 2\" higher than the killzone floor, its weapons have the Balanced weapon rule. Whenever a friendly MURDERWING operative does a BOOST, its weapons have the Balanced weapon rule until the end of that activation.",
+      "textKo": "아군이 2\" 이상 높은 곳에 있거나 BOOST 하면 무기가 Balanced 획득"
+    },
+    {
+      "id": "CHAOS-MW-CTW",
+      "name": "Cull The Weak",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly MURDERWING operative is shooting or fighting, its weapons have the Punishing weapon rule if any of the following are true for the operative that friendly operative is shooting or fighting against:\n• It’s at least 2\" lower than that friendly operative.\n• Its APL stat is less than normal.\n• It was wounded at the start of the activation/counteraction.",
+      "textKo": "적이 더 낮거나 APL 이 낮거나 상처 입었으면 무기가 Punishing 획득"
+    },
+    {
+      "id": "CHAOS-MW-NOH",
+      "name": "Nightmare On High",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly MURDERWING operative that’s at least 2\" higher than the killzone floor, or that did a BOOST during this turning point, you can re-roll one of your defence dice.",
+      "textKo": "높은 곳이나 BOOST 한 아군이 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "CHAOS-MW-IF",
+      "name": "Instil Fear",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly MURDERWING operative is fighting, Normal Dmg of 3 or more inflicts 1 less damage on it.",
+      "textKo": "아군이 근접전 중 받는 Normal Dmg 3 이상은 피해 1 감소"
+    },
+    {
+      "id": "CHAOS-MW-MN",
+      "name": "Malicious Narcissism",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when it’s your turn to activate with a friendly operative, if only one friendly MURDERWING operative is ready. Until the end of the turning point, whenever you have less ready friendly operatives than your opponent, you can skip your activations (in other words, you can delay that friendly MURDERWING operative’s activation until your opponent has only one ready operative). Note that you cannot counteract until that friendly MURDERWING operative is expended.",
+      "textKo": "아군이 1명만 ready 일 때 그 TP 동안 활성화를 미룰 수 있음"
+    },
+    {
+      "id": "CHAOS-MW-MD",
+      "name": "Murderous Descent",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative ends the Charge, Dash, Fall Back or Reposition action within 3\" horizontally and more than 2\" lower than a friendly MURDERWING operative (or in close quarters, within 2\" and that enemy operative must be in a different room to where it started that action). Interrupt that enemy operative’s activation/counteraction and immediately perform a free Charge action with that friendly operative. It must end that action within control range of that enemy operative. If this isn’t possible, the interruption is cancelled and this rule hasn’t been used.",
+      "textKo": "적이 아군 아래 3\" 이내로 이동을 마치면 끼어들어 무료 Charge"
+    },
+    {
+      "id": "CHAOS-MW-LFH",
+      "name": "Long Forgotten Honour",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly MURDERWING operative is fighting or retaliating, when you resolve a critical success. Instead of striking or blocking, end that sequence (any remaining attack dice are discarded) and immediately perform a free Fall Back action up to 3\" with that operative (then the Fight action ends). That operative can do so even if it’s performed an action that prevents it from performing the Fall Back action.",
+      "textKo": "근접전 중 크리 해결 시 타격 대신 시퀀스 종료 후 무료 Fall Back 3\""
+    },
+    {
+      "id": "CHAOS-MW-WOD",
+      "name": "Wings Of Darkness",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly MURDERWING operative is performing the Fall Back or Reposition action, when it does a BOOST. That operative can be set up an additional 3\" away during that BOOST (adding this to the permitted move distance), but it cannot perform the Shoot, Fight or Carving Blow (see DEPREDATOR operative) action until the next turning point. You cannot use this ploy during the first turning point.",
+      "textKo": "BOOST 시 3\" 더 멀리 이동, 대신 다음 TP 까지 Shoot·Fight 불가"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-MW-BF",
+      "name": "Bladefins",
+      "textEn": "Friendly MURDERWING operatives can perform the following unique action:\nSLICE FROM ABOVE 1AP\nBOOST action. Inflict D3+1 damage on one enemy operative within this operative’s BOOST ZONE.\nAn operative cannot perform this action normally. Instead it performs this action during the Fall Back or Reposition action after setting up from a BOOST.",
+      "textKo": "SLICE FROM ABOVE (1AP BOOST) — BOOST ZONE 안 적에게 D3+1 피해"
+    },
+    {
+      "id": "CHAOS-MW-CA",
+      "name": "Clawed Armour",
+      "textEn": "Friendly MURDERWING operatives can perform the following unique action:\nCLAWED CHARGE 0AP\nBOOST action. Inflict 1 damage on one enemy operative within this operative’s control range, then the Charge action ends.\nAn operative cannot perform this action normally. Instead, it performs this action during the Charge action after setting up from a BOOST.",
+      "textKo": "CLAWED CHARGE (0AP BOOST) — 통제 범위 적에게 1 피해 후 Charge 종료"
+    },
+    {
+      "id": "CHAOS-MW-WF",
+      "name": "Warp Fuel",
+      "textEn": "Once per turning point, when an enemy operative ends the Fall Back action during its activation, if at least one friendly MURDERWING operative was within its control range at the start of that action, you can use this rule. One of those friendly operatives can immediately perform a free Reposition or Charge action, but cannot use more than 3\" of move distance. Note that if the enemy operative doesn’t perform the Fall Back action during its own activation, this has no effect.",
+      "textKo": "TP당 1회, 적이 통제 범위에서 Fall Back 하면 아군 1명이 무료 Reposition"
+    },
+    {
+      "id": "CHAOS-MW-VC",
+      "name": "Vox-Casters",
+      "textEn": "Once per turning point, one friendly MURDERWING operative can perform the following unique action:\nVOX-CRY1AP\nEach enemy operative within 2\" of this operative takes a stun test. For an operative to take a stun test, roll one D6: on a 3+, subtract 1 from its APL stat until the end of its next activation.\nAn operative cannot perform this action while it has a Conceal order.",
+      "textKo": "TP당 1회 VOX-CRY (1AP) — 2\" 안 적이 stun test, 3+ 면 APL −1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-MW-CL",
+      "nameEn": "Chaos Lord",
+      "nameKo": "살육날개 카오스 군주",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Lightning Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal",
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relic Lightning Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "라이트닝 클로",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "무자비",
+            "충격"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "성물 라이트닝 클로",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "집요",
+            "살상 5+",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "파멸의 길",
+          "text": "전투 시작 시 이 요원은 1 파멸 점수를 보유합니다. 행동당 한 번, 플레이어는 명시된 바에 따라 파멸의 은총 하나를 사용 시도할 수 있습니다. 그렇게 할 경우, D6를 하나 굴리고 이 요원이 보유한 파멸 점수와 비교합니다. 결과에 따라 다음을 따릅니다."
+        },
+        {
+          "name": "높음",
+          "text": "규칙을 처리하고, 이 요원이 1 파멸 점수를 획득합니다."
+        },
+        {
+          "name": "같음",
+          "text": "규칙을 처리하지 않습니다."
+        },
+        {
+          "name": "낮음",
+          "text": "이 요원에 파멸 점수만큼 피해를 가하고, 규칙을 처리하지 않습니다.\n이 요원이 6 파멸 점수를 보유했다면, 주사위 굴림 없이 규칙을 처리합니다. 규칙 사용은 D6 굴림 값과 무관하게 행동당 한 번만 시도할 수 있다는 점을 유의하십시오."
+        },
+        {
+          "name": "파멸의 은총",
+          "text": "파멸의 은총은 다음과 같습니다(D6 굴림에 따라 처리, 반대편 참고).\n• 이 요원이 공격 주사위 하나로 3 이상의 피해를 입을 때, 이 요원이 보유한 파멸 점수만큼 피해를 무시할 수 있습니다.\n• 이 요원이 근접전 또는 반격을 수행해 공격 주사위 하나로 타격할 때, 이 요원이 보유한 파멸 점수만큼 추가 피해를 가할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-CHP",
+      "nameEn": "Champion",
+      "nameKo": "살육날개 용사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal",
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "카오스 용사",
+          "text": "전략 포석. 적 요원이 플레이어의 도전 토큰을 보유했다면 모두 제거합니다. 이후 플레이어의 도전 토큰을 받을 적 요원을 하나 지정합니다. 이 요원이 플레이어의 도전 토큰을 보유한 적 요원을 대상으로 근접전 또는 반격을 수행할 때마다, 무기 선택 단계에 균형, 무자비, 맹공, 중상, 충격 무기 규칙 중 하나를 선택하여 절차가 종료될 때까지 이 요원의 근접 무기에 부여할 수 있습니다."
+        },
+        {
+          "name": "영광의 길",
+          "text": "이 요원이 플레이어의 도전 토큰을 보유한 적 요원을 무력화할 때마다, 플레이어가 1CP를 획득합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-CC",
+      "nameEn": "Curseclaw",
+      "nameKo": "살육날개 저주발톱",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mutated Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "변이된 발톱",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "광분 서린 공격",
+          "text": "이 요원이 근접전 행동 도중 무력화되었다면, 이 요원을 킬존에서 제거하기 전에 그 절차에 아직 처리하지 않은 성공 주사위 하나로 적 요원을 타격할 수 있습니다."
+        },
+        {
+          "name": "낚아채기 [1AP]",
+          "text": "추진 행동. 이 요원의 추진 구역 내에 있는 적 요원을 하나 지정합니다. 양측 플레이어가 D6를 하나씩 굴리고 그 값에 자기 요원의 체력 수치를 더합니다. 플레이어의 결괏값이 더 높다면, 그 적 요원을 킬존에서 제거하고 이 요원의 추진 구역 또는 장악 범위 내에 다시 놓습니다. 반드시 요원을 놓을 수 있는 위치여야 하며, 이 요원과의 기존 거리를 초과해서 놓을 수 없습니다. 그 적 요원이 이 요원의 장악 범위 내에 놓였다면, 후퇴 또는 기동 행동이 종료됩니다(즉, 이 요원 이 그러한 행동을 적 요원의 장악 범위 내에서 종료할 수 있음). 이 요원은 일반적인 방식으로 이 행동을 수행할 수 없습니다. 대신, 추진으로 킬존에 놓인 후 수행하는 후퇴 또는 기동 행동 도중 이 행동을 수행합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-DEP",
+      "nameEn": "Depredator",
+      "nameKo": "살육날개 강탈자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Great Chainaxe",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "대형 체인액스",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "5/7",
+          "rules": [
+            "무자비"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "끔찍한 절단",
+          "text": "이 요원이 근접전 또는 반격하는 동안 적 요원을 무력화할 때마다, 이 요원 또는 무력화된 적 요원의 시 야에 들어오며 3” 내에 있는 다른 적 요원을 하나 지정합니다. 지정된 적 요원의 다음 운용이 종료될 때까지 그 요원의 APL 수치를 -1만큼 변경합니다."
+        },
+        {
+          "name": "무참한 일격 [1AP]",
+          "text": "이 요원의 시야에 들어오며 2” 내에 있는 다른 요원에 원하는 순서대로 각각 2D3 피해를 가합니다(요원마 다 별도로 굴림). 이 요원은 은폐 명령을 받은 동안이나 공중 참격 행동 (칼날깃 팩션 장비 참고), 갈퀴 돋친 돌격 행동(갈퀴 돋친 갑주 팩션 장비 참고), 또는 근접전 행동을 두 번수행한 운용 도중 이 행동을 수행할 수 없습니다(반대로도 적용)."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-HM",
+      "nameEn": "Huntmaster",
+      "nameKo": "살육날개 사냥대가",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "붙잡은 먹잇감",
+          "text": "적 요원이 이 요원의 장악 범위 내에 있는 동안 후퇴 행동을 수행하려 할 때마다, 이 아군 요원의 장악 범위 내에 다른 적 요원이 있지 않다면, 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, D6 두 개를 굴립니다. 그 적 요원의 체력 수치가 이 요원보다 높다면, D6를 한 개만 굴립니다. 어느 주사위든 값이 4+이면, 그 적 요원은 이번 운용/대응 도중 본래 하려던 행동을 수행할 수 없고, 그에 따른 AP도 소모하지 않습니다."
+        },
+        {
+          "name": "날아드는 일격 [1AP]",
+          "text": "추진 행동. 이 요원의 추진 구역 내에 있는 적 요원 하나에 2D3+1 피해를 가합니다.\n이 요원은 일반적인 방식으로 이 행동을 수행할 수 없습니다. 대신, 추진으로 킬존에 놓인 후 수행하는 후퇴 또는 기동 행동 도중 이 행동을 수행합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-RAP",
+      "nameEn": "Raptor",
+      "nameKo": "살육날개 육식조",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "비행의 짜릿함",
+          "text": "이 요원이 운용 도중 추진할 때마다 이 요원에 다음을 적용합니다.\n• APL 수치와 관련된 모든 변경 사항을 제거할 수 있습니다.\n• 운용이 종료될 때까지, 부상 상태로 인한 모든 능력치 변경 사항(무기 능력치 포함)을 무시할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-SHR",
+      "nameEn": "Shrieker",
+      "nameKo": "살육날개 비명꾼",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "개조 복스캐스터",
+          "text": "적 요원이 이 요원의 3” 내에 있을 때마다, 상대가 그 적 요원으로 마커 회수 및 임무 행동을 수행하 려면 1AP를 추가로 소모해야 합니다. 마커의 장악 여부를 결정할 때마다, 그 마커를 경쟁하는 적 요원 중 하나라도 이 요원의 3” 내에 있다면 그러한 적 요원의 APL 수치 총합을 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+        },
+        {
+          "name": "비명 [1AP]",
+          "text": "이 요원의 시야에 들어오며 6” 내에 있는 적 요원, 혹은 이 요원의 추진 구역 내에 있는 적 요원을 하나 지정합니다(이 경우 이 행동은 추진 행동입니다). 적 요원이 이 요원의 장악 범위 내에 있다면, 그러한 적 요원만 지정해야 합니다. 지정한 요원에 D3 피해를 가 하고 그 적 요원의 다음 운용이 종료될 때까지 APL 수치를 -1만큼 변경합니다.\n이 요원은 은폐 명령을 받은 동안 이 행동을 수행할 수 없습니다. 이 요원의 추진 구역 내에 있는 적 요원을 지정한다면, 이 요원은 일반적인 방식으로 이 행동을 수행할 수 없습니다. 대신, 추진으로 킬존에 놓인 후 수행하는 후퇴 또는 기동 행동 도중 이 행동을 수행합니다."
+        }
+      ]
+    },
+    {
+      "id": "CHAOS-MW-SS",
+      "nameEn": "Skysear",
+      "nameKo": "살육날개 하늘맹염",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-MW-WT",
+      "nameEn": "Warp Talon",
+      "nameKo": "살육날개 워프 탈론",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Lightning Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "라이트닝 클로",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "집요",
+            "살상 5+",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "장막을 가르고",
+          "text": "전투 전 이 요원을 놓을 때, 킬존 대신 워프에 놓을 수 있습니다. 킬존 내가 아닌 어느 한 곳에 이 요원을 따로 놓아둡니다. 첫 번째 화력전 페이즈에, 이 요원이 운용될 때, 워프 마커 하나를 플레이어의 영역 내에 완전히 들어가게 놓고 이 요원을 소진 상태로 변경합니다.\n두 번째 화력전 페이즈에, 이 요원이 운용될 때, 이 요원을 놓을 수 있는 위치에 플레이어가 원하는 명령을 받은 상태로 놓습니다. 플레이어의 투입 구역 내에 완전히 들어가거나, 플레이어의 워프 마커를 경쟁 중인 플레이어 영역 내에 완전히 들어가야 합니다. 일반적인 방식으로 이 요원의 운용을 계속합니다. 단, 그 운용 도중에는 이 요원이 2AP까지만 소모할 수 있으며 이동 거리를 4” 초과해 사용할 수 없습니다.\n이 요원이 워프에 있을 때마다, 악독한 자기도취 화력전 플로이를 사용할 수 있는 준비 상태의 아군 살육날개 요원으로 간주하지 않습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 수색 섬멸 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 살육날개 카오스 군주 요원, 다음 각 선택지에서 하나씩 골라 장비합니다.\n• 볼트 권총 또는 플라스마 권총\n• 라이트닝 클로, 파워 피스트 또는 역장 무기\n또는 다음을 장비합니다.\n• 성물 라이트닝 클로"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 살육날개 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 용사, 다음 각 선택지에서 하나씩 골라 장비합니다.\n○ 플라스마 권총 또는 볼트 권총\n○ 파워 피스트 또는 역장 무기\n• 저주발톱\n• 강탈자\n• 사냥대가\n• 육식조, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트 권총, 체인소드\n○ 플라스마 권총 , 체인소드\n• 명꾼"
+      },
+      {
+        "type": "heading",
+        "text": "비"
+      },
+      {
+        "type": "rule",
+        "text": "• 하늘맹염, 다음 선택지 중 하나를 골라 장비합니다.\n○ 화염방사기, 볼트 권총, 주먹\n○ 멜타건 , 볼트 권총, 주먹\n○ 플라스마 건 , 볼트 권총, 주먹\n• 워프 탈론"
+      },
+      {
+        "type": "rule",
+        "text": "육식조 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 무기를 장비한 요원은 둘까지만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "점프팩 · 점프팩 예시 · 추진 행동 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "점프팩"
+      },
+      {
+        "type": "lore",
+        "text": "이들 전사는 갑주에 내장된 추진 시스템으로 높이 뛰어올라 전장을 쉽게 가로지른다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 살육날개 요원이 운용 도중 돌격, 후퇴, 기동 행동을 수행할 때마다, 모든 직선 단위 이동 시작 시, 요원의 베이 스가 어느 부분도 고지 아래에 들어가지 않는 한, 그 요원은 그 직선 단위 이동에서 추진할 수 있습니다. 그렇게 할 경우, 그 직선 단위는 이동하지 않습니다. 대신, 요원을 킬존에서 제거하고 원래 위치에서 수평으로 x\" 내에 완전히 들어가는 위치에 다시 놓습니다. X 수치는 플레이어가 원하는 대로 정할 수 있습니다(기동 행동을 수행할 때처럼 소수점 아래를 올림 처리합니다). 단, 이는 요원이 그 행동에서 이동 한 총 거리에 합산합니다(즉, 이동과 추진을 모두 더해도 그 행동의 이동 상한을 초과할 수 없습니다). 요원이 돌격 행동 도중 추진한다면, 이동 상한을 2\" 추가하지 않습니다."
+      },
+      {
+        "type": "rule",
+        "text": "그 요원은 반드시 놓을 수 있고 베이스의 어느 부분도 고지 아래에 들어가지 않는 위치에 놓아야 합니다. 추가로, 돌격 행동이 아닌 한 적 요원의 장악 범위 내에 놓을 수 없습니다. 그 요원의 이동 거리가 남아 있고 수행 중인 행동에서 허용된다면, 추진한 후 계속 이동할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "킬존: 묘실 행성처럼 폐쇄 공간 규칙을 사용하는 킬존에서는 벽 지형 위로, 또는 통과해서 x\" 수치를 측정할 수 없으며 그 요원을 출입구의 반대편에 놓을 수 없습니다. 즉, 요원이 열린 해치 통로를 통과해서 추진할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "점프팩 예시"
+      },
+      {
+        "type": "rule",
+        "text": "이 예시의 살육날개 요원 (A)는 두 번째 직선 단위 이동에 서 추진합니다. 첫 번째와 세 번째 직선 단위 이동에서는 고지에서, 또는 고지 아래로 추진할 수 없으며 따라서 일반적 인 방식으로 이동합니다."
+      },
+      {
+        "type": "heading",
+        "text": "1\" 이동"
+      },
+      {
+        "type": "heading",
+        "text": "4\""
+      },
+      {
+        "type": "heading",
+        "text": "추진"
+      },
+      {
+        "type": "heading",
+        "text": "1\" 이동"
+      },
+      {
+        "type": "heading",
+        "text": "추진 행동"
+      },
+      {
+        "type": "lore",
+        "text": "살육날개는 공중 전투의 명수다. 버둥거리는 먹잇감의 머리 위로, 화염 기둥과 함께 높이 치솟는다."
+      },
+      {
+        "type": "rule",
+        "text": "일부 행동은 추진 행동입니다. 이는 다른 행동 도중 추진을 사용하면 수행합니다. 각 요원은 운용/대응당 한 번만 추진 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "대다수 추진 행동은 아군 살육날개 요원의 추진 구역 내에 있는 적 요원에 영향을 줍니다. 이는 아군 살육날개 요원의 현재 위치와 추진을 사용했을 때의 위치 사이의 수평 범위를의 미합니다. 요원의 베이스와 크기가 같은 마커 하나를 임시로 두어서 이 거리를 측정할 수 있습니다. 베이스의 어느 부분 이라도 고지 지형 아래에 들어간 적 요원은 아군 살육날개 요원의 추진 구역에 있지 않은 것입니다."
+      },
+      {
+        "type": "heading",
+        "text": "추진 행동 예시"
+      },
+      {
+        "type": "rule",
+        "text": "이 예시에서, 맨 위의 (C) 요원은 살육날개 (A) 요원의 추진 구역에 들어갑니다. 맨 아래의 (B) 요원은 베이스가 고지 지형 아래에 들어갔으므로 그렇지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "추진 구역"
+      },
+      {
+        "type": "heading",
+        "text": "아스타르테스"
+      },
+      {
+        "type": "lore",
+        "text": "이 유전적으로 개량된 초인들은 오로지 전쟁을 치르기 위해 탄생했다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 살육날개 요원은 운용 도중 사격 행동이나 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 사격 행동을 두 번 수행할 경우, 볼트 권총을 최소 한 번 사용해야 합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 살육날개 요원은 모두 명령과 무관하게 대응할 수 있습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

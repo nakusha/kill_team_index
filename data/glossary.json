@@ -1,0 +1,649 @@
+{
+  "credit": {
+    "ko": "무기 규칙 · 용어 색인 — Youngxee 「킬팀 한글화 공식 인덱스 - 무기 규칙 편」 · 「킬팀 한글화 공식 인덱스 - 색인 편」",
+    "en": "Weapon rules and glossary — Youngxee, “킬팀 한글화 공식 인덱스” (weapon rules and index editions)",
+    "note": {
+      "ko": "판정은 공식 코어 규칙이 우선합니다.",
+      "en": "Official core rules take precedence for rulings."
+    },
+    "short": {
+      "ko": "무기 규칙 · 용어 색인 — Youngxee 「킬팀 한글화 공식 인덱스」",
+      "en": "Weapon rules and glossary — Youngxee, “킬팀 한글화 공식 인덱스”"
+    }
+  },
+  "terms": [
+    {
+      "id": "Accurate X",
+      "nameKo": "정확",
+      "nameEn": "Accurate X",
+      "kind": "weapon",
+      "keys": [
+        "정확",
+        "Accurate"
+      ],
+      "textKo": "공격 주사위 굴림 전에 주사위 중 X 개를 일반 성공으로 보전할 수 있다. [정확] 규칙이 다수가 존재하는 경우, 종합하여 [정확 2]를 가진 것으로 간주한다. (원래의 X 보다 우선된다.)",
+      "textEn": "You can retain up to x attack dice as normal successes without rolling them. If a weapon has more than one instance of Accurate x, you can treat it as one instance of Accurate 2 instead (this takes precedence over x rules above)."
+    },
+    {
+      "id": "Balanced",
+      "nameKo": "균형",
+      "nameEn": "Balanced",
+      "kind": "weapon",
+      "keys": [
+        "균형",
+        "Balanced"
+      ],
+      "textKo": "공격 주사위 한 개를 재굴림 할 수 있다.",
+      "textEn": "You can re-roll one of your attack dice."
+    },
+    {
+      "id": "Blast X",
+      "nameKo": "폭발",
+      "nameEn": "Blast X",
+      "kind": "weapon",
+      "keys": [
+        "폭발",
+        "Blast"
+      ],
+      "textKo": "(사격무기 전용) 통상적인 [유효 대상]을 주요(1차) 대상으로 선택한다. 그에게 사격한 뒤, 그로부터 X인치 안에서 시야에 보이는 모든 요원을 2차 대상으로 하여, 같은 무기로 2차 대상에게 원하는 순서대로 사격을 진행한다. 주요 대상이 [엄폐](cover)나 [차폐](obscured) 중이었다면, 2차 대상도 같은 [방호] 보너스를 받는다.",
+      "textEn": "The target you select is the primary target. After shooting the primary target, shoot with this weapon against each secondary target in an order of your choice (roll each sequence separately). Secondary targets are other operatives visible to and within x of the primary target, e.g. Blast 2\" (they are all valid targets, regardless of a Conceal order). Secondary targets are in cover and obscured if the primary target was."
+    },
+    {
+      "id": "Brutal",
+      "nameKo": "무자비",
+      "nameEn": "Brutal",
+      "kind": "weapon",
+      "keys": [
+        "무자비",
+        "Brutal"
+      ],
+      "textKo": "(근접무기 전용) 적은 결정적 성공으로만 [막기](Block)를 선택할 수 있습니다.",
+      "textEn": "Your opponent can only block with critical successes."
+    },
+    {
+      "id": "Ceaseless",
+      "nameKo": "집요",
+      "nameEn": "Ceaseless",
+      "kind": "weapon",
+      "keys": [
+        "집요",
+        "Ceaseless"
+      ],
+      "textKo": "주사위의 결과 중 값 하나를 선택하여 재굴림 할 수 있다. (예; 눈이 2인 주사위들을 재굴림)",
+      "textEn": "You can re-roll any of your attack dice results of one result (e.g. results of 2)."
+    },
+    {
+      "id": "Devastating X",
+      "nameKo": "궤멸",
+      "nameEn": "Devastating X",
+      "kind": "weapon",
+      "keys": [
+        "궤멸",
+        "Devastating"
+      ],
+      "textKo": "보전한 [결정적 성공] 한 개마다 대상에게 즉시 X만큼 피해를 입힌다. 규칙 앞에 별도의 거리가 표시되어 있다면(예: 1\" 궤멸 2), 대상과 그 대상의 시야에 들어오며 표시된 거리 이내인 다른 요원도 각각 X만큼 피해를 입는다. 해당 결정적 성공은 이후 공격 과정에서도 정상적으로 처리한다.",
+      "textEn": "Each retained critical success immediately inflicts x damage on the operative this weapon is being used against, e.g. Devastating 3. If the rule starts with a distance (e.g. 1\" Devastating x), inflict x damage on that operative and each other operative visible to and within that distance of it. Note that success isn’t discarded after doing so – it can still be resolved later in the sequence."
+    },
+    {
+      "id": "Heavy",
+      "nameKo": "중화기",
+      "nameEn": "Heavy",
+      "kind": "weapon",
+      "keys": [
+        "중화기",
+        "Heavy"
+      ],
+      "textKo": "요원이 이번 [운용] 또는 [대응] 중에 이동했다면 이 무기를 사용할 수 없고, 이 무기를 사용했다면 같은 운용 또는 대응 중에는 이동할 수 없다. 중화기(X 한정)로 표시된 경우에는 X에 적힌 이동 행동까지만 함께 수행할 수 있다(예: 질주 한정). 이 무기 규칙은 [엄호](Guard)에는 영향을 주지 않는다.",
+      "textEn": "An operative cannot use this weapon in an activation or counteraction in which it moved, and it cannot move in an activation or counteraction in which it used this weapon. If the rule is Heavy (x only), where x is a move action, only that move is allowed, e.g. Heavy (Dash only). This weapon rule has no effect on preventing the Guard action."
+    },
+    {
+      "id": "Hot",
+      "nameKo": "과열",
+      "nameEn": "Hot",
+      "kind": "weapon",
+      "keys": [
+        "과열",
+        "Hot"
+      ],
+      "textKo": "이 무기를 사용한 뒤, D6를 굴린다. 만약 결과가 [명중 요구치](Hit)보다 낮다면, 사격한 요원 자신이 주사위 값의 2배만큼 피해를 입는다. (역: 과열로 인한 반동인 셈이다.) 액션 한 번에 무기를 여러 번 사용하는 경우에도(예: [폭발]) 이 규칙의 판정은 한 개로만 진행한다.",
+      "textEn": "After an operative uses this weapon, roll one D6: if the result is less than the weapon’s Hit stat, inflict damage on that operative equal to the result multiplied by two. If it’s used multiple times in one action (e.g. Blast), still only roll one D6."
+    },
+    {
+      "id": "Lethal X+",
+      "nameKo": "살상",
+      "nameEn": "Lethal X+",
+      "kind": "weapon",
+      "keys": [
+        "살상",
+        "Lethal"
+      ],
+      "textKo": "X 이상의 주사위 값을 [결정적 성공]으로 간주한다.",
+      "textEn": "Your successes equal to or greater than x are critical successes, e.g. Lethal 5+."
+    },
+    {
+      "id": "Limited X",
+      "nameKo": "한도",
+      "nameEn": "Limited X",
+      "kind": "weapon",
+      "keys": [
+        "한도",
+        "Limited"
+      ],
+      "textKo": "무기를 X번 사용했다면, 더 이상 무기를 가지고 있지 않은 것으로 간주한다. 만약 한 번의 액션에서 여러 번 사용되었다면(예: [폭발]), 한 번만 사용한 것으로 간주한다.",
+      "textEn": "After an operative uses this weapon a number of times in the battle equal to x, they no longer have it. If it’s used multiple times in one action (e.g. Blast), treat this as one use."
+    },
+    {
+      "id": "Piercing",
+      "nameKo": "관통",
+      "nameEn": "Piercing",
+      "kind": "weapon",
+      "keys": [
+        "관통",
+        "Piercing"
+      ],
+      "textKo": "방어자가 준비할 주사위가 X개 감소한다. [결정적 관통 X](Piercing crits X)라 되어있다면, [결정적 성공]을 보전했을 때만 효과가 있다.",
+      "textEn": "The defender collects x less defence dice, e.g. Piercing 1. If the rule is Piercing Crits x, this only comes into effect if you retain any critical successes."
+    },
+    {
+      "id": "Punishing",
+      "nameKo": "맹공",
+      "nameEn": "Punishing",
+      "kind": "weapon",
+      "keys": [
+        "맹공",
+        "Punishing"
+      ],
+      "textKo": "[결정적 성공]을 [보전]했다면, 실패한 주사위 하나를 [일반 성공]으로 [보전]할 수 있다.",
+      "textEn": "If you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it."
+    },
+    {
+      "id": "Range X",
+      "nameKo": "사거리",
+      "nameEn": "Range X",
+      "kind": "weapon",
+      "keys": [
+        "사거리",
+        "Range"
+      ],
+      "textKo": "X인치 내의 대상만 [유효 대상]이다. (역: 사거리 언급이 없다면, 사거리는 무제한이다.)",
+      "textEn": "Only operatives within x of the active operative can be valid targets, e.g. Range 9\"."
+    },
+    {
+      "id": "Relentless",
+      "nameKo": "혹독",
+      "nameEn": "Relentless",
+      "kind": "weapon",
+      "keys": [
+        "혹독",
+        "Relentless"
+      ],
+      "textKo": "원하는 개수만큼 주사위를 재굴림 할 수 있다. (역: 핵심 규칙에 따라서, 이미 재굴림한 주사위는 더 이상 재굴림 할 수 없다.)",
+      "textEn": "You can re-roll any of your attack dice."
+    },
+    {
+      "id": "Rending",
+      "nameKo": "파쇄",
+      "nameEn": "Rending",
+      "kind": "weapon",
+      "keys": [
+        "파쇄",
+        "Rending"
+      ],
+      "textKo": "[결정적 성공]을 [보전]했다면, [일반 성공]하나를 [결정적 성공]으로 [보전]할 수 있다.",
+      "textEn": "If you retain any critical successes, you can retain one of your normal successes as a critical success instead."
+    },
+    {
+      "id": "Saturate",
+      "nameKo": "포화",
+      "nameEn": "Saturate",
+      "kind": "weapon",
+      "keys": [
+        "포화",
+        "Saturate"
+      ],
+      "textKo": "방어자는 [엄폐 방호](cover save)를 받을 수 없다.",
+      "textEn": "The defender cannot retain cover saves."
+    },
+    {
+      "id": "Seek",
+      "nameKo": "색적",
+      "nameEn": "Seek",
+      "kind": "weapon",
+      "keys": [
+        "색적",
+        "저밀도 색적",
+        "Seek"
+      ],
+      "textKo": "[유효 대상]을 정할 때, 요원은 지형으로 [엄폐] 상태가 될 수 없다. 만약 규칙이 [저밀도 색적](Seek light)라고 쓰여 있다면, 저밀도(Light) 지형으로는 [엄폐] 상태가 될 수 없다. 이 규칙이 적용되고 있다면, 요원이 보인다는 가정하에 사격의 대상이 되도록 만들 수는 있지만, 다른 [엄폐 방호]는 어느 것도 제거하지 않는다.",
+      "textEn": "When selecting a valid target, operatives with a Conceal order cannot use terrain for cover. If the rule is Seek Light, they cannot use Light terrain for cover. While this can allow operatives to be targeted (assuming they’re visible), it doesn’t remove their cover save (if any)."
+    },
+    {
+      "id": "Severe",
+      "nameKo": "중상",
+      "nameEn": "Severe",
+      "kind": "weapon",
+      "keys": [
+        "중상",
+        "Severe"
+      ],
+      "textKo": "[결정적 성공]을 [보전]하지 못했다면 [일반 성공] 하나를 [결정적 성공]으로 바꾸어 [보전]한다. 이렇게 만든 결정적 성공에는 [궤멸]과 [결정적 관통]이 적용되지만, [맹공]과 [파쇄]는 적용되지 않는다.",
+      "textEn": "If you don’t retain any critical successes, you can change one of your normal successes to a critical success. The Devastating and Piercing Crits weapon rules still take effect, but Punishing and Rending don’t."
+    },
+    {
+      "id": "Shock",
+      "nameKo": "충격",
+      "nameEn": "Shock",
+      "kind": "weapon",
+      "keys": [
+        "충격",
+        "Shock"
+      ],
+      "textKo": "(근접무기 전용) 처음으로 [결정적 성공]으로 [타격](strike)할 때, 적의 처리되지 않은 [일반 성공]을 제거한다. [일반 성공]이 없다면 [결정적 성공] 하나를 제거한다.",
+      "textEn": "The first time you strike with a critical success in each sequence, also discard one of your opponent’s unresolved normal successes (or one of their critical successes if there are none)."
+    },
+    {
+      "id": "Silent",
+      "nameKo": "무성",
+      "nameEn": "Silent",
+      "kind": "weapon",
+      "keys": [
+        "무성",
+        "Silent"
+      ],
+      "textKo": "[은폐 명령]중일 때에도 사격이 가능하다.",
+      "textEn": "An operative can perform the Shoot action with this weapon while it has a Conceal order."
+    },
+    {
+      "id": "Stun",
+      "nameKo": "혼미",
+      "nameEn": "Stun",
+      "kind": "weapon",
+      "keys": [
+        "혼미",
+        "Stun"
+      ],
+      "textKo": "[결정적 성공]을 [보전]했다면, 이 무기의 공격 대상 요원은 그의 다음 [운용]이 끝날 때까지 APL이 1 감소한다.",
+      "textEn": "If you retain any critical successes, subtract 1 from the APL stat of the operative this weapon is being used against until the end of its next activation."
+    },
+    {
+      "id": "Torrent X",
+      "nameKo": "격류",
+      "nameEn": "Torrent X",
+      "kind": "weapon",
+      "keys": [
+        "격류",
+        "방사",
+        "Torrent"
+      ],
+      "textKo": "(사격무기 전용) 통상적인 [유효 대상]을 주요(1차) 대상으로 선택한 다음, 주요 대상의 X인치 내에 있는 다른 [유효 대상]을 원하는 만큼 2차 대상으로 선택한다. 같은 무기로 선택한 모든 대상에게 원하는 순서대로 사격하며, 각 과정은 별개의 사격처럼 진행한다.",
+      "textEn": "Select a valid target as normal as the primary target, then select any number of other valid targets within x of the first valid target, but not within control range of friendly operatives, as secondary targets, e.g. Torrent 2\". Shoot with this weapon against all of them in an order of your choice (roll each sequence separately)."
+    },
+    {
+      "id": "Action",
+      "nameKo": "행동",
+      "nameEn": "Action",
+      "kind": "term",
+      "keys": [
+        "행동"
+      ],
+      "textKo": "요원이 수행 가능한 모든 작용. 운용 동안에 동명의 행동은 각각 한 번씩만 수행할 수 있다.",
+      "textEn": ""
+    },
+    {
+      "id": "Activation",
+      "nameKo": "운용",
+      "nameEn": "Activation",
+      "kind": "term",
+      "keys": [
+        "운용"
+      ],
+      "textKo": "화력전 단계에서 자신의 차례에 준비 상태인 요원 하나를 선택한다. 그는 운용 상태가 된다. 이는 최대 APL만큼 행동을 수행할 수 있고, 이후에 소진 상태가 된다.",
+      "textEn": ""
+    },
+    {
+      "id": "APL",
+      "nameKo": null,
+      "nameEn": "APL",
+      "kind": "term",
+      "keys": [
+        "APL"
+      ],
+      "textKo": "Action Point Limit. 요원 하나가 가진 행동 포인트 한계량.",
+      "textEn": ""
+    },
+    {
+      "id": "Approved Ops",
+      "nameKo": "인가 작전",
+      "nameEn": "Approved Ops",
+      "kind": "term",
+      "keys": [
+        "인가 작전"
+      ],
+      "textKo": "1:1 PvP에 사용하는 임무 팩. 간소화 규칙(Lite rule)이 아닌 정석전에 필요한 내용을 다룬다.",
+      "textEn": ""
+    },
+    {
+      "id": "Battle",
+      "nameKo": "전투",
+      "nameEn": "Battle",
+      "kind": "term",
+      "keys": [
+        "전투"
+      ],
+      "textKo": "전투가 진행되는 네 전환점의 과정 전체이다. 특히, 'Once per a battle [전투 중 한 번]'이란 표현은 게임 전체 중에서 단 한 번을 의미한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Conceal order",
+      "nameKo": "은폐 명령",
+      "nameEn": "Conceal order",
+      "kind": "term",
+      "keys": [
+        "은폐 명령"
+      ],
+      "textKo": "사격 또는 돌격 행동을 수행할 수 없다. 이 명령을 받고 엄폐 상태를 유지하는 동안 통상적으로 적 사격의 대상이 되지 않는다.",
+      "textEn": ""
+    },
+    {
+      "id": "Control range",
+      "nameKo": "장악 범위",
+      "nameEn": "Control range",
+      "kind": "term",
+      "keys": [
+        "장악 범위"
+      ],
+      "textKo": "한 요원에게 상대가 [시야에 들어오는] 상태이며 베이스 사이 거리가 1\" 이내라면 장악 범위가 성립한다. 요원 사이의 장악 범위는 상호 적용되므로, 어느 한쪽을 기준으로만 이 조건이 성립해도 양쪽 모두 서로의 장악 범위 안에 있는 것으로 본다.",
+      "textEn": ""
+    },
+    {
+      "id": "Counteract",
+      "nameKo": "대응",
+      "nameEn": "Counteract",
+      "kind": "term",
+      "keys": [
+        "대응"
+      ],
+      "textKo": "아군이 전원 소진 상태이고 적의 준비 상태인 요원이 남아 있을 때 자신의 운용 차례에 사용할 수 있다. [교전 명령]인 소진 상태 아군 요원 하나가 [엄호](Guard)를 제외한 1AP 행동 하나를 무상으로 수행한다. 그 행동 중에는 이동하거나 제거된 뒤 다시 배치되는 거리가 2\"를 넘을 수 없다.",
+      "textEn": ""
+    },
+    {
+      "id": "Cover",
+      "nameKo": "엄폐",
+      "nameEn": "Cover",
+      "kind": "term",
+      "keys": [
+        "엄폐"
+      ],
+      "textKo": "공격자와 방어자 베이스 사이의 커버 라인이 지형 또는 다른 요원의 베이스를 지나고, 방어자가 그 교차 지점의 1\" 이내라면 엄폐 상태이다. 단, 공격자가 방어자 2\" 이내라면 엄폐 상태가 될 수 없다.",
+      "textEn": ""
+    },
+    {
+      "id": "CP",
+      "nameKo": null,
+      "nameEn": "CP",
+      "kind": "term",
+      "keys": [
+        "CP"
+      ],
+      "textKo": "플레이어가 플로이를 사용하기 위한 자원. 플로이의 발동은 통상적으로 1CP를 소모한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Engage order",
+      "nameKo": "교전 명령",
+      "nameEn": "Engage order",
+      "kind": "term",
+      "keys": [
+        "교전 명령"
+      ],
+      "textKo": "은폐 명령과 달리 사격과 돌격 행동을 수행할 수 있다. 교전 명령이라는 이유만으로 자동으로 사격의 [유효 대상]이 되는 것은 아니며, 시야·사거리·장악 범위 조건도 충족해야 한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Expended",
+      "nameKo": "소진",
+      "nameEn": "Expended",
+      "kind": "term",
+      "keys": [
+        "소진"
+      ],
+      "textKo": "운용을 마친 요원은 전환점이 끝날 때까지 소진 상태이다. 통상적으로 대응 규칙 이외의 방법으로는 행동할 수 없다.",
+      "textEn": ""
+    },
+    {
+      "id": "Killzone",
+      "nameKo": "킬존",
+      "nameEn": "Killzone",
+      "kind": "term",
+      "keys": [
+        "킬존"
+      ],
+      "textKo": "지형을 포함하여, 게임이 이뤄지는 보드 공간 전체를 의미한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Hit stat",
+      "nameKo": "명중 수치",
+      "nameEn": "Hit stat",
+      "kind": "term",
+      "keys": [
+        "명중 수치",
+        "명중 요구치"
+      ],
+      "textKo": "무기의 공격이 성공하는지를 결정하는 수치. 굴린 주사위의 눈이 이 수치 이상이면 성공이다.",
+      "textEn": ""
+    },
+    {
+      "id": "Incapacitated",
+      "nameKo": "무력화",
+      "nameEn": "Incapacitated",
+      "kind": "term",
+      "keys": [
+        "무력화"
+      ],
+      "textKo": "전투 불능의 상태. 즉시 발동할 효과가 없다면, 요원을 킬존에서 제거한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Initiative",
+      "nameKo": "주도권",
+      "nameEn": "Initiative",
+      "kind": "term",
+      "keys": [
+        "주도권"
+      ],
+      "textKo": "한 전환점에서의 선공. 롤 오프(roll-off)의 승자가 주도권을 가질 플레이어를 결정할 수 있다. 롤 오프에서 비기면, 이전 전환점에 주도권이 없던 플레이어가 이번 전환점에 주도권을 가질 플레이어를 결정한다. 배치(Set up) 시점과 전투 시점의 주도권이 구분됨에 주의해야 한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Injured",
+      "nameKo": "부상",
+      "nameEn": "Injured",
+      "kind": "term",
+      "keys": [
+        "부상"
+      ],
+      "textKo": "체력이 본래 체력의 절반 미만인 동안, 이동 수치 2\" 감소 및 모든 무기의 명중 수치가 1 약화(worsen)라는 패널티가 있다.",
+      "textEn": ""
+    },
+    {
+      "id": "Obscured",
+      "nameKo": "차폐",
+      "nameEn": "Obscured",
+      "kind": "term",
+      "keys": [
+        "차폐"
+      ],
+      "textKo": "커버 라인이 공격자와 방어자 모두에게서 1\"보다 멀리 떨어진 고밀도 지형을 지나면 방어자는 차폐 상태이다. 공격자는 성공 1개를 버리고 모든 결정적 성공을 일반 성공으로 바꾸며, 이 결과는 보정할 수 없다. 같은 지형지물이 엄폐와 차폐를 모두 만들면, 방어자가 유효 대상으로 선택될 때 둘 중 하나만 선택해 적용한다.",
+      "textEn": ""
+    },
+    {
+      "id": "OP",
+      "nameKo": null,
+      "nameEn": "OP",
+      "kind": "term",
+      "keys": [
+        "OP"
+      ],
+      "textKo": "승점을 얻기 위한 임무. 적 요원을 처치하는 Kill OP, 킬존의 임무 마커와 관련된 Crit OP, 팀의 유형에 따라 직접 선택하여 비공개로 시작하는 Tac OP의 세 가지로 분류된다.",
+      "textEn": ""
+    },
+    {
+      "id": "Operative",
+      "nameKo": "요원",
+      "nameEn": "Operative",
+      "kind": "term",
+      "keys": [
+        "요원"
+      ],
+      "textKo": "각 팀의 데이터시트에 항목으로 표기된, 플레이어가 다루는 한 개의 미니어처를 의미한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Precedence",
+      "nameKo": "우선순위",
+      "nameEn": "Precedence",
+      "kind": "term",
+      "keys": [
+        "우선순위"
+      ],
+      "textKo": "종종 예외적인 규칙이 '통상적인 규칙보다 높은 우선순위를 가진다' 등의 문장을 포함한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Ready",
+      "nameKo": "준비",
+      "nameEn": "Ready",
+      "kind": "term",
+      "keys": [
+        "준비"
+      ],
+      "textKo": "요원의 운용이 가능한 상태. 전략 단계에서 소진된 요원의 명령 토큰을 모두 앞면으로 뒤집어서 각각의 요원은 준비 상태가 된다.",
+      "textEn": ""
+    },
+    {
+      "id": "Resolve",
+      "nameKo": "처리",
+      "nameEn": "Resolve",
+      "kind": "term",
+      "keys": [
+        "처리"
+      ],
+      "textKo": "공격 과정에서 공격자와 방어자의 D6의 결정적 성공, 일반 성공을 서로 비교하여 피해의 경중을 계산하는 규칙.",
+      "textEn": ""
+    },
+    {
+      "id": "Retain",
+      "nameKo": "보전",
+      "nameEn": "Retain",
+      "kind": "term",
+      "keys": [
+        "보전"
+      ],
+      "textKo": "주사위 굴림에서 성공인 주사위들을 유지하는 규칙. 실패한 것들은 버린다.",
+      "textEn": ""
+    },
+    {
+      "id": "Retaliate",
+      "nameKo": "반격",
+      "nameEn": "Retaliate",
+      "kind": "term",
+      "keys": [
+        "반격"
+      ],
+      "textKo": "공격자의 근접전의 대상이 된 방어자가 수행하는 행동을 의미한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Strategic Gambit",
+      "nameKo": "전략 포석",
+      "nameEn": "Strategic Gambit",
+      "kind": "term",
+      "keys": [
+        "전략 포석"
+      ],
+      "textKo": "전략 단계 동안만 선언할 수 있는 플로이나 요원의 능력 등에 표기된 효과에 대한 일종의 태그. 한 전환점 동안 작용하며, 조건부 효과를 가지고 있는 경우 등이 이 태그가 포함되어 있으며, 전략 단계 내에 주도권을 가진 플레이어부터 시작하여 양 플레이어가 모두 통과(Pass)를 선언해 사용을 종료할 때까지 하나씩 선택하여 발동한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Success",
+      "nameKo": "성공",
+      "nameEn": "Success",
+      "kind": "term",
+      "keys": [
+        "성공",
+        "결정적 성공",
+        "일반 성공"
+      ],
+      "textKo": "주사위의 성공. D6에서 6이 결정적 성공이며, 공격 시 무기의 명중 수치 이상이, 방어 시 방호 수치 이상이 일반 성공에 해당한다. 성공이 아닌 주사위들은 실패이다.",
+      "textEn": ""
+    },
+    {
+      "id": "Turning Point",
+      "nameKo": "전환점",
+      "nameEn": "Turning Point",
+      "kind": "term",
+      "keys": [
+        "전환점"
+      ],
+      "textKo": "게임에서 통용되는 턴과 같다. 네 번째 전환점이 종료되면 승점을 정산한다. TP라고도 한다.",
+      "textEn": ""
+    },
+    {
+      "id": "Valid target",
+      "nameKo": "유효 대상",
+      "nameEn": "Valid target",
+      "kind": "term",
+      "keys": [
+        "유효 대상"
+      ],
+      "textKo": "사격할 요원의 시야에 들어오고 무기 사거리 안에 있으며, 그 적의 장악 범위 안에 아군 요원이 없을 때 유효 대상이 될 수 있다. 은폐 명령인 적이 엄폐 상태라면 통상적으로 유효 대상이 아니다.",
+      "textEn": ""
+    },
+    {
+      "id": "Vantage",
+      "nameKo": "고지",
+      "nameEn": "Vantage",
+      "kind": "term",
+      "keys": [
+        "고지"
+      ],
+      "textKo": "게임 보드 바닥이 아닌 지형의 상층의 바닥을 의미한다. 저밀도 지형으로 취급된다.",
+      "textEn": ""
+    },
+    {
+      "id": "Visible",
+      "nameKo": "시야에 들어오는",
+      "nameEn": "Visible",
+      "kind": "term",
+      "keys": [
+        "시야에 들어오는"
+      ],
+      "textKo": "시야의 주체가 대상을 볼 수 있는 상태. 주체의 머리 근처 1mm 영역을 기준으로, 대상의 모델(베이스 제외) 일부가 보이면 시야에 들어오는 것이다.",
+      "textEn": ""
+    },
+    {
+      "id": "VP",
+      "nameKo": "승점",
+      "nameEn": "VP",
+      "kind": "term",
+      "keys": [
+        "승점",
+        "VP"
+      ],
+      "textKo": "Victory Point. 전투 종료 시 상대와 VP가 서로 같다면 게임은 무승부로 끝난다.",
+      "textEn": ""
+    },
+    {
+      "id": "Wounded",
+      "nameKo": null,
+      "nameEn": "Wounded",
+      "kind": "term",
+      "keys": [
+        "Wounded"
+      ],
+      "textKo": "최소 1 이상의 피해를 받아 체력 수치가 최대가 아닌 상태.",
+      "textEn": ""
+    }
+  ]
+}

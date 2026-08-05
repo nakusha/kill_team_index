@@ -1,0 +1,1041 @@
+{
+  "id": "CHAOS-LEG",
+  "nameEn": "Legionaries",
+  "nameKo": "군단병",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#c49a52",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "CHAOS",
+    "nameEn": "Chaos",
+    "nameKo": "카오스"
+  },
+  "ploys": [
+    {
+      "id": "CHAOS-LEG-S-BFTBG",
+      "name": "Blood For The Blood God",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly LEGIONARY operative (excluding KHORNE) is fighting, the first time you strike during that sequence, inflict 1 additional damage (to a maximum of 7).\nAdd 1 to both Dmg stats of friendly LEGIONARY KHORNE operatives’ melee weapons (to a maximum of 7).",
+      "textKo": "KHORNE 외 아군 근접전 첫 타격 피해 +1, KHORNE 은 melee Dmg +1"
+    },
+    {
+      "id": "CHAOS-LEG-S-FF",
+      "name": "Fickle Fates",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly LEGIONARY operative is shooting a ready enemy operative, that friendly operative’s ranged weapons have the Balanced weapon rule.\nWhenever an operative is shooting a ready friendly LEGIONARY TZEENTCH operative, in the Roll Defence Dice step, if you retain any critical successes, you can retain one of your fails as a normal success instead of discarding it.",
+      "textKo": "아군이 ready 적 사격 시 Balanced, TZEENTCH 방어 시 fail 1개를 성공으로"
+    },
+    {
+      "id": "CHAOS-LEG-S-IMP",
+      "name": "Implacable",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly LEGIONARY operative, weapons with the Piercing 1 weapon rule have the Piercing Crits 1 weapon rule instead.\nYou can ignore any changes to the stats of friendly LEGIONARY NURGLE operatives from being injured (including their weapons’ stats).",
+      "textKo": "아군 피격 시 Piercing 1 → Piercing Crits 1, NURGLE 은 injured 무시"
+    },
+    {
+      "id": "CHAOS-LEG-S-QSS",
+      "name": "Quicksilver Speed",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly LEGIONARY operative that performed an action in which it moved during this turning point is fighting, worsen the Hit stat of the enemy operative’s melee weapons by 1.\nWhenever an operative is shooting a friendly LEGIONARY SLAANESH operative more than 6\" from it that performed an action in which it moved during this turning point, worsen the Hit stat of the enemy operative’s weapons by 1.\nIn all cases for this ploy, this isn’t cumulative with being injured.",
+      "textKo": "이동한 아군과 근접전 시 적 melee Hit 악화, SLAANESH 는 원거리도"
+    },
+    {
+      "id": "CHAOS-LEG-T-MA",
+      "name": "Malignant Aura",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly LEGIONARY NURGLE operative is performing the Shoot action, when you select a valid target. Until the end of that action, whenever that friendly operative is shooting an enemy operative within 3\" of it (i.e. including secondary targets, if any), that friendly operative’s ranged weapons have the Piercing 1 weapon rule.",
+      "textKo": "아군 NURGLE 사격 시 3\" 이내 대상에게 Piercing 1 획득"
+    },
+    {
+      "id": "CHAOS-LEG-T-MAC",
+      "name": "Mutability And Change",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly LEGIONARY TZEENTCH operative is activated. Until the end of that operative’s activation, add 1 to its APL stat, but it cannot perform the same action more than once during that activation. If it’s a WARRIOR operative, that operative’s Marks of Chaos keyword cannot be changed during this turning point (see Infernal Pact additional rule).",
+      "textKo": "아군 TZEENTCH 활성화 시 APL +1, 같은 액션 반복 불가"
+    },
+    {
+      "id": "CHAOS-LEG-T-SC",
+      "name": "Sickening Captivation",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly LEGIONARY SLAANESH operative’s activation, before or after it performs an action. Select one enemy operative visible to and within 4\" of that friendly operative. Until the end of that enemy operative’s next activation, subtract 1 from its APL stat.",
+      "textKo": "아군 SLAANESH 활성화 중 4\" 이내 적 1명의 APL 을 다음 활성화까지 -1"
+    },
+    {
+      "id": "CHAOS-LEG-T-UEBS",
+      "name": "Unending Bloodshed",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly LEGIONARY KHORNE operative is incapacitated while fighting or retaliating. You can strike the enemy operative in that sequence with one of your unresolved successes before it’s removed from the killzone.",
+      "textKo": "아군 KHORNE 이 근접전/반격 중 무력화될 때 제거 전 1회 타격"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "CHAOS-LEG-WA",
+      "name": "Warded Armour",
+      "textEn": "STRATEGIC GAMBIT. Select one friendly LEGIONARY operative. Until the Ready step of the next Strategy phase, change that operative’s Save stat to 2+.",
+      "textKo": "GAMBIT, 아군 1명의 Save 를 다음 Ready 단계까지 2+ 로"
+    },
+    {
+      "id": "CHAOS-LEG-MB",
+      "name": "Malefic Blades",
+      "textEn": "Friendly LEGIONARY operatives have the following melee weapon:\nNAME ATK HIT DMG\nMalefic blade 5 3+ 3/4",
+      "textKo": "전원에게 말레픽 블레이드 (A5 · H3+ · D3/4)"
+    },
+    {
+      "id": "CHAOS-LEG-TR",
+      "name": "Tainted Rounds",
+      "textEn": "Once per turning point, when a friendly LEGIONARY operative is performing the Shoot action and you select a bolt pistol or boltgun, you can use this rule. If you do, until the end of that action, that weapon has the Rending weapon rule.",
+      "textKo": "TP당 1회, 볼트 피스톨 · 볼트건에 Rending"
+    },
+    {
+      "id": "CHAOS-LEG-CT",
+      "name": "Chaos Talismans",
+      "textEn": "STRATEGIC GAMBIT. Select one Marks of Chaos keyword. Once during each of their activations, when a friendly LEGIONARY operative that has that keyword is shooting, fighting or retaliating, if you roll two or more fails, you can inflict D3 damage on that friendly operative to discard one of them and retain the other as a normal success instead. Note that if it’s the Shoot action and that damage incapacitates that friendly operative, the action doesn’t end (continue the sequence with your successful attack dice).",
+      "textKo": "GAMBIT, Marks of Chaos 키워드 1개 선택 — 실패 2개 이상 시 D3 자해하고 재굴림"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "CHAOS-LEG-AC",
+      "nameEn": "Legionary Aspiring Champion",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tainted Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tainted Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-CHO",
+      "nameEn": "Legionary Chosen",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tainted Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Daemon Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/7",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-ANO",
+      "nameEn": "Legionary Anointed",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Daemonic Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-BA",
+      "nameEn": "Legionary Balefire Acolyte",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fireblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Psychic",
+                "Blast 2\"",
+                "1\" Devastating 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Life Syphon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Psychic",
+                "Saturate",
+                "*Siphon Life"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fell Dagger",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Psychic",
+                "Rending",
+                "*Siphon Life"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-BUT",
+      "nameEn": "Legionary Butcher",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Double-Handed Chainaxe",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-GNR",
+      "nameEn": "Legionary Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-HGNR",
+      "nameEn": "Legionary Heavy Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Missile Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Blast 2\"",
+                "Heavy (Reposition only)"
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Reaper Chaincannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Heavy (Reposition only)",
+                "Punishing"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Heavy (Reposition only)",
+                "Punishing",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-IB",
+      "nameEn": "Legionary Icon Bearer",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-STL",
+      "nameEn": "Legionary Shrivetalon",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Flensing Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "CHAOS-LEG-WAR",
+      "nameEn": "Legionary Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "방어 · 섬멸 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "ARCHETYPES: SECURITY, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 LEGIONARY operative selected from the following list:\n• ASPIRING CHAMPION with one option from each of the following:\n○ Plasma pistol or tainted bolt pistol\n○ Power fist, power maul, power weapon or tainted chainsword\n• CHOSEN with one of the following options:\n○ Plasma pistol; daemon blade\n○ Tainted bolt pistol; daemon blade"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 LEGIONARY operatives selected from the following list:\n• ANOINTED\n• BALEFIRE ACOLYTE\n• BUTCHER"
+      },
+      {
+        "type": "rule",
+        "text": "• GUNNER with one of the following options:\n○ Bolt pistol; flamer; fists\n○ Bolt pistol; meltagun; fists\n○ Bolt pistol; plasma gun; fists\n• HEAVY GUNNER with one of the following options:\n○ Bolt pistol; heavy bolter; fists\n○ Bolt pistol; missile launcher; fists\n○ Bolt pistol; reaper chaincannon; fists\n• ICON BEARER with one of the following options:\n○ Boltgun; fists\n○ Bolt pistol; chainsword\n• SHRIVETALON\n• WARRIOR with one of the following options:\n○ Boltgun; fists\n○ Bolt pistol; chainsword"
+      },
+      {
+        "type": "rule",
+        "text": "Other than WARRIOR operatives, your kill team can only include each operative on this list once."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "MARKS OF CHAOS · KHORNE · NURGLE …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "lore",
+        "text": "By making dark pacts with the Ruinous Powers, Legionaries may increase their own might. Yet such bargains rarely come without a cost."
+      },
+      {
+        "type": "rule",
+        "text": "Whenever you select a LEGIONARY operative for the battle, you must select one of the following keywords for it to have for that battle: KHORNE, NURGLE, SLAANESH, TZEENTCH, UNDIVIDED. Each operative's keyword can be different, but a BALEFIRE ACOLYTE operative cannot have the KHORNE keyword. Friendly LEGIONARY operatives have an additional rule determined by this keyword. In addition, LEGIONARY ploys have additional benefits for operatives with the relevant keyword."
+      },
+      {
+        "type": "lore",
+        "text": "MARK OF CHAOS OPTIONS ARE PRESENTED ON"
+      },
+      {
+        "type": "heading",
+        "text": "THEIR OWN CARDS"
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "heading",
+        "text": "KHORNE"
+      },
+      {
+        "type": "rule",
+        "text": "Wrathful Onslaught This operative's melee weapons have the Severe weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "heading",
+        "text": "NURGLE"
+      },
+      {
+        "type": "rule",
+        "text": "Disgusting Vigour Whenever Normal Dmg of 3 or more is inflicted on this operative, roll one D6: on a 5+, subtract 1 from that inflicted damage."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "heading",
+        "text": "SLAANESH"
+      },
+      {
+        "type": "rule",
+        "text": "Unnatural Agility Add 1\" to this operative's Move stat."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "heading",
+        "text": "TZEENTCH"
+      },
+      {
+        "type": "rule",
+        "text": "Empyreal Guidance This operative's ranged weapons have the Severe weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "MARKS OF CHAOS"
+      },
+      {
+        "type": "heading",
+        "text": "UNDIVIDED"
+      },
+      {
+        "type": "rule",
+        "text": "Vicious Reavers Whenever this operative is shooting against, fighting against or retaliating against an enemy operative within 6\" of it, this operative's weapons have the Ceaseless weapon rule."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      },
+      {
+        "type": "heading",
+        "text": "ASTARTES"
+      },
+      {
+        "type": "rule",
+        "text": "These genetically modified superhumans are made for one purpose: war. During each friendly LEGIONARY operative's activation, it can perform either two Shoot actions or two Fight actions. If it's two Shoot actions, a bolt pistol, boltgun or tainted bolt pistol must be selected for at least one of them. Each friendly LEGIONARY operative can counteract regardless of its order."
+      },
+      {
+        "type": "heading",
+        "text": "LEGIONARY"
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,1250 @@
+{
+  "id": "TAU-XV26",
+  "nameEn": "XV26 Stealth Battlesuits",
+  "nameKo": "XV26 스텔스 배틀슈트",
+  "archetype": "Infiltration/Recon",
+  "color": "#8ba0b8",
+  "size": {
+    "total": 7
+  },
+  "faction": {
+    "id": "TAU",
+    "nameEn": "T’au Empire",
+    "nameKo": "타우"
+  },
+  "ploys": [
+    {
+      "id": "TAU-XV26-PH",
+      "name": "Patient Hunters",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting against or fighting against an expended enemy operative, that friendly operative’s weapons have the Balanced weapon rule and its ranged weapons have the Saturate weapon rule.",
+      "textKo": "소진된 적을 공격할 때 균형, 원거리 무기는 포화까지 획득"
+    },
+    {
+      "id": "TAU-XV26-BOU",
+      "name": "Bonds of Unity",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly XV26 STEALTH BATTLESUIT operative is activated (excluding DRONE), if it's visible to and within 6\" of another friendly XV26 STEALTH BATTLESUIT operative (excluding DRONE), you can ignore any changes to that first friendly operative's APL stat and select one of the following:\n• Ignore any changes to that first friendly operative’s Move stat from being injured until the end of that activation.\n• Ignore any changes to the Hit stat of that first friendly operative’s weapons from being injured until the end of that activation.",
+      "textKo": "다른 아군 6\" 시야 내면 APL 변경 무시 + 이동·명중 부상 효과 무시"
+    },
+    {
+      "id": "TAU-XV26-PA",
+      "name": "Prepare Ambush",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Place one of your Ambush markers wholly within your territory and more than 2\" from enemy operatives. Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an enemy operative that’s within 2\" of that marker, you can use this rule. If you do, that friendly operative's ranged weapons have the Seek weapon rule until the end of the action. Remove that Ambush marker at the end of that action or in the Ready step of the next turning point (whichever comes first).",
+      "textKo": "매복 마커 배치 — 2\" 내 적을 사격하면 마커를 쓰고 색적 획득"
+    },
+    {
+      "id": "TAU-XV26-HWCM",
+      "name": "Holowave Countermeasures",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly XV26 STEALTH BATTLESUIT operative more than 6\" from it, in the Roll Attack Dice step, the attacker must discard one of their unresolved normal successes (or one of their critical successes if there are none). This isn’t cumulative with being obscured.",
+      "textKo": "6\" 밖에서 사격당하면 공격자가 성공 주사위 하나를 버려야 한다"
+    },
+    {
+      "id": "TAU-XV26-VRT",
+      "name": "Vectored Retro-Thrusters",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative ends the Charge action within control range of a friendly XV26 STEALTH BATTLESUIT operative (excluding DRONE). Interrupt that action to use this rule. If you do, that friendly operative can immediately perform a free Fall Back action, but it cannot move more than 3\" during that action. Then, that enemy operative can immediately perform a free Reposition action using any remaining move distance it had from that first Charge action, and can do so even if it’s performed an action that prevents it from performing the Reposition action.",
+      "textKo": "적이 장악 범위에서 돌격을 마치면 방해하고 3\" 후퇴, 적은 기동"
+    },
+    {
+      "id": "TAU-XV26-GS",
+      "name": "Ghostshroud",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy at the end of a friendly XV26 STEALTH BATTLESUIT operative’s activation. If that operative has an Engage order, change it to Conceal. You cannot use this ploy for each friendly operative more than once per battle.",
+      "textKo": "운용 종료 시 교전 명령을 은폐로 변경 (요원당 전투 1회)"
+    },
+    {
+      "id": "TAU-XV26-EJP",
+      "name": "Engage Jet Pack",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly XV26 STEALTH BATTLESUIT operative (excluding DRONE) is activated or counteracts. Until the end of that activation/counteraction, you can ignore the vertical distance they move during one climb and one drop.",
+      "textKo": "운용·대응 동안 올라가기와 내려가기의 수직 이동을 각 1회 무시"
+    },
+    {
+      "id": "TAU-XV26-SP",
+      "name": "Saviour Protocols",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly XV26 STEALTH BATTLESUIT operative (excluding DRONE) is selected as the valid target of a Shoot action. Select one friendly XV26 STEALTH BATTLESUIT DRONE operative visible to and within 3\" of that first friendly operative to become the valid target instead (even if it wouldn’t normally be valid for this). That friendly DRONE operative is only in cover or obscured if the original target was. This ploy has no effect if the ranged weapon has the Blast or Torrent weapon rule.",
+      "textKo": "사격 대상이 되면 3\" 내 드론 아군을 대신 대상으로 (폭발·격류 제외)"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "TAU-XV26-MT",
+      "name": "XV26 Multitrackers",
+      "textEn": "Once per turning point, when a friendly XV26 STEALTH BATTLESUIT operative is performing the Shoot action and you select a burst cannon (sweeping), you can use this rule. If you do, until the end of that action, that weapon has the Torrent 2\" weapon rule.",
+      "textKo": "전환점당 1회, 작렬포(소사) 사격에 격류 2\" 부여"
+    },
+    {
+      "id": "TAU-XV26-CNJ",
+      "name": "Counter-Network Jammers",
+      "textEn": "STRATEGIC GAMBIT. Select one objective marker or mission marker. Until the end of the turning point, whenever determining control of that marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of friendly XV26 STEALTH BATTLESUIT operatives. Note this isn’t a change to the APL stat, so any changes are cumulative with this.",
+      "textKo": "전략 포석 — 마커 하나, 3\" 내 적들의 APL 합계를 -1 로 간주"
+    },
+    {
+      "id": "TAU-XV26-ABSF",
+      "name": "Advanced Blacksun Filters",
+      "textEn": "Whenever a friendly XV26 STEALTH BATTLESUIT operative is shooting an operative that's obscured, you don't have to discard one success as a result of that rule. All other effects of obscured apply as normal.",
+      "textKo": "차폐된 적을 사격할 때 성공 주사위를 버리지 않아도 된다"
+    },
+    {
+      "id": "TAU-XV26-HWTL",
+      "name": "Hardwired Target Locks",
+      "textEn": "Whenever you would counteract, you can do so with one friendly XV26 STEALTH BATTLESUIT operative that has a Conceal order and is more than 3\" from enemy operatives, but before it counteracts, you must change its order to Engage and it cannot perform any actions other than Shoot during that counteraction.",
+      "textKo": "은폐 명령이고 적 3\" 밖이면 대응 가능 — 교전으로 바꾸고 사격만"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "TAU-XV26-SV",
+      "nameEn": "Shas'Vre",
+      "nameKo": "XV26 샤스브레",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 13
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pulse Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Pulse Pistol",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Accurate 1"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "펄스 권총(원거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "펄스 권총(영거리)",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "정확 1"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "XV26 드론 조종수",
+          "text": "전략 포석(이 요원이 킬존에 있으면 사용 가능). 킬존에 있는 아군 XV26 스텔스 배틀슈트 드론 요원을 하나 지정합니다. 지정한 요원의 다음 운용이 종료될 때까지, 드론 규칙의 첫 번째 및 두 번째 항목을 무시합니다(이 규칙을 드론 규칙보다 우선해 적용)."
+        },
+        {
+          "name": "대의를 위하여",
+          "text": "카우욘 팩션 규칙으로 부여되는 정확 X 의 값을 결정할 때마다, 이 요원이 킬존에 있고 아군 XV26 스텔스 배틀슈트 요원(드론 제외)이 2개 이상 무력화되었다면 값을 +1만큼 변경합니다(최대 정확 3). 이 규칙을 사용하려면 최소 정확 1이 부여되는 상태여야 한다는 점을 유의하십시오."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-DES",
+      "nameEn": "Designator",
+      "nameKo": "XV26 신호자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "식별표식",
+          "text": "이 요원의 유효 대상이 될 수 있거나, 그 시야에 확보되며 플레이어의 매복 마커(매복 준비 전략 플로이 참고) 로부터 2\" 내에 있는 적 요원은 표식 상태가 됩니다. 아군 XV26 스텔스 배틀슈트 요원이 표식 상태인 요원을 사격할 때마다, 원거리 무기에 중상 무기 규칙이 부여됩니다. 적 요원은 이 요원이 운용 상태가 아니어도 그 유효 대상이 될 수 있다는 점에 유의하십시오."
+        },
+        {
+          "name": "집중 식별표식 [1AP]",
+          "text": "이 요원의 시야에 들어오는 적 요원을 하나 지정합니다. 이번 전환점 도중 한 번, 아군 XV26 스텔스 배틀슈트 요원이 그 적 요원을 사격할 때, 이 효과를 사용할 수 있습니다. 그렇게 할 경우, 그 행동이 종료될 때까지, 그 아군 요원의 데이터카드에 명시된 원거리 무기의 명중 요구치를 1만큼 완화합니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-INF",
+      "nameEn": "Infiltrator",
+      "nameKo": "XV26 침투자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "은밀 프로토콜",
+          "text": "이 요원은 받은 명령과 무관하게 대응할 수 있습니다. 단, 은폐 명령을 받은 도중 대응하면 마커 회수나 마커 배치 또는 임무 행동 외에 다른 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-LIB",
+      "nameEn": "Liberator",
+      "nameKo": "XV26 해방자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "EMP Bomb",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/2",
+              "rules": [
+                "Range 4\"",
+                "Blast 2\"",
+                "Devastating 1",
+                "Heavy (Reposition only)",
+                "Lethal 4+",
+                "Limited 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "EMP 폭탄",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "2/2",
+          "rules": [
+            "사거리 4\"",
+            "폭발 2\"",
+            "궤멸 1",
+            "중화기(기동 한정)",
+            "살상 4+",
+            "한도 1",
+            "포화"
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 세열, 크랙, 연막, 섬광 수류탄(공용 장비 참고)을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한 도가 차감되지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무관). 이 요원이 세열 또는 크랙 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-LS",
+      "nameEn": "Lodestar",
+      "nameKo": "XV26 유도자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전자교란체 사출기",
+          "text": "전환점당 한 번, 적 요원이 사격 행동을 수행하면서 유효 대상(드론 제외)을 지정할 때 이 규칙을 사용할 수 있습니다. 단, 이 요원이 적 요원의 장악 범위 내에 있지 않아야 합니다. 규칙 사용 시, 그 행동 이 종료될 때까지, 적 요원이 이 요원의 시야에 들어오며 3\" 내에 있고, 그 적 요원으로부터 2\" 넘게 떨어진 아군 XV26 스텔스 배틀슈트 요원을 사격할 때마다 다음을 적용합니다.\n• 관통 무기 규칙을 무시합니다.\n• 사격당하는 아군 요원이 차폐 효과를 받습니다."
+        },
+        {
+          "name": "유도 신호기",
+          "text": "이 요원은 플레이어의 유도 신호기 마커를 운반합니다. 다른 요원(드론 제외)은 그 마커에 마커 회수 행동을 수행할 수 있습니다. 적 요원이 플레이어의 유도 신호기 마커에 마커 회수 행동을 처음 수행하면, 그 마커를 버립니다(전장에서 제거합니다).\n각 전략 페이즈의 준비 단계에 플레이어가 CP를 획득할 때, 플레이어의 유도 신호기 마커가 킬존에 있고 플레이어 투입 구역에서 6\" 넘게 떨어져 있다면 D6 한 개를 굴립니다. 마커가 상대의 영역 내에 있다면 D6 두 개를, 상대 투입 구역으로부터 6\" 내에 있다면 D6 세 개를 대신 굴립니다. 어느 주사위든 값이 4+이면, 플레이어가 추가로 1CP를 획득합니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-NEU",
+      "nameEn": "Neutraliser",
+      "nameKo": "XV26 제압자",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Burst Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fusion Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "작렬포(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "작렬포(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "융합 블라스터(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "융합 블라스터(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "다중스펙트럼 센서 패키지",
+          "text": "보조. 전환점당 한 번, 이 요원의 8” 내에 있는 적 요원이 운용될 때 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 이 요원으로부터 3\" 내에 있는 아군 XV26 스텔스 배틀슈트 요원마다 즉시 다음 중 하나에 따를 수 있습니다.\n• 무상으로 질주 행동을 수행합니다(수행 순서는 플레이어가 원하는 대로 지정).\n• 그 요원의 명령을 변경합니다.\n질주 행동을 수행하는 아군 요원은 적 요원의 3\" 내에서 그 이동을 마칠 수 없습니다. 공용 장비 중 통신 장비는 이 규칙의 두 번째 거리 요건에만 영향을 준다는 점에 유의하십시오."
+        },
+        {
+          "name": "시스템 방해 [1/2AP]",
+          "text": "이 요원의 시야에 들어오는 적 요원을 하나 지정합니다. 지정된 요원의 다음 운용이 종료될 때까지, 그 APL 수치를 -1만큼 변경합니다. 이 요원이 은폐 명령을 받은 상태라면, 이 행동을 수행할 때 반드시 1AP를 추가로 소모해야 합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-MV15",
+      "nameEn": "MV15 Gun Drone",
+      "nameKo": "MV15 사격 드론",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Twin Pulse Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Ram",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "이중 펄스 카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "집요"
+          ]
+        },
+        {
+          "name": "들이받기",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "드론",
+          "text": "• 이 요원은 돌격, 질주, 후퇴, 근접전, 광자 수류탄 발사기, 기동, 사격 행동 이외의 다른 행동을 수행할 수 없습니다.\n• 목표물 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오.\n• 이 요원은 자신의 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다.\n• 이 요원의 시야를 판정할 때는 미니어처 상단의 원반을 머리로 간주합니다.\n• 이 요원은 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다 (무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다 (이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음)."
+        },
+        {
+          "name": "광자 수류탄 발사기 [1AP]",
+          "text": "이 요원의 시야에 들어오는 적 요원 하나를 지정하고 D6 한 개를 굴립니다. 값이 3+이면, 지정된 요원의 다음 운용이 종료될 때까지 그 이동 수치를 -2\"만큼 변경합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-XV26-MV75",
+      "nameEn": "MV75 Marker Drone",
+      "nameKo": "MV75 표식 드론",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Ram",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "들이받기",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "드론",
+          "text": "• 이 요원은 돌격, 질주, 후퇴, 근접전, 광자 수류탄 발사기, 기동, 사격 행동 이외의 다른 행동을 수행할 수 없습니다.\n• 목표물 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오.\n• 이 요원은 자신의 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다.\n• 이 요원의 시야를 판정할 때는 미니어처 상단의 원반을 머리로 간주합니다.\n• 이 요원은 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다(무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음)."
+        },
+        {
+          "name": "식별표식",
+          "text": "이 요원의 유효 대상이 될 수 있거나, 그 시야 에 확보되며 플레이어의 매복 마커(매복 준비 전략 플로 이 참고)로부터 2\" 내에 있는 적 요원은 표식 상태가 됩니다. 아군 XV26 스텔스 배틀슈트 요원이 표식 상태인 요원을 사격할 때마다, 원거리 무기에 중상 무기 규칙이 부여됩니다. 적 요원은 이 요원이 운용 상태가 아니어도 그 유효 대상이 될 수 있다는 점에 유의하십시오."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+1+1+4 = 7명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 XV26 스텔스 배틀슈트 샤스브레, 펄스 권총과 다음 중 하나를 장비합니다.\n• 작렬포 또는 융합 블라스터\n↘ 1 XV26 스텔스 배틀슈트 MV75 표식 드론\n↘ 1 XV26 스텔스 배틀슈트 MV15 사격 드론\n↘ 4 XV26 스텔스 배틀슈트 편성합니다.\n• 신호자\n• 침투자\n• 해방자 요원, 다음 중에서 선택하여\n• 유도자\n• 제압자"
+      },
+      {
+        "type": "rule",
+        "text": "침투자 요원을 제외하면 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 융합 블라스터는 최대 두 개 장비할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "다음 선택지 중 하나를 골라 장비합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 작렬포, 주먹\n• 융합 블라스터, 주먹"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "카우욘 · 은신 역장",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "카우욘"
+      },
+      {
+        "type": "rule",
+        "text": "카우욘은 불 카스트가 받드는 군사 철학 중에 가장 유서 깊고, XV26 스텔스 배틀슈트 킬 팀이 크게 선호하는 전법이기도 하다. 카우욘은 인내하는 사냥꾼이란 의미로 풀이할 수 있으며, 적이 섣부 르게 행동하도록 유도해서 일제히 맹공격하는 방침에 주안점을 둔다. 카우욘 전략에 능숙한 샤스브레는 기동성이 뛰어난 전력과 여러 단계에 걸친 우발적 계획, 지연 전술을 적극 활용하여 적을 매복으로 끌어들이거나 사전에 준비된 화력 집중 지대로 몰아넣는다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 XV26 스텔스 배틀슈트 요원이 적 요원을 사격할 때마다, 원거리 무기에 정확 X 무기 규칙이 부여됩니다. X 값은 그 적 요원의 위치에 따라 달라집니다."
+      },
+      {
+        "type": "rule",
+        "text": "적 요원 위치 정확 X"
+      },
+      {
+        "type": "heading",
+        "text": "플레이어 영역으로부터 3\" 내 정확 1"
+      },
+      {
+        "type": "heading",
+        "text": "플레이어 영역 내 정확 2"
+      },
+      {
+        "type": "heading",
+        "text": "플레이어 투입 구역으로부터 3\" 내 정확 3"
+      },
+      {
+        "type": "heading",
+        "text": "은신 역장"
+      },
+      {
+        "type": "rule",
+        "text": "숙련된 조종사의 XV26 스텔스 배틀슈트와 특화된 동행 드론에는 은신 역장 생성기가 내장되었다. 역장을 투사하면 팀 요원의 모습을 감추어 위험한 영역도 포착되지 않고 드나들 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 XV26 스텔스 배틀슈트 요원이 은폐 명령을 받은 상태라면, 그로부터 3\" 넘게 떨어진 적 요원의 시야에 확보되지 않습니다. 이는 다른 모든 규칙에 우선합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군XV26 스텔스 배틀슈트 요원이 은폐 명령을 받은 상태라면, 후퇴 행동을 수행할 때 소모되는 AP가 -1만큼 변경됩니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

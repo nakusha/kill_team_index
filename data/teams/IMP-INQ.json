@@ -1,0 +1,3931 @@
+{
+  "id": "IMP-INQ",
+  "nameEn": "Inquisitorial Agents",
+  "nameKo": "이단심문관 심복요원",
+  "archetype": "Recon/Security/Seek & Destroy/Infiltration",
+  "color": "#9fc4e6",
+  "size": {
+    "total": 12
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-INQ-S-DEN",
+      "name": "Denounce",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one enemy operative and roll one D3. In the Firefight phase of this turning point, that enemy operative cannot be activated or perform actions until it's the last enemy operative to be activated, or your opponent has activated a number of enemy operatives equal to the result of the D3 (whichever comes first). This ploy costs you 1 additional CP for each previous time you’ve used it during the battle (e.g. 1CP the first time you would use it, 2CP the second time, etc.).",
+      "textKo": "적 하나 지정 + D3 — 그 적은 이번 화력전에서 마지막 순번이나 D3명 뒤까지 운용 불가"
+    },
+    {
+      "id": "IMP-INQ-S-IS",
+      "name": "Intense Scrutiny",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever you’re selecting a valid target for a friendly INQUISITORIAL AGENT operative, enemy operatives within 4\" of it cannot be in cover (instead of 2\"). While this can allow such operatives to be targeted (assuming they’re visible), it doesn’t remove their cover save (if any), unless the friendly INQUISITORIAL AGENT operative is within 2\" as normal.",
+      "textKo": "유효 대상 지정 시 4\"(2\"에서 변경) 내 적은 엄폐 효과를 못 받는다"
+    },
+    {
+      "id": "IMP-INQ-S-IJ",
+      "name": "Irrefutable Jurisdiction",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly INQUISITORIAL AGENT operative that’s within 3\" of an objective marker, you can re-roll one of your defence dice. If that friendly operative contests that marker, you can re-roll any of your defence dice results of one result instead (e.g. results of 2).",
+      "textKo": "목표물 마커 3\" 내 아군이 사격당하면 방어 주사위 1개 재굴림 — 경쟁 중이면 같은 값 전부"
+    },
+    {
+      "id": "IMP-INQ-S-QUA",
+      "name": "Quarry",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one enemy operative to be your quarry for the turning point. Whenever a friendly INQUISITORIAL AGENT operative is shooting against, fighting against or retaliating against your quarry, that friendly operative’s weapons have the Ceaseless weapon rule. Whenever your quarry is incapacitated, you can select a new enemy operative to be your quarry (and can continue to do so during this turning point).",
+      "textKo": "이번 전환점의 단죄 목표 지정 — 그 적을 칠 때 무기에 집요, 무력화되면 새 목표 지정"
+    },
+    {
+      "id": "IMP-INQ-T-AA",
+      "name": "Absolute Authority",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during the battle, when an opponent uses a strategy or firefight ploy (excluding Command Re-roll or one that costs 0CP). Their ploy isn’t used, the CP spent on it is refunded and they cannot use that ploy again during this turning point. This ploy cannot be used to stop the same ploy more than once per battle.",
+      "textKo": "상대가 플로이를 쓸 때 — 무효화하고 CP 반환, 이번 전환점 재사용 금지 (같은 플로이는 전투당 1회)"
+    },
+    {
+      "id": "IMP-INQ-T-IP",
+      "name": "Intimidating Presence",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative visible to and within 3\" of a friendly INQUISITORIAL AGENT operative, or visible to and within 6\" of a friendly MYSTIC operative, performs the Pick Up Marker or a mission action (excluding Operate Hatch). Your opponent must spend 1 additional AP for that enemy operative to perform that action (if they cannot or choose not to, the AP spent on it is refunded).",
+      "textKo": "아군 3\"(비술사는 6\") 내 적이 마커 회수·임무 행동 시 소모 AP +1"
+    },
+    {
+      "id": "IMP-INQ-T-RPI",
+      "name": "Relentless In Pursuit",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative within 2\" of a ready friendly INQUISITORIAL AGENT operative performs an action in which it moves. After it moves, that friendly INQUISITORIAL AGENT operative can either perform a free Reposition action, but must end that move within 2\" of that enemy operative, or a free Charge action, but must end that move within control range of that enemy operative. If neither is possible, that friendly operative cannot perform those actions, this ploy isn’t used and the CP spent on it is refunded.",
+      "textKo": "준비 아군 2\" 내 적이 이동하면 무상 기동 또는 무상 돌격으로 따라붙는다"
+    },
+    {
+      "id": "IMP-INQ-T-TEW",
+      "name": "The Emperor's Will",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly INQUISITORIAL AGENT operative is activated. Until the end of that operative’s activation, you can ignore any changes to its stats (including its weapons’ stats).",
+      "textKo": "아군 운용 시작 시 — 그 운용 동안 능력치 변경(무기 수치 포함)을 전부 무시"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-INQ-IR",
+      "name": "Inquisitorial Rosette",
+      "textEn": "Once per battle, when a friendly INQUISITORIAL AGENT operative is activated, if you’ve used the Quarry strategy ploy during this turning point, you can use this rule. If you do, you can select a new enemy operative to be your quarry until the end of the turning point.",
+      "textKo": "전투당 1회, 단죄 목표를 쓴 전환점에 운용 시작 시 — 다른 적을 새 단죄 목표로"
+    },
+    {
+      "id": "IMP-INQ-AB",
+      "name": "Armoured Bodysuits",
+      "textEn": "Whenever an operative is shooting a friendly INQUISITORIAL AGENT operative (excluding TOME-SKULL) that has a 5+ Save stat, you can retain one of your defence dice results of 4 as a normal success.",
+      "textKo": "방호 5+ 아군(톰스컬 제외)이 사격당할 때 값 4인 방어 주사위 1개를 일반 성공으로 보전"
+    },
+    {
+      "id": "IMP-INQ-CD",
+      "name": "Combat Daggers",
+      "textEn": "Friendly INQUISITORIAL AGENT operatives have the following melee weapon. Whenever a friendly SISTER OF SILENCE operative is using it, add 1 to its Atk stat.\nNAME ATK HIT DMG\nCombat dagger 3 4+ 3/4",
+      "textKo": "아군에게 근접 무기 컴뱃 대거(공격 3 · 명중 4+ · 피해 3/4) — 침묵의 자매는 공격 +1"
+    },
+    {
+      "id": "IMP-INQ-SS",
+      "name": "Servo-Skull",
+      "textEn": "Once per battle, one friendly INQUISITORIAL AGENT operative can perform a mission action for 1 less AP.",
+      "textKo": "전투당 1회, 아군 하나의 임무 행동 소모 AP -1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-INQ-INQ24-INT",
+      "nameEn": "Interrogator",
+      "nameKo": "심문자 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Extended Stock AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 12\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "개머리판 연장 성물 기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "사거리 12\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "이단심문소 고서",
+          "text": "전략 포석(이 요원이 킬존에 있거나 운용될 때, 또는 두 조건을 모두 충족할 때 사용 가능). 다음 이단심문소 고서 규칙 중, 이 요원과 아군 이단심문관 심복요원 톰스컬 요원 하나가 보유할 규칙을 하나씩 선택합니다. 같은 규칙을 중복 선택할 수 있으며, 선택하지 않은 규칙은 무시합니다.\n• 힐 난: 아군 이단심문관 심복요원 요원이 이 규칙을 보유한 아군 요원의 2\" 내에 있는 적 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다, 그 아군 요원이 보유한 무기의 공격 수치를 +1만큼 변경합니다.\n• 성역화: 적 요원이 이 규칙을 보유 한 아군 요원의 2\" 내에 있는 아군 이단심문관 심복요원 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다, 그 적 요원이 보유한 무기의 공격 수치를 -1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-TS",
+      "nameEn": "Tome-Skull",
+      "nameKo": "톰스컬",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": [
+        {
+          "name": "축성된 고서",
+          "text": "이 요원은 이단심문소 고서 규칙(심문자 참고) 을 보유할 수 있습니다. 그 아군 심문자 요원이 킬존에서 제거되어도 이 규칙은 유지됩니다."
+        },
+        {
+          "name": "기계",
+          "text": "• 이 요원은 돌격, 질주, 후퇴, 기동 이외의 다른 행동을 수행할 수 없습니다.\n• 이 요원은 근접전에서 반격 또는 지원을 수행할 수 없습니다.\n• 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십 시오.\n• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외 한 다른 모든 규칙(예: 색적, 고지)에 우선합니다."
+        },
+        {
+          "name": "소모품",
+          "text": "이 요원은 제거/섬멸 작전에서 상대의 기록에 집 계되지 않습니다(무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음)."
+        },
+        {
+          "name": "그룹 운용",
+          "text": "이 요원이 소진 상태가 될 때마다, 그 직후 반드시 준비 상태의 아군 이단심문관 심복요원 심문자 요원(운용 가능 시)을 상대보다 먼저 운용해야 합니다 이는 반대로도 적용됩니다(심문자 이후 톰스컬 순). 그 요원 이 소진 상태라면, 원래대로 상대가 운용을 시작합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-AS",
+      "nameEn": "Autosavant",
+      "nameKo": "자동서기 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Mechanical Appendages",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기계 부속지",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "필경사",
+          "text": "상대가 전투 도중 플로이(지휘 재굴림 제외)를 사용할 때마다, 이 요원이 킬존에 있다면 그 직후에 플레 이어가 1CP를 획득합니다(전환점당 최대 2CP)."
+        },
+        {
+          "name": "반박할 수 없는 기록",
+          "text": "이 요원은 목표물 마커 또는 플레이어의 임무 마커를 경쟁할 때마다 항상 그 마커를 장악합니다. 이는 다른 모든 규칙에 우선합니다."
+        },
+        {
+          "name": "가벼운 무장",
+          "text": "이 요원은 데이터카드에 명시되지 않은 무기나 고유 행동을 사용할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-QK",
+      "nameEn": "Questkeeper",
+      "nameKo": "사명 엄수자 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Eviscerator",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "적출대검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "무자비"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "억누를 수 없는 사명",
+          "text": "이 요원이 근접전 행동 도중 무력화 되면, 이 요원을 킬존에서 제거하기 전에 그 절차의 아직 처리하지 않은 성공 주사위로 적 요원을 타격할 수 있습니다."
+        },
+        {
+          "name": "광신자",
+          "text": "공격 주사위 하나가 이 요원에게 3 이상의 피해를 가할 때마다 D6를 하나 굴립니다. 값이 5+이면 그 공격의 피해를 -1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-VET",
+      "nameEn": "Deathworld Veteran",
+      "nameKo": "죽음 행성 백전노장 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Knifer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "1",
+              "hit": "2+",
+              "damage": "5/7",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Polearm",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "나이프",
+          "type": "melee",
+          "attacks": "1",
+          "hit": "2+",
+          "damage": "5/7",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "장병도",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사냥꾼",
+          "text": "이 요원은 은폐 명령을 받은 상태에서 돌격 행동을 수행할 수 있습니다."
+        },
+        {
+          "name": "노련함",
+          "text": "전환점당 한 번, 이 요원이 근접전 또는 반격을 수 행할 때, 공격 주사위 처리 단계에서 이 요원을 대상으로 한 일반 성공 주사위 하나의 피해를 무시할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-ENL",
+      "nameEn": "Enlightener",
+      "nameKo": "교화자 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Paired Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Balanced",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "쌍수 도검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "균형",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "도주 차단",
+          "text": "적 요원이 이 요원의 장악 범위 내에서 후퇴 행동을 수행하려 할 때마다, 이 규칙을 사용할 수 있습니다. 규칙 사용 시, D6 하나를 굴립니다. 그 적 요원의 체력 수치가 이 요원보다 높다면 굴림 값을 -1만큼 변경하고, 그 요원이 체력 손실 상태라면 굴림 값을 +1만큼 변경합니다. 값이 4+이면, 그 요원은 이번 운용/대응 도중 본래 하려던 후퇴 행동을 수행할 수 없습니다(소모한 AP 는 반환되지 않음)."
+        },
+        {
+          "name": "정보 추출",
+          "text": "이 요원의 장악 범위 내에서 적 요원이 무력화 될 때마다, 플레이어가 1CP를 획득합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-GUNS",
+      "nameEn": "Gun Servitor",
+      "nameKo": "징발된 총기형 서비터",
+      "stats": {
+        "move": "6\"",
+        "apl": 1,
+        "save": "4+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Multi-Melta",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Devastating 4",
+                "Heavy (Dash only)",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Cannon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Blast 2\"",
+                "Heavy (Dash only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Blast 2\"",
+                "Heavy (Dash only)",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Servo-Claw",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "중형 볼터(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "중형 볼터(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "멀티멜타",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "궤멸 4",
+            "중화기(질주 한정)",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마포(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/6",
+          "rules": [
+            "폭발 2\"",
+            "중화기(질주 한정)",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마포(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "폭발 2\"",
+            "중화기(질주 한정)",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "서보클로",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전두엽 절제 상태",
+          "text": "이 요원이 운용을 시작할 때마다, 3\" 내에 있는 다른 아군 이단심문관 심복요원 요원(총기형 서비터 제외)을 시야에 확보하거나 반대로 그 요원의 시야에 확보된 상태라면, 운용이 종료될 때까지 이 요원의 APL 수치를 +1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-HEX",
+      "nameEn": "Hexorcist",
+      "nameKo": "퇴마사 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "산탄총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "퇴마",
+          "text": "상대는 이 요원의 시야에 들어 갔으며 그로부터 6\" 내에 있는 적 요원의 공격 또는 방어 주사위를 재굴 림할 수 없습니다."
+        },
+        {
+          "name": "징벌 [1AP]",
+          "text": "이 요원이 유효 대상으로 지정할 수 있으며 그로부터 6\" 내에 있는 적 요원을 하나 지정합니다. 이후 적 요원의 데이터카드에 명시된 추가 규칙 (고유 행동 포함)을 하나 선택합니다(무기 규칙 또는 섬멸/제거 작전에서 무시한다고 명시하는 규칙 제외). 그 적 요원의 다음 운용이 종료될 때까 지, 선택된 규칙을 보유하지 않은 것으로 간주합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-MYS",
+      "nameEn": "Mystic",
+      "nameKo": "비술사 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\"",
+                "Seek"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "5+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\"",
+            "색적"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "5+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "우상기수",
+          "text": "마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 +1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오."
+        },
+        {
+          "name": "가벼운 무장",
+          "text": "이 요원은 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다."
+        },
+        {
+          "name": "점술 [1AP]",
+          "text": "사이킥. 이 요원의 6\" 내에 있는 아군 이단심문관 심복요원 요원을 하나 지정한 후, 다음 효과 중 하나를 선택합니다. 선택한 효과는 이 요원의 다음 운용이 시작될 때까지, 또는 이 요원이 무력화되거나 이 행동을 다시 수행할 때까지 지속됩니다(어느 하나라도 충족 시).\n• 인도: 사이킥. 지정된 요원이 사격, 근접전, 반격을 수행할 때마다, 공격 주사위 굴림 단계에서 실패한 주사위 하나를 버리는 대신 일반 성공으로 보전하거나 일반 성공 주사위 하나를 결정적 성공으로 보전할 수 있습니다.\n• 수호: 사이킥. 지정된 요원이 사격당할 때마다, 방어 주사위 굴림 단계에서 실패한 주사위 하나를 버리는 대신 일반 성공으로 보전할 수 있습니다. 또는, 일반 성공 주사위 하나를 결정적 성공으로 보전할 수 있습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-PEN",
+      "nameEn": "Penal Legionnaire",
+      "nameKo": "형벌 군단병 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "한손 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "화학 방독면",
+          "text": "이 요원의 APL 수치에 대한 변경 사항과 부상으로 인한 능력치 변경 사항을 모두 무시할 수 있습니다. 이 요원은 적 요원의 충격 및 혼미 무기 규칙에 영향을 받지 않습니다."
+        },
+        {
+          "name": "잔혹",
+          "text": "이 요원이 체력 손실 상태의 적 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다, 요원의 무기에 혹독 무기 규칙이 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-INQ24-PST",
+      "nameEn": "Pistolier",
+      "nameKo": "권총사수 요원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Scoped Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 12\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Suppressed AutoPistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "조준경 부착 플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 12\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "조준경 부착 플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 12\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "소음기 부착 기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "권총사수",
+          "text": "이 요원이 보유한 원거리 무기의 명중 요구치에 적용되는 모든 변경 사항을 무시할 수 있습니다."
+        },
+        {
+          "name": "권총 탄막 [1AP]",
+          "text": "이 요원으로 무상 사격 행동을 두 번 수행합니다. 이는 행동 제약에 우선하며, 반드시 이 요원의 조준경 부착 플라스마 권총 프로필과 소음기 부착 기관권총 프로필을 (순서에 상관없이) 한번씩 선택해서 수행해야 합니다. 이 요원은 은폐 명령을 받은 상태, 또는 사격 행동을 수행한 운용 도중 이 행동을 수행할 수 없습니다(마찬가지로 이 행동을 수행한 운용 도중 사격 수행 불가)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-SOS24-SOSPRO",
+      "nameEn": "Sister Of Silence Prosecutor",
+      "nameKo": "침묵의 자매 이행자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사이킥 부존",
+          "text": "사이킥 원거리 무기로 이 요원에게 피해를 가할 수 없습니다. 이 요원은 사이킥 행동의 대상으로 지정될 수 없으며, 항상 그러한 행동 수행에 요구되는 거리에서 벗어난 것으로 간주합니다. 이 요원의 6\" 내에 다른 요원이 있을 때마다 다음을 적용합니다.\n• 그 요원은 사이킥 행동을 수행하거나 사이킥 추가 규칙을 사용할 수 없습니다.\n• 그 요원은 사이킥 원거리 무기를 사용할 수 없습니다.\n• 사이킥 근접 무기가 무기 규칙을 보유하지 않게 되며, 피해 수치의 최댓값이 3/4로 고정됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-SOS24-SOSVIG",
+      "nameEn": "Sister Of Silence Vigilator",
+      "nameKo": "침묵의 자매 감시자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Executor Greatblade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "처형자 대검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사이킥 부존",
+          "text": "사이킥 원거리 무기로 이 요원에게 피해를 가할 수 없습니다. 이 요원은 사이킥 행동의 대상으로 지정될 수 없으며, 항상 그러한 행동 수행에 요구되는 거리에서 벗어난 것으로 간주합니다. 이 요원의 6” 내에 다른 요원이 있을 때마다 다음을 적용합니다.\n• 그 요원은 사이킥 행동을 수행하거나 사이킥 추가 규칙을 사용할 수 없습니다.\n• 그 요원은 사이킥 원거리 무기를 사용할 수 없습니다.\n• 사이킥 근접 무기가 무기 규칙을 보유하지 않게 되며, 피해 수치의 최댓값이 3/4로 고정됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-SOS24-SOSWSK",
+      "nameEn": "Sister Of Silence WitchSeeker",
+      "nameKo": "침묵의 자매 사술색출자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사이킥 부존",
+          "text": "사이킥 원거리 무기로 이 요원에게 피해를 가할 수 없습니다. 이 요원은 사이킥 행동의 대상으로 지정될 수 없으며, 항상 그러한 행동 수행에 요구되는 거리에서 벗어난 것으로 간주합니다. 이 요원의 6” 내에 다른 요원이 있을 때마다 다음을 적용합니다.\n• 그 요원은 사이킥 행동을 수행하거나 사이킥 추가 규칙을 사용할 수 없습니다.\n• 그 요원은 사이킥 원거리 무기를 사용할 수 없습니다.\n• 사이킥 근접 무기가 무기 규칙을 보유하지 않게 되며, 피해 수치의 최댓값이 3/4로 고정됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-DKK24-BRU",
+      "nameEn": "Death Korps Bruiser",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Trench Club",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-CON",
+      "nameEn": "Death Korps Confidant",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Relic Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-GNR",
+      "nameEn": "Death Korps Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-MDC",
+      "nameEn": "Death Korps Medic",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-SAP",
+      "nameEn": "Death Korps Sapper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Remote Detonator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "5/6",
+              "rules": [
+                "Heavy (Dash only)",
+                "Limited 1",
+                "Piercing 1",
+                "Silent",
+                "*Detonate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-SNP",
+      "nameEn": "Death Korps Sniper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Long-Las",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-TRP",
+      "nameEn": "Death Korps Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-VET",
+      "nameEn": "Death Korps Veteran",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bionic Arm",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-VOX",
+      "nameEn": "Death Korps Vox-Operator",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-DKK24-ZLT",
+      "nameEn": "Death Korps Zealot",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Bayonet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-TS24-TSVOX",
+      "nameEn": "Tempestus Scion Vox-Operator",
+      "nameKo": "템페스투스 사이온 복스통신병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "신호 전송 [1AP]",
+          "text": "보조. 킬존에 있는 다른 아군 이단심문관 심복요원 요원을 하나 지정합니다. 지정된 요원은 다음 운용이 끝날 때까지 APL 수치가 +1만큼 변경됩니다.\n이 요원은 운용 도중 이 행동을 두 번 수행할 수 있습니다. 단, 적 요원의 장악 범위 내에 있을 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-TS24-TSGUN",
+      "nameEn": "Tempestus Scion Gunner",
+      "nameKo": "템페스투스 사이온 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Volley Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Superchart",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-TS24-TSMED",
+      "nameEn": "Tempestus Scion Medic",
+      "nameKo": "템페스투스 사이온 의무병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "환자 발생!",
+          "text": "매 전환점 도중 이 요원의 3” 내에 있으며 시야에 들어온 다른 아군 이단심문관 심복요원 요원이 처음으로 무력화될 때, 이 요원과 그 아군 요원이 모두 적 요원의 장악 범위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 그렇게 할 경우, 그 아군 요원은 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 그 행동 이후, 그 아군 요원은 즉시 무상으로 질주 행동을 수행할 수 있습니다. 단, 이때 반드시 이 요원의 장악 범위 내에서 그 이동을 종료해야 합니다. 이 요원과 아군 요원은 각각 다음 운용을 종료할 때까지 APL 수치가 -1만큼 변경됩니다. 이 규칙을 그 아군 요원의 운용 도중 사용했다면, 그 운용은 종료됩니다. 이 요원이 무력화되었을 때, 또는 사격 행동의 주 대상이나 부가 대상이 되었을 때는 이 규칙을 사용할 수 없습니다."
+        },
+        {
+          "name": "의료함 [1AP]",
+          "text": "이 요원의 장악 범위 내에 있는 아군 이단심문관 심복 요원 요원을 하나 지정해 잃은 체력을 2D3만큼 회복합니다. 이번 전환점 도중 환자 발생! 규칙의 효과를 받은 요원은 지정할 수 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-TS24-TSTRP",
+      "nameEn": "Tempestus Scion Trooper",
+      "nameKo": "템페스투스 사이온 대원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "적응형 장비",
+          "text": "다음 각 항목을 전환점당 한 번씩 사용할 수 있습니다.\n• 아군 이단심문관 심복요원 템페스투스 사이온 대원 요원이 연막탄 행동을 수행할 수 있습니다.\n• 아군 이단심문관 심복요원 템페스투스 사이온 대원 요원이 섬광 수류탄 행동을 수행할 수 있습니다. 이러한 행동의 규칙은 공용 장비에서 확인할 수 있습니다. 이 행동을 수행하는 것은 공용 장비의 행동 한도 개수와 무관합니다(장비에서 동일한 수류탄을 선택했을 시)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INQ-AES24-CAST",
+      "nameEn": "Arbites Castigator",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Excruciator Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/5",
+              "rules": [
+                "Rending",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-CHI",
+      "nameEn": "Arbites Chirurgant",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-GNR",
+      "nameEn": "Arbites Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Stubber",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Webber",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 12\"",
+                "Severe",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-LSH",
+      "nameEn": "Arbites Leashmaster",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-RVR",
+      "nameEn": "R-VR Cyber-Mastiff",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Mechanical Bite",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-MAL",
+      "nameEn": "Arbites Malocator",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-MRK",
+      "nameEn": "Arbites Marksman",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Executioner Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/0",
+              "rules": [
+                "Devastating 4",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/0",
+              "rules": [
+                "Devastating 4",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-REV",
+      "nameEn": "Arbites Revelatum",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Scoped Shot Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-SUB",
+      "nameEn": "Arbites Subductor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shot Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shock Maul & Assault Shield",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/4",
+              "rules": [
+                "Shock",
+                "*Repress"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-VIG",
+      "nameEn": "Arbites Vigilant",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-AES24-VOX",
+      "nameEn": "Arbites Vox-Signifier",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Combat Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Repression Baton",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-ARM",
+      "nameEn": "Navis Armsman",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-AXE",
+      "nameEn": "Navis Axejack",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-CAT",
+      "nameEn": "Navis C.A.T. Unit",
+      "nameKo": null,
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-END",
+      "nameEn": "Navis Endurant",
+      "nameKo": null,
+      "stats": {
+        "move": "4\"",
+        "apl": 2,
+        "save": "2+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Navis Heavy Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Relentless"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": [
+                "Relentless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shield Bash",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "1/2",
+              "rules": [
+                "Brutal",
+                "*Shield"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-GS",
+      "nameEn": "Navis Gheistskull",
+      "nameKo": null,
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-GRN",
+      "nameEn": "Navis Grenadier",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Demolition Charge",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Range 3\"",
+                "Blast 2\"",
+                "Heavy (Reposition only)",
+                "Limited 1",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-GNR",
+      "nameEn": "Navis Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Las-Volley",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-HC",
+      "nameEn": "Navis Hatchcutter",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainfist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-SRV",
+      "nameEn": "Navis Surveyor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-INB24-VJ",
+      "nameEn": "Navis Void-Jammer",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Gheistskull Detonator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Blast 1\"",
+                "Lethal 5+",
+                "Limited 1",
+                "Silent",
+                "Stun",
+                "*Detonate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-MDC",
+      "nameEn": "Kasrkin Combat Medic",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-DT",
+      "nameEn": "Kasrkin Demo Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-GNR",
+      "nameEn": "Kasrkin Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Volley Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-RT",
+      "nameEn": "Kasrkin Recon-Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-SS",
+      "nameEn": "Kasrkin Sharpshooter",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Marksman Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-TRP",
+      "nameEn": "Kasrkin Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INQ-KAS24-VOX",
+      "nameEn": "Kasrkin Vox-Trooper",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "제한 없음 — 편성 1+1+5+5 = 12명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 제한 없음"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 이단심문관 심복요원 심문자 요원"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 이단심문관 심복요원 톰스컬 요원"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 이단심문관 심복요원 요원을 다음 목록에서 선택해 편성합니다.\n• 자동서기\n• 사명 엄수자\n• 죽음 행성 백전노장\n• 교화자\n• 퇴마사\n• 비술사\n• 형벌 군단병\n• 권총사수\n• 총기형 서비터, 다음 선택지 중 하나를 골라 장비합니다.\n○ 중형 볼터, 서보클로\n○ 멀티멜타, 서보클로\n○ 플라스마포, 서보클로"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 이단심문관 심복요원 요원을 이 카드 뒷면의 목록에서 선택해 편성합니다. 또는, 이단심문소 징발권 팩션 규칙에 명시된 그룹 중 하나에서 징발 요원을 편성합니다. 서로 다른 그룹의 징발 요원을 동시에 선택할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 징발 요원을 포함할 때 한해서 총기형 서비터 요원을 최대 둘편성할 수 있으나, 반드시 서로 다른 선택지를 골라야 합니다. 이 킬 팀(징발 요원 포함)은 관통 2 무기 규칙을 보유한 무기를 하나만 장비할 수 있습니다. 관통 X (결정적 관통 X 제외) 규칙을 보유한 무기는 최대 셋 장비할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "이단심문소 징발권 · 데스 코어 · 집행 분대 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "lore",
+        "text": "인류제국을 통틀어도 이단심문소보다 관할권이 거대한 기관은 드물다. 이단심문관은 여차하면 사실상 인류제국의 모든 군사 분과에서 병력을 차출할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "킬 팀 편성 규칙에 명시된 바와 같이, 다음 그룹 중 하나에서 징발 요원을 선택해 이단심문관 심복요원 킬 팀에 충원할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 데스 코어\n• 집행 분대\n• 제국 해군 돌파조\n• 카스르킨\n• 침묵의 자매\n• 템페스투스 사이온"
+      },
+      {
+        "type": "rule",
+        "text": "이들 요원은 데이터카드에 명시된 모든 팩션 키워드가 이단심문관 심복요원으로 대체됩니다(이를 이미 보유한 요원은 제외). 징발 요원의 이전 팩션 키워드와 관련한 플로이 및 장비는 모두 사용할 수 없으며, 이단심문소 징발권 카드에 달리 명시되지 않은 한 징발 요원의 이전 팩션 규칙 또한 사용할 수 없습니다(명시된 징발 요원에만 적용). 새 팩션 키워드를 보유한 징발 요원은 이단심문관 심복요원 규칙과 상호작용할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "예를 들어, 데스 코어 그룹의 징발 복스병 요원은 데이터카드의 모든 데스 코어 키워드가 이단심문관 심복요원 키워드로 대체됩니다. 이로써 이 요원은 다른 아군 이단심문관 심복요원 요원을 대상으로 신호 전송 고유 행동을 사용할 수 있지만, 방위병 명령 하달 팩션 규칙은 적용할 수 없으므로 명령 전달 추가 규칙은 무시됩니다. 또한 이단심문관 심복요원 비술사 요원의 점술 고유 행동의 대상으로 유효합니다."
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "데스 코어"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 6 데스 코어 요원을 다음 목록에서 선택해 편성합니다.\n• 폭한병\n• 보좌병, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트건 또는 라스건, 총검\n○ 볼트 권총 또는 성물 라스피스톨, 체인소드\n• 사수, 화염방사기와 총검\n• 사수, 유탄발사기와 총검\n• 사수, 멜타건과 총검\n• 사수, 플라스마 건과 총검\n• 위생병\n• 공병\n• 저격수\n• 병사\n• 베테랑\n• 복스병\n• 군종병"
+      },
+      {
+        "type": "rule",
+        "text": "병사를 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들은 최대 셋 편성할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "집행 분대"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 집행 분대 요원을 다음 목록에서 선택해 편성합니다.\n• 징벌경관\n• 의무경관\n• 화기경관, 다음 선택지 중 하나를 골라 장비합니다.\n○ 유탄발사기, 진압봉\n○ 중형 스터버, 진압봉\n○ 그물총, 진압봉\n• 조련경관\n• 법의경관\n• 사수경관\n• 탐색경관\n• R-VR 사이버 마스티프\n• 제압경관\n• 경계경관\n• 통신경관"
+      },
+      {
+        "type": "rule",
+        "text": "제압경관과 경계경관 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 제압경관은 최대 둘편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "사용 가능한 집행 분대 팩션 규칙: 냉엄한 성과, 진압"
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "제국 해군 돌파조"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 제국 해군 돌파조합니다.\n• 함대병\n• 도부수\n• C.A.T. 유닛\n• 팽배수\n• 가이스트스컬\n• 척탄병\n• 시설개조병\n• 측량병\n• 공허교란수 요원을 다음 목록에서 선택해 편성\n• 화기경관, 다음 선택지 중 하나를 골라 장비합니다.\n○ 해군 라스볼리, 개머리판\n○ 멜타건, 개머리판\n○ 플라스마 건, 개머리판함대병을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 가이스트스컬 요원은 공허교란수 요원이 포함되어야 편성할 수 있습니다. C.A.T. 유닛 요원은 측량병 요원이 포함되어야 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들은 각각 편성 단위의 절반만 차지합니다. 즉, 두 요원을 동시에 편성하면 인원 계산 시 요원 하나로 간주됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "사용 가능한 제국 해군 돌파조 팩션 규칙: 공허 장갑복"
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "카스르킨"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 카스르킨 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 의무병\n• 폭파병\n• 사수, 화염방사기, 개머리판\n• 사수, 유탄발사기, 개머리판\n• 사수, 핫샷 볼리 건, 개머리판\n• 사수, 멜타건, 개머리판\n• 사수, 플라스마 건, 개머리판\n• 정찰병\n• 지정사수\n• 대원\n• 무전병"
+      },
+      {
+        "type": "rule",
+        "text": "대원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들 중 둘만 편성할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "침묵의 자매"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 침묵의 자매 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 이행자\n• 감시자\n• 사술색출자"
+      },
+      {
+        "type": "heading",
+        "text": "이단심문소 징발권"
+      },
+      {
+        "type": "heading",
+        "text": "템페스투스 사이온"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 템페스투스 사이온 요원을 다음 목록에서 선택해 편성합니다.\n• 사수, 화염방사기, 개머리판\n• 사수, 유탄발사기, 개머리판\n• 사수, 핫샷 볼리 건, 개머리판\n• 사수, 멜타건, 개머리판\n• 사수, 플라스마 건, 개머리판\n• 의무병\n• 대원\n• 복스통신병"
+      },
+      {
+        "type": "rule",
+        "text": "대원 요원을 제외하면 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 사수 요원은 최대 둘 편성할 수 있습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

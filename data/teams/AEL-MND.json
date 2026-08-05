@@ -1,0 +1,715 @@
+{
+  "id": "AEL-MND",
+  "nameEn": "Mandrakes",
+  "nameKo": "맨드레이크",
+  "archetype": "Infiltration/Recon",
+  "color": "#a9dbe0",
+  "size": {
+    "total": 9
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-MND-S-BITD",
+      "name": "Blade in the Dark",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Each friendly MANDRAKE operative can perform the Charge action while it has a Conceal order if it starts or ends that action WITHIN SHADOW.",
+      "textKo": "아군 MANDRAKE 가 WITHIN SHADOW 면 Conceal 로도 Charge 가능"
+    },
+    {
+      "id": "AEL-MND-S-CH",
+      "name": "Creeping Horror",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "After each enemy operative’s activation, before the next operative is activated, one friendly MANDRAKE operative that has a Conceal order can perform a free Dash action if it starts and ends that action WITHIN SHADOW. You cannot use this ploy during the first turning point, and you cannot select each friendly operative for this ploy more than once per turning point.",
+      "textKo": "적 활성화 후 WITHIN SHADOW 인 Conceal 아군 1명이 무료 Dash"
+    },
+    {
+      "id": "AEL-MND-S-GS",
+      "name": "Gloaming Shroud",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly MANDRAKE operative that’s WITHIN SHADOW, you can retain one of your defence dice as a normal success without rolling it (in addition to a cover save, if any).",
+      "textKo": "WITHIN SHADOW 아군이 피격 시 방어 주사위 1개를 굴리지 않고 성공 확보"
+    },
+    {
+      "id": "AEL-MND-S-IN",
+      "name": "Inescapable Nightmare",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly MANDRAKE operative is shooting, fighting or retaliating, if it’s WITHIN SHADOW, you can re-roll one of your attack dice.",
+      "textKo": "WITHIN SHADOW 아군이 공격/반격 시 공격 주사위 1개 재굴림"
+    },
+    {
+      "id": "AEL-MND-T-NWTH",
+      "name": "Nowhere to Hide",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly MANDRAKE operative’s activation, when it performs an action in which it moves. Until the end of that activation, that operative can move through parts of terrain features as if they weren’t there, but it cannot move more than its Move stat if it’s the Charge action and must end those moves in a location it can be placed.",
+      "textKo": "활성화 동안 아군 1명이 지형을 없는 것처럼 통과해 이동"
+    },
+    {
+      "id": "AEL-MND-T-SB",
+      "name": "Shadow's Bite",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative performs the Fight action during an activation in which it performed the Charge action, and selects a friendly MANDRAKE operative WITHIN SHADOW to fight against. In the Resolve Attack Dice step of that sequence, you resolve the first attack dice (i.e. defender instead of attacker).",
+      "textKo": "Charge 한 적이 WITHIN SHADOW 아군과 근접전 시 아군이 먼저 타격"
+    },
+    {
+      "id": "AEL-MND-T-SOOS",
+      "name": "Slither Out Of Sight",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy at the end of any operative’s activation. Select one friendly MANDRAKE operative that has an Engage order and is WITHIN SHADOW. Change that operative’s order to Conceal.",
+      "textKo": "활성화 종료 시 WITHIN SHADOW 아군 1명을 Conceal 로 변경"
+    },
+    {
+      "id": "AEL-MND-T-SF",
+      "name": "Soul Feast",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly MANDRAKE operative is shooting against, fighting against or retaliating against an enemy operative within 6\" of it, at the end of the Resolve Attack Dice step. That friendly operative regains a number of lost wounds equal to that enemy operative’s APL stat, multiplied by the number of your attack dice that inflicted damage during that sequence. Excess attack dice are ignored (i.e. if the enemy operative is incapacitated before remaining attack dice are resolved). You cannot use this ploy if that friendly MANDRAKE operative is incapacitated.",
+      "textKo": "6\" 내 적과 교전 후 적 APL × 피해 준 주사위 수만큼 상처 회복"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-MND-BD",
+      "name": "Bone Darts",
+      "textEn": "Once per turning point, a friendly MANDRAKE operative can use the following ranged weapon:\nNAME ATK HIT DMG\nBone dart 4 3+ 2/4\nWR\nRange 6\", Rending, Silent",
+      "textKo": "TP당 1회 본 다트 (A4 · H3+ · D2/4, Rng 6\" · Rending · Silent)"
+    },
+    {
+      "id": "AEL-MND-CS",
+      "name": "Chain Snare",
+      "textEn": "Whenever an enemy operative would perform the Fall Back action while within control range of a friendly MANDRAKE operative, if no other enemy operatives are within that friendly operative’s control range, you can use this rule. If you do, roll two D6, or one D6 if that enemy operative has a higher Wounds stat than that friendly operative. If any result is a 4+, that enemy operative cannot perform that action during that activation/counteraction (no AP are spent on it), and you cannot use this rule again during this turning point.",
+      "textKo": "통제 범위에 그 적만 있을 때 Fall Back 을 2D6 4+ 로 막음"
+    },
+    {
+      "id": "AEL-MND-SG",
+      "name": "Shadow Glyph",
+      "textEn": "Once per turning point, when a friendly MANDRAKE operative is activated WITHIN SHADOW, you can use this rule. If you do, until the start of its next activation, while that operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "textKo": "TP당 1회, WITHIN SHADOW 활성화 시 Conceal + 엄폐면 표적 지정 불가"
+    },
+    {
+      "id": "AEL-MND-SGM",
+      "name": "Soul Gem",
+      "textEn": "Once per turning point, when a friendly MANDRAKE operative is performing the Shoot action and you select a baleblast, you can use this rule. If you do, until the end of that action, that weapon has the Blast 1\" weapon rule.",
+      "textKo": "TP당 1회, Baleblast 에 Blast 1\""
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-MND-NF",
+      "nameEn": "Mandrake Nightfiend",
+      "nameKo": "맨드레이크 밤악령",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Baleblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Huskblade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄화염",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "껍질곡도",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+",
+            "충격"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "경악스러운 속삭임",
+          "text": "상대가 이 요원의 6” 내에 있는 적요원을 운용하려 할 때마다, 플레이어가 D6를 하나 굴립니다. 플레이어가 이번 전환점에 장송구렁 요원의 음침한 주시 추가 규칙으로 그 적 요원의 운용을 이미 방해했다면, 이 규칙을 사용할 수 없습니다. 굴림 값이 그 적 요원의 APL 수치보다 높으면, 상대는 이 운용에 그 적 요원을 운용할 수 없습니다. 만약 운용할 수 있는 다른 적 요원이 없다면, 이 규칙의 효과가 발생하지 않습니다."
+        },
+        {
+          "name": "망각기",
+          "text": "이 요원이 준비 상태이거나 껍질곡도로 적 요원을 무력화하면, 망각기가 활성화됩니다. 망각기가 활성 화된 요원이 공격 주사위로 피해를 입기 전, 플레이어가 D6를 하나 굴립니다. 값이 5+이면 공격 주사위 하나만 큼의 피해를 무시하고 망각기가 비활성화됩니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-MND-COTF",
+      "nameEn": "Mandrake Chooser Of The Flesh",
+      "nameKo": "맨드레이크 살점을 고르는 자",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Baleblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Baleblade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄화염",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "비탄칼날",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "무자비",
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "영혼 수확",
+          "text": "이 요원의 부위 수집가 규칙 또는 비탄칼날로 적 요원이 무력화될 때마다, 플레이어가 영혼 수확 포인트를 1포인트 획득합니다. 그 적 요원의 APL 수치가 3 이상이면 2포인트 획득합니다. 아군 맨드레이크 요원이 운용될 때마다, 플레이어의 영혼 수확 포인트를 1포인트 소모하여 전투가 종료 될 때까지 그 아군 요원의 APL 수치를 +1만큼 변경하거나, 또는 잃은 체력을 2D3만큼 회복할 수 있습니다. 영혼 수확 포인트는 이 요원이 무력화된 후 에도 소모할 수 있습니다."
+        },
+        {
+          "name": "부위 수집가",
+          "text": "적 요원이 이 요원의 장악 범위에 있는 동안 후퇴 행동을 수행 하면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 적 요원이 이동하기 전에 2D3 피해를 가합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-MND-ABS",
+      "nameEn": "Mandrake Abyssal",
+      "nameKo": "맨드레이크 심연귀",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Balesurge",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Blast",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Blast 2\"",
+                "*Soulstrike"
+              ]
+            },
+            {
+              "name": "Burn",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Glimmersteel Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄쇄도(폭발)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "폭발 2\"",
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "비탄쇄도(불태우기)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "살상 5+",
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "명멸강철 칼날",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "비탄불꽃",
+          "text": "아군 맨드레이크 요원이 플레이어의 비탄불꽃 토큰을 보유한 적 요원을 대상으로 사격할 때마다, 그 아군 요원이 장비한 원거리 무기의 일반 및 결정적 피해 수치를 +1만큼 변경하고 포화 무기 규칙을 부여합니다. 플레이어의 비탄불꽃 토큰을 보유한 아군 맨드레이크 요원이 사격당할 때마다, 사격하는 요원이 장비한 원거리 무기의 일반 및 결정적 피해 수치를 -1만큼 변경합니다(최소 1)."
+        },
+        {
+          "name": "비탄불꽃 휘감기 [1AP]",
+          "text": "이 요원의 시야에 들어오며 플레이어의 비탄불꽃 토큰을 보유하지 않은 요원을 하나 지정합니다. 이 요원의 다음 운용이 시작될 때까지, 또는 이 요원이 무력화되거나 이 행동을 다시 수행할 때까지(이 중 어느 하나라도 충족 시), 지정된 요원이 플레이어의 비탄불 꽃 토큰을 하나 획득합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-MND-DM",
+      "nameEn": "Mandrake Dirgemaw",
+      "nameKo": "맨드레이크 장송구렁",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Baleblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Horrifying Scream",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "2/2",
+              "rules": [
+                "Range 6\"",
+                "Devastating 2",
+                "Seek Light",
+                "Stun",
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Glimmersteel Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄화염",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "끔찍한 비명",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "2+",
+          "damage": "2/2",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 2",
+            "저밀도 색적",
+            "혼미",
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "명멸강철 칼날",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "음침한 주시",
+          "text": "전략 포석. 적 요원을 하나 지정합니다. 다음 전략 페이즈의 준비 단계까지, 지정된 적 요원이 플레이어의 음침한 주시 토큰을 받습니다. 상대가 음침한 주시 토큰을 받은 적 요원의 다음번 운용을 시작하려 할 때, 이 요원이 준비 상태라면 이 요원을 먼저 운용할 수 있습니다(이번 전환점에 밤악령 요원의 경악스러운 속삭임 추가 규칙으로 그 적 요원의 운용을 막기 위해 굴림을 수행했다면 불가). 운용 시, 이 요원은 반드시 그 적 요원을 대상으로 지정해 근접전이나 사격을 수행해야만 하며, 그전에는 다른 적 요원을 대상으로 지정할 수 없습니다. 이것이 불가능하다면, 이 요원의 운용은 취소됩니다. 이 요원의 운용을 완료한 후, 상대는 그 적 요원을 운용하며(가능한 경우), 그럴 수 없다면 다른 적 요원을 운용합니다."
+        },
+        {
+          "name": "환각성 투영 [1AP]",
+          "text": "이 요원의 유효 대상이거나 그늘 안 상태인 적 요원을 하나 지정합니다. 이 요원의 다음 운용이 시작될 때까지, 또는 이 요원이 무력화되거나 이 행동을 다시 수행할 때까지(이 중 어느 하나라도 충족 시), 지정된 적 요원의 명중 요구치를 1만큼 악화하고 이동 수치를 -2\"만큼 변경합니다(부상 상태와 누적되지 않음). 추가로, 그 요원의 APL 수치는 기본값보다 높게 변경될 수 없습니다(기존에 적용된 그러한 변경 사항은 모두 제거). 이 요원은 적 요원의 장악 범위 내에 있는 동안에는 이 행동을 수행할 수 없습니다. 단, 이 행동의 대상으로 지정된 적 요원의 장악 범위 내에만 있다면 이 행동을 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-MND-SW",
+      "nameEn": "Mandrake Shadeweaver",
+      "nameKo": "맨드레이크 그늘방직공",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Baleblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Glimmersteel Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄화염",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "명멸강철 칼날",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "그늘 차원문",
+          "text": "이 요원이 그늘 통로를 사용하여 기동 행동을 수행할 때마다, 이 규칙을 사용할 수 있습니다. 사용 시, 킬존에 플레이어의 그늘 차원문 마커가 있다면 제거한 후, 플레이어의 그늘 차원문 마커를 이 요원이 제거되기 전 위 치의 장악 범위 내에 하나, 이 요원을 다시 놓은 위치의 장악 범위 내에 하나 놓습니다.\n각 아군 맨드레이크 요원은 전환점마다 이 규칙을 통해 그늘 통로를 사용할 수 있습니다(이는 전환점당 한 번, 요원 하나 제한에 우선함). 단, 그 요원이 제거될 때 위치의 장악 범위 내와 그 요원을 다시 놓은 위치의 장악 범위 내에 각 각 그늘 차원문 마커가 있어야 합니다. 이 요원이 무력화된 후에도 아군 요원에게는 이 규칙의 효과가 적용되며, 일반 적인 방법으로 그늘 통로를 사용하는 것이 제한되지 않습니다."
+        },
+        {
+          "name": "어둠 방직 [1AP]",
+          "text": "킬존에 플레이어의 어둠 방직 마커가 있다면 제거합니다. 이후 플레이어의 어둠 방직 마커를 이 요원의 시야에 들어오는 위치, 또는 이 요원의 시야에 들어온 지형지물의 고지에 놓습니다. 그 마커는 연막탄(공용 장비 참고)과 범위 및 효과가 동일한 연막 지대를 형성합니다. 단, 연막탄과 달리 이 마커는 다음 전환점 도중 제거하지 않습니다. 이 요원이 무력화되면, 플레 이어의 어둠 방직 마커를 킬존에서 제거합니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-MND-WAR",
+      "nameEn": "Mandrake Warrior",
+      "nameKo": "맨드레이크 전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Baleblast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "*Soulstrike"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Glimmersteel Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "비탄화염",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "영혼격*"
+          ]
+        },
+        {
+          "name": "명멸강철 칼날",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "그림자 전사",
+          "text": "이 요원이 그늘 안 상태일 때, 장비한 명멸 강철 칼날의 결정적 피해 수치를 +1만큼 변경합니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 맨드레이크 밤악령 요원\n↘ 8 맨드레이크 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 심연귀\n• 살점을 고르는 자\n• 장송구렁\n• 그늘방직공\n• 전사"
+      },
+      {
+        "type": "rule",
+        "text": "전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "영혼격 · 그늘 통로 · 그림자 존재 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "영혼격"
+      },
+      {
+        "type": "lore",
+        "text": "맨드레이크가 던지는 비탄불은 그 대상의 생명력과 적대감을 장작으로 삼아 차갑고 맹렬하게 타오른다. 재래식 갑옷은 이 음흉한 힘을 거의 막아주지 못한다."
+      },
+      {
+        "type": "rule",
+        "text": "이 킬 팀의 일부 무기는 아래의 영혼격 무기 규칙을 보유합니다."
+      },
+      {
+        "type": "rule",
+        "text": "*영혼격: 방어 주사위 성공이 다르게 판정됩니다. 사격 대상의 APL 수치 이하인 굴림 값은 성공이며 보전됩니다. 사격 대상의 APL 수치를 초과하는 굴림 값은 실패이며 버립니다. 값이 1이면 항상 결정적 성공입니다. 그 외의 다른 성공은 일반 성공입니다. 값이 6이면 항상 실패입니다."
+      },
+      {
+        "type": "lore",
+        "text": "개발자의 한마디: 이 킬 팀의 규칙은 적 요원의 APL 수치를 참조하는 것이 많습니다. 이는 규칙이 효과를 발휘하는 시 점의 APL 수치를 말하는 것입니다(즉, 변경 적용 후)."
+      },
+      {
+        "type": "heading",
+        "text": "그늘 통로"
+      },
+      {
+        "type": "rule",
+        "text": "맨드레이크는 약간의 그림자만 있어도 물 속으로 사라지듯 그림자 안으로 미끄러져 들어갈 수 있으며, 거리에 전혀 구애받지 않고 다른 동떨어진 그림자에서 기어나온다. 이 불길한 능력으로 이들은 아무도 모르게 초병과 방어물을 지나칠 수 있으며, 사냥감이 전혀 예측하지 못하는 곳에서 덮친다."
+      },
+      {
+        "type": "rule",
+        "text": "전환점당 한 번, 그늘 안 상태의 아군 맨드레이크 요원 하나가 기동 행동을 수행할 때 그늘 통로를 사용할 수 있습니다. 사용 시, 그 아군 요원을 이동하는 대신 킬존에서 제거한 다음 그늘 안에 있으며 놓을 수 있는 위치에 다시 배치합니다. 다시 배치 하는 요원에게는 다음 사항이 적용됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 적 요원의 장악 범위 내에 들어갈 수 없습니다.\n• 적 요원의 유효 대상이 될 수 없습니다.\n• 다음 전환점 시작 전에 사격 또는 근접전 행동을 수행할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "그림자 존재"
+      },
+      {
+        "type": "rule",
+        "text": "맨드레이크의 물리적 형태는 꺼질 듯한 횃불의 마지막 빛을 뒤덮는 그림자처럼 변화하며 흔들린다. 그 공격에서 살아남은 생존자 들은 이들이 잠식해오는 어둠에 섞여 들거나, 아예 시야에서 사라 져버린다고 한다. 극도의 혼란에 빠진 사냥감은 맨드레이크가 다가오는 것을 눈치채지 못한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 맨드레이크 요원이 사격당할 때마다, 관통 무기 규칙을 무시합니다. 아군 맨드레이크 요원이 그늘 안 상태인 동안, 방호 요구치가 1만큼 완화됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "그늘 안"
+      },
+      {
+        "type": "lore",
+        "text": "맨드레이크는 그림자의 존재이며, 움직임을 감추고 아무것도 모르는 사냥감에 접근하기 위해 어둠을 활용한다."
+      },
+      {
+        "type": "rule",
+        "text": "다음 중 하나라도 충족한 요원은 그늘 안 상태입니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 그 요원보다 낮지 않은 고밀도 지형의 1\" 내에 있음\n• 베이스의 아무 부분이라도 고지 아래에 들어감\n• 그 요원의 장악 범위 내에 그늘 차원문 마커가 있음(그늘"
+      },
+      {
+        "type": "heading",
+        "text": "방직공 참고)"
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

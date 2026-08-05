@@ -1,0 +1,1157 @@
+{
+  "id": "IMP-HC",
+  "nameEn": "Hunter Clade",
+  "nameKo": "사냥 계통",
+  "archetype": "Recon/Seek & Destroy",
+  "color": "#d05c44",
+  "size": {
+    "total": 10
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-HC-S-AA",
+      "name": "Accelerant Agents",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "During each friendly HUNTER CLADE RUSTSTALKER operative’s activation, it can perform two Fight actions, and one of them can be free.",
+      "textKo": "아군 RUSTSTALKER 가 활성화마다 Fight 2회, 그중 1회는 무료"
+    },
+    {
+      "id": "IMP-HC-S-DI",
+      "name": "Debilitating Irradiation",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is shooting against, fighting against or retaliating against a friendly HUNTER CLADE VANGUARD operative, if that enemy operative is under the effects of the Rad-Saturation rule (see VANGUARD operatives), subtract 1 from the Normal Dmg stat of its weapons (to a minimum of 3).",
+      "textKo": "Rad-Saturation 상태 적이 아군 VANGUARD 공격 시 Normal Dmg -1"
+    },
+    {
+      "id": "IMP-HC-S-NSI",
+      "name": "Neurostatic Interference",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative within 6\" of a friendly HUNTER CLADE INFILTRATOR operative is shooting, fighting or retaliating, your opponent cannot re-roll their attack dice.",
+      "textKo": "아군 INFILTRATOR 6\" 내 적은 공격 주사위를 재굴림 못 함"
+    },
+    {
+      "id": "IMP-HC-S-SP",
+      "name": "Scouting Protocol",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Each friendly HUNTER CLADE RANGER operative that has a Conceal order and is more than 6\" from enemy operatives can immediately perform a free Dash action in an order of your choice. You cannot use this ploy during the first turning point.",
+      "textKo": "Conceal 상태 아군 RANGER 들이 무료 Dash, 첫 TP 에는 불가"
+    },
+    {
+      "id": "IMP-HC-T-COR",
+      "name": "Command Override",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when you activate a friendly HUNTER CLADE operative. Select a DOCTRINA IMPERATIVE for that operative to have instead of its current one (if any) until the Ready step of the next Strategy phase.",
+      "textKo": "아군 활성화 시 그 아군의 DOCTRINA IMPERATIVE 를 골라 교체"
+    },
+    {
+      "id": "IMP-HC-T-CE",
+      "name": "Control Edict",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when it’s your turn to activate a friendly operative. Select one friendly HUNTER CLADE LEADER operative and one other ready friendly HUNTER CLADE operative visible to and within 3\" of that LEADER operative; activate one of them as normal. When that first friendly operative you activate is expended, you can activate the other friendly operative before your opponent activates. When that other operative is expended, your opponent then activates as normal. Whenever you use this ploy, you cannot select more than one HUNTER CLADE SICARIAN operative.",
+      "textKo": "아군 LEADER 와 3\" 내 다른 아군 1명을 연속으로 활성화"
+    },
+    {
+      "id": "IMP-HC-T-OI",
+      "name": "Omnissiah's Imperative",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly HUNTER CLADE operative’s activation. Alternatively, use it when an enemy operative is shooting a friendly HUNTER CLADE operative, at the end of the Roll Attack Dice step. Until the Ready step of the next Strategy phase, that friendly operative has an additional rule determined by its current DOCTRINA IMPERATIVE as follows:\n• Protector: This operative’s ranged weapons have the Severe weapon rule.\n• Conqueror: Whenever this operative is fighting, after resolving your first attack dice during that sequence, you can immediately resolve another (before your opponent).\n• Bulwark: Improve this operative’s Save stat by 1. In addition, whenever an operative is shooting this operative, you can collect and roll one additional defence dice. If you use this ploy during a Shoot action, this operative’s Save stat is changed immediately (this takes precedence over the core rules).\n• Aggressor: You can ignore the first vertical distance of 2\" this operative moves during one climb up.\n• Neutral: None.\nNote that you can use this ploy after rolling attack or defence dice for this operative, or before or after retaining or re-rolling those dice.",
+      "textKo": "아군이 현재 DOCTRINA IMPERATIVE 에 따른 추가 능력 획득"
+    },
+    {
+      "id": "IMP-HC-T-SCO",
+      "name": "Scrap Code Overload",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly HUNTER CLADE INFILTRATOR operative is activated. Alternatively, use this firefight ploy when a friendly HUNTER CLADE INFILTRATOR operative, or an enemy operative within 3\" of that friendly operative, would perform the Pick Up Marker or a mission action (excluding Operate Hatch). Until the start of that friendly operative’s next activation, whenever determining control of a marker, treat the total APL stat of enemy operatives that contest it as 1 lower if at least one of those enemy operatives is within 3\" of that friendly operative. Note this isn’t a change to the APL stat, so any changes are cumulative with this, and this can change control of a marker before performing the action.",
+      "textKo": "아군 INFILTRATOR 3\" 내 적의 마커 통제 APL 합계를 1 낮춤"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-HC-RB",
+      "name": "Rad Bombardment",
+      "textEn": "Once per battle STRATEGIC GAMBIT in any turning point after the first. Select one objective marker or your opponent’s drop zone. Roll one D6 separately for each enemy operative within control range of that selected objective marker or within that drop zone, and subtract 1 if any part of that enemy operative's base is underneath Vantage terrain: on a 4+, subtract 1 from that operative's APL stat until the end of its next activation; on a 6, also inflict D3 damage on it (roll separately for each).",
+      "textKo": "전투당 1회 GAMBIT, 마커나 드롭존의 적에게 D6 — 4+ APL −1, 6 이면 D3 피해"
+    },
+    {
+      "id": "IMP-HC-RS",
+      "name": "Redundancy Systems",
+      "textEn": "Once per turning point, when a friendly HUNTER CLADE operative is activated, if it’s not within control range of enemy operatives, you can use this rule. If you do, that friendly operative regains up to D3+2 lost wounds.",
+      "textKo": "TP당 1회, 활성화 시 D3+2 상처 회복"
+    },
+    {
+      "id": "IMP-HC-RF",
+      "name": "Refractor Field",
+      "textEn": "Once per turning point, when an operative is shooting a friendly HUNTER CLADE operative, at the start of the Roll Defence Dice step, you can use this rule. If you do, worsen the x of the Piercing weapon rule by 1 (if any) until the end of that sequence. Note that Piercing 1 would therefore be ignored.",
+      "textKo": "TP당 1회, 사격받을 때 Piercing 값을 1 낮춤 (Piercing 1 은 무효화)"
+    },
+    {
+      "id": "IMP-HC-EML",
+      "name": "Extremis Mind-Link",
+      "textEn": "Once per battle, you can use the Control Edict firefight ploy for 0CP, but instead of activating the selected friendly operatives in succession, activate them at the same time. Complete their activations action by action in any order.",
+      "textKo": "전투당 1회, Control Edict 를 0CP 로 쓰고 선택 아군을 액션 단위로 교차 활성화"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-HC-SRSP",
+      "nameEn": "Sicarian Ruststalker Princeps",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Chordclaw & Transonic Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Balanced",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SIP",
+      "nameEn": "Sicarian Infiltrator Princeps",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Flechette Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/2",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stubcarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Taser Goad",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRGA",
+      "nameEn": "Skitarii Ranger Alpha",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Arc Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Galvanic Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Master-Crafted Radium Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Balanced",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Phosphor Blast Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Blast 1\"",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Arc Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Taser Goad",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SVA",
+      "nameEn": "Skitarii Vanguard Alpha",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Arc Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Master-Crafted Radium Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Balanced",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Phosphor Blast Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Blast 1\"",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Radium Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Arc Maul",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Shock"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Taser Goad",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SIW",
+      "nameEn": "Sicarian Infiltrator Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Flechette Blaster",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "2/2",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stubcarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Taser Goad",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Shock"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRSW",
+      "nameEn": "Sicarian Ruststalker Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Chordclaw & Transonic Razor",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Balanced"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Transonic Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRGD",
+      "nameEn": "Skitarii Ranger Diktat",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRGG",
+      "nameEn": "Skitarii Ranger Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Arc Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Caliver",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Transuranic Arquebus",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/3",
+              "rules": [
+                "Devastating 2",
+                "Heavy (Dash only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Piercing 1",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRGS",
+      "nameEn": "Skitarii Ranger Surveyor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SRGW",
+      "nameEn": "Skitarii Ranger Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Galvanic Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SVD",
+      "nameEn": "Skitarii Vanguard Diktat",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SVG",
+      "nameEn": "Skitarii Vanguard Gunner",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Arc Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1",
+                "Stun"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Caliver",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Transuranic Arquebus",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/3",
+              "rules": [
+                "Devastating 2",
+                "Heavy (Dash only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Piercing 1",
+                "Severe"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SVS",
+      "nameEn": "Skitarii Vanguard Surveyor",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-HC-SVW",
+      "nameEn": "Skitarii Vanguard Warrior",
+      "nameKo": null,
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Radium Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 섬멸 — 편성 1+9 = 10명",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "HUNTER CLADE KILL TEAM"
+      },
+      {
+        "type": "rule",
+        "text": "ARCHETYPE: RECON, SEEK & DESTROY"
+      },
+      {
+        "type": "heading",
+        "text": "OPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 HUNTER CLADE operative selected from the following list:\n• SICARIAN INFILTRATOR PRINCEPS with one option from each of the following:\n○ Flechette blaster or stubcarbine\n○ Power weapon or taser goad\n• SICARIAN RUSTSTALKER PRINCEPS\n• SKITARII RANGER ALPHA with one of the following options:\n○ Galvanic rifle; gun butt\n○ Master-crafted radium pistol; power weapon\nOr one option from each of the following:\n○ Arc pistol or phosphor blast pistol\n○ Arc maul or taser goad\n• SKITARII VANGUARD ALPHA with one of the following options:\n○ Radium carbine; gun butt\n○ Master-crafted radium pistol; power weapon\nOr one option from each of the following:\n○ Arc pistol or phosphor blast pistol\n○ Arc maul or taser goad"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 9 HUNTER CLADE operatives selected from the following list:\n• SICARIAN INFILTRATOR WARRIOR with one option from each of the following:\n○ Flechette blaster or stubcarbine\n○ Power weapon or taser goad\n• SICARIAN RUSTSTALKER WARRIOR with one of the following options:\n○ Chordclaw & transonic razor\n○ Transonic blades\n• SKITARII RANGER DIKTAT\n• SKITARII RANGER GUNNER with gun butt and one of the following options:\n○ Arc rifle, plasma caliver or transuranic arquebus\n• SKITARII RANGER SURVEYOR\n• SKITARII RANGER WARRIOR\n• SKITARII VANGUARD DIKTAT\n• SKITARII VANGUARD GUNNER with gun butt and one of the following options:\n○ Arc rifle, plasma caliver or transuranic arquebus\n• SKITARII VANGUARD SURVEYOR\n• SKITARII VANGUARD WARRIOR"
+      },
+      {
+        "type": "rule",
+        "text": "Other than GUNNER and WARRIOR operatives, your kill team can only include each operative on this list once. Your kill team can only include up to one DIKTAT operative, up to one SURVEYOR operative and up to five SICARIAN operatives. Your kill team can only include up to one arc rifle, up to one plasma caliver and up to one transuranic arquebus."
+      },
+      {
+        "type": "rule",
+        "text": "You cannot select more than seven of these operatives combined."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "DOCTRINA IMPERATIVES",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "DOCTRINA IMPERATIVES"
+      },
+      {
+        "type": "rule",
+        "text": "Tech-Priests dictate protocols for the Hunter Clade to follow as they move through their mission, straining the programming of the Skitarii and Sicarians in order to optimise their current status, to the detriment of all else. At the end of the Select Operatives step, select one DOCTRINA IMPERATIVE to be a Primary Mode for your kill team until the end of the battle (note that selecting a Primary Mode doesn't automatically give you the effects of that DOCTRINA IMPERATIVE for the battle; you must still select it as a STRATEGIC GAMBIT, as below). STRATEGIC GAMBIT. Select one DOCTRINA IMPERATIVE for friendly HUNTER CLADE operatives to have until the Ready step of the next Strategy phase. Each DOCTRINA IMPERATIVE has both an Optimisation and a Deprecation rule. Both are in effect while your kill team has that DOCTRINA IMPERATIVE. Once per battle, when you select the DOCTRINA IMPERATIVE that's your kill team's Primary Mode, you can ignore its Deprecation rule."
+      },
+      {
+        "type": "rule",
+        "text": "Protector Imperative Optimisation: Friendly HUNTER CLADE operatives' ranged weapons have the Ceaseless weapon rule. Deprecation: Worsen the Hit stat of friendly HUNTER CLADE operatives' melee weapons by"
+      },
+      {
+        "type": "heading",
+        "text": "1. This isn't cumulative with being injured."
+      },
+      {
+        "type": "rule",
+        "text": "Conqueror Imperative Optimisation: Friendly HUNTER CLADE operatives' melee weapons have the Ceaseless weapon rule. Deprecation: Worsen the Hit stat of friendly HUNTER CLADE operatives' ranged weapons by"
+      },
+      {
+        "type": "heading",
+        "text": "1. This isn't cumulative with being injured."
+      },
+      {
+        "type": "rule",
+        "text": "Bulwark Imperative Optimisation: Normal Dmg of 3 or more inflicts 1 less damage on friendly HUNTER CLADE operatives. Deprecation: Subtract 1\" from the Move stat of friendly HUNTER CLADE operatives."
+      },
+      {
+        "type": "rule",
+        "text": "Aggressor Imperative Optimisation: Add 1\" to the Move stat of friendly HUNTER CLADE operatives. Deprecation: Worsen the Save stat of friendly HUNTER CLADE operatives by 1."
+      },
+      {
+        "type": "lore",
+        "text": "Neutral Imperative Optimisation: None. Deprecation: None."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,1003 @@
+{
+  "id": "VOT-HKY",
+  "nameEn": "Hernkyn Yaegirs",
+  "nameKo": "헤른킨 예이기르",
+  "archetype": "Infiltration/Seek & Destroy",
+  "color": "#58a086",
+  "size": {
+    "total": 10
+  },
+  "faction": {
+    "id": "VOT",
+    "nameEn": "Leagues of Votann",
+    "nameKo": "보탄"
+  },
+  "ploys": [
+    {
+      "id": "VOT-HKY-S-HE",
+      "name": "Hidden Engagement",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HERNKYN YAEGIR operative is shooting, if it’s in cover from the target’s perspective, that friendly operative’s weapons have the Balanced weapon rule. Note that your opponent still determines the targeting lines for this (i.e. they decide which point of their operative’s base targeting lines are drawn from).",
+      "textKo": "아군이 Cover 상태로 사격할 때 무기가 Balanced 획득"
+    },
+    {
+      "id": "VOT-HKY-S-IP",
+      "name": "In Position",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HERNKYN YAEGIR operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "textKo": "Conceal 이고 Cover 인 아군은 유효 목표로 선택 불가"
+    },
+    {
+      "id": "VOT-HKY-S-MBW",
+      "name": "Masterful Bladework",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly HERNKYN YAEGIR operative is fighting, or has a Conceal order and is retaliating, add 1 to the Atk stat of its melee weapons (to a maximum of 4) and they have the Balanced weapon rule; if the weapon already has that weapon rule, it has the Ceaseless weapon rule instead of Balanced.",
+      "textKo": "아군 근접전/Conceal 반격 시 근접 Atk +1 및 Balanced 획득"
+    },
+    {
+      "id": "VOT-HKY-S-TS",
+      "name": "Tough Survivalists",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "The first time an attack dice inflicts damage on each friendly HERNKYN YAEGIR operative during the turning point in the Resolve Attack Dice step, you can halve that inflicted damage (rounding up, to a minimum of 2).",
+      "textKo": "TP당 아군별 1회, 받는 피해를 절반으로 (최소 2)"
+    },
+    {
+      "id": "VOT-HKY-T-BTB",
+      "name": "Bonds That Bind",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly HERNKYN YAEGIR operative is activated. Select one other ready friendly HERNKYN YAEGIR operative visible to and within 3\" of that operative. When that first friendly operative is expended, you can activate that other friendly operative before your opponent activates. When that other operative is expended, your opponent then activates as normal.\nNeither operative can be a BOMBAST operative if its Wroughtlock Negotiation STRATEGIC GAMBIT has been used this turning point.",
+      "textKo": "아군 활성화 시 3\" 내 다른 아군 1명을 연속으로 활성화"
+    },
+    {
+      "id": "VOT-HKY-T-NKLB",
+      "name": "No Kin Left Behind",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly HERNKYN YAEGIR operative is incapacitated. Before that operative is removed from the killzone, remove your Fallen Kin marker from the killzone (if any), then place it within that operative’s control range. That operative is then removed from the killzone as normal.\nWhenever a friendly HERNKYN YAEGIR operative within 3\" of your Fallen Kin marker is shooting, fighting or retaliating, in the Roll Attack Dice step, you can retain one of your fails as a normal success instead of discarding it, or retain one of your normal successes as a critical success instead.",
+      "textKo": "무력화된 아군 자리에 Fallen Kin 마커, 3\" 내 아군 공격 주사위 승급"
+    },
+    {
+      "id": "VOT-HKY-T-SD",
+      "name": "Stalwart Defence",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative ends the Charge action within control range of a friendly HERNKYN YAEGIR operative. Select one other friendly HERNKYN YAEGIR operative visible to and within 6\" of that friendly operative, but that isn’t itself within control range of enemy operatives. The selected operative can perform a free Shoot action. During that action:\n• It can target that enemy operative even though it’s within control range of a friendly operative.\n• You cannot select any other enemy operative as a valid target.\n• You cannot select a frag or krak grenade, or a weapon with the Blast or x\" Devastating x weapon rule (i.e. Devastating with a distance).",
+      "textKo": "적이 아군 통제 범위에 들어오면 6\" 내 다른 아군이 사격"
+    },
+    {
+      "id": "VOT-HKY-T-STRD",
+      "name": "Sturdy",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an operative is shooting a friendly HERNKYN YAEGIR operative, when you collect your defence dice. Change the attacker’s retained critical successes to normal successes (any weapon rules they’ve already resolved aren’t affected, e.g. Piercing Crits).",
+      "textKo": "아군이 사격당할 때 공격자의 크리티컬 성공을 Normal 성공으로 변경"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "VOT-HKY-FSBS",
+      "name": "Firestorm Bolt Shells",
+      "textEn": "Once per turning point, when a friendly HERNKYN YAEGIR operative is performing the Shoot action and you select a bolt shotgun (short range), you can use this rule. If you do, until the end of that action, that weapon has the Blast 1\" weapon rule.",
+      "textKo": "TP당 1회, 볼트 샷건(short range)에 Blast 1\""
+    },
+    {
+      "id": "VOT-HKY-KVCU",
+      "name": "KV-Ceramide Undersuit",
+      "textEn": "Whenever an operative is shooting a friendly HERNKYN YAEGIR operative, if the ranged weapon in that sequence has the Blast or Torrent weapon rule, you can re-roll one of your defence dice. In addition, friendly HERNKYN YAEGIR operatives aren’t affected by the x\" Devastating x weapon rule (i.e. Devastating with a distance) unless they are the target during that sequence.",
+      "textKo": "Blast · Torrent 무기에 방어 주사위 1개 재굴림, X\" Devastating X 영향 없음"
+    },
+    {
+      "id": "VOT-HKY-PK",
+      "name": "Plasma Knives",
+      "textEn": "Friendly HERNKYN YAEGIR operatives have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version, and that weapon has the Balanced weapon rule for the battle.\nNAME ATK HIT DMG\nPlasma knife 3 4+ 3/5\nWR\nLethal 5+",
+      "textKo": "전원에게 플라즈마 나이프. 이미 가진 쪽은 Balanced 추가"
+    },
+    {
+      "id": "VOT-HKY-SBS",
+      "name": "Stabilised Bolt Shells",
+      "textEn": "Up to twice per turning point, whenever a friendly HERNKYN YAEGIR operative is performing the Shoot action and you select a bolt shotgun (long range), you can use this rule. If you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its Dmg stats.",
+      "textKo": "TP당 2회, 볼트 샷건(long range) Hit +1 및 Dmg 양쪽 +1"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "VOT-HKY-THEYN",
+      "nameEn": "Yaegir Theyn",
+      "nameKo": "예이기르 테인",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Bolt Revolver",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Plasma Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 리볼버",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트 산탄총(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "볼트 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "2/2",
+          "rules": []
+        },
+        {
+          "name": "플라스마 나이프",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "노련한 모험가",
+          "text": "첫 번째 전략 페이즈가 끝난 이후 매 전략 페이즈의 준비 단계마다, 이 요원이 킬존에 있고 적 요원의 장악 범위 내에 있지 않다면, 임기응변 포인트를 하나 얻습니다."
+        },
+        {
+          "name": "완전한 확신",
+          "text": "전투 도중 이 요원이 처음으로 무력화되면, 그 대신 1 체력이 남은 상태가 되며 그 행동이 끝날 때까 지 무력화되지 않습니다. 남아 있는 모든 공격 주사위는 버려집니다(이 요원이 근접전이나 반격 중이었다면 플레 이어의 주사위도 버림)."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-BLD",
+      "nameEn": "Yaegir Bladekyn",
+      "nameKo": "예이기르 칼잡이",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Throwing Plasma Knife",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 6\"",
+                "Lethal 5+",
+                "Limited 1",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Dual Plasma Knives",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "투척용 플라스마 나이프",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 6\"",
+            "살상 5+",
+            "한도 1",
+            "무성"
+          ]
+        },
+        {
+          "name": "쌍수 플라스마 나이프",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "집요",
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "추적자",
+          "text": "이 요원은 은폐 명령을 받은 상태에서 돌격 행동을 수행할 수 있습니다."
+        },
+        {
+          "name": "굴하지 않는 강인함",
+          "text": "이 요원이 근접전 행동 중 무력화되면, 이 요원을 킬존에서 제거하기 전에 그 절차의 아직 처리하지 않은 성공 주사위 중 하나로 적 요원을 타격할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-BOMB",
+      "nameEn": "Yaegir Bombast",
+      "nameKo": "예이기르 허풍선이",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Wroughtlock Revolvers",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 9\"",
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "모루격발 리볼버",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 9\"",
+            "집요",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "모루격발 협상",
+          "text": "전략 포석. 이 요원은 즉시 무상으로 사격 행동을 수행할 수 있습니다(무상 사격을 위해 명령을 교전으로 변경 가능)."
+        },
+        {
+          "name": "철판 깐 살인자",
+          "text": "이 요원이 모루격발 리볼버로 적 요원을 무력화할 때마다, 그 적 요원의 시야에 있으며 2\" 내에 들어가는 적 요원들을 대상으로 각각 D6 하나를 굴립니다. 굴림 값이 대상 적 요원의 APL 수치보다 높다면, 다음 운용이 종료될 때까지 그 적 요원의 APL 수치를 -1만 큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-GNR",
+      "nameEn": "Yaegir Gunner",
+      "nameKo": "예이기르 사수",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "APM Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Armour Piercing",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "*Bipod",
+                "Heavy (Reposition only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Breaching",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "*Bipod",
+                "Heavy (Reposition only)",
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "High Explosive",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "*Bipod",
+                "Heavy (Reposition only)",
+                "Blast 3\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "APM 발사기(철갑)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(기동 한정)",
+            "관통 1",
+            "양각대*"
+          ]
+        },
+        {
+          "name": "APM 발사기(돌파)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 2\"",
+            "중화기(기동 한정)",
+            "양각대*"
+          ]
+        },
+        {
+          "name": "APM 발사기(고폭)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 3\"",
+            "중화기(기동 한정)",
+            "양각대*"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "양각대",
+          "text": "이 요원이 이 무기로 사격할 때, 이번 운용 중 이동하지 않았거나 대응 중이라면, 이 무기에 집요 무기 규칙이 부여됩니다. 사격 후에는 제한사항 없이 이동 가 능합니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-IRN",
+      "nameEn": "Yaegir Ironbraek",
+      "nameKo": "예이기르 철벽대",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Bolt Revolver",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Entrencher",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 리볼버",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "야전삽",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "지뢰지대",
+          "text": "플레이어는 전투 시 사용 가능한 지뢰지대 마커 다섯 개를 보유합니다. 이 마커 중 세 개에는 뒷면에 HY-Pex 지뢰(아래 참고)가, 두 개에는 뒷면에 공포탄이 표시되어 있습니다. 모든 지뢰지대 마커는 한 가지 장비와 같이 전장에 둡니다. 각 마커는 뒷면이 보이지 않게(정체가 드러나지 않게) 설치해야 하며, 다른 마커, 출입구, 통과 가능 지형으로부터 2\" 넘게 떨어지고 상대방의 투입 구역과 플레이어의 다른 지뢰지대 마커로부터 6\" 넘게 떨어져야 합니다. 이 요원이 준비 상태가 될 때, 적 요원의 장악 범위 내에 있지 않다면 그 장악 범위 내에 있는 뒤집힌 지뢰 지대 마커 중 하나를 재설정, 즉 뒤집을 수 있습니다."
+        },
+        {
+          "name": "HY-Pex 지뢰",
+          "text": "플레이어의 지뢰지대 마커 중 뒷면이 가려진 마커가 적 요원의 장악 범위 내에 들어간 동시에 아군 헤른킨 예이기르 요원의 장악 범위 내에 들어가지 않을 때, 그 마커를 뒤집습니다. 표시된 것이 공포탄이라면, 아무런 효과도 발생하지 않습니다. 표시된 것이 HY-Pex 지뢰라면, 그 적 요원에게 피해를 3 입히고 D6 하나를 굴립니다. 굴림 값이 적 요원의 방호 요구치보다 작다면, 굴림 값과 동일한 추가 피해를 입힙니다. 굴림 값과 관계 없이 적 요원이 무력화되지 않았다면, 그 요원이 수행 중이었던 행동을 효과가 완수되었는지에 관계없이 강제로 종료 시킵니다. 그 적 요원이 배치할 수 없는 상태가 되면, 놓을 수 있는 지점으로 최소한만 옮깁니다. 이와 상관 없이 그 마커는 제거되지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-RFL",
+      "nameEn": "Yaegir Riflekyn",
+      "nameKo": "예이기르 소총수",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Magna-Coil Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Piercing 1",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "마그나코일 소총(은폐)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기",
+            "관통 1",
+            "무성",
+            "위치 은폐*"
+          ]
+        },
+        {
+          "name": "마그나코일 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "중화기(기동 한정)",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "마그나코일 소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+        },
+        {
+          "name": "위브베르케 망토",
+          "text": "적 요원이 이 요원에게 사격할 때마다 다음 규칙을 적용합니다.\n• 포화 무기 규칙을 무시합니다.\n• 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 하나를 추가로 보전하거나 또는 엄폐 방호 하나를 결정적 성공으로 판정할 수 있습니다. 이 규칙은 고지로 인해 향상된 엄폐 방호와 누적되지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-TRK",
+      "nameEn": "Yaegir Tracker",
+      "nameKo": "예이기르 추적가",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "SiNR Handbow",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Throwing Hatchet",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 6\"",
+                "Limited 1",
+                "Rending",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "SiNR 손쇠뇌",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "무성"
+          ]
+        },
+        {
+          "name": "투척용 손도끼",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 6\"",
+            "한도 1",
+            "파쇄",
+            "무성"
+          ]
+        },
+        {
+          "name": "손도끼",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "범스펙트럼 바이저",
+          "text": "이 요원이 6\" 내의 다른 요원을 지정 해 사격할 때마다 다음 규칙을 적용합니다.\n• 이 요원의 무기에 저밀도 색적 무기 규칙을 부여합니다.\n• 사격 대상 요원은 차폐할 수 없습니다."
+        },
+        {
+          "name": "추적가",
+          "text": "이 요원이 6\" 내에 있는 소진된 요원을 지정해 사격 또는 근접전을 수행할 때, 이 요원의 무기에 맹공 무기 규칙을 부여합니다."
+        }
+      ]
+    },
+    {
+      "id": "VOT-HKY-WAR",
+      "nameEn": "Yaegir Warrior",
+      "nameKo": "예이기르 전사",
+      "stats": {
+        "move": "5\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Bolt Revolver",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Short Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "2/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Plasma Knife",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/5",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 리볼버",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트 산탄총(단거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "볼트 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "2/2",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        },
+        {
+          "name": "플라스마 나이프",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/5",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "용감무쌍",
+          "text": "이 요원을 지정해 임기응변 포인트를 소모할 때, 다음 규칙이 우선 적용됩니다.\n• 요원의 APL 수치를 +1만큼 변경하는 경우, 다음 운용 이 시작될 때까지 효과가 유지됩니다.\n• 잃은 체력을 회복하는 경우, 최대 4만큼 회복합니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 수색 섬멸 — 편성 1+9 = 10명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 헤른킨 예이기르 테인 요원\n↘ 9 헤른킨 예이기르 요원을 다음 목록에서 선택해 편성합니다.\n• 칼잡이\n• 허풍선이\n• 사수\n• 철벽대\n• 소총수\n• 추적가\n• 전사, 다음 선택지 중 하나를 골라 장비합니다.\n○ 볼트 리볼버, 플라스마 나이프\n○ 볼트 산탄총, 주먹"
+      },
+      {
+        "type": "rule",
+        "text": "전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "임기응변 · 대담한 탐험가",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "임기응변"
+      },
+      {
+        "type": "lore",
+        "text": "헤른킨 예이기르는 각 구성원이 자급자족에 특화된 전문가인 동시에 숙련된 전사이다. 이들은 외부 지원이 단절된 상황과 수없이 많은 긴급 사태 발발 가능성에 대비하여 다양한 장비를 갖추고 임무에 착수한다. 이를 통해 위험한 환경과 적의 움직임에 맞서 단호하고 신속 하게 적응할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "첫 번째 전략 페이즈가 끝난 이후 매 전략 페이즈의 준비 단계마다, 적 요원의 장악 범위 내에 있지 않은 킬존 내 아군 헤른킨 예이기르 요원 수에 따라 임기응변 포인트를 얻습니다. 각 전환점이 끝날 때 임기응변 포인트를 버립니다."
+      },
+      {
+        "type": "rule",
+        "text": "요원 목록 임기응변 포인트"
+      },
+      {
+        "type": "heading",
+        "text": "6+ 2"
+      },
+      {
+        "type": "heading",
+        "text": "3-5 1"
+      },
+      {
+        "type": "heading",
+        "text": "0-2 0"
+      },
+      {
+        "type": "rule",
+        "text": "적 요원의 장악 범위 내에 있지 않은 아군 헤른킨 예이기르 요원을 대상으로 임기응변 포인트를 하나 소모하여 다음 중 한 가지 효과를 얻을 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 그 요원은 운용이 종료될 때까지 APL 수치가 +1만큼 변경됩니다.\n• 그 요원은 손실한 체력을 최대 D3+1만큼 회복합니다."
+      },
+      {
+        "type": "heading",
+        "text": "대담한 탐험가"
+      },
+      {
+        "type": "rule",
+        "text": "예이기르는 피붙이 중 새로운 행성에 가장 먼저 발을 내딛는 이들로, 장기간 배치되는 경우가 많으며 작전 지역을 신속하게 평가하고 활용하는 데에 능숙한 전문가들이다."
+      },
+      {
+        "type": "rule",
+        "text": "전략 포석(첫 번째 전환점 중에 사용 가능). 아군 투입 구역에 완전히 들어가 있는 각 아군 헤른킨 예이기르 요원은 즉시 무상으로 기동 행동을 수행할 수 있습니다. 수행 시 그 요원은 아군 투입 구역으로부터 4\" 내에 완전히 들어가도록 이 동을 마쳐야 합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

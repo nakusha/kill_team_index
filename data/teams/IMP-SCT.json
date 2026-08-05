@@ -1,0 +1,923 @@
+{
+  "id": "IMP-SCT",
+  "nameEn": "Scout Squad",
+  "nameKo": "스카웃 분대",
+  "archetype": "Infiltration/Recon",
+  "color": "#ac9560",
+  "size": {
+    "total": 9
+  },
+  "faction": {
+    "id": "ASTA",
+    "nameEn": "Space Marines",
+    "nameKo": "스마"
+  },
+  "ploys": [
+    {
+      "id": "IMP-SCT-S-ADT",
+      "name": "Adaptable Training",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "You can change the order of up to D3 friendly SCOUT SQUAD operatives that are more than 4\" from enemy operatives.",
+      "textKo": "적에게서 4\" 넘게 떨어진 아군 SCOUT SQUAD 최대 D3명의 order 변경"
+    },
+    {
+      "id": "IMP-SCT-S-GA",
+      "name": "Ambush",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly SCOUT SQUAD operative is shooting or fighting during its activation, if its order was changed from Conceal to Engage at the start of that activation, or it wasn’t visible to enemy operatives at the start of that activation:\n• That friendly operative’s weapons have the Balanced weapon rule.\n• If the target is expended, that friendly operative’s weapons have the Ceaseless weapon rule instead.",
+      "textKo": "숨은 채 활성화한 아군 무기가 Balanced, 대상이 expended 면 Ceaseless"
+    },
+    {
+      "id": "IMP-SCT-S-GE",
+      "name": "Guerrilla Engagement",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an enemy operative is shooting a friendly SCOUT SQUAD operative, if that friendly operative is in cover and more than 6\" from enemy operatives it’s visible to, you can re-roll one of your defence dice.",
+      "textKo": "cover 안 + 적에게서 6\" 넘게 떨어진 아군 피격 시 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "IMP-SCT-S-SR",
+      "name": "Stealth Relocation",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Up to D3 friendly SCOUT SQUAD operatives that have a Conceal order and are more than 4\" from enemy operatives can immediately perform a free Dash action. You cannot use this ploy during the first turning point.",
+      "textKo": "Conceal 상태 아군 최대 D3명이 즉시 무료 Dash (첫 TP 제외)"
+    },
+    {
+      "id": "IMP-SCT-T-AT",
+      "name": "Astartes Training",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly SCOUT SQUAD operative’s activation. Until the end of that activation, that operative can do one of the following:\n• Perform two Fight actions.\n• Perform two Shoot actions if an Astartes shotgun, bolt pistol or boltgun is selected for at least one of them.\n• Perform two Shoot actions with a heavy bolter, missile launcher or sniper rifle, but 1 additional AP must be spent for the second action.",
+      "textKo": "아군 1명이 이번 활성화에 근접전 또는 사격을 2회 수행"
+    },
+    {
+      "id": "IMP-SCT-T-CP",
+      "name": "Covert Position",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly SCOUT SQUAD operative’s activation. Until the start of its next activation, while that operative has a Conceal order and is in cover, it cannot be selected as a valid target, taking precedence over all other rules (e.g. Seek, Vantage terrain) except being within 2\".",
+      "textKo": "아군 1명이 Conceal + cover 면 2\" 밖 적에게 타겟 선택 불가"
+    },
+    {
+      "id": "IMP-SCT-T-EA",
+      "name": "Emboldened Aspirant",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly SCOUT SQUAD operative performs the Shoot or Fight action, after any re-rolls. If it’s the first friendly operative to perform either of those actions during this turning point, or if the enemy operative in that action (primary target, if relevant) has a higher Wounds stat than that friendly SCOUT SQUAD operative, you can retain one of your normal successes as a critical success instead.",
+      "textKo": "이번 TP 첫 공격이거나 대상 Wounds 가 더 높으면 성공 1개를 크리로"
+    },
+    {
+      "id": "IMP-SCT-T-RP",
+      "name": "Raw Physiology",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly SCOUT SQUAD operative’s activation, before or after it performs an action. Until the start of its next activation, add 1\" to its Move stat and you can ignore any changes to that operative’s stats from being injured (including its weapons’ stats).",
+      "textKo": "아군 1명의 Move +1\", 다음 활성화까지 부상 스탯 페널티 무시"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-SCT-CC",
+      "name": "Camo Cloak",
+      "textEn": "Whenever an operative is shooting a friendly SCOUT SQUAD operative (excluding SNIPER), if you can retain any cover saves, you can retain one additional cover save. This isn’t cumulative with improved cover saves from Vantage terrain.",
+      "textKo": "사격받을 때 엄폐 세이브를 1개 더 보유 (SNIPER 제외, Vantage 와 중첩 안 됨)"
+    },
+    {
+      "id": "IMP-SCT-CBAK",
+      "name": "Combat Blades",
+      "textEn": "Friendly SCOUT SQUAD operatives have the following melee weapon. Note that some operatives already have this weapon but with better stats; in that instance, use the better version.\nNAME ATK HIT DMG\nCombat blade 3 3+ 4/5",
+      "textKo": "전원에게 컴뱃 블레이드 (A3 · H3+ · D4/5), 더 좋은 게 있으면 그쪽 사용"
+    },
+    {
+      "id": "IMP-SCT-TVL",
+      "name": "Tactical Vox-Link",
+      "textEn": "Once per turning point, you can use the Astartes Training or Emboldened Aspirant firefight ploy for 0CP if a friendly SERGEANT operative is in the killzone.",
+      "textKo": "TP당 1회, SERGEANT 가 있으면 Astartes Training 등을 0CP 로"
+    },
+    {
+      "id": "IMP-SCT-TO",
+      "name": "Targeting Oculars",
+      "textEn": "Up to twice per turning point, when a friendly SCOUT SQUAD operative is performing the Shoot action and you’re selecting a valid target, you can use this rule. If you do, until the end of that action, that friendly operative’s ranged weapons have the Lethal 5+ and Saturate weapon rules.",
+      "textKo": "TP당 2회, 사격 시 원거리 무기에 Lethal 5+ 와 Saturate"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-SCT-SGT",
+      "nameEn": "Scout Sergeant",
+      "nameKo": "스카웃 서전트",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Astartes Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "아스타르테스 산탄총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "지도와 숙련",
+          "text": "이 요원의 운용 도중 한 번씩, 킬존에 있는 다른 아군 스카웃 분대 요원 하나를 지정할 수 있습니다. 그 요원의 다음 운용이 종료될 때까지, APL 수치를 +1만큼 변경합니다."
+        },
+        {
+          "name": "아스타르테스",
+          "text": "이 요원은 운용 중 사격 행동이나 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 사격 행동을 두 번 수행할 경우, 아스타르테스 산탄총, 볼트 권총이나 볼트건을 최소 한 번 사용해야 합니다. 이 요원은 받은 명령과 무관하게 대응할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SCT-HGNR",
+      "nameEn": "Scout Heavy Gunner",
+      "nameKo": "스카웃 중화기 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Missile Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Heavy (Dash only)",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "중형 볼터(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "중형 볼터(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "미사일 발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 2\"",
+            "중화기(질주 한정)"
+          ]
+        },
+        {
+          "name": "미사일 발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "중화기(질주 한정)",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "중화기 양각대",
+          "text": "이 요원이 그 데이터카드에 보유한 무기로 사격 시, 이번 운용 동안 이동하지 않았거나, 또는 대응을 수 행 중이라면, 그 무기에 집요 무기 규칙이 부여됩니다. 만약 그 무기에 이미 해당 무기 규칙이 적용 중이라면(예: 기습 전략 플로이 사용) 혹독 무기 규칙이 부여됩니다. 사격 후에 그 요원의 이동이 제한받지 않는다는 점을 참고 바랍니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SCT-HNT",
+      "nameEn": "Scout Hunter",
+      "nameKo": "스카웃 엽사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Combat Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "컴뱃 블레이드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "갈고리 발사기",
+          "text": "이 요원이 올라가기를 할 때마다, 실제 이동 거리와 관계없이 수직 거리를 항상 2\"로 간주할 수 있습니다."
+        },
+        {
+          "name": "갈고리 강습",
+          "text": "이 요원이 자신의 운용 도중 돌격 행동을 수 행할 때마다, 그 행동 도중에 올라가기, 내려가기, 도약, 또는 고지 아래로 베이스가 이동했다면, 그 운용이 종료 될 때까지 이 요원의 근접 무기에 살상 3+ 무기 규칙을 부여합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SCT-SNP",
+      "nameEn": "Scout Sniper",
+      "nameKo": "스카웃 저격수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Heavy (Dash only)",
+                "Devastating 3",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "저격소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "저격소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기(질주 한정)",
+            "무성"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위장 망토",
+          "text": "이 요원이 사격당할 때 다음을 따릅니다.\n• 포화 무기 규칙을 무시합니다.\n• 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 하나를 추가로 보전하거나 또는 엄폐 방호 하나를 결정적 성공으로 판정할 수 있습니다. 이 규칙은 고지로 인해 향상된 엄폐 방호와 누적되지 않습니다."
+        },
+        {
+          "name": "광학 장비 [1AP]",
+          "text": "이 요원의 다음 운용이 시작될 때까지, 이 요원이 사격할 때마다 적 요원은 차폐될 수 없습니다. 요원이 적 요원의 장악 범위에 들어간 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SCT-TRK",
+      "nameEn": "Scout Tracker",
+      "nameKo": "스카웃 추적자",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "오스펙스 스캔 [1AP]",
+          "text": "이 요원의 다음 운용이 시작될 때까지 또는 무력화될 때까지(어느 하나라도 충족 시), 이 요원의 8\" 내에 있는 아군 스카웃 요원 이 적 요원을 대상으로 사격을 수행할 때마다 그 적 요원은 차폐 상태가 될 수 없습니다. 만약 아군 요원이 저격수이고 광학 장비 행동의 효과가 적용되고 있다면, 원거리 무기에 저밀도 색적 무기 규칙도 부여됩니다.\n이 요원이 적 요원의 장악 범위에 들어간 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-SCT-WAR",
+      "nameEn": "Scout Warrior",
+      "nameKo": "스카웃 전사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Astartes Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "4/4",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Boltgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Combat Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "아스타르테스 산탄총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "4/4",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "컴뱃 블레이드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "적응형 장비",
+          "text": "다음 각 항목을 전환점당 한 번씩 사용할 수 있습니다\n• 아군 스카웃 분대 전사 요원이 연막탄 행동을 수행할 수 있습니다.\n• 아군 스카웃 분대 전사 요원이 섬광 수류탄 행동을 수행할 수 있습니다.\n이 행동의 규칙은 공용 장비에서 확인할 수 있습니다. 이 행동을 수행하는 것은 공용 장비의 행동 한도 개수와 무관합니다(장비에서 동일한 수류탄을 선택했을 시)."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+8 = 9명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 스카웃 분대 서전트 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 아스타르테스 산탄총, 주먹\n• 볼트건, 주먹\n• 볼트 권총, 체인소드"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 8 스카웃 분대 요원을 다음 목록에서 선택해 편성합니다.\n• 중화기 사수, 주먹, 볼트 권총, 중형 볼터\n• 중화기 사수, 주먹, 볼트 권총, 미사일 발사기\n• 엽사\n• 저격수\n• 추적자\n• 전사, 다음 선택지 중 하나를 골라 장비합니다.\n○ 아스타르테스 산탄총, 주먹\n○ 볼트건, 주먹\n○ 볼트 권총, 컴뱃 블레이드 전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "전방 정찰",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "전방 정찰"
+      },
+      {
+        "type": "rule",
+        "text": "스페이스 마린 스카웃의 주요 임무는 그들이 속한 타격대에 앞서 작전을 수행하는 것이다. 적을 당혹게 할 갖가지 함정을 설치하는 데 상당 시간 공을 들이고, 적 정찰부대를 유린하는 한편 첩보와 탐색 임무를 수행해 챕터의 강습대를 맞이할 준비를 한다."
+      },
+      {
+        "type": "rule",
+        "text": "요원 배치 단계 종료 시, 최대 여섯 개의 전방 정찰 선택지를 선택하여 처리할 수 있습니다. 선택지마다 숫자가 괄호 안에 표기되어 있으며, 이는 전투가 진행되는 동안 선택 및 처리할 수 있는 총횟수입니다. 예를 들어, 기동(2), 경보용 인계철선(1), 부비트랩(1), 기만(1)이 플레이어의 다섯 가지 선택지가 될 수 있습니다. 양 플레이어가 동일하게 이 규칙을 보유한다면, 선제권을 가진 플레이어부터 번갈아 가며 선택 지를 하나씩 고릅니다."
+      },
+      {
+        "type": "rule",
+        "text": "전방 정찰 선택지는 동봉된 별개의 카드에 나와 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "전방 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "재배치 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "플레이어의 요원 1/3(소수점 아래는 올림 처리)의 배치를 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "기동 (2)"
+      },
+      {
+        "type": "rule",
+        "text": "플레이어의 투입 구역 내에 완전히 들어온 아군 요원 하나가 무상으로 기동 행동을 한 번 수행할 수 있습니다. 이때 플레이어의 투입 구역 3\" 내로 완전히 들어온 상태에서 이동을 종료해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "경보용 인계철선 (2)"
+      },
+      {
+        "type": "rule",
+        "text": "상대 투입 구역의 6\" 넘게 떨어진 곳에 경보용 인계철선 마커를 하나 놓습니다. 첫 번째 및 두 번째 전환점이 진행되는 동안, 아군 스카웃 분대 요원이 그 마커의 2\" 내에 있는 적요원을 대상으로 사격을 수행하는 경우, 그 아군 요원의 원거리 무기에 색적 무기 규칙이 부여됩니다. 세 번째 전략 페이즈 준비 단계에 그 마커를 제거합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전방 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "부비트랩 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "상대 투입 구역의 6\" 넘게 떨어진 곳에 부비트랩 마커를 하나 놓습니다. 이때 다른 마커, 출입구, 통과 가능 지형과도 서로 2\" 넘게 떨어져 있어야 합니다. 아군 부비트랩 마커가 처음으로 적 요원의 장악 범위 내로 들어간 때 이 마커를 제거하고 그 요원에게 2D3 피해를 가합니다. 그 요원이 무력 화되지 않았고 그 행동이 아직 끝나지 않았다면, 행동의 효과를 아직 모두 적용하지 못했더라도 즉시 그 행동을 종료합니다. 마커를 위에 명시한 자리에 둘 수 없다면 그 자리로부터 최소한으로 움직여서 둡니다."
+      },
+      {
+        "type": "heading",
+        "text": "전술 기동 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "전략 포석(전투당 두 번 사용 가능). 아군 요원을 하나 지정합니다. 이 요원의 다음 운용이 종료될 때까지, APL 수치를 +1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전방 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "기만 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "전략 포석(전투당 한 번 사용 가능). 킬존 가장자리의 6\" 내에 있는 적 요원을 하나 지정합니다. 이 요원의 다음 운용이 종료될 때까지, APL 수치를 -1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전략 고안 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "플레이어가 1CP를 얻습니다."
+      },
+      {
+        "type": "heading",
+        "text": "목표물 지정 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "적 요원을 하나 지정하면 그 요원은 표적 토큰을 얻습니다. 아군 스카웃 분대 요원이 표적 토큰을 보유한 적 요원을 대상으로 사격, 근접전 또는 반격 시, 그 공격 주사위를 하나 재굴림할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "스파이 (1)"
+      },
+      {
+        "type": "rule",
+        "text": "인가 작전 전용. 상대는 자신이 선택한 전술 작전을 공개해야 합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

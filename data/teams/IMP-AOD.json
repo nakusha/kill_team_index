@@ -1,0 +1,1561 @@
+{
+  "id": "IMP-AOD",
+  "nameEn": "Angels Of Death",
+  "nameKo": "죽음의 천사",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#4f82cc",
+  "size": {
+    "total": 6
+  },
+  "faction": {
+    "id": "ASTA",
+    "nameEn": "Space Marines",
+    "nameKo": "스마"
+  },
+  "ploys": [
+    {
+      "id": "IMP-AOD-S-ADT",
+      "name": "Adaptive Tactics",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Change your secondary CHAPTER TACTIC. Note this ploy only lasts until the end of the turning point, at which point your original secondary CHAPTER TACTIC returns.",
+      "textKo": "2차 챕터 전술을 이번 전환점 동안 다른 것으로 변경"
+    },
+    {
+      "id": "IMP-AOD-S-ATSKNF",
+      "name": "And They Shall Know No Fear",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "You can ignore any changes to the stats of friendly ANGEL OF DEATH operatives from being injured (including their weapons’ stats).",
+      "textKo": "부상으로 인한 능력치 변경을 무시 (무기 수치 포함)"
+    },
+    {
+      "id": "IMP-AOD-S-CD",
+      "name": "Combat Doctrine",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one COMBAT DOCTRINE from those presented below. Whenever a friendly ANGEL OF DEATH operative is x, its weapons have the Balanced weapon rule. X is the COMBAT DOCTRINE you selected.\n• Devastator Doctrine: Shooting an operative more than 6\" from it.\n• Tactical Doctrine: Shooting an operative within 6\" of it.\n• Assault Doctrine: Fighting or retaliating.",
+      "textKo": "교리 하나를 선택 — 해당 상황에서 아군 무기가 균형 획득"
+    },
+    {
+      "id": "IMP-AOD-S-IND",
+      "name": "Indomitus",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly ANGEL OF DEATH operative, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "사격당할 때 실패 2개 이상이면 하나를 일반 성공으로 보전"
+    },
+    {
+      "id": "IMP-AOD-T-ADJT",
+      "name": "Adjust Doctrine",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly ANGEL OF DEATH operative’s activation, before or after it performs an action. If you’ve used the Combat Doctrine strategy ploy during this turning point, change the COMBAT DOCTRINE you selected.",
+      "textKo": "아군 운용 중, 이번 전환점에 고른 전투 교리를 바꾼다"
+    },
+    {
+      "id": "IMP-AOD-T-SA",
+      "name": "Shock Assault",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly ANGEL OF DEATH operative is performing the Fight action during an activation in which it performed the Charge action, at the start of the Resolve Attack Dice step. Until the end of that action:\n• Its melee weapon has the Shock weapon rule.\n• The first time you strike during that sequence, inflict 1 additional damage (to a maximum of 7).",
+      "textKo": "돌격 후 근접전 시 근접 무기에 충격 부여, 첫 타격 피해 +1"
+    },
+    {
+      "id": "IMP-AOD-T-TP",
+      "name": "Transhuman Physiology",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an operative is shooting a friendly ANGEL OF DEATH operative, in the Roll Defence Dice step. You can retain one of your normal successes as a critical success instead.",
+      "textKo": "사격당할 때 방어 일반 성공 하나를 결정적 성공으로 보전"
+    },
+    {
+      "id": "IMP-AOD-T-WOV",
+      "name": "Wrath Of Vengeance",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly ANGEL OF DEATH operative is counteracting. It can perform an additional 1AP action for free during that counteraction, but both actions must be different.",
+      "textKo": "대응 도중 1AP 행동 하나를 무상으로 추가 (다른 행동이어야 함)"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-AOD-CR",
+      "name": "Chapter Reliquaries",
+      "textEn": "You can use the Wrath of Vengeance firefight ploy for 0CP if the specified friendly operative has an Engage order.",
+      "textKo": "복수의 분노 사용 시 그 요원이 교전 명령이면 0CP 로 사용"
+    },
+    {
+      "id": "IMP-AOD-PS",
+      "name": "Purity Seals",
+      "textEn": "Once per turning point, when a friendly ANGEL OF DEATH operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "전환점당 1회, 실패 2개 이상이면 하나를 일반 성공으로 보전"
+    },
+    {
+      "id": "IMP-AOD-TS",
+      "name": "Tilting Shields",
+      "textEn": "Once per turning point, when a friendly ANGEL OF DEATH operative is fighting or retaliating, after your opponent rolls their attack dice, but before re-rolls, you can use this rule. If you do, your opponent cannot retain attack dice results of less than 6 as critical successes during that sequence (e.g. as a result of the Lethal, Rending or Severe weapon rules).",
+      "textKo": "전환점당 1회, 근접 방어 시 상대는 6 미만을 결정적 성공으로 보전 불가"
+    },
+    {
+      "id": "IMP-AOD-AUS",
+      "name": "Auspex",
+      "textEn": "Once per turning point, when a friendly ANGEL OF DEATH operative performs the Shoot action and you’re selecting a valid target, you can use this rule. If you do, until the end of the activation/ counteraction, enemy operatives within 8\" of that friendly operative cannot be obscured.",
+      "textKo": "전환점당 1회, 운용이 끝날 때까지 8\" 내 적은 차폐될 수 없음"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-AOD-CPT",
+      "nameEn": "Space Marine Captain",
+      "nameKo": "스페이스 마린 캡틴",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "무자비"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "영웅적 지휘관",
+          "text": "전환점당 한 번, 이 죽음의 천사 요원을 대상으로 한 화력전 플로이(지휘 재굴림 제외)를 0CP에 사용하거나, 또는 이 요원이 킬존에 위치하고 있으며 동시에 적 요원의 장악 범위 내에 있지 않다면, 교리 조정 화력전 플로이를 0CP에 사용할 수 있습니다"
+        },
+        {
+          "name": "철광륜",
+          "text": "전투당 한 번, 이 요원이 공격 주사위로 일반 피해를 입을 때, 그 주사위 중 하나의 피해를 무시합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-AOD-ASGT",
+      "nameEn": "Assault Intercessor Sergeant",
+      "nameKo": "강습 인터세서 서전트",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Hand Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Saturate",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Thunder Hammer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "한손 화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "포화",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "중형 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "5/7",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "선더 해머",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "교리 전법",
+          "text": "다음을 전투당 한 번씩 수행할 수 있습니다.\n• 전투 교리 전략 플로이를 사용하면서 강습 교리를 선택했을 때, 이 요원이 킬존에 있다면 0CP를 소모합니다.\n• 전투 교리 전략 플로이를 사용하면서 전술 교리를 선택했을 때, 이 요원이 킬존에 있다면 0CP를 소모합니다."
+        },
+        {
+          "name": "챕터 베테랑",
+          "text": "요원 선택 단계 종료 시 이 요원을 배치하기로 결정했다면, 이번 전투 동안 보유할 챕터 전술 하나를 추가로 선택합니다. 1차, 2차 챕터 전술과 달리, 캠페인이나 토너먼트의 각 전투마다 같은 챕터 전술을 지정할 필요는 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-AOD-ISGT",
+      "nameEn": "Intercessor Sergeant",
+      "nameKo": "인터세서 서전트",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 15
+      },
+      "weapons": [
+        {
+          "name": "Auto Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stalker Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Heavy",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Fist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/7",
+              "rules": [
+                "Brutal"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Thunder Hammer",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Shock",
+                "Stun"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "자동 볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(중화기)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "살상 5+",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/7",
+          "rules": [
+            "무자비"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "선더 해머",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "충격",
+            "혼미"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "교리 전법",
+          "text": "다음을 전투당 한 번씩 수행할 수 있습니다.\n• 전투 교리 전략 플로이를 사용하면서 황폐자 교리를 선택했을 때, 이 요원이 킬존에 있다면 0CP를 소모합니다.\n• 전투 교리 전략 플로이를 사용하면서 전술 교리를 선택했을 때, 이 요원이 킬존에 있다면 0CP를 소모합니다."
+        },
+        {
+          "name": "챕터 베테랑",
+          "text": "요원 선택 단계 종료 시 이 요원을 배치하기로 결정했다면, 이번 전투 동안 보유할 챕터 전술 하나를 추가로 선택합니다. 1차, 2차 챕터 전술과 달리, 캠페인이나 토너먼트의 각 전투마다 같은 챕터 전술을 지정할 필요는 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-AOD-SNP",
+      "nameEn": "Eliminator Sniper",
+      "nameKo": "엘리미네이터 저격수",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 12
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Sniper Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Executioner",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/4",
+              "rules": [
+                "Heavy (Dash only)",
+                "Saturate",
+                "Seek Light",
+                "Silent"
+              ]
+            },
+            {
+              "name": "Hyperfrag",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 1\"",
+                "Heavy (Dash only)",
+                "Silent"
+              ]
+            },
+            {
+              "name": "Mortis",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy (Dash only)",
+                "Piercing 1",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "볼트 저격소총(처형자탄)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/4",
+          "rules": [
+            "중화기(질주 한정)",
+            "포화",
+            "저밀도 색적",
+            "무성"
+          ]
+        },
+        {
+          "name": "볼트 저격소총(초세열탄)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 1\"",
+            "중화기(질주 한정)",
+            "무성"
+          ]
+        },
+        {
+          "name": "볼트 저격소총(모르티스탄)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기(질주 한정)",
+            "관통 1",
+            "무성"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위장 망토",
+          "text": "이 요원이 사격당할 때, 포화 무기 규칙을 무시합니다. 이 요원은 은밀형 챕터 전술을 보유합니다. 만약 챕터 전술로 은밀형을 선택했다면, 규칙의 능력을 둘 다 선택할 수 있습니다(예시: 엄폐 방호로 일반 성공 주사위 하나와 결정적 성공 주사위 하나를 모두 보전 가능)."
+        },
+        {
+          "name": "광학 장비 [1AP]",
+          "text": "• 이 요원의 다음 운용 시작 시까지, 이 요원이 사격할 때마다 적 요원은 차폐될 수 없습니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-AOD-GRN",
+      "nameEn": "Assault Intercessor Grenadier",
+      "nameKo": "강습 인터세서 척탄병",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "중형 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 세열과 크랙 수류탄(공용 장비 참고)을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한도가 차감되지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무관). 이 요원이 위 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-AOD-AWAR",
+      "nameEn": "Assault Intercessor Warrior",
+      "nameKo": "강습 인터세서 전사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Heavy Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "중형 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-AOD-HGNR",
+      "nameEn": "Heavy Intercessor Gunner",
+      "nameKo": "중갑 인터세서 사수",
+      "stats": {
+        "move": "5\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 18
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": " ",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heavy Bolter",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "중형 볼터(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "중형 볼터(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-AOD-GNR",
+      "nameEn": "Intercessor Gunner",
+      "nameKo": "인터세서 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Auto Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Auxiliary Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stalker Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Heavy",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "자동 볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "부착식 유탄발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "부착식 유탄발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(중화기)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "살상 5+",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-AOD-WAR",
+      "nameEn": "Intercessor Warrior",
+      "nameKo": "인터세서 전사",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 14
+      },
+      "weapons": [
+        {
+          "name": "Auto Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stalker Bolt Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Heavy",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Lethal 5+",
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "자동 볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "볼트 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(중화기)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "살상 5+",
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "스토커 볼트 소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 수색 섬멸 — 편성 1+5 = 6명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 죽음의 천사 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 강습 인터세서 서전트, 다음 각 선택지에서 하나씩 골라 장비합니다.\n○ 한손 화염방사기, 중형 볼트 권총\n○ 체인소드, 파워 피스트, 역장 무기, 선더 해머\n또는 다음을 장비합니다.\n○ 플라스마 권총, 체인소드\n• 인터세서 서전트, 다음 각 선택지에서 하나씩 골라 장비합니다.\n○ 자동 볼트 소총, 볼트 소총, 스토커 볼트 소총\n○ 체인소드, 주먹, 파워 피스트, 역장 무기, 선더"
+      },
+      {
+        "type": "heading",
+        "text": "해머"
+      },
+      {
+        "type": "rule",
+        "text": "• 스페이스 마린 캡틴"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 5 죽음의 천사 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 강습 인터세서 척탄병\n• 강습 인터세서 전사\n• 엘리미네이터 저격수\n• 중갑 인터세서 사수\n• 인터세서 사수, 부착식 유탄발사기와 다음 선택지 중 하나를 골라 장비합니다.\n○ 자동 볼트 소총, 주먹\n○ 볼트 소총, 주먹\n○ 스토커 볼트 소총, 주먹\n• 인터세서 전사, 다음 선택지 중 하나를 골라 장비합니다.\n○ 자동 볼트 소총, 주먹\n○ 볼트 소총, 주먹\n○ 스토커 볼트 소총, 주먹"
+      },
+      {
+        "type": "rule",
+        "text": "전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들 중에서 하나만을 선택할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "일부 죽음의 천사 규칙에는 '볼트 무기'라는 점이 명시되어 있습니다. 이는 명칭에 '볼트'가 포함된 원거리 무기를 의미합니다(예: 스토커 볼트 라이플, 중형 볼트 권총 등)"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "챕터 전술 · 아스타르테스",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "챕터 전술"
+      },
+      {
+        "type": "lore",
+        "text": "모든 스페이스 마린 챕터는 소속 전투형제의 독특한 기술과 성격에 따라 고유한 전쟁 철학을 확립해나간다. 이같은 전쟁 교리는 수천년에 걸친 복잡한 의식으로 가려져 있으나, 전장에서는 처음 확립된 때와 똑같이 치명적인 효율성을 뽐낸다."
+      },
+      {
+        "type": "rule",
+        "text": "킬 팀을 선택 시, 이번 전투 동안 아군 죽음의 천사 요원들이 사용할 1차 및 2차 챕터 전술을 선택합니다. 같은 챕터 전술이 여러 번 적용되는 경우, 효과는 중첩되지 않습니다."
+      },
+      {
+        "type": "lore",
+        "text": "개발자의 한마디: 캠페인이나 토너먼트처럼 일련의 연속된 게임을 진행한다면, 모든 전투에서 동일한 1차 및 2차 챕터 전술을 사용해야 합니다. 물론 여전히 대응 전술 전략 플로이를 이용해 2차 챕터 전술을 변경할 수는 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "챕터 전술 선택지는 동봉된 별개의 카드에 나와 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "챕터 전술"
+      },
+      {
+        "type": "heading",
+        "text": "1. 공격형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원의 근접 무기에 파쇄 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "2. 결투형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 근접전이나 반격을 수행할 때마다 (적 요원의 무기에 무자비 무기 규칙이 없는 한), 각 일반 성공 주사위로 아직 처리되지 않은 결정적 성공 주사위를 하나씩 막을 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "3. 안정형"
+      },
+      {
+        "type": "rule",
+        "text": "요원의 APL 수치와 관련된 모든 변경을 무시할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "4. 은밀형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 사격당할 때, 엄폐 방호 주사위를 보전할 수 있다면, 추가로 엄폐 방호 주사위를 하나 더 보전하거나, 또는 하나의 엄폐 방호 주사위를 결정적 성공으로 보전할 수 있습니다. 이는 고지에서 공격 시 적용되는 강화된 엄폐 방호와 중첩되지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "5. 기동형"
+      },
+      {
+        "type": "rule",
+        "text": "• 이 요원은 후퇴 행동을 수행 시 AP를 1 적게 소모합니다.\n• 이 요원은 적 요원의 장악 범위 내에서도 돌격 행동을 수행할 수 있으며, 그 과정에서 그 적 요원의 장악 범위를 벗어 날 수 있습니다. 단, 이를 수행함에 있어 이동에 관한 일반적인 조건은 그대로 적용됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "6. 수비형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 사격당할 때, 값이 5+인 방어 주사위를 결정적 성공으로 판정합니다."
+      },
+      {
+        "type": "heading",
+        "text": "7. 저격형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 이번 운용 도중 돌격, 후퇴, 기동 행동을 수행하지 않았다면, 그 볼트 무기에 중상 무기 규칙을 부여합니다."
+      },
+      {
+        "type": "heading",
+        "text": "8. 공성형"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원의 원거리 무기에 포화 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "아스타르테스"
+      },
+      {
+        "type": "rule",
+        "text": "유전적 개조를 거친 이 초인 집단의 목적은 오직 하나, 전쟁이다."
+      },
+      {
+        "type": "rule",
+        "text": "각 아군 죽음의 천사 요원은 운용 도중 사격 또는 근접전 행동 중 하나를 두 번 수행할 수 있습니다. 사격 행동을 두 번 수행할 경우, 볼트 무기를 최소 한 번 사용해야 합니다. 이때 그 무기가 볼트 저격소총 또는 중형 볼터인 경우, 같은 무기로 두 번 사격을 하려면 두 번째 행동은 1AP를 추가로 소모해야 합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 죽음의 천사 요원은 받은 명령과 무관하게 대응을 실시할 수 있습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

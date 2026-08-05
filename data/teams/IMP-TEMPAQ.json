@@ -1,0 +1,1069 @@
+{
+  "id": "IMP-TEMPAQ",
+  "nameEn": "Tempestus Aquilon",
+  "nameKo": "템페스투스 아퀼론",
+  "archetype": "Recon/Seek & Destroy",
+  "color": "#8481d8",
+  "size": {
+    "total": 11
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-TEMPAQ-S-DAS",
+      "name": "Drop And Secure",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one marker.\n• Until the Ready step of the next Strategy phase, when determining control of that marker, treat the total APL stat of friendly TEMPESTUS AQUILON operatives that contest it as 1 higher if at least one friendly TEMPESTUS AQUILON operative contests that marker. Note this isn’t a change to the APL stat, so any changes are cumulative with this.\n• Whenever a friendly TEMPESTUS AQUILON operative is within 3\" of that marker, add 1 to the Atk stat of its melee weapons (to a maximum of 4).",
+      "textKo": "마커 하나 — 경합 시 APL 합계 +1, 3\" 내 아군 근접 공격 +1"
+    },
+    {
+      "id": "IMP-TEMPAQ-S-EA",
+      "name": "Eye Above",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one enemy operative. That operative and each other enemy operative within 3\" of it gains one of your Detected tokens until the end of the turning point. Whenever an enemy operative that has one of your Detected tokens:\n• Is shooting a friendly TEMPESTUS AQUILON operative, you can re‑roll one of your defence dice.\n• Is fighting or retaliating against a friendly TEMPESTUS AQUILON operative, one of your blocks can be allocated to block two unresolved successes (instead of one).",
+      "textKo": "적 하나와 3\" 내 적에게 탐지됨 토큰 — 그 적의 공격에 방어가 유리"
+    },
+    {
+      "id": "IMP-TEMPAQ-S-MM",
+      "name": "Maintain Momentum",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly TEMPESTUS AQUILON operative is shooting against or fighting against a ready enemy operative, that friendly operative’s weapons have the Severe weapon rule.",
+      "textKo": "준비 상태인 적을 공격할 때 아군 무기가 중상 획득"
+    },
+    {
+      "id": "IMP-TEMPAQ-S-SO",
+      "name": "Sudden Offensive",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Count the number of friendly TEMPESTUS AQUILON operatives that aren’t incapacitated, then halve the result (rounding up) to give you x. Until the end of their activation, friendly TEMPESTUS AQUILON operatives’ weapons have the Balanced weapon rule if they are the first friendly operatives activated this turning point equal to x. For example, if you have five operatives, the first three friendly operatives activated will benefit.",
+      "textKo": "이번 전환점 먼저 운용하는 아군 절반(올림)의 무기가 균형 획득"
+    },
+    {
+      "id": "IMP-TEMPAQ-T-AC",
+      "name": "Adjust Coordinates",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly TEMPESTUS AQUILON operative lands. You can set it up within 5\" horizontally of one of your Drop markers, taking precedence over the normal distance requirement. It cannot perform the Dash, Shoot or Fight actions during this turning point.",
+      "textKo": "착지 시 강하 마커에서 5\" 내에 배치. 이번 전환점 행동 제한"
+    },
+    {
+      "id": "IMP-TEMPAQ-T-HD",
+      "name": "Hot Drop",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly TEMPESTUS AQUILON operative that’s wholly within your opponent’s territory, or either landed or dropped from Vantage terrain at least 2\" higher than the killzone floor during this activation. If the target is within 6\" of it, you can re‑roll any of your attack dice.",
+      "textKo": "상대 영역·착지·고지 강하 후 6\" 내 대상이면 공격 주사위 재굴림"
+    },
+    {
+      "id": "IMP-TEMPAQ-T-PRO",
+      "name": "Progena",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly TEMPESTUS AQUILON operative (excluding SERVO‑SENTRY) is activated. It regains up to 2D3 lost wounds, and during that activation you can ignore any changes to its APL stat.",
+      "textKo": "운용 시작 시 2D3 체력 회복, 그 운용 동안 APL 변경 무시"
+    },
+    {
+      "id": "IMP-TEMPAQ-T-TE",
+      "name": "Tempestus Exemplars",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly TEMPESTUS AQUILON operative’s activation (excluding SERVO‑SENTRY and any operative that has an APL stat higher than 2). During that activation, that operative can perform the Pick Up Marker, Place Marker or a mission action for 1 less AP.",
+      "textKo": "운용 중 마커 회수·배치와 임무 행동의 AP 를 1 줄인다"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-TEMPAQ-TD",
+      "name": "Tempestus Daggers",
+      "textEn": "Friendly TEMPESTUS AQUILON operatives (excluding SERVO‑SENTRY) have the following melee weapon:\nNAME ATK HIT DMG\nTempestus dagger 3 4+ 3/4",
+      "textKo": "서보센트리 외 전원이 템페스투스 단검 (공격3 명중4+ 피해3/4)"
+    },
+    {
+      "id": "IMP-TEMPAQ-CS",
+      "name": "Combat Stimms",
+      "textEn": "You can ignore any changes to the Move stat of friendly TEMPESTUS AQUILON operatives from being injured.",
+      "textKo": "부상으로 인한 이동 수치 변경을 무시"
+    },
+    {
+      "id": "IMP-TEMPAQ-DA",
+      "name": "Drop Augury",
+      "textEn": "Once per battle, when a friendly TEMPESTUS AQUILON operative that’s set up above is activated, before expending or landing that operative, you can move one of your Drop markers again. However, it cannot be moved closer to your opponent’s drop zone.",
+      "textKo": "전투당 1회, 상공의 아군이 운용될 때 강하 마커를 다시 이동"
+    },
+    {
+      "id": "IMP-TEMPAQ-ROS",
+      "name": "Remote Overseer",
+      "textEn": "Once per battle, after rolling off to decide initiative, you can re‑roll your dice.",
+      "textKo": "전투당 1회, 선제권 롤오프 주사위를 재굴림"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-TEMPAQ-TEMP",
+      "nameEn": "Aquilon Tempestor",
+      "nameKo": "아퀼론 템페스토르",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Relic Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "핫샷 라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "성물 볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": []
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "템페스투스 베테랑",
+          "text": "전투당 한 번, 화력전 플로이의 대상 이 이 템페스투스 아퀼론 요원일 경우 그 플로이를 0CP 에 사용하거나 또는 이 요원이 공격 혹은 방어 주사위를 굴릴 때 지휘 재굴림 화력전 플로이를 0CP에 사용할 수 있습니다."
+        },
+        {
+          "name": "지휘 [1AP]",
+          "text": "보조. 이 요원의 시야에 들어오며 6\" 내에 있는 아군 템페스투스 아퀼론 요원(서보센트리 제외) 하나를 지정합니다. 그 요원은 다음 운용이 종료될 때까지 APL 수치가 +1만큼 변경됩니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-GRN",
+      "nameEn": "Aquilon Grenadier",
+      "nameKo": "아퀼론 척탄병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Melta Bomb",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/3",
+              "rules": [
+                "Range 3\"",
+                "Devastating 3",
+                "Heavy (Reposition only)",
+                "Limited 1",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "멜타 폭탄",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/3",
+          "rules": [
+            "사거리 3\"",
+            "궤멸 3",
+            "중화기(기동 한정)",
+            "한도 1",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 세열, 크랙, 연막, 섬광 수류탄(공용 장비 참고)을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한도가 차감되지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무관). 이 요원이 세열 또는 크랙 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-GF",
+      "nameEn": "Aquilon Gunfighter",
+      "nameKo": "아퀼론 총잡이",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Ceaseless",
+                "Rending"
+              ]
+            },
+            {
+              "name": "Salvo",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "*Salvo"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Laspistol (Point Blank)",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스피스톨(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "집요",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "핫샷 라스피스톨(일제사격)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "일제사격*"
+          ]
+        },
+        {
+          "name": "핫샷 라스피스톨(영거리)",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "집요"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "일제사격",
+          "text": "아군 요원의 장악 범위 내에 있지 않으며 서로 다른 유효 대상을 둘까지 지정합니다. 이 무기를 사용하여 지정한 적 둘 모두를 원하는 순서대로 사격할 수 있습니다(각 절차마다 별도로 굴림)."
+        },
+        {
+          "name": "일제사격",
+          "text": "아군 요원의 장악 범위 내에 있지 않으며 서로 다른 유효 대상을 둘까지 지정합니다. 이 무기를 사용하여 지정한 적 둘 모두를 원하는 순서대로 사격할 수 있습니다(각 절차마다 별도로 굴림)."
+        },
+        {
+          "name": "총격전",
+          "text": "이 요원의 8” 내에 있는 적 요원이 이 요원을 대상으로 사격할 때마다, 실패하여 버려진 공격 주사위의 수를 기록해 둡니다. 그 행동이 끝난 후, (해당한다면 이 요원도 포함해) 무력화된 요원을 킬존에서 제거하기 전, 이 요원은 무상 사격 행동을 수행할 수 있습니다(이를 위해 명령을 교전 명령으로 전환할 수 있음). 이때 핫샷 라스피스톨(집중)을 사용해 그 적 요원을 대상으로 사격해야 하며, 상대가 버렸던 공격 주사위의 수에 1을 더한 만큼의 공격 주사위를 굴립니다(최대 4개)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-GNR",
+      "nameEn": "Aquilon Gunner",
+      "nameKo": "아퀼론 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Melta Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Carbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "멜타 카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 카빈(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 카빈(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-TEMPAQ-MRK",
+      "nameEn": "Aquilon Marksman",
+      "nameKo": "아퀼론 저격수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Longlas",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 롱라스(은폐)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기",
+            "무성",
+            "위치 은폐*"
+          ]
+        },
+        {
+          "name": "핫샷 롱라스(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "핫샷 롱라스(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+        },
+        {
+          "name": "저격수의 고지",
+          "text": "이 요원이 고지에서 사격할 때, 사격 대상 이 교전 명령을 받았고 이 요원보다 2” 이상 낮은 위치에 있다면, 이 요원이 장비한 핫샷 롱라스의 모든 프로필에 중상 무기 규칙을 부여합니다."
+        },
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-PRE",
+      "nameEn": "Aquilon Precursor",
+      "nameKo": "아퀼론 선봉",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Tempestus Dagger",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Lethal 5+",
+                "Ceaseless"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "템페스투스 단검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "지독한 칼잡이",
+          "text": "이 요원이 근접전을 수행할 때마다, 그 절차에서 첫 번째 공격 주사위를 처리 후, 상대의 차례가 되기 전에 즉시 다음 공격 주사위를 처리할 수 있습니다."
+        },
+        {
+          "name": "다이내믹",
+          "text": "이 요원은 사격 또는 근접전 행동을 수행할 때마다, 그 직후 무상 질주 행동을 수행할 수 있습니다. 그 운용 중 돌격 행동을 수행했더라도 질주 행동을 수행할 수 있으나, 그 돌격 행동에서 남은 이동 거리만큼만 질주할 수 있습니다(최대 3”)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-SS",
+      "nameEn": "Aquilon Servo-Sentry",
+      "nameKo": "아퀼론 서보센트리",
+      "stats": {
+        "move": "4\"",
+        "apl": 2,
+        "save": "3+",
+        "wounds": 10
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Volley Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "기계",
+          "text": "이 요원은 질주, 후퇴, 기동, 사격 이외에 다른 어떤 행동도 수행할 수 없습니다. 또한 이 요원은 근접전에서 반격하거나 지원할 수 없으며, 자신의 데이터카드에 없는 그 어떤 무기도 사용할 수 없습니다."
+        },
+        {
+          "name": "포탑",
+          "text": "이 요원은 운용 중에 사격 행동을 두 번 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-TEMPAQ-TRP",
+      "nameEn": "Aquilon Trooper",
+      "nameKo": "아퀼론 대원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lascarbine",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스카빈",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "신속 투입",
+          "text": "첫 번째 전략 페이즈의 전략적 포석. 아군 투입 구역 내에 완전히 들어온 각 아군 템페스투스 아퀼론 대원 요원은 즉시 무상 기동 행동을 수행할 수 있습니다. 단, 그 이동은 아군 투입 구역으로부터 3\" 내에 완전히 들어가는 지점에서 종료해야 합니다."
+        },
+        {
+          "name": "재빠른 착지",
+          "text": "착지 시, 이 요원은 아군 강하 마커로부터 수평으로 4\" 내에 놓을 수 있습니다. 이 규칙은 일반 거리 요건에 우선하여 적용됩니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "정찰 · 수색 섬멸 — 편성 1+1+9 = 11명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 정찰, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 템페스투스 아퀼론 템페스토르 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 핫샷 라스피스톨, 역장 무기\n• 성물 볼트 권총, 체인소드\n• 핫샷 라스카빈, 주먹\n↘ 1 템페스투스 아퀼론 서보센트리, 다음 선택지 중 하나를 골라 장비합니다.\n• 화염방사기\n• 유탄발사기\n• 핫샷 볼리 건\n↘ 9 템페스투스 아퀼론 요원을 다음 목록에서 선택해 편성합니다.\n• 척탄병\n• 총잡이\n• 사수, 멜타 카빈과 주먹 장비\n• 사수, 플라스마 카빈과 주먹 장비\n• 저격수\n• 선봉\n• 대원"
+      },
+      {
+        "type": "rule",
+        "text": "대원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "강하 투입 · 중력완강기",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "강하 투입"
+      },
+      {
+        "type": "rule",
+        "text": "전투 시작 전 템페스투스 아퀼론 킬 팀을 준비할 때, 1/3은 일반적인 방식으로 놓습니다. 그다음 1/3과 또 다른 1/3은 상공에 배치할 수 있습니다. 상공에 배치된 요원은 킬존 위가 아닌 한쪽 바깥에 빼둡니다. 1/3을 상공에 배치할 때마다, 1/3 인원의 일부가 아니라 전체를 배치하며, 강하 마커 하나를 아군의 투입 구역에 완전히 들어가도록 놓습니다."
+      },
+      {
+        "type": "rule",
+        "text": "첫 번째 및 두 번째 전환점의 전략적 포석으로, 각 아군 강하 마커를 수평 방향으로 최대 4\"까지 이동할 수 있습니다. 폐쇄 공간 규칙을 사용하는 킬존(예: 킬존: 갤로다크)에서 이 거리를 측정하고 마커를 이동할 때 벽 지형을 통과할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "화력전 페이즈 시, 상공에 배치된 아군 템페스투스 아퀼론 요원은 일반적인 방식으로 운용됩니다. 이때, 그 요원은 소진되거나 착지할 수 있습니다. 착지하는 요원은 다음 규칙을 따라 킬존 위 놓을 수 있는 지점에 배치합니다. 이후 그 요원은 더 이상 상공에 배치된 상태로 간주하지 않습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 강하 마커로부터 수평 방향으로 3 \" 내에 들어가도록,\n또는 아군 투입 구역 내에 완전히 들어가도록 놓습니다.\n• 적 요원의 장악 범위 내에 들어가지 않도록 놓습니다. 단, 선봉 요원은 적 요원의 장악 범위 내에 놓을 수 있습니다.\n• 베이스의 어떤 부분도 고지 아래에 들어가지 않도록 놓습니다.\n• 원하는 명령을 부여합니다."
+      },
+      {
+        "type": "rule",
+        "text": "그 요원은 기동 행동을 수행한 것으로 간주하며(AP도 이에 따라 소모), 이후 일반적인 방식으로 운용을 계속합니다. 요원은 다음 운용이 종료될 때까지, 또는 전환점이 종료될 때까지(이 중 어느 하나라도 충족 시) 차폐됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "첫 번째 전환점 종료 시까지 절반 미만의 요원을 상공에 배치할 수 있습니다. 즉, 전투 중 첫 번째 전환점이 종료될 때까지, 절반을 초과하는 요원이 킬존에 배치되어야 합니다."
+      },
+      {
+        "type": "rule",
+        "text": "두 번째와 세 번째 전환점 중 요원을 준비 상태로 전환할 때, 강하 마커 하나씩을 제거합니다. 즉, 두 번째 전환점이 종료 될 때, 아직도 상공에 배치된 요원은 무력화됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "중력완강기"
+      },
+      {
+        "type": "lore",
+        "text": "중력완강기는 중력장 내에서 반발력을 발생시킨다. 덕분에 착용자는 어떤 높이에서 강하하든 신속하고도 정연한 속도로 하강한 다음 안전하게 착지할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 템페스투스 아퀼론 요원이 강하할 때마다, 수직 방향 거리는 무시합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

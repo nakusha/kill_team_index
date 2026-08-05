@@ -1,0 +1,772 @@
+{
+  "id": "TYR-RAV",
+  "nameEn": "Raveners",
+  "nameKo": "래버너",
+  "archetype": "Seek & Destroy/Infiltration",
+  "color": "#d5c49a",
+  "size": {
+    "total": 5
+  },
+  "faction": {
+    "id": "TYR",
+    "nameEn": "Tyranids",
+    "nameKo": "타이라니드"
+  },
+  "ploys": [
+    {
+      "id": "TYR-RAV-S-DFB",
+      "name": "Death From Below",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RAVENER operative is fighting:\n• If it’s performed the Burrow action during that activation/counteraction, its melee weapons have the Balanced weapon rule.\n• If it’s on your TUNNEL, its melee weapons have the Ceaseless weapon rule.",
+      "textKo": "근접전 시 Burrow 했으면 Balanced, TUNNEL 위면 Ceaseless 획득"
+    },
+    {
+      "id": "TYR-RAV-S-TL",
+      "name": "Tunnel Lurkers",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly RAVENER operative is on your TUNNEL it’s in cover, unless it’s within 2\" of the active operative. Treat this as cover provided by Light terrain (therefore it’s affected by rules that prevent this, e.g. Seek Light and Vantage terrain).",
+      "textKo": "아군이 TUNNEL 위에 있으면 Light terrain cover 로 취급"
+    },
+    {
+      "id": "TYR-RAV-S-WCE",
+      "name": "Whipcord Emergence",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly RAVENER operative:\n• If that friendly operative has performed the Burrow action during that turning point, you can re-roll one of your defence dice.\n• If that friendly operative is on your TUNNEL, you can re-roll any of your defence dice.",
+      "textKo": "사격당할 때 Burrow 했으면 defence 1개, TUNNEL 위면 전부 재굴림"
+    },
+    {
+      "id": "TYR-RAV-S-WOOS",
+      "name": "Writhe Out Of Sight",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one friendly RAVENER operative in the killzone. That friendly operative can immediately perform a free Burrow action. If it’s within 2\" of your TUNNEL, it can immediately perform a free Fall Back or Reposition action before it does so.",
+      "textKo": "아군 1명이 무료 Burrow, TUNNEL 2\" 내면 그 전에 무료 Reposition"
+    },
+    {
+      "id": "TYR-RAV-T-BS",
+      "name": "Burrowing Strike",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly RAVENER operative performs the Burrow action. Before that operative is removed from the killzone, or after setting it up on your TUNNEL, inflict D3+1 damage on each enemy operative within its control range (roll separately for each). You cannot use this ploy in the Strategy phase, or during a FELLTALON operative’s activation or counteraction if it performs the Toxic Lunge action (and vice versa).",
+      "textKo": "Burrow 수행 시 통제 범위 내 각 적에게 D3+1 데미지"
+    },
+    {
+      "id": "TYR-RAV-T-DF",
+      "name": "Death Frenzy",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly RAVENER operative is incapacitated. Before that operative is removed from the killzone, inflict D3 damage on each enemy operative within its control range (roll separately for each). If that friendly operative is a VENOMSPITTER that’s currently benefitting from the effects of its Distend Dorsal Sac action, inflict 2D3 damage instead.",
+      "textKo": "아군이 무력화될 때 통제 범위 내 각 적에게 D3 데미지"
+    },
+    {
+      "id": "TYR-RAV-T-SE",
+      "name": "Slithering Evasion",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly RAVENER operative’s activation or counteraction, before or after it performs an action. During that activation/ counteraction, that operative can:\n• Perform the Fall Back action for 1 less AP.\n• Perform the Charge action while within control range of an enemy operative, and can leave that operative’s control range to do so (but then normal requirements for that move apply).",
+      "textKo": "활성화 중 Fall Back 이 1 AP 감소, 적 통제 범위에서도 Charge 가능"
+    },
+    {
+      "id": "TYR-RAV-T-STH",
+      "name": "Subterranean Horror",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when an enemy operative is performing the Fight action and selects a friendly RAVENER operative on your TUNNEL to fight against. In the Resolve Attack Dice step of that sequence, you resolve the first attack dice (i.e. defender instead of attacker).",
+      "textKo": "적이 TUNNEL 위 아군과 근접전 시 아군이 먼저 주사위 해결"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "TYR-RAV-CPC",
+      "name": "Chromatospore Camouflage",
+      "textEn": "Whenever an operative is shooting a friendly RAVENER operative, if you can retain any cover saves, you can retain one additional cover save. This isn’t cumulative with improved cover saves from Vantage terrain.",
+      "textKo": "사격받을 때 엄폐 세이브를 1개 더 보유 (Vantage 와 중첩 안 됨)"
+    },
+    {
+      "id": "TYR-RAV-AB",
+      "name": "Acid Blood",
+      "textEn": "Whenever a friendly RAVENER operative is fighting or retaliating, whenever an attack dice inflicts damage on it, roll one D6: on a 5+, inflict 1 damage on the enemy operative in that sequence.",
+      "textKo": "근접전에서 피해를 받을 때마다 D6 굴려 5+ 면 적에게 1 피해"
+    },
+    {
+      "id": "TYR-RAV-MMF",
+      "name": "Metamorphic Flesh",
+      "textEn": "Whenever a friendly RAVENER operative is activated, it regains up to D3 lost wounds.",
+      "textKo": "활성화 시 D3 상처 회복"
+    },
+    {
+      "id": "TYR-RAV-HS",
+      "name": "Heightened Senses",
+      "textEn": "Once per battle, after rolling off to decide initiative, if a friendly RAVENER operative is underground and an enemy operative is within 5\" of your TUNNEL, you can re-roll your dice.",
+      "textKo": "전투당 1회, 지하에 있고 TUNNEL 5\" 안에 적이 있으면 주도권 재굴림"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "TYR-RAV-PRM",
+      "nameEn": "Ravener Prime",
+      "nameKo": "래버너 프라임",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 21
+      },
+      "weapons": [
+        {
+          "name": "Tail Blade",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Rending",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scything Talons & Rending Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "꼬리검",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "파쇄",
+            "무성"
+          ]
+        },
+        {
+          "name": "낫질 갈퀴와 난도질 발톱",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "신경포식성 볏",
+          "text": "마커를 어느 플레이어가 장악했는지 판단할 때, 적 요원이 최소 하나라도 이 요원으로부터 3\" 내에 있다면 마커를 두고 경쟁하는 적 요원들의 APL 총합을 -1만큼 변경된 것으로 간주합니다. 다만 이것은 APL 수치 자체를 변경하는 것은 아니기 때문에 기타 변경 사항은 누적됩니다. 적 요원이 이 요원 으로부터 3\" 내에 있다면 다음을 따릅니다.\n• 상대는 자기 요원이 마커 회수 및 임무 행동을 수행할 때 1AP를 추가로 소모해야 합니다.\n• 상대는 그 요원의 공격 및 방호 주사위를 재굴림할 수 없습니다."
+        },
+        {
+          "name": "시냅스 연결",
+          "text": "전략 포석. 이 요원이 무력화되지 않았다면 D6를 하나 굴려 진행 중인 전환점의 순번과 비교합니다. 그 값에 따라 다음 규칙을 적용합니다.\n• 굴림값이더높음: 플레이어가 1CP를 획득합니다.\n• 순번과 값이 같음: 아무 일도 일어나지 않습니다.\n• 굴림 값이 더 낮음: 이 요원에게 굴림 값만큼 피해를 줍니다."
+        }
+      ]
+    },
+    {
+      "id": "TYR-RAV-FTL",
+      "nameEn": "Ravener Felltalon",
+      "nameKo": "래버너 펠탈론",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Pincer Tail",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Toxic Glands",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 6\"",
+                "Silent",
+                "*Poison"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Toxic Scythes",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+",
+                "Shock",
+                "*Poison"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "집게 꼬리",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "독샘",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 6\"",
+            "무성",
+            "독*"
+          ]
+        },
+        {
+          "name": "맹독낫",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+",
+            "충격",
+            "독*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "독",
+          "text": "공격 주사위 처리 단계 시, 플레이어가 결정적 성공으로 피해를 가하면 그 무기의 대상으로 지정된 요원에게 독 토큰을 부여합니다. 이미 독 토큰을 보유하고 있다면 무시합니다. 독 토큰을 보유한 요원이 운용될 때마다 D3 피해를 입습니다."
+        },
+        {
+          "name": "맹독 찌르기 [1AP]",
+          "text": "이 요원으로부터 2\" 내에 있는 적 요원을 지정합니다. 또는 이 요원이 지하 잠복 상태라면 플레이어의 땅굴에 있는 적 요원을 지정합니다. 그 적 요원에게 D3+2 피해를 가하고, 이미 독 토큰을 보유하고 있지 않다면 독 토큰을 부여합니다. 이 요원은 땅굴에 있는 동안, 이 행동을 수행할 수 있습니다(일반 굴착 규칙보다 우선)."
+        }
+      ]
+    },
+    {
+      "id": "TYR-RAV-TRS",
+      "nameEn": "Ravener Tremorscythe",
+      "nameKo": "래버너 트레머사이드",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Pincer Tail",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scything Talons & Rending Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "집게 꼬리",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "낫질 갈퀴와 난도질 발톱",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "지저 습격",
+          "text": "전환점당 한 번, 적 요원이 행동을 수행하여 2\" 넘게 이동하고 플레이어의 땅굴로부터 2\" 내에서 이동을 종료한 후, 이 요원이 지하 잠복 중이거나, 준비 상태 또는 이번 전환점에 대응을 수행하지 않았다면, 플레이어는 그 적 요원의 운용/대응을 방해하여 다음의 규칙을 적용할 수 있습니다.\n적용하기로 했다면, 이 요원을 운용 또는 대응합니다. 단, 이때 그 적 요원을 대상으로 근접 전 또는 사격을 수행해야 합니다. 다른 적 요원은 대상으로 지정될 수 없습니다. 만약 그렇 게 할 수 없다면 이 요원의 운용/대응이 취소되고 해당 규칙 적용은 취소됩니다. 이 요원의 운용/대응이 종료된 후, 그 적 요원이 이어서 운용/대응이 가능하다면 이를 수행합니다."
+        },
+        {
+          "name": "초감각 사냥꾼",
+          "text": "이 요원은 은폐 명령 상태라도 돌격 행동을 수행할 수 있습니다. 단, 같은 운용/대응 중에 굴착을 수행했어야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "TYR-RAV-VSP",
+      "nameEn": "Ravener Venomspitter",
+      "nameKo": "래버너 베놈스피터",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Pincer Tail",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Venom Blast",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Blast",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Blast 2\"",
+                "*Poison"
+              ]
+            },
+            {
+              "name": "Focused",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1",
+                "*Poison"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scything Talons",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "집게 꼬리",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "맹독탄(폭발)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "폭발 2\"",
+            "독*"
+          ]
+        },
+        {
+          "name": "맹독탄(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1",
+            "독*"
+          ]
+        },
+        {
+          "name": "낫질 갈퀴",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "독",
+          "text": "공격 주사위 처리 단계 시, 플레이어가 결정적 성공으로 피해를 가하면 그 무기의 대상으로 지정된 요원에게 독 토큰을 부여합니다. 이미 독 토큰을 보유하고 있다면 무시합니다. 독 토큰을 보유한 요원이 운용될 때마다 D3 피해를 입습니다."
+        },
+        {
+          "name": "배측낭 팽창 [1AP]",
+          "text": "이 요원이 맹독탄을 사격하기 전까지, 또는 굴착 행동을 수행하기 전까지(어느 하나라도 충족 시), 모든 맹독탄 프로필에 살상 5+ 무기 규칙을 부여하며, 그 무기의 공격 수치를 +1만큼 변경합니다. 또한, 사거리 8\" 무기 규칙이 제거됩니다."
+        }
+      ]
+    },
+    {
+      "id": "TYR-RAV-WAR",
+      "nameEn": "Ravener Warrior",
+      "nameKo": "래버너 워리어",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "5+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Pincer Tail",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scything Talons",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "집게 꼬리",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "무성"
+          ]
+        },
+        {
+          "name": "낫질 갈퀴",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "본능 각성",
+          "text": "이 요원이 체력을 손실한 적 요원, 또는 이번 전환점에 후퇴 행동을 수행한 적 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다 이 요원의 무기에 살상 5+ 무기 규칙을 부여합니다."
+        }
+      ]
+    },
+    {
+      "id": "TYR-RAV-WRK",
+      "nameEn": "Ravener Wrecker",
+      "nameKo": "래버너 레커",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 20
+      },
+      "weapons": [
+        {
+          "name": "Bone Mace",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 3\"",
+                "Piercing 1",
+                "Silent"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scything Talons & Crushing Claws",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "*Crush"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "뼈망치",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 3\"",
+            "관통 1",
+            "무성"
+          ]
+        },
+        {
+          "name": "낫질 갈퀴와 분쇄 발톱",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "분쇄*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "강화 외피",
+          "text": "일반 및 결정적 피해가 4 이상이라면 이 요원 이 받는 피해를 -1만큼 변경합니다."
+        },
+        {
+          "name": "분쇄",
+          "text": "플레이어가 타격할 때마다, 양 플레이어가 모두 롤오프를 합니다. 이 무기의 대상으로 지정된 요원의 체력이 9 이하라면 플레이어의 굴림 값을 +1만큼 변경합니다. 플레이어가 롤오프에서 이겼다면, 그 요원에게 양측 롤오프 값의 차이만큼 추가 피해를 가합니다(최대 3 추가 피해)."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 수색 섬멸 — 편성 1+4 = 5명",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "래버너 킬 팀"
+      },
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 래버너 프라임 요원\n↘ 4 래버너 요원을 다음 목록에서 선택해 편성합니다.\n• 펠탈론\n• 트레머사이드\n• 베놈스피터\n• 워리어\n• 레커"
+      },
+      {
+        "type": "rule",
+        "text": "워리어를 제외하고, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "굴착 · 땅굴 · 포식자의 본능",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "굴착"
+      },
+      {
+        "type": "rule",
+        "text": "래버너는 땅굴에서 튀어나와 무방비한 희생자들을 덮친다. 그런 다음 적이 제대로 대응도 하기 전에 홀연히 사라진다."
+      },
+      {
+        "type": "rule",
+        "text": "전투 전 래버너 킬 팀을 배치할 때, 플레이어의 요원 둘을 정상적으로 배치해야 합니다. 나머지 아군 래버너 요원은 지하 잠복 상태로 배치할 수 있습니다. 이들은 킬존이 아닌 다른 곳에 빼둡니다."
+      },
+      {
+        "type": "rule",
+        "text": "화력전 페이즈에, 지하 잠복 상태로 배치된 아군 래버너 요원은 정상적으로 운용 및 대응을 할 수 있습니다. 아군 래버너 요원이 지하 잠복 중이라면 굴착 이외에는 다른 행동을 수행할 수 없습니다. 전투 종료 시, 지하 잠복 중인 각 아군 래버너 요원은 무력화됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 래버너 요원들은 다음 고유 행동을 수행할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "굴착 1AP"
+      },
+      {
+        "type": "rule",
+        "text": "이 요원이 지하 잠복 중이라면 플레이어의 땅굴 내 배치할 수 있는 위치에 둡니다. 이때 요원은 더는 지하 잠복 상태가 아니며 적 요원의 장악 범위 내에 배치될 수 있습니다. 운용/대응이 종료될 때까지, 이 요원의 이동 수치를 -2\"만큼 변경합니다."
+      },
+      {
+        "type": "rule",
+        "text": "아니면 위의 효과를 처리하는 대신, 이 요원이 킬존에"
+      },
+      {
+        "type": "heading",
+        "text": "있고 플레이어의 땅굴 에 있다면, 킬존에서 제거되어"
+      },
+      {
+        "type": "lore",
+        "text": "지하 잠복 상태로 변경됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "마커를 운반하는 요원은 이 행동을 수행할 수 없습니"
+      },
+      {
+        "type": "rule",
+        "text": "다. 또는, 지하 잠복 중이 아니거나 플레이어의 땅굴에 있지 않아도 마찬가지입니다."
+      },
+      {
+        "type": "heading",
+        "text": "땅굴"
+      },
+      {
+        "type": "lore",
+        "text": "래버너는 먹잇감의 발아래 땅속과 구조물에 광범위한 굴을 판다. 이를 통해 군체 의식의 정예들이 사냥감을 압도하여 기습을 가할 수 있도록 준비한다."
+      },
+      {
+        "type": "rule",
+        "text": "요원 배치 단계 종료 시, 플레이어의 '0'번 땅굴 마커를 킬존 지면에 놓습니다. 마커는 플레이어의 투입 구역에 완전히 들어와 있어야 하며, 아군 킬존 가장자리에 맞닿아야 합니다. 첫 번째부터 네 번째 전환점까지, 전략 포석으로 다음 번호가 새겨진 땅굴 마커 하나를 킬존 지면에 둡니다. 이때, 각 마커는 이전 땅굴 마커로부터 5\" 내에 완전히 들어와야 합니다. 킬존 갤로다크에서는 이 거리를 벽 지형을 통과하여 잴 수 있습니다. 정리하자면, 전투가 진행되면서 플레이어는 순번대로 땅굴 마커(0, 1, 2, 3, 4)를 획득하고, 이 다섯 개의 마커를 두고 나면 전투가 네 번째 전환점을 초과할 때까지 지속되더라도 더는 획득할 수 없습니다."
+      },
+      {
+        "type": "rule",
+        "text": "플레이어의 땅굴 마커, 그리고 숫자가 매겨진 마커들 사이의 공간(예: 0과 1 사이, 1과 2 사이 등)이 플레이어의 땅굴 이 됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "위험 지대 규칙을 사용하는 킬존(예: 킬존: 베타-데시마)에 서는, 이동 제한 규칙을 적용할 때, 위험 지대에 닿는 땅굴 마커 구간은 위험 지대로 간주합니다."
+      },
+      {
+        "type": "rule",
+        "text": "위 예시에서, 요원 A는 0번 마커와 1번 마커 사이에 있으므로 땅굴에 있습니다. 요원 B는 플레이어의 땅굴 마커와 접촉 했기 때문에 마찬가지로 땅굴에 있는 것입니다. 반면 1번 마커와 3번 마커의 순번은 연속되지 않기 때문에 그 사이 구간에 땅굴이 성립되지 않아, 요원 C는 땅굴에서 벗어나 있는 것입니다."
+      },
+      {
+        "type": "heading",
+        "text": "포식자의 본능"
+      },
+      {
+        "type": "rule",
+        "text": "종식되지 않는 갈증에 시달리는 동시에 초적응으로 다져진 반응속 도를 가진 래버너는 근육과 갈퀴, 송곳니의 치명적 잔상만을 남긴다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 래버너 요원이 운용되는 동안, 요원은 근접전 행동을 두 번 수행할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 래버너 요원은 받은 명령과 무관하게 대응할 수 있습니다. 대응할 때 다음을 따릅니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 플레이어는 행동을 수행하기에 앞서 요원의 명령을 변경할 수 있습니다. 또는, 명령을 변경 후 행동을 수행하지 않을 수도 있습니다. 후자도, 이번 전환점에 대응을 수행 한 것으로 간주합니다.\n• 이 대응 도중, 임무 행동을 수행하지 않았다면 무상으로 굴착 행동을 수행할 수 있습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

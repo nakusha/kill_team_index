@@ -1,0 +1,1261 @@
+{
+  "id": "IMP-INB",
+  "nameEn": "Imperial Navy Breachers",
+  "nameKo": "제국 해군 돌파조",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#5a8fc4",
+  "size": {
+    "total": 11
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-INB-S-AO",
+      "name": "Attack Order",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Place your Attack Order marker in the killzone. Whenever a friendly IMPERIAL NAVY BREACHER operative within 3\" of that marker is shooting, fighting or retaliating, its weapons have the Ceaseless weapon rule. In the Ready step of the next Strategy phase, remove that marker. You cannot use this ploy and the Defence Order strategy ploy during the same Strategy phase.",
+      "textKo": "Attack Order 마커 배치, 3\" 내 아군 무기가 Ceaseless 획득"
+    },
+    {
+      "id": "IMP-INB-S-BFCA",
+      "name": "Brace For Counterattack",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting against, fighting against or retaliating against a friendly IMPERIAL NAVY BREACHER operative that’s within your territory or that hasn’t performed the Charge, Fall Back or Reposition action during this turning point, Normal and Critical Dmg of 3 or more inflicts 1 less damage on that friendly operative.",
+      "textKo": "내 영역에 있거나 이동 안 한 아군은 3 이상 Dmg 를 1 줄임"
+    },
+    {
+      "id": "IMP-INB-S-CA",
+      "name": "Close Assault",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly IMPERIAL NAVY BREACHER operative is fighting or shooting an operative within 3\" of it:\n• Add 1 to both Dmg stats of all profiles of its Navis shotguns or Navis heavy shotguns (if any).\n• If you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "3\" 내 적 공격 시 Navis 샷건 Dmg +1, 실패 2개 중 1개를 성공으로"
+    },
+    {
+      "id": "IMP-INB-S-DO",
+      "name": "Defence Order",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Place your Defence Order marker in the killzone. Whenever an operative is shooting a friendly IMPERIAL NAVY BREACHER operative that’s within 3\" of that marker, you can re-roll any of your defence dice results of one result (e.g. results of 2). In the Ready step of the next Strategy phase, remove that marker. You cannot use this ploy and the Attack Order strategy ploy during the same Strategy phase.",
+      "textKo": "Defence Order 마커 배치, 3\" 내 아군 피격 시 방어 주사위 재굴림"
+    },
+    {
+      "id": "IMP-INB-T-BL",
+      "name": "Blitz",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly IMPERIAL NAVY BREACHER operative performs the Shoot or Fight action, and you select an enemy operative within 6\" of it as a valid target or to fight against. If it’s the first friendly operative to perform either of those actions during this turning point, its weapons have the Accurate 1 weapon rule for that action. If it’s the first friendly operative to be activated during this turning point, its weapons also have the Severe weapon rule for that action.",
+      "textKo": "6\" 내 적 공격 시 TP 첫 공격이면 Accurate 1, 첫 활성화면 Severe"
+    },
+    {
+      "id": "IMP-INB-T-DH",
+      "name": "Deck Hand",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly IMPERIAL NAVY BREACHER operative’s activation, before or after it performs an action. That operative can move through one Accessible terrain feature without it counting as an additional 1\" and/or perform a free Operate Hatch action during its activation, and can do so during the Charge or Fall Back action. You cannot use this ploy if the access point has been welded shut (see HATCHCUTTER) unless it’s a friendly HATCHCUTTER operative’s activation.",
+      "textKo": "활성화 중 Accessible 지형 무료 통과 또는 무료 Operate Hatch"
+    },
+    {
+      "id": "IMP-INB-T-LID",
+      "name": "Lock it Down",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly IMPERIAL NAVY BREACHER operative is activated. Select one objective marker. Until the end of the battle or until you use this ploy again (whichever comes first), when determining control of that objective marker, treat that friendly operative’s APL stat as 1 higher. Note this isn’t a change to the APL stat, so any changes are cumulative with this.",
+      "textKo": "목표 마커 1개 선택, 그 마커 통제 시 아군 APL 을 1 높게 취급"
+    },
+    {
+      "id": "IMP-INB-T-OT",
+      "name": "Overwhelm Target",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when you activate either friendly IMPERIAL NAVY BREACHER operative while using the Breach and Clear faction rule. Until the end of that operative’s activation, add 1 to its APL stat.",
+      "textKo": "Breach and Clear 로 활성화할 때 아군 1명이 APL +1"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-INB-RB",
+      "name": "Rebreathers",
+      "textEn": "You can ignore any changes to the APL stat of friendly IMPERIAL NAVY BREACHER operatives, and they aren’t affected by enemy operatives’ Shock weapon rule.",
+      "textKo": "APL 변화를 무시하고 적의 Shock 규칙에 영향받지 않음"
+    },
+    {
+      "id": "IMP-INB-SL",
+      "name": "Slugs",
+      "textEn": "Up to three times per turning point, whenever a friendly IMPERIAL NAVY BREACHER operative is performing the Shoot action and you select a Navis shotgun (long range), you can use this rule. If you do, until the end of that action, improve the Hit stat of that weapon by 1 and add 1 to both of its Dmg stats.",
+      "textKo": "TP당 3회, navis shotgun(long range) 의 Hit +1 및 Dmg +1"
+    },
+    {
+      "id": "IMP-INB-CS",
+      "name": "Combat Stimms",
+      "textEn": "You can ignore any changes to the Move stat of friendly IMPERIAL NAVY BREACHER operatives from being injured.",
+      "textKo": "부상으로 인한 Move 변화를 무시"
+    },
+    {
+      "id": "IMP-INB-SORD",
+      "name": "System Override Device",
+      "textEn": "Once per turning point, one friendly IMPERIAL NAVY BREACHER operative can perform the Operate Hatch action for 1 less AP.",
+      "textKo": "TP당 1회, Operate Hatch 액션을 1AP 적게"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-INB-SGT",
+      "nameEn": "Navis Sergeant-At-Arms",
+      "nameKo": "해군 경위관",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Heirloom Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 8\"",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "가보 기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "사거리 8\"",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "해군 손도끼",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "돌파 명령",
+          "text": "이 요원이 킬존에 있다면, 플레이어가 공격 명령 또는 방어 명령 전략 플로이를 0CP에 사용할 수 있습니다. 이 요원의 운용마다 한 번, 이 요원이 행동을 수행하기 전 또는 후에, 공격 명령 또는 방어 명령 마커가 킬존에 있다면 (전략 플로이 설명 참고), 다음 중 한 가지 규칙을 적용할 수 있습니다.\n• 그 마커를 제거한 다음 다시 놓습니다.\n• 선택한 플로이를 다른 플로이로 변경합니다(예: 공격 명령을 방어 명령으로 전환).\n두 규칙을 모두 적용할 수는 없으며, 플로이를 변경할 때는 CP를 소모하지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-ARM",
+      "nameEn": "Navis Armsman",
+      "nameKo": "해군 함대병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "해군 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        },
+        {
+          "name": "해군 손도끼",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "그룹 운용",
+          "text": "이 요원이 소진되면, 상대가 요원을 운용하기 전에 다른 준비 상태의 아군 제국 해군 돌파조 함대병 요원을 운용해야 합니다(가능한 경우). 두 번째로 운용한 요원도 소진되면 상대가 원래대로 요원을 운용하게 됩니다(즉, 이 규칙을 사용해서 요원을 둘 초과하여 운용할 수 없음). 돌파 및 소탕 팩션 규칙을 사용할 때는 이 규칙을 무시합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-AXE",
+      "nameEn": "Navis Axejack",
+      "nameKo": "해군 도부수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "대담무쌍",
+          "text": "이 요원이 돌격 행동을 수행한 전환점에 공격 주사위 하나로 3 이상의 피해를 입을 때마다, D6 하나를 굴립니다. 값이 5+이면 그 피해를 -1만큼 변경합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-CAT",
+      "nameEn": "Navis C.A.T. Unit",
+      "nameKo": "해군 C.A.T. 유닛",
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": [
+        {
+          "name": "기계",
+          "text": "• 이 요원은 적 요원의 장악 범위 내에 있을 때, 또는 아군 제국 해군 돌파조 해군 측량병 요원이 무력화되었을 때는 운용되거나 행동을 수행할 수 없습니다. 이 요원이 준비 상태일 때에도 전환점이 종료될 수 있습니다.\n• 이 요원은 돌격, 질주, 후퇴, 기동, 감적 이외의 다른 행동을 수행할 수 없습니다.\n• 이 요원은 근접전에서 반격 또는 지원을 수행할 수 없으며, 올라가기 및 도약도 수행할 수 없습니다.\n• 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오.\n• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외한 다른 모든 규칙(예: 색적, 고지)에 우선합니다.\n• 이 요원의 시야를 판단할 때는 미니어처의 어느 부분에서든 선을 그릴 수 있습니다."
+        },
+        {
+          "name": "소모품",
+          "text": "이 요원은 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다 (무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음)."
+        },
+        {
+          "name": "감적 [1AP]",
+          "text": "이 요원의 시야에 들어온 적 요원 하나를 지정합니다. 그 전환점이 종료 될 때까지, 또는 그 적 요원이 이 요원의 시야를 벗어날 때까지, 또는 이 요원이 이 행동을 다시 수행할 때까지(어느 하나라도 충족 시까지), 아군 제국 해군 돌파조 요원이 그 적 요원을 대상으로 사격할 때마다 이 효과를 사용할 수 있습니다. 사용 시 다음 규칙을 적용합니다.\n• 사격하는 아군 요원의 원거리 무기에 저밀도 색적 무기 규칙이 부여됩니다.\n• 적 요원은 차폐할 수 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-END",
+      "nameEn": "Navis Endurant",
+      "nameKo": "해군 팽배수",
+      "stats": {
+        "move": "4\"",
+        "apl": 2,
+        "save": "2+",
+        "wounds": 11
+      },
+      "weapons": [
+        {
+          "name": "Navis Heavy Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Relentless"
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": [
+                "Relentless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shield Bash",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "1/2",
+              "rules": [
+                "Brutal",
+                "*Shield"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "해군 중형 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "혹독"
+          ]
+        },
+        {
+          "name": "해군 중형 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": [
+            "혹독"
+          ]
+        },
+        {
+          "name": "방패 강타",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "1/2",
+          "rules": [
+            "무자비",
+            "방패*"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "돌파벽",
+          "text": "상대가 이 요원의 베이스에 베이스가 닿은 다른 아군 제국 해군 돌파조 요원을 유효 대상으로 지정할 수 없습니다. 단, 이 요원이 교전 명령을 받았으며 조준선에 간섭해야 합니다. 하나를 초과하는 다른 아군 요원의 베이스가 이 요원의 베이스에 닿았다면 이 규칙의 효과가 발생하지 않습니다."
+        },
+        {
+          "name": "방패",
+          "text": "이 요원이 이 무기로 근접전 또는 반격 시, 막기 주사위 하나를 처리되지 않은 성공 두 개(한 개에서 변경) 를 막는 데 할당할 수 있습니다."
+        },
+        {
+          "name": "이탈",
+          "text": "이 요원이 후퇴 행동을 수행하는 데 소모되는 AP가 -1만큼 변경됩니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-GS",
+      "nameEn": "Navis Gheistskull",
+      "nameKo": "해군 가이스트스컬",
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 5
+      },
+      "weapons": [],
+      "weaponsKo": [],
+      "abilitiesKo": [
+        {
+          "name": "기계",
+          "text": "• 이 요원은 출력 증폭, 돌격, 질주, 후퇴, 기동 이외의 다른 행동을 수행할 수 없습니다.\n• 이 요원은 근접전에서 반격 또는 지원을 수행할 수 없습니다.\n• 마커의 장악 여부를 결정할 때마다, 이 요원의 APL 수치가 -1만큼 변경된 것으로 간주합니다. 실제로 APL 수치가 변경된 것은 아니 므로 다른 APL 변경 사항과 누적된다는 점을 유의하십시오.\n• 이 요원은 은폐 명령을 받은 상태로 엄폐 중일 때는 유효 대상으로 지정되지 않습니다. 이는 공격자가 2\" 내에 있을 때를 제외한 다른 모든 규칙(예: 색적, 고지)에 우선합니다."
+        },
+        {
+          "name": "소모품",
+          "text": "이 요원은 제거/섬멸 작전에서 상대의 기록에 집계되지 않습니다(무력화될 때와 게임 시작 시 플레이어의 요원 숫자를 셀 때). 요원이 ‘탈출’ 또는 ‘생존’하거나 적 요원에게 무력화되어야 하는 승리 및 VP 획득 요건에도 마찬가지로 영향을 주지 않습니다(이 요원은 탈출/생존/무력화 시 그러한 요건을 충족한 요원 수에 집계되지 않음)."
+        },
+        {
+          "name": "출력 증폭 [1AP]",
+          "text": "이번 운용이 종료될 때까지, 이 요원의 이동 수치를 +6\"만큼 변경합니다. 이 요원은 이 행동을 전투당 한 번만 수행할 수 있으며, 첫 번째 전환점에는 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-GRN",
+      "nameEn": "Navis Grenadier",
+      "nameKo": "해군 척탄병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Demolition Charge",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Range 3\"",
+                "Blast 2\"",
+                "Heavy (Reposition only)",
+                "Limited 1",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Frag Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Range 6\"",
+                "Blast 2\"",
+                "Saturate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Krak Grenade",
+          "type": "E",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 6\"",
+                "Piercing 1",
+                "Saturate"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "폭약",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "사거리 3\"",
+            "폭발 2\"",
+            "중화기(기동 한정)",
+            "한도 1",
+            "관통 1",
+            "포화"
+          ]
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        },
+        {
+          "name": "해군 손도끼",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "척탄병",
+          "text": "이 요원은 세열, 크랙, 섬광 수류탄(공용 장비 참고)을 사용할 수 있습니다. 사용 시, 이 장비의 사용 한도가 차감되지 않습니다(즉, 다른 요원이 수류탄을 사용 시 차감과 무관). 이 요원이 세열 또는 크랙 수류탄을 사용할 때마다, 그 무기의 명중 요구치를 1만큼 완화합니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-GNR",
+      "nameEn": "Navis Gunner",
+      "nameKo": "해군 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Las-Volley",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Dash only)",
+                "Rending",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "해군 라스볼리(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "해군 라스볼리(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(질주 한정)",
+            "파쇄",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-INB-HC",
+      "nameEn": "Navis Hatchcutter",
+      "nameKo": "해군 시설개조병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Autopistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainfist",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "5/6",
+              "rules": [
+                "Brutal",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "기관권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "체인피스트",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "5/6",
+          "rules": [
+            "무자비",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "지점 돌파 [1AP]",
+          "text": "이 요원의 장악 범위 내에 있으며 동시에 이 요원의 장악 범위 내에 있는 지형지물과 최대한 가까운 위치에 돌파 마커 하나를 둡니다. 그 마커로부터 1\" 내에 있는 요원은 그 지형지물 중 두께가 1\" 미만인 부위를 통과 가능 지형으로 간주합니다.\n요원은 적 요원의 장악 범위 내에 있는 동안, 또는 지형지물이 요원의 장악 범위 내에 들어가지 않은 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-SRV",
+      "nameEn": "Navis Surveyor",
+      "nameKo": "해군 측량병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "해군 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        },
+        {
+          "name": "해군 손도끼",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "원격 조종 [1AP]",
+          "text": "아군 제국 해군 돌파조 C.A.T. 유닛 하나를 지정합니다. 그 요원이 즉시 무상 행동을 수행할 수 있습니다. 단, 그 행동 중 3\" 넘게 이동할 수는 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있을 때, 또는 아군 제국 해군 돌파조 C.A.T. 유닛이 킬존에 없을 때 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-INB-VJ",
+      "nameEn": "Navis Void-Jammer",
+      "nameKo": "해군 공허교란수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Gheistskull Detonator",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Blast 1\"",
+                "Lethal 4+",
+                "Limited 1",
+                "Silent",
+                "Stun",
+                "*Detonate"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Navis Shotgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Close Range",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            },
+            {
+              "name": "Long Range",
+              "attacks": "4",
+              "hit": "5+",
+              "damage": "1/2",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Navis Hatchet",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "가이스트스컬 기폭 장치",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "폭발 1\"",
+            "살상 4+",
+            "한도 1",
+            "무성",
+            "혼미",
+            "기폭*"
+          ]
+        },
+        {
+          "name": "해군 산탄총(근거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "해군 산탄총(장거리)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "5+",
+          "damage": "1/2",
+          "rules": []
+        },
+        {
+          "name": "해군 손도끼",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "기폭",
+          "text": "유효 대상을 선택하지 않습니다. 대신 아군 제국 해군 돌파조 가이스트스컬 요원이 항상 주 대상이 되며, 엄폐 하거나 차폐될 수 없습니다. 그 요원이 킬존에 없다면 이 무기를 선택할 수 없습니다."
+        },
+        {
+          "name": "간섭 펄스 [1AP]",
+          "text": "아군 가이스트스컬 요원의 시야에 들어오며 8\" 내에 있는 적 요원 하나를 지정하고 D6 하나를 굴립니다 (그 적 요원이 그 아군 가이스트스컬 요원의 유효 대상이라면 굴림 값을 +1만큼 변경). 값이 3+이면 그 적 요원은 다음 운용이 종료될 때까지 APL 수치가 -1만큼 변경됩니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안, 또는 아군 가이스트스컬 요원이 킬존에 없을 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 수색 섬멸 — 편성 1+10 = 11명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 제국 해군 돌파조 경위관 요원, 다음 선택지를 장비합니다.\n• 해군 산탄총과 해군 손도끼\n또는 다음 각 선택지에서 하나씩 골라 장비합니다.\n• 볼트 권총 또는 가보 기관권총\n• 체인소드 또는 역장 무기"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 10 제국 해군 돌파조 요원을 다음 목록에서 선택해 편성합니다.\n• 함대병\n• 도부수\n• C.A.T. 유닛\n• 팽배수\n• 가이스트스컬\n• 척탄병\n• 사수, 해군 라스볼리, 개머리판\n• 사수, 멜타건, 개머리판\n• 사수, 플라스마 건, 개머리판"
+      },
+      {
+        "type": "rule",
+        "text": "• 시설개조병\n• 측량병\n• 공허교란수"
+      },
+      {
+        "type": "rule",
+        "text": "함대병 요원을 제외하면 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 사수 요원은 최대 둘 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "가이스트스컬 요원은 공허교란수 요원이 포함되어야 편성할 수 있습니다. C.A.T. 유닛 요원은 측량병 요원이 포함되어야 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들은 각각 편성 단위의 절반만 차지합니다. 즉, 두 요원을 동시에 편성하면 인원 계산 시 요원 하나로 간주됩니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "공허 장갑복 · 돌파 및 소탕",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "공허 장갑복"
+      },
+      {
+        "type": "rule",
+        "text": "제국 해군 함대병은 공허 환경에 알맞은 장갑복을 착용하고 있어 중력이나 대기가 없는 환경에서도 전투를 수행할 수 있다. 이러한 장갑복은 폭발이나 불길로부터도 착용자를 보호한다."
+      },
+      {
+        "type": "rule",
+        "text": "요원이 아군 제국 해군 돌파조 요원을 대상으로 사격할 때마다, 그 절차에 사용된 원거리 무기가 폭발 또는 격류 무기 규칙을 보유하고 있다면(소사 프로필을 보유한 무기 제외), 그 아군 요원의 방어 주사위 하나를 재굴림할 수 있습니다. 그 아군 요원이 척탄병이라면 방어 주사위를 최대 두 개 재굴림할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 제국 해군 돌파조 요원은 그 절차에서 사격 대상이 되지 않은 한 x \" 궤멸 x 무기 규칙(즉, 거리 요건이 있는 궤멸 규칙)에 영향을 받지 않습니다."
+      },
+      {
+        "type": "heading",
+        "text": "돌파 및 소탕"
+      },
+      {
+        "type": "rule",
+        "text": "체계적, 전문적으로 움직이며 노련한 제국 해군 돌파조는 팀 단위로 기동하면서 적 공허선, 스페이스 헐크, 궤도 정거장 등의 공간을 돌파하고 소탕한다."
+      },
+      {
+        "type": "rule",
+        "text": "전환점당 한 번, 준비 상태의 아군 제국 해군 돌파조 요원 운용 시 이 규칙을 사용할 수 있습니다. 사용 시, 그 요원의 시야에 들어오며 3\" 내에 있는 준비 상태의 아군 제국 해군 돌파조 요원을 지정합니다. 앞서 운용하는 아군 요원이 소진되면, 지정한 아군 요원을 상대보다 먼저 운용합니다. 그 요원이 소진 되면 상대는 원래대로 요원을 운용할 수 있습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

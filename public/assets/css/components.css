@@ -1,0 +1,723 @@
+/* 카드 · 스탯블록 · 무기표 · 플로이 · 가이드 블록. 토큰은 tokens.css 참조. */
+
+/* ─── 히어로 ──────────────────────────────────────────────── */
+
+.hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1.5rem;
+  padding-block: clamp(2.5rem, 1.5rem + 6vw, 7rem) clamp(2rem, 1.5rem + 3vw, 4rem);
+}
+
+.hero__title {
+  font-size: var(--text-hero);
+  text-transform: uppercase;
+}
+
+.hero__title em {
+  display: block;
+  font-style: normal;
+  color: var(--accent);
+}
+
+.hero__lede {
+  max-width: 52ch;
+  color: var(--text-muted);
+}
+
+.hero__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 clamp(1.5rem, 1rem + 2vw, 3.5rem);
+  margin-top: 0.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.hero__stat {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+  padding-block: 0.5rem;
+}
+
+.hero__stat b {
+  font-family: var(--font-display);
+  font-size: clamp(1.75rem, 1.2rem + 2vw, 3rem);
+  font-weight: 800;
+  line-height: 1;
+  color: var(--text-bone);
+  font-variant-numeric: tabular-nums;
+}
+
+.hero__stat span {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* ─── 검색 ────────────────────────────────────────────────── */
+
+.search {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  padding: 0.9rem 1.1rem;
+  border: 1px solid var(--line-hard);
+  background: var(--surface-inset);
+  transition: border-color var(--duration-fast);
+}
+
+.search:focus-within {
+  border-color: var(--accent);
+}
+
+.search label {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.search input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  color: var(--text-bone);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+}
+
+.search input:focus {
+  outline: none;
+}
+
+.search input::placeholder {
+  color: var(--text-faint);
+}
+
+/* ─── 팩션 카드 ───────────────────────────────────────────── */
+
+.faction-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 310px), 1fr));
+  gap: 1px;
+  background: var(--line-soft);
+  border: 1px solid var(--line-soft);
+}
+
+.faction-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+  padding: var(--space-card);
+  background: var(--surface-deep);
+  transition: background var(--duration-normal) var(--ease-out-expo),
+    transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.faction-card:hover,
+.faction-card:focus-visible {
+  background: var(--surface-raised);
+  transform: translateY(-3px);
+}
+
+.faction-card__id {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.28em;
+  color: var(--text-faint);
+}
+
+.faction-card__name {
+  font-size: clamp(1.5rem, 1.2rem + 1.2vw, 2.15rem);
+  text-transform: uppercase;
+}
+
+.faction-card__name small {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  color: var(--text-faint);
+}
+
+/* 소속 킬팀 색 스트립 — 팩션마다 카드 인상이 달라진다 */
+.faction-card__swatches {
+  display: flex;
+  gap: 3px;
+  height: 26px;
+}
+
+.faction-card__swatches i {
+  flex: 1;
+  background: var(--swatch);
+  transform-origin: bottom;
+  transition: transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.faction-card:hover .faction-card__swatches i {
+  transform: scaleY(1.35);
+}
+
+.faction-card__meta {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: auto;
+  padding-top: 0.9rem;
+  border-top: 1px solid var(--line-soft);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.faction-card__meta b {
+  font-size: 1.5rem;
+  font-weight: 800;
+  color: var(--text-bone);
+}
+
+/* ─── 킬팀 카드 ───────────────────────────────────────────── */
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 330px), 1fr));
+  gap: 1.1rem;
+}
+
+.team-card {
+  --corner-cut: 16px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  padding: var(--space-card);
+  padding-left: calc(var(--space-card) + 6px);
+  background: var(--surface-deep);
+  box-shadow: inset 6px 0 0 var(--accent);
+  transition: background var(--duration-normal) var(--ease-out-expo),
+    box-shadow var(--duration-normal) var(--ease-out-expo),
+    transform var(--duration-normal) var(--ease-out-expo);
+}
+
+.team-card:hover,
+.team-card:focus-visible {
+  background: var(--surface-raised);
+  box-shadow: inset 6px 0 0 var(--accent), var(--shadow-lift);
+  transform: translateY(-4px);
+}
+
+.team-card__id {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.22em;
+  color: var(--accent);
+}
+
+.team-card__name {
+  font-size: 1.4rem;
+  line-height: 1.12;
+}
+
+.team-card__name small {
+  display: block;
+  margin-top: 0.3rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--text-faint);
+}
+
+.team-card__brief {
+  font-size: var(--text-small);
+  color: var(--text-muted);
+}
+
+.team-card__counts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-top: auto;
+  padding-top: 0.85rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+/* ─── 배지 ────────────────────────────────────────────────── */
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.2rem 0.55rem;
+  border: 1px solid var(--line-hard);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.badge b {
+  color: var(--text-bone);
+  font-variant-numeric: tabular-nums;
+}
+
+.badge--accent {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.badge--strategy {
+  border-color: var(--hazard);
+  color: var(--hazard);
+}
+
+.badge--firefight {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+.badge--ranged {
+  border-color: var(--signal);
+  color: var(--signal);
+}
+
+.badge--melee {
+  border-color: var(--blade);
+  color: var(--blade);
+}
+
+/* ─── 팀 상세 헤더 ────────────────────────────────────────── */
+
+.dossier {
+  position: relative;
+  padding: clamp(1.5rem, 1rem + 3vw, 3rem);
+  margin-top: 1rem;
+  background:
+    linear-gradient(160deg, color-mix(in oklab, var(--accent) 20%, transparent), transparent 55%),
+    var(--surface-deep);
+  border: 1px solid var(--line-hard);
+}
+
+.dossier__title {
+  font-size: var(--text-title);
+  text-transform: uppercase;
+}
+
+.dossier__title small {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: clamp(0.85rem, 0.8rem + 0.4vw, 1.05rem);
+  font-weight: 400;
+  letter-spacing: 0.06em;
+  text-transform: none;
+  color: var(--accent);
+}
+
+.dossier__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1.4rem;
+}
+
+/* ─── 요원 ────────────────────────────────────────────────── */
+
+.op-list {
+  display: grid;
+  gap: 1.25rem;
+}
+
+.operative {
+  border: 1px solid var(--line-soft);
+  background: var(--surface-deep);
+}
+
+.operative__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem var(--space-card);
+  border-bottom: 1px solid var(--line-soft);
+  background: var(--surface-inset);
+}
+
+.operative__name {
+  font-size: 1.2rem;
+}
+
+.operative__name small {
+  display: block;
+  margin-top: 0.2rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  font-weight: 400;
+  color: var(--text-faint);
+}
+
+/* 스탯 — 모노 숫자 크게, 라벨 작게 */
+.statblock {
+  display: flex;
+  gap: 1px;
+  background: var(--line-soft);
+  border: 1px solid var(--line-soft);
+}
+
+.statblock div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.1rem;
+  min-width: 58px;
+  padding: 0.4rem 0.6rem;
+  background: var(--surface-raised);
+}
+
+.statblock b {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-bone);
+  font-variant-numeric: tabular-nums;
+}
+
+.statblock span {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.12em;
+  color: var(--text-faint);
+}
+
+.operative__body {
+  padding: var(--space-card);
+  display: grid;
+  gap: 1.25rem;
+}
+
+.subhead {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.6rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.subhead::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: var(--line-soft);
+}
+
+/* ─── 무기표 ──────────────────────────────────────────────── */
+
+.table-scroll {
+  overflow-x: auto;
+}
+
+.wtable {
+  width: 100%;
+  min-width: 520px;
+  border-collapse: collapse;
+  font-size: var(--text-small);
+}
+
+.wtable th {
+  padding: 0.45rem 0.6rem;
+  border-bottom: 1px solid var(--line-hard);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  font-weight: 500;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  text-align: left;
+  color: var(--text-faint);
+  white-space: nowrap;
+}
+
+.wtable td {
+  padding: 0.5rem 0.6rem;
+  border-bottom: 1px solid var(--line-soft);
+  vertical-align: top;
+}
+
+.wtable tr:last-child td {
+  border-bottom: 0;
+}
+
+.wtable tbody tr:hover td {
+  background: var(--surface-raised);
+}
+
+.wtable .num {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+  color: var(--text-bone);
+  white-space: nowrap;
+}
+
+.wtable .wname {
+  color: var(--text-bone);
+}
+
+/* 이름 뒤에 붙는 영문 — 한글(영어) 병기용 */
+.name-en {
+  margin-left: 0.35em;
+  font-family: var(--font-mono);
+  font-size: 0.85em;
+  font-weight: 400;
+  letter-spacing: 0.01em;
+  color: var(--text-faint);
+}
+
+.wtable .wrules {
+  color: var(--text-muted);
+}
+
+/* ─── 능력 · 플로이 · 장비 ────────────────────────────────── */
+
+.entry-list {
+  display: grid;
+  gap: 0.9rem;
+}
+
+.entry {
+  padding: 0.95rem var(--space-card);
+  border-left: 3px solid var(--line-hard);
+  background: var(--surface-deep);
+  transition: border-color var(--duration-fast), background var(--duration-fast);
+}
+
+.entry:hover {
+  border-left-color: var(--accent);
+  background: var(--surface-raised);
+}
+
+.entry--strategy:hover {
+  border-left-color: var(--hazard);
+}
+
+.entry--firefight:hover {
+  border-left-color: var(--signal);
+}
+
+.entry__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  margin-bottom: 0.45rem;
+}
+
+.entry__name {
+  font-family: var(--font-display);
+  font-size: 1.02rem;
+  font-weight: 700;
+  color: var(--text-bone);
+}
+
+.entry__ko {
+  color: var(--text-body);
+}
+
+.entry__en {
+  margin-top: 0.35rem;
+  font-size: var(--text-small);
+  color: var(--text-faint);
+}
+
+/* ─── 용어 칩 ─────────────────────────────────────────────── */
+
+.wrules .term + .term {
+  margin-left: 0.35rem;
+}
+
+.term {
+  position: relative;
+  display: inline;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  text-align: left;
+}
+
+/* 뜻풀이가 있는 용어에만 밑줄 신호를 준다 */
+button.term > .term__label {
+  border-bottom: 1px dashed var(--line-hard);
+  cursor: help;
+  transition: color var(--duration-fast), border-color var(--duration-fast);
+}
+
+button.term:hover > .term__label,
+button.term.is-open > .term__label {
+  color: var(--accent);
+  border-bottom-color: var(--accent);
+}
+
+.term--inline > .term__label {
+  color: var(--text-bone);
+}
+
+/*
+ * 팝오버는 뷰포트 기준(fixed)으로 띄운다.
+ * 무기표가 가로 스크롤 컨테이너 안에 있어 absolute 로는 잘리기 때문이다.
+ * 실제 좌표는 store.js 의 positionPop() 이 넣는다.
+ */
+.term__pop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 40;
+  display: none;
+  width: max-content;
+  max-width: min(30rem, 78vw);
+  padding: 0.85rem 1rem;
+  border: 1px solid var(--accent);
+  background: var(--surface-raised);
+  box-shadow: var(--shadow-deep);
+  white-space: normal;
+  text-align: left;
+}
+
+button.term:hover > .term__pop,
+button.term:focus-visible > .term__pop,
+button.term.is-open > .term__pop {
+  display: block;
+}
+
+.term__title {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-family: var(--font-display);
+  font-size: 0.95rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: var(--accent);
+}
+
+.term__body {
+  display: block;
+  font-size: var(--text-small);
+  line-height: 1.6;
+  color: var(--text-body);
+}
+
+.term__en {
+  display: block;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line-soft);
+  font-size: var(--text-micro);
+  line-height: 1.55;
+  color: var(--text-faint);
+}
+
+.credit {
+  margin-bottom: 1.25rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  line-height: 1.6;
+  color: var(--text-faint);
+}
+
+/* ─── 편성 가이드 ─────────────────────────────────────────── */
+
+.guide {
+  display: grid;
+  gap: 0.65rem;
+  padding: var(--space-card);
+  border: 1px solid var(--line-soft);
+  background: var(--surface-deep);
+}
+
+.guide__heading {
+  margin-top: 0.6rem;
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.guide__text {
+  white-space: pre-wrap;
+  font-size: var(--text-small);
+  color: var(--text-body);
+}
+
+/* ─── 목차(팀 상세 내부 이동) ─────────────────────────────── */
+
+.jumpbar {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-block: 0.85rem;
+  background: color-mix(in oklab, var(--surface-void) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.jumpbar a {
+  padding: 0.3rem 0.7rem;
+  border: 1px solid var(--line-hard);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  transition: color var(--duration-fast), border-color var(--duration-fast);
+}
+
+.jumpbar a:hover {
+  color: var(--accent);
+  border-color: var(--accent);
+}
+
+.empty {
+  padding: 2rem 0;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+}
+
+@media (max-width: 640px) {
+  .operative__head {
+    align-items: flex-start;
+  }
+
+  .statblock {
+    width: 100%;
+  }
+
+  .statblock div {
+    flex: 1;
+    min-width: 0;
+  }
+}

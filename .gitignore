@@ -1,0 +1,13 @@
+# 원본 캐시 — 저장소에 둘 필요 없다. tools/update.mjs 가 다시 받는다.
+tools/.cache/
+tools/.dry-run-backup/
+
+# OS · 편집기
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# 검증 산출물
+.playwright-mcp/
+*.png

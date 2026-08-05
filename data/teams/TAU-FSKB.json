@@ -1,0 +1,1061 @@
+{
+  "id": "TAU-FSKB",
+  "nameEn": "Farstalker Kinband",
+  "nameKo": "먼길밟이 혈족단",
+  "archetype": "Infiltration/Recon",
+  "color": "#b2dd8e",
+  "size": {
+    "total": 12
+  },
+  "faction": {
+    "id": "TAU",
+    "nameEn": "T’au Empire",
+    "nameKo": "타우"
+  },
+  "ploys": [
+    {
+      "id": "TAU-FSKB-S-BND",
+      "name": "Bound",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "During each friendly FARSTALKER KINBAND operative’s activation, you can ignore the first vertical distance of 2\" they move during one climb up.",
+      "textKo": "아군 KINBAND 활성화 중 climb up 첫 2\" 수직 이동 무시"
+    },
+    {
+      "id": "TAU-FSKB-S-CT",
+      "name": "Cut-Throats",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Add 1 to the Atk stat of friendly FARSTALKER KINBAND operatives’ melee weapons (to a maximum of 5).",
+      "textKo": "아군 KINBAND 근접 무기의 Atk +1 (최대 5)"
+    },
+    {
+      "id": "TAU-FSKB-S-PR",
+      "name": "Prey",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly FARSTALKER KINBAND operative is shooting during an activation in which it hasn’t performed the Charge, Fall Back or Reposition action, its ranged weapons have the Balanced and Severe weapon rules; if the weapon already has the Balanced weapon rule, it has the Ceaseless and Severe weapon rules instead. Note that operative isn’t restricted from performing those actions after shooting.",
+      "textKo": "Charge/Fall Back/Reposition 안 한 활성화 사격 시 Balanced+Severe"
+    },
+    {
+      "id": "TAU-FSKB-S-RG",
+      "name": "Rogue",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly FARSTALKER KINBAND operative:\n• Ignore the Saturate weapon rule.\n• If you can retain any cover saves, you can retain one additional cover save, or you can retain one cover save as a critical success instead. This isn’t cumulative with improved cover saves from Vantage terrain.",
+      "textKo": "아군이 사격당할 때 Saturate 무시, cover save 1개 추가 보유"
+    },
+    {
+      "id": "TAU-FSKB-T-PCH",
+      "name": "Poach",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly FARSTALKER KINBAND operative’s activation. Until the end of that activation, that operative doesn’t have to control a marker to perform the Pick Up Marker or mission actions that usually require this (this takes precedence over that action’s conditions – it only needs to contest the marker).",
+      "textKo": "아군이 마커 통제 없이 경합만으로 Pick Up Marker/미션 액션 수행"
+    },
+    {
+      "id": "TAU-FSKB-T-SAMB",
+      "name": "Savage Ambush",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during the Fight action when a ready friendly FARSTALKER KINBAND operative that has Light or Heavy terrain within its control range is selected to fight against. In the Resolve Attack Dice step of that sequence, you resolve the first attack dice (i.e. defender instead of attacker).",
+      "textKo": "통제 범위에 Light/Heavy 지형 둔 아군이 근접전 당하면 방어자가 먼저 해결"
+    },
+    {
+      "id": "TAU-FSKB-T-SA",
+      "name": "Slip Away",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly FARSTALKER KINBAND operative's activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+      "textKo": "아군이 활성화 중 Fall Back 을 1 AP 적게 수행"
+    },
+    {
+      "id": "TAU-FSKB-T-VFTKB",
+      "name": "Vengeance For The Kinband",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly FARSTALKER KINBAND operative is incapacitated by an enemy operative. Until the end of the battle, whenever another friendly FARSTALKER KINBAND operative is shooting against, fighting against or retaliating against that enemy operative, that other friendly operative's weapons have the Relentless weapon rule. You cannot use this ploy again during the battle until that enemy operative is incapacitated.",
+      "textKo": "아군이 무력화되면 그 적을 상대하는 아군 무기가 Relentless 획득"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "TAU-FSKB-PS",
+      "name": "Piercing Shot",
+      "textEn": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Piercing 1 weapon rule. You cannot use the Piercing Shot and Toxin Shot rule during the same action.",
+      "textKo": "TP당 1회, 크루트 라이플 · 스캐터건류에 Piercing 1"
+    },
+    {
+      "id": "TAU-FSKB-TS",
+      "name": "Toxin Shot",
+      "textEn": "Once per turning point, when a friendly FARSTALKER KINBAND operative is performing the Shoot action and you select a Kroot rifle, Kroot scattergun or dual Kroot pistols (focused), you can use this rule. If you do, until the end of that action, that weapon has the Lethal 5+ and Stun weapon rules. You cannot use the Piercing Shot and Toxin Shot rule during the same action.",
+      "textKo": "TP당 1회, 크루트 라이플 · 스캐터건류에 Lethal 5+ 와 Stun"
+    },
+    {
+      "id": "TAU-FSKB-MEAT",
+      "name": "Meat",
+      "textEn": "Once per turning point, when a friendly FARSTALKER KINBAND operative (excluding HOUND) is activated, if it’s not within control range of enemy operatives, you can use this rule. If you do, that friendly operative regains up to D3+1 lost wounds.",
+      "textKo": "TP당 1회, 활성화 시 D3+1 상처 회복 (HOUND 제외)"
+    },
+    {
+      "id": "TAU-FSKB-TRP",
+      "name": "Trophy",
+      "textEn": "Once per battle, during a friendly FARSTALKER KINBAND operative’s activation (excluding HOUND), before or after it performs an action, if it’s not within control range of enemy operatives, you can use this rule. If you do, add 1 to that friendly operative’s APL stat until the end of its activation.",
+      "textKo": "전투당 1회, 활성화 종료까지 APL +1 (HOUND 제외)"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "TAU-FSKB-KB",
+      "nameEn": "Kroot Kill-Broker",
+      "nameKo": "크룻 살해중개꾼",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Kroot Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Pulse Weapon",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Ritual Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "펄스 무기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "의식용 도검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "살상 지시",
+          "text": "전략 포석(이 요원이 킬존에 있을 시 사용 가능). 이번 전환점의 사냥 목표로 삼을 적 요원을 하나 지정합니다. 아군 먼길밟이 혈족단 요원이 사냥 목표를 대상으로 사격, 근접전, 반격을 수행할 때마다, 그 아군 요원의 무기에 균형 무기 규칙이 부여됩니다. 사냥 목표가 무력화될 때마다, 다른 적 요원을 그 전환점의 새 사냥 목표로 지정할 수 있습니다(이 방식으로 이번 전환점 도중 계속해서 새 사냥 목표를 지정 가능)."
+        },
+        {
+          "name": "승리의 괴성",
+          "text": "사냥감이 무력화될 때마다, 이 요원의 6\" 내에 있는 아군 먼길밟이 혈족단 요원을 하나 지정할 수 있습니다. 전투가 종료될 때까지, 지정된 요원의 무기에 균형 무기 규칙이 부여됩니다. 각 아군 요원은 전투당 한 번만 이 규칙의 대상으로 지정될 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-BH",
+      "nameEn": "Kroot Bow-Hunter",
+      "nameKo": "크룻 활사냥꾼",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Accelerator Bow",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Fused Arrow",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Glide Arrow",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Silent"
+              ]
+            },
+            {
+              "name": "Voltaic Arrow",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Blast 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "가속궁(뇌관 화살)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "가속궁(활공 화살)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "무성"
+          ]
+        },
+        {
+          "name": "가속궁(전류 화살)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "폭발 1\""
+          ]
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "활력 촉진 [1AP]",
+          "text": "• 전환점이 종료될 때까지, 또는 이 요원이 가속궁으로 사격했을 때까지(어느 하나라도 충족 시), 이 요원의 모든 가속궁 프로필에 살상5+ 무기 규칙이 부여됩니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-CB",
+      "nameEn": "Kroot Cold-Blood",
+      "nameKo": "크룻 냉혈한",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Kroot Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "강건함",
+          "text": "공격 주사위 하나가 이 요원에게 결정적 피해를 가할 때마다, 대신 일반 피해를 가하도록 선택할 수 있습니다."
+        },
+        {
+          "name": "냉혈",
+          "text": "이 요원이 체력 손실 상태의 적 요원을 대상으로 사격, 근접전, 반격을 수행할 때마다, 이 요원의 무기에 살상5+ 무기 규칙이 부여됩니다. 그 적 요원이 부상 상태라면, 파쇄 무기 규칙 또한 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-CS",
+      "nameEn": "Kroot Cut-Skin",
+      "nameKo": "크룻 살점썰이",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Cut-Skin's Blades",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "살점썰이의 검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "집요",
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "악랄한 결투사",
+          "text": "이 요원이 근접전 또는 반격을 수행할 때마다, 상대가 버린 실패 주사위 하나당 그 공격 절차의 적 요원에게 1 피해를 가합니다."
+        },
+        {
+          "name": "흉포한 습격",
+          "text": "이 요원이 각 운용 도중 처음으로 근접전 행동을 수행할 때, 그 절차에 이 요원과 적 요원 중 누구도 무력화되지 않았다면 이후 이 요원이 즉시 무상 근접전 행동을 수행할 수 있습니다. 단, 그 행동에서는 다른 적 요원을 지정해 근접전을 수행할 수 없습니다(반드시 앞서 공격 대상으로 지정한 적 요원이 근접전 대상으로 유효해야 함). 이는 행동 제약에 우선합니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-HGNR",
+      "nameEn": "Kroot Heavy Gunner",
+      "nameKo": "크룻 중화기 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Dvorgite Skinner",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\"",
+                "Heavy (Reposition only)",
+                "Piercing 2",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Londaxi Tribalest",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "4+",
+              "damage": "4/5",
+              "rules": [
+                "Heavy (Reposition only)",
+                "Piercing 1",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "드보르가이트 무두질기",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\"",
+            "중화기(기동 한정)",
+            "관통 2",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "론다크시 삼중쇠뇌",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "4+",
+          "damage": "4/5",
+          "rules": [
+            "중화기(기동 한정)",
+            "관통 1",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "TAU-FSKB-HND",
+      "nameEn": "Kroot Hound",
+      "nameKo": "크룻 사냥개",
+      "stats": {
+        "move": "8\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 7
+      },
+      "weapons": [
+        {
+          "name": "Ripping Fangs",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "찢어발기는 송곳니",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "짐승",
+          "text": "이 요원은 돌격, 질주, 후퇴, 근접전, 수집, 수비, 기동, 마커 회수, 마커 배치 이외의 다른 행동을 수행할 수 없으며, 자신의 데이터카드에 명시되지 않은 무기를 사용할 수 없습니다."
+        },
+        {
+          "name": "사나운 성미",
+          "text": "적 요원이 근접전 행동을 수행할 때마다, 이 요원이 근접전 상대로 유효하다면 강제로 이 요원을 지정하게 할 수 있습니다. 적 요원이 이 요원으로부터 3\" 내에 있는 다른 아군 먼길밟이 혈족단 요원의 장악 범위 내에서 돌격 행동을 종료할 때마다, 이 요원이 어느 적 요원의 장악 범위에도 들어가지 않은 상태라면, 이 요원은 즉시 무상으로 돌격 행동을 수행할 수 있습니다(그러기 위해 교전 명령으로 바꿀 수 있음). 단, 그 이동은 반드시 그 적 요원의 장악 범위 내에서 종료해야 합니다."
+        },
+        {
+          "name": "수집 [1AP]",
+          "text": "• 이 요원으로 무상 질주 또는 기동 행동을 한 번 수행합니다. 그 이동 도중 이 요원으로 무상 마커 회수 또는 마커 배치 행동을 수행할 수 있으며(행동 도중 마커 장악 여부 결정 가능), 이후 앞서 질주 또는 기동 행동을 수행하고 남은 이동 거리를 사용할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-LS",
+      "nameEn": "Kroot Long-Sight",
+      "nameKo": "크룻 먼눈초리",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Kroot Hunting Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Heavy",
+                "Devastating 3",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Heavy",
+                "Devastating 3"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 엽총(은폐)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "중화기",
+            "궤멸 3",
+            "무성",
+            "위치 은폐*"
+          ]
+        },
+        {
+          "name": "크룻 엽총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "크룻 엽총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "중화기",
+            "궤멸 3"
+          ]
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+        },
+        {
+          "name": "먼눈초리 [1AP]",
+          "text": "• 이 요원의 다음 운용이 시작될 때까지 아래 사항을 적용합니다.\n- 요원이 장비한 크룻 엽총의 은폐 및 고정 프로필에 살상5+ 무기 규칙이 부여됩니다.\n- 요원이 크룻 엽총으로 사격할 때마다, 적 요원이 차폐 효과를 받을 수 없습니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-PST",
+      "nameEn": "Kroot Pistolier",
+      "nameKo": "크룻 권총잡이",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Dual Kroot Pistols",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Ceaseless",
+                "Lethal 5+"
+              ]
+            },
+            {
+              "name": "Salvo",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "*Salvo"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 쌍권총(집중)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "집요",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "크룻 쌍권총(일제사격)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "일제사격*"
+          ]
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "일제사격",
+          "text": "아군 요원의 장악 범위 내에 있지 않으며 서로 다른 유효 대상을 최대 둘 지정합니다. 이 무기를 사용하여 지정한 적 둘 모두를 원하는 순서대로 사격할 수 있습니다(각 절차는 별도로 굴림)."
+        },
+        {
+          "name": "먼저 쏘기",
+          "text": "전환점당 한 번, 적 요원이 이 요원을 유효 대상으로 지정해 사격 행동을 수행할 때(또는 이 요원이 폭발 무기 규칙의 부가 대상이 될 때), 이 요원이 준비 상태라면 그 행동을 방해하여 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 이 요원이 보유한 크룻 쌍권총(집중) 무기로 그 적 요원에게 무상 사격 행동을 수행할 수 있습니다(이를 위해 요원이 받은 명령을 교전으로 변경 가능). 단, 그 적 요원은 반드시 유효 대상이어야 합니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-STK",
+      "nameEn": "Kroot Stalker",
+      "nameKo": "크룻 잠행꾼",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Kroot Scattergun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Stalker's Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Balanced",
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 산탄총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "잠행꾼의 검",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "균형",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "잠행꾼",
+          "text": "이 요원은 은폐 명령을 받은 상태에서 돌격 행동을 수행할 수 있습니다."
+        },
+        {
+          "name": "은밀한 공격 [2AP]",
+          "text": "• 이 요원으로 무상 돌격 행동을 한 번 수행합니다. 단, 이때는 요원의 이동 수치를 초과할 수 없습니다(즉, 이동 거리를 +2\"만큼 변경하지 않음). 이후 이 요원으로 즉시 무상 근접전 행동을 수행합니다. 그 행동으로 처음 타격 시, 곧바로 다른 성공 주사위 하나를(상대보다 먼저) 타격으로 처리할 수 있습니다.\n• (제약) 이 요원이 교전 명령을 받은 상태일 때, 적 요원의 장악 범위 내에 있을 때, 저밀도 또는 고밀도 지형의 1\" 내에 있지 않을 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-TRK",
+      "nameEn": "Kroot Tracker",
+      "nameKo": "크룻 추적꾼",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Kroot Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "사냥감 낙점 [1AP]",
+          "text": "• 킬존에 페크라 마커가 있다면 전부 제거합니다. 이후 플레이어의 페크라 마커를 이 요원의 시야에 들어오는 위치, 또는 이 요원의 시야에 들어오는 지형지물의 고지에 놓습니다. 아군 먼길밟이 혈족단 요원이 적 요원을 사격할 때마다, 그 적 요원의 장악 범위 내에 페크라 마커가 있다면 그 아군 요원의 원거리 무기에 저밀도 색적 무기 규칙이 부여됩니다.\n• 이 요원의 다음 운용 시작 시, 또는 이 요원이 킬존에서 제거되었을 때(어느 하나라도 충족 시), 킬존에서 플레이어의 페크라 마커를 제거합니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "공중의 주시자 [1AP]",
+          "text": "• 보조. 이 요원의 시야에 들어온 6\" 내의 다른 아군 먼길밟이 혈족단 요원을 하나 지정합니다. 그 요원은 다음 운용이 종료될 때까지 APL 수치가 +1만큼 변경됩니다.\n• (제약) 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "TAU-FSKB-WAR",
+      "nameEn": "Kroot Warrior",
+      "nameKo": "크룻 전사",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "5+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Kroot Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Kroot Scattergun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/3",
+              "rules": [
+                "Range 6\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "크룻 소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "크룻 산탄총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 6\""
+          ]
+        },
+        {
+          "name": "도검",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "만반의 준비",
+          "text": "전환점당 한 번, 아군 전사 요원의 운용 도중 그 요원에게 고기, 관통 사격, 독성 사격 규칙(팩션 장비 참고)을 사용할 수 있습니다. 사용 시, 그 장비의 전환점당 한 번 한도가 차감되지 않습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "침투 · 정찰 — 편성 1+11 = 12명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 침투, 정찰"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 먼길밟이 혈족단 살해중개꾼 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 크룻 소총, 의식용 도검\n• 펄스 무기, 의식용 도검"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 11 먼길밟이 혈족단합니다.\n• 활사냥꾼\n• 냉혈한\n• 살점썰이\n• 사냥개 요원을 다음 목록에서 선택해 편성\n• 먼눈초리\n• 권총잡이\n• 잠행꾼\n• 추적꾼\n• 중화기 사수, 다음 선택지 중 하나를 골라 장비합니다.\n○ 드보르가이트 무두질기, 도검\n○ 론다크시 삼중쇠뇌, 도검\n• 전사, 다음 선택지 중 하나를 골라 장비합니다.\n○ 크룻 소총, 도검\n○ 크룻 산탄총, 도검"
+      },
+      {
+        "type": "rule",
+        "text": "사냥개와 전사 요원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다. 사냥개는 최대 둘 편성할 수 있습니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "먼길밟이",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "먼길밟이"
+      },
+      {
+        "type": "lore",
+        "text": "먼길밟이 혈족단은 본능을 따라서 움직이고 싸우며, 초인적인 속도로 사고하여 전장 환경의 변화에 반응한다."
+      },
+      {
+        "type": "rule",
+        "text": "각 전략 페이즈의 준비 단계에, 적 요원의 장악 범위 내에 있지 않은 아군 먼길밟이 혈족단 요원 최대 셋의 명령을 변경할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "플레이어가 대응할 차례가 될 때마다, 적 요원의 장악 범위 내에 있지 않은 아군 먼길밟이 혈족단 요원 하나가 받은 명령을 변경할 수 있습니다. 이는 여전히 플레이어의 대응으로 간주하지만(즉, 이후 상대에게 운용 차례가 돌아감), 이 번 전환점에 그 아군 요원이 대응한 것으로는 간주하지 않습니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

@@ -1,0 +1,1259 @@
+{
+  "id": "AEL-BOK",
+  "nameEn": "Blades Of Khaine",
+  "nameKo": "케인의 칼날",
+  "archetype": "Seek & Destroy/Security/Recon/Infiltration",
+  "color": "#5cbf8a",
+  "size": {
+    "total": 8
+  },
+  "faction": {
+    "id": "AEL",
+    "nameEn": "Aeldari",
+    "nameKo": "아엘다리"
+  },
+  "ploys": [
+    {
+      "id": "AEL-BOK-S-DOD",
+      "name": "Dance Of Death",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select two friendly BLADES OF KHAINE operatives visible to and within 6\" of each other. Remove them both from the killzone and set them back up in each other’s previous locations (in other words, swap their positions).",
+      "textKo": "서로 6\" 이내 아군 BLADES OF KHAINE 2명의 위치를 맞바꿈"
+    },
+    {
+      "id": "AEL-BOK-S-FW",
+      "name": "Forewarned",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a ready friendly BLADES OF KHAINE operative, you can re-roll any of your defence dice results of one result (e.g. results of 2).",
+      "textKo": "적이 ready 아군을 사격할 때 방어 주사위 한 값을 재굴림"
+    },
+    {
+      "id": "AEL-BOK-S-KV",
+      "name": "Khaine's Vengeance",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly BLADES OF KHAINE operative is shooting an expended enemy operative, that friendly operative’s ranged weapons have the Ceaseless weapon rule.",
+      "textKo": "아군이 expended 적을 사격할 때 사격 무기가 Ceaseless 획득"
+    },
+    {
+      "id": "AEL-BOK-S-RP",
+      "name": "Ruthless Poise",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly BLADES OF KHAINE operative is fighting a ready enemy operative, that friendly operative’s melee weapons have the Ceaseless weapon rule.",
+      "textKo": "아군이 ready 적과 근접전 시 근접 무기가 Ceaseless 획득"
+    },
+    {
+      "id": "AEL-BOK-T-BW",
+      "name": "Bladewind",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation. During that activation, that operative can perform two Fight actions.",
+      "textKo": "활성화 중 아군 1명이 Fight 액션을 2회 수행 가능"
+    },
+    {
+      "id": "AEL-BOK-T-CON",
+      "name": "Contempt",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly BLADES OF KHAINE operative is retaliating or an enemy operative is shooting it, after your opponent rolls their attack dice, but before re-rolls. Until the end of the sequence, your opponent cannot re-roll their attack dice (if your opponent declared the use of any firefight ploys during that sequence that would allow them to re-roll, that ploy is cancelled and the CP spent on it is refunded).",
+      "textKo": "아군이 반격하거나 피격될 때 상대가 공격 주사위 재굴림 불가"
+    },
+    {
+      "id": "AEL-BOK-T-FL",
+      "name": "Fading Light",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation, before or after it performs an action. During that activation, that operative can perform the Fall Back action for 1 less AP.",
+      "textKo": "활성화 중 아군 1명이 Fall Back 을 1 AP 적게 수행"
+    },
+    {
+      "id": "AEL-BOK-T-SF",
+      "name": "Starfall",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly BLADES OF KHAINE operative’s activation. During that activation, that operative can perform two Shoot actions.",
+      "textKo": "활성화 중 아군 1명이 Shoot 액션을 2회 수행 가능"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "AEL-BOK-ROP",
+      "name": "Rune Of Prophecy",
+      "textEn": "Once per battle, after rolling off to decide initiative, you can add D3 to, or subtract D3 from, your result.",
+      "textKo": "전투당 1회, 주도권 롤오프 결과에 D3 을 더하거나 뺌"
+    },
+    {
+      "id": "AEL-BOK-ROS",
+      "name": "Rune Of Shielding",
+      "textEn": "Once per battle, when an attack dice inflicts Normal Dmg on a friendly BLADES OF KHAINE operative, you can ignore that inflicted damage.",
+      "textKo": "전투당 1회, Normal Dmg 1회를 무시"
+    },
+    {
+      "id": "AEL-BOK-ROF",
+      "name": "Rune Of Foresight",
+      "textEn": "When this equipment is revealed, roll one D3. In the Strategy phase of the turning point equal to the result, you gain 1 additional CP.",
+      "textKo": "공개 시 D3 을 굴려 그 번호의 TP Strategy 단계에 1CP 추가 획득"
+    },
+    {
+      "id": "AEL-BOK-WBT",
+      "name": "Wraithbone Talisman",
+      "textEn": "Once per turning point, when a friendly BLADES OF KHAINE operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "TP당 1회, 실패 2개 이상이면 하나 버리고 다른 하나를 성공으로"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "AEL-BOK-DAX",
+      "nameEn": "Dire Avenger Exarch",
+      "nameKo": "절박한 복수자 전사장",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Catapult",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Twin Shuriken Catapult",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Diresword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Lethal 5+",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butts",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 투척기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "쌍수 수리검 투척기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "집요",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "절박검",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "살상 5+",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "방어 전술",
+          "text": "이 요원이 플레이어의 임무 마커 또는 목표물 마커 중 하나를 경쟁하고 있거나, 혹은 경쟁 상태인 적 요원을 사격할 때마다, 이 요원의 무기에 균형 무기 규칙이 부여됩니다."
+        },
+        {
+          "name": "전사장",
+          "text": "이 요원은 운용 중에 사격 또는 근접전 행동을 두 번 수행할 수 있습니다."
+        },
+        {
+          "name": "광채방패",
+          "text": "이 요원의 시야에 들어오고 2\" 내에 있는 아군 케인의 칼날 요원이 사격당할 때마다, 관통 무기 규칙을 무시합니다. 이 요원은 광채방패 무기 선택지를 골랐을 때에만 이 규칙을 보유합니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-BOK-HBX",
+      "nameEn": "Howling Banshee Exarch",
+      "nameKo": "울부짖는 밴시 전사장",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Triskele",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": [
+                "Range 8\"",
+                "Torrent 2\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Executioner",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/7",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Mirrorswords",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+",
+                "Ceaseless"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Triskele",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "트리스켈레(투척)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": [
+            "사거리 8\"",
+            "파쇄",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "참수도",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/7",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "거울쌍검",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "집요",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "트리스켈레(베기)",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "귀곡면갑",
+          "text": "이 요원이 근접전을 수행할 때마다, 적 요원이 보유한 근접 무기의 명중 요구치를 1만큼 악화합니다. 이는 부상 상태로 인한 효과와 누적되지 않습니다."
+        },
+        {
+          "name": "전사장",
+          "text": "이 요원은 운용 중에 사격 또는 근접전 행동을 두 번 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-BOK-SSX",
+      "nameEn": "Striking Scorpion Exarch",
+      "nameKo": "엄습하는 전갈 전사장",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Twin Shuriken Pistols",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "4+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Biting Blade",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Twin Chainswords",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Ceaseless",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Scorpion's Claw and Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Brutal",
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "쌍수 수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "4+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "집요",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "첨예 대도",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "전갈의 갈퀴와 체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "무자비",
+            "살상 5+"
+          ]
+        },
+        {
+          "name": "쌍수 체인소드",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "집요",
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "맨디블라스터",
+          "text": "이 요원이 근접전 행동을 수행할 때마다, 공격 주사위 굴림 단계의 시작 시, 이 규칙을 사용할 수 있습니다. 규칙을 사용 시, 그 절차에서 근접전 중인 적 요원에게 2 피해를 가합니다."
+        },
+        {
+          "name": "전사장",
+          "text": "이 요원은 운용 중에 사격 또는 근접전 행동을 두 번 수행할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-BOK-DAW",
+      "nameEn": "Dire Avenger Warrior",
+      "nameKo": "절박한 복수자 전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Catapult",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Fists",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 투척기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "파쇄"
+          ]
+        },
+        {
+          "name": "주먹",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "방어 전술",
+          "text": "이 요원이 플레이어의 임무 마커 또는 목표물 마커 중 하나를 경쟁하고 있거나, 또는 경쟁 상태인 적 요원을 사격할 때마다, 이 요원의 무기에 균형 무기 규칙이 부여됩니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-BOK-HBW",
+      "nameEn": "Howling Banshee Warrior",
+      "nameKo": "울부짖는 밴시 전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "귀곡면갑",
+          "text": "이 요원이 근접전을 수행할 때마다, 적 요원이 보유한 근접 무기의 명중 요구치를 1만큼 악화합니다. 이는 부상 상태로 인한 효과와 누적되지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "AEL-BOK-SSW",
+      "nameEn": "Striking Scorpion Warrior",
+      "nameKo": "엄습하는 전갈 전사",
+      "stats": {
+        "move": "7\"",
+        "apl": 3,
+        "save": "3+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Shuriken Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\"",
+                "Rending"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Rending"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "수리검 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\"",
+            "파쇄"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "파쇄"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "맨디블라스터",
+          "text": "이 요원이 근접전 행동을 수행할 때마다, 공격 주사위 굴림 단계의 시작 시, 이 규칙을 사용할 수 있습니다. 규칙을 사용 시, 그 절차에서 근접전 중인 적 요원에게 2 피해를 가합니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "섬멸 · 방어 · 정찰 · 침투 — 편성 1+7 = 8명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 뒷면 참고"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1케인의 칼날 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 절박한 복수자 전사장, 다음 선택지 중 하나를 골라 장비합니다.\n○ 수리검 투척기, 주먹\n○ 쌍수 수리검 투척기, 개머리판\n또는 다음 각 선택지에서 하나씩 골라 장비합니다.\n○ 절박검 또는 역장 무기\n○ 수리검 권총 또는 광채방패\n• 울부짖는 밴시 전사장, 다음 선택지 중 하나를 골라 장비합니다.\n○ 거울쌍검\n○ 수리검 권총, 참수도\n○ 수리검 권총, 역장 무기\n○ 수리검 권총, 트리스켈레\n○ 트리스켈레, 역장 무기"
+      },
+      {
+        "type": "rule",
+        "text": "• 엄습하는 전갈 전사장, 다음 선택지 중 하나를 골라 장비합니다.\n○ 수리검 권총, 첨예 대도\n○ 수리검 권총, 전갈의 갈퀴와 체인소드\n○ 쌍수 수리검 권총, 쌍수 체인소드"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 7 케인의 칼날 요원을 다음 목록에서 선택해 편성합니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 절박한 복수자 전사\n• 울부짖는 밴시 전사\n• 엄습하는 전갈 전사"
+      },
+      {
+        "type": "heading",
+        "text": "아키타입"
+      },
+      {
+        "type": "rule",
+        "text": "수색 섬멸, 또는 킬 팀 내 가장 다수의 요원이 보유하는 일면 키워드의 아키타입. 만약 키워드 두 개가 동률로 다수라면, 플레이어가 그 중 하나의 키워드를 선택 가능합니다. 각 요원의 일면 키워드에 따른 아키타입은 다음과 같습니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 절박한 복수자: 경비\n• 울부짖는 밴시: 정찰\n• 엄습하는 전갈: 침투"
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "일면 기술 · 비탄 · 눈물의 비 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "rule",
+        "text": "일면 전사는 날아오는 공격을 쳐내고 공중을 도약하는 등 다채로운 기술을 연마한다. 보기에 숨 막힐 정도로 놀라운 광경이나, 당하는 적에게는 그만큼 치명적이다."
+      },
+      {
+        "type": "rule",
+        "text": "모든 일면 기술은 절박한 복수자, 울부짖는 밴시, 엄습하는 전갈 세 가지 유형 중 하나에 속합니다. 각 일면 기술은 그에 해당하는 일면 키워드를 보유한 아군 전사만이 사용할 수 있으며, 사용 시기와 효과가 별도로 명시되어 있습니다. 추가로 다음 사항이 적용됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 매 운용 또는 대응마다 최대 한 개의 일면 기술만 사용할 수 있습니다.\n• 매 전환점마다 각 일면 기술을 최대 한 번씩만 사용할 수 있습니다.\n• 배치 당시 모든 아군 케인의 칼날 요원이 동일한 일면 키워드(예: 엄습하는 전갈 )를 보유한다면, 전환점마다 각 일면 기술을 (한 번 대신) 최대 두 번씩 사용할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "일면 기술 선택지는 동봉된 별개의 카드에 나와 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "울부짖는 밴시"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "비탄"
+      },
+      {
+        "type": "lore",
+        "text": "울부짖는 밴시는 마치 비탄이 현현한 존재나 다름없다. 투구에서 날카로운 음파를 발산하며, 충격에 빠진 적을 향해 몸을 던진다. 전 광석화 같은 검술로 상대가 칼을 올리기도 전에 적의 몸을 가른다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 울부짖는 밴시 요원의 운용 도중, 그 요원이 돌격 행동을 수행하고 근접전 행동으로 적을 무력화한 뒤, 더이상 적요원의 장악 범위 내에 위치하지 않고 있다면 이 일면 기술을 사용할 수 있습니다. 기술을 사용한 요원은 첫 돌격 행동 당시 남아있던 이동 거리만큼을 사용해 즉시 무상으로 돌격 행동을 수행할 수 있습니다. 이를 위해 해당 요원은 그 운용 도중 두 번의 돌격 행동을 수행할 수 있으며, 위에 열거된 행동 외의 다른 행동을 이미 수행했다면, 이 일면 기술을 사용할 수 없습니다(이 일면 기술을 처리한 뒤에 다른 행동을 수 행하는 것은 가능합니다)."
+      },
+      {
+        "type": "heading",
+        "text": "울부짖는 밴시"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "눈물의 비"
+      },
+      {
+        "type": "rule",
+        "text": "울부짖는 밴시의 속도와 민첩성은 초월적이다. 전투를 넘나들며 쏟아지는 가혹한 공격에서 행여 적이 살아남더라도, 그 속도에 맞서 반격을 가하기란 거의 불가능하다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 울부짖는 밴시 요원의 근접전 중 결정적 성공으로 타격 한 후, 적 요원이 무력화되지 않았다면 이 일면 기술을 사용할 수 있습니다. 진행 중인 절차를 종료하고(남은 공격 주사 위는 모두 버립니다), 기술을 사용한 요원은 즉시 최대 3\"의 무상 후퇴 행동을 수행합니다. 이후 근접전 행동은 종료됩니다. 그 요원이 후퇴 행동을 하지 못하도록 제한하는 행동을 이미 수행했더라도 여전히 이 행동을 할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "울부짖는 밴시"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "공중제비"
+      },
+      {
+        "type": "lore",
+        "text": "전장을 활개 치는 울부짖는 밴시의 앞길을 가로막을 존재는 몇 되지 않는다. 우아한 동작으로 장애물을 간단히 뛰어넘고, 흠잡을 데없이 완벽한 동작과 균형으로 착지한 뒤, 적을 향해 칼을 뻗는다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 울부짖는 밴시 요원이 이동하는 행동을 수행 시, 이 일면 기술을 사용할 수 있습니다. 그 행동이 종료될 때까지, 기술을 사용한 요원에게 다음 사항이 적용됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 올려가기와 내려가기를 할 때 모든 수직 거리를 무시할 수 있습니다.\n• 적 요원을 통과하거나, 그 장악 범위 내에서 이동할 수 있으며, 돌격 행동 도중에 적 요원의 장악 범위를 벗어날 수 있습니다. 단, 여전히 그 이동에 필요한 모든 조건을 준수 한 채로 이동을 종료해야 합니다.\n• 돌격 행동 시, 해당 요원의 이동 수치를 초과해 이동할 수 없습니다."
+      },
+      {
+        "type": "heading",
+        "text": "울부짖는 밴시"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "순간의 비명"
+      },
+      {
+        "type": "rule",
+        "text": "울부짖는 밴시를 상대로 어쩌면 우위를 점할 수도 있겠다는 헛된 기대는 일면 전사가 밴시 가면을 가동하는 순간 사그라지고 만다. 모든 감각이 압도된 채, 적은 그저 무력하게 이어지는 무자비한 근접 공격을 기다릴 뿐이다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 울부짖는 밴시 요원이 근접전 또는 반격 시, 공격 주사위 처리 단계를 시작할 때 이 일면 기술을 사용할 수 있습니다. 성공 주사위 하나를 일반적인 순서에 앞서 처리할 수 있습니다. 이 경우, 그 성공 주사위는 반드시 막기에 사용해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "울부짖는 밴시"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "죽음의 절규"
+      },
+      {
+        "type": "lore",
+        "text": "성대를 제대로 활용하는 방법을 익힌 울부짖는 밴시가 내지르는 곡성은 너무도 끔찍하고 우렁차, 단순히 적의 귀를 멀게 하는 것을 넘어 뇌를 액화시키기에 이른다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 울부짖는 밴시 요원이 사격 행동을 수행 시, 이 일면 기술을 사용할 수 있습니다. 그 행동이 종료될 때까지, 기술을 사용한 요원은 다음 원거리 무기를 사용할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "무기 명칭 공격 명중 피해"
+      },
+      {
+        "type": "heading",
+        "text": "죽음의 절규 5 3+ 1/2"
+      },
+      {
+        "type": "heading",
+        "text": "무기 규칙"
+      },
+      {
+        "type": "lore",
+        "text": "사거리 6\", 포화, 저밀도 색적, 혼미, 격류 1\""
+      },
+      {
+        "type": "heading",
+        "text": "절박한 복수자"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "절단 태풍"
+      },
+      {
+        "type": "rule",
+        "text": "궁극의 전술적 유연함을 숙달한 결과, 절박한 복수자는 예리한 수리검의 탄막을 발사하는 동시에, 거점 확보를 위해 이동하거나, 적의 손아귀에서 손쉽게 빠져나간다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 절박한 복수자 요원이 기동 행동을 수행 시 이 일면 기술을 사용할 수 있습니다. 기술을 사용한 요원은 그 기동 행동 도중 사격 행동을 수행할 수 있습니다. 이때, 반드시 모델을 놓을 수 있는 위치에서 그 행동을 수행해야 하며, 남아있는 해당 기동 행동의 이동 거리는 사격 행동 후 사용할 수 있습니다. 이 사격 행동을 수행하려면 반드시 수리검 투척기나 수리검 권총, 또는 쌍수 수리검 투척기를 선택해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "절박한 복수자"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "일천 칼날의 죽음"
+      },
+      {
+        "type": "rule",
+        "text": "절박한 복수자가 운용하는 화기에서 단분자 수리검의 홍수가 쏟아 진다. 이 치명적인 총탄은 과거의 형벌, 일천 칼날의 죽음을 재현한다. 케인이 반역자, 범법자, 기타 자비로운 죽음을 내리기에 적합하지 않다 여긴 이들에게 내린 징벌이 다시 메아리치는 것이다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 절박한 복수자 요원이 수리검 투척기 또는 쌍수 수리검 투척기를 선택하여 사격 행동을 수행 시, 이 일면 기술을 사용할 수 있습니다. 그 행동이 종료될 때까지, 사용하는 무기에 격류 2\" 무기 규칙이 부여됩니다. 단, 부가 대상은 최대 한 개까지만 지정할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "절박한 복수자"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "복수자의 경계"
+      },
+      {
+        "type": "lore",
+        "text": "법도를 어긴 자를 처벌하는 숭고한 임무를 짊어진 전사는 언제나 깨어 있을 필요가 있다. 예리한 시선과 확고한 자세로 늘 경계 상태를 유지해야 한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 절박한 복수자 요원이 수리검 투척기 또는 쌍수 수리검 투척기를 선택하여 사격 행동을 수행 시 이 일면 기술을 사용할 수 있습니다. 그 행동이 종료될 때까지, 사용하는 무기에 살상 5+ 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "절박한 복수자"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "불굴, 부동"
+      },
+      {
+        "type": "lore",
+        "text": "절박한 복수자는 충격에 반응하는 열가소성 비늘을 소재로 한 갑옷을 착용한다. 여기에 타격을 가하면 갑옷의 경도가 상승하여 착용자의 전신에 에너지를 분산한다. 이처럼 유연한 갑주에 더해, 이들 일면 전사는 신체의 가장 취약한 부위에 유사골조 판막을 덧대어 방호를 강화한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 절박한 복수자 요원이 사격당할 때, 아군 요원이 두 개이상의 굴림을 실패 시, 이 일면 기술을 사용할 수 있습니다. 실패한 주사위 중 하나를 버리고 나머지 주사위 중 하나를 일반 성공으로 보전할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "절박한 복수자"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "사멸하는 불꽃의 열망"
+      },
+      {
+        "type": "lore",
+        "text": "아수리얀의 신전을 장식하는 불꽃은 뜨거운 열기로 타오른다. 비록 흔들릴 때가 있을지언정, 불길은 절대 꺼지지 않는다. 그리하여 절박한 복수자는 이 불꽃의 모습을 추종하며, 아무리 부상을 입더라도 평소와 같은 전투력으로 적을 위협한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 절박한 복수자 요원의 운용 도중 이 일면 기술을 사용할 수 있습니다. 기술을 사용한 요원의 다음 운용이 시작될 때까지, 부상 상태로 인한 능력치 변경을 일부 또는 모두 무시할 수 있습니다(무기 수치 포함)."
+      },
+      {
+        "type": "heading",
+        "text": "엄습하는 전갈"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "은밀 추적, 기습 공격"
+      },
+      {
+        "type": "rule",
+        "text": "엄폐물이나 그림자에 모습을 감춘 채, 태평한 사냥감의 뒤를 엄습 하는 전갈이 쫓는다. 단 한 번의 일격으로 그 목숨을 취할 최적의 위치를 확보할 때까지, 완벽한 고요 속에서 은밀히 기동한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엄습하는 전갈 요원이 은폐 명령을 받은 상태에서 기동 행동을 수행 시, 이 일면 기술을 사용할 수 있습니다. 기술을 사용한 요원은 그 행동 도중 적 요원의 장악 범위 내로 이동할 수 있으며(단, 그 장악 범위 내에서 이동을 종료할 수 없음), 이동한 그 장악 범위의 적 요원 하나를 대상으로 이동을 종료한 후 D3+2 피해를 가할 수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "엄습하는 전갈"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "유격 전술"
+      },
+      {
+        "type": "rule",
+        "text": "엄습하는 전갈은 치고 빠지는 전법의 달인이다. 갑작스럽게 공격 한 뒤 마치 사악한 혼령이 그림자에 스며들 듯 홀연히 철수한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엄습하는 전갈 요원이 근접전이나 반격 중 적 요원을 무력화시켰으며, 더 이상 적 요원으로부터 3\" 이내에 있지 않을 때 이 일면 기술을 사용할 수 있습니다. 해당 아군 요원의 명령을 은폐 명령으로 변경하고, 즉시 무상 질주 행동을 수행할 수 있습니다. 그 요원이 질주 행동을 하지 못하도록 제한하는 행동을 이미 수행했더라도 여전히 이 행동을 할수 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "엄습하는 전갈"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "전갈의 눈"
+      },
+      {
+        "type": "rule",
+        "text": "엄습하는 전갈의 수리검 권총에는 사용자와 정신적으로 연결된 뷰파인더가 내재되어 있다. 이를 통해 일면 전사는 다중 파장으로 시야를 확보하고 신속하게 피아를 식별한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엄습하는 전갈 요원이 수리검 권총을 선택하여 사격 행동을 수행 시, 이 일면 기술을 사용할 수 있습니다. 그 행동 이 종료될 때까지, 선택한 무기에 저밀도 색적 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "엄습하는 전갈"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "무자비한 일격"
+      },
+      {
+        "type": "lore",
+        "text": "공세에 나서는 엄습하는 전갈의 칼날은 냉혹할 정도로 맹렬하고, 계속 이어지는 연격에 적은 한순간도 방심할 수 없다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엄습하는 전갈 요원이 근접전을 수행할 때 그 절차에서 처음 결정적 성공으로 타격 시, 이 일면 기술을 사용할 수 있습니다. 해당 절차가 종료될 때까지, 기술을 사용한 요원의 근접 무기에 충격 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "heading",
+        "text": "엄습하는 전갈"
+      },
+      {
+        "type": "heading",
+        "text": "일면 기술"
+      },
+      {
+        "type": "heading",
+        "text": "어둠과 하나"
+      },
+      {
+        "type": "lore",
+        "text": "긴 세월 동안 엄격한 훈련을 거친 결과, 엄습하는 전갈은 소름 끼칠 정도로 그림자와 어우러질 수 있다. 그 속에서 아무것도 모르는 적을 향해 한 치 오차 없는 일격을 위한 최적의 순간을 노린다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 엄습하는 전갈 요원의 운용 도중 이 일면 기술을 사용할 수 있습니다. 기술을 사용한 요원의 다음 운용이 시작될 때까지, 그 요원은 은폐 명령을 받고 엄폐 중인 동안 유효 대상으로 지정될 수 없습니다. 이는 공격자가 2\" 내에 있을 때 적용되는 규칙을 제외한 모든 관련 규칙(예: 색적, 고지) 보다 우선합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}

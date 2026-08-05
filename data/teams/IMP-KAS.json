@@ -1,0 +1,1141 @@
+{
+  "id": "IMP-KAS",
+  "nameEn": "Kasrkin",
+  "nameKo": "카스르킨",
+  "archetype": "Security/Seek & Destroy",
+  "color": "#a3b155",
+  "size": {
+    "total": 10
+  },
+  "faction": {
+    "id": "IMP",
+    "nameEn": "Imperium",
+    "nameKo": "임페리움"
+  },
+  "ploys": [
+    {
+      "id": "IMP-KAS-S-CS",
+      "name": "Clearance Sweep",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Place your Clearance Sweep marker in the killzone. Whenever a friendly KASRKIN operative within 5\" horizontally of that marker is shooting an operative also within 5\" horizontally of that marker, that friendly operative’s weapons have the Ceaseless weapon rule. In the Ready step of the next Strategy phase, remove that marker.",
+      "textKo": "마커 배치, 마커 5\" 내 KASRKIN 이 5\" 내 적 사격 시 Ceaseless"
+    },
+    {
+      "id": "IMP-KAS-S-EP",
+      "name": "Elimination Pattern",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever a friendly KASRKIN operative is shooting with a hot-shot weapon against an operative that cannot retain any cover saves or is being scanned (see RECON-TROOPER), that weapon has the Piercing Crits 1 weapon rule, or Piercing 1 instead if it’s a hot-shot volley gun.",
+      "textKo": "Cover Save 불가/scanned 대상 사격 시 hot-shot 이 Piercing Crits 1"
+    },
+    {
+      "id": "IMP-KAS-S-EFC",
+      "name": "Engage From Cover",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Whenever an operative is shooting a friendly KASRKIN operative that’s in cover, you can re-roll one of your defence dice.",
+      "textKo": "Cover 안 아군 KASRKIN 이 사격당할 때 방어 주사위 1개 재굴림"
+    },
+    {
+      "id": "IMP-KAS-S-REL",
+      "name": "Relocate",
+      "type": "strategy",
+      "cp": 1,
+      "textEn": "Select one friendly KASRKIN operative that’s more than 3\" from enemy operatives. That operative, and each other friendly KASRKIN operative that’s both within 3\" of that operative and more than 3\" from enemy operatives, can immediately perform a free Dash action in an order of your choice. You cannot use this ploy during the first turning point.",
+      "textKo": "적에게서 3\" 밖 아군 KASRKIN 1명과 그 3\" 내 아군들이 무료 Dash"
+    },
+    {
+      "id": "IMP-KAS-T-CR",
+      "name": "Cover Retreat",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy when a friendly KASRKIN operative performs the Fall Back action while visible to and within 6\" of another friendly KASRKIN operative that’s not within control range of enemy operatives. After that friendly operative has finished moving, but before that Fall Back action ends, that other friendly operative can immediately perform a free Shoot action (you can change its order to Engage to do so).",
+      "textKo": "아군이 Fall Back 할 때 6\" 내 다른 아군 KASRKIN 이 무료 사격"
+    },
+    {
+      "id": "IMP-KAS-T-GNG",
+      "name": "Give No Ground",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy during a friendly KASRKIN operative’s activation, or at the end of the Firefight phase. Select one of your mission markers or an objective marker. Until the end of that activation or until the start of the next turning point respectively, if the total APL of friendly KASRKIN operatives that contest that marker is 2, and the total APL of enemy operatives that contest it is the same, friendly KASRKIN operatives control that marker.",
+      "textKo": "마커 1개 선택, APL 동점이어도 아군 KASRKIN 이 그 마커 통제"
+    },
+    {
+      "id": "IMP-KAS-T-NT",
+      "name": "Neutralise Target",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy after rolling your attack dice for a friendly KASRKIN operative, if it’s shooting an operative that either cannot retain any cover saves or is being scanned (see RECON-TROOPER). You can re-roll any of your attack dice.",
+      "textKo": "Cover Save 불가/scanned 대상 사격 후 공격 주사위 재굴림"
+    },
+    {
+      "id": "IMP-KAS-T-STI",
+      "name": "Seize The Initiative",
+      "type": "firefight",
+      "cp": 1,
+      "textEn": "Use this firefight ploy at the start of the Firefight phase. One friendly KASRKIN operative can immediately perform a 1AP action for free, but it cannot move during that action. You cannot use this ploy if you’re the player with initiative.",
+      "textKo": "Firefight 단계 시작에 아군 1명이 1AP 행동 무료 (이동 불가)"
+    }
+  ],
+  "equipment": [
+    {
+      "id": "IMP-KAS-FG",
+      "name": "Foregrip",
+      "textEn": "Whenever a friendly KASRKIN operative is shooting an operative within 3\" of it, ranged weapons on its datacard (excluding weapons that include ‘pistol’ in their name, e.g. hot-shot laspistol, all profiles of a plasma pistol, etc.) have the Accurate 1 weapon rule.",
+      "textKo": "3\" 안 사격 시 데이터카드의 원거리 무기(피스톨 제외)에 Accurate 1"
+    },
+    {
+      "id": "IMP-KAS-LRS",
+      "name": "Long-Range Scope",
+      "textEn": "Whenever a friendly KASRKIN operative is shooting an operative more than 6\" from it, that friendly operative’s hot-shot weapons have the Saturate weapon rule.",
+      "textKo": "6\" 밖 사격 시 hot-shot 무기에 Saturate"
+    },
+    {
+      "id": "IMP-KAS-ROC",
+      "name": "Relics Of Cadia",
+      "textEn": "Once per turning point, when a friendly KASRKIN operative is shooting, fighting or retaliating, if you roll two or more fails, you can discard one of them to retain another as a normal success instead.",
+      "textKo": "TP당 1회, 실패 2개 이상이면 하나 버리고 다른 하나를 성공으로"
+    },
+    {
+      "id": "IMP-KAS-CD",
+      "name": "Combat Daggers",
+      "textEn": "Friendly KASRKIN operatives have the following melee weapon:\nNAME ATK HIT DMG\nCombat dagger 3 4+ 3/4",
+      "textKo": "전원에게 컴뱃 대거 (A3 · H4+ · D3/4)"
+    }
+  ],
+  "equipmentBonusKo": null,
+  "operatives": [
+    {
+      "id": "IMP-KAS-SGT",
+      "nameEn": "Kasrkin Sergeant",
+      "nameKo": "카스르킨 부사관",
+      "stats": {
+        "move": "6\"",
+        "apl": 3,
+        "save": "4+",
+        "wounds": 9
+      },
+      "weapons": [
+        {
+          "name": "Bolt Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Pistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/5",
+              "rules": [
+                "Range 8\"",
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Range 8\"",
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Chainsword",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "3+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Power Weapon",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Lethal 5+"
+              ]
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "핫샷 라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "체인소드",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "3+",
+          "damage": "2/3",
+          "rules": []
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전술 명령 [0AP]",
+          "text": "아군 카스르킨 요원 하나를 지정한 다음, 전투 기술 하나를 선택해 다음 전략 페이즈의 준비 단계까지 그 요원에게 부여합니다. 기존에 부여된 전투 기술에 추가로 부여할 수 있지만, 동일한 전투 기술를 다시 부여할 수는 없습니다.\n원하는 경우 위의 효과를 처리하는 대신, 완전 소탕 마커가 킬존에 있다면 이를 제거하고 새로 놓을 수도 있습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        },
+        {
+          "name": "베테랑 지휘자",
+          "text": "이 요원이 킬존에 있고 전투 기술 전략 포석을 사용할 때마다, 플레이어는 전투 기술을 추가로 하나 더 선택할 수 있습니다. 단, 중복된 것을 선택할 수는 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-MDC",
+      "nameEn": "Kasrkin Combat Medic",
+      "nameKo": "카스르킨 전투의무병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "환자 발생!",
+          "text": "매 전환점 도중 이 요원의 3” 내에 있으며 시야에 들어온 다른 아군 카스르킨 요원이 무력화됐을 때, 이 요원과 그 아군 요원이 모두 적 요원의 장악 범위 내에 있지 않다면 이 규칙을 사용할 수 있습니다. 규칙 사용 시, 그 아군 요원은 1 체력이 남은 상태가 되며 그 행동이 끝날 때까지 무력화되지 않습니다. 그 행동 이후, 그 아군 요원은 즉시 무상으로 질주 행동을 수행해 반드시 이 요원의 장악 범위 내에서 이동을 종료해야 합니다. 이 요원과 그 아군 요원은 각각 다음 운용을 종료할 때까지 APL 수치가 -1만큼 변경됩니다. 이 규칙을 그 아군 요원의 운용 도중 사용했다면, 그 운용은 종료됩니다. 이 요원이 무력화되었을 때, 또는 사격 행동의 주 대상이나 부가 대상이 되었을 때는 이 규칙을 사용할 수 없습니다."
+        },
+        {
+          "name": "의료함 [0AP]",
+          "text": "이 요원의 장악 범위 내에 있는 아군 카스르킨 요원을 하나 지정해 잃은 체력을 2D3만큼 회복합니다. 이번 전환점 도중 환자 발생! 규칙의 효과를 받은 요원은 지정할 수 없습니다.\n이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-DT",
+      "nameEn": "Kasrkin Demo Trooper",
+      "nameKo": "카스르킨 폭파병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Laspistol",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Range 8\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스피스톨",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "멜타 지뢰",
+          "text": "이 요원은 아군의 멜타 지뢰 마커를 운반하고 있으며, 그 마커에 마커 회수 행동을 수행할 수 있습니다. 마커 배치 행동 수행 시마다 이 요원은 즉시 무상 질주 행동을 수행할 수 있습니다. 그 마커는 적 요원의 장악 범위 내에 놓을 수 없습니다(만약 이 요원이 그 마커를 운반하는 상태로 무력화되었는데 마커를 배치할 수 없다면, 마커는 이 요원과 함께 제거됩니다."
+        },
+        {
+          "name": "근접 지뢰",
+          "text": "아군의 멜타 지뢰 마커가 다른 요원의 장악 범 위에 처음으로 들어갔을 때, 그 마커를 제거한 다음 그 요원에게 2D6+3만큼 피해를 입힙니다. 그 요원이 무력화 되지 않았으며 행동 중이었다면 그 행동은 종료됩니다 (행동의 효과가 완전히 적용되지 않았더라도 즉시 종료 됨). 그 적 요원을 놓을 수 없다면 놓을 수 있는 지점으로 최소 거리만 옮깁니다. 이 요원에게는 이 효과가 적용되 지 않는다는 점에 유의하십시오(즉, 이 요원은 지뢰를 기폭시킬 수 없으며 그 마커로부터 피해를 입지 않습니다)."
+        },
+        {
+          "name": "방폭복",
+          "text": "요원이 폭발 또는 격류 무기 규칙을 보유한 무기 (소사 프로필을 보유한 무기 제외)를 사용해 이 요원을 대상으로 사격할 때마다, 이 요원은 방어 주사위 하나를 재굴림할 수 있습니다. 또한 이 요원은 그 절차에서 사격 대상이 되지 않은 한 x\" 궤멸 x 무기 규칙(즉, 거리 요건 이 있는 궤멸 규칙)에 영향을 받지 않습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-GNR",
+      "nameEn": "Kasrkin Gunner",
+      "nameKo": "카스르킨 사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Flamer",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Range 8\"",
+                "Saturate",
+                "Torrent 2\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Grenade Launcher",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Frag",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "2/4",
+              "rules": [
+                "Blast 2\""
+              ]
+            },
+            {
+              "name": "Krak",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/5",
+              "rules": [
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Hot-Shot Volley Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Focused",
+              "attacks": "5",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1"
+              ]
+            },
+            {
+              "name": "Sweeping",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": [
+                "Piercing Crits 1",
+                "Torrent 1\""
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Meltagun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "6/3",
+              "rules": [
+                "Range 6\"",
+                "Devastating 4",
+                "Piercing 2"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Plasma Gun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "4/6",
+              "rules": [
+                "Piercing 1"
+              ]
+            },
+            {
+              "name": "Supercharge",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "5/6",
+              "rules": [
+                "Hot",
+                "Lethal 5+",
+                "Piercing 1"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "화염방사기",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "사거리 8\"",
+            "포화",
+            "격류 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(세열)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "2/4",
+          "rules": [
+            "폭발 2\""
+          ]
+        },
+        {
+          "name": "유탄발사기(크랙)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(집중)",
+          "type": "ranged",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1"
+          ]
+        },
+        {
+          "name": "핫샷 볼리 건(소사)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "결정적 관통 1",
+            "격류 1\""
+          ]
+        },
+        {
+          "name": "멜타건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "6/3",
+          "rules": [
+            "사거리 6\"",
+            "궤멸 4",
+            "관통 2"
+          ]
+        },
+        {
+          "name": "플라스마 건(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 건(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/6",
+          "rules": [
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": []
+    },
+    {
+      "id": "IMP-KAS-RT",
+      "nameEn": "Kasrkin Recon-Trooper",
+      "nameKo": "카스르킨 정찰병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "킬존 정찰",
+          "text": "위치 이동 전략 플로이를 사용할 때 대상 아군 카스르킨 요원으로 이 요원을 지정하면 0CP를 소모합니다."
+        },
+        {
+          "name": "오스펙스 스캔 [1AP]",
+          "text": "이 요원의 다음 운용이 시작되거나 이 요원이 무력화될 때까지(어느 하나라도 충족 시까지), 적 요원이 이 요원의 8\" 내에 있는 동안, 그 적 요원은 스캔됩니다. 아군 카스르킨 요원이 스캔된 적 요원을 대상으로 사격할 때마다, 그 적 요원은 차폐될 수 없습니다. 이 요원은 적 요원의 장악 범위 내에 있는 동안 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-SS",
+      "nameEn": "Kasrkin Sharpshooter",
+      "nameKo": "카스르킨 지정사수",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Marksman Rifle",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "Concealed",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy",
+                "Silent",
+                "*Concealed Position"
+              ]
+            },
+            {
+              "name": "Mobile",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            },
+            {
+              "name": "Stationary",
+              "attacks": "4",
+              "hit": "2+",
+              "damage": "3/3",
+              "rules": [
+                "Devastating 3",
+                "Heavy"
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 지정사수소총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기",
+            "무성",
+            "위치 은폐*"
+          ]
+        },
+        {
+          "name": "핫샷 지정사수소총(기동)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "핫샷 지정사수소총(고정)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "2+",
+          "damage": "3/3",
+          "rules": [
+            "궤멸 3",
+            "중화기"
+          ]
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "위장 망토",
+          "text": "이 요원이 사격당할 때 다음을 따릅니다.\n• 포화 무기 규칙을 무시합니다.\n• 엄폐 방호로 주사위를 보전할 수 있다면, 엄폐 방호 하나를 추가로 보전하거나 또는 엄폐 방호 하나를 결정적 성공으로 판정할 수 있습니다. 이 규칙은 고지로 인해 향상된 엄폐 방호와 누적되지 않습니다."
+        },
+        {
+          "name": "위치 은폐",
+          "text": "이 요원은 전투 중 처음으로 사격 행동을 수행할 때만 이 무기를 사용할 수 있습니다."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-TRP",
+      "nameEn": "Kasrkin Trooper",
+      "nameKo": "카스르킨 대원",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "적응형 장비",
+          "text": "다음 각 항목을 전환점당 한 번씩 사용할 수 있습니다\n• 아군 카스르킨 대원 요원 하나가 연막탄 행동을 수행할 수 있습니다.\n• 아군 카스르킨 대원 요원 하나가 섬광 수류탄 행동을 수행할 수 있습니다.\n이러한 행동의 규칙은 공용 장비에서 확인할 수 있습니다. 이 규칙의 행동 수행 시에는 공용 장비의 행동 개수 제한에 영향을 미치지 않습니다(즉, 장비에서 같은 수류탄 선택 시 차감과 무관)."
+        }
+      ]
+    },
+    {
+      "id": "IMP-KAS-VOX",
+      "nameEn": "Kasrkin Vox-Trooper",
+      "nameKo": "카스르킨 무전병",
+      "stats": {
+        "move": "6\"",
+        "apl": 2,
+        "save": "4+",
+        "wounds": 8
+      },
+      "weapons": [
+        {
+          "name": "Hot-Shot Lasgun",
+          "type": "ranged",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "4",
+              "hit": "3+",
+              "damage": "3/4",
+              "rules": []
+            }
+          ]
+        },
+        {
+          "name": "Gun Butt",
+          "type": "melee",
+          "profiles": [
+            {
+              "name": "",
+              "attacks": "3",
+              "hit": "4+",
+              "damage": "2/3",
+              "rules": []
+            }
+          ]
+        }
+      ],
+      "weaponsKo": [
+        {
+          "name": "핫샷 라스건",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": []
+        },
+        {
+          "name": "개머리판",
+          "type": "melee",
+          "attacks": "3",
+          "hit": "4+",
+          "damage": "2/3",
+          "rules": []
+        }
+      ],
+      "abilitiesKo": [
+        {
+          "name": "전투 교신 [1AP]",
+          "text": "다른 아군 카스르킨 요원 하나를 지정합니다. 그 요원은 다음 운용이 종료될 때까지, APL 수치가 +1만큼 변경됩니다(모든 APL 수치 변경이 적용된 후 최대 APL은 3). 이 요원은 운용 도중 이 행동을 두 번 수행할 수 있습니다. 단, 적 요원의 장악 범위 내에 있을 때는 이 행동을 수행할 수 없습니다."
+        }
+      ]
+    }
+  ],
+  "selectionGuide": {
+    "brief": "경비 · 수색 섬멸 — 편성 1+9 = 10명",
+    "blocks": [
+      {
+        "type": "rule",
+        "text": "아키타입: 경비, 수색 섬멸"
+      },
+      {
+        "type": "heading",
+        "text": "요원 목록"
+      },
+      {
+        "type": "rule",
+        "text": "↘ 1 카스르킨 부사관 요원, 다음 선택지 중 하나를 골라 장비합니다.\n• 볼트 권총, 역장 무기\n• 핫샷 라스건, 개머리판\n• 핫샷 라스피스톨, 역장 무기\n• 플라스마 권총, 체인소드\n↘ 9 카스르킨 요원을 다음 목록에서 선택해 편성합니다.\n• 전투의무병\n• 폭파병\n• 사수, 화염방사기, 개머리판\n• 사수, 유탄발사기, 개머리판\n• 사수, 핫샷 볼리 건, 개머리판\n• 사수, 멜타건, 개머리판\n• 사수, 플라스마 건, 개머리판\n• 정찰병"
+      },
+      {
+        "type": "rule",
+        "text": "• 지정사수\n• 대원\n• 무전병"
+      },
+      {
+        "type": "rule",
+        "text": "대원을 제외하면, 이 목록의 각 요원은 킬 팀에 한 번씩만 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "이 요원들은 최대 넷까지 편성할 수 있습니다."
+      },
+      {
+        "type": "rule",
+        "text": "일부 카스르킨 규칙에는 '핫샷 무기'가 언급됩니다. 이는 무기 명칭에 '핫샷'이 포함된 원거리 무기(예: 핫샷 라스건, 모든 핫샷 지정사수소총 프로필)를 의미합니다."
+      }
+    ]
+  },
+  "factionRule": {
+    "brief": "속사 · 전투 기술 · 사격 개시 …",
+    "blocks": [
+      {
+        "type": "heading",
+        "text": "속사"
+      },
+      {
+        "type": "lore",
+        "text": "가혹한 훈련을 거쳐 피도 눈물도 없는 살상력을 자랑하는 카스르 킨은 적에게 업화를 퍼붓는다."
+      },
+      {
+        "type": "rule",
+        "text": "운용 도중 이동하는 행동을 수행하지 않은 각 아군 카스르킨 요원은 그 운용 도중 사격 행동(엄호 제외)을 두 번 수행할 수 있습니다. 단, 그 두 번의 사격 행동에 볼트 권총, 핫샷 라스건 또는 핫샷 라스피스톨을 선택해야 합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전투 기술"
+      },
+      {
+        "type": "lore",
+        "text": "카스르킨은 임무가 있는 곳이라면 어디든 간다. 전투에서 잔뼈가 굵고 포기를 모르며 가장 좋은 장비로 무장한 이 정예 부대는 프로 정신, 오랜 경험, 불굴의 의지를 가지고 목표를 좇는다."
+      },
+      {
+        "type": "rule",
+        "text": "전략 포석. 전투 기술 하나를 선택해 다음 전략 페이즈의 준비 단계까지 아군 카스르킨 요원에게 부여합니다."
+      },
+      {
+        "type": "rule",
+        "text": "전투 기술 선택지는 동봉된 별개의 카드에 나와 있습니다."
+      },
+      {
+        "type": "heading",
+        "text": "전투 기술"
+      },
+      {
+        "type": "heading",
+        "text": "사격 개시"
+      },
+      {
+        "type": "rule",
+        "text": "전진하며 교차사격을 수행하는 카스르킨은 적의 움직임이 포착되 자마자 일제사격으로 응수한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 카스르킨 요원이 사격할 때마다, 사격 대상이 다음 요건 중 하나 이상을 충족한다면 보유한 원거리 무기에 중상 무기 규칙이 부여됩니다."
+      },
+      {
+        "type": "rule",
+        "text": "• 준비 상태임\n• 엄폐 상태가 아님\n• 스캔됨(정찰병 참고)"
+      },
+      {
+        "type": "heading",
+        "text": "전투 기술"
+      },
+      {
+        "type": "heading",
+        "text": "신속 기동"
+      },
+      {
+        "type": "rule",
+        "text": "카스르킨은 강건한 신체에 자부심을 가지고 있으며, 무거운 전투 장구를 소지하고 있을 때도 빠르게 이동할 수 있다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 카스르킨 요원이 기동 행동을 수행할 때마다, 이동 수 치를 +1\"만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전투 기술"
+      },
+      {
+        "type": "heading",
+        "text": "얼음 같은 침착성"
+      },
+      {
+        "type": "lore",
+        "text": "모든 카디아인은 평생에 걸쳐 전쟁에 종사한다. 정예 카스르킨이된 자는 그 가운데에서도 가장 독한 존재다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 카스르킨 요원이 근접전 또는 반격을 수행하거나 사격의 대상이 될 때마다, 그 절차 중 처음 이 요원을 대상으로 공격 주사위가 3 이상의 일반 피해를 입힌다면, 그 주사위의 피해를 -1만큼 변경합니다."
+      },
+      {
+        "type": "heading",
+        "text": "전투 기술"
+      },
+      {
+        "type": "heading",
+        "text": "카디아를 위해!"
+      },
+      {
+        "type": "lore",
+        "text": "모든 카스르킨은 이제 죽어버린 고향 행성의 명예를 드높이기 위해 투쟁한다."
+      },
+      {
+        "type": "rule",
+        "text": "아군 카스르킨 요원이 보유한 근접 무기의 공격 수치를 +1만큼 변경합니다(최대 4까지). 아군 카스르킨 요원이 근접 전을 수행할 때마다, 그 절차 중 처음 타격할 때, 1의 피해를 추가로 가합니다."
+      }
+    ]
+  },
+  "source": "공식 Kill Team 앱 PDF 추출본"
+}
