@@ -30,12 +30,11 @@ jobs:
       - name: 저장소 체크아웃
         uses: actions/checkout@v5
 
-      # enablement 를 켜두면 저장소 Pages 설정이 꺼져 있어도 워크플로가 직접 켠다.
-      # 이게 없으면 "Get Pages site failed … Not Found" 로 죽는다.
+      # enablement 로 Pages 를 자동 생성하려면 저장소 관리자 권한이 필요한데
+      # GITHUB_TOKEN 에는 없다("Resource not accessible by integration").
+      # Settings → Pages → Source 를 GitHub Actions 로 한 번 바꿔 주어야 한다.
       - name: Pages 설정
         uses: actions/configure-pages@v6
-        with:
-          enablement: true
 
       - name: public/ 을 아티팩트로 업로드
         uses: actions/upload-pages-artifact@v4
