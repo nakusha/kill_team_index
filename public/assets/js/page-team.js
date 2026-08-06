@@ -323,13 +323,11 @@
     );
   }
 
+  /* 플로이는 팀이 가진 것을 모두 쓸 수 있어 고르는 대상이 아니다 — 담기 버튼이 없다. */
   function ployEntry(ploy) {
-    var isOn = KTR.hasPloy(current.id, ploy.id);
-
     return (
       '<div class="entry entry--' +
       KTX.esc(ploy.type) +
-      (isOn ? " is-picked" : "") +
       '" data-entry="' +
       KTX.esc(ploy.id) +
       '">' +
@@ -339,7 +337,6 @@
       "</span>" +
       KTX.badge(PLOY_LABEL[ploy.type] || ploy.type, "", ploy.type) +
       KTX.badge("CP", ploy.cp) +
-      pickButton("data-roster-ploy", ploy.id, isOn) +
       "</div>" +
       description(ploy.textKo, ploy.textEn) +
       "</div>"
@@ -396,7 +393,7 @@
     var picked = KTR.totalUnits(current.id);
     var size = (current.size && current.size.total) || 0;
     var isOver = size > 0 && picked > size;
-    var isEmpty = picked === 0 && !entry.equipment.length && !entry.ploys.length;
+    var isEmpty = picked === 0 && !entry.equipment.length;
 
     bar.innerHTML =
       '<span class="roster-bar__counts">' +
@@ -408,9 +405,6 @@
       "</b>명" +
       "<span>장비 " +
       entry.equipment.length +
-      "</span>" +
-      "<span>플로이 " +
-      entry.ploys.length +
       "</span>" +
       "</span>" +
       (isOver ? '<span class="roster-bar__warn">정원 초과</span>' : "") +
@@ -464,7 +458,7 @@
   }
 
   var ROSTER_SELECTOR =
-    "[data-roster-add],[data-roster-remove],[data-roster-equip],[data-roster-ploy],[data-roster-clear],[data-unit-tab]";
+    "[data-roster-add],[data-roster-remove],[data-roster-equip],[data-roster-clear],[data-unit-tab]";
 
   function bindRoster() {
     document.addEventListener("click", function (event) {
@@ -510,12 +504,6 @@
         return;
       }
 
-      var ployId = target.getAttribute("data-roster-ploy");
-      if (ployId) {
-        KTR.togglePloy(current.id, ployId);
-        refreshPick(target, KTR.hasPloy(current.id, ployId));
-        renderRosterBar();
-      }
     });
 
     /* 무기 체크박스 — 체크한 무기가 그 인스턴스의 장비가 된다. */

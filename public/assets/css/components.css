@@ -955,9 +955,20 @@ button.term.is-open > .term__pop {
   color: var(--text-bone);
 }
 
-/* 로스터에 접어 둔 팩션 규칙 */
+/* 팀 전체에 걸리는 것 — 팩션 규칙 · 플로이 · 장비를 한 덩어리로 묶는다 */
+.roster-common {
+  display: grid;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.roster-common .subhead {
+  margin-bottom: 0.2rem;
+}
+
+/* 로스터의 팩션 규칙 */
 .roster-rule {
-  margin-bottom: 1.5rem;
+  margin-bottom: 0;
   border: 1px solid var(--line-soft);
   background: var(--surface-deep);
 }

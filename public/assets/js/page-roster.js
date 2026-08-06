@@ -218,6 +218,30 @@
     );
   }
 
+  /**
+   * 플로이는 팀이 가진 것을 모두 쓸 수 있으므로 고르는 대상이 아니다.
+   * 담은 것만이 아니라 그 팀의 전부를 전략 · 화력전으로 나눠 싣는다.
+   */
+  function ployGroups(team) {
+    return ["strategy", "firefight"]
+      .map(function (type) {
+        var items = team.ploys.filter(function (ploy) {
+          return ploy.type === type;
+        });
+        if (!items.length) return "";
+
+        var label = type === "strategy" ? "전략 플로이" : "화력전 플로이";
+        return (
+          '<p class="subhead">' +
+          label +
+          '</p><div class="entry-list">' +
+          items.map(ployEntry).join("") +
+          "</div>"
+        );
+      })
+      .join("");
+  }
+
   function pickedList(title, items, render) {
     if (!items.length) return "";
     return (
@@ -229,7 +253,10 @@
     );
   }
 
-  /** 팩션 규칙은 길어서 접어 둔다 — 필요할 때 펼쳐 본다. */
+  /**
+   * 팩션 규칙은 펼친 채로 둔다 — 게임 중에는 플로이와 함께 바로 보여야 한다.
+   * 길다고 느끼면 접을 수 있게 details 는 유지한다.
+   */
   function factionRuleBlock(team) {
     var rule = team.factionRule;
     if (!rule || !rule.blocks.length) return "";
@@ -242,7 +269,7 @@
       .join("");
 
     return (
-      '<details class="roster-rule">' +
+      '<details class="roster-rule" open>' +
       "<summary>팩션 규칙" +
       (rule.brief ? ' <span class="roster-rule__brief">' + KTX.esc(rule.brief) + "</span>" : "") +
       "</summary>" +
@@ -271,15 +298,11 @@
       return entry.equipment.indexOf(item.id) !== -1;
     });
 
-    var ploys = team.ploys.filter(function (ploy) {
-      return entry.ploys.indexOf(ploy.id) !== -1;
-    });
-
     var unpicked = units.filter(function (row) {
       return !row.unit.weapons.length;
     }).length;
 
-    return { units: units, equipment: equipment, ploys: ploys, unpicked: unpicked };
+    return { units: units, equipment: equipment, unpicked: unpicked };
   }
 
   /** 같은 요원이 여러 명이면 몇 번째인지 붙여 준다. */
@@ -326,7 +349,7 @@
         isOver ? "strategy" : "accent",
       ) +
       KTX.badge("장비", picked.equipment.length) +
-      KTX.badge("플로이", picked.ploys.length) +
+      KTX.badge("플로이", team.ploys.length) +
       (picked.unpicked ? KTX.badge("무기 미선택", picked.unpicked + "명", "strategy") : "") +
       '<a class="roster-btn roster-btn--link" href="team.html?t=' +
       encodeURIComponent(team.id) +
@@ -336,12 +359,15 @@
       '">비우기</button>' +
       "</div></header>" +
       (isOver ? '<p class="roster-warn">편성 정원을 넘었습니다</p>' : "") +
+      /* 팀 전체에 걸리는 것(팩션 규칙 · 플로이 · 장비)을 먼저, 개별 요원 시트를 뒤에 둔다. */
+      '<div class="roster-common">' +
       factionRuleBlock(team) +
-      (picked.units.length
-        ? '<div class="op-list">' + unitCards(picked.units) + "</div>"
-        : '<p class="empty">담은 요원이 없습니다</p>') +
+      ployGroups(team) +
       pickedList("장비", picked.equipment, equipmentEntry) +
-      pickedList("플로이", picked.ploys, ployEntry) +
+      "</div>" +
+      (picked.units.length
+        ? '<p class="subhead">요원</p><div class="op-list">' + unitCards(picked.units) + "</div>"
+        : '<p class="empty">담은 요원이 없습니다</p>') +
       "</section>"
     );
   }

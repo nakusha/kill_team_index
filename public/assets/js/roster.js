@@ -23,7 +23,7 @@ window.KTR = (function () {
   }
 
   function emptyEntry() {
-    return { seq: 0, units: [], equipment: [], ploys: [] };
+    return { seq: 0, units: [], equipment: [] };
   }
 
   /** v1(개수 맵) → v2(인스턴스 배열). 인원은 보존하고 무기는 미선택으로 둔다. */
@@ -43,7 +43,6 @@ window.KTR = (function () {
       });
 
       entry.equipment = Array.isArray(found.equipment) ? found.equipment.slice() : [];
-      entry.ploys = Array.isArray(found.ploys) ? found.ploys.slice() : [];
       next.teams[teamId] = entry;
     });
 
@@ -102,7 +101,6 @@ window.KTR = (function () {
 
     if (!Array.isArray(found.units)) found.units = [];
     if (!Array.isArray(found.equipment)) found.equipment = [];
-    if (!Array.isArray(found.ploys)) found.ploys = [];
     if (typeof found.seq !== "number") found.seq = found.units.length;
     return found;
   }
@@ -111,7 +109,7 @@ window.KTR = (function () {
   function prune(state, teamId) {
     var found = state.teams[teamId];
     if (!found) return;
-    if (!found.units.length && !found.equipment.length && !found.ploys.length) {
+    if (!found.units.length && !found.equipment.length) {
       delete state.teams[teamId];
     }
   }
@@ -212,19 +210,8 @@ window.KTR = (function () {
     return write(state);
   }
 
-  function togglePloy(teamId, ployId) {
-    var state = read();
-    toggleIn(entry(state, teamId).ploys, ployId);
-    prune(state, teamId);
-    return write(state);
-  }
-
   function hasEquipment(teamId, equipmentId) {
     return teamEntry(teamId).equipment.indexOf(equipmentId) !== -1;
-  }
-
-  function hasPloy(teamId, ployId) {
-    return teamEntry(teamId).ploys.indexOf(ployId) !== -1;
   }
 
   /* ─── 정리 ────────────────────────────────────────────── */
@@ -264,9 +251,7 @@ window.KTR = (function () {
     toggleUnitWeapon: toggleUnitWeapon,
     hasUnitWeapon: hasUnitWeapon,
     toggleEquipment: toggleEquipment,
-    togglePloy: togglePloy,
     hasEquipment: hasEquipment,
-    hasPloy: hasPloy,
     clearTeam: clearTeam,
     clearAll: clearAll,
     teamIds: teamIds,
