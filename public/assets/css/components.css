@@ -1070,16 +1070,23 @@ button.term.is-open > .term__pop {
   color: var(--hazard);
 }
 
+/* 어느 폭에서든 탭으로 한 쪽씩 본다 — 나란히 놓으면 양쪽 다 좁아진다 */
 .versus-tabs {
-  display: none; /* 좁은 화면에서만 쓴다 */
+  position: sticky;
+  top: 0;
+  z-index: 6;
+  display: flex;
   gap: 0.5rem;
   padding-block: 0.85rem;
+  background: color-mix(in oklab, var(--surface-void) 92%, transparent);
+  backdrop-filter: blur(8px);
   border-bottom: 1px solid var(--line-soft);
 }
 
 .versus-tab {
   flex: 1;
-  padding: 0.5rem 0.8rem;
+  max-width: 22rem;
+  padding: 0.55rem 0.9rem;
   border: 1px solid var(--line-hard);
   background: none;
   color: var(--text-faint);
@@ -1087,6 +1094,14 @@ button.term.is-open > .term__pop {
   font-size: var(--text-micro);
   letter-spacing: 0.14em;
   cursor: pointer;
+  transition:
+    border-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.versus-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
 }
 
 .versus-tab.is-active {
@@ -1095,20 +1110,18 @@ button.term.is-open > .term__pop {
   color: var(--text-bone);
 }
 
-/* 넓은 화면 — 반반으로 가른다 */
 .versus-grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1px;
-  background: var(--line-soft);
-  border: 1px solid var(--line-soft);
   margin-top: 1.5rem;
+}
+
+/* 고른 쪽만 보여준다 */
+.versus-grid[data-active="left"] .versus-side[data-side="right"],
+.versus-grid[data-active="right"] .versus-side[data-side="left"] {
+  display: none;
 }
 
 .versus-side {
   min-width: 0;
-  padding: var(--space-card);
-  background: var(--surface-void);
 }
 
 .versus-side__head {
@@ -1160,22 +1173,6 @@ button.term.is-open > .term__pop {
 
 .versus-side .roster-team__name {
   font-size: clamp(1.15rem, 1rem + 0.6vw, 1.5rem);
-}
-
-@media (max-width: 900px) {
-  .versus-tabs {
-    display: flex;
-  }
-
-  .versus-grid {
-    grid-template-columns: 1fr;
-  }
-
-  /* 탭으로 고른 쪽만 보여준다 */
-  .versus-grid[data-active="left"] .versus-side[data-side="right"],
-  .versus-grid[data-active="right"] .versus-side[data-side="left"] {
-    display: none;
-  }
 }
 
 /* ─── 목차(팀 상세 내부 이동) ─────────────────────────────── */
