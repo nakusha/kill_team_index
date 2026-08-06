@@ -90,9 +90,7 @@ ul {
 }
 
 .topbar__mark {
-  display: flex;
-  align-items: baseline;
-  gap: 0.55rem;
+  white-space: nowrap;
   font-family: var(--font-display);
   font-weight: 800;
   font-size: 1.05rem;
@@ -101,33 +99,65 @@ ul {
   color: var(--text-bone);
 }
 
-.topbar__mark span {
-  font-family: var(--font-mono);
-  font-size: var(--text-micro);
-  letter-spacing: 0.22em;
-  color: var(--accent);
-}
-
+/*
+ * 메뉴는 한글이라 모노 폰트에 넓은 자간을 주면 읽기 힘들다.
+ * 본문 폰트로 키우고 대비를 올린다.
+ */
 .topbar__nav {
   display: flex;
-  gap: 1.4rem;
-  font-family: var(--font-mono);
-  font-size: var(--text-micro);
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: var(--text-faint);
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  font-family: var(--font-body);
+  font-size: 0.9375rem;
+  letter-spacing: 0.01em;
+  color: var(--text-muted);
 }
 
 .topbar__nav a {
-  padding-bottom: 2px;
-  border-bottom: 1px solid transparent;
-  transition: color var(--duration-fast), border-color var(--duration-fast);
+  padding: 0.35rem 0.55rem 0.3rem;
+  border-bottom: 2px solid transparent;
+  white-space: nowrap;
+  transition:
+    color var(--duration-fast),
+    border-color var(--duration-fast);
 }
 
-.topbar__nav a:hover,
+.topbar__nav a:hover {
+  color: var(--text-bone);
+  border-bottom-color: var(--line-hard);
+}
+
 .topbar__nav a[aria-current="page"] {
   color: var(--text-bone);
   border-bottom-color: var(--accent);
+}
+
+/*
+ * 좁은 화면 — 로고와 메뉴를 위아래로 나눈다.
+ * 한 줄에 밀어 넣으면 로고가 두 줄로 깨지고 메뉴도 접힌다.
+ */
+@media (max-width: 640px) {
+  .topbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.35rem;
+  }
+
+  .topbar__nav {
+    width: 100%;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    scrollbar-width: none;
+  }
+
+  .topbar__nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  .topbar__nav a {
+    flex: 0 0 auto;
+    padding-inline: 0.4rem;
+  }
 }
 
 /* 되돌아가기 링크 */

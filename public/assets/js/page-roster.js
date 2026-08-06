@@ -10,6 +10,7 @@
   var KTX = window.KTX;
   var KTR = window.KTR;
   var KTRender = window.KTRender;
+  var KTIO = window.KTIO;
   var mount = document.getElementById("page");
   if (!KTX.requireData(mount)) return;
 
@@ -50,9 +51,12 @@
       '<button type="button" class="roster-btn roster-btn--link" data-duplicate="' +
       KTX.esc(item.id) +
       '">복제</button>' +
+      '<button type="button" class="roster-btn roster-btn--link" data-copy="' +
+      KTX.esc(item.id) +
+      '">복사</button>' +
       '<button type="button" class="roster-btn roster-btn--link" data-export="' +
       KTX.esc(item.id) +
-      '">내보내기</button>' +
+      '">파일</button>' +
       '<button type="button" class="roster-btn roster-btn--ghost" data-remove="' +
       KTX.esc(item.id) +
       '">삭제</button>' +
@@ -137,7 +141,7 @@
   }
 
   var ACTION_SELECTOR =
-    "[data-activate],[data-rename],[data-duplicate],[data-export],[data-remove]," +
+    "[data-activate],[data-rename],[data-duplicate],[data-export],[data-copy],[data-remove]," +
     "[data-create],[data-import-text],[data-roster-clear]";
 
   function bind() {
@@ -200,8 +204,21 @@
       }
 
       if (target.hasAttribute("data-import-text")) {
-        var text = window.prompt("로스터 JSON 을 붙여넣으세요.");
-        if (text) applyImport(text);
+        KTIO.showPaste("로스터 붙여넣기", applyImport);
+        return;
+      }
+
+      var copyId = target.getAttribute("data-copy");
+      if (copyId) {
+        var copyName = KTR.viewOf(copyId).label;
+        KTIO.showCopy(copyName + " 내보내기", KTR.exportJson(copyId), function (ok) {
+          notify(
+            ok
+              ? '"' + copyName + '" 를 클립보드에 복사했습니다.'
+              : "복사가 막혀 있습니다 — 상자의 내용을 직접 골라 복사하세요.",
+            !ok,
+          );
+        });
         return;
       }
 

@@ -10,6 +10,7 @@
   var KTX = window.KTX;
   var KTR = window.KTR;
   var KTRender = window.KTRender;
+  var KTIO = window.KTIO;
   var mount = document.getElementById("page");
   if (!KTX.requireData(mount)) return;
 
@@ -106,9 +107,12 @@
       sideKey +
       '">붙여넣기</button>' +
       (currentId
-        ? '<button type="button" class="roster-btn roster-btn--link" data-export="' +
+        ? '<button type="button" class="roster-btn roster-btn--link" data-copy="' +
           sideKey +
-          '">내보내기</button>' +
+          '">복사</button>' +
+          '<button type="button" class="roster-btn roster-btn--link" data-export="' +
+          sideKey +
+          '">파일</button>' +
           /* 내리기는 이 자리에서만 치우고, 지우기는 보관함에서 없앤다 — 다른 일이다. */
           '<button type="button" class="roster-btn roster-btn--link" data-unpick="' +
           sideKey +
@@ -138,7 +142,8 @@
         : "보관함에서 고르거나 파일을 불러오세요.") +
       "</p>" +
       '<div class="versus-empty__actions">' +
-      '<label class="roster-btn">상대 로스터 파일 불러오기' +
+      '<label class="roster-btn">' +
+      (isOpponent ? "상대 로스터 파일 불러오기" : "파일 불러오기") +
       '<input type="file" accept="application/json,.json" data-import-file="' +
       side.key +
       '" hidden />' +
@@ -260,7 +265,8 @@
     document.addEventListener("click", function (event) {
       var target = event.target.closest
         ? event.target.closest(
-            "[data-versus-tab],[data-import-text],[data-export],[data-unpick],[data-delete]",
+            "[data-versus-tab],[data-import-text],[data-export],[data-copy]," +
+              "[data-unpick],[data-delete]",
           )
         : null;
       if (!target) return;
@@ -278,8 +284,26 @@
 
       var pasteKey = target.getAttribute("data-import-text");
       if (pasteKey) {
-        var text = window.prompt("로스터 JSON 을 붙여넣으세요.");
-        if (text) applyImport(pasteKey, text);
+        KTIO.showPaste(pasteKey === "right" ? "상대 로스터 붙여넣기" : "로스터 붙여넣기", function (text) {
+          applyImport(pasteKey, text);
+        });
+        return;
+      }
+
+      var copyKey = target.getAttribute("data-copy");
+      if (copyKey) {
+        var copyId = resolve(copyKey);
+        if (!copyId) return;
+
+        var copyName = KTR.viewOf(copyId).label;
+        KTIO.showCopy(copyName + " 내보내기", KTR.exportJson(copyId), function (ok) {
+          notify(
+            ok
+              ? '"' + copyName + '" 를 클립보드에 복사했습니다. 상대에게 붙여넣어 보내세요.'
+              : "복사가 막혀 있습니다 — 상자의 내용을 직접 골라 복사하세요.",
+            !ok,
+          );
+        });
         return;
       }
 
