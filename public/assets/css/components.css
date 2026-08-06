@@ -1166,6 +1166,43 @@ button.term.is-open > .term__pop {
   border-color: var(--accent);
 }
 
+/* 아직 아무것도 안 올린 쪽 — 무엇을 하면 되는지 크게 안내한다 */
+.versus-empty {
+  display: grid;
+  gap: 0.85rem;
+  justify-items: start;
+  padding: clamp(1.5rem, 1rem + 3vw, 3rem);
+  border: 1px dashed var(--line-hard);
+  background: var(--surface-deep);
+}
+
+.versus-empty h3 {
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.6rem);
+}
+
+.versus-empty p {
+  max-width: 46ch;
+  color: var(--text-muted);
+}
+
+.versus-empty__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.versus-empty__actions .roster-btn {
+  padding: 0.5rem 1rem;
+}
+
+.versus-empty__hint {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  line-height: 1.7;
+  color: var(--text-faint);
+}
+
 /* 대전 화면에서는 팀 섹션의 여백을 줄여 두 쪽이 나란히 읽히게 한다 */
 .versus-side .roster-team {
   margin-bottom: 2.5rem;
