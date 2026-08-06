@@ -1003,6 +1003,181 @@ button.term.is-open > .term__pop {
   border: 0;
 }
 
+/* ─── 보관함 (로스터 여러 개) ─────────────────────────────── */
+
+.library-list {
+  display: grid;
+  gap: 1px;
+  background: var(--line-soft);
+  border: 1px solid var(--line-soft);
+}
+
+.library-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: var(--space-card);
+  background: var(--surface-deep);
+}
+
+.library-item.is-active {
+  background: var(--surface-raised);
+  box-shadow: inset 4px 0 0 var(--accent);
+}
+
+.library-item__name {
+  display: flex;
+  align-items: baseline;
+  gap: 0.6rem;
+  font-size: 1.2rem;
+}
+
+.library-item__flag {
+  padding: 0.1rem 0.5rem;
+  border: 1px solid var(--accent);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  color: var(--accent);
+}
+
+.library-item__meta {
+  margin-top: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+}
+
+.library-item__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+/* ─── 대전 ────────────────────────────────────────────────── */
+
+.versus-notice {
+  margin-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  color: var(--accent);
+}
+
+.versus-notice.is-error {
+  color: var(--hazard);
+}
+
+.versus-tabs {
+  display: none; /* 좁은 화면에서만 쓴다 */
+  gap: 0.5rem;
+  padding-block: 0.85rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.versus-tab {
+  flex: 1;
+  padding: 0.5rem 0.8rem;
+  border: 1px solid var(--line-hard);
+  background: none;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  cursor: pointer;
+}
+
+.versus-tab.is-active {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 20%, transparent);
+  color: var(--text-bone);
+}
+
+/* 넓은 화면 — 반반으로 가른다 */
+.versus-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--line-soft);
+  border: 1px solid var(--line-soft);
+  margin-top: 1.5rem;
+}
+
+.versus-side {
+  min-width: 0;
+  padding: var(--space-card);
+  background: var(--surface-void);
+}
+
+.versus-side__head {
+  display: grid;
+  gap: 0.75rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.versus-side__role {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.versus-side__title {
+  font-size: clamp(1.25rem, 1rem + 1vw, 1.75rem);
+}
+
+.versus-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.versus-select {
+  flex: 1 1 12rem;
+  min-width: 0;
+  padding: 0.3rem 0.5rem;
+  border: 1px solid var(--line-hard);
+  background: var(--surface-inset);
+  color: var(--text-bone);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+}
+
+.versus-select:focus-visible {
+  border-color: var(--accent);
+}
+
+/* 대전 화면에서는 팀 섹션의 여백을 줄여 두 쪽이 나란히 읽히게 한다 */
+.versus-side .roster-team {
+  margin-bottom: 2.5rem;
+}
+
+.versus-side .roster-team__name {
+  font-size: clamp(1.15rem, 1rem + 0.6vw, 1.5rem);
+}
+
+@media (max-width: 900px) {
+  .versus-tabs {
+    display: flex;
+  }
+
+  .versus-grid {
+    grid-template-columns: 1fr;
+  }
+
+  /* 탭으로 고른 쪽만 보여준다 */
+  .versus-grid[data-active="left"] .versus-side[data-side="right"],
+  .versus-grid[data-active="right"] .versus-side[data-side="left"] {
+    display: none;
+  }
+}
+
 /* ─── 목차(팀 상세 내부 이동) ─────────────────────────────── */
 
 .jumpbar {

@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>대전 — KT INDEX</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="topbar" aria-label="주 메뉴">
+        <a class="topbar__mark" href="index.html">KT INDEX <span>41M</span></a>
+        <div class="topbar__nav">
+          <a href="index.html">팩션</a>
+          <a href="index.html#kill-teams">킬팀</a>
+          <a href="roster.html">내 로스터</a>
+          <a href="versus.html" aria-current="page">대전</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell" id="page">
+      <section class="section--tight" aria-labelledby="versus-heading">
+        <a class="backlink" href="roster.html">← 내 로스터</a>
+
+        <h1 class="hero__title" id="versus-heading" style="font-size: var(--text-title)">대전</h1>
+        <p class="hero__lede">
+          로스터 둘을 나란히 놓고 봅니다. 넓은 화면에서는 반반으로, 좁은 화면에서는 탭으로
+          나뉩니다. 상대 로스터는 받은 파일이나 붙여넣기로 들이면 됩니다.
+        </p>
+        <p class="versus-notice" id="versus-notice"></p>
+      </section>
+
+      <div class="versus-tabs" id="versus-tabs" role="tablist" aria-label="보는 쪽 고르기"></div>
+
+      <div class="versus-grid" id="versus-grid"></div>
+    </main>
+
+    <footer class="shell footer" id="site-footer"></footer>
+
+    <script src="data/kt-data.js"></script>
+    <script src="assets/js/store.js"></script>
+    <script src="assets/js/roster.js"></script>
+    <script src="assets/js/render-roster.js"></script>
+    <script src="assets/js/page-versus.js"></script>
+  </body>
+</html>

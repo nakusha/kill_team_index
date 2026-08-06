@@ -16,6 +16,7 @@
           <a href="index.html">팩션</a>
           <a href="index.html#kill-teams">킬팀</a>
           <a href="roster.html" aria-current="page">내 로스터</a>
+          <a href="versus.html">대전</a>
         </div>
       </nav>
     </header>
@@ -28,15 +29,28 @@
           내 로스터
         </h1>
         <p class="hero__lede">
-          킬팀 상세에서 담은 요원(고른 무기)과 장비를 모아 봅니다. 팩션 규칙과 플로이는
-          팀이 가진 전부를 함께 싣습니다. 이 브라우저에만 저장되며 서버로 보내지 않습니다.
+          이름 붙인 로스터를 여러 개 둘 수 있습니다. 담기와 무기 고르기는 킬팀 상세에서
+          하고, 여기서는 목록을 관리합니다. 이 브라우저에만 저장되며 서버로 보내지 않습니다.
         </p>
-        <div class="dossier__facts" id="roster-actions"></div>
+        <p class="versus-notice" id="roster-notice"></p>
+        <div class="dossier__facts" id="library-actions"></div>
+      </section>
+
+      <section class="section--tight" aria-labelledby="library-heading">
+        <div class="section__head">
+          <h2 id="library-heading">보관함</h2>
+        </div>
+        <div class="library-list" id="library-list"></div>
       </section>
 
       <div class="hazard-rule" role="presentation"></div>
 
-      <div class="section" id="roster-body"></div>
+      <section class="section" aria-labelledby="active-heading">
+        <div class="section__head">
+          <h2 id="active-heading">편집 중 — <span id="roster-active-name">—</span></h2>
+        </div>
+        <div id="roster-body"></div>
+      </section>
     </main>
 
     <footer class="shell footer" id="site-footer"></footer>
@@ -44,6 +58,7 @@
     <script src="data/kt-data.js"></script>
     <script src="assets/js/store.js"></script>
     <script src="assets/js/roster.js"></script>
+    <script src="assets/js/render-roster.js"></script>
     <script src="assets/js/page-roster.js"></script>
   </body>
 </html>
