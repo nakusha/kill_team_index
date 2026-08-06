@@ -28,16 +28,20 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - name: 저장소 체크아웃
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
+      # enablement 를 켜두면 저장소 Pages 설정이 꺼져 있어도 워크플로가 직접 켠다.
+      # 이게 없으면 "Get Pages site failed … Not Found" 로 죽는다.
       - name: Pages 설정
-        uses: actions/configure-pages@v5
+        uses: actions/configure-pages@v6
+        with:
+          enablement: true
 
       - name: public/ 을 아티팩트로 업로드
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
       - name: 배포
         id: deployment
-        uses: actions/deploy-pages@v4
+        uses: actions/deploy-pages@v5
