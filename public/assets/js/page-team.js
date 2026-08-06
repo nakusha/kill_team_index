@@ -3,14 +3,15 @@
   "use strict";
 
   var KTX = window.KTX;
+  var KTR = window.KTR;
   var mount = document.getElementById("page");
   if (!KTX.requireData(mount)) return;
 
-  var KTR = window.KTR;
   var PLOY_LABEL = { strategy: "전략", firefight: "화력전" };
   var RANGE_PATTERN = /^\s*(?:사거리|Range)\s*(.+?)\s*$/i;
 
   var current = null; /* 지금 보고 있는 킬팀 — 로스터 조작에 필요하다 */
+  var activeUnit = {}; /* 요원별로 지금 편집 중인 인스턴스 uid */
 
   /* ─── 요원 ─────────────────────────────────────────────── */
 
@@ -70,17 +71,45 @@
     return { range: range, rest: rest };
   }
 
-  function weaponTable(rows, caption) {
+  /**
+   * uid 가 있으면 무기 이름 앞에 체크박스를 달아 그 인스턴스의 장비로 담게 한다.
+   * 담지 않은 요원은 체크박스 없이 표만 보여준다 — 먼저 담아야 고를 수 있다.
+   */
+  function weaponNameCell(row, uid) {
+    var label = KTX.nameWithEn(row.name, row.nameEn);
+    if (!uid) return label;
+
+    var isOn = KTR.hasUnitWeapon(current.id, uid, row.name);
+    return (
+      '<label class="wcheck">' +
+      '<input type="checkbox" data-weapon="' +
+      KTX.esc(row.name) +
+      '" data-unit="' +
+      KTX.esc(uid) +
+      '"' +
+      (isOn ? " checked" : "") +
+      " />" +
+      "<span>" +
+      label +
+      "</span></label>"
+    );
+  }
+
+  function weaponTable(rows, caption, uid) {
     if (!rows.length) return "";
 
     var body = rows
       .map(function (row) {
         var split = splitRange(row.rules);
+        var isOn = uid && KTR.hasUnitWeapon(current.id, uid, row.name);
+
         /* data-label 은 좁은 화면에서 표를 카드로 접을 때 열 이름 대신 쓴다. */
         return (
-          "<tr>" +
+          '<tr class="' +
+          (isOn ? "is-picked" : "") +
+          '">' +
           '<td class="wname">' +
-          KTX.nameWithEn(row.name, row.nameEn) +
+          weaponNameCell(row, uid) +
           "</td>" +
           '<td data-label="구분">' +
           KTX.badge(row.type === "melee" ? "근접" : "원거리", "", row.type) +
@@ -152,44 +181,96 @@
    * 캐릭터 시트의 무기는 한글(영어)로 병기한다.
    * 한글표와 영문표는 행 순서가 같지만 행 수가 어긋날 수 있어, 같을 때만 짝을 짓는다.
    */
-  function weaponSection(operative) {
+  function weaponRows(operative) {
     var rowsEn = weaponRowsEn(operative.weapons);
     var rowsKo = operative.weaponsKo;
 
-    if (!rowsKo.length) {
-      return weaponTable(rowsEn, "무기 (한글본 없음 · 영문 원본)");
-    }
-    if (rowsKo.length !== rowsEn.length) {
-      return weaponTable(rowsKo, "무기");
-    }
+    if (!rowsKo.length) return { rows: rowsEn, caption: "무기 (한글본 없음 · 영문 원본)" };
+    if (rowsKo.length !== rowsEn.length) return { rows: rowsKo, caption: "무기" };
 
-    var merged = rowsKo.map(function (row, index) {
-      return Object.assign({}, row, { nameEn: rowsEn[index].name });
-    });
-    return weaponTable(merged, "무기");
+    return {
+      rows: rowsKo.map(function (row, index) {
+        return Object.assign({}, row, { nameEn: rowsEn[index].name });
+      }),
+      caption: "무기",
+    };
   }
 
+  /* ─── 담기 컨트롤 ──────────────────────────────────────── */
+
   /** 담기 전에는 버튼 하나, 담은 뒤에는 인원 조절기. */
-  function operativeControl(teamId, operativeId) {
-    var count = KTR.operativeCount(teamId, operativeId);
+  function operativeControl(operativeId) {
+    var count = KTR.unitCount(current.id, operativeId);
     var id = KTX.esc(operativeId);
 
     if (!count) {
-      return (
-        '<button type="button" class="roster-btn" data-roster-add="' + id + '">담기</button>'
-      );
+      return '<button type="button" class="roster-btn" data-roster-add="' + id + '">담기</button>';
     }
 
     return (
       '<span class="roster-step">' +
-      '<button type="button" data-roster-remove="' + id + '" aria-label="한 명 빼기">−</button>' +
-      "<b>" + count + "</b>" +
-      '<button type="button" data-roster-add="' + id + '" aria-label="한 명 더">+</button>' +
+      '<button type="button" data-roster-remove="' +
+      id +
+      '" aria-label="한 명 빼기">−</button>' +
+      "<b>" +
+      count +
+      "</b>" +
+      '<button type="button" data-roster-add="' +
+      id +
+      '" aria-label="한 명 더">+</button>' +
       "</span>"
     );
   }
 
+  /** 지금 편집 중인 인스턴스. 없거나 사라졌으면 첫 번째를 쓴다. */
+  function activeUidOf(operativeId) {
+    var list = KTR.unitsOf(current.id, operativeId);
+    if (!list.length) return null;
+
+    var chosen = activeUnit[operativeId];
+    var exists = list.some(function (unit) {
+      return unit.uid === chosen;
+    });
+    return exists ? chosen : list[0].uid;
+  }
+
+  /** 같은 요원을 둘 이상 담았을 때만 인스턴스 탭을 보여준다. */
+  function unitTabs(operativeId) {
+    var list = KTR.unitsOf(current.id, operativeId);
+    if (list.length < 2) return "";
+
+    var active = activeUidOf(operativeId);
+    return (
+      '<div class="unit-tabs" role="tablist">' +
+      list
+        .map(function (unit, index) {
+          var picked = unit.weapons.length;
+          return (
+            '<button type="button" role="tab" class="unit-tab' +
+            (unit.uid === active ? " is-active" : "") +
+            '" data-unit-tab="' +
+            KTX.esc(unit.uid) +
+            '" data-unit-op="' +
+            KTX.esc(operativeId) +
+            '" aria-selected="' +
+            (unit.uid === active ? "true" : "false") +
+            '">' +
+            (index + 1) +
+            "번째" +
+            (picked ? " · " + picked : "") +
+            "</button>"
+          );
+        })
+        .join("") +
+      "</div>"
+    );
+  }
+
   function operativeCard(operative) {
+    var uid = activeUidOf(operative.id);
+    var weapons = weaponRows(operative);
+    var count = KTR.unitCount(current.id, operative.id);
+
     return (
       '<article class="operative" id="' +
       KTX.esc(operative.id) +
@@ -198,13 +279,19 @@
       '<h3 class="operative__name">' +
       KTX.nameWithEn(operative.nameKo, operative.nameEn) +
       "</h3>" +
-      '<span class="roster-control" data-roster-control="' + KTX.esc(operative.id) + '">' +
-      operativeControl(current.id, operative.id) +
+      '<span class="roster-control" data-roster-control="' +
+      KTX.esc(operative.id) +
+      '">' +
+      operativeControl(operative.id) +
       "</span>" +
       statblock(operative.stats) +
       "</header>" +
       '<div class="operative__body">' +
-      weaponSection(operative) +
+      unitTabs(operative.id) +
+      (count
+        ? '<p class="loadout-hint">체크한 무기가 내 로스터에 담깁니다. 몇 개를 골라야 하는지는 아래 <a href="#selection">편성 가이드</a>를 확인하세요.</p>'
+        : "") +
+      weaponTable(weapons.rows, weapons.caption, uid) +
       abilityList(operative.abilitiesKo) +
       "</div></article>"
     );
@@ -306,7 +393,7 @@
     if (!bar) return;
 
     var entry = KTR.teamEntry(current.id);
-    var picked = KTR.totalOperatives(current.id);
+    var picked = KTR.totalUnits(current.id);
     var size = (current.size && current.size.total) || 0;
     var isOver = size > 0 && picked > size;
     var isEmpty = picked === 0 && !entry.equipment.length && !entry.ploys.length;
@@ -338,9 +425,33 @@
       "</span>";
   }
 
-  function refreshOperativeControl(operativeId) {
-    var slot = document.querySelector('[data-roster-control="' + operativeId + '"]');
-    if (slot) slot.innerHTML = operativeControl(current.id, operativeId);
+  function operativeById(operativeId) {
+    return (
+      current.operatives.filter(function (operative) {
+        return operative.id === operativeId;
+      })[0] || null
+    );
+  }
+
+  /** 담기·무기 선택이 바뀌면 그 요원 카드만 다시 그린다. */
+  function refreshOperative(operativeId) {
+    var el = document.getElementById(operativeId);
+    var operative = operativeById(operativeId);
+    if (!el || !operative) return;
+
+    el.outerHTML = operativeCard(operative);
+    renderRosterBar();
+  }
+
+  /** 탭 라벨의 "· n"(고른 무기 수)만 갱신한다. */
+  function updateTabCounts(card) {
+    var list = KTR.unitsOf(current.id, card.id);
+
+    card.querySelectorAll(".unit-tab").forEach(function (tab, index) {
+      var unit = list[index];
+      if (!unit) return;
+      tab.textContent = index + 1 + "번째" + (unit.weapons.length ? " · " + unit.weapons.length : "");
+    });
   }
 
   function refreshPick(button, isOn) {
@@ -353,7 +464,7 @@
   }
 
   var ROSTER_SELECTOR =
-    "[data-roster-add],[data-roster-remove],[data-roster-equip],[data-roster-ploy],[data-roster-clear]";
+    "[data-roster-add],[data-roster-remove],[data-roster-equip],[data-roster-ploy],[data-roster-clear],[data-unit-tab]";
 
   function bindRoster() {
     document.addEventListener("click", function (event) {
@@ -363,17 +474,31 @@
 
       if (target.hasAttribute("data-roster-clear")) {
         KTR.clearTeam(current.id);
+        activeUnit = {};
         renderAll();
         return;
       }
 
+      var tabUid = target.getAttribute("data-unit-tab");
+      if (tabUid) {
+        var tabOp = target.getAttribute("data-unit-op");
+        activeUnit[tabOp] = tabUid;
+        refreshOperative(tabOp);
+        return;
+      }
+
       var addId = target.getAttribute("data-roster-add");
+      if (addId) {
+        activeUnit[addId] = KTR.addUnit(current.id, addId);
+        refreshOperative(addId);
+        return;
+      }
+
       var removeId = target.getAttribute("data-roster-remove");
-      if (addId || removeId) {
-        if (addId) KTR.addOperative(current.id, addId);
-        else KTR.removeOperative(current.id, removeId);
-        refreshOperativeControl(addId || removeId);
-        renderRosterBar();
+      if (removeId) {
+        KTR.removeLastUnit(current.id, removeId);
+        delete activeUnit[removeId];
+        refreshOperative(removeId);
         return;
       }
 
@@ -391,6 +516,24 @@
         refreshPick(target, KTR.hasPloy(current.id, ployId));
         renderRosterBar();
       }
+    });
+
+    /* 무기 체크박스 — 체크한 무기가 그 인스턴스의 장비가 된다. */
+    document.addEventListener("change", function (event) {
+      var box = event.target;
+      if (!box.matches || !box.matches("input[type=checkbox][data-weapon]")) return;
+
+      KTR.toggleUnitWeapon(current.id, box.getAttribute("data-unit"), box.getAttribute("data-weapon"));
+
+      var row = box.closest("tr");
+      if (row) row.classList.toggle("is-picked", box.checked);
+
+      /*
+       * 카드를 통째로 다시 그리면 방금 누른 체크박스가 사라져 연속 선택이 끊긴다.
+       * 탭에 적힌 선택 개수만 고쳐 쓴다.
+       */
+      var card = box.closest(".operative");
+      if (card) updateTabCounts(card);
     });
   }
 

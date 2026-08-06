@@ -1,4 +1,4 @@
-/* 내 로스터 — 담아둔 요원·장비·플로이를 한 화면에 모아 본다. */
+/* 내 로스터 — 담아둔 요원(인스턴스별 무기)·장비·플로이·팩션 규칙을 모아 본다. */
 (function () {
   "use strict";
 
@@ -41,10 +41,7 @@
     });
   }
 
-  /**
-   * 팀 상세와 같은 규칙 — 한글표에 영문 이름을 짝지어 붙인다.
-   * 행 수가 어긋나면 잘못 짝짓느니 한글표만 쓴다.
-   */
+  /** 팀 상세와 같은 규칙 — 행 수가 맞을 때만 한글표에 영문 이름을 짝지어 붙인다. */
   function weaponRows(operative) {
     var rowsEn = weaponRowsEn(operative.weapons);
     var rowsKo = operative.weaponsKo;
@@ -57,8 +54,7 @@
     });
   }
 
-  function weaponTable(operative) {
-    var rows = weaponRows(operative);
+  function weaponTable(rows) {
     if (!rows.length) return "";
 
     var body = rows
@@ -148,18 +144,47 @@
     );
   }
 
-  function operativeCard(operative, count) {
+  /**
+   * 인스턴스 하나 = 요원 한 명.
+   * 무기를 골랐으면 그것만, 안 골랐으면 전체를 보여주고 미선택임을 밝힌다.
+   * 저장된 이름이 데이터에 없으면(원본 갱신 등) 조용히 넘기지 않고 알린다.
+   */
+  function unitCard(operative, unit, index, total) {
+    var rows = weaponRows(operative);
+    var chosen = unit.weapons || [];
+
+    var shown = chosen.length
+      ? rows.filter(function (row) {
+          return chosen.indexOf(row.name) !== -1;
+        })
+      : rows;
+
+    var known = rows.map(function (row) {
+      return row.name;
+    });
+    var missing = chosen.filter(function (name) {
+      return known.indexOf(name) === -1;
+    });
+
     return (
       '<article class="operative">' +
       '<header class="operative__head">' +
       '<h3 class="operative__name">' +
       KTX.nameWithEn(operative.nameKo, operative.nameEn) +
-      (count > 1 ? '<span class="roster-count">×' + count + "</span>" : "") +
+      (total > 1 ? '<span class="roster-count">' + (index + 1) + "번째</span>" : "") +
+      (chosen.length ? "" : '<span class="roster-count roster-count--warn">무기 미선택</span>') +
       "</h3>" +
       statblock(operative.stats) +
       "</header>" +
       '<div class="operative__body">' +
-      weaponTable(operative) +
+      (missing.length
+        ? '<p class="roster-warn">저장된 무기 ' +
+          missing.length +
+          "개가 지금 데이터에 없어 표시하지 못했습니다 — " +
+          KTX.esc(missing.join(", ")) +
+          "</p>"
+        : "") +
+      weaponTable(shown) +
       abilityList(operative.abilitiesKo) +
       "</div></article>"
     );
@@ -198,20 +223,48 @@
     return (
       '<p class="subhead">' +
       KTX.esc(title) +
-      "</p><div class=\"entry-list\">" +
+      '</p><div class="entry-list">' +
       items.map(render).join("") +
       "</div>"
     );
   }
 
-  /** 저장된 ID 를 실제 데이터와 맞춰본다. 원본이 바뀌어 사라진 ID 는 건너뛴다. */
-  function collect(team, entry) {
-    var operatives = team.operatives
-      .filter(function (operative) {
-        return entry.operatives[operative.id] > 0;
+  /** 팩션 규칙은 길어서 접어 둔다 — 필요할 때 펼쳐 본다. */
+  function factionRuleBlock(team) {
+    var rule = team.factionRule;
+    if (!rule || !rule.blocks.length) return "";
+
+    var body = rule.blocks
+      .map(function (block) {
+        var cls = block.type === "heading" ? "guide__heading" : "guide__text";
+        return '<p class="' + cls + '">' + KTX.linkifyTerms(KTX.esc(block.text)) + "</p>";
       })
-      .map(function (operative) {
-        return { operative: operative, count: entry.operatives[operative.id] };
+      .join("");
+
+    return (
+      '<details class="roster-rule">' +
+      "<summary>팩션 규칙" +
+      (rule.brief ? ' <span class="roster-rule__brief">' + KTX.esc(rule.brief) + "</span>" : "") +
+      "</summary>" +
+      '<div class="guide">' +
+      body +
+      "</div></details>"
+    );
+  }
+
+  /** 저장된 ID 를 실제 데이터와 맞춰본다. 사라진 요원 인스턴스는 건너뛴다. */
+  function collect(team, entry) {
+    var byId = {};
+    team.operatives.forEach(function (operative) {
+      byId[operative.id] = operative;
+    });
+
+    var units = (entry.units || [])
+      .filter(function (unit) {
+        return byId[unit.opId];
+      })
+      .map(function (unit) {
+        return { unit: unit, operative: byId[unit.opId] };
       });
 
     var equipment = team.equipment.filter(function (item) {
@@ -222,17 +275,36 @@
       return entry.ploys.indexOf(ploy.id) !== -1;
     });
 
-    var total = operatives.reduce(function (sum, row) {
-      return sum + row.count;
-    }, 0);
+    var unpicked = units.filter(function (row) {
+      return !row.unit.weapons.length;
+    }).length;
 
-    return { operatives: operatives, equipment: equipment, ploys: ploys, total: total };
+    return { units: units, equipment: equipment, ploys: ploys, unpicked: unpicked };
+  }
+
+  /** 같은 요원이 여러 명이면 몇 번째인지 붙여 준다. */
+  function unitCards(units) {
+    var seen = {};
+    var totals = {};
+
+    units.forEach(function (row) {
+      totals[row.unit.opId] = (totals[row.unit.opId] || 0) + 1;
+    });
+
+    return units
+      .map(function (row) {
+        var opId = row.unit.opId;
+        var index = seen[opId] || 0;
+        seen[opId] = index + 1;
+        return unitCard(row.operative, row.unit, index, totals[opId]);
+      })
+      .join("");
   }
 
   function teamSection(team, entry) {
     var picked = collect(team, entry);
     var size = (team.size && team.size.total) || 0;
-    var isOver = size > 0 && picked.total > size;
+    var isOver = size > 0 && picked.units.length > size;
 
     return (
       '<section class="roster-team" style="--accent:' +
@@ -250,11 +322,12 @@
       '<div class="roster-team__actions">' +
       KTX.badge(
         "편성",
-        picked.total + (size ? " / " + size : "") + "명",
+        picked.units.length + (size ? " / " + size : "") + "명",
         isOver ? "strategy" : "accent",
       ) +
       KTX.badge("장비", picked.equipment.length) +
       KTX.badge("플로이", picked.ploys.length) +
+      (picked.unpicked ? KTX.badge("무기 미선택", picked.unpicked + "명", "strategy") : "") +
       '<a class="roster-btn roster-btn--link" href="team.html?t=' +
       encodeURIComponent(team.id) +
       '">편집</a>' +
@@ -263,14 +336,9 @@
       '">비우기</button>' +
       "</div></header>" +
       (isOver ? '<p class="roster-warn">편성 정원을 넘었습니다</p>' : "") +
-      (picked.operatives.length
-        ? '<div class="op-list">' +
-          picked.operatives
-            .map(function (row) {
-              return operativeCard(row.operative, row.count);
-            })
-            .join("") +
-          "</div>"
+      factionRuleBlock(team) +
+      (picked.units.length
+        ? '<div class="op-list">' + unitCards(picked.units) + "</div>"
         : '<p class="empty">담은 요원이 없습니다</p>') +
       pickedList("장비", picked.equipment, equipmentEntry) +
       pickedList("플로이", picked.ploys, ployEntry) +
@@ -307,7 +375,10 @@
       sections.join("") || '<p class="empty">담은 킬팀을 데이터에서 찾지 못했습니다</p>';
 
     document.getElementById("roster-actions").innerHTML =
-      '<button type="button" class="roster-btn roster-btn--ghost" data-roster-clear-all>전체 비우기</button>';
+      '<button type="button" class="roster-btn roster-btn--ghost" data-roster-clear-all>전체 비우기</button>' +
+      (KTR.hasSaveFailed()
+        ? '<span class="roster-bar__warn">저장 실패 — 이 창에서만 유지됩니다</span>'
+        : "");
   }
 
   function bind() {

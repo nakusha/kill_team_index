@@ -886,6 +886,112 @@ button.term.is-open > .term__pop {
   color: var(--hazard);
 }
 
+.roster-count--warn {
+  border-color: var(--hazard);
+  color: var(--hazard);
+}
+
+/* 무기 선택 체크박스 — 이름 칸 안에 둬서 열이 늘지 않게 한다 */
+.wcheck {
+  display: flex;
+  align-items: baseline;
+  gap: 0.55rem;
+  cursor: pointer;
+}
+
+.wcheck input {
+  flex: 0 0 auto;
+  width: 1rem;
+  height: 1rem;
+  accent-color: var(--accent);
+  cursor: pointer;
+}
+
+.wtable tr.is-picked td {
+  background: color-mix(in oklab, var(--accent) 12%, transparent);
+}
+
+.loadout-hint {
+  margin-bottom: 0.75rem;
+  font-size: var(--text-small);
+  color: var(--text-faint);
+}
+
+.loadout-hint a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+/* 같은 요원을 여러 명 담았을 때의 인스턴스 탭 */
+.unit-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin-bottom: 0.9rem;
+}
+
+.unit-tab {
+  padding: 0.25rem 0.7rem;
+  border: 1px solid var(--line-hard);
+  background: none;
+  color: var(--text-faint);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  transition:
+    border-color var(--duration-fast),
+    color var(--duration-fast);
+}
+
+.unit-tab:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.unit-tab.is-active {
+  border-color: var(--accent);
+  background: color-mix(in oklab, var(--accent) 20%, transparent);
+  color: var(--text-bone);
+}
+
+/* 로스터에 접어 둔 팩션 규칙 */
+.roster-rule {
+  margin-bottom: 1.5rem;
+  border: 1px solid var(--line-soft);
+  background: var(--surface-deep);
+}
+
+.roster-rule > summary {
+  padding: 0.75rem var(--space-card);
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  cursor: pointer;
+}
+
+.roster-rule > summary:hover {
+  color: var(--accent);
+}
+
+.roster-rule[open] > summary {
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--accent);
+}
+
+.roster-rule__brief {
+  margin-left: 0.5rem;
+  letter-spacing: 0.04em;
+  text-transform: none;
+  color: var(--text-faint);
+}
+
+.roster-rule .guide {
+  border: 0;
+}
+
 /* ─── 목차(팀 상세 내부 이동) ─────────────────────────────── */
 
 .jumpbar {

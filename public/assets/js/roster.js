@@ -1,15 +1,19 @@
 /*
- * 내 로스터 저장소.
+ * 내 로스터 저장소 (스키마 v2).
  *
  * 서버가 없으므로 브라우저 localStorage 에만 담는다.
  * 저장소를 못 쓰는 환경(사생활 보호 모드 등)에서는 메모리로 물러나
  * 그 세션 동안만 유지된다 — 조용히 실패하지 않고 hasSaveFailed() 로 알린다.
+ *
+ * v1 은 요원을 개수 맵으로 담아 같은 요원 둘이 서로 다른 무기를 드는 경우를
+ * 표현하지 못했다. v2 는 인스턴스(unit) 배열로 바꿔 무기 선택을 각자 갖게 한다.
  */
 window.KTR = (function () {
   "use strict";
 
-  var STORAGE_KEY = "kt-index:roster:v1";
-  var VERSION = 1;
+  var STORAGE_KEY = "kt-index:roster:v2";
+  var LEGACY_KEY = "kt-index:roster:v1";
+  var VERSION = 2;
 
   var memory = null; /* localStorage 를 못 쓸 때 쓰는 대체 저장소 */
   var saveFailed = false;
@@ -19,24 +23,63 @@ window.KTR = (function () {
   }
 
   function emptyEntry() {
-    /* operatives 는 같은 요원을 여러 명 편성할 수 있어 개수 맵으로 둔다. */
-    return { operatives: {}, equipment: [], ploys: [] };
+    return { seq: 0, units: [], equipment: [], ploys: [] };
+  }
+
+  /** v1(개수 맵) → v2(인스턴스 배열). 인원은 보존하고 무기는 미선택으로 둔다. */
+  function migrate(old) {
+    var next = emptyState();
+
+    Object.keys(old.teams || {}).forEach(function (teamId) {
+      var found = old.teams[teamId] || {};
+      var entry = emptyEntry();
+
+      Object.keys(found.operatives || {}).forEach(function (operativeId) {
+        var count = found.operatives[operativeId];
+        for (var i = 0; i < count; i += 1) {
+          entry.seq += 1;
+          entry.units.push({ uid: "u" + entry.seq, opId: operativeId, weapons: [] });
+        }
+      });
+
+      entry.equipment = Array.isArray(found.equipment) ? found.equipment.slice() : [];
+      entry.ploys = Array.isArray(found.ploys) ? found.ploys.slice() : [];
+      next.teams[teamId] = entry;
+    });
+
+    return next;
+  }
+
+  function parse(raw) {
+    try {
+      return raw ? JSON.parse(raw) : null;
+    } catch (error) {
+      return null;
+    }
   }
 
   function read() {
     if (memory) return memory;
 
-    try {
-      var raw = window.localStorage.getItem(STORAGE_KEY);
-      if (!raw) return emptyState();
+    var current = parse(window.localStorage ? safeGet(STORAGE_KEY) : null);
+    if (current && current.version === VERSION && typeof current.teams === "object") {
+      return current;
+    }
 
-      var parsed = JSON.parse(raw);
-      if (!parsed || parsed.version !== VERSION || typeof parsed.teams !== "object") {
-        return emptyState();
-      }
-      return parsed;
+    /* v1 이 남아 있으면 옮겨 담는다. 원본은 지우지 않고 남겨 둔다. */
+    var legacy = parse(safeGet(LEGACY_KEY));
+    if (legacy && legacy.version === 1 && typeof legacy.teams === "object") {
+      return write(migrate(legacy));
+    }
+
+    return emptyState();
+  }
+
+  function safeGet(key) {
+    try {
+      return window.localStorage.getItem(key);
     } catch (error) {
-      return emptyState();
+      return null;
     }
   }
 
@@ -57,9 +100,10 @@ window.KTR = (function () {
     if (!state.teams[teamId]) state.teams[teamId] = emptyEntry();
     var found = state.teams[teamId];
 
-    if (!found.operatives || typeof found.operatives !== "object") found.operatives = {};
+    if (!Array.isArray(found.units)) found.units = [];
     if (!Array.isArray(found.equipment)) found.equipment = [];
     if (!Array.isArray(found.ploys)) found.ploys = [];
+    if (typeof found.seq !== "number") found.seq = found.units.length;
     return found;
   }
 
@@ -67,9 +111,7 @@ window.KTR = (function () {
   function prune(state, teamId) {
     var found = state.teams[teamId];
     if (!found) return;
-
-    var hasOperative = Object.keys(found.operatives).length > 0;
-    if (!hasOperative && !found.equipment.length && !found.ploys.length) {
+    if (!found.units.length && !found.equipment.length && !found.ploys.length) {
       delete state.teams[teamId];
     }
   }
@@ -78,35 +120,83 @@ window.KTR = (function () {
     return read().teams[teamId] || emptyEntry();
   }
 
-  function operativeCount(teamId, operativeId) {
-    return teamEntry(teamId).operatives[operativeId] || 0;
+  /* ─── 인스턴스 ────────────────────────────────────────── */
+
+  function units(teamId) {
+    return teamEntry(teamId).units;
   }
 
-  function totalOperatives(teamId) {
-    var operatives = teamEntry(teamId).operatives;
-    return Object.keys(operatives).reduce(function (sum, id) {
-      return sum + operatives[id];
-    }, 0);
+  function unitsOf(teamId, operativeId) {
+    return units(teamId).filter(function (unit) {
+      return unit.opId === operativeId;
+    });
   }
 
-  function addOperative(teamId, operativeId) {
+  function unitCount(teamId, operativeId) {
+    return unitsOf(teamId, operativeId).length;
+  }
+
+  function totalUnits(teamId) {
+    return units(teamId).length;
+  }
+
+  function addUnit(teamId, operativeId) {
     var state = read();
     var found = entry(state, teamId);
-    found.operatives[operativeId] = (found.operatives[operativeId] || 0) + 1;
-    return write(state);
+
+    found.seq += 1;
+    found.units.push({ uid: "u" + found.seq, opId: operativeId, weapons: [] });
+    write(state);
+    return found.units[found.units.length - 1].uid;
   }
 
-  function removeOperative(teamId, operativeId) {
+  /** − 버튼용 — 그 요원의 마지막 인스턴스를 뺀다. */
+  function removeLastUnit(teamId, operativeId) {
     var state = read();
     var found = entry(state, teamId);
-    var next = (found.operatives[operativeId] || 0) - 1;
 
-    if (next > 0) found.operatives[operativeId] = next;
-    else delete found.operatives[operativeId];
+    for (var i = found.units.length - 1; i >= 0; i -= 1) {
+      if (found.units[i].opId === operativeId) {
+        found.units.splice(i, 1);
+        break;
+      }
+    }
 
     prune(state, teamId);
     return write(state);
   }
+
+  function findUnit(found, uid) {
+    return (
+      found.units.filter(function (unit) {
+        return unit.uid === uid;
+      })[0] || null
+    );
+  }
+
+  function unitWeapons(teamId, uid) {
+    var found = teamEntry(teamId);
+    var unit = findUnit(found, uid);
+    return unit ? unit.weapons : [];
+  }
+
+  function toggleUnitWeapon(teamId, uid, weaponName) {
+    var state = read();
+    var unit = findUnit(entry(state, teamId), uid);
+    if (!unit) return state;
+
+    var at = unit.weapons.indexOf(weaponName);
+    if (at === -1) unit.weapons.push(weaponName);
+    else unit.weapons.splice(at, 1);
+
+    return write(state);
+  }
+
+  function hasUnitWeapon(teamId, uid, weaponName) {
+    return unitWeapons(teamId, uid).indexOf(weaponName) !== -1;
+  }
+
+  /* ─── 장비 · 플로이 ───────────────────────────────────── */
 
   function toggleIn(list, id) {
     var at = list.indexOf(id);
@@ -137,6 +227,8 @@ window.KTR = (function () {
     return teamEntry(teamId).ploys.indexOf(ployId) !== -1;
   }
 
+  /* ─── 정리 ────────────────────────────────────────────── */
+
   function clearTeam(teamId) {
     var state = read();
     delete state.teams[teamId];
@@ -147,7 +239,6 @@ window.KTR = (function () {
     return write(emptyState());
   }
 
-  /** 무언가 담긴 킬팀 ID 목록. */
   function teamIds() {
     return Object.keys(read().teams);
   }
@@ -163,10 +254,15 @@ window.KTR = (function () {
 
   return {
     teamEntry: teamEntry,
-    operativeCount: operativeCount,
-    totalOperatives: totalOperatives,
-    addOperative: addOperative,
-    removeOperative: removeOperative,
+    units: units,
+    unitsOf: unitsOf,
+    unitCount: unitCount,
+    totalUnits: totalUnits,
+    addUnit: addUnit,
+    removeLastUnit: removeLastUnit,
+    unitWeapons: unitWeapons,
+    toggleUnitWeapon: toggleUnitWeapon,
+    hasUnitWeapon: hasUnitWeapon,
     toggleEquipment: toggleEquipment,
     togglePloy: togglePloy,
     hasEquipment: hasEquipment,
