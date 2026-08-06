@@ -108,7 +108,14 @@
       (currentId
         ? '<button type="button" class="roster-btn roster-btn--link" data-export="' +
           sideKey +
-          '">내보내기</button>'
+          '">내보내기</button>' +
+          /* 내리기는 이 자리에서만 치우고, 지우기는 보관함에서 없앤다 — 다른 일이다. */
+          '<button type="button" class="roster-btn roster-btn--link" data-unpick="' +
+          sideKey +
+          '">내리기</button>' +
+          '<button type="button" class="roster-btn roster-btn--ghost" data-delete="' +
+          sideKey +
+          '">지우기</button>'
         : "") +
       "</div>"
     );
@@ -252,7 +259,9 @@
   function bind() {
     document.addEventListener("click", function (event) {
       var target = event.target.closest
-        ? event.target.closest("[data-versus-tab],[data-import-text],[data-export]")
+        ? event.target.closest(
+            "[data-versus-tab],[data-import-text],[data-export],[data-unpick],[data-delete]",
+          )
         : null;
       if (!target) return;
 
@@ -275,7 +284,42 @@
       }
 
       var exportKey = target.getAttribute("data-export");
-      if (exportKey) download(exportKey);
+      if (exportKey) {
+        download(exportKey);
+        return;
+      }
+
+      /* 자리에서만 내린다 — 보관함에는 그대로 남는다. */
+      var unpickKey = target.getAttribute("data-unpick");
+      if (unpickKey) {
+        delete picked[unpickKey];
+        writePick(picked);
+        notify((unpickKey === "right" ? "상대" : "내") + " 쪽을 비웠습니다. 보관함에는 남아 있습니다.");
+        render();
+        return;
+      }
+
+      /* 보관함에서 없앤다 — 되돌릴 수 없으니 한 번 묻는다. */
+      var deleteKey = target.getAttribute("data-delete");
+      if (deleteKey) {
+        var id = resolve(deleteKey);
+        if (!id) return;
+
+        var name = KTR.viewOf(id).label;
+        if (!window.confirm('"' + name + '" 를 보관함에서 지울까요?')) return;
+
+        var wasLast = KTR.list().length <= 1;
+        KTR.remove(id);
+        delete picked[deleteKey];
+        writePick(picked);
+
+        notify(
+          wasLast
+            ? '"' + name + '" 의 내용을 비웠습니다 — 편집할 로스터가 없어지면 안 되어 항목 자체는 남깁니다.'
+            : '"' + name + '" 를 보관함에서 지웠습니다.',
+        );
+        render();
+      }
     });
 
     document.addEventListener("change", function (event) {
