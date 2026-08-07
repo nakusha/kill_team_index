@@ -1443,3 +1443,133 @@ button.term.is-open > .term__pop {
     flex: 0 0 auto;
   }
 }
+
+/* ─── 첫 화면 게임 고르기 ─────────────────────────────────── */
+
+.game-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
+  gap: 1.25rem;
+}
+
+.game-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  padding: clamp(1.5rem, 1rem + 3vw, 2.75rem);
+  background:
+    linear-gradient(160deg, color-mix(in oklab, var(--accent) 18%, transparent), transparent 55%),
+    var(--surface-deep);
+  border: 1px solid var(--line-hard);
+  transition:
+    transform var(--duration-normal) var(--ease-out-expo),
+    box-shadow var(--duration-normal) var(--ease-out-expo);
+}
+
+.game-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lift);
+}
+
+.game-card__kicker {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--accent);
+}
+
+.game-card__name {
+  font-size: clamp(2rem, 1.4rem + 3vw, 3.25rem);
+  text-transform: uppercase;
+}
+
+.game-card__desc {
+  max-width: 34ch;
+  color: var(--text-muted);
+}
+
+.game-card__stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 1.5rem;
+  margin-top: 0.5rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--line-soft);
+}
+
+.game-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 0.35rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  color: var(--text-faint);
+}
+
+.game-stat b {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  color: var(--text-bone);
+  font-variant-numeric: tabular-nums;
+}
+
+.game-card__go {
+  margin-top: auto;
+  padding-top: 1rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-small);
+  letter-spacing: 0.1em;
+  color: var(--accent);
+}
+
+/* ─── 스피어헤드 ──────────────────────────────────────────── */
+
+.faction-group + .faction-group {
+  margin-top: var(--space-section);
+}
+
+.entry__declare {
+  margin-bottom: 0.4rem;
+  font-size: var(--text-small);
+  color: var(--text-muted);
+}
+
+.unit-keywords {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+}
+
+/* 대전에서 고른 것 요약 */
+.sh-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1px;
+  margin-bottom: 1.5rem;
+  background: var(--line-soft);
+  border: 1px solid var(--line-soft);
+}
+
+.sh-summary div {
+  flex: 1 1 12rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding: 0.85rem var(--space-card);
+  background: var(--surface-deep);
+}
+
+.sh-summary span {
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.18em;
+  color: var(--text-faint);
+}
+
+.sh-summary b {
+  font-size: 1.05rem;
+  color: var(--text-bone);
+}

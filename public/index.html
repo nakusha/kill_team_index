@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>KT INDEX — 킬팀 팩션 색인</title>
+    <title>KT INDEX — 킬팀 · 스피어헤드 색인</title>
     <meta
       name="description"
-      content="킬팀 팩션 9개 · 킬팀 48개 · 요원 492명을 한 곳에서 찾아보는 색인."
+      content="워해머 킬팀과 에이지 오브 시그마 스피어헤드의 팩션·유닛 자료를 한글로 찾아보는 색인."
     />
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
@@ -16,63 +16,55 @@
     <header class="shell">
       <nav class="topbar" aria-label="주 메뉴">
         <a class="topbar__mark" href="index.html">KT INDEX</a>
-        <div class="topbar__nav">
-          <a href="index.html" aria-current="page">팩션</a>
-          <a href="#kill-teams">킬팀</a>
-          <a href="roster.html">내 로스터</a>
-          <a href="versus.html">대전</a>
-        </div>
       </nav>
     </header>
 
     <main class="shell" id="page">
       <section class="hero" aria-labelledby="hero-heading">
-        <p class="eyebrow">Kill Team · Faction Dossier</p>
+        <p class="eyebrow">Warhammer · Rules Index</p>
         <h1 class="hero__title" id="hero-heading">
-          킬팀
-          <em>팩션 색인</em>
+          무엇을
+          <em>펼칠까요</em>
         </h1>
         <p class="hero__lede">
-          팩션 · 킬팀 · 요원 · 플로이 · 장비 · 편성 가이드를 한 곳에 모았습니다.
-          이름은 한글(영어)로 함께 적고, 설명은 한글로 정리합니다.
+          팩션과 유닛 자료를 한글로 정리했습니다. 용어에 마우스를 올리면 뜻이 펼쳐지고,
+          로스터와 대전 화면은 게임 중에 바로 쓰라고 만들었습니다.
         </p>
-        <div class="hero__stats" id="hero-stats"></div>
       </section>
 
       <div class="hazard-rule" role="presentation"></div>
 
-      <section class="section" aria-labelledby="factions-heading">
-        <div class="section__head">
-          <h2 id="factions-heading">팩션</h2>
-          <span class="section__count">9개</span>
-        </div>
-        <div class="faction-grid" id="faction-grid"></div>
-      </section>
+      <section class="section" aria-label="게임 고르기">
+        <div class="game-grid">
+          <a class="game-card" href="killteam.html" style="--accent: oklch(72% 0.13 250)">
+            <p class="game-card__kicker">Warhammer 40,000</p>
+            <h2 class="game-card__name">킬 팀</h2>
+            <p class="game-card__desc">
+              요원 시트와 플로이·장비를 보고, 로스터를 꾸려 대전 화면에서 상대와 나란히
+              놓고 봅니다.
+            </p>
+            <div class="game-card__stats" id="kt-stats"></div>
+            <span class="game-card__go">킬팀 색인 열기 →</span>
+          </a>
 
-      <section class="section" id="kill-teams" aria-labelledby="teams-heading">
-        <div class="section__head">
-          <h2 id="teams-heading">킬팀 전체</h2>
-          <span class="section__count" id="team-count">–</span>
+          <a class="game-card" href="spearhead.html" style="--accent: oklch(72% 0.16 55)">
+            <p class="game-card__kicker">Age of Sigmar</p>
+            <h2 class="game-card__name">스피어헤드</h2>
+            <p class="game-card__desc">
+              아미 능력과 유닛 시트를 보고, 대전에서 레지먼트 1개와 인핸스먼트 1개를 골라
+              양쪽을 견줍니다.
+            </p>
+            <div class="game-card__stats" id="aos-stats"></div>
+            <span class="game-card__go">스피어헤드 색인 열기 →</span>
+          </a>
         </div>
-
-        <div class="search">
-          <label for="search-input">검색</label>
-          <input
-            id="search-input"
-            type="search"
-            autocomplete="off"
-            placeholder="죽음의 천사, Angels of Death, IMP-AOD, Recon…"
-          />
-        </div>
-
-        <div class="team-grid" id="team-results" style="margin-top: 1.5rem"></div>
       </section>
     </main>
 
     <footer class="shell footer" id="site-footer"></footer>
 
     <script src="data/kt-data.js"></script>
-    <script src="assets/js/store.js"></script>
-    <script src="assets/js/page-index.js"></script>
+    <script src="data/aos-data.js"></script>
+    <script src="assets/js/page-home.js"></script>
   </body>
 </html>

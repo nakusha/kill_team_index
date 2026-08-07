@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>스피어헤드 — KT INDEX</title>
+    <meta name="description" content="에이지 오브 시그마 스피어헤드 아미 28개를 팩션별로 찾아보는 색인." />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="topbar" aria-label="주 메뉴">
+        <a class="topbar__mark" href="index.html">KT INDEX</a>
+        <div class="topbar__nav">
+          <a href="killteam.html">킬팀</a>
+          <a href="spearhead.html" aria-current="page">스피어헤드</a>
+          <a href="sh-versus.html">대전</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell" id="page">
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="eyebrow">Age of Sigmar · Spearhead</p>
+        <h1 class="hero__title" id="hero-heading">
+          스피어헤드
+          <em>아미 색인</em>
+        </h1>
+        <p class="hero__lede">
+          아미마다 늘 걸리는 능력과, 게임에서 고르는 레지먼트 어빌리티 1개 · 인핸스먼트 1개,
+          그리고 유닛 시트를 정리했습니다.
+        </p>
+        <div class="hero__stats" id="hero-stats"></div>
+      </section>
+
+      <div class="hazard-rule" role="presentation"></div>
+
+      <section class="section" aria-labelledby="armies-heading">
+        <div class="section__head">
+          <h2 id="armies-heading">아미</h2>
+          <span class="section__count" id="army-count">–</span>
+        </div>
+
+        <div class="search">
+          <label for="search-input">검색</label>
+          <input id="search-input" type="search" autocomplete="off" placeholder="스톰캐스트, 비질런트 형제단, 스케이븐…" />
+        </div>
+
+        <div id="army-results" style="margin-top: 1.5rem"></div>
+      </section>
+    </main>
+
+    <footer class="shell footer" id="site-footer"></footer>
+
+    <script src="data/aos-data.js"></script>
+    <script src="assets/js/aos-store.js"></script>
+    <script src="assets/js/page-spearhead.js"></script>
+  </body>
+</html>

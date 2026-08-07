@@ -1,0 +1,280 @@
+{
+  "id": "SH26",
+  "name": "타이런트의 고함",
+  "faction": "오거 마우트라이브",
+  "page": 74,
+  "armyAbilities": [
+    {
+      "group": "아미 능력",
+      "timing": "자신의 이동 페이즈",
+      "name": "꼬르륵 소리가 울려퍼지는 도착",
+      "declare": "",
+      "effect": "이 유닛을 전장 3” 이내에 들어가며, 적 6” 바 깥에 위치하게끔 배치한다."
+    },
+    {
+      "group": "레지먼트 어빌리티",
+      "timing": "게임 당 한번, 아무 돌격 페이즈",
+      "name": "허리띠 풀어헤치고",
+      "declare": "이번 페이즈에 돌격한 아군 유닛을 원하는 만큼 선택한다.",
+      "effect": "해당 유닛마다 교전 중인 적 유닛을 하나 선택 해 주사위를 하나 굴린다. 굴림값 4+마다, 대상 유닛 에게 1 모탈 대미지를 입힌다."
+    },
+    {
+      "group": "인핸스먼트",
+      "timing": "패시브",
+      "name": "큰 성큼걸음",
+      "declare": "",
+      "effect": "지휘관의 이동 수치는 6” 대신 8”가 된다."
+    },
+    {
+      "group": "인핸스먼트",
+      "timing": "게임 당 한번, 리액션: 지휘관이 어택의 대상이 될 때",
+      "name": "스톤혼 피가 담긴 병",
+      "declare": "",
+      "effect": "지휘관은 이번 페이즈 동안 와드(5+)를 가진다."
+    },
+    {
+      "group": "아미 능력",
+      "timing": "패시브",
+      "name": "튼튼한 교잡종",
+      "declare": "",
+      "effect": "아군 아이언블라스터와 마운팽 팩 유닛은 체력 수치 에 +1"
+    },
+    {
+      "group": "레지먼트 어빌리티",
+      "timing": "아무 컴뱃 페이즈",
+      "name": "터져나오는 포효",
+      "declare": "",
+      "effect": "주사위를 하나 굴려, 굴림값 4+로 지휘관 9” 이내의 적 유닛들이 가하는 공격은 명중 굴림값에 -1"
+    },
+    {
+      "group": "인핸스먼트",
+      "timing": "게임 당 한번, 아무 이동 페이즈",
+      "name": "블러버글럽",
+      "declare": "",
+      "effect": "해당 유닛의 피해를 D6만큼 회복한다."
+    }
+  ],
+  "units": [
+    {
+      "name": "타이런트",
+      "stats": {
+        "move": "6”",
+        "health": 8,
+        "save": "4+",
+        "control": 5
+      },
+      "weapons": [
+        {
+          "name": "오거 권총",
+          "range": "10”",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "3+",
+          "rend": "1",
+          "damage": "D3      교",
+          "rules": "교전 사격"
+        },
+        {
+          "name": "천둥철퇴",
+          "range": "근접",
+          "attacks": "3",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "2",
+          "damage": "3",
+          "rules": ""
+        },
+        {
+          "name": "비스트스큐어 글레이브",
+          "range": "근접",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "1",
+          "damage": "D3    안티-",
+          "rules": "-괴수(관통+1)"
+        }
+      ],
+      "keywords": [
+        "영웅",
+        "보병"
+      ],
+      "abilities": [
+        {
+          "timing": "자신의 히어로 페이즈",
+          "name": "깡패의 첫번째 법칙",
+          "declare": "12” 이내에 완전히 들어온 아군 유닛을 하나 선택한다. 이 유닛을 대상으로 선택할 수 없다.",
+          "effect": "다음 내 턴이 시작할 때까지, 해당 유닛의 점"
+        }
+      ]
+    },
+    {
+      "name": "아이언블라스터",
+      "stats": {
+        "move": "9”",
+        "health": 9,
+        "save": "4+",
+        "control": 2
+      },
+      "weapons": [
+        {
+          "name": "아이언블라스터 캐논",
+          "range": "18”",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "2",
+          "damage": "D3+3",
+          "rules": ""
+        },
+        {
+          "name": "몽둥이",
+          "range": "근접",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "-",
+          "damage": "2",
+          "rules": ""
+        },
+        {
+          "name": "라이녹스의 뿔",
+          "range": "근접",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "1",
+          "damage": "D3",
+          "rules": "컴패니언"
+        }
+      ],
+      "keywords": [
+        "워머신"
+      ],
+      "abilities": [
+        {
+          "timing": "패시브",
+          "name": "라이녹스 돌격",
+          "declare": "",
+          "effect": "이 유닛이 돌격을 한 턴 동안 라이녹스의 뿔의 대미지는 3이 된다."
+        }
+      ]
+    },
+    {
+      "name": "리드벌처",
+      "stats": {
+        "move": "6”",
+        "health": 4,
+        "save": "5+",
+        "control": 2
+      },
+      "weapons": [
+        {
+          "name": "리드벌처 포",
+          "range": "15”",
+          "attacks": "D3",
+          "hit": "4+",
+          "wound": "3+",
+          "rend": "1",
+          "damage": "1",
+          "rules": ""
+        },
+        {
+          "name": "후두려치는 일격",
+          "range": "근접",
+          "attacks": "2",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "-",
+          "damage": "2",
+          "rules": ""
+        }
+      ],
+      "keywords": [
+        "보병"
+      ],
+      "abilities": [
+        {
+          "timing": "패시브",
+          "name": "반동 제어 뱃살",
+          "declare": "",
+          "effect": "이 유닛은 무브 능력을 사용하지 않은 턴 동안 가하는"
+        }
+      ]
+    },
+    {
+      "name": "오거 글루톤",
+      "stats": {
+        "move": "6”",
+        "health": 4,
+        "save": "5+",
+        "control": 2
+      },
+      "weapons": [
+        {
+          "name": "오거 무장",
+          "range": "근접",
+          "attacks": "4",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "1",
+          "damage": "2",
+          "rules": ""
+        }
+      ],
+      "keywords": [
+        "보병"
+      ],
+      "abilities": [
+        {
+          "timing": "패시브",
+          "name": "굶주림에 이끌린",
+          "declare": "",
+          "effect": "이 유닛은 돌격 굴림값에 +1"
+        }
+      ]
+    },
+    {
+      "name": "모운팽 팩",
+      "stats": {
+        "move": "9”",
+        "health": 6,
+        "save": "4+",
+        "control": 2
+      },
+      "weapons": [
+        {
+          "name": "솎아내는 몽둥이, 해카",
+          "range": "근접",
+          "attacks": "3",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "1",
+          "damage": "2",
+          "rules": ""
+        },
+        {
+          "name": "모운팽 엄니",
+          "range": "근접",
+          "attacks": "4",
+          "hit": "4+",
+          "wound": "2+",
+          "rend": "1",
+          "damage": "2",
+          "rules": "컴패니언"
+        }
+      ],
+      "keywords": [
+        "기병"
+      ],
+      "abilities": [
+        {
+          "timing": "패시브",
+          "name": "전열파괴자",
+          "declare": "",
+          "effect": "이 유닛을 대상으로 한 사격 공격은 피해 굴림값에 -1"
+        }
+      ]
+    }
+  ]
+}

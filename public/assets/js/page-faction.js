@@ -36,7 +36,7 @@
       "<code>" +
       KTX.esc(id || "(없음)") +
       "</code> — " +
-      '<a href="index.html" style="text-decoration:underline">인덱스로 돌아가기</a>' +
+      '<a href="killteam.html" style="text-decoration:underline">인덱스로 돌아가기</a>' +
       "</div>";
   }
 

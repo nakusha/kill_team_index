@@ -93,7 +93,7 @@
       '<div class="databar">' +
         "<strong>이 로스터는 비어 있습니다</strong><br>" +
         "킬팀 상세에서 요원·무기·장비를 담으면 여기 모입니다.<br>" +
-        '<a href="index.html" style="text-decoration:underline">킬팀 고르러 가기</a>' +
+        '<a href="killteam.html" style="text-decoration:underline">킬팀 고르러 가기</a>' +
         "</div>";
 
     document.getElementById("roster-active-name").textContent = KTR.activeName();

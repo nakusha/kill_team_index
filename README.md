@@ -1,6 +1,9 @@
-# KT INDEX — 킬팀 팩션 색인
+# KT INDEX — 킬팀 · 스피어헤드 색인
 
-Kill Team 데이터를 **팩션 → 킬팀 → 요원**으로 훑어보는 정적 색인.
+워해머 두 게임의 규칙 자료를 한글로 훑어보는 정적 색인. 첫 화면에서 갈라진다.
+
+- **킬 팀**(40K) — 팩션 → 킬팀 → 요원
+- **스피어헤드**(AoS) — 팩션 → 아미 → 유닛
 
 - **팩션 9 · 킬팀 48 · 요원 492 · 플로이 384 · 팀 전용 장비 192 · 용어 55**
 - 표기 기준: 문구는 한글, **요원 이름과 무기는 한글(영어) 병기**
@@ -26,11 +29,15 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 
 | 파일                         | 내용                                                         |
 | ---------------------------- | ------------------------------------------------------------ |
-| `public/index.html`          | 팩션 9개 그리드(소속 킬팀 색 스트립) + 킬팀 48개 즉시 검색   |
+| `public/index.html`          | 첫 화면 — 킬팀 / 스피어헤드 분기 |
+| `public/killteam.html`       | 킬팀 색인 — 팩션 9개 + 킬팀 48개 즉시 검색 |
 | `public/faction.html?f=IMP`  | 팩션 소속 킬팀 목록                                          |
 | `public/team.html?t=IMP-AOD` | 요원 스탯·무기표, 능력, 플로이, 장비, 편성 가이드, 팩션 규칙 |
 | `public/roster.html`         | 로스터 보관함(만들기·이름·복제·삭제·내보내기·불러오기) + 편집 중 로스터 |
-| `public/versus.html`         | 대전 — 로스터 둘을 탭으로 오가며 비교 |
+| `public/versus.html`         | 킬팀 대전 — 로스터 둘을 탭으로 오가며 비교 |
+| `public/spearhead.html`      | 스피어헤드 색인 — 팩션별 아미 28개 |
+| `public/army.html?a=SH01`    | 아미 상세 — 아미 능력 · 레지먼트 · 인핸스먼트 · 유닛 시트 |
+| `public/sh-versus.html`      | 스피어헤드 대전 — 아미 + 레지먼트 1 · 인핸스먼트 1 선택 |
 
 검색은 한글명·영문명·팀 ID·아키타입·팩션명을 한 번에 훑는다
 (예: `죽음의 천사`, `Angels of Death`, `IMP-AOD`, `Recon`).
@@ -91,9 +98,13 @@ Workers & Pages → Create → Pages → Connect to Git → kill_team_index
 기준 시각은 `data/meta.json` 의 `generatedAt` 에서 확인할 수 있다.
 
 ```bash
-node tools/update.mjs            # 원본 재수집 + JSON 재빌드 + 변경분 리포트
+# 킬팀 — 웹 원본에서 재수집
+node tools/update.mjs            # 재수집 + JSON 재빌드 + 변경분 리포트
 node tools/update.mjs --rebuild  # 이미 받아둔 캐시로 JSON 만 다시 만듦
 node tools/update.mjs --dry-run  # 무엇이 바뀌는지 확인만 (data/ 는 원상복구)
+
+# 스피어헤드 — PDF 에서 추출
+node tools/parse-spearhead.mjs [PDF경로]   # 기본값은 Downloads 의 1.8.3 판
 ```
 
 리포트 예시:
@@ -125,13 +136,15 @@ kt-index/
 │   ├── factions.json         팩션 + 킬팀 요약
 │   ├── glossary.json         용어 뜻풀이 + 출처
 │   ├── meta.json             빌드 시각 · 원본 · 집계
-│   └── teams/<팀ID>.json     킬팀 48개 상세
+│   ├── teams/<팀ID>.json     킬팀 48개 상세
+│   └── spearhead/            아미 28개 상세 + meta.json
 │
 └── tools/                    ← 빌드. 배포하지 않는다
     ├── source-files.mjs      원본 파일 목록과 경로 상수
-    ├── fetch-source.mjs      원본 내려받기 → tools/.cache/
+    ├── fetch-source.mjs      킬팀 원본 내려받기 → tools/.cache/
     ├── build-json.mjs        캐시 → JSON 정본 + 배포 번들
-    └── update.mjs            위 둘을 묶은 수동 업데이트
+    ├── update.mjs            위 둘을 묶은 수동 업데이트
+    └── parse-spearhead.mjs   스피어헤드 PDF → JSON + 번들
 ```
 
 JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/kt-data.js` 는 그것을
@@ -293,6 +306,24 @@ JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/
   (근거는 `docs/plan/roster-loadout.md` — 요원 이름 매칭률 6%).
 - 예전 스키마(v1 개수 맵, v2 단일 로스터)는 처음 읽을 때 항목 하나로 흡수한다.
   원본 키는 지우지 않는다.
+
+### 스피어헤드가 동작하는 방식
+
+원본이 PDF 뿐이라 `pdftotext` 로 뽑아 파싱한다. 2단 조판이어서 한 번에 뽑으면 좌우가
+섞이므로 **세 벌**을 만들어 조합한다 — 전체폭(유닛·스탯·무장표), 좌반쪽·우반쪽(능력).
+
+무장표는 열 위치로 자른다. 토큰을 순서대로 채우면 빈 칸에서 값이 밀려 **관통과 대미지가
+뒤바뀐다**. 헤더(`무장 이름 사거리 공격 …`)의 글자 위치를 기준으로 잘라야 정확하다.
+
+추출 결과: 아미 28 · 유닛 112 · 무장 198(핵심값 99%) · 유닛 능력 130 ·
+레지먼트 52 · 인핸스먼트 94.
+
+대전(`sh-versus.html`)은 양쪽이 아미를 고르고 **레지먼트 1개 · 인핸스먼트 1개**를
+정한다. 같은 것을 다시 누르면 선택이 풀린다. 고른 조합은 `kt-index:sh-versus:v1` 에
+남는다. 스피어헤드는 아미 구성이 고정이라 로스터를 따로 두지 않았다.
+
+**알려진 한계**: 아미 2개(소울레이드 헌트 · 슬래셔 호스트)는 원본에 레지먼트/인핸스먼트
+소제목이 없어 그 능력들이 `아미 능력` 으로 묶인다. 추측해서 채우지 않았다.
 
 ### 알아둘 점
 

@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>아미 — KT INDEX</title>
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body>
+    <header class="shell">
+      <nav class="topbar" aria-label="주 메뉴">
+        <a class="topbar__mark" href="index.html">KT INDEX</a>
+        <div class="topbar__nav">
+          <a href="killteam.html">킬팀</a>
+          <a href="spearhead.html">스피어헤드</a>
+          <a href="sh-versus.html">대전</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell" id="page">
+      <section class="section--tight">
+        <a class="backlink" href="spearhead.html">← 스피어헤드 색인</a>
+
+        <div class="dossier">
+          <p class="eyebrow" id="army-faction">–</p>
+          <h1 class="dossier__title"><span id="army-name">–</span></h1>
+          <div class="dossier__facts" id="army-facts"></div>
+        </div>
+      </section>
+
+      <nav class="jumpbar" aria-label="구획 이동">
+        <a href="#always">아미 능력</a>
+        <a href="#regiment">레지먼트</a>
+        <a href="#enhancement">인핸스먼트</a>
+        <a href="#units">유닛</a>
+      </nav>
+
+      <section class="section" id="always" aria-labelledby="always-heading">
+        <div class="section__head"><h2 id="always-heading">늘 적용되는 아미 능력</h2></div>
+        <div id="always-body"></div>
+      </section>
+
+      <section class="section" id="regiment" aria-labelledby="regiment-heading">
+        <div class="section__head">
+          <h2 id="regiment-heading">레지먼트 어빌리티</h2>
+          <span class="section__count">게임 중 <span id="regiment-count">–</span>개 중 1개 선택</span>
+        </div>
+        <div id="regiment-body"></div>
+      </section>
+
+      <section class="section" id="enhancement" aria-labelledby="enhancement-heading">
+        <div class="section__head">
+          <h2 id="enhancement-heading">인핸스먼트</h2>
+          <span class="section__count">게임 중 <span id="enhancement-count">–</span>개 중 1개 선택</span>
+        </div>
+        <div id="enhancement-body"></div>
+      </section>
+
+      <section class="section" id="units" aria-labelledby="units-heading">
+        <div class="section__head">
+          <h2 id="units-heading">유닛</h2>
+          <span class="section__count"><span id="unit-count">–</span>종</span>
+        </div>
+        <div class="op-list" id="unit-list"></div>
+      </section>
+    </main>
+
+    <footer class="shell footer" id="site-footer"></footer>
+
+    <script src="data/aos-data.js"></script>
+    <script src="assets/js/aos-store.js"></script>
+    <script src="assets/js/page-army.js"></script>
+  </body>
+</html>

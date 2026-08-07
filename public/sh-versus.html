@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>대전 — KT INDEX</title>
+    <title>스피어헤드 대전 — KT INDEX</title>
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
     <link rel="stylesheet" href="assets/css/components.css" />
@@ -13,24 +13,24 @@
       <nav class="topbar" aria-label="주 메뉴">
         <a class="topbar__mark" href="index.html">KT INDEX</a>
         <div class="topbar__nav">
-          <a href="killteam.html">팩션</a>
-          <a href="killteam.html#kill-teams">킬팀</a>
-          <a href="roster.html">내 로스터</a>
-          <a href="versus.html" aria-current="page">대전</a>
+          <a href="killteam.html">킬팀</a>
+          <a href="spearhead.html">스피어헤드</a>
+          <a href="sh-versus.html" aria-current="page">대전</a>
         </div>
       </nav>
     </header>
 
     <main class="shell" id="page">
       <section class="section--tight" aria-labelledby="versus-heading">
-        <a class="backlink" href="roster.html">← 내 로스터</a>
+        <a class="backlink" href="spearhead.html">← 스피어헤드 색인</a>
 
-        <h1 class="hero__title" id="versus-heading" style="font-size: var(--text-title)">대전</h1>
+        <h1 class="hero__title" id="versus-heading" style="font-size: var(--text-title)">
+          스피어헤드 대전
+        </h1>
         <p class="hero__lede">
-          로스터 둘을 탭으로 오가며 봅니다. 각 쪽은 보관함에서 고르거나, 받은 파일이나
-          붙여넣기로 들이면 됩니다.
+          양쪽 아미를 고르고 레지먼트 어빌리티 1개와 인핸스먼트 1개를 정합니다. 탭으로
+          오가며 상대 유닛 시트도 그대로 볼 수 있습니다.
         </p>
-        <p class="versus-notice" id="versus-notice"></p>
       </section>
 
       <div class="versus-tabs" id="versus-tabs" role="tablist" aria-label="보는 쪽 고르기"></div>
@@ -40,11 +40,8 @@
 
     <footer class="shell footer" id="site-footer"></footer>
 
-    <script src="data/kt-data.js"></script>
-    <script src="assets/js/store.js"></script>
-    <script src="assets/js/roster.js"></script>
-    <script src="assets/js/render-roster.js"></script>
-    <script src="assets/js/json-io.js"></script>
-    <script src="assets/js/page-versus.js"></script>
+    <script src="data/aos-data.js"></script>
+    <script src="assets/js/aos-store.js"></script>
+    <script src="assets/js/page-sh-versus.js"></script>
   </body>
 </html>
