@@ -1547,35 +1547,9 @@ button.term.is-open > .term__pop {
   color: var(--text-faint);
 }
 
-/* 대전에서 고른 것 요약 */
-.sh-summary {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1px;
+/* 대전에서 고르는 블록 — 고르고 나면 하나만 남는다 */
+.pick-block {
   margin-bottom: 1.5rem;
-  background: var(--line-soft);
-  border: 1px solid var(--line-soft);
-}
-
-.sh-summary div {
-  flex: 1 1 12rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.2rem;
-  padding: 0.85rem var(--space-card);
-  background: var(--surface-deep);
-}
-
-.sh-summary span {
-  font-family: var(--font-mono);
-  font-size: var(--text-micro);
-  letter-spacing: 0.18em;
-  color: var(--text-faint);
-}
-
-.sh-summary b {
-  font-size: 1.05rem;
-  color: var(--text-bone);
 }
 
 /* ─── 능력 타이밍 색 구분 ─────────────────────────────────── */

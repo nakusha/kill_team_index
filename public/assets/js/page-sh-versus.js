@@ -17,6 +17,12 @@
     { key: "right", label: "상대 아미" },
   ];
 
+  /* 고르는 두 갈래 — 그릴 때와 갈아 끼울 때가 어긋나지 않게 한 곳에 적어 둔다. */
+  var PICKS = {
+    regiment: { label: "레지먼트 어빌리티", of: function (army) { return AOSX.regimentsOf(army); } },
+    enhancement: { label: "인핸스먼트", of: function (army) { return AOSX.enhancementsOf(army); } },
+  };
+
   var grid = document.getElementById("versus-grid");
   var tabs = document.getElementById("versus-tabs");
 
@@ -70,42 +76,50 @@
     );
   }
 
-  /** 고르는 능력 — 하나만 켜지도록 라디오처럼 다룬다. */
-  function pickList(sideKey, kind, abilities, chosen) {
+  /**
+   * 고르는 능력 — 하나만 켜지도록 라디오처럼 다룬다.
+   * 고르고 나면 나머지는 감춘다. 게임 중에는 내가 쓸 하나만 보면 된다.
+   */
+  function pickSection(sideKey, kind, label, abilities, chosen) {
+    var head = function (suffix) {
+      return '<p class="subhead">' + label + suffix + "</p>";
+    };
+
     if (!abilities.length) {
-      return '<p class="empty">원본에 이 항목의 소제목이 없습니다 — 아미 특성을 확인하세요.</p>';
+      return (
+        '<div class="pick-block" data-picklist="' + kind + '">' + head("") +
+        '<p class="empty">원본에 이 항목의 소제목이 없습니다 — 아미 특성을 확인하세요.</p>' +
+        "</div>"
+      );
     }
 
-    return (
-      '<div class="entry-list">' +
-      abilities
-        .map(function (ability) {
-          var isOn = ability.name === chosen;
-          return AOSX.abilityCard(ability, {
-            picked: isOn,
-            action:
-              '<button type="button" class="roster-pick' + (isOn ? " is-on" : "") +
-              '" data-pick="' + kind + '" data-side="' + sideKey +
-              '" data-name="' + AOSX.esc(ability.name) + '" aria-pressed="' +
-              (isOn ? "true" : "false") + '">' + (isOn ? "선택함" : "선택") + "</button>",
-          });
+    var isChosen = abilities.some(function (ability) {
+      return ability.name === chosen;
+    });
+    var shown = isChosen
+      ? abilities.filter(function (ability) {
+          return ability.name === chosen;
         })
-        .join("") +
-      "</div>"
-    );
-  }
+      : abilities;
 
-  function chosenSummary(army, state) {
-    if (!army) return "";
-
-    var regiment = state.regiment || "고르지 않음";
-    var enhancement = state.enhancement || "고르지 않음";
+    var cards = shown
+      .map(function (ability) {
+        var isOn = ability.name === chosen;
+        return AOSX.abilityCard(ability, {
+          picked: isOn,
+          action:
+            '<button type="button" class="roster-pick' + (isOn ? " is-on" : "") +
+            '" data-pick="' + kind + '" data-side="' + sideKey +
+            '" data-name="' + AOSX.esc(ability.name) + '" aria-pressed="' +
+            (isOn ? "true" : "false") + '">' + (isOn ? "선택 취소" : "선택") + "</button>",
+        });
+      })
+      .join("");
 
     return (
-      '<div class="sh-summary">' +
-      '<div><span>레지먼트</span><b>' + AOSX.esc(regiment) + "</b></div>" +
-      '<div><span>인핸스먼트</span><b>' + AOSX.esc(enhancement) + "</b></div>" +
-      "</div>"
+      '<div class="pick-block" data-picklist="' + kind + '">' +
+      head(isChosen ? "" : " — 1개 선택") +
+      '<div class="entry-list">' + cards + "</div></div>"
     );
   }
 
@@ -114,17 +128,14 @@
     var army = state.army ? AOSX.findArmy(state.army) : null;
 
     var body = army
-      ? chosenSummary(army, state) +
-        '<p class="subhead">아미 특성</p>' +
+      ? '<p class="subhead">아미 특성</p>' +
         (AOSX.alwaysOn(army).length
           ? '<div class="entry-list">' +
             AOSX.alwaysOn(army).map(function (a) { return AOSX.abilityCard(a); }).join("") +
             "</div>"
           : '<p class="empty">자료 없음</p>') +
-        '<p class="subhead">레지먼트 어빌리티 — 1개 선택</p>' +
-        pickList(side.key, "regiment", AOSX.regimentsOf(army), state.regiment) +
-        '<p class="subhead">인핸스먼트 — 1개 선택</p>' +
-        pickList(side.key, "enhancement", AOSX.enhancementsOf(army), state.enhancement) +
+        pickSection(side.key, "regiment", PICKS.regiment.label, PICKS.regiment.of(army), state.regiment) +
+        pickSection(side.key, "enhancement", PICKS.enhancement.label, PICKS.enhancement.of(army), state.enhancement) +
         '<p class="subhead">유닛</p>' +
         '<div class="op-list">' + army.units.map(AOSX.unitCard).join("") + "</div>"
       : '<div class="versus-empty">' +
@@ -151,29 +162,19 @@
   }
 
   /**
-   * 고를 때마다 통째로 다시 그리면 방금 누른 버튼이 사라지고 스크롤도 튄다.
-   * 버튼 상태와 요약만 고쳐 쓴다.
+   * 고를 때마다 옆 전체를 다시 그리면 스크롤이 튄다.
+   * 접히고 펴지는 블록 하나만 갈아 끼운다.
    */
-  function refreshPicks(sideKey) {
+  function refreshPick(sideKey, kind) {
     var panel = document.querySelector('[data-side="' + sideKey + '"]');
-    if (!panel) return;
+    var block = panel && panel.querySelector('[data-picklist="' + kind + '"]');
+    if (!block) return;
 
     var state = stateOf(sideKey);
-    panel.querySelectorAll("[data-pick]").forEach(function (button) {
-      var kind = button.getAttribute("data-pick");
-      var isOn = state[kind] === button.getAttribute("data-name");
-
-      button.classList.toggle("is-on", isOn);
-      button.setAttribute("aria-pressed", isOn ? "true" : "false");
-      button.textContent = isOn ? "선택함" : "선택";
-
-      var entry = button.closest(".entry");
-      if (entry) entry.classList.toggle("is-picked", isOn);
-    });
-
-    var summary = panel.querySelector(".sh-summary");
     var army = state.army ? AOSX.findArmy(state.army) : null;
-    if (summary && army) summary.outerHTML = chosenSummary(army, state);
+    if (!army) return;
+
+    block.outerHTML = pickSection(sideKey, kind, PICKS[kind].label, PICKS[kind].of(army), state[kind]);
   }
 
   function renderTabs() {
@@ -222,7 +223,7 @@
         /* 같은 것을 다시 누르면 선택을 푼다 — 하나만 고르는 규칙이다. */
         state[kind] = state[kind] === name ? null : name;
         writePick();
-        refreshPicks(target.getAttribute("data-side"));
+        refreshPick(target.getAttribute("data-side"), kind);
       }
     });
 
