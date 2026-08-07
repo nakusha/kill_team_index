@@ -1,13 +1,13 @@
 {
-  "generatedAt": "2026-08-06T23:15:43.886Z",
+  "generatedAt": "2026-08-07T05:13:17.299Z",
   "source": "스피어헤드 아미 규칙 1.8.3",
   "counts": {
     "armies": 28,
     "units": 112,
     "weapons": 198,
     "unitAbilities": 130,
-    "armyAbilities": 208,
-    "regiments": 52,
-    "enhancements": 94
+    "armyAbilities": 217,
+    "regiments": 56,
+    "enhancements": 112
   }
 }

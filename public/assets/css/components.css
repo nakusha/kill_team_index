@@ -543,6 +543,8 @@
 
 .entry__ko {
   color: var(--text-body);
+  /* 스피어헤드 효과문은 원본 문단을 줄바꿈으로 남겨둔다. */
+  white-space: pre-line;
 }
 
 .entry__en {
@@ -1534,6 +1536,8 @@ button.term.is-open > .term__pop {
   margin-bottom: 0.4rem;
   font-size: var(--text-small);
   color: var(--text-muted);
+  /* 효과문과 같은 규칙 — 원본 문단이 나뉘어 있으면 그대로 보여준다. */
+  white-space: pre-line;
 }
 
 .unit-keywords {
@@ -1572,4 +1576,82 @@ button.term.is-open > .term__pop {
 .sh-summary b {
   font-size: 1.05rem;
   color: var(--text-bone);
+}
+
+/* ─── 능력 타이밍 색 구분 ─────────────────────────────────── */
+/*
+ * 언제 쓸 수 있는지가 한눈에 들어와야 한다. 왼쪽 라인에 색을 준다.
+ * 변수로 두는 이유는 마우스를 올렸을 때 .entry:hover 가 색을 덮어쓰지 않게 하려는 것이다.
+ */
+
+.entry--t-passive {
+  --entry-line: var(--line-hard);
+}
+
+/* 게임 당 한번 — 한 판에 딱 한 번뿐이라 가장 눈에 띄게 */
+.entry--t-once {
+  --entry-line: var(--hazard);
+}
+
+.entry--t-limited {
+  --entry-line: oklch(78% 0.15 95);
+}
+
+.entry--t-reaction {
+  --entry-line: var(--blade);
+}
+
+.entry--t-step {
+  --entry-line: oklch(70% 0.15 300);
+}
+
+.entry--t-phase {
+  --entry-line: var(--signal);
+}
+
+.entry[class*="entry--t-"],
+.entry[class*="entry--t-"]:hover {
+  border-left-color: var(--entry-line);
+  border-left-width: 4px;
+}
+
+/* 능력 옆에 딸린 표(룬 목록 · D6 표) */
+.entry__notes {
+  margin-top: 0.7rem;
+  padding: 0.65rem 0.9rem;
+  border-left: 2px solid var(--line-soft);
+  background: var(--surface-inset);
+  display: grid;
+  gap: 0.3rem;
+  font-size: var(--text-small);
+  color: var(--text-muted);
+}
+
+.entry__notes li {
+  list-style: none;
+}
+
+.entry__inferred {
+  margin-top: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  color: var(--hazard);
+}
+
+/* 유닛 카드의 "무장 선택" 안내 — 능력은 아니지만 편성에 필요하다 */
+.unit-loadout {
+  margin-top: 0.75rem;
+  padding: 0.65rem 0.9rem;
+  border-left: 2px solid var(--accent);
+  background: var(--surface-inset);
+  font-size: var(--text-small);
+  color: var(--text-body);
+}
+
+.unit-loadout b {
+  margin-right: 0.5rem;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  color: var(--accent);
 }

@@ -73,7 +73,7 @@
   /** 고르는 능력 — 하나만 켜지도록 라디오처럼 다룬다. */
   function pickList(sideKey, kind, abilities, chosen) {
     if (!abilities.length) {
-      return '<p class="empty">원본에 이 항목의 소제목이 없습니다 — 아미 능력을 확인하세요.</p>';
+      return '<p class="empty">원본에 이 항목의 소제목이 없습니다 — 아미 특성을 확인하세요.</p>';
     }
 
     return (
@@ -115,7 +115,7 @@
 
     var body = army
       ? chosenSummary(army, state) +
-        '<p class="subhead">늘 적용되는 아미 능력</p>' +
+        '<p class="subhead">아미 특성</p>' +
         (AOSX.alwaysOn(army).length
           ? '<div class="entry-list">' +
             AOSX.alwaysOn(army).map(function (a) { return AOSX.abilityCard(a); }).join("") +

@@ -81,11 +81,26 @@ window.AOSX = (function () {
   const regimentsOf = (army) => abilitiesOf(army, REGIMENT);
   const enhancementsOf = (army) => abilitiesOf(army, ENHANCEMENT);
 
-  /** 어느 소제목에도 안 걸린 것 — 늘 적용되는 아미 고유 능력이다. */
+  /** 어느 소제목에도 안 걸린 것 — 늘 적용되는 아미 특성이다. */
   function alwaysOn(army) {
     return (army.armyAbilities || []).filter(function (ability) {
       return ability.group !== REGIMENT && ability.group !== ENHANCEMENT;
     });
+  }
+
+  /**
+   * 타이밍 종류별로 색을 달리한다 — 언제 쓸 수 있는지가 한눈에 들어와야 한다.
+   * 귀한 것(게임 당 한번)일수록 눈에 띄는 색을 준다.
+   */
+  function timingVariant(timing) {
+    var text = String(timing || "");
+
+    if (/^패시브/.test(text)) return "t-passive";
+    if (/게임 당 한번/.test(text)) return "t-once";
+    if (/리액션/.test(text)) return "t-reaction";
+    if (/당 한번/.test(text)) return "t-limited";
+    if (/(종료시|시작시|때)$/.test(text)) return "t-step";
+    return "t-phase";
   }
 
   function badge(label, value, variant) {
@@ -100,7 +115,8 @@ window.AOSX = (function () {
     var opts = options || {};
 
     return (
-      '<div class="entry' +
+      '<div class="entry entry--' +
+      timingVariant(ability.timing) +
       (opts.picked ? " is-picked" : "") +
       '"' +
       (opts.attribute ? " " + opts.attribute : "") +
@@ -116,6 +132,19 @@ window.AOSX = (function () {
       '<p class="entry__ko">' +
       esc(ability.effect) +
       "</p>" +
+      /* 룬 목록이나 D6 표처럼 옆에 딸린 자료 — 지우지 않고 함께 싣는다. */
+      ((ability.notes || []).length
+        ? '<ul class="entry__notes">' +
+          ability.notes
+            .map(function (note) {
+              return "<li>" + esc(note) + "</li>";
+            })
+            .join("") +
+          "</ul>"
+        : "") +
+      (ability.inferred
+        ? '<p class="entry__inferred">원본에 소제목이 없어 위치로 추정한 항목입니다.</p>'
+        : "") +
       "</div>"
     );
   }
@@ -189,6 +218,9 @@ window.AOSX = (function () {
       "</header>" +
       '<div class="operative__body">' +
       weaponTable(unit.weapons || []) +
+      (unit.loadout
+        ? '<p class="unit-loadout"><b>무장 선택</b> ' + esc(unit.loadout) + "</p>"
+        : "") +
       ((unit.abilities || []).length
         ? '<div><p class="subhead">능력</p><div class="entry-list">' +
           unit.abilities
@@ -245,6 +277,7 @@ window.AOSX = (function () {
     enhancementsOf: enhancementsOf,
     alwaysOn: alwaysOn,
     badge: badge,
+    timingVariant: timingVariant,
     abilityCard: abilityCard,
     statblock: statblock,
     weaponTable: weaponTable,

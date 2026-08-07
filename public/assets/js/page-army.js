@@ -1,4 +1,4 @@
-/* 아미 상세 — 늘 적용되는 능력, 고르는 능력(레지먼트·인핸스먼트), 유닛 시트. */
+/* 아미 상세 — 아미 특성, 고르는 능력(레지먼트·인핸스먼트), 유닛 시트. */
 (function () {
   "use strict";
 
@@ -49,6 +49,7 @@
       AOSX.badge("유닛", army.units.length, "accent") +
       AOSX.badge("레지먼트", regiments.length) +
       AOSX.badge("인핸스먼트", enhancements.length) +
+      (army.commander ? AOSX.badge("지휘관", army.commander) : "") +
       AOSX.badge("원본", army.page + "쪽");
 
     document.getElementById("always-body").innerHTML = abilityList(
@@ -57,11 +58,11 @@
     );
     document.getElementById("regiment-body").innerHTML = abilityList(
       regiments,
-      "원본에 레지먼트 어빌리티 소제목이 없습니다 — 위쪽 아미 능력을 확인하세요.",
+      "원본에 레지먼트 어빌리티 소제목이 없습니다 — 위쪽 아미 특성을 확인하세요.",
     );
     document.getElementById("enhancement-body").innerHTML = abilityList(
       enhancements,
-      "원본에 인핸스먼트 소제목이 없습니다 — 위쪽 아미 능력을 확인하세요.",
+      "원본에 인핸스먼트 소제목이 없습니다 — 위쪽 아미 특성을 확인하세요.",
     );
 
     document.getElementById("regiment-count").textContent = regiments.length;
