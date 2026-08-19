@@ -38,6 +38,7 @@ cd public && python3 -m http.server 8788   # → http://127.0.0.1:8788/index.htm
 | `public/spearhead.html`      | 스피어헤드 색인 — 팩션별 아미 28개 |
 | `public/army.html?a=SH01`    | 아미 상세 — 아미 능력 · 레지먼트 · 인핸스먼트 · 유닛 시트 |
 | `public/sh-versus.html`      | 스피어헤드 대전 — 아미 + 레지먼트 1 · 인핸스먼트 1 선택 |
+| `public/wh40k.html`          | 40K 데이터시트 참고 — 무기 능력 20 · 코어 능력 11 키워드 사전 (10판) |
 
 검색은 한글명·영문명·팀 ID·아키타입·팩션명을 한 번에 훑는다
 (예: `죽음의 천사`, `Angels of Death`, `IMP-AOD`, `Recon`).
@@ -130,7 +131,8 @@ kt-index/
 │   ├── assets/
 │   │   ├── css/  tokens.css · base.css · components.css
 │   │   └── js/   store.js · roster.js · render-roster.js · page-*.js
-│   └── data/kt-data.js       페이지가 읽는 단일 번들 (window.KTI)
+│   └── data/                 kt-data.js (window.KTI) · aos-data.js (window.AOS)
+│                             · wh40k-data.js (window.W40K — 40K 키워드 사전, 수기 관리)
 │
 ├── data/                     ← JSON 정본. 배포하지 않는다
 │   ├── factions.json         팩션 + 킬팀 요약

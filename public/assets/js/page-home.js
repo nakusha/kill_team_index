@@ -36,6 +36,7 @@
   function render() {
     var kt = (window.KTI && window.KTI.meta) || null;
     var aos = (window.AOS && window.AOS.meta) || null;
+    var w40k = window.W40K || null;
 
     document.getElementById("kt-stats").innerHTML = kt
       ? stats([
@@ -50,6 +51,14 @@
           { value: aos.counts.armies, label: "아미" },
           { value: aos.counts.units, label: "유닛" },
           { value: aos.counts.enhancements, label: "인핸스먼트" },
+        ])
+      : '<span class="game-stat">데이터 없음</span>';
+
+    document.getElementById("w40k-stats").innerHTML = w40k
+      ? stats([
+          { value: w40k.weaponAbilities.length, label: "무기 능력" },
+          { value: w40k.coreAbilities.length, label: "코어 능력" },
+          { value: w40k.meta.edition, label: "기준 판" },
         ])
       : '<span class="game-stat">데이터 없음</span>';
 
