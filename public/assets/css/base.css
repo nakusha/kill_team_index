@@ -256,7 +256,7 @@ ul {
   font-family: var(--font-mono);
   font-size: var(--text-small);
   letter-spacing: 0.02em;
-  color: var(--text-faint);
+  color: var(--text-muted);
 }
 
 /* ─── 푸터 ────────────────────────────────────────────────── */
