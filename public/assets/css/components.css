@@ -1629,3 +1629,142 @@ button.term.is-open > .term__pop {
   letter-spacing: 0.14em;
   color: var(--accent);
 }
+
+/* ─── 디테치먼트 아코디언 (40K) ────────────────────────────── */
+
+.det-faction {
+  border: 1px solid var(--line-soft);
+  background: var(--surface-deep);
+}
+
+.det-faction + .det-faction {
+  margin-top: 0.75rem;
+}
+
+.det-faction > summary {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.6rem;
+  padding: 0.9rem var(--space-card);
+  cursor: pointer;
+  list-style: none;
+  transition: background var(--duration-fast);
+}
+
+.det-faction > summary::-webkit-details-marker {
+  display: none;
+}
+
+.det-faction > summary:hover {
+  background: var(--surface-raised);
+}
+
+.det-faction > summary::before {
+  content: "▸";
+  font-size: 0.8em;
+  color: var(--text-faint);
+  transition: transform var(--duration-fast);
+}
+
+.det-faction[open] > summary::before {
+  transform: rotate(90deg);
+  color: var(--accent);
+}
+
+.det-faction[open] > summary {
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.det-faction__name {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--text-bone);
+}
+
+.det-faction__count {
+  margin-left: auto;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.1em;
+  color: var(--text-faint);
+}
+
+.det-faction__body {
+  display: grid;
+  gap: 0.75rem;
+  padding: 0.9rem var(--space-card) 1.1rem;
+}
+
+.det-entry .entry__head {
+  justify-content: space-between;
+}
+
+.det-entry__badges {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-left: auto;
+}
+
+/* 디테치먼트 카드 안 인핸스먼트 접이 목록 */
+.det-enh {
+  margin-top: 0.6rem;
+  padding-top: 0.5rem;
+  border-top: 1px dashed var(--line-soft);
+}
+
+.det-enh > summary {
+  cursor: pointer;
+  list-style: none;
+  font-family: var(--font-mono);
+  font-size: var(--text-micro);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+.det-enh > summary::-webkit-details-marker {
+  display: none;
+}
+
+.det-enh > summary::before {
+  content: "▸ ";
+}
+
+.det-enh[open] > summary::before {
+  content: "▾ ";
+  color: var(--accent);
+}
+
+.det-enh__row {
+  margin-top: 0.5rem;
+  padding-left: 0.75rem;
+  border-left: 2px solid var(--line-soft);
+}
+
+.det-enh__head {
+  color: var(--text-bone);
+  font-weight: 500;
+}
+
+.det-enh__ko {
+  margin-top: 0.15rem;
+  font-size: var(--text-small);
+  color: var(--text-muted);
+}
+
+/* 상위(스페이스 마린) 아코디언 — 챕터 아코디언을 품는다 */
+.det-umbrella {
+  border-color: var(--line-hard);
+}
+
+.det-umbrella > summary .det-faction__name {
+  font-size: 1.15rem;
+}
+
+.det-umbrella > .det-faction__body > .det-faction {
+  border-color: var(--line-soft);
+  background: var(--surface-inset);
+}

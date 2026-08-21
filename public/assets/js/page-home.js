@@ -54,11 +54,28 @@
         ])
       : '<span class="game-stat">데이터 없음</span>';
 
+    var w40kDetachments = 0;
+    if (w40k && w40k.detachments) {
+      w40k.detachments.groups.forEach(function (group) {
+        group.factions.forEach(function (faction) {
+          (faction.chapters || [faction]).forEach(function (leaf) {
+            w40kDetachments += leaf.list.length;
+          });
+        });
+      });
+    }
+
     document.getElementById("w40k-stats").innerHTML = w40k
       ? stats([
-          { value: w40k.weaponAbilities.length, label: "무기 능력" },
-          { value: w40k.coreAbilities.length, label: "코어 능력" },
-          { value: w40k.meta.edition, label: "기준 판" },
+          {
+            value: w40k.weaponAbilities.length + w40k.coreAbilities.length,
+            label: "용어",
+          },
+          { value: w40kDetachments, label: "디테치먼트" },
+          {
+            value: w40k.detachments ? w40k.detachments.meta.edition : w40k.meta.edition,
+            label: "기준 판",
+          },
         ])
       : '<span class="game-stat">데이터 없음</span>';
 

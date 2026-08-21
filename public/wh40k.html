@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>40K 데이터시트 참고 — KT INDEX</title>
+    <title>워해머 40K — KT INDEX</title>
     <meta
       name="description"
-      content="워해머 40,000 데이터시트의 무기 능력 · 코어 능력 키워드를 한글로 찾아보는 참고자료."
+      content="워해머 40,000 참고자료 — 데이터시트 용어 사전과 11판 디테치먼트 색인."
     />
     <link rel="stylesheet" href="assets/css/tokens.css" />
     <link rel="stylesheet" href="assets/css/base.css" />
@@ -19,80 +19,59 @@
         <div class="topbar__nav">
           <a href="killteam.html">킬팀</a>
           <a href="spearhead.html">스피어헤드</a>
-          <a href="wh40k.html" aria-current="page">40K 참고</a>
+          <a href="wh40k.html" aria-current="page">워해머 40K</a>
         </div>
       </nav>
     </header>
 
     <main class="shell" id="page">
       <section class="hero" aria-labelledby="hero-heading">
-        <p class="eyebrow">Warhammer 40,000 · Datasheet Reference</p>
+        <p class="eyebrow">Warhammer 40,000 · Reference</p>
         <h1 class="hero__title" id="hero-heading">
-          데이터시트
-          <em>키워드 사전</em>
+          워해머 40K
+          <em>참고자료</em>
         </h1>
         <p class="hero__lede">
-          데이터시트에 이름만 적혀 있는 무기 능력과 코어 능력을 한글로 풀었습니다.
-          10판 코어 규칙 기준이며, 판정은 공식 규칙이 우선합니다.
+          40K 본판을 위한 참고자료 묶음입니다. 데이터시트에 이름만 적히는 키워드를
+          푸는 용어 사전과, 11판 전 팩션의 디테치먼트 색인을 정리했습니다.
         </p>
         <div class="hero__stats" id="hero-stats"></div>
       </section>
 
       <div class="hazard-rule" role="presentation"></div>
 
-      <section class="section" aria-label="키워드 검색">
-        <div class="search">
-          <label for="search-input">검색</label>
-          <input
-            id="search-input"
-            type="search"
-            autocomplete="off"
-            placeholder="살상타, Lethal Hits, 심층 타격, Deep Strike…"
-          />
-        </div>
-        <p class="section__note" id="search-empty" hidden style="margin-top: 1rem">
-          검색 결과가 없습니다.
-        </p>
-      </section>
+      <section class="section" aria-label="자료 고르기">
+        <div class="game-grid">
+          <a class="game-card" href="wh40k-terms.html" style="--accent: oklch(66% 0.17 25)">
+            <p class="game-card__kicker">Datasheet Reference · 10판</p>
+            <h2 class="game-card__name">용어 사전</h2>
+            <p class="game-card__desc">
+              무기 능력·코어 능력처럼 데이터시트에 이름만 적히는 키워드를 한글
+              설명과 함께 찾아봅니다.
+            </p>
+            <div class="game-card__stats" id="terms-stats"></div>
+            <span class="game-card__go">용어 사전 열기 →</span>
+          </a>
 
-      <section class="section" id="weapon-abilities" aria-labelledby="weapon-heading">
-        <div class="section__head">
-          <h2 id="weapon-heading">무기 능력</h2>
-          <span class="section__count" id="weapon-count">–</span>
+          <a class="game-card" href="wh40k-detachments.html" style="--accent: oklch(62% 0.15 15)">
+            <p class="game-card__kicker">Detachment Index · 11판</p>
+            <h2 class="game-card__name">디테치먼트</h2>
+            <p class="game-card__desc">
+              임페리움·카오스·제노 전 팩션의 디테치먼트를 DP 비용·성향·테마와
+              함께 정리했습니다.
+            </p>
+            <div class="game-card__stats" id="detachment-stats"></div>
+            <span class="game-card__go">디테치먼트 색인 열기 →</span>
+          </a>
         </div>
-        <p class="section__note">
-          무기 프로필 옆 [대괄호] 안에 이름만 적히는 공통 키워드입니다.
-        </p>
-        <div class="entry-list" id="weapon-list"></div>
-      </section>
-
-      <section class="section" id="core-abilities" aria-labelledby="core-heading">
-        <div class="section__head">
-          <h2 id="core-heading">코어 능력</h2>
-          <span class="section__count" id="core-count">–</span>
-        </div>
-        <p class="section__note">
-          여러 데이터시트가 공유하는 공통 능력입니다. 데이터시트에는 이름만 적힙니다.
-        </p>
-        <div class="entry-list" id="core-list"></div>
-      </section>
-
-      <section class="section" id="ability-kinds" aria-labelledby="kinds-heading">
-        <div class="section__head">
-          <h2 id="kinds-heading">능력 칸이 나뉘는 방식</h2>
-          <span class="section__count" id="kinds-count">–</span>
-        </div>
-        <p class="section__note">
-          데이터시트의 능력 칸은 네 갈래로 나뉩니다. 워기어 능력은 유닛마다 달라
-          여기서는 갈래만 설명합니다.
-        </p>
-        <div class="entry-list" id="kinds-list"></div>
       </section>
     </main>
 
     <footer class="shell footer" id="site-footer"></footer>
 
     <script src="data/wh40k-data.js"></script>
+    <script src="data/wh40k-detachments-data.js"></script>
+    <script src="data/wh40k-enhancements-data.js"></script>
     <script src="assets/js/page-wh40k.js"></script>
   </body>
 </html>

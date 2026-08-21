@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>40K 디테치먼트 색인 — KT INDEX</title>
+    <meta
+      name="description"
+      content="워해머 40,000 11판 전 팩션 디테치먼트를 DP 비용·성향·테마와 함께 찾아보는 색인."
+    />
+    <link rel="stylesheet" href="assets/css/tokens.css" />
+    <link rel="stylesheet" href="assets/css/base.css" />
+    <link rel="stylesheet" href="assets/css/components.css" />
+  </head>
+  <body style="--accent: oklch(62% 0.15 15)">
+    <header class="shell">
+      <nav class="topbar" aria-label="주 메뉴">
+        <a class="topbar__mark" href="index.html">KT INDEX</a>
+        <div class="topbar__nav">
+          <a href="wh40k.html">워해머 40K</a>
+          <a href="wh40k-terms.html">용어</a>
+          <a href="wh40k-detachments.html" aria-current="page">디테치먼트</a>
+        </div>
+      </nav>
+    </header>
+
+    <main class="shell" id="page">
+      <section class="hero" aria-labelledby="hero-heading">
+        <p class="eyebrow">Warhammer 40,000 · Detachment Index · 11판</p>
+        <h1 class="hero__title" id="hero-heading">
+          디테치먼트
+          <em>색인</em>
+        </h1>
+        <p class="hero__lede">
+          11판 전 팩션의 디테치먼트를 임페리움 · 카오스 · 제노 순으로 정리했습니다.
+          DP 비용과 성향, 테마를 함께 적었습니다. 판정은 공식 팩션 팩이 우선합니다.
+        </p>
+        <div class="hero__stats" id="hero-stats"></div>
+      </section>
+
+      <div class="hazard-rule" role="presentation"></div>
+
+      <section class="section" aria-labelledby="rules-heading">
+        <div class="section__head">
+          <h2 id="rules-heading">11판 편성 규칙</h2>
+        </div>
+        <div class="entry-list" id="rules-list"></div>
+        <p class="section__note" id="disposition-note" style="margin-top: 1rem"></p>
+      </section>
+
+      <section class="section" aria-label="디테치먼트 검색">
+        <div class="search">
+          <label for="search-input">검색</label>
+          <input
+            id="search-input"
+            type="search"
+            autocomplete="off"
+            placeholder="스페이스 마린, Gladius, 터미네이터, 1 DP…"
+          />
+        </div>
+        <p class="section__note" id="search-empty" hidden style="margin-top: 1rem">
+          검색 결과가 없습니다.
+        </p>
+      </section>
+
+      <div id="group-sections"></div>
+    </main>
+
+    <footer class="shell footer" id="site-footer"></footer>
+
+    <script src="data/wh40k-data.js"></script>
+    <script src="data/wh40k-detachments-data.js"></script>
+    <script src="data/wh40k-enhancements-data.js"></script>
+    <script src="assets/js/page-wh40k-detachments.js"></script>
+  </body>
+</html>
