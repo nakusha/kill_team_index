@@ -1710,8 +1710,8 @@ button.term.is-open > .term__pop {
 
 /* 디테치먼트 카드 안 인핸스먼트 접이 목록 */
 .det-enh {
-  margin-top: 0.6rem;
-  padding-top: 0.5rem;
+  margin-top: 0.75rem;
+  padding-top: 0.65rem;
   border-top: 1px dashed var(--line-soft);
 }
 
@@ -1719,10 +1719,10 @@ button.term.is-open > .term__pop {
   cursor: pointer;
   list-style: none;
   font-family: var(--font-mono);
-  font-size: var(--text-micro);
+  font-size: var(--text-small);
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: var(--text-faint);
+  color: var(--text-muted);
 }
 
 .det-enh > summary::-webkit-details-marker {
@@ -1739,19 +1739,21 @@ button.term.is-open > .term__pop {
 }
 
 .det-enh__row {
-  margin-top: 0.5rem;
-  padding-left: 0.75rem;
+  margin-top: 0.85rem;
+  padding: 0.15rem 0 0.15rem 1rem;
   border-left: 2px solid var(--line-soft);
 }
 
 .det-enh__head {
   color: var(--text-bone);
   font-weight: 500;
+  font-size: 1.05rem;
 }
 
 .det-enh__ko {
-  margin-top: 0.15rem;
-  font-size: var(--text-small);
+  margin-top: 0.3rem;
+  font-size: var(--text-base);
+  line-height: 1.65;
   color: var(--text-muted);
 }
 
