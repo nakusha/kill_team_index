@@ -364,7 +364,7 @@
           "type": "ranged",
           "profiles": [
             {
-              "name": "",
+              "name": "Ranged",
               "attacks": "5",
               "hit": "3+",
               "damage": "2/3",
@@ -381,7 +381,7 @@
           "type": "melee",
           "profiles": [
             {
-              "name": "",
+              "name": "Melee",
               "attacks": "5",
               "hit": "3+",
               "damage": "2/3",
@@ -782,5 +782,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 영문 룰 PDF ('26년 8월 에라타 반영)"
 }

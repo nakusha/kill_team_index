@@ -856,17 +856,29 @@
       },
       {
         "type": "heading",
-        "text": "MARKERLIGHT ADDITIONAL RULES"
-      },
-      {
-        "type": "heading",
-        "text": "TOKENS"
+        "text": "MARKERLIGHT TOKENS — ADDITIONAL RULES"
       },
       {
         "type": "rule",
-        "text": "Saturate and Balanced 1 weapon rules. 2 Improve the Hit stat of that friendly operative's ranged weapons by 1 (to a maximum of 3+). 3 The target cannot be obscured. 4 Seek Light weapon rule."
+        "text": "1 — Saturate and Balanced weapon rules."
+      },
+      {
+        "type": "rule",
+        "text": "2 — Improve the Hit stat of that friendly operative's ranged weapons by 1 (to a maximum of 3+)."
+      },
+      {
+        "type": "rule",
+        "text": "3 — The target cannot be obscured."
+      },
+      {
+        "type": "rule",
+        "text": "4 — Seek Light weapon rule."
+      },
+      {
+        "type": "rule",
+        "text": "5 — Seek weapon rule."
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 영문 룰 PDF ('26년 8월 에라타 반영)"
 }

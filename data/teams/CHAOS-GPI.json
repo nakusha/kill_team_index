@@ -43,8 +43,8 @@
       "name": "Rust Emanations",
       "type": "strategy",
       "cp": 1,
-      "textEn": "Whenever a friendly GELLERPOX INFECTED NIGHTMARE HULK operative is fighting, your opponent cannot retain results of 3 as successes.",
-      "textKo": "아군 NIGHTMARE HULK 근접전 시 적은 3 을 성공으로 유지 불가"
+      "textEn": "Whenever a friendly GELLERPOX INFECTED NIGHTMARE HULK operative (excluding MUTOID VERMIN) is fighting or retaliating, your opponent cannot retain results of 3 as successes.",
+      "textKo": "아군 NIGHTMARE HULK(MUTOID VERMIN 제외) 근접전·반격 시 적은 3 을 성공으로 유지 불가"
     },
     {
       "id": "CHAOS-GPI-T-BA",
@@ -182,7 +182,7 @@
           "profiles": [
             {
               "name": "",
-              "attacks": "6",
+              "attacks": "5",
               "hit": "4+",
               "damage": "3/4",
               "rules": [
@@ -193,7 +193,7 @@
           ]
         },
         {
-          "name": "Mutant Claws & Tentacles",
+          "name": "Mutant Claw & Tentacles",
           "type": "melee",
           "profiles": [
             {
@@ -592,5 +592,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 영문 룰 PDF ('26년 8월 에라타 반영)"
 }
