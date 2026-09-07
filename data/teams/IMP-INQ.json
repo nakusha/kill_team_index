@@ -509,7 +509,7 @@
       "nameEn": "Gun Servitor",
       "nameKo": "징발된 총기형 서비터",
       "stats": {
-        "move": "6\"",
+        "move": "5\"",
         "apl": 1,
         "save": "4+",
         "wounds": 11
@@ -3927,5 +3927,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF ('26년 8월 에라타 반영)"
 }

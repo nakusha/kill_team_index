@@ -1,32 +1,21 @@
-/** 원본(kt-dashboard) 데이터 파일 목록과 공용 경로. */
+/** 공용 경로와 출처 표기. */
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
 export const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-export const CACHE_DIR = join(ROOT, "tools", ".cache");
 
-/** JSON 정본 — 사람이 읽고 재가공하는 용도. 배포하지 않는다. */
+/**
+ * 정본 — 사람이 읽고 고친다. 웹에서 받아오지 않으며, 공식 PDF 를 근거로 갱신한다.
+ *   teams/<팀ID>.json  킬팀 상세      glossary.json  용어 뜻풀이
+ *   factions.json      팩션 골격      spearhead/     스피어헤드 아미
+ */
 export const DATA_DIR = join(ROOT, "data");
 
 /** 배포 대상 — 이 디렉터리 하나만 올리면 사이트가 뜬다. */
 export const PUBLIC_DIR = join(ROOT, "public");
 
-/** 원본을 내려받을 주소. fetch-source.mjs 만 쓴다. */
-export const SOURCE_ORIGIN = "https://kt-dashboard.noloo.org";
-
-/** 화면과 meta.json 에 적는 출처 이름. 주소와 분리해 둔다. */
-export const SOURCE_LABEL = "킬팀 공식앱 한글번역";
-
-/** 팩션 인덱스를 만드는 데 실제로 쓰는 파일만 받는다. */
-export const SOURCE_FILES = [
-  "factions", // 팩션 9 · 킬팀 48 · 플로이 · 팀 전용 장비
-  "operatives", // 요원 스탯과 무기 프로필 (영문)
-  "datacards-ko", // 요원 한글명 · 한글 무기표 · 한글 능력
-  "team-guides", // 팀 편성 가이드와 팩션 규칙
-  "team-colors", // 팀 대표색
-  "team-size", // 편성 인원
-  "ploy-ko", // 플로이 한글 요약
-  "equipment-ko", // 팀 전용 장비 한글 요약 + 장비 보너스
-  "glossary-ko", // 무기 규칙 · 용어 뜻풀이 (한글) + 출처
-  "glossary-en", // 무기 규칙 뜻풀이 (영문)
-];
+/**
+ * 화면과 meta.json 에 적는 출처 이름.
+ * 팀별 근거는 각 teams/<팀ID>.json 의 source 필드에 따로 적는다.
+ */
+export const SOURCE_LABEL = "킬 팀 공식 한글 룰";

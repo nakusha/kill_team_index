@@ -424,6 +424,51 @@
           "rules": [
             "사거리 8\""
           ]
+        },
+        {
+          "name": "플라스마 권총(표준)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/5",
+          "rules": [
+            "사거리 8\"",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "플라스마 권총(과충전)",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "4/5",
+          "rules": [
+            "사거리 8\"",
+            "과열",
+            "살상 5+",
+            "관통 1"
+          ]
+        },
+        {
+          "name": "파워 피스트",
+          "type": "melee",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "5/7",
+          "rules": [
+            "무자비",
+            "충격"
+          ]
+        },
+        {
+          "name": "역장 무기",
+          "type": "melee",
+          "attacks": "5",
+          "hit": "3+",
+          "damage": "4/6",
+          "rules": [
+            "살상 5+"
+          ]
         }
       ],
       "abilitiesKo": [
@@ -1205,5 +1250,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF ('26년 8월 에라타 반영)"
 }

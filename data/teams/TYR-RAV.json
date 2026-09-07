@@ -114,7 +114,7 @@
         "move": "7\"",
         "apl": 3,
         "save": "5+",
-        "wounds": 21
+        "wounds": 19
       },
       "weapons": [
         {
@@ -193,7 +193,7 @@
         "move": "7\"",
         "apl": 3,
         "save": "5+",
-        "wounds": 20
+        "wounds": 18
       },
       "weapons": [
         {
@@ -303,7 +303,7 @@
         "move": "7\"",
         "apl": 3,
         "save": "5+",
-        "wounds": 20
+        "wounds": 18
       },
       "weapons": [
         {
@@ -380,7 +380,7 @@
         "move": "7\"",
         "apl": 3,
         "save": "5+",
-        "wounds": 20
+        "wounds": 18
       },
       "weapons": [
         {
@@ -505,7 +505,7 @@
         "move": "7\"",
         "apl": 3,
         "save": "5+",
-        "wounds": 20
+        "wounds": 18
       },
       "weapons": [
         {
@@ -768,5 +768,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF ('26년 8월 에라타 반영)"
 }

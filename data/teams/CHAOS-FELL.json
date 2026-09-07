@@ -661,7 +661,7 @@
             {
               "name": "",
               "attacks": "4",
-              "hit": "3+",
+              "hit": "4+",
               "damage": "4/6",
               "rules": [
                 "Ceaseless",
@@ -676,7 +676,7 @@
           "name": "포악한 손톱",
           "type": "melee",
           "attacks": "4",
-          "hit": "3+",
+          "hit": "4+",
           "damage": "4/6",
           "rules": [
             "집요",
@@ -1075,5 +1075,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF"
 }

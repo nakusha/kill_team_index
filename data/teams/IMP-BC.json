@@ -141,7 +141,7 @@
             {
               "name": "",
               "attacks": "4",
-              "hit": "4+",
+              "hit": "3+",
               "damage": "3/4",
               "rules": [
                 "Severe",
@@ -168,7 +168,7 @@
           "name": "서보아크 클로",
           "type": "melee",
           "attacks": "4",
-          "hit": "4+",
+          "hit": "3+",
           "damage": "3/4",
           "rules": [
             "중상",
@@ -757,5 +757,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF"
 }

@@ -95,29 +95,29 @@ Workers & Pages → Create → Pages → Connect to Git → kill_team_index
 
 ## 수동 업데이트
 
-자동 갱신은 하지 않는다. 데이터는 아래 명령을 실행한 시점에 고정된 스냅샷이며,
+자동 갱신도, 웹 수집도 하지 않는다. **킬 팀 공식 한글 룰 PDF 가 근거이고,
+`data/teams/<팀ID>.json` 이 정본이다.** 사람이 고치는 파일이니 직접 편집하면 된다.
 기준 시각은 `data/meta.json` 의 `generatedAt` 에서 확인할 수 있다.
 
 ```bash
-# 킬팀 — 웹 원본에서 재수집
-node tools/update.mjs            # 재수집 + JSON 재빌드 + 변경분 리포트
-node tools/update.mjs --rebuild  # 이미 받아둔 캐시로 JSON 만 다시 만듦
-node tools/update.mjs --dry-run  # 무엇이 바뀌는지 확인만 (data/ 는 원상복구)
+# 킬팀 — data/ 를 고친 뒤 배포 번들을 다시 만든다
+node tools/bundle-kt.mjs
 
 # 스피어헤드 — PDF 에서 추출
 node tools/parse-spearhead.mjs [PDF경로]   # 기본값은 Downloads 의 1.8.3 판
 ```
 
-리포트 예시:
+킬팀 데이터를 고치는 순서.
 
-```
-── 수량 변화 / Counts ──
-  킬팀 / Kill Teams          48 →   49  +1
-── 킬팀 목록 변화 / Kill team roster ──
-  + XXX-YY  새 킬팀 / New Kill Team
-```
+1. 공식 한글 룰 PDF 를 확보한다. 팀 룰 PDF 하단 「업데이트 로그」의 에라타가
+   무엇이 바뀌었는지 알려 준다.
+2. `data/teams/<팀ID>.json` 을 고친다. 팀을 늘리거나 줄일 때는
+   `data/factions.json` 의 해당 팩션 `teams` 배열에 ID 를 넣고 뺀다.
+3. `node tools/bundle-kt.mjs` 를 돌린다. `data/factions.json` 의 팀 요약과
+   `data/meta.json` 의 집계, `public/data/kt-data.js` 가 다시 쓰인다.
+4. 그대로 커밋하면 배포된다.
 
-갱신하면 `public/data/kt-data.js` 가 새로 쓰인다. 그대로 커밋해서 다시 배포하면 된다.
+`data/teams/<팀ID>.json` 의 `source` 필드에 그 팀 데이터의 근거를 적어 둔다.
 
 ## 구조
 
@@ -142,15 +142,16 @@ kt-index/
 │   └── spearhead/            아미 28개 상세 + meta.json
 │
 └── tools/                    ← 빌드. 배포하지 않는다
-    ├── source-files.mjs      원본 파일 목록과 경로 상수
-    ├── fetch-source.mjs      킬팀 원본 내려받기 → tools/.cache/
-    ├── build-json.mjs        캐시 → JSON 정본 + 배포 번들
-    ├── update.mjs            위 둘을 묶은 수동 업데이트
-    └── parse-spearhead.mjs   스피어헤드 PDF → JSON + 번들
+    ├── source-files.mjs      경로 상수와 출처 표기
+    ├── bundle-kt.mjs         킬팀 data/ → 배포 번들
+    ├── pdf-lines.mjs         PDF 줄 단위 좌표 추출 (2단 조판 대응)
+    ├── parse-spearhead.mjs   스피어헤드 PDF → JSON + 번들
+    └── check-spearhead.mjs   스피어헤드 추출 결과 점검
 ```
 
-JSON 은 사람이 읽고 다시 가공하기 위한 정본이고, `public/data/kt-data.js` 는 그것을
-한 덩어리로 묶은 파생물이다. 둘 다 `build-json.mjs` 가 같은 소스에서 만든다.
+`data/teams/*.json` 과 `data/glossary.json` 이 정본이고, 사람이 공식 PDF 를 보고 고친다.
+`data/factions.json` 의 팀 요약 · `data/meta.json` · `public/data/kt-data.js` 는
+`bundle-kt.mjs` 가 정본에서 다시 만드는 파생물이다.
 
 ## 데이터 스키마
 

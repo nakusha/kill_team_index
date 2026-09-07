@@ -1010,7 +1010,7 @@
           "type": "ranged",
           "profiles": [
             {
-              "name": " ",
+              "name": "",
               "attacks": "4",
               "hit": "3+",
               "damage": "3/4",
@@ -1060,6 +1060,16 @@
         }
       ],
       "weaponsKo": [
+        {
+          "name": "볼트 권총",
+          "type": "ranged",
+          "attacks": "4",
+          "hit": "3+",
+          "damage": "3/4",
+          "rules": [
+            "사거리 8\""
+          ]
+        },
         {
           "name": "중형 볼터(집중)",
           "type": "ranged",
@@ -1557,5 +1567,5 @@
       }
     ]
   },
-  "source": "공식 Kill Team 앱 PDF 추출본"
+  "source": "킬 팀 공식 한글 룰 PDF"
 }
