@@ -17,6 +17,7 @@ import { mkdir, readFile, writeFile, rm } from 'node:fs/promises';
 import { join } from 'node:path';
 import { createContext, runInContext } from 'node:vm';
 import { CACHE_DIR, DATA_DIR, PUBLIC_DIR, SOURCE_FILES, SOURCE_LABEL } from './source-files.mjs';
+import { TEAM_ARCHETYPE, repairGuideBlocks } from './team-fixes.mjs';
 
 const PLOY_TYPE = { s: 'strategy', f: 'firefight' };
 const WEAPON_TYPE = { R: 'ranged', M: 'melee' };
@@ -103,7 +104,7 @@ function buildOperative(operative, datacardsKo) {
 }
 
 /** 편성 가이드 / 팩션 규칙 블록. blocks 가 있으면 그것을, 없으면 text 를 문단으로 쪼갠다. */
-function buildGuideSection(section) {
+function buildGuideSection(section, teamId, sectionId) {
   if (!section) return null;
 
   const blocks = section.blocks?.length
@@ -113,7 +114,7 @@ function buildGuideSection(section) {
         .map((text) => ({ type: 'rule', text: text.trim() }))
         .filter((block) => block.text);
 
-  return { brief: section.brief ?? '', blocks };
+  return { brief: section.brief ?? '', blocks: repairGuideBlocks(teamId, sectionId, blocks) };
 }
 
 function buildTeam(team, faction, data) {
@@ -124,7 +125,7 @@ function buildTeam(team, faction, data) {
     id: team.id,
     nameEn: team.n,
     nameKo: guide?.teamKo ?? null,
-    archetype: team.arch ?? '',
+    archetype: team.arch || TEAM_ARCHETYPE[team.id] || '',
     color: data.teamColor[team.id] ?? null,
     size: data.teamSize[team.id] ?? null,
     faction: {
@@ -136,8 +137,8 @@ function buildTeam(team, faction, data) {
     equipment: (team.equip ?? []).map((item) => buildEquipment(item, data.equipKo ?? {})),
     equipmentBonusKo: data.eqBonusKo?.[team.id] ?? null,
     operatives: operatives.map((operative) => buildOperative(operative, data.datacardsKo ?? {})),
-    selectionGuide: buildGuideSection(guide?.selection),
-    factionRule: buildGuideSection(guide?.faction),
+    selectionGuide: buildGuideSection(guide?.selection, team.id, 'selectionGuide'),
+    factionRule: buildGuideSection(guide?.faction, team.id, 'factionRule'),
     source: guide?.source ?? null,
   };
 }

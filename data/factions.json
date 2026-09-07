@@ -530,7 +530,7 @@
         "id": "AEL-EDM",
         "nameEn": "Exodite Dragon Masters",
         "nameKo": "엑소다이트 용의 달인",
-        "archetype": "",
+        "archetype": "Recon/Seek & Destroy",
         "color": "#6cae5e",
         "size": {
           "total": 5
