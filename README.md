@@ -118,6 +118,7 @@ node tools/parse-spearhead.mjs [PDF경로]   # 기본값은 Downloads 의 1.8.3 
 4. 그대로 커밋하면 배포된다.
 
 `data/teams/<팀ID>.json` 의 `source` 필드에 그 팀 데이터의 근거를 적어 둔다.
+어느 팀을 PDF 로 대조했고 어느 팀이 남았는지는 `docs/pdf-coverage.md` 에 있다.
 
 ## 구조
 
